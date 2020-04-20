@@ -1,0 +1,290 @@
+<style type="text/css">
+	.wrapper-box{
+		width:100%;
+		margin: 0;
+		padding: 0;
+	}
+	.back-green{
+		background: #E8F6E9;
+    	width: 100%;
+    	height: 400px;
+    	position: absolute;
+
+	}
+	.content-center{
+		width: 100%;
+	    /*position: absolu te;*/
+	    /*top: 40px;*/
+	    max-width: 1118px;
+	    margin: 0 auto;
+	    z-index: 999;
+    	position: relative;
+	}
+	.page-tittle{
+		width: 100%;
+    	text-align: center;
+    	padding:40px 0px 0px 0px;
+    	font-size: 42px;
+    	margin:0px;
+	}
+	.page-subtittle{
+		text-align: center;
+		font-size: 18px;
+		margin:0;
+		padding: 0px;
+		padding:10px 0px 0px 0px;
+	}
+	.company-image{
+		width: 100%;
+	}
+	.story-article{
+		max-width: 980px;
+		margin: 40px auto 0 auto;
+		border-bottom: solid 0px #fff;
+	}
+	.article-tittle{
+		font-size: 28px;
+		
+		text-align: center;
+	}
+  .article-point{
+    color:#00A82D;
+  }
+	.article-tittle>span{
+		color:#00A82D;
+	}
+	.story-article>p{
+		font-size: 16px;
+		line-height: 32px;
+    margin: 0;
+	}
+	/*縮放*/
+	.btn-group{
+		width: 100%;
+		margin:20px auto;
+ 	}
+   	.btn-hide{
+    	display: none;
+  	}
+  	.btn-show{
+    	display: block;
+  	}
+  	.expand-btn{
+  		font-size: 14px;
+    	cursor: pointer;
+    	text-align: center;
+  	}
+  	.D2-story{
+    	margin:40px auto 0px auto;
+  	}
+  	.collapse-box-hide{
+    	height: 290px;
+    	overflow: hidden;
+  	}
+  	.collapse-box-open{
+    	height: 100%;
+    	overflow: auto;
+    	background:#f0f8ff00;
+  	}
+  	.front-grlatation{
+    	position: absolute;
+    	top: 750px;
+    	width: 100%;
+    	height: 143px;
+    	float: left;
+    	background: linear-gradient(0deg, #fff 39%, #ffffff00 65%);
+    	background: -moz-linear-gradient(90deg, #fff 39%, #ffffff00 65%);
+    	background: -webkit-linear-gradient(90deg, #fff 39%, #ffffff00 65%)
+    	background: -o-linear-gradient(90deg, #fff 39%, #ffffff00 65%);
+  	}
+    .principles-line{
+      margin:10px auto;
+      font-size:23px;
+      text-align: center;
+      color:#00A82D;
+      list-style: none;
+    }
+
+  	/*//*/
+  	.center-gray{
+  		background:#FAFAFA;
+  		width: 100%;
+  		/*position: relative;*/
+    	/*top: -310px;*/
+    	padding: 40px 0;
+    	background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/core-bg-3.jpg");
+    	background-size: cover;
+    	background-position: center;
+    	/*background-repeat: repeat-x;*/
+    	background-attachment: fixed;
+  	}
+  	.section-tittle{
+  		text-align: center;
+    	/*padding: 50px 0px 0px 0px;*/
+    	font-size: 35px;
+  	}
+  	.section-box{
+  		display: table;
+  		/*position: relative;*/
+    	/*top: 50px;*/
+  		max-width: 1151px;
+  		margin: 0 auto;
+  		background: #fff;
+  		padding:0px;
+  		box-shadow: 2px 2px 11px 0 rgba(193,193,193,0.5);
+  	}
+  	.section-article{
+  		/*max-width: 980px;*/
+  		width: 43%;
+  		float: left;
+  		margin: 0px auto;
+  	}
+  	.section-article-tittle{
+  		text-align: center;
+  	}
+  	.section-article-tittle>span{
+  		color: #00A82D;
+  	}
+  	.p1-section{
+  		/*margin-top: 40px;*/
+  		padding: 80px 3% 80px 4%; 
+  	}
+  	.p2-section{
+  		/*margin-top: 40px;*/
+  		padding: 80px 3% 80px 4%;
+  		background: #FAFAFA;
+  	}
+  	.section-article>p{
+  		line-height: 32px;
+  	}
+  	@media screen and (max-width: 1151px) {
+		.section-box{
+  	 		width: 95%;
+  	 		/*padding: 18px 20px;*/
+  	 	}
+  	}
+
+  	 @media screen and (max-width: 980px) {
+  	 	.content-center{
+  	 		width: 90%;
+  	 	}
+  	 	.section-box{
+  	 		width: 90%;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 800px) {
+  	 	.collapse-box-hide{
+  	 		height: 180px;
+  	 	}
+  	 	.back-green{
+  	 		height: 300px;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 640px) {
+  	 	.back-green{
+  	 		height: 250px;
+  	 	}
+  	 	.section-box{
+  	 		width: 80%;
+  	 	}
+  	 	.p1-section, .p2-section{
+  	 		width: 90%;
+    		padding: 20px 5% 20px 5%;
+  	 	}
+  	 }
+</style>
+
+<div class="wrapper-box">
+	<div class="back-green"></div>
+	<div class="content-center">
+		<h1 class="page-tittle">Our Story</h1>
+		<h2 class="page-subtittle">Core values we learned from experience</h2>
+		<article class="story-article">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/d2-company-picture-1.jpg" alt="公司照片">
+		</article>
+		<div class="collapse-box-hide" id="table-box">
+		
+		<article class="story-article">
+			<h3 class="article-tittle">The purpose of D2 is to provide communications services to business customers, following two guiding principles:</h3>
+			<ul>
+				<li class="principles-line">- Grow with our customers -</li>
+				<li class="principles-line">- What is good for our customer is good for us -</li>
+			</ul>
+			<p>We get all our product ideas from our customers, and we are always the first to use our own software to make sure it works. We did not arrive at this purpose and these business principles at the beginning. We learned the hard way that, after building what we thought were cutting edge technologies, we had lost sight of customer wants and needs.<br/>So how did we get here? What lessons did we learn along the way?</p>
+      <p>Born in Hongkong, David Wong studied Engineering at the University of California. He worked as an engineer and professor before starting his own company with David Lindsay. D2 Technologies was their second startup.<br/><br/>Jon Wu, born and raised in Taiwan, received his PhD from Tsinghua University in Computer Engineering. Jon was running the Wi-Fi phone business unit at Inventec when he met David.</p>
+		</article>
+		<article class="story-article">
+			<img class="company-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/D2Nova-leader-images-4.jpeg" alt="公司照片">
+      <p>D2 was looking to develop a mobile operating system based on Linux with a web browser and Java. Jon supplied David with the Linux phone platform he developed for Skype. Just before the OS product was completed, Google announced Android – an open source mobile phone OS built on Linux with a browser and Java! D2 scrapped the project immediately.</p>
+			<p class="article-point">Lesson learned: unless you are Google or Apple, Mobile OS is not a good business!</p>
+      <br/>
+			<p>
+				D2 turned its attention to developing mobile apps for communications. Hoping to breathe new life into mobile services, D2 focused on rich communications services (RCS). Jon joined D2 in 2012 to help develop RCS. Despite strong interest from leading mobile carriers like Telefonica, Orange, Deutsche Telekom, and China Mobile, users showed no interest. WeChat, LINE, and WhatsApp had a stronghold on the user base. RCS was too little too late. And when Google purchased a cloud-based RCS startup in 2015 and announced their intention to open source the entire project, RCS startups vanished overnight.
+			</p>
+      <p class="article-point">Another lesson learned: telephone carriers are not the right partners for cloud apps</p>
+		</article>
+		
+		<article class="story-article">
+			<img class="company-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/team-bix-image.jpg" alt="team.biz">
+			<p>D2 looked to re-deploy its RCS technology as a SaaS (software as a service). The consumer chat and voice market were too mature to enter, but there was still a window for business chat. There were a few startups in the space, but adoption was slow and there was no clear winner. So D2 created a new SaaS company, D2 Nova, to develop a business messaging app. It took D2 over a year to develop a competitive product: team.biz. By the time it entered the market, the business chat market had exploded, and Slack had secured the market with over 100 million of investment. D2 Nova knew team.biz was a competitive product, but too late in the market and with too little money to compete, they stopped marketing it in 2017. Team.biz continues as a free service and, with offices in Santa Barbara, California and Taipei, it enables our teams at D2 Nova to collaborate every day.</p>
+      <p class="article-point">Lesson learned … pivot and stay LEAN!</p>
+		</article>
+		<article class="story-article">
+			<p>
+				With decades of experience in VoIP, voice messaging, and PBX systems and a strong SaaS development team, we wanted to see if we could pivot to the cloud PBX market. Leading manufacturers of PBX had stopped development of new hardware products, and Avaya had declared bankruptcy. The migration from hardware PBX to the cloud was inevitable and imminent.<br/><br/>
+				We knew we had to move quickly and stay lean. In late 2017 David and Jon built a prototype of EVOX with a very small team, and within weeks had started to test the market in Taiwan. We discovered that while the U.S. was migrating to the cloud en masse, with an explosion of cloud services and companies, Taiwan was at least five years behind.
+			</p>
+		</article>
+		
+		<article class="story-article">
+			<img class="company-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/EVOX-image.jpg" alt="EVOX">
+			<p>Everyone in Taiwan has at least one smart phone and carries it everywhere, streaming music and video. But companies in Taiwan are still not sure about migrating to the cloud or giving up their dusty old hardware. Technologically EVOX is more than ready for the market, but we realize the challenge is customer acceptance. This challenge is also our opportunity to make a meaningful difference for our customers.</p>
+		</article>
+		</div>
+		<!-- <div class="front-grlatation" id="gradual"></div> -->
+		<div class="btn-group">
+		<div class="expand-btn green-text" id ="openFunction">Read the story <i class="fa fa-caret-down "></i></div>
+		<div class="expand-btn green-text btn-hide" id ="closeFunction">Collapse story <i class="fa fa-caret-up "></i></div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+  $(document).ready(function(){
+  $("#openFunction").click(function(){
+    $("#table-box").addClass("collapse-box-open");
+    $("#table-box").removeClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-hide");
+    $("#closeFunction").addClass("btn-show");
+    $("#gradual").addClass("btn-hide");
+    $("#gradual").removeClass("btn-show");
+  });
+  $("#closeFunction").click(function(){
+    $("#table-box").removeClass("collapse-box-open");
+    $("#table-box").addClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-show");
+    $("#openFunction").removeClass("btn-hide");
+    $("#openFunction").addClass("btn-show");
+    $("#gradual").removeClass("btn-hide");
+    $("#gradual").addClass("btn-show");
+  });
+});
+</script>
+
+	<div class="center-gray">
+		<h2 class="section-tittle">Guiding principles</h2>
+		<div class="section-box">
+			<div class="section-article p1-section">
+				<h3 class="section-article-tittle">Grow with our customers</h3>
+				<p>With an engineering team fully trained in developing cloud apps on Android, iPhone and PCs, our challenge is to create the best customer experience possible for our users to generate market momentum. For that, we have grown our marketing and UX design talent from just two to a size that is equal to our engineering team in one year. And it continues to grow.<br/>We are also uniquely positioned to help our Taiwan customers move to the cloud and stay competitive with the world. Our success would encourage Taiwan’s tech industry to transition from hardware manufacturing to the digital economy. And, as Taiwan’s tech industry transitions to the cloud, we expand with them to build a significant cloud presence across Asia.</p>
+			</div>
+			<div class="section-article p2-section">
+				<h3 class="section-article-tittle">What is good for our customers is good for us</h3>
+				<p>As we said, we at D2 Nova aren’t just developing products, we use them every day. EVOX is our in-house business call system. As the EVOX customer base grows, we realized that our customer’s experience didn’t end with a purchase. We needed to keep improving their EVOX experience, and we need to also enable them to offer better service to their customers. For that, we needed better sales and support tools. So, we developed EConnect, a cloud-based contact center which intelligently connects and manages inbound calls to the correct service teams. We look forward to continuing to grow with our customers as we migrate to the cloud together and expand our footprint within and beyond Taiwan.</p>
+			</div>
+		</div>		
+	</div>	
+</div>

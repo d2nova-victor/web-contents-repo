@@ -1,0 +1,854 @@
+<style type="text/css">
+    .benefit_block{
+    max-width: 980px;
+    /*-moz-box-shadow:1px 4px 10px -2px rgba(138,138,138,0.5);
+    -webkit-box-shadow:1px 4px 10px -2px rgba(138,138,138,0.5);
+    box-shadow:1px 4px 10px -2px rgba(138,138,138,0.5);*/
+    /*float: left;*/
+    margin: 0 auto;
+    display: table;
+    padding-top: 40px;
+  }
+  .benefit_block>h2{
+    text-align: center;
+  }
+  .benefit-item{
+    width: 29.3%;
+      margin: 5px 2%;
+      float: left;
+      display: block;
+      min-height: 290px;
+  }
+  /*.benefit-item:after {
+    content : ".";
+    font-size : 0;
+    -webkit-text-size-adjust : none;
+  }*/
+  .benefit-item>h3, .benefit-item>p{
+    text-align: center;
+  }
+  .benefit-item>h3{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .benefit-item>p{
+    font-size: 15px;
+    margin: 10px 0 0 0;
+  }
+  .benefit-item> .icon-image{
+    display: block;
+    width: 30%;
+    margin: 0 auto 10px auto;
+    min-width: 90px;
+  }
+  .go_call_rate{
+    text-align: center;
+    display: block;
+  }
+  .go_call_rate>i{
+    font-size: 42px;
+  }
+  .go_call_rate>p{
+    margin: 0;
+  }
+/*  .more-feature{
+    width: 100%;
+    text-align: center;
+  }*/
+
+
+
+  .price-tittle{
+    text-align: center;
+    background: #fff;
+  }
+  .price-tittle>p{
+    font-size: 18px;
+    color: #5F6871;
+  }
+  .plan-button-group{
+    max-width: 1240px;
+    margin: 0 auto;
+    background: #fff;
+    display: table;
+    width: 60%;
+  }
+  .plan-button{
+    font-size: 16px;
+    /*三個*/
+    /*width: 33.3%;*/
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 10px 0 0 0;
+    line-height: 3em;
+    border-bottom: 6px solid #fff;
+    cursor: pointer;
+  }
+  .plan-button:hover{
+    background: #eaeaea;
+    border-bottom: 6px solid #afafaf;
+
+  }
+  .plan-button-active{
+    border-bottom: 6px solid #66C547;
+  }
+  .plan-button-active:hover{
+    background: #eaeaea;
+    border-bottom: 6px solid #66C547;
+  }
+    #ECONNECT-btn.plan-button-active{
+    background: #eaeaea;
+    border-bottom: 6px solid #5856D6;
+  }
+   #ECONNECT-btn.plan-button-active:hover{
+    background: #eaeaea;
+    border-bottom: 6px solid #5856D6;
+  }
+  .plan-button-block{
+    -moz-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+    -webkit-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+    box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        position: relative;
+  }
+  /*價格方案*/
+  .content-section-7{
+    background: #FAFAFA;
+    width: 100%;
+
+  }
+  /*.insert-shadow{
+    -moz-box-shadow: inset 0px 5px 6px rgba(150, 150, 150, 0.38);
+    -webkit-box-shadow: inset 0px 5px 6px rgba(150, 150, 150, 0.38);
+    box-shadow: inset 0px 5px 6px rgba(150, 150, 150, 0.38);
+  }*/
+  .content-section-7 >.text-block{
+    max-width: 1240px;
+      margin: 0 auto;
+      padding: 0px 0 40px 0px;
+      display: table;
+      width: 100%;
+  }
+  .content-section-7 >.text-block>h2{
+    text-align: center;
+  }
+  .content-section-7 >.text-block>span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    /*width: 100%;*/
+    color: #5F6871;
+    margin: 0px 0px 40px 0px;
+  }
+  .content-section-7 > .text-block> .three-cloum-box > h5{
+    font-weight: 500;
+    max-width: 820px;
+    margin: 5px auto;
+    /*text-align: center;*/
+  }
+  .content-section-7 > .text-block> .three-cloum-box > p{
+    font-size: 14px;
+    margin: 5px auto;
+  }
+  .three-cloum-box{
+    width: 33.3%;
+      padding: 20px 60px 0 0px;
+      float: left;
+      min-height: 190px;
+  }
+
+  .price-table-block{
+    display: table;
+      /* float: left; */
+      width: 80%;
+      max-width: 980px;
+      margin: 20px auto;
+  }
+
+  .price-table{
+    width: 31.3%;
+      float: left;
+      text-align: left;
+  }
+  .price-table:hover{
+    
+    -moz-box-shadow:1px 4px 10px -2px rgba(138,138,138,0.5);
+    -webkit-box-shadow:1px 4px 10px -2px rgba(138,138,138,0.5);
+    box-shadow:1px 4px 10px -2px rgba(138,138,138,0.5);
+  }
+  .price-table:hover>.price-item{
+    border:2px solid #66C547;
+  }
+  #EConnect .price-table:hover>.price-item{
+    border:2px solid #5856D6;
+  }
+  .border-add{
+    /*border-right: 1em solid #fff;*/
+    margin-right: 2.7%;
+
+  }
+  .price-header{
+    text-align: center;
+    font-weight: 500;
+    color: #5F6871;
+    font-size:14px; 
+    margin: 10px 0 17px 0;
+  }
+  .price-item{
+    text-align: center;
+      background: #fff;
+       height: 96px; 
+      line-height: 1.2em;
+      padding: 24px 0;
+      display: table;
+      width: 100%;
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+  }
+  .price-item>h2{
+    font-size: 35px;
+    line-height: 12px;
+    margin: 40px 0 20px 0;
+  }
+  .price-item > span{
+    font-size: 13px;
+    margin: 20px 0;
+    display: block;
+  }
+  .price-item > span>strong{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .price-item>hr{
+    width: 50%;
+    background: #ccc0;
+    border-top: 1px solid #ccc;
+  }
+  .more-feature>a{
+    display: block;
+    text-align: center;
+  }
+  .apply-now-block{
+    float: left;
+      width: 100%;
+      display: block;
+      margin: 20px 0px;
+  }
+
+  .plan-detial{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .plan-detial>li{
+    color: #A5B6BF;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+  }
+  .addtional-text{
+    /*width: 90%;*/
+    text-align: center;
+  }
+  .customize-tittle{
+    margin: 0px 0 20px 0;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  }
+  .customize-tittle>h3{
+    margin: 0;
+    font-size: 18px;
+  }
+  .customize-tittle>img{
+    display: inline-block;
+    float: left;
+    width: 27px;
+  }
+    @media screen and (max-width: 1008px) {
+  }
+  }
+
+
+  }
+  @media screen and (max-width: 840px) {
+    .table-tittle{
+      /*min-height: 154px;*/
+    }
+    .price-item{
+       /* min-height: 159px; */
+        /* line-height: 8.4em; */
+        /*line-height: 2em;
+        padding: 43px 0px;*/
+    }
+    .price-table{
+      width: 100%;
+      margin: 10px 0px;
+    }
+    .border-add{
+      margin-right:0px;
+    }
+  }
+  @media screen and (max-width: 796px) {
+    .price-table-block{
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 735px) {
+    .three-cloum-box{
+      min-height: 250px;
+    }
+    .benefit-item{
+      min-height:390px;
+    }
+  }
+  @media screen and (max-width: 702px) {
+    
+    .benefit-item{
+      width: 45%;
+      min-height:268px;
+    }
+    .apply-now{
+      padding: 7px 9px;
+    }
+  }
+  @media screen and (max-width: 695px) {
+    .plan-button-group{
+      width: 100%;
+    }
+    .content-section-7 >.text-block{
+      width: 90%;
+    }
+    .price-table-block{
+      width: 100%;
+    }
+
+    .call-rate-table-block{
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 607px) {
+    .content-section-7 >.text-block{
+      padding: 10px;
+    }
+    .three-cloum-box{
+      padding: 10px 30px;
+      width: 50%;
+        min-height: 200px;
+    }
+  }
+  @media screen and (max-width: 546px) {
+    
+    .benefit-item {
+        width: 36%;
+        padding: 0 5%;
+        min-height: 320px;
+    }
+
+    .price-table{
+      width: 100%;
+      margin:10px auto;
+    }
+    .border-add{
+      /*margin-right: 0.8%;*/
+
+    }
+    table td{
+      text-align: center;
+    }
+  }
+  /* @media screen and (max-width: 430px) {
+    .plan-button{
+          min-height: 54px;
+    }
+  }*/
+   @media screen and (max-width: 491px) {
+    .customize-tittle>h3{
+      margin: 27px 0 0 0;
+    }
+  @media screen and (max-width: 426px) {
+    
+    .price-table{
+      width: 100%;
+    }
+
+    table td{
+      text-align: center;
+    }
+  }
+ 
+  @media screen and (max-width: 382px) {
+
+    .three-cloum-box{
+      padding: 10px 30px;
+      width: 100%;
+        min-height: 100%;
+    }
+  }
+</style>
+<div class="price-tittle">
+  <h1>Product price</h1>
+  <p>Choose a plan that suits you now, upgrade as you grow</p>
+</div>
+<div class="plan-button-block">
+<div class="plan-button-group">
+  <div class="plan-button plan-button-active" id="EVOX-btn" onclick="openPlan('Evox')">EVOX service</div>
+  <div class="plan-button" id="ECONNECT-btn" onclick="openPlan('EConnect')">EConnect service</div>
+  <!-- <div class="plan-button" id="EVOXSET-btn" onclick="openPlan('EvoxSet')">EVOX 組合</div> -->
+</div>
+</div>
+  <script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top-200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<div id="Evox" class="plan">
+  <div class="content-section-7 insert-shadow">
+    <div class="benefit_block">
+      <h2>Product content</h2>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/icon/cloud-number-icon-2.png" alt="一支公司代表號" />
+        <h3>One company number </h3>
+        <p>One company number, multiple concurrent calls (comparable telco pricing: business number with one channel costs over 245NT/month, excluding calling minutes.)
+          <!-- <a class="green-text" href="https://www.evoxglobal.com/tw/new-numbers">了解更多</a> -->
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/cloud-pbx-icon.png" alt="雲端總機" />
+        <h3>Cloud PBX</h3>
+        <p>Includes all basic PBX features, such as auto attendant, internal and external calling, extensions for employees, transfer, pickup, group ring etc.<br/>
+          <a class="green-text" href="/en/evox/cloud-pbx" target="_blank">Learn More</a>
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/managerment-icon.png" alt="線上管理系統" />
+        <h3>Web admin center</h3>
+        <p>Use your browser to configure and manage your EVOX system: set up auto attendant, add/change extensions and outdial permissions, inspect CDR (call detail records) etc.<br/>
+          <a class="green-text" href="/en/evox/admin-center" target="_blank">Learn More</a>
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/multi-devices-icon.png" alt="自由分配裝置" />
+        <h3>Multi-device choices</h3>
+        <p>Select devices per user preference, including<a class="green-text" href="/tw/evox/multiple-devices/mobile-extension" target="_blank">mobile App</a>, <a class="green-text" href="/tw/evox/multiple-devices/pc-app" target="_blank">PC/Mac App</a>, and <a class="green-text" href="/tw/evox/multiple-devices/ip-phone" target="_blank">IP phones</a> from leading manufacturers.<br/>
+          <a class="green-text" href="/en/evox/multiple-devices" target="_blank">Learn More</a>
+        ​</p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/low-cost-icon.png" alt="划算費率" />
+        <h3>Low cost calling</h3>
+        <p>Discounted calling rates for Taiwan and around the world.</p>
+        <a href="#call-rate" class="go_call_rate green-text">
+          <!-- <i class="fa fa-caret-down "></i> -->
+          <p class="">Calling rate</p>
+        </a>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/no-hardware-icon.png" alt="免額外設定費" />
+        <h3>No installation fees</h3>
+        <p>Everything is on the cloud. No installation required.</p>
+      </div>
+
+    </div>
+
+
+    <div class="text-block">
+      <h2>Subscription Packages</h2>
+    <!-- table -->
+    <div class="price-table-block"> 
+      <div class="price-table border-add">
+        <div class="price-item">
+          <h2>5 devices</h2>
+          <!-- <h5 class="price-header">包含5個裝置</h5> -->
+          <span><strong>590NTD</strong> /mon</span>
+          <div class="apply-now-block">
+            <a class="green-btn set-btn-center" href="/en/contact-us">Contact Us</a> 
+          </div>
+          <hr>
+          <ul class="plan-detial">
+            <li><i class="fas fa-check green-text"></i> 5 devices (assign as your choose)</li>
+            <li><i class="fas fa-check green-text"></i> 1 company number</li>
+            <li><i class="fas fa-check green-text"></i> Cloud PBX</li>
+            <li><i class="fas fa-check green-text"></i> Web admin center</li>
+            <li><i class="fas fa-check green-text"></i> 2 concurrent calls</li>
+          </ul>
+        </div>  
+      </div>
+
+        <div class="price-table border-add">
+        <div class="price-item">
+          <h2>10 devices</h2>
+          <!-- <h5 class="price-header">包含10個裝置</h5> -->
+          <span><strong>990NTD</strong> /mon</span>
+          <div class="apply-now-block">
+            <a class="green-btn set-btn-center" href="/en/contact-us">Contact Us</a> 
+          </div>
+          <hr>
+          <ul class="plan-detial">
+            <li><i class="fas fa-check green-text"></i> 10 devices (assign as your choose)</li>
+            <li><i class="fas fa-check green-text"></i> 1 company number</li>
+            <li><i class="fas fa-check green-text"></i> Cloud PBX</li>
+            <li><i class="fas fa-check green-text"></i> Web admin center</li>
+            <li><i class="fas fa-check green-text"></i> 3 concurrent calls</li>
+          </ul>
+        </div>
+      </div>
+
+          <div class="price-table ">
+            <div class="price-item">
+              <h2>20 devices</h2>
+              <!-- <h5 class="price-header">包含20個裝置</h5> -->
+              <span><strong>1,590NTD</strong> /mon</span>
+              <div class="apply-now-block">
+                <a class="green-btn set-btn-center" href="/en/contact-us">Contact Us</a> 
+              </div>
+              <hr>
+              <ul class="plan-detial">
+                <li><i class="fas fa-check green-text"></i> 20 devices (assign as your choose)</li>
+                <li><i class="fas fa-check green-text"></i> 1 company number</li>
+                <li><i class="fas fa-check green-text"></i> Cloud PBX</li>
+                <li><i class="fas fa-check green-text"></i> Web admin center</li>
+                <li><i class="fas fa-check green-text"></i> 4 concurrent calls</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+        <span>＊Optional Device: Mobile App / PC App / IP Phone</span>
+        <div class="addtional-text">
+          <div class="customize-tittle">
+          <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/pricepage/wrench-icon.png">
+          <h3><span class="green-text">Customize your solution </span>for requirements different from the standard packages above</h3>
+        </div>
+        <a class="green-outline-btn set-btn-center" href="/en/contact-us">Contact Sales</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="EConnect" class="plan" style="display:none">
+  <div class="content-section-7 insert-shadow">
+    <div class="benefit_block">
+      <h2>Product content</h2>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/call-voice-icon-2.png" alt="來電管理" />
+        <h3>Call management</h3>
+        <p>Call management system ACD and interactive voice IVR settings and call distribution and other customer service communication functions<br/>
+          <a class="purple-text" href="/en/econnect/acd-ivr" target="_blank">Learn More</a>
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/teams-icon-2.png" alt="客服管理" />
+        <h3>Customer service management</h3>
+        <p>Customer service management system enables enterprise customer service centers to efficiently allocate customer service personnel time and improve customer experience<br/>
+          <a class="purple-text" href="/en/evox/cloud-pbx" target="_blank">Learn More</a>
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/managent-icon-2.png" alt="線上客服管理系統" />
+        <h3>Management system</h3>
+        <p>The manager can adjust the settings according to the company's needs at any time, adjust the customer service ACD and IVR settings in time, and make the customer service center more flexible.<br/>
+          <!-- <a class="purple-text" href="/tw/econnect/manager">了解更多​</a> -->
+        </p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/call-recors-icon-2.png" alt="通話紀錄" />
+        <h3>Call Recording</h3>
+        <p>Read the contact record with the customer at any time, and download the call recording file. Make each call more transparent and secure<br/>
+          <a class="purple-text" href="/en/econnect/manager" target="_blank">Learn More</a>
+        ​</p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/expansion-icon-2.png" alt="可擴增的服務" />
+        <h3>Flexible service</h3>
+        <p>Integrate other services such as CRM and change more. Enterprise customer service can be closer to customer needs.</p>
+      </div>
+      <div class="benefit-item">
+        <img class="icon-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/no-hardware-icon-2.png" alt="免額外設定費" />
+        <h3>No installation fees</h3>
+        <p>Everything is on the cloud. No installation required.</p>
+      </div>
+
+    </div>
+
+
+    <div class="text-block">
+      <h2>Contact sales</h2>
+        <div class="addtional-text">
+        <a class="purple-outline-btn set-btn-center" href="/en/contact-us">Contact Sales</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  // 取得url 參數
+
+
+
+// // tab互換
+function openPlan(pricePlan) {
+  var i;
+  var x = document.getElementsByClassName("plan");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  document.getElementById(pricePlan).style.display = "block"; 
+}
+$("#EVOX-btn").click(function(){
+  $(this).addClass("plan-button-active");
+  if ( $("#ECONNECT-btn").hasClass("plan-button-active") ) {   $("#ECONNECT-btn").removeClass('plan-button-active'); }
+  if ( $("#EVOXSET-btn").hasClass("plan-button-active") ) {   $("#EVOXSET-btn").removeClass('plan-button-active'); }
+  if ( $("#call-rate-box").hasClass("call-rate-block-hide") ) {   $("#call-rate-box").removeClass('call-rate-block-hide'); }
+})
+$("#ECONNECT-btn").click(function(){
+  $(this).addClass("plan-button-active");
+  if ( $("#EVOX-btn").hasClass("plan-button-active") ) {   $("#EVOX-btn").removeClass('plan-button-active'); }
+  if ( $("#EVOXSET-btn").hasClass("plan-button-active") ) {   $("#EVOXSET-btn").removeClass('plan-button-active'); }
+  $("#call-rate-box").addClass("call-rate-block-hide");
+})
+$("#EVOXSET-btn").click(function(){
+  $(this).addClass("plan-button-active");
+  if ( $("#EVOX-btn").hasClass("plan-button-active") ) {   $("#EVOX-btn").removeClass('plan-button-active'); }
+  if ( $("#ECONNECT-btn").hasClass("plan-button-active") ) {   $("#ECONNECT-btn").removeClass('plan-button-active'); }
+})
+</script>
+
+<!-- 費率 -->
+
+<style type="text/css">
+  table th, table td {
+    padding: .625em;
+    text-align: center;
+
+  }
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+  }
+  caption{
+    font-size: 24px;
+    margin: 40px auto 27px auto;
+  }
+  table tr {
+    padding: .35em;
+    border: 1px solid #edeff1;
+  }
+  table td {
+    white-space: nowrap;
+  }
+  table tr:nth-child(even) {
+    background: #FAFAFA;
+  }
+  .call-rate-block{
+    margin: 0 auto 80px auto;
+  }
+  .call-rate-block-hide{
+    display: none;
+  }
+  .remind-text{
+    text-align: center;
+    font-size:.8em;
+    color: #5F6871;
+    font-size: 14px;
+  }
+  .call-rate-table-block{
+      height:0px; 
+      transition: height .4s;
+      max-width: 1240px;
+      width: 60%;
+      margin: 70px auto 0 auto;
+      text-align: center;
+  }
+  .call-rate-table-block>p{
+    font-size: 18px;
+    color: #5F6871;
+  }
+  .collapse-box-hide{
+    height: 590px;
+    overflow: hidden;
+  }
+  .collapse-box-open{
+    height: 100%;
+    overflow: auto;
+    background:#f0f8ff00;
+  }
+  .front-grlatation{
+    position: relative;
+    top: -506px;
+    width: 100%;
+    height: 143px;
+    float: left;
+    background: linear-gradient(91deg, #fff 29%, #ffffffa6 88%);
+    background: -moz-linear-gradient(91deg, #fff 29%, #ffffffa6 88%);
+    background: -webkit-linear-gradient(91deg, #fff 29%, #ffffffa6 88%);
+    background: -o-linear-gradient(91deg, #fff 29%, #ffffffa6 88%);
+  }
+  .btn-hide{
+    display: none;
+  }
+  .btn-show{
+    display: block;
+  }
+  .expand-btn{
+    cursor: pointer;
+    text-align: center;
+  }
+  @media screen and (max-width: 796px) {
+    .call-rate-table-block{
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 546px) {
+    table td{
+      display: block;
+    }
+    .td-row-none{
+      display: none;
+    }
+    .front-grlatation{
+      top: -304%;
+    }
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#openFunction").click(function(){
+    $("#table-box").addClass("collapse-box-open");
+    $("#table-box").removeClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-hide");
+    $("#closeFunction").addClass("btn-show");
+    $("#gradual").addClass("btn-hide");
+    $("#gradual").removeClass("btn-show");
+  });
+  $("#closeFunction").click(function(){
+    $("#table-box").removeClass("collapse-box-open");
+    $("#table-box").addClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-show");
+    $("#openFunction").removeClass("btn-hide");
+    $("#openFunction").addClass("btn-show");
+    $("#gradual").removeClass("btn-hide");
+    $("#gradual").addClass("btn-show");
+  });
+});
+</script>
+<div class="call-rate-block" id="call-rate-box">
+<div class="call-rate-table-block collapse-box-hide" id="table-box">
+  <h2 id="call-rate">Calling rates</h2>
+  <p>Domestic and international outbound charges apply</p>
+<table class="fixed_headers">
+  <caption>Domestic Rates</caption>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><span>Mobile</span>(per minute) 3.4 NTD</td>
+      <td style="text-align:center;"><span   >Landline</span>(per 3 minutes) 1.5 NTD</td>
+    </tr>
+  </tbody>
+</table>
+<table class="fixed_headers">
+  <caption>International Rates (per minute)</caption>
+  <tbody>
+    <tr>
+      <td><span   >United States</span> 1 NTD</td>
+      <td><span   >Canada</span> 1 NTD</td>
+      <td><span   >China</span> 1 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Singapore</span> 1 NTD</td>
+      <td><span   >Mexico</span> 3 NTD</td>
+      <td><span   >Thailand</span> 3 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Vietnam</span> 3 NTD</td>
+      <td><span   >Malaysia</span> 3 NTD</td>
+      <td><span   >Indonesia</span> 3 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >India</span> 3 NTD</td>
+      <td><span   >Japan</span> 5 NTD</td>
+      <td><span   >South Korea</span> 5 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Philippines</span> 5 NTD</td>
+      <td><span   >Australia</span> 5 NTD</td>
+      <td><span   >New Zealand</span> 5 NTD</td></tr>
+    <tr>
+      <td><span   >United Kingdom</span> 10 NTD</td>
+      <td><span   >Germany</span> 10 NTD</td>
+      <td><span   >France</span> 10 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Macau</span> 10 NTD</td>
+      <td><span   >Italy</span> 13 NTD</td>
+      <td><span   >Netherlands</span> 13 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Spain</span> 13 NTD</td>
+      <td><span   >Myanmar</span> 13 NTD</td>
+      <td><span   >Cambodia</span> 13 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Brunei</span> 13 NTD</td>
+      <td><span   >Pakistan</span> 13 NTD</td>
+      <td><span   >Bangladesh</span> 13 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Turkey</span> 13 NTD</td>
+      <td><span   >Sri Lanka</span> 13 NTD</td>
+      <td><span   >Greece</span> 13 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Austria</span> 13 NTD</td>
+      <td><span   >Belgium</span> 15 NTD</td>
+      <td><span   >Iran</span> 15 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >Palestine</span> 15 NTD</td>
+      <td><span   >Israel</span> 15 NTD</td>
+      <td><span   > Saudi Arabia</span> 15 NTD</td>
+    </tr>
+    <tr>
+      <td><span   >United Arab Emirates</span> 15 NTD</td>
+      <td><span   >Hungary</span> 15 NTD</td>
+       <td class="td-row-none"></td>
+    </tr>
+  </tbody>
+</table>
+<div class="front-grlatation" id="gradual"></div>
+</div>
+<p class="remind-text" style="">*Price applies to landline and mobile phones</p>
+<div class="expand-btn green-text" id ="openFunction">View all regional call rates <i class="fa fa-caret-down "></i></div>
+<div class="expand-btn green-text btn-hide" id ="closeFunction">Zoom out <i class="fa fa-caret-up "></i></div>
+</div>

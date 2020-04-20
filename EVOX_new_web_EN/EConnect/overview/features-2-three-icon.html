@@ -1,0 +1,231 @@
+        <style type="text/css">
+        .features-3-background{
+          width: 100%;
+          /*background: #E8F5E9;*/
+          /* height: auto; */
+          display: table;
+          margin: 40px 0;
+          }
+        .features-3-section{
+          max-width: 1440px;
+          min-width: 670px;
+          margin: 40px auto;
+          display: table;
+          width: 70%;
+        }
+     /*   .four-block-section{
+          width: 66%;
+        }*/
+        .features-3-section > .three-block{ 
+          width: 31.3%;
+          float: left;
+          /* min-height: 350px; */
+          padding: 5px 0% 5px 0%;
+          /*margin: 0px 1%;*/
+          border-radius: 4px;
+          border: 1px solid #CCCCCC;
+          min-height: 349px;
+        }
+        .features-3-section > .three-block:hover{ 
+          background: #FAFAFA;
+        }
+        .border-add{
+            /*border-right: 1em solid #fff;*/
+            margin-right: 2.7%;
+
+          }
+        /*.three-block > svg{
+        width:90px;
+        float:left;
+        }*/
+        .content-tittle{
+        font-size:21px;
+        /*font-weight: bold;*/
+        /*color:#90c25c;*/
+        }
+        /*.three-block>p{
+        width:100%;
+        display.three-block;
+        }*/
+        .icon{
+        width:80px;
+        height:80px;
+        margin: 0 auto;
+        /*margin-bottom: -50px;*/
+        padding: 0;
+        border-radius: 90%;
+        /* border: 1px solid #afafafee; */
+        /*background-color: #fafafa;*/
+        /*-moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        box-shadow: 4px 4px 12px -2px rgba(80, 80, 80, 0.5);*/
+        }
+        .content-box{
+        /*min-height: 190px;*/
+        /* border: 1px solid #afafafee; */
+        padding: 20px 0px 10px 0px;
+        /*border-radius: 3px;*/
+        /*-moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        box-shadow: 4px 4px 12px -2px rgba(88, 88, 88, 0.5);*/
+        }
+        .content-box p{
+          font-size: 14px;
+          text-align: center;
+        }
+         .content-box ul{
+          font-size: 16px;
+          text-align: center;
+          list-style: none;
+          padding: 0px;
+        }
+        .content-tittle{
+          text-align: center;
+        }
+        /*.green-text{
+          color:#66C547;
+          font-size: 15px;
+          text-align: center;
+        }*/
+        .three-block:hover .content-box{
+          /*color: #93c45d;*/
+          /*color: white;*/
+          cursor: pointer;
+        }
+        .three-block:hover .content-tittle{
+          /*color: white;*/
+          cursor: pointer;
+
+        }
+        .three-block:hover .green-text{
+          color: #00A82D;
+          /*font-weight: bold;*/
+          text-decoration: underline;
+        }
+        .three-block:hover path#circle, .three-block:hover polygon#circle  {
+          cursor: pointer;
+          fill:#93c45d;
+          }
+        .three-block:hover path#hover, .three-block:hover g#hover, .three-block:hover text, .three-block:hover rect#hover{
+          cursor: pointer;
+          fill:#ffffff;
+          stroke:#ffffff;
+         }
+         .features-top{
+          width: 100%;
+          height: 105px;
+          text-align: center;
+         }
+         .features-top>h3{
+          margin: 6px;
+          font-size: 35px;
+         }
+         .features-top>p{
+          margin: 6px;
+          font-size: 18px;
+         }
+        @media screen and (max-width: 911px) {
+          .features-3-section >.three-block{
+                min-height: 360px;
+          }
+          .content-box{
+                min-height: 200px;
+          }
+          .content-tittle{
+            font-size:20px;
+          }
+        }
+         @media screen and (max-width: 735px) {
+          .features-3-section >.three-block{
+                /*width: 46%;*/
+                min-height: 380px;
+          }
+          .content-box{
+                min-height: 220px;
+          }
+        }
+        @media screen and (max-width: 670px) {
+          .features-3-section{
+            min-width: 100%;
+          }
+          .features-3-section >.three-block{
+              width: 58%;
+              min-height: 310px;
+              margin: 21px 22%;
+          }
+          .content-box{
+                min-height: 120px;
+          }
+          .icon{
+            /*width: 80px;*/
+            /*margin: 0px 0px 0px 20px;*/
+          }
+        }
+
+
+        </style>
+        <div class="features-3-background">
+        <div class="features-3-section ">
+        <div class="features-top">
+          <h3>What <span class="purple-text">EConnect</span> provides</h3>
+          <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+        </div>
+        <div class="three-block border-add" onclick="location.href='/en/econnect/acd-ivr';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/call-voice-icon-2.png">
+            </div>
+            <h3 class="content-tittle">
+              ACD
+            </h3>
+            <ul>
+                <li>ACD</li>
+                <li>IVR</li>
+                <li>Call queuing </li>
+                <li>Call distribution</li>
+            </ul>
+            <p class="gray-text ">Learn more <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+        <div class="three-block border-add" onclick="location.href='/en/econnect/manager';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/teams-icon-2.png">
+            </div>
+            <h3 class="content-tittle">
+                 EConnect manager
+            </h3>
+            <ul>
+              <l1>Agents</l1>
+              <li>Teams</li>
+              <li>Scheduling</li>
+               <li>ACDs</li>
+            </ul>
+            <p class="gray-text ">Learn more <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+        <div class="three-block" onclick="location.href='/en/econnect/contact-log';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/call-recors-icon-2.png">
+            </div>
+            <h3 class="content-tittle">
+              Contact Log
+            </h3>
+            <ul>
+                <li>Call information</li>
+                <li>Call waiting time</li>
+                <li>Recording data</li>
+                <li>Auto record voice to text</li>
+            </ul>
+            <p class="gray-text">Learn more <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+     
+      </div>
+    </div>

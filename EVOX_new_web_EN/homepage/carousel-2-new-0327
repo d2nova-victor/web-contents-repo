@@ -1,0 +1,444 @@
+<!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /*background: #FAFAFA;*/
+  margin-bottom: 40px;
+  height: 100%;
+}
+  /*隱藏*/
+/*.carousel-block ,.carousel{
+	  display: none;
+}*/
+.carousel-cell{
+  width: 100%;
+  /*height: 100%;*/
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  /*counter-increment: carousel-cell;*/
+}
+.carousel-main> .carousel-cell {
+	/*height: 400px;*/
+}
+.customer-feedback-img{
+  width: 50%;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.customer-feedback-box{
+  width: 90%;
+  margin:0 auto;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.customer-feedback-box>p{
+	/*--widthB: 50%;*/
+	/*padding: 0px 28% 0 5%;*/
+	/*padding: 0px 115px 0 3%;*/
+	/*margin-top: calc(var( --widthB)*0.2);*/
+	font-size: 18px;
+	margin:0px 15px;
+}
+.goshop>p{
+	/*margin-top: calc(var( --widthB)*0.1);*/
+}
+.customer-feedback-box>span{
+	padding: 0px 28% 0 15px;
+	font-size: 16px;
+}
+.flickity-page-dots{
+   display: none;
+}
+.carousel-main{
+	max-width: 1240px;
+	margin: 40px auto;
+	min-height: 400px;
+	/*min-height: 100vh;*/
+	max-height: 420px;
+}
+.carousel-image {
+  min-width: 150px;
+  /*height: 400px;*/
+}
+.carousel-nav{
+	margin: 20px 0;
+}
+.carousel-block{
+	background: #FAFAFA;
+	padding: 40px 0px;
+	margin: 40px 0px;
+}
+.carousel-tittle{
+	text-align: center;
+	font-size: 35px;
+	color:#a7a7a7;
+	margin: 20px 0;
+
+}
+.flickity-prev-next-button .flickity-button-icon{
+	color: #616161;
+}
+.flickity-prev-next-button .flickity-button-icon:hover{
+	color: #a2a2a2;
+}
+.flickity-button{
+	background: hsla(0, 0%, 100%, 0);
+	color: #EDEFF1;
+}
+.flickity-prev-next-button.previous{
+	left: 20px;
+}
+.flickity-prev-next-button.next{
+	right: 20px;
+}
+.flickity-button:hover {
+    background: #fff00000;
+    cursor: pointer;
+}
+.flickity-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #19f0;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell {
+  /*height: 80px;*/
+  /*width: 140px;*/
+  width: 239px;
+  height: 137px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  /*background: #ED2;*/
+  /*opacity: .5;*/
+}
+
+.setH{
+	width: 50%;
+}
+.logo-color{
+	display: none;
+}
+.carousel-cell:hover .logo-color{
+	display: block;
+}
+.carousel-cell:hover .logo-wh{
+	display: none;
+}
+.is-selected >.logo-wh{
+  display: none!important;
+}
+.is-selected >.logo-color{
+  display: block!important;
+}
+/*提示文字*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  /*margin-left: -60px;*/
+  margin-left: -18%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 9px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+     visibility: visible;
+    opacity: 1;
+    /* z-index: 99999999999; */
+    position: relative;
+    /* top: 10px; */
+    top: -130px;
+}
+.carousel-main>div.flickity-viewport{
+	min-height: 400px;
+}
+@media screen and (max-width: 840px){
+	.customer-feedback-img{
+		width: 100%;
+	}
+	.customer-feedback-box{
+		width: 100%;
+	}
+	.setH{
+		width: 100%;
+	}
+	.customer-feedback-box>p{
+		/*padding: 0 5%;*/
+		/*width: 100%;*/
+	}
+	.customer-feedback-box>span{
+		/*padding: 0 5%;*/
+	}
+	.carousel-main{
+		/*min-height: 100vh;*/
+		margin-bottom: 0px;
+	}
+	.flickity-prev-next-button.previous{
+		top:60%;
+	}
+	.flickity-prev-next-button.next{
+		top:60%;
+	}
+	.carousel-main{
+		max-height: 810px;
+	}
+
+}
+@media screen and (max-width: 638px){
+	.carousel-main{
+		max-height: 720px;
+	}
+	.carousel-nav .carousel-cell {
+	  /*height: 80px;*/
+	  /*width: 140px;*/
+	  width: 192px;
+	  height: 110px;
+	}
+	.flickity-prev-next-button.previous{
+		top:40%;
+	}
+	.flickity-prev-next-button.next{
+		top:40%;
+	}
+}
+@media screen and (max-width: 480px){
+	.flickity-prev-next-button.previous{
+		top:30%;
+	}
+	.flickity-prev-next-button.next{
+		top:30%;
+	}
+	.carousel-nav .carousel-cell {
+	  height: 50px;
+	  width: 127px;
+	}
+
+}
+@media screen and (min-width: 1352px){
+	.flickity-prev-next-button.previous{
+		left: -60px;
+	}
+	.flickity-prev-next-button.next{
+		right: -60px;
+	}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var divHeight = $('.customer-feedback-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+	});
+	$( window ).on("resize", function() {
+       var divHeight = $('.customer-feedback-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+
+    });
+
+</script>
+<!-- Flickity HTML init -->
+<div class="carousel-block">
+	<h3 class="carousel-tittle">Customer Cases</h3>
+	<div class="carousel carousel-nav"
+	  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+
+      <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-01.png" alt="MySwissLife">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-02.png" alt="MySwissLife">
+	  	<span class="tooltiptext">ECommerce</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/ob-01.png" alt="OB">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/ob-02.png" alt="OB">
+	  	<span class="tooltiptext">ECommerce</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/anshin-01.png" alt="安行">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/anshin-02.png" alt="安行">
+	  	<span class="tooltiptext">Ridesharing</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/qbebe-01.png" alt="Qbebe">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/qbebe-02.png" alt="Qbebe">
+	  	<span class="tooltiptext">Health Food</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/goshop-01.png" alt="goshop">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/goshop-02.png" alt="goshop">
+	  	<span class="tooltiptext">ECommerce</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-01.png" alt="uspace">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-02.png" alt="uspace">
+	  	<span class="tooltiptext">Parking Sharing</span>
+	  </div>
+	</div>
+</div>
+
+
+<div class="carousel carousel-main" data-flickity='{ "wrapAround": true, "lazyLoad": true }'>
+	<div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" alt="MySwissLife">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“The Wuhan virus threat tested the resilience of our IT infrastructure. After Chinese New Year, we were able to implement teleworking for our staff. EVOX is a key contributor to our telework solution.”</p>
+		  		<span>-My Swiss Life Founder-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/en/testimonial/my-swiss-life" target="_blank">Their story</a>
+		  		</div>
+		  	</div>
+	  	
+	</div>
+
+	<div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/ob-image.jpg" sizes="(min-width: 1024px) 720px, 360px" src="" alt="OB">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“EVOX empowers OB with mobility and self-administration.”</p>
+		  		<span>- OB IT Director -</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/en/testimonial/obdesign" target="_blank">Their story</a>
+		  		</div>
+		  	</div>
+	  	
+  	</div>
+  	<div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/anshin-image.jpg" sizes="(min-width: 1024px) 720px, 360px" src="" alt="Anshin">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“EVOX was a major factor in our ability to meet the government business quota in 3 months.”</p>
+		  		<span>- An Shin Founder -</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/en/testimonial/an-shin" target="_blank">Their story</a>
+		  		</div>
+		  	</div>
+	  	
+  	</div>
+  	<div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/qbebe-image.jpg" sizes="(min-width: 1024px) 720px, 360px" src="" alt="Qbebe">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“At present, the scale of the company is expanding rapidly. The services provided by EVOX can help new employees, customer service, procurement and other points to be quickly positioned. The mobile and group function can also prevent them from missing important calls.”</p>
+		  		<span>- QBEBE CEO -</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px; " href="https://blog.evoxglobal.com/en/testimonial/qbebe">Their story</a>
+		  		</div>
+		  	</div>
+	  	
+  	</div>
+  	<div class="carousel-cell ">
+  		<!-- <div> -->
+  			<img class="customer-feedback-img carousel-image lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/goshop-image.jpg" sizes="(min-width: 1024px) 720px, 360px" src="" alt="goshop">
+  		<!-- </div> -->
+  		<!-- <div class="flex-center"> -->
+  			<div class="setH" style="display: flex;align-items: center;float: left;">
+		  		<div class="customer-feedback-box goshop"><p>“The advantage of Cloud PBX is that it has no location limitations. We can move our company to a different city without having to move our phone system. EVOX also provides us with some customer service capabilities and a good admin tool.”</p>
+			  		<span>- goshop CEO -</span>
+			  	</div>
+		  	</div>
+	  	<!-- </div> -->
+  	</div>
+  	<div class="carousel-cell">
+  		<!-- <div> -->
+  			<img class="customer-feedback-img carousel-image lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/uspace-image.jpg" sizes="(min-width: 1024px) 720px, 360px" src="" alt="uspace">
+  		<!-- </div> -->
+  		<!-- <div class="flex-center"> -->
+  			<div class="setH" style="display: flex;align-items: center;float: left;">
+		  		<div class="customer-feedback-box"><p>
+		  			“We were worried we had to change our phone number if we switched to a new phone system. That would have created problems like having to print new business cards etc. Turns out EVOX allows us to keep our number. Now we can answer customer calls with our mobile app and not worry about missing calls.”
+		  		</p>
+			  		<span>- USPACE CEO -</span>
+			  		<a class="gray-outline-btn" style="margin-left: 19px; " href="https://blog.evoxglobal.com/en/testimonial/uspace">Their story</a>
+			  	</div>
+		  	</div>
+	  	<!-- </div> -->
+  	</div>
+
+
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+// 1st carousel, main
+$('.carousel-main').flickity({
+  wrapAround: true,
+  setGallerySize: false
+});
+// 2nd carousel, navigation
+$('.carousel-nav').flickity({
+  asNavFor: $('.carousel-main')[0]
+  asNavFor: document.querySelector('.carousel-main'),
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false
+});
+</script>

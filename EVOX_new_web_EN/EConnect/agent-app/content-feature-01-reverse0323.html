@@ -1,0 +1,437 @@
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/highlight.pack.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/examples.js"></script>
+	
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/gsap/gsap.min.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/ScrollMagic.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/plugin/animation.gsap.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/plugin/debug.addIndicators.js"></script>
+	<!-- 自動輪播 -->
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.ECA-fix-width{
+		width: 50%;
+	}
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	 .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	 .guide-box>h2{
+	 	margin: 0;
+	 }
+
+	.non-img{
+		display: none;
+
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	/*color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);*/
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+    .section-icon{
+    	width: 80px;
+    }
+</style>
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom:40px;
+  align-items: center;
+}
+
+.carousel {
+  background: #fff;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  overflow-y: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav .carousel-cell {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+  -moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+  -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+  box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+	.carousel-cell{
+		height: 60vh;
+	}
+	.carousel-nav {
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav{
+		margin-left: 0px;
+	}
+	.carousel-cell{
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell{
+		height: 40vh;
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell{
+		height: 30vh;
+	}
+}
+
+</style>
+<!-- 標題 -->
+<div class="guide-block">
+	<div class="guide-box">
+		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/customer-icon.png" alt="瞭解客戶"> -->
+		<!-- <img class="section-icon" src="https://img.icons8.com/nolan/96/user.png"/ alt="瞭解客戶"> -->
+		<img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/icon/customer-2.png"/ alt="瞭解客戶">
+		<h2>Know your caller instantly</h2>
+		<p>Centrally accessible contact, purchase, and call history means personalized agent service and timely customer contact resolution.
+			<!-- <a href="#"> <span class="purple-text">了解更多</span></a> -->
+		</p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1 client-direct feature-content-size collect-content">
+
+<div class="carousel-container">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse ">
+		<div class="carousel carousel-main">
+		  	<div class="carousel-cell">
+		  		<div class="spacer s2"></div>
+					<div class="spacer s0" id="trigger"></div>
+					<div class="spacer s0" id="trigger2"></div>
+		  		<img id="myimg" class="tabContent " src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all02.png" alt="customer profile">
+		  		<div class="spacer s2"></div>
+		  	</div>
+			<div class="carousel-cell">
+				<img id="myimg-2" class="tabContent" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity01.png" alt="call log history">
+			</div>
+			<div class="carousel-cell">
+				<img id="myimg-3" class="tabContent " src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/included-other-info-3.jpg" alt="record other info">
+			</div>
+			<div class="carousel-cell">
+				<img id="myimg-4" class="tabContent " src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/share-info-4-EN.jpg" alt="share-info">
+			</div>
+		</div>
+		<script>
+			// 第一段
+			// define images
+							var images = [
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all02.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all03.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all04.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all05.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all06.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all07.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all08.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all09.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all10.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all11.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all12.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all13.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all14.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/contact-view/10s/view%20all15.png",
+								
+							];
+
+							// TweenMax can tween any property of any object. We use this object to cycle through the array
+							var obj = {curImg: 0};
+
+							// create tween
+							var tween = TweenMax.to(obj, 4,
+								{
+									curImg: images.length - 1,	// animate propery curImg to number of images
+									roundProps: "curImg",				// only integers so it can be used as an array index
+									repeat: 0,									// repeat 3 times
+									immediateRender: true,			// load first image automatically
+									ease: Linear.easeNone,			// show every image the same ammount of time
+									onUpdate: function () {
+									  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+									}
+								}
+							);
+
+							// init controller
+							var controller = new ScrollMagic.Controller();
+
+							// build scene
+							var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration:0,offset:100})
+											.setTween(tween)
+											// .addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+
+
+							// handle form change
+							// $("form.move input[name=duration]:radio").change(function () {
+							// 	scene.duration($(this).val());
+							// });
+
+
+							// 底二段
+							// define images
+							var images2 = [
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity01.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity02.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity03.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity04.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity05.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity06.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity07.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity08.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity09.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity10.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity11.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity12.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity13.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity14.png",
+								"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity15.png"
+								
+							];
+
+							// TweenMax can tween any property of any object. We use this object to cycle through the array
+							var obj2 = {curImg2: 0};
+
+							// create tween
+							var tween2 = TweenMax.to(obj2, 4,
+								{
+									curImg2: images2.length - 1,	// animate propery curImg to number of images
+									roundProps: "curImg2",				// only integers so it can be used as an array index
+									repeat: 0,									// repeat 3 times
+									immediateRender: true,			// load first image automatically
+									ease: Linear.easeNone,			// show every image the same ammount of time
+									onUpdate: function () {
+									  $("#myimg-2").attr("src", images2[obj2.curImg2]); // set the image source
+									}
+								}
+							);
+							// init controller
+							var controller2 = new ScrollMagic.Controller();
+
+			
+		</script>
+		<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/tracking.js"></script>
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width flex-order-change">
+		<div class="content-section-1-content-reverse">
+			<!-- 選單 -->
+			<div class=" carousel-nav">
+				<div id="custmoerinfo" class="carousel-cell is-nav-selected info-button"><i class="fas fa-check purple-text"></i> <div>Customer profile and relationship information</div></div>
+				<div id="notelog" class="carousel-cell info-button"><i class="fas fa-check purple-text"></i> <div>Call log history and notes</div></div>
+				<div id="smaeplace" class="carousel-cell info-button"><i class="fas fa-check purple-text"></i> <div>Email and other customer communications in one place</div></div>
+				<div id="shareinfo" class="carousel-cell info-button"><i class="fas fa-check purple-text"></i> <div>Collaborate with team members by sharing customer info and history</div></div>
+					
+					
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script>
+
+// flickity 垂直輪播	
+// external js: flickity.pkgd.js
+
+var $carousel = $('.carousel').flickity(
+{
+  autoPlay: 3000,
+  pageDots: false,
+  prevNextButtons: false,
+  draggable: false,
+}
+);
+
+var $carouselNav = $('.carousel-nav');
+var $carouselNavCells = $carouselNav.find('.carousel-cell');
+
+$carouselNav.on( 'click', '.carousel-cell', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel.flickity( 'select', index );
+});
+
+var flkty = $carousel.data('flickity');
+var navTop  = $carouselNav.position().top;
+var navCellHeight = $carouselNavCells.height();
+var navHeight = $carouselNav.height();
+
+$carousel.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected = $carouselNavCells.eq( flkty.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav
+  var scrollY = $selected.position().top +
+    $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
+  $carouselNav.animate({
+    scrollTop: scrollY
+  });
+});
+
+// select main on nav hover
+$carouselNav.on( 'mouseover', '.carousel-cell', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel.flickity( 'pausePlayer');
+});
+$carouselNav.on( 'mouseout', '.carousel-cell', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel.flickity( 'unpausePlayer');
+});
+
+
+
+// 切換圖片按鈕
+					$("#custmoerinfo").click(function(){
+				  		// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration:0,offset:100})
+											.setTween(tween)
+											// .addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+				  		scene2.remove();
+
+					})
+					$("#notelog").click(function(){
+							// build scene
+							var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration:0,offset:100})
+											.setTween(tween2)
+											// .addIndicators() // add indicators (requires plugin)
+											.addTo(controller2);
+							scene.remove();
+
+							// handle form change
+							// $("form.move input[name=duration]:radio").change(function () {
+							// 	scene.duration($(this).val());
+							// });
+					})
+					$("#smaeplace").click(function(){
+				  		scene.remove();
+				  		scene2.remove();
+					})
+					$("#shareinfo").click(function(){
+				  		scene.remove();
+				  		scene2.remove();
+					})
+
+</script>
+<!-- </div> -->
+
+</div>

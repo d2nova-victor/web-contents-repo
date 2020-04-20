@@ -1,0 +1,646 @@
+<style type="text/css">
+    .table-text{
+        padding-top: 20px;
+        width: 49%;
+    }
+    .table-text-2 {
+        float: left;
+        width: 50%;
+        /*padding-top: 0px;*/
+    }
+    .table-text > button > img{
+
+        padding-left: 7px;
+    }
+    .table-image-2 {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 50%;
+        /*float: right*/
+    }
+    .flex-img{
+        margin-top: 80px!important;
+    }
+    .table-tittle{
+            margin-left: 50%;
+    }
+    .table-image {
+        width: 50%;
+    }
+    .myheader {
+        position: relative;
+    }
+    
+    .myheader-a {
+        position: fixed;
+        background-color: #fff;
+        z-index: 1;
+        width: 100%;
+        height: 90px;
+        top: 127px;
+        left: 0;
+        -moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    #myheader-replace{
+      height:0px;
+    }
+    .myheader-replace-a{
+      width:100%;
+      padding-top:110px;
+    }
+    .advance-fun-box{
+        margin: 10px 0px 0px 0px;
+        display:flow-root;
+    }
+    .fix-height-image{
+        min-height: 500px;
+    }
+    /*.advance-fun-box img{
+        width: 50%;
+        float:left;
+    }*/
+    /*個人設定tab選單*/
+    button.accordion, button.accordion-1{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+    
+    button.accordion.active,
+    button.accordion:hover,
+    button.accordion-1.active,
+    button.accordion-1:hover {
+        background-color: #93c45d!important;
+        color:#fff!important;
+    }
+    
+    button.accordion:after,
+    button.accordion-1:after {
+        content: '\002B';
+        color: #93c45d;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    button.accordion.active:after,
+    button.accordion-1.active:after {
+        content: "\2212";
+        color:#fff;
+    }
+    
+    div.panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    .panel h2{
+        margin: 10px 0px;
+    }
+    /*個人設定tab選單-end*/
+    
+    @media screen and (max-width: 904px) {
+        .myheader-a {
+            top: 65px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .table-evox {
+            /*display: grid;*/
+        }
+        .table-text {
+            /*padding-top: 40px;*/
+            width: 100%!important;
+            /*text-align: center;*/
+        }
+        .table-text-2 {
+            width: 100%;
+            text-align: center;
+        }
+        .table-image-2 {
+            width: 100%;
+        }
+        .table-tittle{
+            margin-left: 0%;
+        }
+        .flex-img{
+            margin-top: 20px!important;
+        }
+        .fix-height-image{
+            min-height: 200px;
+        }
+        .tabcontent{
+            padding: 0px 12px;
+            min-height: 160px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .table-text{
+            padding-top: 20px!important;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .features-icon {
+            min-width: 18px!important;
+        }
+        .tab button{
+            font-size: 13px;
+        }
+        .tab button.active{
+            font-size: 13px;
+        }
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- 選單畫到下面移開 -->
+<script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {
+        scrollFunction()
+    };
+    // var element = document.getElementById("myheader");
+    var s = document.body.clientHeight;
+    function scrollFunction() {
+        if (document.body.scrollTop > s || document.documentElement.scrollTop > s) {
+            // document.getElementById("myheader").style.position = "fixed";
+            document.getElementById("myheader").classList.add("myheader-a");
+            document.getElementById("myheader-replace").classList.add("myheader-replace-a");
+        } else {
+            document.getElementById("myheader").classList.remove("myheader-a");
+            document.getElementById("myheader-replace").classList.remove("myheader-replace-a");
+            // document.getElementById("myheader").style.position = "relative";
+        }
+    }
+</script>
+<!-- 選單動畫 -->
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<!-- 選單 -->
+<div id="myheader-replace"></div>
+<div class="features-icon-wrapper" id="myheader">
+    <div class="features-icon">
+        <p style="text-align:center;">
+            <a href="#section1">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path class="st0" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z M19.2,18c-0.1,1.1-0.3,1.4-1.3,1.3
+        c-3.6-0.3-7.1-3.8-7.1-7.4c0-0.5-0.1-0.9,0.7-1.1c0.5-0.1,1.6-0.5,1.9,0.7c0.2,0.9,0.4,1.7-0.4,2.6c-0.8,0.9,0.3,1.9,0.8,2.4
+        S15.1,18,16,17c0.9-0.9,1.9-0.5,2.8-0.4C19.5,16.9,19.3,17.5,19.2,18z" />
+                    </g>
+                </svg>
+                <br>Call</a>
+        </p>
+    </div>
+    <div class="features-icon">
+        <p style="text-align:center;">
+            <a href="#section2">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38.9 30.1" style="enable-background:new 0 0 38.9 30.1;" xml:space="preserve">
+                    <g id="Rvo4b3_1_">
+                        <g>
+                            <path class="st0" d="M38.9,2.9c0,1,0,25.9,0,26.4s-2.3-0.2-3.4-0.7c-2.2-0.8-4.3-1.2-6.4-1.2c-2.9,0-6.3,1-9.1,2.5
+            c-1,0.4-2.2-0.1-2.9-0.7c-0.7-0.5-3.5-1.6-6.2-1.8s-5.3,0.4-7.8,1.4c-1,0.4-3.1,1.8-3.1,0.1C0,28,0,4.5,0,3.3
+            c0-1.1,2.3-2.6,3.7-3.1c2.1-0.5,8.6-0.3,12.2,1.5c1.3,0.7,2.3,0.7,4.2,0c3.6-1.5,10.8-2,12.5-1.7C34.3,0.5,38.9,2,38.9,2.9z
+             M19.5,16.4c0,2.8,0,5.6,0,8.4c0,0.9,0,1.4,1.2,0.8c4-1.8,8.1-2.6,12.5-1.5c1.9,0.4,2,0.4,2-1.6c0-5.2,0-10.4,0-15.6
+            c0-1.5-0.5-2.4-2.1-2.6C29,3.6,25,4.1,21.1,5.7c-1.2,0.5-1.8,1.1-1.7,2.4C19.6,10.9,19.5,13.6,19.5,16.4z" />
+                        </g>
+                    </g>
+                </svg>
+                <br>Address book</a>
+        </p>
+    </div>
+    <div class="features-icon">
+        <p style="text-align:center;">
+            <a href="#section3">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path class="st0" d="M21.2,18.4c-1.3-0.8-2.6-1.6-4-2.3c-1-0.5-1.4-1.2-1.4-2.3c0-1.6,0-3.2,0-4.9c0-0.9-0.3-1.5-1.3-1.4
+        c-0.8,0-1.1,0.5-1.1,1.2c0,2.2,0,4.4,0,6.6c0,0.8,0.4,1.5,1.1,1.9c1.8,1.1,3.6,2.1,5.5,3.2c0.7,0.4,1.4,0.6,1.9-0.3
+        C22.3,19.4,22,18.8,21.2,18.4z" />
+                        <path class="st0" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z M15.1,26.7c-6.5,0-11.8-5.3-11.8-11.8
+        S8.6,3.1,15.1,3.1s11.7,5.3,11.7,11.8S21.6,26.7,15.1,26.7z" />
+                    </g>
+                </svg>
+                <br>Call history</a>
+        </p>
+    </div>
+    <div class="features-icon">
+        <p style="text-align:center;">
+            <a href="#section4">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <path class="st0" d="M27.9,0C27,0,10.6,0,1.7,0C0.9,0,0,1,0,1.8c0,8.9,0,17.1,0,26.1c0,1.5,0,2.2,0,2.2s0.1-0.1,1.1-1.2
+    c2.2-2.3,2-2.2,3.2-3.3c0.8-0.7,1.9-0.9,3-0.9c6,0,13.5-0.1,19.4,0c2.1,0,3.2-0.3,3.2-2c0.1-0.9,0-18.9,0-20.4C30,0.8,28.7,0,27.9,0
+    z M9.1,13.7c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4c0.8,0,1.4,0.6,1.4,1.4C10.5,13,9.9,13.7,9.1,13.7z M15,13.7
+    c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4C16.4,13,15.8,13.7,15,13.7z M20.7,13.7c-0.8,0-1.4-0.6-1.4-1.4
+    c0-0.8,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4C22.1,13,21.5,13.7,20.7,13.7z" />
+                </svg>
+                <br>Messages</a>
+        </p>
+    </div>
+    <div class="features-icon">
+        <p style="text-align:center;">
+            <a href="#section5">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                    <g>
+                        <path class="st0" d="M26.6,26.3c-0.1,0-0.3-0.1-0.5-0.2c-1.1-0.5-2.3-0.9-3.4-1.4c-0.2-0.1-0.3,0-0.4,0.1c-0.7,0.5-1.4,1-2.2,1.3
+        c-0.1,0.1-0.2,0.2-0.2,0.3c-0.2,1.3-0.4,2.6-0.6,3.9c-0.1,0.5-0.4,0.7-0.8,0.7c-2,0-4,0-6.1,0c-0.5,0-0.8-0.3-0.8-0.8
+        c-0.1-0.8-0.2-1.7-0.3-2.5c-0.1-0.5-0.1-0.9-0.2-1.3c0-0.2-0.1-0.3-0.3-0.3c-0.8-0.4-1.6-0.8-2.3-1.3c-0.1-0.1-0.2-0.1-0.3,0
+        c-1.2,0.5-2.4,1-3.6,1.5c-0.5,0.2-0.8,0.1-1.1-0.4c-1-1.7-2-3.5-3-5.2c-0.2-0.4-0.1-0.9,0.2-1.1c0.8-0.7,1.7-1.3,2.5-2
+        c0.2-0.1,0.4-0.3,0.5-0.4c0.1-0.1,0.1-0.2,0.1-0.3c-0.1-0.4-0.1-0.8-0.1-1.3c0-0.4,0-0.7,0-1c0-0.1,0-0.3,0-0.4
+        c0-0.1,0-0.2-0.1-0.3c-0.7-0.6-1.4-1.1-2.2-1.7c-0.3-0.3-0.6-0.5-0.9-0.8c-0.4-0.3-0.4-0.7-0.2-1.1C0.8,9.5,1.2,8.7,1.6,8
+        c0.6-1,1.1-2,1.7-2.9c0.2-0.4,0.6-0.6,1-0.4c1.2,0.5,2.4,1,3.6,1.5c0.1,0.1,0.2,0,0.4,0c0.7-0.5,1.5-1,2.3-1.3
+        c0.1,0,0.1-0.1,0.2-0.2c0.1-0.9,0.3-1.8,0.4-2.8c0.1-0.4,0.1-0.8,0.2-1.2C11.5,0.3,11.8,0,12.2,0c0.4,0,0.8,0,1.3,0
+        c1.6,0,3.2,0,4.8,0c0.3,0,0.5,0.1,0.7,0.3c0.1,0.1,0.2,0.3,0.2,0.5c0.1,0.7,0.2,1.4,0.3,2s0.2,1.2,0.2,1.8c0,0.1,0.1,0.2,0.2,0.3
+        c0.8,0.4,1.6,0.8,2.3,1.3c0.1,0.1,0.2,0.1,0.3,0c1.2-0.5,2.4-1,3.6-1.5c0.4-0.2,0.8-0.1,1,0.4c0.8,1.4,1.6,2.8,2.4,4.2
+        c0.2,0.3,0.4,0.7,0.6,1c0.2,0.4,0.1,0.8-0.2,1.1c-1,0.8-2,1.6-3.1,2.4c-0.1,0.1-0.1,0.3-0.1,0.4c0.1,0.7,0.1,1.3,0.1,2
+        c0,0.2,0,0.4-0.1,0.7c0,0.1,0,0.2,0.1,0.2c0.8,0.7,1.7,1.3,2.5,2c0.2,0.2,0.5,0.3,0.7,0.6s0.2,0.6,0.1,0.9
+        c-0.3,0.5-0.6,1.1-0.9,1.6c-0.7,1.2-1.4,2.5-2.1,3.7C27.2,26.1,27,26.3,26.6,26.3z M15.6,10.1c-2.9,0-5.4,2.4-5.4,5.2
+        c-0.1,3.1,2.4,5.6,5.4,5.6s5.4-2.4,5.4-5.4C21,12.5,18.5,10,15.6,10.1z" />
+                    </g>
+                </svg>
+                <br>Settings</a>
+        </p>
+    </div>
+</div>
+<!-- 第一段 -->
+<a name="dial" class="anchor"></a>
+<!-- <div class="table-text" >
+    </div> -->
+<div class="table-evox-wrapper" id="section1" style="margin-bottom: 0px;">
+    <div class="table-evox" style="padding-top:0px;">
+        <!-- 測試 -->
+        <div class="table-text">
+             <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#93c45d;text-align:left;">Call<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/feature-call.png" height="30px" alt="contact list"></h2>
+            <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#000;text-align:left;">Basic calling features</h2>
+            <button class="accordion-1">Making and receiving calls <img src="/s/evox_call.svg" height="30px" alt="dial"></button>
+            <div class="panel">
+                <!-- <h2>Making and receiving calls
+                        
+                    </h2> -->
+                <p>Make and receive calls to and from over 35 countries.</p>
+            </div>
+            <button class="accordion-1">Call transfer <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/transfer-icon.png" height="40px" alt="call transfer"></button>
+            <div class="panel">
+                <!-- <h2>Call transfer 
+                        <img src="/s/evox_calltransfer.svg" height="30px" alt="call transfer">
+                        
+                    </h2> -->
+                <p>Transfer calls to a different extension within your business or outside the company.</p>
+            </div>
+            <button class="accordion-1">Hold calls <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/call-hold-icon.png" height="40px" alt="call holding"></button>
+            <div class="panel">
+               <!--  <h2 class="hover">Hold calls 
+                        <img src="/s/evox_callhold.svg" height="30px" alt="call holding">
+                        
+                    </h2> -->
+                <p>Put a call on hold so you can make or receive a second call, transfer the call, add a caller, or resume later. </p>
+            </div>
+            <script>
+        // W3C's JS Code
+        var bcc = document.getElementsByClassName("accordion-1");
+        var i;
+
+        // Open the first accordion
+        var firstAccordion = bcc[0];
+        var firstPanel = firstAccordion.nextElementSibling;
+        firstAccordion.classList.add("active");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+        // Add onclick listener to every accordion element
+        for (i = 0; i < bcc.length; i++) {
+            bcc[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive = this.classList.contains("active");
+
+                // Close all accordions
+                var allAccordions = document.getElementsByClassName("accordion-1");
+                for (j = 0; j < allAccordions.length; j++) {
+                    // Remove active class from section header
+                    allAccordions[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel = allAccordions[j].nextElementSibling;
+                    var maxHeightValue = getStyle(panel, "maxHeight");
+
+                    if (maxHeightValue !== "0px") {
+                        panel.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel = this.nextElementSibling;
+                var maxHeightValue = getStyle(panel, "maxHeight");
+
+                if (maxHeightValue !== "0px") {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+    </script>
+        </div>
+        <div class="table-image-2" style="margin-top: 60px;"><img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/mobile-image01.jpg" width="100%" alt="make inbound and outbound calls"></div>
+    </div>
+</div>
+
+
+
+<!-- <div class="table-text">
+</div> -->
+<div class="table-evox-wrapper" style="margin-bottom: 0px;">
+    <div class="table-evox" style="padding-top:0px;">
+        <div class="table-text" style="width: 100%">
+            <h2 class="table-tittle" style="font-size:1.5em;line-height:1em;font-weight:bold;color:#000;text-align: left;width: 50%;">Advanced calling features</h2>
+            <div class="advance-fun-box" >
+                <img class="table-image-2" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/call-magre-image.png" width="100%" alt="make inbound and outbound calls">
+                <div class="table-text" style="margin-bottom: 40px;">
+                    <h2>Pick up call</h2>
+                    <p>When the pick up function is enabled, you will get a notification whenever one of your colleagues gets a call, and you can pick up the call for him or her. You can enable and disable pick up mode at any time on the settings page.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="advance-fun-box">
+                <img class="table-image-2" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/call-add-image.png" width="100%" alt="make inbound and outbound calls">
+                <div class="table-text">
+                    <h2>Add call 
+                        <!-- <img src="/s/evox_3way.svg" height="30px" alt="add people to call"> -->
+                        <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/add-call-icon.png" height="40px" alt="add people to call">
+                    </h2>
+                    <p id="outsidelanding-2">You can initiate a second call, keep them separate, or join them together later.</p>
+                </div>
+                
+            </div>
+            <div class="advance-fun-box">
+                <img class="table-image-2" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/threeway-call-image.png" width="100%" alt="make inbound and outbound calls">
+                <div class="table-text">
+                <h2>3-way call 
+                    <!-- <img src="/s/evox_3way.svg" height="30px" alt="3 way call"> -->
+                    <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/merge-icon.png" height="40px" alt="3 way call">
+                </h2>
+                <p>3-way calling allows you to talk to two people at once.</p>
+                </div>
+                
+            </div>
+        </div>
+        <!-- <div class="table-image"><img src="/s/features_3way.png" width="100%" alt="make inbound and outbound calls"></div> -->
+    </div>
+</div>
+
+<!-- 第二段 -->
+<div class="table-evox-wrapper" style="margin-bottom: 0px;">
+    <a name="addressbook" class="anchor"></a>
+    <div class="table-evox">
+
+        <div class="table-text" id="section2">
+            <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#93c45d;text-align:left;">Address book  <img src="/s/evox_contacts.svg" height="30px" alt="contact list"></h2>
+            <p id="outsidelanding-3">People in your team can conveniently reach out to each other since your team's contact information is in one place. Additionally, you can sync your phone contacts with EVOX anytime to keep your contacts organized.</p>
+        </div>
+        <div class="table-image-2" style="position: relative;top: 7px;">
+            <center>
+                <img height="90%" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/contact-image.png" style="margin:auto;" width="90%" alt="add extensions">
+            </center>
+        </div>
+    </div>
+    <a name="callhistory" class="anchor"></a>
+    <div class="table-evox">
+
+        <div class="table-text" id="section3">
+            <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#93c45d;text-align:left;">Call history <img style="vertical-align: bottom;" src="/s/evox_callhistory.svg" height="30px" alt="call history"></h2>
+            <p id="outsidelanding-4">You can view all call activities including inbound, outbound, and missed calls. When you have a missed call, the call history icon will display a green dot.
+            </p>
+        </div>
+        <div class="table-image-2"  style="position: relative;top: 7px;">
+            <center>
+                <img height="90%" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/call-history-image.png" style="margin:auto;" width="90%" alt="view call history">
+            </center>
+        </div>
+
+    </div>
+    <a name="messages" class="anchor"></a>
+    <div class="table-evox">
+
+        <div class="table-text" id="section4">
+            <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#93c45d;text-align:left;">Messages  <img src="/s/evox_messages.svg" height="30px" alt="messages"></h2>
+
+            <p id="outsidelanding-5">View system notices and view, manage, and listen to voicemails. If your messages inbox is full, additional messages will be sent as audio files to your email. You can customize your personal greeting from the Settings page.</p>
+        </div>
+        <div class="table-image-2"  style="position: relative;top: 7px;">
+            <center>
+                <img height="90%" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/voicemessage-image.png" style="margin:auto;" width="90%" alt="view voicemail">
+            </center>
+        </div>
+
+    </div>
+</div>
+
+<!-- 第三段 -->
+
+<a name="settings" class="anchor"></a>
+<!-- <div class="table-text" >
+   </div> -->
+<div class="table-evox-wrapper" style="margin-bottom: 0px;">
+    <!-- <div class="table-evox" style="margin-bottom: 0px;"> -->
+<div class="table-text">
+    <h2 id="section5" style="padding-top: 20px;font-size:1.5em;line-height:1em;font-weight:bold;color:#93c45d;text-align:left;">Customize your app <img src="/s/settings.svg" height="22px" alt="settings"></h2>
+    <button class="accordion">Availability</button>
+    <div class="panel">
+        <!-- <h2>Availability
+                    <img src="/s/switch.png" height="30px" alt="switch phone settings">
+                </h2> -->
+        <p>If you're at home or too busy for calls, you can switch off your availability setting so your phone will not ring. Callers are automatically forwarded to your voice mail.</p>
+    </div>
+
+    <button class="accordion">Pickup for others </button>
+    <div class="panel">
+        <!-- <h2>Pickup 
+                    <img src="/s/switch.png" height="30px" alt="switch phone settings">
+                </h2> -->
+        <p>Enable and disable pick up mode, which allows you to pick up calls for others in your company.</p>
+    </div>
+    
+
+    <button class="accordion">Profile settings<img src="/s/profilepicture.svg" height="30px" alt="switch phone settings"></button>
+    <div class="panel">
+        <!-- <h2>Profile settings </h2> -->
+        <p>You can change their profile picture and other details shown to company members. Profile settings are only visible to your coworkers.</p>
+    </div>
+    <button class="accordion">Personal voicemail greeting<img src="/s/evox_voicemail.svg" height="30px" alt="messages"></button>
+    <div class="panel">
+        <!-- <h2>Voicemail settings </h2> -->
+        <p>You can set your personal greeting by recording your voice or by entering text.</p>
+    </div>
+    <button class="accordion">Call Forward</button>
+    <div class="panel">
+       <!--  <h2>Call Forward
+                    <img src="/s/switch.png" height="30px" alt="switch phone settings">
+                </h2> -->
+        <p>You can adjust call forwarding behavior at any time to transfer incoming calls to a specific extension or phone number or to the Auto-attendant when you are busy. You can also specify to never forward calls.</p>
+    </div>
+    <button class="accordion">Sound test</button>
+    <div class="panel">
+        <!-- <h2>Sound test</h2> -->
+        <p><b style="color:#d24a17;">Only for mobile App function.</b>
+            <br/>The sound test can test your app and your connection by recording your voice on the EVOX cloud and playing it back.</p>
+    </div>
+    
+</div>
+    <script>
+        // W3C's JS Code
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        // Open the first accordion
+        var firstAccordion = acc[0];
+        var firstPanel = firstAccordion.nextElementSibling;
+        firstAccordion.classList.add("active");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+        // Add onclick listener to every accordion element
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive = this.classList.contains("active");
+
+                // Close all accordions
+                var allAccordions = document.getElementsByClassName("accordion");
+                for (j = 0; j < allAccordions.length; j++) {
+                    // Remove active class from section header
+                    allAccordions[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel = allAccordions[j].nextElementSibling;
+                    var maxHeightValue = getStyle(panel, "maxHeight");
+
+                    if (maxHeightValue !== "0px") {
+                        panel.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel = this.nextElementSibling;
+                var maxHeightValue = getStyle(panel, "maxHeight");
+
+                if (maxHeightValue !== "0px") {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+    </script>
+
+        <div class="table-image-2 fix-height-image">
+            <center>
+                <img class="flex-img" height="90%" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/Mobile-app/settings-image.png" style="margin:auto;" width="90%" alt="evox settings">
+                <!--  <img height="90%" src="/s/features_settings_tw.png" style="margin:auto;" width="90%" alt="evox settings"> -->
+            </center>
+        </div>
+    <a name="messages" class="anchor"></a>
+</div>

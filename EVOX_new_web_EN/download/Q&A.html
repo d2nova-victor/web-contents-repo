@@ -1,0 +1,352 @@
+<style type="text/css">
+    /*修改原檔*/
+    div.table-evox-wrapper{
+        margin-bottom: 0px;
+        margin-top: 80px;
+    }
+    div.table-evox{
+        display: block;
+        border-bottom: solid 0px #f1f4f5;
+    }
+    div.table-text{
+        display: block;
+        width:60%;
+        padding:0px;
+        max-width: 1240px;
+        margin: 0 auto;
+        min-width: 680px;
+    }
+    .table-evox-wrapper{
+        background: #E8F5E9;
+        padding: 50px 0px;
+    }
+    .table-evox-wrapper>h2{
+        text-align: center;
+    }
+    .white-wrapper{
+        padding: 0px;
+        background: #fff;
+    }
+    .table-text{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .table-text-2 {
+        float: left;
+        width: 100%;
+        /*padding-top: 0px;*/
+    }
+    .table-text > button > img{
+
+        padding-left: 7px;
+    }
+    .table-image-2 {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 50%;
+        /*float: right*/
+    }
+    .flex-img{
+        margin-top: 80px!important;
+    }
+    .table-tittle{
+            margin-left: 50%;
+    }
+    .table-image {
+        width: 50%;
+    }
+    .myheader {
+        position: relative;
+    }
+    
+    .myheader-a {
+        position: fixed;
+        background-color: #fff;
+        z-index: 9999;
+        width: 100%;
+        height: 90px;
+        top: 89px;
+        left: 0;
+        -moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    #myheader-replace{
+      height:0px;
+    }
+    .myheader-replace-a{
+      width:100%;
+      padding-top:110px;
+    }
+    .advance-fun-box{
+        margin: 10px 0px 0px 0px;
+        display:flow-root;
+    }
+    .fix-height-image{
+        min-height: 500px;
+    }
+    /*.advance-fun-box img{
+        width: 50%;
+        float:left;
+    }*/
+    /*個人設定tab選單*/
+    button.accordion, button.accordion-1{
+        background-color: #fff;
+        color: #444;
+        cursor: pointer;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        transition: 0.4s;
+        border: 1px solid #fafafafa;
+        margin: 20px 0 0 0;
+        line-height: 22px;
+        border: 1px solid #cacaca;
+        border-bottom: 0px;
+        border-radius: 4px 4px 0px 0px;
+    }
+    /*button.accordion-1.active>div.panel{
+        margin-bottom: 10px;
+    }*/
+    button.accordion.active,
+    button.accordion:hover,
+    button.accordion-1.active,
+    button.accordion-1:hover{
+        font-family: FontAwesome;
+        content: '\f054';
+        /*background-color: #66C547!important;*/
+        /*color:#fff!important;*/
+        /*border: 1px solid #66C547;*/
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    button.accordion.active, button.accordion-1.active{
+        border-bottom: 1px solid #fff;
+    }
+
+    button.accordion:before,
+    button.accordion-1:before {
+        font-family: FontAwesome;
+        content: '\f054';
+        color: #66C547;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+    }
+
+    button.accordion.active:before,
+    button.accordion-1.active:before {
+        content: "\f078";
+        color:#66C547;
+    }
+    button.accordion-1:hover:before,
+    button.accordion:hover:before{
+        /*color:#fff;*/
+    }
+     button.accordion:hover + div.panel,
+    button.accordion-1:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #66C547!important;*/
+    }
+     button.accordion.active:hover + div.panel,
+    button.accordion-1.active:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #fff!important;*/
+    }
+    div.panel {
+        color:#5F6871;
+        padding: 1px 36px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border: 1px solid #cacaca;
+        border-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+    }
+    div.panel>p{
+        margin: 0 0 20px 0;
+    }
+    .panel h2{
+        margin: 10px 0px;
+    }
+    /*個人設定tab選單-end*/
+    
+    @media screen and (max-width: 904px) {
+        .myheader-a {
+            top: 65px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .table-evox {
+            /*display: grid;*/
+            padding: 0 20px;
+        }
+        .table-text {
+            /*padding-top: 40px;*/
+            width: 100%!important;
+            /*text-align: center;*/
+        }
+        .table-text-2 {
+            width: 100%;
+            text-align: center;
+        }
+        .table-image-2 {
+            width: 100%;
+        }
+        .table-tittle{
+            margin-left: 0%;
+        }
+        .flex-img{
+            margin-top: 20px!important;
+        }
+        .fix-height-image{
+            min-height: 200px;
+        }
+        .tabcontent{
+            padding: 0px 12px;
+            min-height: 160px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        div.table-text{
+            min-width: 100%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .table-text{
+            padding-top: 20px!important;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .features-icon {
+            min-width: 18px!important;
+        }
+        .tab button{
+            font-size: 13px;
+        }
+        .tab button.active{
+            font-size: 13px;
+        }
+    }
+</style>
+<!-- 第一段 -->
+<a name="dial" class="anchor"></a>
+<!-- <div class="table-text" >
+    </div> -->
+<div class="table-evox-wrapper white-wrapper" id="section1" style="">
+    <h2>Common questions</h2>
+    <div class="table-evox" style="padding-top:0px;">
+        <!-- 測試 -->
+        <div class="table-text">
+            <!-- <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#000;text-align:left;">常見問題Ｑ＆Ａ</h2> -->
+            <button class="accordion-1">Do I need to apply to D2 to get mobile app or PC app?</button>
+            <div class="panel">
+                <!-- <h2>Making and receiving calls
+                        
+                    </h2> -->
+                <p>Yes, our system will verify if you already have EVOX account to continue the download process.</p>
+            </div>
+            <button class="accordion-1">Can I have both mobile app and PC app for same extension?</button>
+            <div class="panel">
+                <!-- <h2>Call transfer 
+                        <img src="/s/evox_calltransfer.svg" height="30px" alt="call transfer">
+                        
+                    </h2> -->
+                <p>Yes, company admin can assign multiple devices to the same extension in Admin Center.</p>
+            </div>
+            <button class="accordion-1">How do customers add PC app or mobile app for a user? </button>
+            <div class="panel">
+               <!--  <h2 class="hover">Hold calls 
+                        <img src="/s/evox_callhold.svg" height="30px" alt="call holding">
+                        
+                    </h2> -->
+                <p>EVOX PC/Mac App can be downloaded via an email link provided to you by EVOX after you are enrolled by your company Admin as a PC app subscriber.</p>
+            </div>
+            
+            <script>
+        // W3C's JS Code
+        var bcc = document.getElementsByClassName("accordion-1");
+        var i;
+
+        // Open the first accordion
+        var firstAccordion = bcc[0];
+        var firstPanel = firstAccordion.nextElementSibling;
+        firstAccordion.classList.add("active");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+        // Add onclick listener to every accordion element
+        for (i = 0; i < bcc.length; i++) {
+            bcc[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive = this.classList.contains("active");
+
+                // Close all accordions
+                var allAccordions = document.getElementsByClassName("accordion-1");
+                for (j = 0; j < allAccordions.length; j++) {
+                    // Remove active class from section header
+                    allAccordions[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel = allAccordions[j].nextElementSibling;
+                    var maxHeightValue = getStyle(panel, "maxHeight");
+
+                    if (maxHeightValue !== "0px") {
+                        panel.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel = this.nextElementSibling;
+                var maxHeightValue = getStyle(panel, "maxHeight");
+
+                if (maxHeightValue !== "0px") {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+    </script>
+        </div>
+    </div>
+</div>
