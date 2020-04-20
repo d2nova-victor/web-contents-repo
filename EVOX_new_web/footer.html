@@ -1,0 +1,310 @@
+<style>
+	/*for zendesk*/
+	.footer a, .footer{
+		background: #243237!important;
+	    display: table;
+	    width: 100%;
+	}
+	.footer-top{
+		max-width: 1240px;
+    	margin: 0 auto;
+	}
+
+	/*修改原來的css*/
+	.back-to-top{
+		display: none!important;
+	}
+	#preFooter{
+		display: none!important;
+	}
+	div.col.sqs-col-12.span-12{
+		padding-top: 0px;
+    	padding-bottom: 0px;
+	}
+
+	/*新的css*/
+	.footer-top{
+		height: 50px;
+		margin: 40px 0;
+	}
+	.sesstion_box{
+		min-width:135px;
+		float: left;
+		list-style:none;
+		/*display: grid;*/
+		/*display: grid-template-columns;*/
+		line-height: 1.8em;
+		padding-left: 10px;
+	}
+	.sesstion_box > div{
+		font-size: 15px;
+		text-align: left;
+		float: left;
+		margin: 5px 0;
+		float: none;
+		font-weight: 600;
+		color:#fff;
+		transform: opacity .3s;
+	}
+	.sesstion_box > div:hover{
+		opacity: .8;
+	}
+	.sesstion_box >li >a > div{
+		font-size: 15px;
+		text-align: left;
+		float: left;
+		margin: 5px 0;
+		float: none;
+		font-weight: 600;
+		color:#fff;
+		transform: opacity .3s;
+	}
+	.sesstion_box >li >a > div:hover{
+		opacity: .8;
+	}
+	.sesstion_box > li{
+		/*float: left;*/
+		text-align:left;
+		margin: 5px 0;
+    	height: 24px;
+	}
+	.sesstion_box > li > a{
+		font-size: 13px;
+		text-align: left;
+		transform: opacity .3s;
+	}
+	.sesstion_box > li > a:hover{
+		opacity: .8;
+	}
+	.devices-icon{
+		margin-top:15px;
+	}
+	.devices-icon>a>img{
+		/*width:35px;*/
+		height: 40px;
+	}
+	
+
+	.logo{
+		width: 50%;
+		float: left;
+	}
+	.logo>img{
+		max-width:153px;
+		float: left;
+	}
+	.call{
+		width: 50%;
+		float: left;
+		height: 50px;
+		text-align: end;
+	}
+	.call>a{
+		display: block;
+	}
+	.call>a>img{
+		position: relative;
+    	top: 5px;
+
+	}
+	.call>a>p{
+		margin: 0px 3px;
+		line-height:25px;
+		color:#fff;
+		display: inline-block;
+		font-size: 18px;
+	}
+	.call>a>img{
+		margin: 0px 5px 0 5px;
+	}
+	@media screen and (max-width: 580px) {
+		.sesstion_box{
+			min-width:17%;
+		}
+	}
+	@media screen and (max-width: 490px) {
+		.sesstion_box{
+			min-width:39%;
+			padding:0 5%;
+		}
+		.return_blank{
+			display: none;
+		}
+		.sesstion_box > div{
+			/*border-bottom: 1px solid #dadada;*/
+    		/*padding-bottom: 11px;*/
+    		width: 18vh;
+		}
+		.colum-left{
+			float: left;
+			width: 50%;
+		}
+		.colum-right{
+			float: right;
+			width: 50%;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		/*.social-icon > a >img{
+			width:20px;
+		}*/
+		.logo{
+			width: 100%;
+		}
+		.call{
+			width: 100%;
+			text-align: start;
+		}
+	}
+
+</style>
+<!-- 語言 -->
+<script type="text/javascript">
+$(function() { 
+    $(".language").click(function(e) { 
+     var selectedLanguage = $(this).attr("data-language"); 
+
+     var currentContent = location.pathname.substring(
+      location.pathname.indexOf("/", 1) + 1, 
+      location.pathname.length 
+     ); 
+
+     console.log(selectedLanguage, " >> ", currentContent); 
+
+     // change URL to /en/content.html or /bn/content.html 
+     window.location.href = "/" + selectedLanguage + "/" + currentContent; 
+    }); 
+}); 
+</script>
+<div class="footer-top">
+	<div class="logo">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/logo-white.png" alt="EVOX-logo">
+	</div>
+	<div class="call"><a href="tel:+886-2-5568-6590"><img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/call-icon.png" alt="電話icon"><p>02-5568-6590</p></a></div>
+</div>
+
+<div class="colum-left">
+	<div class="sesstion_box ">
+		<div>產品</div>
+		<li><a href="/tw/evox/cloud-phone-system">EVOX 服務</a></li>
+		<li><a href="/tw/econnect/call-center">EConnect 服務</a></li>
+		<li><a href="/tw/evox/cloud-pbx/fax">傳真</a></li>
+		<li><a href="/tw/evox/multiple-devices/ip-phone">IP電話</a></li>
+		<li><a href="/headphones/jabra">商用耳機</a></li>
+	</div>
+	<div class="sesstion_box ">
+		<div>解決方案</div>
+		<li><a href="/tw/solutions/startup">新創公司</a></li>
+		<li><a href="/tw/solutions/local-presence">來台外商</a></li>
+		<li><a href="/tw/solutions/multiple-locations">多據點</a></li>
+		<li><a href="/tw/solutions/teleworking">遠距上班</a></li>
+		<li><a href="/tw/solutions/pbx-integration">PBX雲端化</a></li>
+	</div>
+	<div class="sesstion_box ">
+		<div>資源</div>
+		<li><a href="https://evoxsupport.zendesk.com/hc/zh-tw">客戶支援</a></li>
+		<li><a href="/tw/totorial-vide">教學影片</a></li>
+		<li><a href="https://blog.evoxglobal.com/tw">部落格</a></li>
+	</div>
+</div>
+<div class="colum-right">
+	<div class="sesstion_box ">
+	 	
+		<li><a href="/tw/pricing"><div>價格</div></a></li>
+		<li><a href="/tw/our-story"><div>關於我們</div></a></li>
+		<!-- <li><a href=""><h3>公司資訊</h3></a></li> -->
+	</div>
+	<div class="sesstion_box ">
+	 	<div>語言</div>
+		<li><a href="https://www.evoxglobal.com/">中文</a></li>
+		<li>
+			<!-- <a data-language="en" class="language" href="#">English</a> -->
+			<a href="/en/home">English</a>
+		</li>
+	</div>
+	<div class="sesstion_box ">
+	 	<div>EVOX  Apps</div>
+	 	<li class="devices-icon">
+	 		<a href="/tw/download">
+	 			<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/phone-icon.png" alt="行動裝置下載"  style="display:inline-block;margin-right:5px;">
+	 		</a>
+			<a href="/tw/download">
+				<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/pc-icon.png" alt="PC下載"  style="display:inline-block;margin-left:5px;margin-right:5px;">
+			</a>
+		</li>
+	</div>
+	<div>
+		
+	</div>
+</div>
+
+
+
+
+
+<style>
+  .company_inline{
+    /*display: flex;*/
+    float:right;
+    text-align: end;
+  }
+  .company_inline >a{
+    margin:0;
+    padding:0 2px;
+    display:block;
+    margin-left:20px;
+    float: left;
+    font-weight:300;
+    font-size:12px;
+    line-height:3em;
+  }
+  .footer-end{
+  	width: 100%;
+  	float: left;
+  	margin: 40px 0;
+  }
+  .social-icon{
+		/*margin-top:15px;*/
+		width: 50%;
+    	float: left;
+    	text-align: left;
+   }
+  .social-icon>a>img{
+  	height: 35px;
+  }
+  .social-icon>a:hover{
+  	opacity: .8;
+  }
+  @media screen and (max-width: 670px) {
+  	.company_inline{
+  		width: 100%;
+    	text-align: center;
+  	}
+  	.social-icon{
+		width: 100%;
+   }
+   .company_inline >a{
+   	margin-left: 0px;
+   	margin-right: 20px;
+   }
+  }
+</style>
+<div class="footer-end">
+	<div class="social-icon">
+		<a href="https://www.facebook.com/evoxglobal/">
+		 	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/fb-icon.png" alt="facebook"  style="display:inline-block;margin-right:5px;">
+		</a>
+		<a href="https://m.me/evoxglobal">
+			<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/message-icon.png" alt="message"  style="display:inline-block;margin-left:5px;margin-right:5px;">
+		</a>
+		<a href="https://www.youtube.com/channel/UCxZHSZ03BKSUsgJuv7_EiNg">
+			<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/youtube-icon.png" alt="youtube"  style="display:inline-block;margin-left:5px;">
+		</a>
+	</div>
+	<div class="company_inline"> 
+	<a href="/tw/privacy-and-terms" >隱私政策</a>
+	<a href="/tw/contact" >聯絡我們</a>
+	<a href="http://d2nova.com" >©2019 D2 NOVA. 版權所有</a>
+	</div>
+</div>
+

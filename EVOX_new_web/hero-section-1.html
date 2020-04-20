@@ -1,0 +1,91 @@
+<style type="text/css">
+	.hero-section-1{
+		max-width: 1440px;
+		/*float: left;*/
+		margin: 0px auto;
+		height: 400px;
+	}
+	.hero-section-content{
+		width: 28%;
+	    padding: 5% 8%;
+	    float: left;
+	    height: 256px;
+	}
+	.hero-section-content>h1{
+		font-size: 42px;
+		margin:  10px 0px;
+	}
+	.hero-section-content>p{
+		margin: 15px 0px;
+		font-size: 18px;
+	}
+	.green-btn{
+		display: block;
+		margin: 0 5px;
+		border-radius: 4px;
+		max-width: 200px;
+		max-height: 48px;
+		color: #fff;
+		background: #66C547;
+		text-align: center;
+		margin: 15px 0;
+		line-height: 2.2em;
+		border: 3px solid #66C547;
+	}
+	.green-btn:hover{
+		opacity: .8;
+		background: #00A82D;
+		border: 3px solid #00A82D;
+		transition: color .4s, background .4s;
+	}
+	.hero-section-image{
+		width: 56%;
+	    height: 400px;
+	    position: relative;
+	    overflow: hidden;
+	    float: right;
+	    background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/econnect-top.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	.hero-section-image>img{
+		visibility: hidden;
+	}
+	@media screen and (max-width: 640px){
+	.hero-section-image{
+		width: 100%;
+		background-image: none;
+	}
+	.hero-section-image>img{
+		visibility: visible;
+	    position: absolute;
+	    /*top: 50%;*/
+	    top: 90px;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);
+	}
+	.hero-section-1{
+		height: 220px;
+	}
+	.hero-section-content{
+		width: 84%;
+	    position: absolute;
+	    z-index: 999;
+}
+	}
+}
+</style>
+<div class="hero-section-1">
+	<div class="hero-section-content">
+		<h1>打造優良客服體驗</h1>
+		<p>擁有專業客服系統，不再是大企業的專利</p>
+		<!-- <a class="green-btn" href="">了解更多</a> -->
+	</div>
+	<div class="hero-section-image">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/econnect-top.png">
+	</div>
+</div>

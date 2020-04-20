@@ -1,0 +1,593 @@
+<style type="text/css">
+    .about-us{
+        max-width: 1240px;
+        margin:0 auto;
+        display: table;
+        width: 100%;
+    }
+    .brand-strategy{
+        width: 80%;
+        margin: 40px auto;
+        display: flow-root;
+        height: 100%;
+    }
+    .brand-strategy>h1{
+        text-align: center; 
+    }
+    .about-us-text-box{
+        padding: 10px;
+    }
+    .about-us-text-box>h2{
+        text-align: center;
+    }
+    .about-us-text-box> p{
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+/*    .cor-company{
+        padding: 20px;
+    }
+    .cor-company>h2{
+        text-align: center;
+    }
+   .cor-company-image{
+        width: 100%;
+        min-height: 380px;
+        max-width: 980px;
+        margin:0 auto;
+    }
+    .cor-company-image>img{
+        width: 100%;
+    }
+    .cor-company-image-mobile{
+        display: none;
+    }*/
+    .team-menber{
+       /* width: 80%;
+        margin:0 auto;
+        display: table;*/
+        padding: 0 20px;
+    }
+    .team-menber>h2{
+        text-align: center;
+    }
+    /*修改原檔*/
+    div.table-evox-wrapper{
+        margin-bottom: 0px;
+        margin-top: 80px;
+    }
+    div.table-evox{
+            border-bottom: solid 0px #f1f4f5;
+            display: block;
+    }
+    div.table-text{
+        display: block;
+        width:60%;
+        padding:0px;
+        max-width: 1240px;
+        margin: 0 auto;
+        min-width: 680px;
+    }
+    .table-evox-wrapper{
+        /*background: #E8F5E9;*/
+        padding: 50px 0px;
+    }
+    .table-evox-wrapper>h2{
+        text-align: center;
+    }
+    .table-text{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .table-text-2 {
+        float: left;
+        width: 100%;
+        /*padding-top: 0px;*/
+    }
+    .table-text > button > img{
+
+        padding-left: 7px;
+    }
+    .table-image-2 {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 50%;
+        /*float: right*/
+    }
+    .flex-img{
+        margin-top: 80px!important;
+    }
+    .table-tittle{
+            margin-left: 50%;
+    }
+    .table-image {
+        width: 50%;
+    }
+    .myheader {
+        position: relative;
+    }
+    
+    .myheader-a {
+        position: fixed;
+        background-color: #fff;
+        z-index: 9999;
+        width: 100%;
+        height: 90px;
+        top: 89px;
+        left: 0;
+        -moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    #myheader-replace{
+      height:0px;
+    }
+    .myheader-replace-a{
+      width:100%;
+      padding-top:110px;
+    }
+    .advance-fun-box{
+        margin: 10px 0px 0px 0px;
+        display:flow-root;
+    }
+    .fix-height-image{
+        min-height: 500px;
+    }
+    /*.advance-fun-box img{
+        width: 50%;
+        float:left;
+    }*/
+    /*個人設定tab選單*/
+    button.accordion, button.accordion-1{
+        background-color: #fff;
+        color: #444;
+        cursor: pointer;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        transition: 0.4s;
+        border: 1px solid #fafafafa;
+        margin: 20px 0 0 0;
+        line-height: 22px;
+        border: 1px solid #cacaca;
+        border-bottom: 0px;
+        border-radius: 4px 4px 0px 0px;
+    }
+    /*button.accordion-1.active>div.panel{
+        margin-bottom: 10px;
+    }*/
+    button.accordion.active,
+    button.accordion:hover,
+    button.accordion-1.active,
+    button.accordion-1:hover{
+        font-family: FontAwesome;
+        content: '\f054';
+        /*background-color: #66C547!important;*/
+        /*color:#fff!important;*/
+        /*border: 1px solid #66C547;*/
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    button.accordion.active, button.accordion-1.active{
+        border-bottom: 1px solid #fff;
+    }
+
+    button.accordion:before,
+    button.accordion-1:before {
+        font-family: FontAwesome;
+        content: '\f054';
+        color: #66C547;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+    }
+
+    button.accordion.active:before,
+    button.accordion-1.active:before {
+        content: "\f078";
+        color:#66C547;
+    }
+    button.accordion-1:hover:before,
+    button.accordion:hover:before{
+        /*color:#fff;*/
+    }
+     button.accordion:hover + div.panel,
+    button.accordion-1:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #66C547!important;*/
+    }
+     button.accordion.active:hover + div.panel,
+    button.accordion-1.active:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #fff!important;*/
+    }
+    div.panel {
+        color:#5F6871;
+        padding: 1px 36px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border: 1px solid #cacaca;
+        border-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+    }
+    div.panel>p{
+        margin: 0 0 20px 0;
+    }
+    .panel h2{
+        margin: 10px 0px;
+    }
+    div.menber-info{
+        margin-top: 0px;
+    }
+    /*個人設定tab選單-end*/
+    
+    @media screen and (max-width: 904px) {
+        .myheader-a {
+            top: 65px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .table-evox {
+            /*display: grid;*/
+            padding: 0 20px;
+        }
+        .table-text {
+            /*padding-top: 40px;*/
+            width: 100%!important;
+            /*text-align: center;*/
+        }
+        .table-text-2 {
+            width: 100%;
+            text-align: center;
+        }
+        .table-image-2 {
+            width: 100%;
+        }
+        .table-tittle{
+            margin-left: 0%;
+        }
+        .flex-img{
+            margin-top: 20px!important;
+        }
+        .fix-height-image{
+            min-height: 200px;
+        }
+        .tabcontent{
+            padding: 0px 12px;
+            min-height: 160px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        div.table-text{
+            min-width: 100%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .table-text{
+            padding-top: 20px!important;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .cor-company-image{
+            display: none;
+        }
+        .cor-company-image-mobile{
+            display: block;
+            padding: 0px 20px;
+        }
+        .features-icon {
+            min-width: 18px!important;
+        }
+        .tab button{
+            font-size: 13px;
+        }
+        .tab button.active{
+            font-size: 13px;
+        }
+    }
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#openFunction").click(function(){
+    $("#table-box").addClass("collapse-box-open");
+    $("#table-box").removeClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-hide");
+    $("#closeFunction").addClass("btn-show");
+    $("#gradual").addClass("btn-hide");
+    $("#gradual").removeClass("btn-show");
+  });
+  $("#closeFunction").click(function(){
+    $("#table-box").removeClass("collapse-box-open");
+    $("#table-box").addClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-show");
+    $("#openFunction").removeClass("btn-hide");
+    $("#openFunction").addClass("btn-show");
+    $("#gradual").removeClass("btn-hide");
+    $("#gradual").addClass("btn-show");
+  });
+});
+</script>
+<!-- 第一段 -->
+<style type="text/css">
+    .btn-hide{
+    display: none;
+  }
+  .btn-show{
+    display: block;
+  }
+  .expand-btn{
+    cursor: pointer;
+    text-align: center;
+  }
+  .D2-story{
+    margin:40px auto 0px auto;
+  }
+  .collapse-box-hide{
+    height: 590px;
+    overflow: hidden;
+  }
+  .collapse-box-open{
+    height: 100%;
+    overflow: auto;
+    background:#f0f8ff00;
+  }
+  .front-grlatation{
+    position: relative;
+    top: -2818px;
+    width: 100%;
+    height: 143px;
+    float: left;
+    background: linear-gradient(0deg, #fff 39%, #ffffff00 65%);
+    background: -moz-linear-gradient(90deg, #fff 39%, #ffffff00 65%);
+    background: -webkit-linear-gradient(90deg, #fff 39%, #ffffff00 65%)
+    background: -o-linear-gradient(90deg, #fff 39%, #ffffff00 65%);
+  }
+</style>
+<div class="about-us">
+    <div class="brand-strategy D2-story collapse-box-hide" id="table-box">
+        <h1>品牌與故事</h1>
+        
+        <p>D2的使命是打造一個與時俱進，充滿可朔性的商務通訊平台，能夠幫助企業用戶在這瞬息萬變的世界搭建溝通的橋樑，同時實現我們最主要的2個核心理念：與客戶一同成長＆對客戶有益的就是對我們有益。</p>
+        <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXBlog/3%E5%80%8B%E9%9B%A3%E9%97%9C%E8%AE%93D2%E7%AA%81%E7%A0%B4%E7%9B%B2%E9%BB%9E%EF%BC%8C%E4%BA%86%E8%A7%A3%E8%88%87%E5%AE%A2%E6%88%B6%E5%90%8C%E8%A1%8C%E7%9A%84%E9%87%8D%E8%A6%81/D2Nova-leader-images-raw.png">
+        <hr>
+        <p>
+        我們的產品藍圖其實是將自己放在用戶的立場上，不斷收使用者各樣的需求，一點一滴累積而成的。自己往往就是產品的beta user，親身測試與實際使用後才敢推薦給別人，而這種“客戶體驗為王”的產品開發精神，並不是創業初期的D2就領悟到的。<br/>我們也曾經跟許多剛加入科技戰場的勇者一樣，以為只要滿懷熱情的做出創新的科技產品就能感動他人，卻因為沒有深入了解客戶真正需要跟想要的是什麼，而屢屢受挫。<br/></br/>那麼，這些年我們是如何從經驗中記取寶貴的教訓，一步步走向雲端總機呢？
+        </p>
+        <h2>除非你的創新有幸運女神加持，不然小蝦米是無法對抗大鯨魚的</h2>
+        <p>
+            在創立D2 Nova之前，David Wong與Jon Wu最早的合作是一起發展挾帶網頁瀏覽器的Linux手機作業系統。沒想到計畫趕不上變化，就在產品快要完成時，Google的Android系統問世了，意識到前方有斷橋的兩人趕緊踩煞車，並轉而發展通訊軟體。
+        </p>
+        <br/>
+        <p>憑藉對手機App的遠景以及兩人在通訊技術多年的研究，David與Jon決定將重心放在當時電信和通訊界最夯的技術：Rich Communication Services(RCS)，一個能夠讓人在聊天過程中結合表情符號、檔案傳輸或多媒體顯示應用程式。沒想到即使像Orange、Deutsche Telekom(T-Mobile)和中國移動等大型企業都曾表達高度的投資意願和發展興趣，這項產品卻不受使用者的青睞。因為易用性更高的Line、WeChat和What’s App已快速佔據整個市場並被廣為接納，而在Google2015年收購了一間雲端RCS新創後，其他的RCS新創便在一夜之間失去立足之地。</p>
+        <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXBlog/3%E5%80%8B%E9%9B%A3%E9%97%9C%E8%AE%93D2%E7%AA%81%E7%A0%B4%E7%9B%B2%E9%BB%9E%EF%BC%8C%E4%BA%86%E8%A7%A3%E8%88%87%E5%AE%A2%E6%88%B6%E5%90%8C%E8%A1%8C%E7%9A%84%E9%87%8D%E8%A6%81/brand-story-team-biz.jpg">
+        <p>趁著雲端服務的崛起，David與Jon創立了D2 Nova，將RCS的技術轉載到SaaS，研發出了企業內部協作平台team.biz。這一次雖然掌握到使用者的需求，但卻敗在無法像Slack一樣在短時間內募到足夠的資金來全力宣傳，再度失去了市場的先機。</p>
+        <br/>
+        <h2>策略轉向，更加敏捷與彈性才能生存</h2>
+        <p>
+        D2 在經歷3次重大失敗後，重新審視研發的方向與市場的需求，在觀察到企業數位轉型的必然趨勢與傳統交換機的發展已經到盡頭後，決定招攬雲端服務開發人才，結合多年的VoIP技術與SaaS，將已在歐美被廣為接納的雲端總機服務帶回台灣並進行在地客製化，並針對台灣使用的習慣與需求不斷調整與優化，於是EVOX易喂便誕生了。
+        </p>
+        <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXBlog/3%E5%80%8B%E9%9B%A3%E9%97%9C%E8%AE%93D2%E7%AA%81%E7%A0%B4%E7%9B%B2%E9%BB%9E%EF%BC%8C%E4%BA%86%E8%A7%A3%E8%88%87%E5%AE%A2%E6%88%B6%E5%90%8C%E8%A1%8C%E7%9A%84%E9%87%8D%E8%A6%81/brand-story-evox.jpg">
+        <p>
+        我們知道，有好的產品還不夠，真正的難題是要如何跟上市場的需求與變化。初代EVOX的推出讓我們收集了許多寶貴的資訊，這一次我們面臨的挑戰與之前相反，產品雖然已經成熟，但台灣企業卻還沒有準備好要全面上雲，絕大多數的公司對於雲端服務還是充滿恐懼與不信任。
+        </p>
+        <br/>
+        <h2>第一核心理念：與客戶一同成長</h2>
+        <p>在有了穩定的產品研發技術後，D2開始花更多心力在提升客戶體驗與優化使用者介面上。我們發現許多客戶就和我們一樣是成長中的公司，有著類似的發展過程與挑戰，願意提供最誠懇的建議。同時也知道D2重視客戶的反饋，認真地將用戶對產品的期望列在下一個版本的開發清單中。面對還在掙扎轉型的市場與客戶，D2 反而越發得有了使命感，一定可以提供更好更適用的商物通訊平台，讓台灣的企業商務通訊環境能夠跟上最前端的潮流。</p>
+        <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXBlog/3%E5%80%8B%E9%9B%A3%E9%97%9C%E8%AE%93D2%E7%AA%81%E7%A0%B4%E7%9B%B2%E9%BB%9E%EF%BC%8C%E4%BA%86%E8%A7%A3%E8%88%87%E5%AE%A2%E6%88%B6%E5%90%8C%E8%A1%8C%E7%9A%84%E9%87%8D%E8%A6%81/brand-story-image-02.jpg">
+        <h2>第二核心理念：對客戶有益的就是對我們有益</h2>
+        <p>
+        就像前面提到的，我們本身就是 EVOX的重度使用者，所以能夠了解產品最大的好處與需要改進的地方。但除了產品功能之外，我們相信與顧客的關係並不是在購買完成後就結束了。因此 D2開啟了用戶大調查計畫，希望藉由探訪與問券的方式更加了解使用者的心聲。如何能讓顧客更方便快速的了解產品、協助客人判斷他的需求、幫助使用者解決各樣的問題等等則是我們接下來的功課與挑戰。我們對未來的願景，就是與我們的客戶一起在科技浪潮中穩定航行，與時俱進。
+        </p>
+        <div class="front-grlatation" id="gradual"></div>
+    </div>
+<div class="expand-btn green-text" id ="openFunction">看完整內容 <i class="fa fa-caret-down "></i></div>
+<div class="expand-btn green-text btn-hide" id ="closeFunction">縮小 <i class="fa fa-caret-up "></i></div>
+    <hr>
+<!--     <div class="cor-company">
+        <h2>客戶與合作夥伴</h2>
+        <div class="cor-company-image">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/cor-company-logos.jpg">
+        </div>
+        <div class="cor-company-image-mobile">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/our-story-partners-2.png">
+        </div>
+        <div class="cor-company-image-mobile">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/our-story-customers-2.png">
+        </div>
+        <div class="cor-company-image-mobile">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/our-story-partners-1.png">
+        </div>
+        <div class="cor-company-image-mobile">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/our-story-customers-1.png">
+        </div>
+        
+    </div> -->
+    <style type="text/css">
+        div#content.main-content{
+            max-width: 1240px;
+            /*margin:80px auto;*/
+            display: table;
+            width: 100%;
+            }
+        div.aboutwrapper {
+            display: flex;
+            justify-content: space-between;
+            }
+        div.aboutcard{
+            background-color: #fff;
+            border: solid 2px #f1f4f5;
+            padding: 10px;
+            min-height: 120px;
+            text-align: center;
+            display:inline-block;
+            width:20%;
+            text-decoration:none;
+            }
+          @media screen and (max-width: 500px) {
+            div.aboutwrapper {
+                display: block;
+            }
+            div.aboutcard{
+                width: 100%;
+                margin-top:20px;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:0px;
+                padding-right:0px;
+                display:block;
+            }
+        }
+    </style>
+    <div class="team-menber">
+        <h2>領導團隊</h2>
+        <div class="aboutwrapper">
+            <div class="aboutcard">
+                <div><img src="/s/1495474694390.png"><div>
+                <div>
+                <p><span style="font-weight:bold;">David Wong, 博士</span><br>
+                執行長</p>
+                </div>
+            </div>
+            <div class="aboutcard">
+                <div><img src="/s/1495474720361.png"></div>
+                <div>
+                <p><span style="font-weight:bold;">David Lindsay</span><br>
+                技術長</p>
+                </div>
+            </div>
+          <div class="aboutcard">
+              <div><img src="/s/1495474745158.png"></div>
+              <div>
+              <p><span style="font-weight:bold;">Matt Randmaa</span><br>
+                美洲區工程副總</p>
+              </div>
+          </div>
+          <div class="aboutcard">
+              <div><img src="/s/1495474796241.png"></div>
+              <div>
+              <p><span style="font-weight:bold;">Jon Wu, 博士</span><br>
+                亞洲區工程副總</p>
+              </div>
+          </div>
+        </div>
+    </div>
+<!-- <div class="table-text" >
+    </div> -->
+<div class="table-evox-wrapper menber-info" id="section1" style="">
+    <div class="table-evox" style="padding-top:0px;">
+        <!-- 測試 -->
+        <div class="table-text">
+           <!-- <h2 style="font-size:1.5em;line-height:1em;font-weight:bold;color:#000;text-align:left;">常見問題Ｑ＆Ａ</h2>-->
+            <button class="accordion-1">關於 David Wong</button>
+            <div class="panel">
+                <!-- <h2>Making and receiving calls
+                        
+                    </h2> -->
+                <p>David Wong王爾仁博士有超過30年的豐富經驗在發展並經營通訊公司。事業的發展初期是從當語音壓縮演算法的研究員，是歷史上首次成功用ARPANET網路撥打電話的ARPA研發團隊成員。1974到1987年間在專業領域進行深耕，任職各樣科學研究、教授及技術管理工作等，於1987合夥創辦Spectron Microsystems，任為執行長，並研發出了世界上首個DSP 操作系統，之後成為德州儀器DSP BIOS的基礎技術。王博士隨後在1993創立D2 Technologies，1997年協助創立Connected System公司，擁有語音訊息及 Unified Messaging ODM的先驅技術。在2000年，D2 Technologies被Virata併購，王博士隨後就任GlobespanVirata(之後合併入Conexant)的VoIP副總。在2003年再度創立D2 Technologies，讓次世代的IP通訊技術成為現實。在2016年創立D2 Nova致力於開發SaaS雲端通訊。王博士同時也在多個新創科技公司擔任董事，其中包含Trellisware Technologies(San Diego, USA)、Fanvil方位通訊(中國深圳)及FMSoft飛漫軟件(中國北京)等，並且在通訊領域擁有多項專利及學位，包含加州大學聖塔芭芭拉分校的電機系學士、碩士及博士。</p>
+            </div>
+            <button class="accordion-1">關於 David Lindsay</button>
+            <div class="panel">
+                <p>David Lindsay擁有超過30年的語音系統專業工程設計經驗。在1993至2000年他擔任初始D2 Technologies的共同合夥人及技術長，致力於設計及發展公司在語音處理方面的技術及架構。在2002年 D2 Technologies被合併的期間擔任GlobespanVirata的首席工程師，監督ATM語音技術及IP語音軟體技術，之後再合夥創辦D2 Technologies及D2 Nova，擔任技術長。Lindsay最一開始是 AT&T Bell實驗室的技術成員，之後改在Digital Sound Corporation擔任資深工程師，而後又成為Spectron MicroSystems的研發副總，是首個DSP 作業系統的革新者。Lindsay擁有許多語音處理相關技術的專利及學位，包含密西根大學電機系的學士及理海大學的電機系學士。</p>
+            </div>
+            <button class="accordion-1">關於 Matt Randmaa</button>
+            <div class="panel">
+                <p>Matt Randmaa擁有超過20年的專業經驗在信號處理及IP通信軟體技術的發展及設計上。致力於設計並優化信號處理軟體在IP語音上的應用相關技術，包含回音消除、語音壓縮、封包遺失補償、抖動緩衝器及傳真、來電顯示等。在2003年成為D2 Technologies共同創辦合夥人之前，曾是GlobespanVirata 的軟體工程總監。在網路語音技術相關主題上是權威性的代表，並參與許多VoIP相關的專利研發，有加州大學聖塔芭芭拉分校電機系的碩士學歷。</p>
+            </div>
+            <button class="accordion-1">關於 Jon Wu</button>
+            <div class="panel">
+                <p>吳炯憲博士在軟體開發的設計及管理上擁有超過20年的專業經驗。原本創立的Webia Technologies與D2 Technologies於2011年合併後，便加入D2家族，在那之前也曾是INVENTEC的網路業務部門首長。吳博士所帶領的團隊曾經為許多知名大廠像是Cisco,Netgear及Skype等研發VoIP產品。在2000年之前，吳博士曾在工研院的電腦通訊研究中心工作，負責發展3GPP RLC/MAC技術以及行動多媒體應用，並且在行動網路相關技術上獲得超過10項作者專利以及卓越的研究貢獻獎項。吳博士擁有台灣大學資訊工程系學士及清華大學資訊工程研究所博士學位。</p>
+            </div>
+            <script>
+        // W3C's JS Code
+        var bcc = document.getElementsByClassName("accordion-1");
+        var i;
+
+        // Open the first accordion
+        var firstAccordion = bcc[0];
+        var firstPanel = firstAccordion.nextElementSibling;
+        firstAccordion.classList.add("active");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+        // Add onclick listener to every accordion element
+        for (i = 0; i < bcc.length; i++) {
+            bcc[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive = this.classList.contains("active");
+
+                // Close all accordions
+                var allAccordions = document.getElementsByClassName("accordion-1");
+                for (j = 0; j < allAccordions.length; j++) {
+                    // Remove active class from section header
+                    allAccordions[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel = allAccordions[j].nextElementSibling;
+                    var maxHeightValue = getStyle(panel, "maxHeight");
+
+                    if (maxHeightValue !== "0px") {
+                        panel.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel = this.nextElementSibling;
+                var maxHeightValue = getStyle(panel, "maxHeight");
+
+                if (maxHeightValue !== "0px") {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+    </script>
+        </div>
+    </div>
+</div>
+
+</div>

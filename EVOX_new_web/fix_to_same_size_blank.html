@@ -1,0 +1,205 @@
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="/path/to/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /*background: #FAFAFA;*/
+  margin-bottom: 40px;
+}
+  /*隱藏*/
+.carousel-block ,.carousel{
+	  display: none;
+}
+.carousel-cell {
+  width: 100%;
+  /*height: 100%;*/
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  /*counter-increment: carousel-cell;*/
+}
+.carousel-main> .carousel-cell {
+	/*height: 400px;*/
+}
+.customer-feedback-img{
+  width: 50%;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.customer-feedback-box{
+  width: 50%;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.customer-feedback-box>p{
+	--widthB: 50%;
+	padding: 0px 28% 0 5%;
+	margin-top: calc(var( --widthB)*0.2);
+	font-size: 21px;
+}
+.goshop>p{
+	margin-top: calc(var( --widthB)*0.1);
+}
+.customer-feedback-box>span{
+	padding: 0px 28% 0 5%;
+	font-size: 16px;
+}
+.flickity-page-dots{
+   display: none;
+}
+.carousel-main{
+	max-width: 1240px;
+	margin: 40px auto;
+	/*min-height: 400px;*/
+	/*min-height: 100vh;*/
+	max-height: 420px;
+}
+.carousel-image {
+  min-width: 150px;
+  /*height: 400px;*/
+}
+.carousel-nav{
+	margin: 20px 0;
+}
+.carousel-block{
+	background: #FAFAFA;
+	padding: 40px 0px;
+	margin: 40px 0px;
+}
+.carousel-tittle{
+	text-align: center;
+	font-size: 35px;
+	color:#a7a7a7;
+	margin: 20px 0;
+
+}
+.flickity-button{
+	background: hsla(0, 0%, 100%, 0);
+	color: #EDEFF1;
+}
+.flickity-prev-next-button.previous{
+	left: 20px;
+}
+.flickity-prev-next-button.next{
+	right: 20px;
+}
+.flickity-button:hover {
+    background: #fff00000;
+    cursor: pointer;
+}
+.flickity-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #19f0;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell {
+  height: 80px;
+  width: 140px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  /*background: #ED2;*/
+  opacity: .5;
+}
+@media screen and (max-width: 840px){
+	.customer-feedback-img{
+		width: 100%;
+	}
+	.customer-feedback-box{
+		width: 100%;
+	}
+	.customer-feedback-box>p{
+		padding: 0 5%;
+	}
+	.customer-feedback-box>span{
+		padding: 0 5%;
+	}
+	.carousel-main{
+		/*min-height: 100vh;*/
+		margin-bottom: 0px;
+	}
+	.flickity-prev-next-button.previous{
+		top:140px;
+	}
+	.flickity-prev-next-button.next{
+		top:140px;
+	}
+	.carousel-main{
+		max-height: 810px;
+	}
+}
+@media screen and (max-width: 638px){
+	.carousel-main{
+		max-height: 720px;
+	}
+}
+@media screen and (max-width: 480px){
+
+}
+</style>
+<!-- Flickity HTML init -->
+<div class="carousel-block">
+	<h3 class="carousel-tittle">看看這些用戶怎麼說</h3>
+	<div class="carousel carousel-nav"
+	  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+
+	  <div class="carousel-cell">
+	  </div>
+	  <div class="carousel-cell">
+	  </div>
+	  <div class="carousel-cell">
+	  </div>
+	</div>
+</div>
+
+
+<div class="carousel carousel-main" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell">
+  
+	  	<div class="customer-feedback-box"><p>“之所以選擇使用EVOX，主要是因為他可以省下裝實體電話機的費用、電話費率蠻便宜、通話品質也算不錯，對於我們這些新創公司來說，錢要花在刀口上。”</p>
+	  		<span>-吳政勳, gogoout 創辦人-</span>
+	  	</div>
+  </div>
+  <div class="carousel-cell ">
+  	
+  		<div class="customer-feedback-box goshop"><p>“我們原本也是擔心，換一個全新的電話系統是否需要改代表號，會不會造成要重印名片等等麻煩的後續處理？後來發現EVOX有提供攜碼轉入的方案，將原本的公司代表號接上雲端服務，就可以用手機App來接客人打到我公司分機的電話，比較不用擔心漏接重要的電話。”</p>
+	  		<span>-郭承展, GOSHOP 創辦人-</span>
+	  	</div>
+  </div>
+  <div class="carousel-cell">
+  	
+  		<div class="customer-feedback-box"><p>“雲端電話系統的好處是不會受到地理限制，即使到不同城市也不需要更新設定，管理系統也有一些客服及管理者會需要的功能。”</p>
+	  		<span>-宋捷仁, USPACE CEO-</span>
+	  	</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+</script>

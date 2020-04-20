@@ -1,0 +1,329 @@
+<style type="text/css">
+    .feature-content-size{
+        max-width: 1100px;
+    }
+
+    /*給專門頁面得*/
+    .client-direct{
+        margin-top: 40px;
+    }
+    
+/*   .tx-01{
+        margin-top: calc(var( --widthA)*0.05);
+        max-width: 350px;
+        
+     }*/
+    .change-to-flex{
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+    }
+    /*換方向*/
+    .flex-order-change{
+        order: -1;
+    }
+     .section-tittle{
+        width: 100%;
+        text-align: center;
+        margin: 80px 0 0 0;
+     }
+     .section-btn-collation{
+        width: 100%;
+        max-width: 610px;
+        margin:10px auto;
+        
+     }
+     .section-btn{
+        width: 25%;
+        cursor: pointer;
+        float: left;
+     }
+     .section-btn-active{
+        color:#5856D6;
+     }
+     .IVR_benefit_text{
+        width: 100%;
+        margin: 0 0 0 31px;
+     }
+     /*accrodion*/
+     /* Style the buttons that are used to open and close the accordion panel */
+ /*個人設定tab選單*/
+    button.accordion, button.accordion-1{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        color: #243237;
+        cursor: pointer;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+        border: 1px solid #fafafafa;
+        margin: 20px 0 0 0;
+        line-height: 22px;
+        border: 0px solid #cacaca;
+        border-bottom: 0px;
+        border-radius: 4px 4px 0px 0px;
+    }
+    /*button.accordion-1.active>div.panel{
+        margin-bottom: 10px;
+    }*/
+    button.accordion.active,
+    button.accordion:hover,
+    button.accordion-1.active,
+    button.accordion-1:hover{
+        /*font-family: FontAwesome;*/
+        content: '\f054';
+        /*background-color: #66C547!important;*/
+        /*color:#fff!important;*/
+        /*border: 1px solid #66C547;*/
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    button.accordion.active, button.accordion-1.active{
+        /*border-bottom: 1px solid #fff;*/
+        box-shadow: 1px 0px 21px #dedede;
+        padding:14px 14px 0 14px;
+    }
+
+    button.accordion:before,
+    button.accordion-1:before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f054';
+        color: #5856D6;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+    }
+
+    button.accordion.active:before,
+    button.accordion-1.active:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00c";
+        color:#5856D6;
+    }
+    button.accordion-1:hover:before,
+    button.accordion:hover:before{
+        /*color:#fff;*/
+    }
+     button.accordion:hover + div.panel,
+    button.accordion-1:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #66C547!important;*/
+    }
+     button.accordion.active:hover + div.panel,
+    button.accordion-1.active:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #fff!important;*/
+    }
+    div.panel {
+        /*color:#5F6871;*/
+        padding: 1px 36px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border: 0px solid #cacaca;
+        border-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+        z-index: 9;
+        box-shadow: 1px 16px 21px #dedede;
+    }
+    div.panel>p{
+        margin: 0 0 20px 0;
+    }
+    .panel h2{
+        margin: 10px 0px;
+    }
+    .content-section-1-image-version-b-reverse>img{
+        display: none;
+    }
+    .benefit-active{
+        display: block!important;
+    }
+    @media screen and (max-width: 840px) {
+        .IVR_benefit_text{
+        width: 100%;
+        margin: 0 0 0 0px;
+            padding: 0 20px;
+     }
+     .change-to-flex{
+        display: block;
+     }
+    }
+</style>
+<div class="section-tittle">
+    
+<!--    <div class="section-btn-collation">
+      <div class="section-btn section-btn-active" id="quickpic-btn" onclick="openPlan('quickpic')">優點一</div>
+      <div class="section-btn" id="quickans-btn" onclick="openPlan('quickans')">優點二</div>
+      <div class="section-btn" id="desination-btn" onclick="openPlan('designation')">優點三</div>
+      <div class="section-btn" id="collect-btn" onclick="openPlan('collect')">優點三</div>
+    </div> -->
+</div>
+
+
+
+<div id="quickpic" class="benefit-box" >
+<div class="content-section-1 client-direct feature-content-size change-to-flex">
+<!-- <div class="content-section-1"> -->
+    <div class="content-section-1-image-version-b-reverse ">
+        <img id="benefit-01" class="benefit-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/quick-pickup-image-3.jpg" alt="秒接">
+        <img id="benefit-02" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/quick-resoulation-image-2.jpg" alt="秒答">
+        <img id="benefit-03" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/getting-right-agent-image-2.jpg" alt="適配專員">
+        <img id="benefit-04" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/collecting-info-image-2.jpg" alt="預先收集資訊">
+    </div>
+    <div class="flex-center content-center content-section-textblock flex-order-change">
+    <div class="IVR_benefit_text" style="">
+    <h2 style="font-size: 32px;">IVR 能用各種方式來改善顧客的來電體驗</h2>
+    <button class="accordion-1" id="pickup">秒接</button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+                <!-- <h2>秒接:</h2> -->
+                <p>顧客來電時，IVR 會立刻接起並回應，顧客就不必一直拿著話筒痴痴地等待。</p>
+                <!-- <a class="purple-outline-btn" href="">如何使用</a> -->
+    </div>
+    </div>
+    <button class="accordion-1" id="answer">秒答</button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <!-- <h2>秒答：</h2> -->
+            <p>對於詢問常見問題的來電（例如：詢問營業時間），不需人員接手，系統會自動播放預先錄製好的語音回覆，讓來電者立刻獲取所需資訊。</p>
+            <!-- <a class="purple-outline-btn" href="">如何使用</a> -->
+        </div>
+    </div>
+    
+    <button class="accordion-1" id="agent">適配專員</button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>在許多產業中，不見得每位客服人員都能熟悉所有產品或問題，舉例來說，銀行業的客服人員，有些專門處理貸款，有些專精於信用卡業務。IVR 可以了解客戶需求後，將此通電話分配給最合適的人員來接聽，我們的 IVR 系統甚至可以允許讓尚未解決問題的客戶持續由同一位專員來服務。</p>
+        </div>
+    </div>
+  <!--   <button class="accordion-1" id="collect">預先收集資訊</button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>設計完善的 IVR 系統能讓在專員接聽前先收集好必要資訊（例如：會員號碼、訂單編號等），如此一來，當專員接上線時，即可馬上查詢相關資料，加快解決問題的速度。</p>
+        </div> -->
+    </div>
+    </div>
+    </div>
+<!-- </div> -->
+    
+</div>
+</div>
+
+
+
+
+
+<script>
+    $("#pickup").click(function(){
+        $("#benefit-01").addClass("benefit-active");
+        if ( $("#benefit-02").hasClass("benefit-active") ) {   $("#benefit-02").removeClass('benefit-active'); }
+        if ( $("#benefit-03").hasClass("benefit-active") ) {   $("#benefit-03").removeClass('benefit-active'); }
+        if ( $("#benefit-04").hasClass("benefit-active") ) {   $("#benefit-04").removeClass('benefit-active'); }
+    })
+    $("#answer").click(function(){
+        $("#benefit-02").addClass("benefit-active");
+        if ( $("#benefit-01").hasClass("benefit-active") ) {   $("#benefit-01").removeClass('benefit-active'); }
+        if ( $("#benefit-03").hasClass("benefit-active") ) {   $("#benefit-03").removeClass('benefit-active'); }
+        if ( $("#benefit-04").hasClass("benefit-active") ) {   $("#benefit-04").removeClass('benefit-active'); }
+    })
+    $("#agent").click(function(){
+        $("#benefit-03").addClass("benefit-active");
+        if ( $("#benefit-01").hasClass("benefit-active") ) {   $("#benefit-01").removeClass('benefit-active'); }
+        if ( $("#benefit-02").hasClass("benefit-active") ) {   $("#benefit-02").removeClass('benefit-active'); }
+        if ( $("#benefit-04").hasClass("benefit-active") ) {   $("#benefit-04").removeClass('benefit-active'); }
+    })
+    $("#collect").click(function(){
+        $("#benefit-04").addClass("benefit-active");
+        if ( $("#benefit-01").hasClass("benefit-active") ) {   $("#benefit-01").removeClass('benefit-active'); }
+        if ( $("#benefit-02").hasClass("benefit-active") ) {   $("#benefit-02").removeClass('benefit-active'); }
+        if ( $("#benefit-03").hasClass("benefit-active") ) {   $("#benefit-03").removeClass('benefit-active'); }
+    })
+ // W3C's JS Code
+        var bcc = document.getElementsByClassName("accordion-1");
+        var i;
+
+        // Open the first accordion
+        var firstAccordion = bcc[0];
+        var firstPanel = firstAccordion.nextElementSibling;
+        firstAccordion.classList.add("active");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+        // Add onclick listener to every accordion element
+        for (i = 0; i < bcc.length; i++) {
+            bcc[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive = this.classList.contains("active");
+
+                // Close all accordions
+                var allAccordions = document.getElementsByClassName("accordion-1");
+                for (j = 0; j < allAccordions.length; j++) {
+                    // Remove active class from section header
+                    allAccordions[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel = allAccordions[j].nextElementSibling;
+                    var maxHeightValue = getStyle(panel, "maxHeight");
+
+                    if (maxHeightValue !== "0px") {
+                        panel.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel = this.nextElementSibling;
+                var maxHeightValue = getStyle(panel, "maxHeight");
+
+                if (maxHeightValue !== "0px") {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+
+
+
+</script>

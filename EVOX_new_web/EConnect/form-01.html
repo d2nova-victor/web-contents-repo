@@ -1,0 +1,159 @@
+<style type="text/css">
+	.form-background{
+		height:20vw;
+		background: #fff;
+	}
+	.form-01{
+		position: relative;
+	    background: #243237;
+	}
+	.form-block{
+		position: relative;
+	    width: 50%;
+	    margin: -110px auto;
+	    padding: 60px 110px;
+	    background: #00A82D;
+	    display: table;
+	    top: -160px;
+	    z-index: 99;
+	    min-width: 980px;
+	    background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/form-background-image.png");
+	    background-repeat: repeat;
+	    background-size: cover;
+	}
+	.form-text{
+		width: 40%;
+		float: left;
+		margin: 0 10% 0 0px;
+	}
+	.form-text>h2,.form-text>p{
+		color: #fff;
+		margin: 15px 0px;
+	}
+	/*修改hubspot表單*/
+	.hbspt-form{
+		padding: 0px 0;
+	    width: 50%;
+	    float: left!important;
+	    margin: 0 auto !important;
+		
+	}
+	.hs-form-required{
+		display: none;
+	}
+	select{
+		margin: 0px;
+	}
+	.hs-input{
+		width: 100%;
+		height: 40px;
+		/*padding: 5px;*/
+		padding: 9px 10px;
+    	margin: 4.5px 0;
+    	border-radius: 4px;
+    	border: 0px;
+    	background-color: #f5f8fa;
+    	font-weight: normal;
+    	line-height: 22px;
+    	box-sizing: border-box;
+	}
+	.hs_client_want_to_know_about{
+		color: #fff;
+	    display: table;
+	    margin: 10px 0;
+	    width: 100%;
+	}
+	.inputs-list{
+		color:#fff;
+		list-style: none;
+    	padding: 0px;
+    	margin: 0px;
+	}
+	input[type="checkbox"]{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
+		-webkit-appearance:none;
+	}
+	input[type="checkbox"] + span{
+		display      : inline-block;
+		  /*margin-left  : -28px;*/
+		  padding-left : 28px;
+		  line-height  : 24px;
+		  
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/check-box-none.png') no-repeat 0 3px;
+	}
+	input[type="checkbox"]:checked+ span{
+		/*background: #fff;*/
+		/*color: #00A82D;*/
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/check-box-checked.png') no-repeat 0 3px;
+	}
+	.hs-form-checkbox{
+		width: 50%;
+		float: left;
+		list-style: none;
+	}
+	.hs-error-msg{
+		color: #FF9500;
+	}
+	input[type="submit"]{
+		width: 200px;
+		float: left;
+		margin: 10px 0px;
+		background: #00ffff00;
+		border-radius: 4px;
+	    border: 2px solid #fff;
+	    color: #fff;
+	    padding: 10px 50px;
+	}
+	@media screen and (max-width: 980px) {
+		.form-block{
+	    min-width: 100%;
+		}
+	}
+	@media screen and (max-width: 540px) {
+		.form-block{
+			top: 0px;
+			margin: 0px auto;
+			padding: 60px 10px;
+		}
+		.form-background{
+			height: auto;
+		}
+		.form-text{
+			width: 100%;
+		}
+		.hbspt-form{
+			width: 100%;
+		}
+	}
+</style>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+
+<div class="form-01">
+	<div class="form-background"></div>
+	<div class="form-block">
+		<div class="form-text">
+			<h2>詳洽業務團隊</h2>
+			<p>如果您對於產品上還有不了解、或特別的需求歡迎您立即填寫表單讓我們的業務團隊與您聯繫</p>
+		</div>
+		<div class="form-table">
+			<!--[if lte IE 8]>
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+			<![endif]-->
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+			<script>
+			  hbspt.forms.create({
+				portalId: "1864133",
+				formId: "c52be24d-cf1a-4abd-9064-f8c72a6b783a"
+			});
+			</script>
+		</div>
+	</div>
+</div>

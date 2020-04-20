@@ -1,0 +1,96 @@
+<style type="text/css">
+	.content-section-2{
+		max-width: 1440px;
+		/*float: left;*/
+		margin: 0px auto;
+		/*height: 540px;*/
+		padding: 40px 0px;
+		display: table;
+	}
+	.content-section-2-content{
+		display: table-row;
+		width: 40%;
+	    padding: 0% 5%;
+	    float: left;
+	    --widthA: 50%;
+	    margin-top: calc(var( --widthA)*0.2);
+	}
+	.content-section-2-content>h1{
+		font-size: 42px;
+		margin:  10px 0px;
+	}
+	.content-section-2-content>p{
+		margin: 15px 0px;
+		font-size: 18px;
+	}
+	.content-section-2-image{
+		display: table-row;
+		width: 50%;
+	    /*height: 540px;*/
+	    /*position: relative;*/
+	    overflow: hidden;
+	    float: right;
+	}
+	.content-section-2-image>img{
+	/*    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);*/
+	}
+	@media screen and (max-width: 950px){
+		.content-section-2-content{
+			margin-top: 0px;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.content-section-2-image{
+			width:100%;
+		}
+		.content-section-2-content{
+			width: 90%;
+		}
+	}
+	/*content通用*/
+
+	.green-outline-btn{
+		display: block;
+		margin: 0 5px;
+		border-radius: 4px;
+		max-width: 200px;
+		max-height: 48px;
+		color: #66C547;
+		background: #66C54700;
+		text-align: center;
+		margin: 15px 0;
+		line-height: 2.2em;
+		border: 3px solid #66C547;
+	}
+	.green-outline-btn:hover{
+		color:#fff;
+		opacity: .8;
+		background: #00A82D;
+		border: 3px solid #00A82D;
+		transition: color .4s, background .4s;
+	}
+	/*給專門頁面得*/
+	.econnect-image-background{
+	   /* background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/econnect-section-background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;*/
+	}
+</style>
+<div class="content-section-2">
+	<div class="content-section-2-image econnect-image-background">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/econnect-section-background-2.png">
+	</div>
+	<div class="content-section-2-content">
+		<h1>易客服雲端客服系統</h1>
+		<p>EConnect的客服系統可協助企業所需的客服中心，可簡單快速搭建與客戶溝通的最佳管道</p>
+		<a class="green-outline-btn" href="">了解更多</a>
+	</div>
+	
+</div>

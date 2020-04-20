@@ -1,0 +1,158 @@
+<link href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/lity.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/prism.css" media="all" rel="stylesheet" type="text/css">
+<style type="text/css">
+	/*.content-section-8{
+		max-width: 1240px;
+		margin: 0 auto;
+		box-shadow: 0px 1px 4px -1px rgba(0,0,0,.2);
+		display: table;
+    	width: 100%;
+    	margin-top: 80px;
+    	background: #FAFAFA;
+	}*/
+	.tittle-section-block{
+		width: 41%;
+		float: left;
+		padding: 50px 2%;
+		
+	}
+	.tittle-section-block>.tittle-set{
+		display: block;
+    	float: left;
+	}
+/*	.section-8-text-block{
+		width: 59%;
+		float: left;
+		background: #fff;
+		padding: 20px 0;
+	}*/
+/*	.section-8-text-block>p{
+		padding:0 30px;
+		font-size: 16px;
+	}*/
+	.tittle-set>span{
+		display: block;
+		margin: 10px 0px;
+		padding-left: 5px;
+		color: #5F6871;
+	}
+	.tittle-set>h2{
+		margin: 0px 0px;
+	}
+	.e-learning{
+		width: 80px;
+    	float: left;
+	}
+	@media screen and (max-width: 840px){
+		/*.content-section-8{
+			margin-top: 40px;
+			width: 90%;
+		}*/
+		.content-section-8{
+			display:table;
+			width: 90%;
+		}
+		.tittle-section-block{
+			width: 100%;
+		}
+		.section-8-text-block{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 620px){
+		
+	}
+	@media screen and (max-width: 516px){
+		.tittle-section-block{
+			padding: 38px 2%;
+		}
+	/*	.e-learning{
+			width: 27%;
+		}*/
+		.flex-center{
+			display: block;
+		}
+	}
+
+	/*伸縮小學堂*/
+
+	.collapse-box-hide{
+    height: 100px;
+    overflow: hidden;
+	}
+	 .front-grlatation{
+    position:relative;
+    top: 10px;
+    width: 90%;
+    height: 143px;
+    float: left;
+    background: linear-gradient(91deg, #ffffffd4 29%, #ffffff17 88%);
+    background: -moz-linear-gradient(91deg, #ffffffd4 29%, #ffffff17 88%);
+    background: -webkit-linear-gradient(91deg, #ffffffd4 29%, #ffffff17 88%);
+    background: -o-linear-gradient(91deg, #ffffffd4 29%, #ffffff17 88%);
+  }
+  .btn-hide{
+    display: none;
+  }
+  .btn-show{
+    display: block;
+  }
+  .expand-btn{
+    cursor: pointer;
+    text-align: center;
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#openFunction").click(function(){
+    $("#table-box").addClass("collapse-box-open");
+    $("#table-box").removeClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-hide");
+    $("#closeFunction").addClass("btn-show");
+    $("#gradual").addClass("btn-hide");
+    $("#gradual").removeClass("btn-show");
+  });
+  $("#closeFunction").click(function(){
+    $("#table-box").removeClass("collapse-box-open");
+    $("#table-box").addClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-show");
+    $("#openFunction").removeClass("btn-hide");
+    $("#openFunction").addClass("btn-show");
+    $("#gradual").removeClass("btn-hide");
+    $("#gradual").addClass("btn-show");
+  });
+});
+</script>
+<div class="content-section-8">
+	<div class="tittle-section-block">
+		<div class="flex-center content-center">
+			<img class="e-learning" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/pbx/learning-icon.png">
+			<div class="tittle-set">
+				<span>EVOX小學堂</span>
+				<h2>什麼是<span class="green-text">雲端總機</span>?</h2>
+			</div>
+		</div>
+	</div>
+	<div class="section-8-text-block">
+		<div class="flex-center content-center ">
+			<!-- <div class="collapse-box-hide" id="table-box"> -->
+			<p>
+				<strong>雲端總機</strong>又稱雲端交換機、Cloud PBX，提供所有傳統總機的功能，包含外撥電話員工分機內線互撥免費、公司問候語(例如：XX公司您好，請直撥分機號碼或按9由專人為您服務)、來電代接、來電轉接、三方通話等，更增加了行動分機、多據點管理、節費、數位傳真等服務，而且不需要採購、安裝或維修任何硬體設備，更重要的是，它可以隨著公司規模成長而動態調整與升級。<br/>
+				<a class="btn green-text" href="//vimeo.com/348129248" data-lity><i class="fas fa-play-circle"></i> 觀看影片</a>
+			</p>
+			<!-- </div> -->
+		<!-- 	<div class="front-grlatation" id="gradual"></div>
+			<div class="expand-btn green-text" id ="openFunction">展開 <i class="fa fa-caret-down "></i></div>
+			<div class="expand-btn green-text btn-hide" id ="closeFunction">縮小 <i class="fa fa-caret-up "></i></div> -->
+		</div>
+		
+	</div>
+	 <!-- video js -->
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/jquery.js"></script>
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/lity.js"></script>
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/prism.js"></script>
+</div>

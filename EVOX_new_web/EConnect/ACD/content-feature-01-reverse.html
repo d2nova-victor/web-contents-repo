@@ -1,0 +1,153 @@
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 350px;
+	 	
+	 }*/
+	 .section-tittle{
+	 	width: 100%;
+	 	text-align: center;
+	 	margin: 80px 0 0 0;
+	 }
+	 .section-btn-collation{
+	 	width: 100%;
+	 	max-width: 610px;
+	 	margin:10px auto;
+	 	
+	 }
+	 .section-btn{
+	 	width: 25%;
+	 	cursor: pointer;
+	 	float: left;
+	 }
+	 .section-btn-active{
+	 	color:#5856D6;
+	 }
+</style>
+<div class="section-tittle">
+	<h2><span class="purple-text">IVR</span>系統能夠以多種方式來改善客戶體驗：</h2>
+	<div class="section-btn-collation">
+	  <div class="section-btn section-btn-active" id="quickpic-btn" onclick="openPlan('quickpic')">優點一</div>
+	  <div class="section-btn" id="quickans-btn" onclick="openPlan('quickans')">優點二</div>
+	  <div class="section-btn" id="desination-btn" onclick="openPlan('designation')">優點三</div>
+	  <div class="section-btn" id="collect-btn" onclick="openPlan('collect')">優點三</div>
+	</div>
+</div>
+<div id="quickpic" class="benefit-box" >
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b-reverse ">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/ivr-benefit-01.png" alt="互動式語音引導(IVR)">
+	</div>
+	<div class="flex-center content-center content-section-textblock">
+		<div class="content-section-1-content-reverse tx-01">
+			<h2>秒接:</h2>
+			<p>客戶來電時，IVR 會立刻接起並回應，避免讓客戶持續聽著鈴聲，直到有人接聽電話。</p>
+			<!-- <a class="purple-outline-btn" href="">如何使用</a> -->
+		</div>
+	</div>
+<!-- </div> -->
+	
+</div>
+</div>
+<div id="quickans" class="benefit-box" style="display:none">
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b-reverse ">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/ivr-benefit-02.png" alt="互動式語音引導(IVR)">
+	</div>
+	<div class="flex-center content-center content-section-textblock">
+		<div class="content-section-1-content-reverse tx-01">
+			<h2>秒答：</h2>
+			<p>對於詢問常見問題的來電（例如：詢問營業時間），不需人員接手，系統直接播放預先錄製好的語音回覆，即可讓來電者立刻獲得所需資訊。</p>
+			<!-- <a class="purple-outline-btn" href="">如何使用</a> -->
+		</div>
+	</div>
+<!-- </div> -->
+	
+</div>
+</div>
+<div id="designation" class="benefit-box" style="display:none">
+<div class="content-section-1 client-direct feature-content-size">
+
+	<div class="content-section-1-image-version-b-reverse ">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/ivr-benefit-03.png" alt="互動式語音引導(IVR)">
+	</div>
+	<div class="flex-center content-center content-section-textblock">
+		<div class="content-section-1-content-reverse tx-01">
+			<h2>適配專員：</h2>
+			<p>在許多產業中，不見得每位客服人員都能熟悉所有產品或問題，舉例來說，銀行業的客服人員，有些專門處理貸款，有些專精於信用卡業務。IVR 可以了解客戶需求後，將此通電話分配給最合適的人員來接聽，我們的 IVR 系統甚至可以允許讓尚未解決問題的客戶持續由同一位專員來服務。</p>
+		</div>
+	</div>
+
+	
+</div>
+</div>
+
+<div id="collect" class="benefit-box" style="display:none">
+<div class="content-section-1 client-direct feature-content-size">
+	<div class="content-section-1-image-version-b-reverse ">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/ivr-benefit-04.png" alt="互動式語音引導(IVR)">
+	</div>
+	<div class="flex-center content-center content-section-textblock">
+		<div class="content-section-1-content-reverse tx-01">
+			<h2>預先收集資訊：</h2>
+			<p>設計完善的 IVR 系統能讓在專員接聽前先收集好必要資訊（例如：會員號碼、訂單編號等），如此一來，當專員接上線時，即可馬上查詢相關資料，加快解決問題的速度。</p>
+		</div>
+	</div>
+	
+</div>
+</div>
+
+
+
+
+<script>
+// // tab互換
+function openPlan(benefit) {
+  var i;
+  var x = document.getElementsByClassName("benefit-box");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  document.getElementById(benefit).style.display = "block"; 
+}
+$("#quickpic-btn").click(function(){
+  $(this).addClass("section-btn-active");
+  if ( $("#desination-btn").hasClass("section-btn-active") ) {   $("#desination-btn").removeClass('section-btn-active'); }
+  if ( $("#collect-btn").hasClass("section-btn-active") ) {   $("#collect-btn").removeClass('section-btn-active'); }
+  if ( $("#quickans-btn").hasClass("section-btn-active") ) {   $("#quickans-btn").removeClass('section-btn-active'); }
+})
+
+$("#quickans-btn").click(function(){
+  $(this).addClass("section-btn-active");
+  if ( $("#quickpic-btn").hasClass("section-btn-active") ) {   $("#quickpic-btn").removeClass('section-btn-active'); }
+  if ( $("#desination-btn").hasClass("section-btn-active") ) {   $("#desination-btn").removeClass('section-btn-active'); }
+  if ( $("#collect-btn").hasClass("section-btn-active") ) {   $("#collect-btn").removeClass('section-btn-active'); }
+})
+
+$("#desination-btn").click(function(){
+  $(this).addClass("section-btn-active");
+  if ( $("#quickpic-btn").hasClass("section-btn-active") ) {   $("#quickpic-btn").removeClass('section-btn-active'); }
+  if ( $("#quickans-btn").hasClass("section-btn-active") ) {   $("#quickans-btn").removeClass('section-btn-active'); }
+  if ( $("#collect-btn").hasClass("section-btn-active") ) {   $("#collect-btn").removeClass('section-btn-active'); }
+
+})
+
+$("#collect-btn").click(function(){
+  $(this).addClass("section-btn-active");
+  if ( $("#quickpic-btn").hasClass("section-btn-active") ) {   $("#quickpic-btn").removeClass('section-btn-active'); }
+  if ( $("#quickans-btn").hasClass("section-btn-active") ) {   $("#quickans-btn").removeClass('section-btn-active'); }
+  if ( $("#desination-btn").hasClass("section-btn-active") ) {   $("#desination-btn").removeClass('section-btn-active'); }
+})
+
+</script>

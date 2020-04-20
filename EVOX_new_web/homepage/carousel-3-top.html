@@ -1,0 +1,308 @@
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="/path/to/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /*background: #FAFAFA;*/
+  margin-bottom: 40px;
+  height: 100%;
+}
+  /*隱藏*/
+/*.carousel-block ,.carousel{
+	  display: none;
+}*/
+.carousel-cell {
+  width: 100%;
+  /*height: 100%;*/
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  /*counter-increment: carousel-cell;*/
+}
+.carousel-main-top> .carousel-cell {
+	/*height: 400px;*/
+}
+.top-sotry-img{
+  width: 50%;
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+.top-story-box{
+  width: 100%;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.top-story-box>p{
+	--widthB: 50%;
+	/*padding: 0px 28% 0 5%;*/
+	padding: 0px 115px 0 3%;
+	/*margin-top: calc(var( --widthB)*0.2);*/
+	font-size: 18px;
+}
+.goshop>p{
+	/*margin-top: calc(var( --widthB)*0.1);*/
+}
+.top-story-box>span{
+	padding: 0px 28% 0 5%;
+	font-size: 16px;
+}
+.flickity-page-dots{
+   display: none;
+}
+.carousel-main-top{
+	max-width: 1240px;
+	margin: 40px auto;
+	/*min-height: 400px;*/
+	/*min-height: 100vh;*/
+	max-height: 420px;
+}
+.carousel-image {
+  min-width: 150px;
+  /*height: 400px;*/
+}
+.carousel-nav-top{
+	margin: 20px 0;
+}
+.carousel-block{
+	background: #FAFAFA;
+	padding: 40px 0px;
+	margin: 40px 0px;
+}
+.carousel-tittle{
+	text-align: center;
+	font-size: 35px;
+	color:#a7a7a7;
+	margin: 20px 0;
+
+}
+.flickity-button{
+	background: hsla(0, 0%, 100%, 0);
+	color: #EDEFF1;
+}
+.flickity-prev-next-button.previous{
+	left: 20px;
+}
+.flickity-prev-next-button.next{
+	right: 20px;
+}
+.flickity-button:hover {
+    background: #fff00000;
+    cursor: pointer;
+}
+.flickity-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #19f0;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav-top .carousel-cell {
+  /*height: 80px;*/
+  /*width: 140px;*/
+  width: 239px;
+  height: 137px;
+}
+
+.carousel-nav-top .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav-top .carousel-cell.is-nav-selected {
+  /*background: #ED2;*/
+  opacity: .5;
+  background: #ED2;
+}
+.setH{
+	width: 50%;
+}
+@media screen and (max-width: 840px){
+	.top-sotry-img{
+		width: 100%;
+		float: left;
+	}
+
+	.top-story-box{
+		width: 100%;
+	}
+	.setH{
+		width: 100%;
+	}
+	.top-story-box>p{
+		padding: 0 5%;
+		/*width: 100%;*/
+	}
+	.top-story-box>span{
+		padding: 0 5%;
+	}
+	.carousel-main-top{
+		/*min-height: 100vh;*/
+		margin-bottom: 0px;
+	}
+	.flickity-prev-next-button.previous{
+		top:60%;
+	}
+	.flickity-prev-next-button.next{
+		top:60%;
+	}
+	.carousel-main-top{
+		max-height: 810px;
+	}
+
+}
+@media screen and (max-width: 638px){
+	.carousel-main-top{
+		max-height: 720px;
+	}
+	.carousel-nav-top .carousel-cell {
+	  /*height: 80px;*/
+	  /*width: 140px;*/
+	  width: 192px;
+	  height: 110px;
+	}
+	.flickity-prev-next-button.previous{
+		top:40%;
+	}
+	.flickity-prev-next-button.next{
+		top:40%;
+	}
+}
+@media screen and (max-width: 480px){
+	.flickity-prev-next-button.previous{
+		top:30%;
+	}
+	.flickity-prev-next-button.next{
+		top:30%;
+	}
+	.carousel-nav-top .carousel-cell {
+	  height: 50px;
+	  width: 87px;
+	}
+
+}
+@media screen and (min-width: 1352px){
+	.flickity-prev-next-button.previous{
+		left: -60px;
+	}
+	.flickity-prev-next-button.next{
+		right: -60px;
+	}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var divHeight = $('.top-sotry-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+	});
+	$( window ).on("resize", function() {
+       var divHeight = $('.top-sotry-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+
+    });
+
+</script>
+<!-- Flickity HTML init -->
+
+
+
+<div class="carousel carousel-main-top" data-flickity='{ "wrapAround": true, "autoPlay": 1500,"pauseAutoPlayOnHover": true}'>
+  <div class="carousel-cell">
+  		
+  			<img class="top-sotry-img carousel-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/customer-feedback-1-2.jpg">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: right;">
+		  	<div class="top-story-box">
+		  		<p>“之所以選擇使用EVOX，主要是因為他可以省下裝實體電話機的費用、電話費率蠻便宜、通話品質也算不錯，對於我們這些新創公司來說，錢要花在刀口上。”</p>
+		  		<span>-吳政勳, gogoout 創辦人-</span>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+  <div class="carousel-cell ">
+  		<!-- <div> -->
+  			<img class="top-sotry-img carousel-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/customer-feedback-2.jpg">
+  		<!-- </div> -->
+  		<!-- <div class="flex-center"> -->
+  			<div class="setH" style="display: flex;align-items: center;float: right;">
+		  		<div class="top-story-box goshop"><p>“我們原本也是擔心，換一個全新的電話系統是否需要改代表號，會不會造成要重印名片等等麻煩的後續處理？後來發現EVOX有提供攜碼轉入的方案，將原本的公司代表號接上雲端服務，就可以用手機App來接客人打到我公司分機的電話，比較不用擔心漏接重要的電話。”</p>
+			  		<span>-郭承展, GOSHOP 創辦人-</span>
+			  	</div>
+		  	</div>
+	  	<!-- </div> -->
+  </div>
+  <div class="carousel-cell">
+  		<!-- <div> -->
+  			<img class="top-sotry-img carousel-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/customer-feedback-3.jpg">
+  		<!-- </div> -->
+  		<!-- <div class="flex-center"> -->
+  			<div class="setH" style="display: flex;align-items: center;float: right;">
+		  		<div class="top-story-box"><p>“雲端電話系統的好處是不會受到地理限制，即使到不同城市也不需要更新設定，管理系統也有一些客服及管理者會需要的功能。”</p>
+			  		<span>-宋捷仁, USPACE CEO-</span>
+			  	</div>
+		  	</div>
+	  	<!-- </div> -->
+  </div>
+</div>
+
+<div class="carousel-block">
+	<h3 class="carousel-tittle">我們與你同行</h3>
+	<div class="carousel carousel-nav-top"
+	  data-flickity='{ "asNavFor": ".carousel-main-top", "contain": true, "prevNextButtons": false, "pageDots": false "pauseAutoPlayOnHover": true }'>
+
+	  <div class="carousel-cell">
+	  	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/gogoout-logo.png">
+	  </div>
+	  <div class="carousel-cell">
+	  	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/goshop-logo.png">
+	  </div>
+	  <div class="carousel-cell">
+	  	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/uspace-logo.png">
+	  </div>
+	</div>
+</div>
+
+
+
+<!-- <script type="text/javascript">
+// 1st carousel, main
+$('.carousel-main-top').flickity({
+  wrapAround: true,
+  setGallerySize: false,
+  autoPlay: 1500,
+  pauseAutoPlayOnHover: true
+});
+// 2nd carousel, navigation
+$('.carousel-nav-top').flickity({
+  asNavFor: $('.carousel-main-top')[0]
+  asNavFor: document.querySelector('.carousel-main-top'),
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false,
+  pauseAutoPlayOnHover: true
+});
+
+</script> -->

@@ -1,0 +1,36 @@
+          <script>
+
+$(document).ready(function(){
+  $("#navbar").css("display","none")
+});
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.top = "-120px";
+    document.getElementById("header").style.top = "0px";
+    document.getElementById("content").style.padding = "47px 0 0 0";
+    
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("header").style.top = "50px";
+    document.getElementById("content").style.padding = "117px 0 0 0";
+    if($(window).width() <= 950 ){
+      document.getElementById("navbar").style.top = "0px";
+      document.getElementById("header").style.top = "60px";
+      document.getElementById("content").style.padding = "67px 0 0 0";
+    };
+    if($(window).width() <= 630 ){
+      document.getElementById("navbar").style.top = "0px";
+      document.getElementById("header").style.top = "90px";
+      document.getElementById("content").style.padding = "67px 0 0 0";
+    };
+    if($(window).width() <= 400 ){
+      document.getElementById("navbar").style.top = "0px";
+      document.getElementById("header").style.top = "110px";
+      document.getElementById("content").style.padding = "97px 0 0 0";
+    };
+  }
+}
+
+</script>

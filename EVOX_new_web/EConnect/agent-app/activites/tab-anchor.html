@@ -1,0 +1,155 @@
+<!-- 選單畫到下面移開 -->
+<script>
+
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {
+        scrollFunction();
+    };
+    // var element = document.getElementById("myheader");
+    var s = document.body.clientHeight;
+
+    function scrollFunction() {
+        if (document.body.scrollTop > s || document.documentElement.scrollTop > s) {
+            // document.getElementById("myheader").style.position = "fixed";
+            document.getElementById("myheader").classList.add("myheader-a");
+            document.getElementById("myheader-replace").classList.add("myheader-replace-a");
+        } else {
+            document.getElementById("myheader").classList.remove("myheader-a");
+            document.getElementById("myheader-replace").classList.remove("myheader-replace-a");
+            // document.getElementById("myheader").style.position = "relative";
+        }
+    }
+</script>
+<!-- 選單動畫 -->
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<style type="text/css">
+    
+    .tittle-block{
+        text-align: center;
+        padding: 80px 0 0px 0;
+        display: table;
+        width: 100%;
+    }
+    .anchor-block{
+        max-width: 600px;
+        width: 100%;
+        margin:0 auto;
+        /*display: table;*/
+    }
+    .anchor-box{
+        width: 33.3%;
+        float: left;
+        /*margin:20px auto;*/
+        padding: 20px 0;
+        outline: none;
+    }
+    .anchor-box:focus{
+        outline: none!important;
+    }
+    .anchor-content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+
+    }
+    /*滑動選單*/
+    .myheader {
+        position: relative;
+    }
+    
+    .myheader-a {
+        position: fixed;
+        background-color: #fff;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        height: 90px;
+        /*max-width: 1240px;*/
+        margin: 0 auto;
+        top: 120px;
+        left: 0;
+        -moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    #myheader-replace{
+      height:0px;
+    }
+    .myheader-replace-a{
+      width:100%;
+      padding-top:110px;
+    }
+    .anchor-body>h3{
+        margin:0;
+    }
+    .myheader-a >a>div>.anchor-body >img{
+        width: 50px;
+        float: left;
+    }
+    .myheader-a >a>div>.anchor-body >h3{
+        float: left;
+        line-height: 52px;
+        font-size: 19px;
+    }
+    @media screen and (max-width: 950px){
+        .myheader-a{
+            top: 46px;
+        }
+    }
+    @media screen and (max-width: 360px){
+        .myheader-a >a>div>.anchor-body >h3{
+                font-size: 13px;
+        }
+    }
+</style>
+<div class="tittle-block" id="myheader-replace"><h2>三種<span class="purple-text">通聯活動</span>，紀錄與客戶的互動</h2></div>
+<div class="anchor-block" id="myheader">
+    <a class="anchor-box" href="#section1" id="anchor-1">
+        <div class="anchor-content">
+            <div class="anchor-body">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/activites/call-icon.png" alt="call"><h3>通話紀錄</h3>
+        </div>
+        </div>
+    </a>
+    <a class="anchor-box" href="#section2">
+        <div class="anchor-content">
+            <div class="anchor-body">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/activites/memo-icon.png" alt="call"><h3>備忘錄</h3>
+        </div>
+        </div>
+    </a>
+    <a class="anchor-box" href="#section3">
+        <div class="anchor-content">
+            <div class="anchor-body">
+            <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/activites/task-icon.png" alt="call"><h3>代辦事宜</h3>
+        </div>
+        </div>
+    </a>
+</div>

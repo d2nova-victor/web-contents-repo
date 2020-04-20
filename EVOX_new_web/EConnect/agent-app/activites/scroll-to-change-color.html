@@ -1,0 +1,21 @@
+<script>
+        //  滑到變色
+    var targetOffset = $("#section1").offset().top-300;
+    var targetOffset2 = $("#section2").offset().top-300;
+    var targetOffset3 = $("#section3").offset().top-300;
+
+    var $w = $(window).Onscroll(function(){
+        if ( $w.scrollTop() > targetOffset ) {   
+            $('#anchor-1').css({"background":"#7986CB"});
+        }
+       	if( $w.scrollTop() > targetOffset2 && ){
+            $('#anchor-2').css({"background":"#7986CB"});
+            $('#anchor-1').css({"background":"#fff"});
+        }
+        if( $w.scrollTop() > targetOffset3 ){
+        	$('#anchor-3').css({"background":"#7986CB"});
+        	$('#anchor-2').css({"background":"#fff"});
+        	$('#anchor-1').css({"background":"#fff"});
+        }
+    });
+</script>

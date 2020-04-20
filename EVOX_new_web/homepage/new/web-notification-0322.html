@@ -1,0 +1,67 @@
+<style type="text/css">
+            #header{
+              top:50px;
+              transition: top 0.3s;
+            }
+            .web-notification-banner{
+              position: fixed;
+              top: 0;
+              width: 100%;
+                display: block;
+              background: #00A82D;
+              color: #fff;
+              z-index: 999999;
+              transition: top 0.3s;
+            }
+            .web-notification-banner > p{
+              text-align: center;
+              font-size: 18px;
+              color:#fff;
+              padding: 0 20px!important;
+            }
+            .web-notification-banner > p> a{
+              color:#fff;
+              font-size: 18px;
+              text-decoration: underline;
+              font-weight: bold;
+            }
+            .web-notification-banner > p> a:hover{
+              opacity: .8;
+            }
+          </style>
+          <div id="navbar" class="web-notification-banner">
+            <p>EVOX 如何幫助企業實行遠端工作？<a class="" href="https://www.evoxglobal.com/tw/solutions/teleworking">了解更多 </a> </p>
+          </div>
+          <script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.top = "-120px";
+    document.getElementById("header").style.top = "0px";
+    document.getElementById("content").style.padding = "47px 0 0 0";
+    
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("header").style.top = "50px";
+    document.getElementById("content").style.padding = "117px 0 0 0";
+    if($(window).width() <= 950 ){
+      document.getElementById("navbar").style.top = "0px";
+      document.getElementById("header").style.top = "60px";
+      document.getElementById("content").style.padding = "67px 0 0 0";
+    };
+    if($(window).width() <= 630 ){
+      document.getElementById("navbar").style.top = "0px";
+      document.getElementById("header").style.top = "90px";
+      document.getElementById("content").style.padding = "67px 0 0 0";
+    };
+    if($(window).width() <= 400 ){
+      document.getElementById("navbar").style.top = "0px";
+      document.getElementById("header").style.top = "110px";
+      document.getElementById("content").style.padding = "97px 0 0 0";
+    };
+  }
+}
+
+</script>

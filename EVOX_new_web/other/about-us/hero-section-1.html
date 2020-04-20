@@ -1,0 +1,274 @@
+<style type="text/css">
+	.wrapper-box{
+		width:100%;
+		margin: 0;
+		padding: 0;
+	}
+	.back-green{
+		background: #E8F6E9;
+    	width: 100%;
+    	height: 400px;
+    	position: absolute;
+
+	}
+	.content-center{
+		width: 100%;
+	    /*position: absolu te;*/
+	    /*top: 40px;*/
+	    max-width: 1118px;
+	    margin: 0 auto;
+	    z-index: 999;
+    	position: relative;
+	}
+	.page-tittle{
+		width: 100%;
+    	text-align: center;
+    	padding:40px 0px 0px 0px;
+    	font-size: 42px;
+    	margin:0px;
+	}
+	.page-subtittle{
+		text-align: center;
+		font-size: 18px;
+		margin:0;
+		padding: 0px;
+		padding:10px 0px 0px 0px;
+	}
+	.company-image{
+		width: 100%;
+	}
+	.story-article{
+		max-width: 980px;
+		margin: 40px auto 0 auto;
+		border-bottom: solid 0px #fff;
+	}
+	.article-tittle{
+		font-size: 28px;
+		
+		text-align: center;
+	}
+	.article-tittle>span{
+		color:#00A82D;
+	}
+	.story-article>p{
+		font-size: 16px;
+		line-height: 32px;
+    margin:0;
+	}
+	/*縮放*/
+	.btn-group{
+		width: 100%;
+		margin:20px auto;
+ 	}
+   	.btn-hide{
+    	display: none;
+  	}
+  	.btn-show{
+    	display: block;
+  	}
+  	.expand-btn{
+  		font-size: 14px;
+    	cursor: pointer;
+    	text-align: center;
+  	}
+  	.D2-story{
+    	margin:40px auto 0px auto;
+  	}
+  	.collapse-box-hide{
+    	height: 243px;
+    	overflow: hidden;
+  	}
+  	.collapse-box-open{
+    	height: 100%;
+    	overflow: auto;
+    	background:#f0f8ff00;
+  	}
+  	.front-grlatation{
+    	position: absolute;
+    	top: 750px;
+    	width: 100%;
+    	height: 143px;
+    	float: left;
+    	background: linear-gradient(0deg, #fff 39%, #ffffff00 65%);
+    	background: -moz-linear-gradient(90deg, #fff 39%, #ffffff00 65%);
+    	background: -webkit-linear-gradient(90deg, #fff 39%, #ffffff00 65%)
+    	background: -o-linear-gradient(90deg, #fff 39%, #ffffff00 65%);
+  	}
+
+
+  	/*//*/
+  	.center-gray{
+  		background:#FAFAFA;
+  		width: 100%;
+  		/*position: relative;*/
+    	/*top: -310px;*/
+    	padding: 40px 0;
+    	background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/core-bg-3.jpg");
+    	background-size: cover;
+    	background-position: center;
+    	/*background-repeat: repeat-x;*/
+    	background-attachment: fixed;
+  	}
+  	.section-tittle{
+  		text-align: center;
+    	/*padding: 50px 0px 0px 0px;*/
+    	font-size: 35px;
+  	}
+  	.section-box{
+  		display: table;
+  		/*position: relative;*/
+    	/*top: 50px;*/
+  		max-width: 1151px;
+  		margin: 0 auto;
+  		background: #fff;
+  		padding:0px;
+  		box-shadow: 2px 2px 11px 0 rgba(193,193,193,0.5);
+  	}
+  	.section-article{
+  		/*max-width: 980px;*/
+  		width: 43%;
+  		float: left;
+  		margin: 0px auto;
+  	}
+  	.section-article-tittle{
+  		text-align: center;
+  	}
+  	.section-article-tittle>span{
+  		color: #00A82D;
+  	}
+  	.p1-section{
+  		/*margin-top: 40px;*/
+  		padding: 80px 3% 80px 4%; 
+  	}
+  	.p2-section{
+  		/*margin-top: 40px;*/
+  		padding: 80px 3% 80px 4%;
+  		background: #FAFAFA;
+  	}
+  	.section-article>p{
+  		line-height: 32px;
+  	}
+  	@media screen and (max-width: 1151px) {
+		.section-box{
+  	 		width: 95%;
+  	 		/*padding: 18px 20px;*/
+  	 	}
+  	}
+
+  	 @media screen and (max-width: 980px) {
+  	 	.content-center{
+  	 		width: 90%;
+  	 	}
+  	 	.section-box{
+  	 		width: 90%;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 800px) {
+  	 	.collapse-box-hide{
+  	 		height: 180px;
+  	 	}
+  	 	.back-green{
+  	 		height: 300px;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 640px) {
+  	 	.back-green{
+  	 		height: 250px;
+  	 	}
+  	 	.section-box{
+  	 		width: 80%;
+  	 	}
+  	 	.p1-section, .p2-section{
+  	 		width: 90%;
+    		padding: 20px 5% 20px 5%;
+  	 	}
+  	 }
+</style>
+
+<div class="wrapper-box">
+	<div class="back-green"></div>
+	<div class="content-center">
+		<h1 class="page-tittle">品牌與故事</h1>
+		<h2 class="page-subtittle">在發展中形成核心服務理念</h2>
+		<article class="story-article">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/d2-company-picture-1.jpg" alt="公司照片">
+		</article>
+		<div class="collapse-box-hide" id="table-box">
+		
+		<article class="story-article">
+			<h3 class="article-tittle">3個難關讓D2突破盲點，了解<span>與客戶同行</span>的重要</h3>
+			<p>D2的使命是打造一個與時俱進，充滿可朔性的商務通訊平台，能夠幫助企業用戶在這瞬息萬變的世界搭建溝通的橋樑，同時實現我們最主要的2個核心理念：與客戶一同成長＆對客戶有益的就是對我們有益。<br><br/>我們的產品藍圖其實是將自己放在用戶的立場上，不斷收使用者各樣的需求，一點一滴累積而成的。自己往往就是產品的beta user，親身測試與實際使用後才敢推薦給別人，而這種“客戶體驗為王”的產品開發精神，並不是創業初期的D2就領悟到的。<br/><br/>我們也曾經跟許多剛加入科技戰場的勇者一樣，以為只要滿懷熱情的做出創新的科技產品就能感動他人，卻因為沒有深入了解客戶真正需要跟想要的是什麼，而屢屢受挫。<br/><br/>那麼，這些年我們是如何從經驗中記取寶貴的教訓，一步步走向雲端總機呢？</p>
+		</article>
+		<article class="story-article">
+			<img class="company-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/D2Nova-leader-images-4.jpeg" alt="公司照片">
+      <p>
+        在創立D2 Nova之前，David Wong與Jon Wu最早的合作是一起發展挾帶網頁瀏覽器的Linux手機作業系統。沒想到計畫趕不上變化，就在產品快要完成時，Google的Android系統問世了，意識到前方有斷橋的兩人趕緊踩煞車，並轉而發展通訊軟體。<br/>
+      </p>
+			<h3 class="article-tittle">除非你的創新有幸運女神加持，不然小蝦米是無法對抗大鯨魚的</h3>
+			<p>
+				憑藉對手機App的遠景以及兩人在通訊技術多年的研究，David與Jon決定將重心放在當時電信和通訊界最夯的技術：Rich Communication Services(RCS)，一個能夠讓人在聊天過程中結合表情符號、檔案傳輸或多媒體顯示應用程式。沒想到即使像Orange、Deutsche Telekom(T-Mobile)和中國移動等大型企業都曾表達高度的投資意願和發展興趣，這項產品卻不受使用者的青睞。因為易用性更高的Line、WeChat和What’s App已快速佔據整個市場並被廣為接納，而在Google2015年收購了一間雲端RCS新創後，其他的RCS新創便在一夜之間失去立足之地。
+			</p>
+		</article>
+		
+		<article class="story-article">
+      <h3 class="article-tittle">新創雲端服務不能依靠電信大鯨魚</h3>
+			<img class="company-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/team-bix-image.jpg" alt="team.biz"> 
+			<p>趁著雲端服務的崛起，David與Jon創立了D2 Nova，將RCS的技術轉載到SaaS，研發出了企業內部協作平台team.biz。這一次雖然掌握到使用者的需求，但卻敗在無法像Slack一樣在短時間內募到足夠的資金來全力宣傳，再度失去了市場的先機。</p>
+		</article>
+		
+		<article class="story-article">
+      <h3 class="article-tittle">策略轉向，更加<span>敏捷與彈性</span>才能生存</h3>
+      <p>
+        D2 在經歷3次重大失敗後，重新審視研發的方向與市場的需求，在觀察到企業數位轉型的必然趨勢與傳統交換機的發展已經到盡頭後，決定招攬雲端服務開發人才，結合多年的VoIP技術與SaaS，將已在歐美被廣為接納的雲端總機服務帶回台灣並進行在地客製化，並針對台灣使用的習慣與需求不斷調整與優化，於是EVOX易喂便誕生了。
+      </p>
+			<img class="company-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/about-us/EVOX-image.jpg" alt="EVOX">
+			<p>我們知道，有好的產品還不夠，真正的難題是要如何跟上市場的需求與變化。初代EVOX的推出讓我們收集了許多寶貴的資訊，這一次我們面臨的挑戰與之前相反，產品雖然已經成熟，但台灣企業卻還沒有準備好要全面上雲，絕大多數的公司對於雲端服務還是充滿恐懼與不信任。</p>
+		</article>
+		</div>
+		<!-- <div class="front-grlatation" id="gradual"></div> -->
+		<div class="btn-group">
+		<div class="expand-btn green-text" id ="openFunction">了解我们的完整故事 <i class="fa fa-caret-down "></i></div>
+		<div class="expand-btn green-text btn-hide" id ="closeFunction">收起故事 <i class="fa fa-caret-up "></i></div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+  $(document).ready(function(){
+  $("#openFunction").click(function(){
+    $("#table-box").addClass("collapse-box-open");
+    $("#table-box").removeClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-hide");
+    $("#closeFunction").addClass("btn-show");
+    $("#gradual").addClass("btn-hide");
+    $("#gradual").removeClass("btn-show");
+  });
+  $("#closeFunction").click(function(){
+    $("#table-box").removeClass("collapse-box-open");
+    $("#table-box").addClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-show");
+    $("#openFunction").removeClass("btn-hide");
+    $("#openFunction").addClass("btn-show");
+    $("#gradual").removeClass("btn-hide");
+    $("#gradual").addClass("btn-show");
+  });
+});
+</script>
+
+	<div class="center-gray">
+		<h2 class="section-tittle">核心理念</h2>
+		<div class="section-box">
+			<div class="section-article p1-section">
+				<h3 class="section-article-tittle">與客戶<span>一同成長</span></h3>
+				<p>我們發現許多客戶就和我們一樣是成長中的公司，有著類似的發展過程與挑戰，願意提供最誠懇的建議。同時也知道D2重視客戶的反饋，認真地將用戶對產品的期望列在下一個版本的開發清單中。面對還在掙扎轉型的市場與客戶，D2反而越發得有了使命感，一定可以提供更好更適用的商物通訊平台，讓台灣的企業商務通訊環境能夠跟上最前端的潮流。</p>
+			</div>
+			<div class="section-article p2-section">
+				<h3 class="section-article-tittle"><span>對客戶有益</span>就對我們有益</h3>
+				<p>我們相信與顧客的關係並不是在購買完成後就結束了。因此 D2開啟了用戶大調查計畫，希望藉由探訪與問券的方式更加了解使用者的心聲。如何能讓顧客更方便快速的了解產品、協助客人判斷他的需求、幫助使用者解決各樣的問題等等則是我們接下來的功課與挑戰。我們對未來的願景，就是與我們的客戶一起在科技浪潮中穩定航行，與時俱進。</p>
+			</div>
+		</div>		
+	</div>	
+</div>

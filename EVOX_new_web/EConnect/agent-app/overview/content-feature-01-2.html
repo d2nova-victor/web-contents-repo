@@ -1,0 +1,93 @@
+
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 	
+	 }*/
+</style>
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b ">
+		<!-- <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/team/agents-add-5.png" alt="新增並設定客服專員資訊"> -->
+		<!-- scrollmagic -->
+		<div class="spacer s2"></div>
+		<div class="spacer s0" id="trigger2"></div>
+		<div id="imagesequence" >
+			<img id="myimg-2" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity01.png"><br>
+		</div>
+		<div class="spacer s2"></div>
+		<script>
+			// define images
+			var images2 = [
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity01.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity02.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity03.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity04.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity05.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity06.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity07.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity08.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity09.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity10.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity11.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity12.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity13.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity14.png",
+				"https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/video/activity/15s/activity15.png"
+				
+			];
+
+			// TweenMax can tween any property of any object. We use this object to cycle through the array
+			var obj2 = {curImg2: 0};
+
+			// create tween
+			var tween2 = TweenMax.to(obj2, 4,
+				{
+					curImg2: images2.length - 1,	// animate propery curImg to number of images
+					roundProps: "curImg2",				// only integers so it can be used as an array index
+					repeat: 0,									// repeat 3 times
+					immediateRender: true,			// load first image automatically
+					ease: Linear.easeNone,			// show every image the same ammount of time
+					onUpdate: function () {
+					  $("#myimg-2").attr("src", images2[obj2.curImg2]); // set the image source
+					}
+				}
+			);
+
+			// init controller
+			var controller2 = new ScrollMagic.Controller();
+
+			// build scene
+			var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration:0,offset:100})
+							.setTween(tween2)
+							.addIndicators() // add indicators (requires plugin)
+							.addTo(controller2);
+
+			// handle form change
+			// $("form.move input[name=duration]:radio").change(function () {
+			// 	scene.duration($(this).val());
+			// });
+		</script>
+		<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/tracking.js"></script>
+		<!-- scrollmagic -->
+	</div>
+	<div class="flex-center content-center">
+		<div class="content-section-1-content tx-01">
+			<h2>記錄詳細<span class="purple-text">聯絡內容</span></h2>
+			<p>-通话同时记录关键用户诉求-或在通话结束后对工作进行评价与小结-添加后续跟进任务-管理客户历史记录为后续优化客户体验提供支持</p>
+			<a class="purple-outline-btn" href="/tw/econnect/agentapp/activities-p3review">查看功能</a>
+		</div>
+	</div>
+<!-- </div> -->
+	
+</div>

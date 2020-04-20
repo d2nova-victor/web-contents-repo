@@ -1,0 +1,141 @@
+<style type="text/css">
+	
+
+	/*給專門頁面得*/
+	.evox-image-background{
+	    /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+		/*background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;*/
+	}
+/*	 .acd-text{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	  .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	  .guide-box>h2{
+	 	margin: 0;
+	 }
+
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+    .gary-back{
+    	background: #fafafa;
+    }
+	@media screen and (max-width: 840px){
+	
+	}
+</style>
+<!-- 標題 -->
+<div class="guide-block gary-back">
+	<div class="guide-box">
+		<img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/work-floow-icon.png" alt="工作流程">
+		<h2>掌控和組織您的工作流程</h2>
+		<p>透過任務及備忘錄來掌握您的工作資訊，讓客服人員能夠自己管理工作內容並減少客服人員的疲憊壓力及倦怠。 <a href="#"> <span class="purple-text">了解更多</span></a></p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1-version-b collect-content">
+<div class="content-section-1">
+	<div class="content-section-1-image-version-b">
+			<img id="b-myimg" class="non-img benefit-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/agent-schdual.png" alt="專員日程表">
+			<img id="b-myimg-2" class="non-img" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/agent-status.png" alt="專員狀態">
+			<img id="b-myimg-3" class="non-img" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/know-customer.png" alt="瞭解客戶">
+			
+	</div>
+	<div class="flex-center content-center">
+		<div class="content-section-1-content ">
+			<!-- <h2>智能精準的<span class="purple-text">分配客戶來電</span></h2>
+			<p>透過多層次的自動來電分配系統，讓詢問常見問題的客戶能直接聽取預錄好的語音回覆，或是第一時間將來電導引至最適當的人員。<br/>當客服人員全數忙線時，智能排隊系統可讓客戶選擇持續在線等待，或是留下語音訊息要求客服人員回電。<br/>在這兩個系統的配合下，不僅可以讓客戶獲得較好的客服體驗，也能大幅提升客服人員的工作效率。</p>
+			<a class="purple-outline-btn" href="/tw/econnect/acd-ivr">了解功能</a> -->
+			<div id="selftask" class="info-button btn-active"><i class="fas fa-check purple-text"></i> <div>檢查自我工作時程及管理任務</div></div>
+			<div id="timeschedual" class="info-button"><i class="fas fa-check purple-text"></i> <div>自我管理時間，動態調整待機狀態</div></div>
+			<div id="calltolog" class="info-button"><i class="fas fa-check purple-text"></i> <div>透過來電時的訊息通知了解客人基本資訊，並立即的叫出所有過往紀錄</div></div>
+		</div>
+	</div>
+</div>
+<script>
+		// 切換圖片按鈕
+					$("#selftask").click(function(){
+						$(this).addClass("btn-active");
+						if ( $("#timeschedual").hasClass("btn-active") ) {   $("#timeschedual").removeClass('btn-active'); }
+						if ( $("#calltolog").hasClass("btn-active") ) {   $("#calltolog").removeClass('btn-active'); }
+						// 圖片
+						$("#b-myimg").addClass("benefit-active");
+				  		if ( $("#b-myimg-2").hasClass("benefit-active") ) {   $("#b-myimg-2").removeClass('benefit-active'); }
+				  		if ( $("#b-myimg-3").hasClass("benefit-active") ) {   $("#b-myimg-3").removeClass('benefit-active'); }
+				  
+
+					})
+					$("#timeschedual").click(function(){
+						$(this).addClass("btn-active");
+						if ( $("#selftask").hasClass("btn-active") ) {   $("#selftask").removeClass('btn-active'); }
+						if ( $("#calltolog").hasClass("btn-active") ) {   $("#calltolog").removeClass('btn-active'); }
+						// 圖片
+						$("#b-myimg-2").addClass("benefit-active");
+				  		if ( $("#b-myimg").hasClass("benefit-active") ) {   $("#b-myimg").removeClass('benefit-active'); }
+				  		if ( $("#b-myimg-3").hasClass("benefit-active") ) {   $("#b-myimg-3").removeClass('benefit-active'); }
+							
+					})
+					$("#calltolog").click(function(){
+						$(this).addClass("btn-active");
+						if ( $("#selftask").hasClass("btn-active") ) {   $("#selftask").removeClass('btn-active'); }
+						if ( $("#timeschedual").hasClass("btn-active") ) {   $("#timeschedual").removeClass('btn-active'); }
+						// 圖片
+						$("#b-myimg-3").addClass("benefit-active");
+				  		if ( $("#b-myimg").hasClass("benefit-active") ) {   $("#b-myimg").removeClass('benefit-active'); }
+				  		if ( $("#b-myimg-2").hasClass("benefit-active") ) {   $("#b-myimg-2").removeClass('benefit-active'); }
+
+					})
+	</script>
+	
+</div>

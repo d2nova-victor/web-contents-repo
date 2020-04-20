@@ -1,0 +1,87 @@
+
+<style type="text/css">
+    
+    .tittle-block{
+        text-align: center;
+        padding: 80px 0 0px 0;
+        display: table;
+        width: 100%;
+    }
+   .plan-button-block{
+        -moz-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        -webkit-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        position: relative;
+    }
+    .plan-button-group{
+        max-width: 760px;
+        margin: 0 auto;
+        background: #fff;
+        display: table;
+        width: 60%;
+    }
+    .plan-button{
+        font-size: 16px;
+        /*三個*/
+        width: 33.3%;
+        /*width: 50%;*/
+        float: left;
+        padding: 10px 0 0 0;
+        line-height: 3em;
+        border-bottom: 6px solid #fff;
+        cursor: pointer;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+    }
+    .plan-button:hover{
+        background: #eaeaea;
+        border-bottom: 6px solid #afafaf;
+    }
+    .plan-button-active{
+        border-bottom: 6px solid #5856D6;
+    }
+    .plan-button-active:hover{
+        background: #eaeaea;
+        border-bottom: 6px solid #5856D6;
+    }
+    .button-body>h3{
+        margin:0;
+        float: left;
+        line-height: 52px;
+        font-size: 19px;
+    }
+    .button-body >img{
+        width: 50px;
+        float: left;
+    }
+ 
+    @media screen and (max-width: 950px){
+     
+    }
+    @media screen and (max-width: 360px){
+      
+    }
+</style>
+<div class="tittle-block"><h2>更易於<span class="purple-text">管理</span>與<span class="purple-text">規劃</span>的系統</h2></div>
+<div class="plan-button-block">
+<div class="plan-button-group">
+  <div class="plan-button plan-button-active" id="EVOX-btn" onclick="openPlan('Evox')">
+    <div class="button-body">
+    <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/team/agent-manage-icon.png" alt="管理專員"><h3>管理專員</h3>
+    </div>
+  </div>
+  <div class="plan-button" id="ECONNECT-btn" onclick="openPlan('EConnect')"> 
+    <div class="button-body">
+    <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/team/call-manager-icon.png" alt="規劃來電"><h3>規劃來電</h3>
+    </div>
+  </div>
+  <div class="plan-button" id="EVOXSET-btn" onclick="openPlan('EvoxSet')">
+    <div class="button-body">
+    <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/team/call-log-icon.png" alt="查看紀錄"><h3>查看紀錄</h3>
+    </div>
+  </div>
+</div>
+</div>
