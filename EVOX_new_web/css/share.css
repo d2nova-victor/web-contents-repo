@@ -150,6 +150,30 @@
 		border: 2px solid #7986CB;
 		transition: color .4s, background .4s;
 	}
+	.dark-purple-outline-btn{
+		display: block;
+		margin: 0 5px;
+		border-radius: 4px;
+		max-width: 120px;
+		max-height: 48px;
+		color: #fff;
+		background: #5856D6;
+		text-align: center;
+		margin: 15px 0;
+		/*height: 36px;*/
+		line-height: 2.7em;
+		border: 2px solid #5856D6;
+		padding: 1px;
+		font-weight: 500;
+	}
+	.dark-purple-outline-btn:hover{
+		/*color:#5856D6;*/
+		opacity: .8;
+	/*	background: #5856D6;
+		background: #66C54700;*/
+		/*border: 2px solid #5856D6;*/
+		transition: color .4s, background .4s;
+	}
 	.gray-outline-btn{
 		display: block;
 		margin: 0 5px;
