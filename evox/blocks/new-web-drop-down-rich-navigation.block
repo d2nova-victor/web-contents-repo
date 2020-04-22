@@ -1,0 +1,89 @@
+
+{.if items || websiteSettings.userAccountSettings.loginAllowed}
+
+      {.if websiteSettings.userAccountsSettings.loginAllowed}
+        <div class="user-account-link">
+          <a href="#">
+            <span class="unauth">Sign In</span>
+            <span class="auth">My Account</span>
+          </a>
+        </div>
+      {.end}
+
+      {.repeated section items}
+        {.collection?}
+          {.index?}
+          <div class="rich-tittle">
+            <a class="hover-green-text" href="{collection.fullUrl}">
+              {collection.navigationTitle}
+            </a>
+          </div>
+          {.or}
+
+          {.folder?}
+          <div class="rich-group">
+          <div class="rich-tittle folder-tittle">
+            <a class="folder-toggle hover-green-text" data-href="{collection.fullUrl}" href="{collection.fullUrl}"><div class="menu-link menu-box-top">{collection.navigationTitle}</div></a>
+          </div>
+          <div>
+            {.repeated section items}
+             
+              {.collection?}
+              <div class="rich-tittle">
+                <a class="collection{.if active} active{.end} hover-green-text" href="{collection.fullUrl}">
+                  <div class="menu-link">
+                    {collection.navigationTitle}
+                  </div>
+                </a>
+              </div>
+              {.end}
+
+              {.section externalLink}
+             
+              <div class="rich-tittle">
+                <a class="hover-green-text" href="{url}"{.section newWindow} target="_blank"{.end}>
+                  <div class="menu-link">
+                   {title}
+                  </div>
+                </a>
+              </div>
+              
+              {.end}
+
+            {.end}
+            </div>
+            </div>
+          {.or}
+
+            {.section collection}
+            <div class="rich-tittle">
+              <a class="hover-green-text" href="{fullUrl}">
+                <div class="menu-link">
+                  {navigationTitle}
+                </div>
+              </a>
+            </div>
+            {.end}
+
+          {.end}
+        {.end}
+        {.or}
+          {.section externalLink}
+          <div class="rich-tittle">
+            <a class="hover-green-text" href="{url}"{.section newWindow} target="_blank"{.end}>
+              <div class="menu-link">
+                {title}
+              </div>
+            </a>
+          </div>
+          {.end}
+
+        {.end}
+
+      {.end}
+
+
+  <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+  <style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
+{.end}
+

@@ -1,0 +1,75 @@
+
+{.if items || websiteSettings.userAccountSettings.loginAllowed}
+  <div id="mainNavWrapper" class="nav-wrapper" data-content-field="navigation-mainNav">
+    <ul class="manu-list" id="mainNavigation" data-content-field="navigation-mainNav">
+      {.if websiteSettings.userAccountsSettings.loginAllowed}
+        <div class="user-account-link">
+          <a href="#">
+            <span class="unauth">Sign In</span>
+            <span class="auth">My Account</span>
+          </a>
+        </div>
+      {.end}
+
+      {.repeated section items}
+        {.collection?}
+          {.index?}
+          <div class="index{.if active} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}">
+            <a class="hover-green-text" href="{collection.fullUrl}">
+              {collection.navigationTitle}
+            </a>
+          </div>
+          {.or}
+
+          {.folder?}
+            <a class="folder-toggle hover-green-text" data-href="{collection.fullUrl}" href="{collection.fullUrl}"><li class="menu-link menu-box-top">{collection.navigationTitle}</li></a>
+            {.repeated section items}
+
+              {.collection?}
+                <a class="collection{.if active} active{.end} hover-green-text" href="{collection.fullUrl}">
+                  <li class="menu-link">
+                    {collection.navigationTitle}
+                  </li>
+                </a>
+              {.end}
+              {.section externalLink}
+                <a class="hover-green-text" href="{url}"{.section newWindow} target="_blank"{.end}>
+                  <li class="menu-link">
+                   {title}
+                  </li>
+                </a>
+              {.end}
+            {.end}
+            
+          {.or}
+
+            {.section collection}
+            <div class="collection{.if active} active{.end}{.if homepage} homepage{.end}">
+              <a class="hover-green-text" href="{fullUrl}">
+                <li class="menu-link">
+                  {navigationTitle}
+                </li>
+              </a>
+            </div>
+            {.end}
+
+          {.end}
+        {.end}
+        {.or}
+          {.section externalLink}
+            <a class="hover-green-text" href="{url}"{.section newWindow} target="_blank"{.end}>
+              <li class="menu-link">
+                {title}
+              </li>
+            </a>
+          {.end}
+
+        {.end}
+
+      {.end}
+    </ul>
+  </div>
+  <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+  <style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
+{.end}
+
