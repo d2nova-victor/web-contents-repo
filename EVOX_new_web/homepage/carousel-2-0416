@@ -308,11 +308,11 @@ body { font-family: sans-serif; }
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-02.png" alt="femasHR">
 	  	<span class="tooltiptext">人資服務</span>
 	  </div>
-	  <div class="carousel-cell tooltip">
+<!-- 	  <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-01.png" alt="甘恩電商">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-02.png" alt="甘恩電商">
 	  	<span class="tooltiptext">電子商務</span>
-	  </div>
+	  </div> -->
 	  <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-01.png" alt="MySwissLife">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-02.png" alt="MySwissLife">
@@ -363,16 +363,15 @@ body { font-family: sans-serif; }
 		  	<div class="customer-feedback-box">
 		  		<p>“比較了眾多廠商的產品後，EVOX的後台管理系統可以說是相對最齊全也最清楚的”</p>
 		  		<span>-鋒形科技 MIS主管-</span>
-		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="" target="_blank">了解他們的故事</a>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/femas-hr" target="_blank">了解他們的故事</a>
 		  		</div>
 		  	</div>
 	  	
   </div>
-  <div class="carousel-cell">
+<!--   <div class="carousel-cell">
   		
   			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/oneway-image.jpg" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/oneway-image.jpg" alt="玩味生活">
-  		<!-- </div> -->
-	  	<!-- <div class="flex-center"> -->
+
 	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
 		  	<div class="customer-feedback-box">
 		  		<p>“公司的業務很多時間會在外面開發，接洽客戶，過去致電進線都是在透過助理去用雲端電話再去尋找業務，或著提供業務的手機號碼給對方，然而使用雲端電話後，可以大幅度減少這類型的工作，提升工作效率。”</p>
@@ -381,7 +380,7 @@ body { font-family: sans-serif; }
 		  		</div>
 		  	</div>
 	  	
-  </div>
+  </div> -->
   <div class="carousel-cell">
   		
   			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" alt="MySwissLife">
