@@ -165,41 +165,45 @@ body { font-family: sans-serif; }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 100%;
+  display: block;
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   padding: 5px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
-  left: 50%;
+  /*left: 50%;*/
   /*margin-left: -60px;*/
   margin-left: -18%;
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: 9px;
+  font-size: 8px;
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
+/*  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #555 transparent transparent transparent;*/
 }
 
 .tooltip:hover .tooltiptext {
-     visibility: visible;
+    visibility: visible;
     opacity: 1;
     /* z-index: 99999999999; */
     position: relative;
     /* top: 10px; */
-    top: -130px;
+    /*top: -136px;*/
+    /*left: 32%;*/
+    margin-left: 0%;
+    bottom:37px;
 }
 .carousel-main>div.flickity-viewport{
 	min-height: 400px;
@@ -299,6 +303,11 @@ body { font-family: sans-serif; }
 	<div class="carousel carousel-nav"
 	  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
 
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-01.png" alt="Famas">
+	  	<img class="logo-color" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-02.png" alt="Famas">
+	  	<span class="tooltiptext">HR System</span>
+	  </div>
       <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-01.png" alt="MySwissLife">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-02.png" alt="MySwissLife">
@@ -324,11 +333,11 @@ body { font-family: sans-serif; }
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/goshop-02.png" alt="goshop">
 	  	<span class="tooltiptext">ECommerce</span>
 	  </div>
-	  <div class="carousel-cell tooltip">
+	  <!-- <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-01.png" alt="uspace">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-02.png" alt="uspace">
 	  	<span class="tooltiptext">Parking Sharing</span>
-	  </div>
+	  </div> -->
 	</div>
 </div>
 
@@ -336,7 +345,21 @@ body { font-family: sans-serif; }
 <div class="carousel carousel-main" data-flickity='{ "wrapAround": true, "lazyLoad": true }'>
 	<div class="carousel-cell">
   		
-  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" alt="MySwissLife">
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/famas-image-3.jpg" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/famas-image-3.jpg" alt="Famas">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“After surveying multiple suppliers, we found the EVOX admin site to be the most complete and clear ”</p>
+		  		<span>-Femas HR MIS Manager-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/en/testimonial/femas-hr" target="_blank">Their story</a>
+		  		</div>
+		  	</div>
+	  	
+	</div>
+	<div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" alt="MySwissLife">
   		<!-- </div> -->
 	  	<!-- <div class="flex-center"> -->
 	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
@@ -403,11 +426,8 @@ body { font-family: sans-serif; }
 		  	</div>
 	  	<!-- </div> -->
   	</div>
-  	<div class="carousel-cell">
-  		<!-- <div> -->
+<!--   	<div class="carousel-cell">
   			<img class="customer-feedback-img carousel-image lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/uspace-image.jpg" sizes="(min-width: 1024px) 720px, 360px" src="" alt="uspace">
-  		<!-- </div> -->
-  		<!-- <div class="flex-center"> -->
   			<div class="setH" style="display: flex;align-items: center;float: left;">
 		  		<div class="customer-feedback-box"><p>
 		  			“We were worried we had to change our phone number if we switched to a new phone system. That would have created problems like having to print new business cards etc. Turns out EVOX allows us to keep our number. Now we can answer customer calls with our mobile app and not worry about missing calls.”
@@ -416,8 +436,7 @@ body { font-family: sans-serif; }
 			  		<a class="gray-outline-btn" style="margin-left: 19px; " href="https://blog.evoxglobal.com/en/testimonial/uspace">Their story</a>
 			  	</div>
 		  	</div>
-	  	<!-- </div> -->
-  	</div>
+  	</div> -->
 
 
 
