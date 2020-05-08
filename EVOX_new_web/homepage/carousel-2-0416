@@ -159,16 +159,17 @@ body { font-family: sans-serif; }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 100%;
+  display: block;
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   padding: 5px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
-  left: 50%;
+  /*left: 50%;*/
   /*margin-left: -60px;*/
   margin-left: -18%;
   opacity: 0;
@@ -177,25 +178,26 @@ body { font-family: sans-serif; }
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
+/*  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #555 transparent transparent transparent;*/
 }
 
 .tooltip:hover .tooltiptext {
-       visibility: visible;
+    visibility: visible;
     opacity: 1;
     /* z-index: 99999999999; */
     position: relative;
     /* top: 10px; */
-    top: -136px;
-    left: 32%;
+    /*top: -136px;*/
+    /*left: 32%;*/
     margin-left: 0%;
+    bottom:37px;
 }
 .carousel-main>div.flickity-viewport{
 	min-height: 400px;
@@ -338,11 +340,11 @@ body { font-family: sans-serif; }
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/goshop-02.png" alt="goshop">
 	  	<span class="tooltiptext">3C產品網購</span>
 	  </div>
-	  <div class="carousel-cell tooltip">
+	<!--   <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-01.png" alt="uspace">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-02.png" alt="uspace">
 	  	<span class="tooltiptext">共享車位服務</span>
-	  </div>
+	  </div> -->
 	  <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/gogoout-01.png" alt="gogoout">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/gogoout-02.png" alt="gogoout">
@@ -450,11 +452,9 @@ body { font-family: sans-serif; }
 		  	</div>
 	  	<!-- </div> -->
   </div>
-  <div class="carousel-cell">
-  		<!-- <div> -->
+<!--   <div class="carousel-cell">
   			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px"  data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/uspace-image.jpg" alt="uspace">
-  		<!-- </div> -->
-  		<!-- <div class="flex-center"> -->
+
   			<div class="setH" style="display: flex;align-items: center;float: left;">
 		  		<div class="customer-feedback-box"><p>
 		  			“我們原本也是擔心，換一個全新的電話系統是否需要改代表號，會不會造成要重印名片等等麻煩的後續處理？後來發現EVOX有提供攜碼轉入的方案，將原本的公司代表號接上雲端服務，就可以用手機App來接客人打到我公司分機的電話，比較不用擔心漏接重要的電話。”
@@ -463,8 +463,7 @@ body { font-family: sans-serif; }
 			  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/uspace" target="_blank">了解他們的故事</a>
 			  	</div>
 		  	</div>
-	  	<!-- </div> -->
-  </div>
+  </div> -->
 
   <div class="carousel-cell">
   		<!-- <div> -->
