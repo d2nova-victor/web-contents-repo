@@ -32,11 +32,15 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
 	    margin-left: -13%;
 }
 @media only screen and (max-width: 1254px){
-	.headerNav-dropdown:hover .drop-down-block{
+	.main-menu>div:first-child:hover .drop-down-block{
 	    margin-left: -47%;
 	}
+	
 }
 @media only screen and (max-width: 1171px){
+	.main-menu>div:first-child:hover .drop-down-block{
+	    margin-left: -13%;
+	}
 	.headerNav-dropdown:hover .drop-down-block{
 	    margin-left: -20%;
 	}
@@ -64,14 +68,16 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
 /*平版&手機版*/
 @media only screen and (max-width: 1170px){
 	.product-richmenu .rich-block:nth-child(1){
-		border-right: 1px solid #eee!important;
-    	border-bottom: 0px solid #eee;
+		/*border-right: 1px solid #eee!important;*/
+    	/*border-bottom: 0px solid #eee;*/
 	}
 	
 }
 @media only screen and (max-width: 1030px){
-	/*修改原來檔案*/
-		
+	.main-menu>div:first-child:hover .drop-down-block{
+	    margin-left: 0%;
+	}
+	/*修改原來檔案*/	
 	.logo-wrapper{
 		width: 44.3%!important;
 	}
