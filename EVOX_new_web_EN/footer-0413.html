@@ -48,22 +48,30 @@
 		color:#fff;
 		transform: opacity .3s;
 	}
-	.sesstion_box >li >a > div:hover{
-		opacity: .8;
-	}
+	
 	.sesstion_box > li{
 		/*float: left;*/
 		text-align:left;
 		margin: 5px 0;
-    	height: 24px;
+    	/*height: 24px;*/
+    	max-width: 120px;
 	}
 	.sesstion_box > li > a{
 		font-size: 13px;
 		text-align: left;
 		transform: opacity .3s;
 	}
+	.sesstion_box >li >a > div:hover{
+		opacity: .8;
+	}
 	.sesstion_box > li > a:hover{
 		opacity: .8;
+	}
+	.sesstion_box > li > a > div{
+		font-size: 13px;
+		font-weight: normal;
+		text-align: left;
+		transform: opacity .3s;
 	}
 	.devices-icon{
 		margin-top:15px;
@@ -170,14 +178,14 @@ $(function() {
 	<div class="logo">
 		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/logo-white.png" alt="EVOX-logo">
 	</div>
-	<div class="call"><a href="tel:+886-2-5568-6590"><img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/call-icon.png" alt="電話icon"><p>02-5568-6590</p></a></div>
+	<!-- <div class="call"><a href="tel:+886-2-5568-6590"><img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/call-icon.png" alt="電話icon"><p>02-5568-6590</p></a></div> -->
 </div>
 
 <div class="colum-left">
 	<div class="sesstion_box ">
 		<div>Product</div>
 		<li><a href="/en/evox/cloud-phone-system">EVOX Service</a></li>
-		<li><a href="/en/evox-connect/call-center">EVOX Connect Service</a></li>
+		<li><a href="/en/evox-connect/call-center"><div style="line-height: 16px;">EVOX Connect Service</div></a></li>
 		<!-- <li><a href="/en/evox/cloud-pbx/fax">E-Fax</a></li> -->
 		<li><a href="/en/evox/multiple-devices/ip-phone">IP Phone</a></li>
 		<li><a href="/en/evox/jabra-headphone">Jabra Headphone</a></li>
