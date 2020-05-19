@@ -304,6 +304,11 @@ body { font-family: sans-serif; }
 	  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
 
 	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-01.png" alt="oneway">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-02.png" alt="oneway">
+	  	<span class="tooltiptext">Ecommerce</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-01.png" alt="Famas">
 	  	<img class="logo-color" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-02.png" alt="Famas">
 	  	<span class="tooltiptext">HR System</span>
@@ -345,7 +350,21 @@ body { font-family: sans-serif; }
 <div class="carousel carousel-main" data-flickity='{ "wrapAround": true, "lazyLoad": true }'>
 	<div class="carousel-cell">
   		
-  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/famas-image-3.jpg" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/famas-image-3.jpg" alt="Famas">
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/oneway-image.jpg" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/oneway-image.jpg" alt="OneWay">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“Even though all of the staff is located in Hsinchu and one of the owner managers in Taipei, EVOX links OneWay with a single Cloud PBX system. This eliminates the need for a separate PBX in each location. ”</p>
+		  		<span>-OneWay Marketing Manager-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/en/testimonial/oneway" target="_blank">Their story</a>
+		  		</div>
+		  	</div>
+	  	
+	</div>
+	<div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/carousel-images/famas-image-3.jpg" alt="Famas">
   		<!-- </div> -->
 	  	<!-- <div class="flex-center"> -->
 	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
