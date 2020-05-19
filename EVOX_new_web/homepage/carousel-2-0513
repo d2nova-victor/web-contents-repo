@@ -1,0 +1,508 @@
+<!-- 首頁上半段已有 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /*background: #FAFAFA;*/
+  margin-bottom: 40px;
+  height: 100%;
+}
+  /*隱藏*/
+/*.carousel-block ,.carousel{
+	  display: none;
+}*/
+.carousel-cell {
+  width: 100%;
+  /*height: 100%;*/
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  /*counter-increment: carousel-cell;*/
+}
+.carousel-main> .carousel-cell {
+	/*height: 400px;*/
+}
+.customer-feedback-img{
+  width: 50%;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.customer-feedback-box{
+  width: 90%;
+  margin:0 auto;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+}
+.customer-feedback-box>p{
+	/*--widthB: 50%;*/
+	/*padding: 0px 28% 0 5%;*/
+	/*padding: 0px 115px 0 3%;*/
+	/*margin-top: calc(var( --widthB)*0.2);*/
+	font-size: 18px;
+	margin:0px 15px;
+}
+.goshop>p{
+	/*margin-top: calc(var( --widthB)*0.1);*/
+}
+.customer-feedback-box>span{
+	padding: 0px 28% 0 15px;
+	font-size: 16px;
+}
+.flickity-page-dots{
+   display: none;
+}
+.carousel-main{
+	max-width: 1240px;
+	margin: 40px auto;
+	min-height: 400px;
+	/*min-height: 100vh;*/
+	max-height: 420px;
+}
+.carousel-image {
+  min-width: 150px;
+  /*height: 400px;*/
+}
+.carousel-nav{
+	margin: 20px 0;
+}
+.carousel-block{
+	background: #FAFAFA;
+	padding: 40px 0px;
+	margin: 40px 0px;
+}
+.carousel-tittle{
+	text-align: center;
+	font-size: 35px;
+	color:#a7a7a7;
+	margin: 20px 0;
+
+}
+.flickity-button{
+	background: hsla(0, 0%, 100%, 0);
+	color: #EDEFF1;
+}
+.flickity-prev-next-button.previous{
+	left: 20px;
+}
+.flickity-prev-next-button.next{
+	right: 20px;
+}
+.flickity-button:hover {
+    background: #fff00000;
+    cursor: pointer;
+}
+.flickity-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #19f0;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell {
+  /*height: 80px;*/
+  /*width: 140px;*/
+  width: 239px;
+  height: 137px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  /*background: #ED2;*/
+  /*opacity: .5;*/
+}
+
+.setH{
+	width: 50%;
+}
+.logo-color{
+	display: none;
+}
+.carousel-cell:hover .logo-color{
+	display: block!important;
+}
+.carousel-cell:hover .logo-wh{
+	display: none!important;
+}
+.is-selected >.logo-wh{
+  display: none!important;
+}
+.is-selected >.logo-color{
+  display: block!important;
+}
+
+/*提示文字*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  /*border-radius: 6px;*/
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  /*left: 50%;*/
+  /*margin-left: -60px;*/
+  margin-left: -18%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 8px;
+}
+
+.tooltip .tooltiptext::after {
+/*  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;*/
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    /* z-index: 99999999999; */
+    position: relative;
+    /* top: 10px; */
+    /*top: -136px;*/
+    /*left: 32%;*/
+    margin-left: 0%;
+    bottom:37px;
+}
+.carousel-main>div.flickity-viewport{
+	min-height: 400px;
+}
+@media screen and (max-width: 840px){
+	.customer-feedback-img{
+		width: 100%;
+	}
+	.customer-feedback-box{
+		width: 100%;
+	}
+	.setH{
+		width: 100%;
+	}
+	.customer-feedback-box>p{
+		/*padding: 0 5%;*/
+		/*width: 100%;*/
+	}
+	.customer-feedback-box>span{
+		/*padding: 0 5%;*/
+	}
+	.carousel-main{
+		/*min-height: 100vh;*/
+		margin-bottom: 0px;
+	}
+	.flickity-prev-next-button.previous{
+		top:60%;
+	}
+	.flickity-prev-next-button.next{
+		top:60%;
+	}
+	.carousel-main{
+		max-height: 810px;
+	}
+
+}
+@media screen and (max-width: 638px){
+	.carousel-main{
+		max-height: 720px;
+	}
+	.carousel-nav .carousel-cell {
+	  /*height: 80px;*/
+	  /*width: 140px;*/
+	  width: 192px;
+	  height: 110px;
+	}
+	.flickity-prev-next-button.previous{
+		top:40%;
+	}
+	.flickity-prev-next-button.next{
+		top:40%;
+	}
+}
+@media screen and (max-width: 480px){
+	.flickity-prev-next-button.previous{
+		top:30%;
+	}
+	.flickity-prev-next-button.next{
+		top:30%;
+	}
+	.carousel-nav .carousel-cell {
+	  height: 50px;
+	  width: 127px;
+	}
+	/*提示文字*/
+	.tooltip:hover .tooltiptext {
+     visibility: hidden;
+ 	}
+
+}
+@media screen and (min-width: 1352px){
+	.flickity-prev-next-button.previous{
+		left: -60px;
+	}
+	.flickity-prev-next-button.next{
+		right: -60px;
+	}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var divHeight = $('.customer-feedback-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+	});
+	$( window ).on("resize", function() {
+       var divHeight = $('.customer-feedback-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+
+    });
+
+</script>
+<style type="text/css">
+
+</style>
+<!-- Flickity HTML init -->
+<div class="carousel-block">
+	<h3 class="carousel-tittle">看看這些用戶怎麼說</h3>
+	<div class="carousel carousel-nav"
+	  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+
+	  
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-01.png" alt="甘恩電商">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-02.png" alt="甘恩電商">
+	  	<span class="tooltiptext">電子商務</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-01.png" alt="femasHR">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/femas-02.png" alt="femasHR">
+	  	<span class="tooltiptext">人資服務</span>
+	  </div>
+	  
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-01.png" alt="MySwissLife">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/myswisslife-02.png" alt="MySwissLife">
+	  	<span class="tooltiptext">電子商務</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/ob-01.png" alt="OB嚴選">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/ob-02.png" alt="OB嚴選">
+	  	<span class="tooltiptext">服飾零售業</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/anshin-01.png" alt="安行">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/anshin-02.png" alt="安行">
+	  	<span class="tooltiptext">交通接送服務</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/qbebe-01.png" alt="Qbebe">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/qbebe-02.png" alt="Qbebe">
+	  	<span class="tooltiptext">食品製造業</span>
+	  </div>
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/goshop-01.png" alt="goshop">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/goshop-02.png" alt="goshop">
+	  	<span class="tooltiptext">3C產品網購</span>
+	  </div>
+	<!--   <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-01.png" alt="uspace">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/uspace-02.png" alt="uspace">
+	  	<span class="tooltiptext">共享車位服務</span>
+	  </div> -->
+	  <div class="carousel-cell tooltip">
+	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/gogoout-01.png" alt="gogoout">
+	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/gogoout-02.png" alt="gogoout">
+	  	<span class="tooltiptext">線上租車平台</span>
+	  </div>
+	</div>
+</div>
+
+
+<div class="carousel carousel-main" data-flickity='{ "wrapAround": true, "lazyLoad": true }'>
+  
+    <div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/oneway-image.jpg" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/oneway-image.jpg" alt="玩味生活">
+
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“雖然員工都在新竹辦公，有一個老闆卻是在台北遠端管理，透過EVOX就能用一個總機串聯全台人員，而不是每一個地點都要裝一套總機。”</p>
+		  		<span>-OneWay玩味生活 行銷部經理-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/oneway" target="_blank">了解他們的故事</a>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+  <div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/famas-image-3.jpg" alt="Femas HR">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“比較了眾多廠商的產品後，EVOX的後台管理系統可以說是相對最齊全也最清楚的”</p>
+		  		<span>-鋒形科技 MIS主管-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/femas-hr" target="_blank">了解他們的故事</a>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+
+  <div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/myswisslife-image.jpg" alt="MySwissLife">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“武漢肺炎正是考驗企業IT危機處理能力，公司在過年後馬上擬定在家工作、遠距離上班的因應方案，其中EVOX雲端主機發揮極大的功能”</p>
+		  		<span>-My Swiss Life 創辦人-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/my-swiss-life" target="_blank">了解他們的故事</a>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+  <div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px"  data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/ob-image.jpg" alt="OB嚴選">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“EVOX對我們最大的幫助，就是在辦公室搬遷或人員異動時，不必大費周章”</p>
+		  		<span>-OB嚴選 IT主管-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/ob-design" target="_blank">了解他們的故事</a>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+  <div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px"  data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/anshin-image.jpg" alt="Anshin">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“三個月就達成政府業績要求，EVOX電話系統是最佳幫手”</p>
+		  		<span>-游育杰, 安行創辦人-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/an-shin" target="_blank">了解他們的故事</a>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+  <div class="carousel-cell">
+  		
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px"  data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/qbebe-image.jpg" alt="Qbebe">
+  		<!-- </div> -->
+	  	<!-- <div class="flex-center"> -->
+	  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+		  	<div class="customer-feedback-box">
+		  		<p>“目前公司規模擴張得很快，EVOX所提供的服務能幫助新進人員、客服、採購等各分點迅速地就定位，而行動化以及群響功能也可以讓他們不會漏接重要的電話”</p>
+		  		<span>-QBEBE創辦人-</span>
+		  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/qbebe" target="_blank">了解他們的故事</a>
+		  		</div>
+		  	</div>
+	  	
+  </div>
+  <div class="carousel-cell ">
+  		<!-- <div> -->
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/goshop-image.jpg" alt="goshop">
+  		<!-- </div> -->
+  		<!-- <div class="flex-center"> -->
+  			<div class="setH" style="display: flex;align-items: center;float: left;">
+		  		<div class="customer-feedback-box goshop"><p>“雲端電話系統的好處是不會受到地理限制，即使到不同城市也不需要更新設定，管理系統也有一些客服及管理者會需要的功能。”</p>
+			  		<span>-郭承展, GOSHOP 創辦人-</span>
+			  		<!-- <a class="gray-outline-btn" style="margin-left: 19px;" href="" target="_blank">了解他們的故事</a> -->
+			  	</div>
+		  	</div>
+	  	<!-- </div> -->
+  </div>
+<!--   <div class="carousel-cell">
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px"  data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/uspace-image.jpg" alt="uspace">
+
+  			<div class="setH" style="display: flex;align-items: center;float: left;">
+		  		<div class="customer-feedback-box"><p>
+		  			“我們原本也是擔心，換一個全新的電話系統是否需要改代表號，會不會造成要重印名片等等麻煩的後續處理？後來發現EVOX有提供攜碼轉入的方案，將原本的公司代表號接上雲端服務，就可以用手機App來接客人打到我公司分機的電話，比較不用擔心漏接重要的電話。”
+		  		</p>
+			  		<span>-宋捷仁, USPACE CEO-</span>
+			  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/uspace" target="_blank">了解他們的故事</a>
+			  	</div>
+		  	</div>
+  </div> -->
+
+  <div class="carousel-cell">
+  		<!-- <div> -->
+  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px"  data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/gogoout-image.jpg" alt="gogoout">
+  		<!-- </div> -->
+  		<!-- <div class="flex-center"> -->
+  			<div class="setH" style="display: flex;align-items: center;float: left;">
+		  		<div class="customer-feedback-box"><p>
+		  			“能夠省下傳統總機安裝、購買桌機及設定的費用，讓新創公司把錢花在刀口上。”
+		  		</p>
+			  		<span>-吳政勳, gogoout 創辦人-</span>
+			  		<a class="gray-outline-btn" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/gogoout" target="_blank">了解他們的故事</a>
+			  	</div>
+		  	</div>
+	  	<!-- </div> -->
+  </div>
+
+
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+// 1st carousel, main
+$('.carousel-main').flickity({
+  wrapAround: true,
+  setGallerySize: false
+});
+// 2nd carousel, navigation
+$('.carousel-nav').flickity({
+  asNavFor: $('.carousel-main')[0]
+  asNavFor: document.querySelector('.carousel-main'),
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false
+});
+</script>
