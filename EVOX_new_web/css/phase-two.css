@@ -579,7 +579,7 @@ footer#footer a {
 }
 
 .main-menu {
-  width: 60%;
+  width: auto;
   box-sizing: border-box;
     /*display: table-cell;*/
   display: block;
