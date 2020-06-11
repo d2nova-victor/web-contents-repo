@@ -22,6 +22,29 @@
 		border: 2px solid #00A82D;
 		transition: color .4s, background .4s;
 	}
+	.dark-green-btn{
+		display: block;
+		margin: 0 5px;
+		border-radius: 4px;
+		max-width: 120px;
+		max-height: 48px;
+		height: 36px;
+		color: #fff;
+		background: #00A82D;
+		border: 2px solid #00A82D;
+		text-align: center;
+		margin: 15px 0;
+		/*height: 36px;*/
+		line-height: 2.7em;
+		padding: 1px;
+		font-weight: 500;
+	}
+	.dark-green-btn:hover{
+		opacity: .8;
+		background: #66C547;
+		border: 2px solid #66C547;
+		transition: color .4s, background .4s;
+	}
 	.purple-btn{
 		display: block;
 		margin: 0 5px;
