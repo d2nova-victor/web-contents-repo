@@ -450,6 +450,7 @@
 		.content-section-1-content{
 			width: 100%;
 			padding:0 5%;
+			min-height:150px;
 		}
 		.content-section-8{
 			margin-top: 40px;
@@ -535,5 +536,6 @@
 		.content-section-1-content-reverse{
 			width: 100%;
 			padding:0 5%;
+			min-height:150px;
 		}
 	}
