@@ -63,7 +63,7 @@ body { font-family: sans-serif; }
 .carousel-main{
 	max-width: 1240px;
 	margin: 40px auto;
-	min-height: 400px;
+	min-height: auto;
 	/*min-height: 100vh;*/
 	max-height: 420px;
 }
@@ -118,17 +118,22 @@ body { font-family: sans-serif; }
   /*height: 80px;*/
   /*width: 140px;*/
   width: 239px;
+  /*width:25%;*/
   height: 137px;
 }
-
+.is-nav-selected{
+}
+.carousel-nav .carousel-cell>img{
+	  opacity: 0.3;
+}
 .carousel-nav .carousel-cell:before {
   font-size: 50px;
   line-height: 80px;
 }
 
-.carousel-nav .carousel-cell.is-nav-selected {
+.carousel-nav .carousel-cell.is-selected>img {
   /*background: #ED2;*/
-  /*opacity: .5;*/
+  opacity:1;
 }
 
 .setH{
@@ -174,7 +179,7 @@ body { font-family: sans-serif; }
   margin-left: -18%;
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: 8px;
+  font-size: 13px;
 }
 
 .tooltip .tooltiptext::after {
@@ -191,17 +196,28 @@ body { font-family: sans-serif; }
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-    /* z-index: 99999999999; */
     position: relative;
-    /* top: 10px; */
-    /*top: -136px;*/
-    /*left: 32%;*/
     margin-left: 0%;
     bottom:37px;
 }
-.carousel-main>div.flickity-viewport{
-	min-height: 400px;
+.is-selected>.tooltiptext{
+	visibility: visible;
+    opacity: 1;
+    position: relative;
+    margin-left: 0%;
+    bottom:37px;
 }
+
+.carousel-main>div.flickity-viewport{
+	min-height: auto;
+}
+/*.gratation-mask{
+	position: absolute;
+    width: 100%;
+    background: radial-gradient(#fff0, #fbfbfb9e, #fbfbfb);
+    height: 170px;
+    top: 100px;
+}*/
 @media screen and (max-width: 840px){
 	.customer-feedback-img{
 		width: 100%;
@@ -216,12 +232,15 @@ body { font-family: sans-serif; }
 		/*padding: 0 5%;*/
 		/*width: 100%;*/
 	}
+
 	.customer-feedback-box>span{
 		/*padding: 0 5%;*/
+		padding:0px 0% 0 15px;
 	}
 	.carousel-main{
 		/*min-height: 100vh;*/
 		margin-bottom: 0px;
+		margin-top: 0px;
 	}
 	.flickity-prev-next-button.previous{
 		top:60%;
@@ -231,6 +250,9 @@ body { font-family: sans-serif; }
 	}
 	.carousel-main{
 		max-height: 810px;
+	}
+	.carousel-block{
+		margin:40px auto 0 auto;
 	}
 
 }
@@ -263,7 +285,7 @@ body { font-family: sans-serif; }
 	  width: 127px;
 	}
 	/*提示文字*/
-	.tooltip:hover .tooltiptext {
+	.tooltip:hover .tooltiptext, .is-selected>.tooltiptext {
      visibility: hidden;
  	}
 
@@ -301,10 +323,9 @@ body { font-family: sans-serif; }
 <!-- Flickity HTML init -->
 <div class="carousel-block">
 	<h3 class="carousel-tittle">看看這些用戶怎麼說</h3>
-	<div class="carousel carousel-nav"
-	  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
 
-	  
+	<div class="carousel carousel-nav"
+	  data-flickity='{"wrapAround": true, "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false }'>
 	  <div class="carousel-cell tooltip">
 	  	<img class="logo-wh" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-01.png" alt="甘恩電商">
 	  	<img class="logo-color" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/carousel-images/logo/one-way-02.png" alt="甘恩電商">
@@ -352,6 +373,7 @@ body { font-family: sans-serif; }
 	  	<span class="tooltiptext">線上租車平台</span>
 	  </div>
 	</div>
+	<!-- <div class="gratation-mask"></div> -->
 </div>
 
 
