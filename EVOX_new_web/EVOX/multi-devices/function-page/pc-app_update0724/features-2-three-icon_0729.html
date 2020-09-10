@@ -1,0 +1,256 @@
+  <style type="text/css">
+        .features-3-background{
+          width: 100%;
+          display: table;
+          margin: 40px 0;
+          }
+        .features-3-section{
+          max-width: 1440px;
+          min-width: 670px;
+          margin: 40px auto;
+          display: table;
+          /*width: 47%;*/
+        }
+        .four-block-section{
+          width: 66%;
+        }
+
+        .features-3-section > .three-block{ 
+              /* width: 30.5%; */
+          width: 23%;
+          float: left;
+          padding: 5px 0% 5px 0%;
+          border-radius: 4px;
+          border: 1px solid #CCCCCC;
+          min-height: 274px;
+          /* margin-top: 20px; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 1%;
+        }
+        .features-3-section > .three-block:hover{ 
+          background: #FAFAFA;
+        }
+        .border-add{
+            margin-right: 2.7%;
+
+          }
+
+        .content-tittle{
+        margin:5px 0;
+        font-size:21px;
+        }
+     
+         .evox-logo-return{
+          padding: 9px 5px 0 5px;
+          height: 28px;
+        }
+        .icon{
+        width:80px;
+        height:80px;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 90%;
+        }
+        .content-box{
+        padding: 20px 0px 10px 0px;
+        }
+        .content-box p{
+          font-size: 14px;
+          text-align: center;
+          padding: 0 20px;
+        }
+         .content-box ul{
+          font-size: 16px;
+          text-align: center;
+          list-style: none;
+          padding: 0px;
+        }
+        .content-tittle{
+          text-align: center;
+        }
+  
+        .three-block:hover .content-box{
+          /*color: #93c45d;*/
+          /*color: white;*/
+          cursor: pointer;
+        }
+        .three-block:hover .content-tittle{
+          /*color: white;*/
+          cursor: pointer;
+
+        }
+        .three-block:hover .green-text{
+          color: #00A82D;
+          /*font-weight: bold;*/
+          text-decoration: underline;
+        }
+        .three-block:hover path#circle, .three-block:hover polygon#circle  {
+          cursor: pointer;
+          fill:#93c45d;
+          }
+        .three-block:hover path#hover, .three-block:hover g#hover, .three-block:hover text, .three-block:hover rect#hover{
+          cursor: pointer;
+          fill:#ffffff;
+          stroke:#ffffff;
+         }
+         .features-top{
+          width: 100%;
+          height: 105px;
+          text-align: center;
+         }
+         .features-top>h2{
+          margin: 6px;
+          font-size: 35px;
+         }
+         .features-top>p{
+          margin: 6px;
+          font-size: 18px;
+         }
+         .return-overview-btn{
+          background: #e4e4e400;
+          transition: background .4s;
+         }
+   
+         .return-overview-btn>.content-box>.icon>img{
+         filter: grayscale(1); 
+
+         }
+         
+         .return-overview-btn>.content-box>.icon>img{
+          filter: grayscale(1);
+         }
+        @media screen and (max-width: 911px) {
+          .features-3-section >.three-block{
+                min-height: 100%;
+          }
+          .return-overview-btn{
+            /*width:14%;*/
+              min-height: 284px!important;
+          }
+          .content-box{
+                /*min-height: 200px;*/
+          }
+          .content-tittle{
+            font-size:20px;
+          }
+           .features-3-section >.three-block{
+              /*width: 58%;
+              min-height: 310px;
+              margin: 21px 22%;*/
+              width: 44%;
+              min-height: 310px;
+              margin: 21px 3%;
+          }
+        }
+         @media screen and (max-width: 735px) {
+          .features-3-section >.three-block{
+          }
+          .content-box{
+                /*min-height: 220px;*/
+          }
+        }
+        @media screen and (max-width: 670px) {
+          .features-3-section{
+            min-width: 100%;
+          }
+         .features-3-section >.three-block{
+              width: 68%;
+              min-height: 310px;
+              margin: 21px 16%;
+          }
+          .return-back{
+          margin-top:60px!important;
+         }
+          .return-overview-btn{
+            width: 58%!important;
+          }
+          .content-box{
+                /*min-height: 120px;*/
+          }
+     
+        }
+
+
+        </style>
+        <div class="features-3-background">
+        <div class="features-3-section four-block-section">
+        <div class="features-top">
+          <h2>探索更多 EVOX 易喂的<span class="green-text">裝置功能</span></h2>
+        </div>
+        
+        <!-- <div class="three-block border-add" onclick="location.href='/tw/evox/admin-center/layout-update';">
+            
+          <div class="content-box">
+            <h3 class="content-tittle">
+              <img class="evox-logo-return" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/evox-logo.png" alt="EVOX"><br/>服務
+            </h3>
+            <p class="gray-text "><i class="fas fa-chevron-left"></i> 返回管理中心</p>
+          
+          </div>
+        </div> -->
+        <div class="three-block border-add" onclick="location.href='/tw/evox/multiple-devices';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/icon/multi-devices-icon.png" alt="多裝置">
+            </div>
+            <h3 class="content-tittle">
+                 多裝置
+            </h3>
+            <!-- <p>一覽所有的使用者分機基本資訊，也可新增、編輯或刪除各別使用者的資料或設定。</p> -->
+            <!-- <p>使用者新增以及權限等設定 </p> -->
+            <p class="gray-text "><i class="fas fa-chevron-left"></i> 返回多裝置 </p>
+          </div>
+        </div>
+
+        <div class="three-block border-add" onclick="location.href='/tw/evox/multiple-devices/pc-app';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/PC-App/update/pc-app-icon.png" alt="PC App">
+            </div>
+            <h3 class="content-tittle">
+                 電腦版 App
+            </h3>
+            <!-- <p>一覽所有的使用者分機基本資訊，也可新增、編輯或刪除各別使用者的資料或設定。</p> -->
+            <p>電腦版裝置，公司無需加購IP Phone </p>
+            <p class="gray-text ">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+        <div class="three-block border-add" onclick="location.href='/tw/evox/multiple-devices/mobile-extension';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/PC-App/update/mobile-app-icon.png" alt="行動裝置">
+            </div>
+            <h3 class="content-tittle">
+              行動裝置 App
+            </h3>
+            <!-- <p>選擇總機職員(真人總機)以利快速有效的將客人轉接給對的單位。</p> -->
+            <p>行動分機，隨時隨地都可以接聽公司電話 </p>
+            <p class="gray-text">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+        <div class="three-block border-add" onclick="location.href='/tw/evox/multiple-devices/ip-phone';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/multi-devices/PC-App/update/ipphone-icon.png" alt="IP Phone">
+            </div>
+            <h3 class="content-tittle">
+              IP 電話
+            </h3>
+            <!-- <p>瀏覽完整的通話紀錄資訊，像是每一通電話的來電號碼、接聽分機、日期、時間、通話長度、通話類型、費率及費用小計等。可直接線上聽取或下載。</p> -->
+            <p>雲端總機也可支援桌上電話的接聽方式 </p>
+            <p class="gray-text">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+
+     
+      </div>
+    </div>

@@ -1,0 +1,18 @@
+	.content-section-1-content>p{
+		margin: 15px 0px;
+		font-size: 16px;
+		/*max-width: 600px;*/
+		text-align: left;
+		text-justify:inter-ideograph;
+	}
+		.content-section-1-content-reverse>p{
+		margin: 15px 0px;
+		font-size: 16px;
+		/*max-width: 600px;*/
+		text-align: left;
+		text-justify:inter-ideograph;
+	}
+	/*Solution style*/
+	.good-benefit-box>p{
+		text-align: left;
+	}

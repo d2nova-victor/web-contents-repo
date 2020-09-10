@@ -1,0 +1,231 @@
+
+
+<style type="text/css">
+	.content-section-1-version-b-reverse{
+		/*background:#fafafa00;*/
+	}
+	.content-section-1{
+		max-width: 980px;
+    /* float: left; */
+    /* margin: 0px auto 0px auto; */
+    height: 100%;
+    padding: 40px 0px;
+    /* display: table; */
+    width: 100%;
+	}
+	.content-section-1-content-reverse{
+		/*width: 100%;*/
+	    padding: 0% 5%;
+	    /*float: right;*/
+	    --widthA: 50%;
+	    /*margin-top: calc(var( --widthA)*0.2);*/
+	}
+	.content-section-1-content-reverse>h2{
+		font-size: 28px;
+		margin:  10px 0px;
+	}
+	.content-section-1-content-reverse>p{
+		margin: 15px 0px;
+		font-size: 16px;
+	}
+	
+	.content-section-1-image-version-b-reverse{
+		width: 50%;
+	    position: relative;
+	    overflow: hidden;
+	    float: right;
+	    padding: 0px;
+	    /*box-shadow: 0px 1px 4px 3px rgba(0,0,0,.2);*/
+	    margin: 0 0 0 4%;
+	    /*max-height: 405px;*/
+	    /*max-width: 503px;*/
+	}
+	.content-section-1-image-version-b-reverse>img{
+		width: 100%;
+		display: block;
+/*	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);*/
+	}
+	.menber-icon{
+		position: absolute;
+	    right: 42%;
+	    width: 140px;
+	    top: 240px;
+	}
+	/*給專門頁面得*/
+	.evox-image-background{
+	    /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+		/*background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;*/
+	}
+	.gray-back{
+    	 background:#fafafa;
+	}
+	.home-page-change{
+	  	width: 100%;
+		padding: 0% 10% 0 0;
+		float: right;
+		/*--widthA: 50%;*/
+		/*margin-top: calc(var( --widthA)*0.1);*/
+	 }
+	.econnect-logo{
+		/*width: 220px;*/
+		max-height: 20px;
+	}
+	@media screen and (max-width: 950px){
+		.content-section-1-content-reverse{
+			margin-top: 20px;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.content-section-1{
+			margin:  40px auto;
+    		padding: 0px 0px;
+		}
+		.home-page-change{
+			padding: 0% 5%;
+		}
+		.content-section-1-image-version-b-reverse{
+			width:100%;
+		}
+		.content-section-1-content-reverse{
+			width: 100%;
+		}
+	}
+/*Image Comparison Slider*/
+.sqs-block-code img{
+	max-width: auto!important;
+}
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+	max-width: auto;
+  /*width: auto;*/
+  /*height: 300px;*/
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+</style>
+  <!-- <link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/image-comparison-slider-master/css/style.css"> -->
+   <!-- Resource style -->
+  <!-- <script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/image-comparison-slider-master/js/modernizr.js"></script> -->
+   <!-- Modernizr -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/cocoen/css/cocoen.min.css" />
+
+<div class="content-section-1-version-b-reverse  gray-back">
+<div class="content-section-1">
+	<!-- scrollmagic -->
+	<!-- <p id="high1">One</p> -->
+<div class="spacer s1" id="sec1">
+	<div class="content-section-1-image-version-b-reverse  evox-image-background ">
+<style type="text/css">
+				.text-above-left,.text-above-right{
+					position: absolute;
+					bottom: 0px;
+					/*right: 0;*/
+					padding: 0 20px;
+					background: #fff;
+					opacity: .6;
+					display: block;
+					width: 100%;
+					height: 40px;
+					text-align: center;
+					z-index: 99;
+				}
+				.text-above-left>p, .text-above-right>p{
+					margin: 10px 0;
+				}
+				.text-above-right{
+					right: 0;
+					text-align: right;
+				}
+				/*.cocoen-drag::after{
+					content: "no metter where you are";
+				    position: absolute;
+				    left: -100px;
+				    top: 200px;
+				    width: 280px;
+				    background: #fff;
+				    height: 30px;
+				    padding: 0 20px;
+				    line-height: 31px;
+				    text-align: center;
+				}*/
+
+				/*scrollmagic*/
+				.move-slider{
+				    left: 81%;
+				}
+				.move-slider-img{
+					width: 81%;
+					
+				}
+				.cocoen-drag{
+					/*transition:left 1s;*/
+				}
+				.cocoen:first-child{
+					/*transition:width 1s;*/
+				}
+			</style>
+			
+
+			<div class="cocoen">
+			  <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/p3/Connect-agent-office-CH.jpg" alt="在公司工作">
+			  
+			  <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/p3/Connect-agent-home-CH.jpg" alt="在家工作">
+			</div>
+			
+			<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/cocoen/js/cocoen.min.js"></script>
+			<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/cocoen/js/cocoen-jquery.min.js"></script>
+			<script type="text/javascript">
+				$('.cocoen').cocoen();
+			</script>
+	</div>
+</div>
+	<div class="flex-center">
+		<div class="content-section-1-content-reverse home-page-change">
+			<img class="econnect-logo" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/p3/connect-logo-for-entrance.png" alt="EVOX Connect 易客服系統">
+			<h2>可遠距辦公的專業客服系統</h2>
+			<p>以雲端架構為基礎的客服系統，可以提高客戶服務的體驗，幫助企業成長</p>
+			<a class="purple-outline-btn" href="/tw/evox-connect/call-center">了解更多</a>
+		</div>
+	</div>
+	<!-- <div class="menber-icon">
+		<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/manage-agent-icon.png">
+	</div> -->
+</div>
+
+	
+</div>

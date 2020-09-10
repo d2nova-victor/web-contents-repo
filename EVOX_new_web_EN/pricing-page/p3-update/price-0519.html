@@ -173,7 +173,7 @@
         font-size: 14px;
         /*width: 100%;*/
         color: #5F6871;
-        margin: 0px 0px 40px 0px;
+        /*margin: 0px 0px 40px 0px;*/
     }
     
     .content-section-7 > .text-block> .three-cloum-box > h5 {
@@ -321,8 +321,39 @@
         float: left;
         width: 27px;
     }
-    
-    @media screen and (max-width: 1008px) {}
+    .customize-content{
+        width:68%;
+        margin:10px auto;
+    }
+    .customize-content>p{
+        color:#5F6871;
+        line-height: 32px;
+    }
+     .option_text{
+        background: #ffffff;
+        padding: 10px;
+        
+        text-align: center;
+        border-radius: 4px;
+        max-width: 77%;
+        border: 1px solid #CCCCCC;
+        margin: 20px auto 30px auto;
+    }
+    .option_text:hover{
+        border: 2px solid #66C547;
+        -moz-box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        -webkit-box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        box-shadow: 1px 4px 10px -2px rgb
+    }
+    .forign-company{
+        color: #ff8a26;
+        /*padding: 0 0px 0 10px;*/
+    }
+    .more-devices{
+        color: #ff8a26;
+        /*padding: 0 0 0 10px;*/
+    }
+@media screen and (max-width: 1008px) {}
 }
 
 }
@@ -378,6 +409,9 @@
     }
     .call-rate-table-block {
         width: 90%;
+    }
+    .option_text{
+        max-width: 95%;
     }
 }
 @media screen and (max-width: 607px) {
@@ -585,12 +619,17 @@
                 </div>
             </div>
             <span>＊Devices can be any combination of Mobile Apps, PC/Mac Apps, or IP Phones</span>
-            <div class="addtional-text">
-                <div class="customize-tittle">
+            <div class="addtional-text option_text">
+              <!--   <div class="customize-tittle">
                     <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/pricepage/wrench-icon.png">
                     <h3><span class="green-text">Customize your solution </span>for requirements different from the standard packages above</h3>
+                    
+                </div> -->
+                <div class="customize-content">
+                    <p>For <span class="forign-company"> Hong Kong service</span> or <span class="more-devices">requirements different</span> from the standard pacakages</p>
+                    <a class="green-btn set-btn-center" href="/en/contact-us">Contact Sales</a>
                 </div>
-                <a class="green-outline-btn set-btn-center" href="/en/contact-us">Contact Sales</a>
+                
             </div>
         </div>
     </div>

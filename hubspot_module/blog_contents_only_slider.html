@@ -1,0 +1,435 @@
+<style>
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+.top-post-section{
+  background:#F9F9F9;
+  padding: 60px 0 20px 0;
+}
+.carousel-container {
+  max-width:1250px;
+  margin:0 auto;
+  display: flex;
+/*   align-items: center; */
+  align-items: end;
+}
+
+.carousel {
+  width:70%;
+  background: #FAFAFA;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell {
+  width: 66%;
+/*   height: 700px; */
+/*   height:100%; */
+  margin-right: 10px;
+/*   background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.one-blog_top-image:hover{
+      transition: opacity .3s;
+      opacity: .6;
+}
+.one-blog_top-tittle{
+    width: 100%;
+    font-weight: normal;
+    margin: 12px 0px 12px 0px;
+    height: 90px;
+}
+.one-blog_top-tittle>a{
+    display:block;
+    font-size: 32px;
+    line-height: 1.5em;
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.one-blog_top-tittle:hover > a:visited{
+  color:#00a82d !important;
+}
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+} */
+
+.carousal-right{
+  width:30%;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+.carousal-tittle{
+    text-align: left;
+    margin: 0px auto;
+    font-size: 32px;
+    padding: 0 20px 20px;
+}
+.carousel-nav {
+/*   width: 120px; */
+  width:100%;
+/*   margin-left: 10px; */
+/*   max-height: 800px; */
+  overflow-y: scroll;
+}
+.carousal-nav-tittle{
+  height:48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.nav-sub-lab{
+    font-size: 13px;
+    height: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+}
+.carousel-nav .carousel-cell {
+    height: 100%;
+    width: 93%;
+    margin: 0 auto 15px auto;
+    cursor: pointer;
+    padding: 20px;
+    background: #EDEDED;
+}
+.carousel-nav .carousel-cell:hover {
+    box-shadow: 1px 1px 10px #c3c3c3;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+/*   background: #ED2; */
+  background:#fff;
+  box-shadow: 1px 1px 10px #c3c3c3;
+  color:#00A82D!important;
+}
+.carousel-nav .carousel-cell.is-nav-selected >div{
+    color:#00A82D!important;
+}
+.carousel-cell {
+  width: 100%; /* full width */
+  margin-right: 10px;
+}
+.flickity-button:disabled{
+  opacity: 0!important;
+}
+.flickity-prev-next-button{
+  top:30%!important;
+}
+@media only screen and (max-width: 840px) {
+  .carousel-main{
+      padding:0 20px;
+  }
+  .top-post-section{
+      padding: 20px 0;
+  }
+  .carousel-container{
+    display:block;
+  }
+  .carousel{
+    width:100%;
+  }
+  .carousal-right{
+    width:100%;
+    margin-left: 0px;
+  }
+  .carousel-nav{
+    width: 100%;
+    display: flex;
+  }
+  .carousel-nav .carousel-cell{
+      width: 100%;
+      margin: 10px 1% 10px 1%;
+  }
+  .carousel-nav > div:nth-child(0){
+    margin: 0 0 0 0;
+  }
+  .carousal-right{
+    margin-bottom: 20px;
+  }
+  .flickity-prev-next-button.previous{
+    left:30px!important;
+  }
+  .flickity-prev-next-button.next{
+    right:30px!important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .flickity-prev-next-button{
+    top:30%!important;
+  }
+  .carousel-cell {
+/*     height:600px; */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .flickity-prev-next-button{
+    top:20%!important;
+  }
+  .carousel-cell {
+/*     height:500px; */
+  }
+}
+</style>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.css">
+
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+
+<!-- JS -->
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+
+
+{% set posts = blog_recent_posts('default', 1) %}
+{% set myblog = blog_popular_posts(11914568457) %}
+{% set my_post = blog_post_by_id(34222160194) %}
+{% set my_post2 = blog_post_by_id(23456760049) %}
+{% set my_post3 = blog_post_by_id(11914340358) %}
+{% set my_post4 = blog_post_by_id(21871884977) %}
+{% set my_post5 = blog_post_by_id(29051311764) %}
+<div class="top-post-section">
+  
+
+<div class="carousel-container">
+  <!-- Flickity HTML init -->
+  <div class="carousel carousel-main">
+<!--     文章單篇 -->
+    <div class="carousel-cell post-height">
+      {% for post in my_post %}
+      <div class="one-blog_top-image">
+        <a href="{{ post.absolute_url }}"><img src="{{ post.featured_image }}" alt="{{ post.name }}"></a>
+      </div>
+      <h2 class="one-blog_top-tittle"><a href="{{ post.absolute_url }}">{{ post.name }}</a></h2>
+      <span class="sub-lab">{{ post.publishDate|datetimeformat('%Y年%m月%d日') }} 於 <a class="green-link" href="{{post.parent_blog.absolute_url}}">{{ post.parent_blog.public_title }}</a></span>
+      <!-- summary -->
+      <div class="one-blog_summary-box">
+        <p>{{post.post_summary|striptags}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <!--     文章單篇 -->
+    <div class="carousel-cell post-height">
+      {% for post2 in my_post2 %}
+      <div class="one-blog_top-image">
+        <a href="{{ post2.absolute_url }}"><img src="{{ post2.featured_image }}" alt="{{ post2.name }}"></a>
+      </div>
+      <h2 class="one-blog_top-tittle"><a href="{{ post2.absolute_url }}">{{ post2.name }}</a></h2>
+      <span class="sub-lab">{{ post2.publishDate|datetimeformat('%Y年%m月%d日') }} 於 <a class="green-link" href="{{post2.parent_blog.absolute_url}}">{{ post2.parent_blog.public_title }}</a></span>
+      <!-- summary -->
+      <div class="one-blog_summary-box">
+        <p>{{post2.post_summary|striptags}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <!--     文章單篇 -->
+    <div class="carousel-cell post-height">
+    {% for post3 in my_post3 %}
+      <div class="one-blog_top-image">
+        <a href="{{ post3.absolute_url }}"><img src="{{ post3.featured_image }}" alt="{{ post3.name }}"></a>
+      </div>
+      <h2 class="one-blog_top-tittle"><a href="{{ post3.absolute_url }}">{{ post3.name }}</a></h2>
+      <span class="sub-lab">{{ post3.publishDate|datetimeformat('%Y年%m月%d日') }} 於 <a class="green-link" href="{{post3.parent_blog.absolute_url}}">{{ post3.parent_blog.public_title }}</a></span>
+      <!-- summary -->
+      <div class="one-blog_summary-box">
+        <p>{{post3.post_summary|striptags}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <!--     文章單篇 -->
+    <div class="carousel-cell post-height">
+    {% for post4 in my_post4 %}
+      <div class="one-blog_top-image">
+        <a href="{{ post4.absolute_url }}"><img src="{{ post4.featured_image }}" alt="{{ post4.name }}"></a>
+      </div>
+      <h2 class="one-blog_top-tittle"><a href="{{ post4.absolute_url }}">{{ post4.name }}</a></h2>
+      <span class="sub-lab">{{ post4.publishDate|datetimeformat('%Y年%m月%d日') }} 於 <a class="green-link" href="{{post4.parent_blog.absolute_url}}">{{ post4.parent_blog.public_title }}</a></span>
+      <!-- summary -->
+      <div class="one-blog_summary-box">
+        <p>{{post4.post_summary|striptags}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <!--     文章單篇 -->
+    <div class="carousel-cell post-height">
+    {% for post5 in my_post5 %}
+      <div class="one-blog_top-image">
+        <a href="{{ post5.absolute_url }}"><img src="{{ post5.featured_image }}" alt="{{ post5.name }}"></a>
+      </div>
+      <h2 class="one-blog_top-tittle"><a href="{{ post5.absolute_url }}">{{ post5.name }}</a></h2>
+      <span class="sub-lab">{{ post5.publishDate|datetimeformat('%Y年%m月%d日') }} 於 <a class="green-link" href="{{post5.parent_blog.absolute_url}}">{{ post5.parent_blog.public_title }}</a></span>
+      <!-- summary -->
+      <div class="one-blog_summary-box">
+        <p>{{post5.post_summary|striptags}}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+  <div class="carousal-right">
+    <div class="carousal-tittle">
+      部落格精選文章
+    </div>
+<!--     <button>Return the vertical position of the scrollbar</button> -->
+  <div class="carousel-nav">
+<!--     單一選單  -->
+    <div class="carousel-cell is-nav-selected">
+      {% for post in my_post %}
+        <div class="carousal-nav-tittle">
+          {{ post.name }}
+        </div>
+        <span class="nav-sub-lab">{{ post.publishDate|datetimeformat('%Y年%m月%d日') }} 於 {{ post.parent_blog.public_title }}</span>
+      {% endfor %}
+    </div>
+    <!--     單一選單  -->
+    <div class="carousel-cell">
+    {% for post2 in my_post2 %}
+        <div class="carousal-nav-tittle">
+          {{ post2.name }}
+        </div>
+        <span class="nav-sub-lab">{{ post2.publishDate|datetimeformat('%Y年%m月%d日') }} 於 {{ post2.parent_blog.public_title }}</span>
+      {% endfor %}
+    </div>
+    <!--     單一選單  -->
+    <div class="carousel-cell">
+    {% for post3 in my_post3 %}
+        <div class="carousal-nav-tittle">
+          {{ post3.name }}
+        </div>
+        <span class="nav-sub-lab">{{ post3.publishDate|datetimeformat('%Y年%m月%d日') }} 於 {{ post3.parent_blog.public_title }}</span>
+      {% endfor %}
+    </div>
+    <!--     單一選單  -->
+    <div class="carousel-cell">
+    {% for post4 in my_post4 %}
+        <div class="carousal-nav-tittle">
+          {{ post4.name }}
+        </div>
+        <span class="nav-sub-lab">{{ post4.publishDate|datetimeformat('%Y年%m月%d日') }} 於 {{ post4.parent_blog.public_title }}</span>
+      {% endfor %}
+    </div>
+    <!--     單一選單  -->
+    <div class="carousel-cell">
+    {% for post5 in my_post5 %}
+        <div class="carousal-nav-tittle">
+          {{ post5.name }}
+        </div>
+        <span class="nav-sub-lab">{{ post5.publishDate|datetimeformat('%Y年%m月%d日') }} 於 {{ post5.parent_blog.public_title }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+
+
+</div>
+</div>
+
+
+
+
+<script>
+  // external js: flickity.pkgd.js
+
+var $carousel = $('.carousel').flickity({
+  fade: true,
+  adaptiveHeight: true,
+  wrapAround: true,
+  selectedAttraction: 0.2,
+  friction: 0.8
+});
+
+var $carouselNav = $('.carousel-nav');
+var $carouselNavCells = $carouselNav.find('.carousel-cell');
+
+$carouselNav.on( 'click', '.carousel-cell', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel.flickity( 'select', index );
+});
+
+var flkty = $carousel.data('flickity');
+var navTop  = $carouselNav.position().top;
+var navCellHeight = $carouselNavCells.height();
+var navCellWidth = $carouselNavCells.width();
+var navHeight = $carouselNav.height();
+var navWidth = $carouselNav.width();
+
+$carousel.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected = $carouselNavCells.eq( flkty.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav 
+  var scrollY = $selected.position().top +
+    $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
+  var scrollX = $selected.position().left +
+      $carouselNav.scrollLeft();
+//   console.log("scrollX:" + scrollX)
+    if($(window).width() <= 840){
+      $carouselNav.animate({
+        scrollLeft: scrollX
+      });
+    };
+      $carouselNav.animate({
+        scrollTop: scrollY
+      });
+    
+});
+
+  var posimgHeight = $(".one-blog_top-image").height();
+  var postittleHeight = $(".one-blog_top-tittle").height();
+  var possubHeight = $(".sub-lab").height();
+  var possummaryHeight = $(".one-blog_summary-box>p").height();
+  var postotalHeight =  (posimgHeight + postittleHeight + possubHeight + possummaryHeight);
+$(document).ready(function(){
+
+//   console.log("imgHeight:" + posimgHeight);
+//   console.log("tittleHeight:" + postittleHeight);
+//   console.log("subHeight:" + possubHeight);
+//   console.log("summaryHeight:" + possummaryHeight);
+//   console.log("total:"+ postotalHeight );
+  $(".post-height").css("height", postotalHeight + 70);
+  $(".flickity-viewport").css("height", postotalHeight + 70);
+//   測試scroll位置
+//   $("button").click(function(){
+//     alert($carouselNav.scrollLeft()+ " px");
+//   });
+});
+$( window ).on("resize", function() { 
+    $(".post-height").css("height", postotalHeight + 70);
+    $(".flickity-viewport").css("height", postotalHeight + 70);
+//   var possummaryHeight = $(".one-blog_summary-box>p").height();
+//   var posimgHeight = $(".one-blog_top-image").height();
+//   var postittleHeight = $(".one-blog_top-tittle>a").height();
+//   var possubHeight = $(".sub-lab").height();
+//   var postotalHeight =  (posimgHeight + postittleHeight + possubHeight + possummaryHeight);
+//     console.log("total:"+ postotalHeight );
+//   $(".post-height").css("height", postotalHeight);
+});
+</script>

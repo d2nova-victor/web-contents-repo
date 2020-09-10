@@ -17,7 +17,7 @@ p, a, h4, span, div h1, h2, h3{
 	/*width: 200px!important;*/
 }
 div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
-	min-height: 52px !important;
+	min-height: 0px !important;
 }
 .side-menu-item:hover .sub-side-menu{
 	margin-left: 0px;

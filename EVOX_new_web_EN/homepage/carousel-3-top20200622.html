@@ -1,0 +1,759 @@
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.css">
+
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+
+<!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js"></script>
+
+<script src="https://unpkg.com/flickity-hash@1/hash.js" ></script>
+<style>
+  /* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /*background: #FAFAFA;*/
+  margin-bottom: 40px;
+  height: 100%;
+}
+  /*隱藏*/
+/*.carousel-block ,.carousel{
+    display: none;
+}*/
+.nav-box{
+    width: 72%;
+    background:#ffffff00;
+    margin: 0 auto 0 10%;
+}
+.carousel-cell {
+  width: 100%;
+  /*height: 100%;*/
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  cursor: default;
+  /*counter-increment: carousel-cell;*/
+}
+.carousel-main-top> .carousel-cell {
+  /*height: 400px;*/
+}
+.top-sotry-img{
+  width: 50%;
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+.top-story-box{
+  width: 100%;
+  max-width: 1240px;
+  margin:0 auto;
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.top-story-box>h1{
+  --widthB: 50%;
+  /*padding: 0px 28% 0 5%;*/
+  padding: 0px 115px 0 3%;
+  /*margin-top: calc(var( --widthB)*0.2);*/
+  font-size: 42px;
+
+}
+.top-story-box>p{
+  --widthB: 50%;
+  /*padding: 0px 28% 0 5%;*/
+  padding: 0px 115px 0 3%;
+  /*margin-top: calc(var( --widthB)*0.2);*/
+  font-size: 18px;
+
+}
+.goshop>p{
+  /*margin-top: calc(var( --widthB)*0.1);*/
+}
+.top-story-box>span{
+  padding: 0px 28% 0 5%;
+  font-size: 16px;
+}
+.flickity-page-dots{
+   display: none;
+}
+.carousel-main-top{
+  /*max-width: 1240px;*/
+  margin: 0px auto;
+  /*min-height: 400px;*/
+  /*min-height: 100vh;*/
+  /*max-height: 420px;*/
+  /*margin-bottom: 241px!important;*/
+}
+.carousel-image {
+  min-width: 150px;
+  /*height: 400px;*/
+}
+.carousel-nav-top{
+  margin: 20px 0;
+}
+.carousel-block{
+  background: #FAFAFA;
+  padding: 40px 0px;
+  margin: 40px 0px;
+}
+.story-nav-block{
+    background: #fff!important;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px 0px!important;
+    margin: 20px 0px!important;
+    position: absolute!important;
+    /*top: -100px;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+    display: table;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.story-carousel-tittle{
+  text-align: center;
+  font-size: 28px;
+  color:#243237;
+  margin: 20px 0;
+
+}
+.flickity-button{
+  background: hsla(0, 0%, 100%, 0);
+  color: #EDEFF1;
+}
+.flickity-prev-next-button.previous{
+  left: 20px;
+}
+.flickity-prev-next-button.next{
+  right: 20px;
+}
+.flickity-button:hover {
+    background: #fff00000;
+    cursor: pointer;
+}
+.flickity-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #19f0;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav-top .carousel-cell {
+  /*height: 80px;*/
+  /*width: 140px;*/
+  width: 108px;
+  height: 143px;
+}
+
+.carousel-nav-top .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav-top .carousel-cell.is-nav-selected {
+  background: #ED2;
+  opacity: .5;
+  /*background: #ED2;*/
+}
+.setH{
+  width: 50%;
+}
+.top-background{
+  background-color: #EDEFF1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.top-story-text{
+  width: 40%;
+  float: left;
+}
+.top-story-text>h1{
+  margin:5px 0;
+  font-size: 42px;
+  padding-left: 12px;
+}
+.top-story-text>p{
+  margin:5px 0;
+  font-size: 18px;
+  padding-left: 12px;
+}
+.start-up-image{
+  background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+}
+.newcompany-image{
+   background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+}
+.freeemployee-image{
+  background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+}
+.customerexpresess-image{
+  background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-04.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+}
+.addoffice-image{
+  background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-05.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+}
+.goballeade-image{
+  background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-06.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+}
+.carouse-nav-image{
+  width:50%;
+}
+.carouse-nav-image-active{
+  width:50%!important;
+}
+.story-nav-cell{
+  width: 16.66%;
+  float: left;
+  display: block;
+  text-align: center;
+  /*opacity: 0.4;*/
+}
+.story-nav-cell>div>h2, .story-nav-cell>div>img{
+opacity: 0.4;
+}
+.add-after-line:after{
+  content: "----";
+  border-top: 2px dashed #A5B6BF;
+  float: right;
+  margin: -53px 0px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 89%;
+  /*opacity: 1;*/
+  position: absolute;
+  top: 110px;
+  left: -9px;
+}
+
+.story-nav-cell>.nav-box>.carouse-nav-image{
+  margin:0 auto;
+  width: 45%;
+}
+.story-nav-cell>.nav-box>.carouse-nav-image-active{
+  margin:0 auto;
+  width: 45%;
+}
+.story-nav-cell>div>h2{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0;
+  display: block;
+  width: 110px;
+  margin: 0 auto;
+  border-bottom: 4px solid #fff;
+}
+.is-selected>.nav-box{
+  /*background:rgba(0,0,0,.2);*/
+  border-radius: 4px;
+}
+.is-selected>.nav-box>h2, .is-selected>.nav-box>img{
+  opacity: 1;
+}
+
+.is-selected>.nav-box>h2{
+    color:#00A82D;
+    border-bottom: 4px solid rgba(0,0,0,0);
+}
+
+/* Fade CSS */
+
+.carousel-main-top .flickity-slider {
+  transform: none !important;
+}
+
+.gallery-cell {
+  left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.gallery-cell.is-selected {
+  opacity: 1;
+  z-index: 0
+}
+/*.flickity-enabled{
+  position: absolute;
+}*/
+/* 手機*/
+.mobile-size{
+  display: none;
+  visibility: hidden;
+}
+.display-size{
+    display: block;
+    visibility: visible;
+  }
+@media screen and (max-width: 1035px){
+  
+}
+@media screen and (max-width: 970px){
+  .story-nav-cell{
+    width: 33%;
+  }
+  .top-story-text>h1{
+    margin:5px 0;
+    font-size: 29px;
+    padding-left: 20px;
+  }
+  .top-story-text>p{
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 840px){
+  .story-nav-cell{
+  width: 33.33%;
+  }
+  .add-after-line:after{
+  content: " ";
+  }
+  .top-story-text{
+    width: 100%;
+    text-align: center;
+  }
+  .top-story-text>h1{
+  padding-left: 0px;
+  }
+  .top-story-text>p{
+    padding-left: 0px;
+  }
+  .top-sotry-img{
+    width: 100%;
+    float: left;
+  }
+
+  .top-story-box{
+    width: 100%;
+    margin:0 10px;
+  }
+  .setH{
+    width: 100%;
+  }
+  .top-story-box>p{
+    padding: 0 5%;
+    /*width: 100%;*/
+  }
+  .top-story-box>span{
+    padding: 0 5%;
+  }
+  .carousel-main-top{
+    /*min-height: 100vh;*/
+    margin-bottom: 0px;
+  }
+  .flickity-prev-next-button.previous{
+    top:60%;
+  }
+  .flickity-prev-next-button.next{
+    top:60%;
+  }
+  .carousel-main-top{
+    max-height: 810px;
+  }
+   /*手機*/
+  .mobile-size{
+  display: block;
+  visibility: visible;
+  }
+  .display-size{
+    display: none!important;
+    visibility: hidden;
+  }
+  .story-nav-block{
+    display: none;
+  }
+}
+@media screen and (max-width: 638px){
+  .carousel-main-top{
+    max-height: 720px;
+  }
+  .carousel-nav-top .carousel-cell {
+    /*height: 80px;*/
+    /*width: 140px;*/
+    width: 192px;
+    height: 110px;
+  }
+  .flickity-prev-next-button.previous{
+    top:40%;
+  }
+  .flickity-prev-next-button.next{
+    top:40%;
+  }
+}
+@media screen and (max-width: 480px){
+  .flickity-prev-next-button.previous{
+    top:30%;
+  }
+  .flickity-prev-next-button.next{
+    top:30%;
+  }
+  .carousel-nav-top .carousel-cell {
+    height: 50px;
+    width: 87px;
+  }
+  .story-nav-cell{
+      width: 40%;
+  }
+  .top-story-text>h1{
+      font-size: 37px;
+  }
+  .top-story-text>p{
+  }
+  .story-nav-block{
+      width: 90%;
+  }
+  .story-nav-block{
+      padding: 10px 0px!important;
+      margin: 0px 0px!important;
+      box-shadow: 0 0px 0px 0 rgba(0,0,0,0.1);
+  }
+}
+@media screen and (max-width: 390px){
+  .top-background{
+        height: 130%!important;
+  }
+}
+@media screen and (min-width: 1352px){
+  .flickity-prev-next-button.previous{
+    left: -60px;
+  }
+  .flickity-prev-next-button.next{
+    right: -60px;
+  }
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+        var divHeight = $('.gallery-cell').height(); 
+       var divHeight2 = $('.gallery-cell').height()-80; 
+       var divHeight3 = $('.story-nav-block').height(); 
+       var divHeight4 = $('.story-nav-block').height()+200; 
+       var divHeight5 = $('.gallery-cell').height()+160; 
+       var divHeight6 = $('.story-nav-block').height()+300;  
+       var divHeight7 = $('.gallery-cell').height()+0; 
+       var divHeight8 = $('.setH2').height()+ divHeight3 +200; 
+       var divHeight9 = $('.gallery-cell').height()-60;
+       var divHeight10 = $('.gallery-cell').height()+20;  
+       var divHeight11 = $('.cover-btn').height()+60;  
+       var sliderheight = $('.carousel').height();
+       var storybox = $('#carousel-item').height();
+       var storynav = $('.story-nav-block').height();
+       var towheight = storybox + sliderheight;
+       var towheight2 = storybox + storynav;
+       var topHeight = $('.setH2').height();
+
+
+    $('.setH2').css('height', divHeight+'px');
+    $('.story-nav-block').css('top', divHeight2 +'px');
+    $('.carousel-main-top').css('margin-bottom', divHeight3 +'px');
+  
+    if($(window).width() <= 1250 ){
+      $('.story-nav-block').css('top', divHeight9 +'px');
+    }
+    if($(window).width() <= 1198 ){
+      $('.story-nav-block').css('top', divHeight10 +'px');
+      $('.carousel-main-top').css('margin-bottom', divHeight11 +'px');
+      // $('.setH2').css('height', divHeight4+'px');
+    }
+    if($(window).width() <= 970 ){
+      $('.setH2').css('top', sliderheight+ 60 +'px');
+    }
+    if($(window).width() <= 840 ){
+      $('.setH2').css('height','auto');
+      $('.carousel-main-top').css('margin-bottom',topHeight+"px");
+      $('.setH2').css('top', sliderheight +'px');
+      $('.story-nav-block').css('top',0);
+    }else{
+      $('.setH2').css('top', 'auto');
+    }
+  });
+  $( window ).on("resize", function() {
+       var divHeight = $('.gallery-cell').height(); 
+       var divHeight2 = $('.gallery-cell').height()-80; 
+       var divHeight3 = $('.story-nav-block').height(); 
+       var divHeight4 = $('.story-nav-block').height()+200; 
+       var divHeight5 = $('.gallery-cell').height()+160; 
+       var divHeight6 = $('.story-nav-block').height()+300;  
+       var divHeight7 = $('.gallery-cell').height()+0; 
+       var divHeight8 = $('.setH2').height()+ divHeight3 +200; 
+       var divHeight9 = $('.gallery-cell').height()-60;
+       var divHeight10 = $('.gallery-cell').height()+20;  
+       var divHeight11 = $('.cover-btn').height()+60;  
+       var sliderheight = $('.carousel').height();
+       var storybox = $('#carousel-item').height();
+       var storynav = $('.story-nav-block').height();
+       var towheight = storybox + sliderheight;
+       var towheight2 = storybox + storynav;
+       var topHeight = $('.setH2').height();
+       
+
+       console.log("storybox" + storybox);
+      console.log("towheight" + towheight);
+      console.log("sliderheight" + sliderheight);
+    $('.setH2').css('height', divHeight+'px');
+    $('.story-nav-block').css('top', divHeight2+'px');
+    $('.carousel-main-top').css('margin-bottom', divHeight3 +'px');
+    if($(window).width() <= 1250 ){
+      $('.story-nav-block').css('top', divHeight9 +'px');
+    }
+    if($(window).width() <= 1198 ){
+      $('.story-nav-block').css('top', divHeight10 +'px');
+      $('.carousel-main-top').css('margin-bottom', divHeight11 +'px');
+      // $('.setH2').css('height', divHeight4+'px');
+    }
+    if($(window).width() <= 840 ){
+      $('.setH2').css('height','auto');
+      $('.carousel-main-top').css('margin-bottom',topHeight+"px");
+      $('.setH2').css('top', sliderheight +'px');
+      $('.story-nav-block').css('top',0);
+    }else{
+      $('.setH2').css('top', 'auto');
+    }
+
+    });
+
+
+</script>
+<div>
+    <div class="setH2 top-background" id="carousel-item" style="display: flex;align-items: center;float: right;">
+        <div class="top-story-box">
+            <div class="top-story-text">
+            <h1>Communications for businesses on the move</h1>
+            <p>A comprehensive, secure, scalable and flexible communications platform that will grow and expand with your business.</p>
+            </div>
+          </div>
+        </div>
+  </div>
+<!-- Flickity HTML init -->
+<!-- <div class="carousel carousel-main-top" data-flickity='{"hash": true, "autoPlay": 5500, "pauseAutoPlayOnHover": true }'> -->
+<!--   <div class="carousel carousel-main-top" data-flickity='{"hash": false, "prevNextButtons": false, "draggable": false, "autoPlay": 4500, "pauseAutoPlayOnHover": true }'> -->
+  <div class="carousel carousel-main-top" data-flickity='{ "autoPlay": 2800, "prevNextButtons": false, "pauseAutoPlayOnHover": false, "draggable": false, "lazyLoad": true}'>
+  
+  <div class="carousel-cell gallery-cell" id="carousel-cell1">
+    <img class="top-sotry-img carousel-image display-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-01-7.png" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-01-placeholder.jpg" alt="startup">
+    <img class="top-sotry-img carousel-image mobile-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/mobile-size/EN/story-image-mobile-01.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-01-placeholder.jpg" alt="startup">
+        
+  </div>
+  <div class="carousel-cell gallery-cell" id="carousel-cell2">
+    <img class="top-sotry-img carousel-image display-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-02-6.png" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-02-placeholder.jpg" alt="groth your team">
+    <img class="top-sotry-img carousel-image mobile-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/mobile-size/EN/story-image-mobile-02.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-02-placeholder.jpg" alt="groth your team">
+
+  </div>
+  <div class="carousel-cell gallery-cell" id="carousel-cell3">
+    <img class="top-sotry-img carousel-image display-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-03-6.png" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-03-placeholder.jpg" alt="mobilize your workforce">
+    <img class="top-sotry-img carousel-image mobile-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/mobile-size/EN/story-image-mobile-03.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-03-placeholder.jpg" alt="mobilize your workforce">
+
+  </div>
+  <div class="carousel-cell gallery-cell" id="carousel-cell4">
+    <img class="top-sotry-img carousel-image display-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-04-9.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-04-placeholder.jpg" alt="improve customer experience">
+    <img class="top-sotry-img carousel-image mobile-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/mobile-size/EN/story-image-mobile-04-2.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-04-placeholder.jpg" alt="improve customer experience">
+
+  </div>
+  <div class="carousel-cell gallery-cell" id="carousel-cell5">
+    <img class="top-sotry-img carousel-image display-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-05-6.png" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-05-placeholder.jpg" alt="expand your footprint">
+    <img class="top-sotry-img carousel-image mobile-size lazy" data-original="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/mobile-size/EN/story-image-mobile-05.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-05-placeholder.jpg" alt="expand your footprint">
+
+  </div>
+  <div class="carousel-cell gallery-cell" id="carousel-cell6">
+    <img class="top-sotry-img carousel-image display-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-06-5.png" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-06-placeholder.jpg" alt="go global!">
+    <img class="top-sotry-img carousel-image mobile-size lazy" data-flickity-lazyload="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/mobile-size/EN/story-image-mobile-06.jpg" sizes="(min-width: 1024px) 720px, 360px" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/story-image-06-placeholder.jpg" alt="go global!">
+
+  </div>
+
+</div>
+<!-- 擋住按鈕 -->
+<div class="cover-btn" style="background: #0000;position: absolute;width: 100%;height: 100%;top: 0px;"></div>
+<style type="text/css">
+  .is-selected>.nav-box>.carouse-nav-image{
+  display: none!important;
+  }
+  .carouse-nav-image-active{
+    display: none!important;
+  }
+  .is-selected>.nav-box>.carouse-nav-image-active{
+  display: block!important;
+  }
+</style>
+<div class="carousel-block story-nav-block">
+  <h3 class="story-carousel-tittle">A communication platform for every stage of your business</h3>
+
+  <!-- <a class=" story-nav-cell add-after-line nav-is-selected" href="#carousel-cell1" id="nav-start-up"> -->
+    <!-- <div data-flickity='{ "asNavFor": ".carousel-main-top", "contain": true, "prevNextButtons": false, "pageDots": false, "pauseAutoPlayOnHover": true }'> -->
+  <div data-flickity='{ "asNavFor": ".carousel-main-top", "contain": true, "prevNextButtons": false, "pageDots": false, "pauseAutoPlayOnHover": false, "draggable": false }'>
+  <div class="story-nav-cell add-after-line nav-is-selected" id="nav-start-up">
+    <div class="nav-box">
+    <img class="carouse-nav-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/startup-icon-2.png" alt="Startup">
+    <img class="carouse-nav-image-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/startup-icon-color.png" alt="Startup">
+    <h2>Startup</h2>
+    </div>
+  </div>
+  <!-- </a> -->
+  <!-- <a class=" story-nav-cell add-after-line " href="#carousel-cell2" id="nav-add-member"> -->
+  <div class="story-nav-cell add-after-line" id="nav-add-member">
+    <div class="nav-box">
+    <img class="carouse-nav-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/new-menber-icon-2.png" alt="Grow your team">
+    <img class="carouse-nav-image-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/new-menber-icon-2-color.png" alt="Grow your team">
+    <h2>Grow your team</h2>
+    </div>
+  </div>
+  <!-- </a> -->
+  <!-- <a class=" story-nav-cell add-after-line " href="#carousel-cell3" id="nav-employee-free"> -->
+  <div class="story-nav-cell add-after-line" id="nav-employee-free">
+    <div class="nav-box">
+    <img class="carouse-nav-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/employee-free-icon-2.png" alt="Mobilize your office">
+    <img class="carouse-nav-image-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/employee-free-icon-2-color.png" alt="Mobilize your office">
+    <h2>Mobilize your workforce</h2>
+    </div>
+  </div>
+  <!-- </a> -->
+  <!-- <a class=" story-nav-cell add-after-line " href="#carousel-cell4" id="nav-good-exprience"> -->
+  <div class="story-nav-cell add-after-line" id="nav-good-exprience">
+    <div class="nav-box">
+    <img class="carouse-nav-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/customer-experience-icon-2.png" alt="Win with better customer experience">
+    <img class="carouse-nav-image-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/customer-experience-icon-2-color.png" alt="Win with better customer experience">
+    <h2>Improve customer experience</h2>
+    </div>
+  </div>
+  <!-- </a> -->
+  <!-- <a class=" story-nav-cell add-after-line " href="#carousel-cell5" id="nav-new-office"> -->
+  <div class="story-nav-cell add-after-line" id="nav-new-office">
+    <div class="nav-box">
+    <img class="carouse-nav-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/new-location-icon-2.png" alt="Expand your footprint">
+    <img class="carouse-nav-image-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/new-location-icon-2-color.png" alt="Expand your footprint">
+    <h2>Expand your footprint</h2>
+    </div>
+  </div>
+  <!-- </a> -->
+  <!-- <a class=" story-nav-cell " href="#carousel-cell6" id="nav-global-lead"> -->
+    <div class="story-nav-cell" id="nav-global-lead">
+    <div class="nav-box">
+    <img class="carouse-nav-image" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/gobal-lead-icon-2.png" alt="Go global!">
+    <img class="carouse-nav-image-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/story/gobal-lead-icon-2-color.png" alt="Go global!">
+    <h2>Go global!</h2>
+    </div>
+  </div>
+</div>
+  <!-- </a> -->
+  <script type="text/javascript">
+    function myFunction() {
+      location.replace("https://www.w3schools.com")
+    }
+    $(document).ready(function(){
+      // if(x != "" && x !="#carousel-cell1"){
+      //   $('#nav-start-up').removeClass('nav-is-selected');
+      // }
+      function show(){
+      var x = location.hash;
+      console.log(x);
+      if(x != "" && x !="#carousel-cell1"){
+        // $('#nav-start-up').removeClass('nav-is-selected');
+      }
+      if( x=="#carousel-cell1"){
+        $('#nav-start-up').addClass('nav-is-selected');
+
+        // 刪除其他的
+        $('#nav-add-member').removeClass('nav-is-selected');
+        $('#nav-employee-free').removeClass('nav-is-selected');
+        $('#nav-good-exprience').removeClass('nav-is-selected');
+        $('#nav-new-office').removeClass('nav-is-selected');
+        $('#nav-global-lead').removeClass('nav-is-selected');
+      }
+      if( x=="#carousel-cell2"){
+        $('#nav-add-member').addClass('nav-is-selected');
+
+        // 刪除其他的
+        $('#nav-start-up').removeClass('nav-is-selected');
+        $('#nav-employee-free').removeClass('nav-is-selected');
+        $('#nav-good-exprience').removeClass('nav-is-selected');
+        $('#nav-new-office').removeClass('nav-is-selected');
+        $('#nav-global-lead').removeClass('nav-is-selected');
+      }
+      if( x=="#carousel-cell3"){
+        $('#nav-employee-free').addClass('nav-is-selected');
+
+        // 刪除其他的
+        $('#nav-start-up').removeClass('nav-is-selected');
+        $('#nav-add-member').removeClass('nav-is-selected');
+        $('#nav-good-exprience').removeClass('nav-is-selected');
+        $('#nav-new-office').removeClass('nav-is-selected');
+        $('#nav-global-lead').removeClass('nav-is-selected');
+      }
+      if( x=="#carousel-cell4"){
+        $('#nav-good-exprience').addClass('nav-is-selected');
+
+        // 刪除其他的
+        $('#nav-start-up').removeClass('nav-is-selected');
+        $('#nav-employee-free').removeClass('nav-is-selected');
+        $('#nav-add-member').removeClass('nav-is-selected');
+        $('#nav-new-office').removeClass('nav-is-selected');
+        $('#nav-global-lead').removeClass('nav-is-selected');
+      }
+      if( x=="#carousel-cell5"){
+        $('#nav-new-office').addClass('nav-is-selected');
+
+        // 刪除其他的
+        $('#nav-start-up').removeClass('nav-is-selected');
+        $('#nav-employee-free').removeClass('nav-is-selected');
+        $('#nav-good-exprience').removeClass('nav-is-selected');
+        $('#nav-add-member').removeClass('nav-is-selected');
+        $('#nav-global-lead').removeClass('nav-is-selected');
+      }
+      if( x=="#carousel-cell6"){
+        $('#nav-global-lead').addClass('nav-is-selected');
+
+        // 刪除其他的
+        $('#nav-start-up').removeClass('nav-is-selected');
+        $('#nav-employee-free').removeClass('nav-is-selected');
+        $('#nav-good-exprience').removeClass('nav-is-selected');
+        $('#nav-new-office').removeClass('nav-is-selected');
+        $('#nav-add-member').removeClass('nav-is-selected');
+      }
+    }
+      setInterval(show,4000);
+    });
+
+  </script>
+
+<!-- 擋住按鈕 -->
+<div class="cover-btn" style="background: #0000;position: absolute;width: 100%;height: 100%;top: 0px;"></div>
+</div>

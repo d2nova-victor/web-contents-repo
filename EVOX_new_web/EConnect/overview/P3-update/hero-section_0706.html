@@ -1,0 +1,397 @@
+<style type="text/css">
+	.hero-section-1{
+		max-width: 100%;
+		/*float: left;*/
+		margin: 0px auto;
+		height: 400px;
+		background: #EDE7F6;
+	}
+	.EConnect-purple-bg{
+		background: #EDECFA;
+	}
+	.hero-section-content{
+		/* width: 100%;
+	    height: 256px;
+	    position: absolute;
+	    max-width: 1240px;
+	    margin: 0 auto;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    --widthA:100%;   
+	    margin-top: calc(var( --widthA)*0.06);*/
+	    padding-bottom: 40px;
+	}
+	.hero-section-content>span{
+		font-size: 14px;
+		/*color: rgba(0,0,0,0.4);*/
+		margin: 5px 0px;
+		padding-left: 12px;
+	}
+	.hero-section-content>h1{
+		font-size: 42px;
+		margin:  5px 0px;
+		padding-left: 12px;
+	}
+	.hero-section-content>p{
+		max-width: 540px;
+		margin: 5px 0px;
+		font-size: 18px;
+		padding-left: 12px;
+	}
+	
+	.hero-section-image{
+		width: 50%;
+	    height: 100%;
+	    position: relative;
+	    overflow: hidden;
+	    float: right;
+	    
+	}
+/*	.hero-section-image>img{
+		visibility: hidden;
+		height: 100%;
+		max-width: fit-content;
+	}*/
+	.top-banner-btn{
+		margin: 12px 12px;
+		/*min-width: 200px;*/
+		width: 50%;
+	}
+	/*給專門頁面*/
+	.ecconectoverview-page{
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/econnect-top-7.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.ecconectoverview-page:after{
+		content: url(https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/econnect-top-7-slipt.png);
+	    /*position: absolute;
+	    bottom: 0;
+	    min-height: 627px;*/
+	}
+	.top_button_group{
+		display:flex;
+	}
+	.pc-version-hide{
+		display: none;
+	}
+
+
+
+	/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:99999999;
+}
+.hs-richtext>div{
+	font-size:28px;
+	margin:20px 0;
+}
+.hs-richtext>p{
+	margin:20px 0;
+}
+.hs-richtext>p>a{
+	font-size: 16px;
+	padding:0 2px;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 4px;
+    padding: 40px;
+}
+.popupCloseButton {
+    background-color: #fff;
+    /* border: 3px solid #2333; */
+    color: #2f2f2f;
+    /*border-radius: 50px;*/
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    line-height: 32px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    display: inline-block;
+}
+/* Popup box BEGIN */
+
+.form-block{
+		/*width: 100%;*/
+	}
+	.hbspt-form{
+		padding: 0px 0;
+	    width: 100%;
+	    /*float: left!important;*/
+	    margin: 0px auto !important;
+		
+	}
+	.hs-form-required{
+		display: none;
+	}
+	.hs_availabletime>label{
+		display: none;
+	}
+	select{
+		margin: 0px;
+	}
+	.hs-input{
+		width: 100%;
+		height: 45px;
+		/*padding: 5px;*/
+		padding: 9px 10px;
+    	margin: 4.5px 0;
+    	border-radius: 4px;
+    	border: 0px;
+    	background-color: #fff;
+    	font-weight: normal;
+    	line-height: 22px;
+    	box-sizing: border-box;
+    	border: 1px solid #A5B6BF;
+    	color: #243237;
+	}
+	::-webkit-input-placeholder { /* Edge */
+	  color: #A5B6BF;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer */
+	  color: #A5B6BF;
+	}
+	::placeholder {
+  	color: #A5B6BF;
+	}
+	.hs_client_want_to_know_about{
+		color: #243237;
+	    display: table;
+	    margin: 10px 0;
+	    width: 100%;
+	}
+	.inputs-list{
+		color:#243237;
+		list-style: none;
+    	padding: 0px;
+    	margin: 0px;
+	}
+	.inputs-list>li{
+		text-align: left;
+	}
+	.input>textarea{
+		min-height: 150px;
+	}
+	input[type="submit"]{
+		width: 100%;
+		float: left;
+		margin: 10px 0px;
+		background: #66C547;
+		border-radius: 4px;
+	    border: 0px solid #fff;
+	    color: #fff;
+	    padding: 10px 50px;
+	}
+	.hs-error-msg{
+		color: #FF9500;
+	}
+	/*selecr未選擇時更改顏色*/
+	select:required:invalid{
+  		color: #A5B6BF;
+	}
+	option[value=""][disabled] {
+		color: #A5B6BF;
+	}
+	option {
+  		color:#243237;
+	}
+
+	@media screen and (max-width: 1028px){
+		.hero-section-content{
+			/*width: 50%;
+		    float: left;
+		    height: 256px;
+		    position: relative;
+		    max-width: 1240px;
+		    margin: 0 auto;
+		    left: 0px;
+		    -webkit-transform: translateX(-50%);
+		    transform: translateX(0%);
+		    --widthA: 100%;
+		    margin-top: calc(var( --widthA)*0.12);*/
+		}
+
+	}
+	@media screen and (max-width: 840px){
+		.ecconectoverview-page:after{
+		content: none;
+	    /*position: absolute;
+	    bottom: 0;
+	    min-height: 627px;*/
+		}
+		/*.evoxoverview-page{
+		background-position:center;
+		}*/
+		.hero-section-image>img{
+		visibility: hidden;
+		}
+		.hero-section-image{
+			width: 100%;
+			min-height: 300px;
+		}
+		.hero-section-content{
+		    width: 100%;
+		    /*position: relative;*/
+		    height: 100%;
+		    background: #EDECFA;
+		    padding: 5%;
+		    margin: 0 0 20px 0;
+		}
+		.top_button_group{
+			display:flex;
+		}
+		.pc-version-hide{
+			display: block;
+		}
+	}
+	@media screen and (max-width: 640px){
+	.hero-section-content {
+    	margin-top: calc(var( --widthA)*0);
+    	width: 100%;
+	    position: relative;
+	    z-index: 999;
+	    height: 100%;
+	    margin: 0 0 0px 0;
+	}
+	.hero-section-content>h1{
+		font-size: 32px;
+	}
+	.hero-section-image{
+		/*width: 100%;*/
+		/*background-image: none;*/
+	}
+	.hero-section-image>img{
+		visibility: visible;
+	    position: absolute;
+	    /*top: 50%;*/
+	    top: 90px;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);
+	}
+	.hero-section-1{
+		height: 220px;
+	}
+	.hero-section-content{
+		/*width: 40%;*/
+	    /*position: absolute;*/
+	    z-index: 999;
+	}
+}
+@media screen and (max-width: 516px){
+	.hover_bkgr_fricc > div{
+		max-width: 90%;
+		width:90%;
+		padding: 3%;
+	}
+	
+	.hero-section-content>span{
+		padding-left: 0px;
+	}
+	.hero-section-content>h1{
+		padding-left: 0px;
+	}
+	.hero-section-content>p{
+		padding-left: 0px;
+	}
+	.input>textarea{
+		min-height:85px;
+	}
+}
+</style>
+<div class="hero-section-1 EConnect-purple-bg">
+	<div class="hero-section-image ecconectoverview-page">
+		<!-- <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/overview-top-slipt.png"> -->
+	</div>
+	<div style="margin: 0 auto;max-width: 1240px;height: 100%;">
+		<div class="flex-center">
+			<div class="hero-section-content">
+				<span class="purple-text">EVOX Connect 易客服</span>
+				<h1>創造完美的顧客體驗</h1>
+				<p>輕鬆擁有企業等級的客服中心系統</p>
+				<div class="top_button_group">
+				<a class="purple-btn large-btn top-banner-btn trigger_popup_fricc" >索取介紹影片</a>
+				<a class="purple-btn large-btn top-banner-btn pc-version-hide" href="/tw/contact-us">聯絡我們</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- popup box  -->
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <!-- <h2>填寫表單取得解說影片</h2> -->
+        <!-- <p>填寫表單後我們將盡快寄送EVOX Connect展演影片給您，如需專人接洽請填<a class="green-text" href=" /tw/contact-us">立即聯絡</a></p> -->
+        <!--[if lte IE 8]>
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+		<![endif]-->
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+		<script>
+		  hbspt.forms.create({
+			portalId: "1864133",
+			formId: "5dea0244-8115-464b-bb31-8e78641be660"
+		});
+		</script>
+		<!-- <a class="purple-btn large-btn pc-version-hide mobile-cancel" href="/tw/contact-us">取消</a> -->
+    </div>
+</div>
+<script>
+	$( document ).ready(function() {
+   		console.log( "ready!" );
+		$(".trigger_popup_fricc").click(function(){
+  			$('.hover_bkgr_fricc').show();
+		});
+		// $(".hover_bkgr_fricc").click(function(){
+  // 			$('.hover_bkgr_fricc').hide();
+		// });
+		// $(".mobile-cancel").click(function(){
+  // 			$('.hover_bkgr_fricc').hide();
+		// });
+		$(".popupCloseButton").click(function(){
+  			$('.hover_bkgr_fricc').hide();
+		});
+	});
+</script>

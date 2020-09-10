@@ -18,9 +18,15 @@
     font-weight: normal;
     src: local('SF UI Text Regular'), url('https://cdn2.hubspot.net/hubfs/1864133/EVOX_Fonts/SF/SFUIText-Regular.woff') format('woff');
 }
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: local('Noto Sans TC'), url('https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_Fonts/Noto%20San%20TC/NotoSansTC-Regular.otf') format('otf');
+}
 
 #siteWrapper {
-  font-family: sans-serif,source-han-sans-traditional, "Han Sans", "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular,sans-serif !important;
+  /*font-family: sans-serif,source-han-sans-traditional, "Han Sans", "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular,sans-serif !important;*/
+  /*font-family: sans-serif, "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular !important;*/
+  font-family:'Noto Sans TC',sans-serif,source-han-sans-traditional, "Han Sans", SF UI Text Regular,sans-serif !important;
   font-weight: normal;
   color: #243237;
 }
@@ -29,8 +35,11 @@ strong {
   font-weight: bold;
 }
 
-p, a, h4, span, div h1, h2, h3 {
-  font-family: sans-serif,source-han-sans-traditional, "Han Sans", "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular,sans-serif !important;
+p, a, h4, span,div, h1, h2, h3 {
+  /*font-family: sans-serif,source-han-sans-traditional, "Han Sans", "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular,sans-serif !important;*/
+  font-family:'Noto Sans TC',sans-serif,source-han-sans-traditional, "Han Sans", SF UI Text Regular,sans-serif !important;
+  /*font-family:sans-serif,source-han-sans-traditional, "Han Sans",'Noto Sans TC', Noto Sans TC, sans-serif, SF UI Text Regular,sans-serif !important;*/
+  /*font-family: sans-serif, "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular !important;*/
 }
 
 h2, .summary-title a {
@@ -50,7 +59,8 @@ h3 {
 }
 
 p {
-  line-height: 1.5em;
+  /*line-height: 1.5em;*/
+  line-height: 1.8em;
 }
 /*覆蓋原來的style*/
 html, body {
@@ -64,7 +74,7 @@ p, a, h4, span, div h1, h2, h3 {
 }
 
 a {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 h1 {
@@ -120,7 +130,7 @@ h5 {
 .folder-toggle {
   font-weight: 300;
   letter-spacing: 1px;
-  font-family: source-han-sans-traditional;
+  /*font-family: source-han-sans-traditional;*/
   font-style: normal;
   text-decoration: none;
   padding: 0px!important;
@@ -131,7 +141,7 @@ h5 {
 .side-menu-item>a {
   font-weight: 300;
   letter-spacing: 1px;
-  font-family: source-han-sans-traditional;
+  /*font-family: source-han-sans-traditional;*/
   font-style: normal;
   text-decoration: none;
   padding: 0px!important;
@@ -142,12 +152,12 @@ h5 {
 div.folder:last-of-type>div.folder-toggle {
   font-weight: 300;
   letter-spacing: 1px;
-  font-family: source-han-sans-traditional;
+  font-family:'Noto Sans TC',sans-serif,source-han-sans-traditional, "Han Sans", SF UI Text Regular,sans-serif !important;
   font-style: normal;
   text-decoration: none;
   padding: 0px!important;
   background-color: #93c45d00;
-  color: #000 !important;
+  color: #243237 !important;
 }
 
 header#header.show-on-scroll {
@@ -247,7 +257,7 @@ header#header.show-on-scroll {
 }
 
 div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper {
-  min-height: 52px !important;
+  min-height: 0px !important;
 }
 
 .logo-wrapper {
@@ -927,7 +937,7 @@ footer#footer a {
 }
 @media only screen and (max-width: 480px) {
   div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper {
-    min-height: 62px !important;
+    min-height: 0px !important;
   }
   .rich-tittle {
         margin: 21px 0px 10px 0px;
@@ -935,7 +945,7 @@ footer#footer a {
 }
 @media only screen and (max-width: 380px) {
     div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
-            min-height: 55px !important;
+            min-height: 0px !important;
     }
 }
 /*@media only screen and (max-width: 440px){
