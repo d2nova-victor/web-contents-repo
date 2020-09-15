@@ -1,0 +1,426 @@
+Searching 2158 files for "https://www.evoxglobal.com/tw/evox/cloud-pbx-old " (regex, case sensitive)
+
+0 matches
+
+Searching 2158 files for "/tw/evox/cloud-pbx-old " (regex, case sensitive)
+
+0 matches
+
+Searching 2158 files for "/tw/evox/cloud-pbx" (regex, case sensitive)
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/admin-features/features-2-three-icon.html:
+  312          </div>
+  313  
+  314:         <div class="three-block" onclick="location.href='/tw/evox/cloud-pbx/group-ring-pickup/update-layout';">
+  315              
+  316            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/admin-features/features-2-three-icon_0728.html:
+  282          </div>
+  283  
+  284:         <div class="three-block" onclick="location.href='/tw/evox/cloud-pbx/group-ring-pickup/update-layout';">
+  285              
+  286            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/admin-features/features-2-three-icon_0729.html:
+  265          </div> -->
+  266  
+  267:         <div class="three-block" onclick="location.href='/tw/evox/cloud-pbx/group-ring-pickup';">
+  268              
+  269            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/content-feature-01_3.html:
+   24  			<h2>群組響鈴</h2>
+   25  			<p>群組響鈴功能可讓來電同時觸發所有群組內的分機，常使用此功能的群組有業務、技術客服及總機接線員等。 建立群組及其指定代碼(分機)後，可將群組指定給直撥號碼或設定速撥選單。群組響鈴功能一旦開啟，每當有來電時所有群組內的分機都會響鈴，並由第一位接通的分機進行通話。 </p>
+   26: 			<a class="green-outline-btn" href="/tw/evox/cloud-pbx/group-ring-pickup/update-layout">查看功能</a>
+   27  		</div>
+   28  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/features-2-three-icon.html:
+  232            </div>
+  233          </div>
+  234:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  235              
+  236            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/group-ring/features-2-three-icon_0820.html:
+  264          </div> -->
+  265  
+  266:         <!-- <div class="three-block" onclick="location.href='/tw/evox/cloud-pbx/group-ring-pickup';">
+  267              
+  268            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/system-setting/content-feature-01-reverse.html:
+   62  			<p>裝置頁可以一覽所有EVOX服務所搭配使用的裝置及市話路由設定。</p>
+   63  			<div class="btn-group">
+   64: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">行動裝置 App</a>
+   65: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">電腦版 App</a>
+   66: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">轉接盒</a>
+   67: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">IP 電話機</a>
+   68  			</div>
+   69  		</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/system-setting/content-feature-01_2.html:
+   49  				<a class="green-outline-btn block-btn" href="/tw/evox/admin-center/outbound">撥打電話權限</a>
+   50  				<a class="green-outline-btn block-btn" href="/tw/evox/admin-center/auto-attendant">分機問候語</a>
+   51: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/group-ring-pickup">群組響鈴</a>
+   52  			</div>
+   53  
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/user-manager/content-feature-01-reverse-2.html:
+   64  				<a class="green-outline-btn block-btn" href="/tw/evox/multiple-devices/mobile-extension">行動裝置 App</a>
+   65  				<a class="green-outline-btn block-btn" href="/tw/evox/multiple-devices/pc-app">電腦版 App</a>
+   66: 				<!-- <a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">轉接盒</a> -->
+   67  				<a class="green-outline-btn block-btn" href="/tw/evox/multiple-devices/ip-phone">IP 電話機</a>
+   68  			</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/admin/user-manager/content-feature-01-reverse.html:
+   90  			<p>可隨時新增或更新使用者的基本資訊，像是姓名、Email、手機號碼、分機號碼等。無論是新員工報到還是員工離職，管理員都能夠有效率地做調整。 </p>
+   91  			<!-- <div class="btn-group">
+   92: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">行動裝置App</a>
+   93: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">電腦版App</a>
+   94: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">專接盒</a>
+   95: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">IP 電話機</a>
+   96  			</div> -->
+   97  		</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/branch/content-feature-01-reverse.html:
+   49  			<h2>彈性分配分公司之間的瀏覽權限</h2>
+   50  			<p>總公司可以開放分公司之間單向或雙向的瀏覽權限，方便有業務關聯性、或是常常需要聯絡的分公司同仁，可以在通訊錄上找到聯絡資訊。</p>
+   51: 			<!-- <a class="green-outline-btn" href="/tw/evox/cloud-pbx/fax">如何使用</a> -->
+   52  		</div>
+   53  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/branch/update/content-feature-01-reverse.html:
+   49  			<h2>掌控分公司間的閱覽權限</h2>
+   50  			<p>總公司管理員可以設定分公司之間的通訊錄閱覽權限，可以讓有業務來往分公司同仁看到彼此的分機，方便溝通與聯繫，也能讓獨立運作的分公司保有隱私。</p>
+   51: 			<!-- <a class="green-outline-btn" href="/tw/evox/cloud-pbx/fax">如何使用</a> -->
+   52  		</div>
+   53  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/customizable-service/0715update/content-feature-01.html:
+   24  			<h2>數位傳真方便且更環保</h2>
+   25  			<p>您可直接在電腦或行動裝置上透過email發送傳真檔案，不用浪費紙張也可省下等待傳真機發送的時間，同時達到綠化和行動辦公室概念。</p>
+   26: 			<a class="green-outline-btn" href="/tw/evox/cloud-pbx/fax">如何使用</a>
+   27  		</div>
+   28  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/customizable-service/content-feature-01-reverse.html:
+   25  			<h2>數位傳真方便且更環保</h2>
+   26  			<p>您可直接在電腦或行動裝置上透過email發送傳真檔案，不用浪費紙張也可省下等待傳真機發送的時間，同時達到綠化和行動辦公室概念。</p>
+   27: 			<a class="green-outline-btn" href="/tw/evox/cloud-pbx/fax">如何使用</a>
+   28  		</div>
+   29  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/customizable-service/features-2-three-icon.html:
+  231            </div>
+  232          </div>
+  233:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  234              
+  235            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/multi-devices/features-2-three-icon.html:
+  231            </div>
+  232          </div>
+  233:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  234              
+  235            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/multi-devices/function-page/features-2-four-icon.html:
+  206            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  207          </div>
+  208:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  209              
+  210            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/multi-devices/function-page/pc-app_update0724/content-feature-01_2.html:
+   49  				<a class="green-outline-btn block-btn" href="/tw/evox/admin-center/outbound">撥打電話權限</a>
+   50  				<a class="green-outline-btn block-btn" href="/tw/evox/admin-center/auto-attendant">分機問候語</a>
+   51: 				<a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/group-ring-pickup">群組響鈴</a>
+   52  			</div>
+   53  
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/multi-location/features-2-three-icon.html:
+  168            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  169          </div>
+  170:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  171              <div class="icon">
+  172                <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/cloud-pbx-icon.png">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/overview/content-01-version-b-reverse-02.html:
+   29  			<h2>不同地區<span class="green-text">不同號碼</span>服務更多元</h2>
+   30  			<p>您可以加購多個台灣各地的市話號碼做為不同據點的服務號碼，除了可以節省內部溝通成本，更可以加強您的在地服務信任感。</p>
+   31: 			<a class="green-outline-btn" href="/tw/evox/cloud-pbx/multiple-branches"> 了解更多</a>
+   32  		</div>
+   33  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/overview/content-01-version-b.html:
+   18  			<h2>便捷的<span class="green-text">雲端總機</span></h2>
+   19  			<p>不需要安裝硬體設備及實體電話線，也能享受企業等級的總機功能，更無須擔心日後的維修。</p>
+   20: 			<a class="green-outline-btn" href="/tw/evox/cloud-pbx">了解功能</a>
+   21  		</div>
+   22  	</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/overview/features-2-five-icon-update.html:
+  169          </div>
+  170  
+  171:           <div class="five-block benefit-hover-icon" id="save-time" onclick="location.href='/tw/evox/cloud-pbx#nohardware';">
+  172              <div class="icon"> 
+  173                <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/save-money-icon.png" alt="省時省力">
+  ...
+  184          </div>
+  185  
+  186:         <div class="five-block benefit-hover-icon" onclick="location.href='/tw/evox/cloud-pbx#easyexpand';">
+  187              <div class="icon">
+  188                <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/icon/global-pbx-icon.png" alt="易擴充">
+  ...
+  199          </div>
+  200  
+  201:         <div class="five-block benefit-hover-icon" id="aws-safe"  onclick="location.href='/tw/evox/cloud-pbx#awsservice';">
+  202              <div class="icon">
+  203                <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/use-aws-icon.png" alt="安全性">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/EVOX/overview/features-2-four-icon.html:
+  206            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  207          </div>
+  208:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  209              
+  210            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/footer-0413.html:
+  198  		<li><a href="/tw/evox/cloud-phone-system">EVOX 易喂</a></li>
+  199  		<li><a href="/tw/evox-connect/call-center"><div style="line-height: 16px;">EVOX Connect 易客服</div></a></li>
+  200: 		<li><a href="/tw/evox/cloud-pbx/fax">傳真</a></li>
+  201  		<li><a href="/tw/evox/multiple-devices/ip-phone">IP電話</a></li>
+  202  		<li><a href="/headphones/jabra">商用耳機</a></li>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/footer-0616.html:
+  202  		<li><a href="/tw/evox/cloud-phone-system">EVOX 易喂</a></li>
+  203  		<li><a href="/tw/evox-connect/call-center"><div style="line-height: 16px;">EVOX Connect 易客服</div></a></li>
+  204: 		<li><a href="/tw/evox/cloud-pbx/fax">傳真</a></li>
+  205  		<li><a href="/tw/evox/multiple-devices/ip-phone">IP電話</a></li>
+  206  		<li><a href="/headphones/jabra">商用耳機</a></li>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/footer.html:
+  189  		<li><a href="/tw/evox/cloud-phone-system">EVOX 服務</a></li>
+  190  		<li><a href="/tw/econnect/call-center">EConnect 服務</a></li>
+  191: 		<li><a href="/tw/evox/cloud-pbx/fax">傳真</a></li>
+  192  		<li><a href="/tw/evox/multiple-devices/ip-phone">IP電話</a></li>
+  193  		<li><a href="/headphones/jabra">商用耳機</a></li>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/footer_zendesk.html:
+  208  		<li><a href="https://www.evoxglobal.com/tw/evox/cloud-phone-system">EVOX 易喂</a></li>
+  209  		<li><a href="https://www.evoxglobal.com/tw/evox-connect/call-center"><div style="line-height: 16px;">EVOX Connect 易客服</div></a></li>
+  210: 		<li><a href="https://www.evoxglobal.com/tw/evox/cloud-pbx/fax">傳真</a></li>
+  211  		<li><a href="https://www.evoxglobal.com/tw/evox/multiple-devices/ip-phone">IP電話</a></li>
+  212  		<li><a href="https://www.evoxglobal.com/headphones/jabra">商用耳機</a></li>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/p3-update/price-0422.html:
+  480                  <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等
+  481                      <br/>
+  482:                     <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  483                  </p>
+  484              </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/p3-update/price-0511.html:
+  480                  <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等
+  481                      <br/>
+  482:                     <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  483                  </p>
+  484              </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/p3-update/price-0619.html:
+  524                  <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等
+  525                      <br/>
+  526:                     <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  527                  </p>
+  528              </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/p3-update/price-0814.html:
+  524                  <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等
+  525                      <br/>
+  526:                     <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  527                  </p>
+  528              </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/p3-update/price.html:
+  480                  <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等
+  481                      <br/>
+  482:                     <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  483                  </p>
+  484              </div>
+  ...
+  869          <h3>客服管理</h3>
+  870          <p>客服管理系統，讓企業客服中心能有效率的分配客服人員的時間，改善客戶體驗<br/>
+  871:           <a class="purple-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  872          </p>
+  873        </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/price-temporaly.html:
+  436          <h3>雲端總機</h3>
+  437          <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等<br/>
+  438:           <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  439          </p>
+  440        </div>
+  ...
+  567          <h3>客服管理</h3>
+  568          <p>客服管理系統，讓企業客服中心能有效率的分配客服人員的時間，改善客戶體驗<br/>
+  569:           <a class="purple-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  570          </p>
+  571        </div>
+  ...
+  682          <h3>雲端總機</h3>
+  683          <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等<br/>
+  684:           <a class="green-text" href="/tw/evox/cloud-pbx">了解更多</a>
+  685          </p>
+  686        </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/price.html:
+  435          <h3>雲端總機</h3>
+  436          <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等<br/>
+  437:           <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  438          </p>
+  439        </div>
+  ...
+  566          <h3>客服管理</h3>
+  567          <p>客服管理系統，讓企業客服中心能有效率的分配客服人員的時間，改善客戶體驗<br/>
+  568:           <a class="purple-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  569          </p>
+  570        </div>
+  ...
+  681          <h3>雲端總機</h3>
+  682          <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等<br/>
+  683:           <a class="green-text" href="/tw/evox/cloud-pbx">了解更多</a>
+  684          </p>
+  685        </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/price-page/price02.html:
+  444          <h3>雲端總機</h3>
+  445          <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等<br/>
+  446:           <a class="green-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  447          </p>
+  448        </div>
+  ...
+  588          <h3>客服管理</h3>
+  589          <p>客服管理系統，讓企業客服中心能有效率的分配客服人員的時間，改善客戶體驗<br/>
+  590:           <a class="purple-text" href="/tw/evox/cloud-pbx" target="_blank">了解更多</a>
+  591          </p>
+  592        </div>
+  ...
+  703          <h3>雲端總機</h3>
+  704          <p>支援所有企業級交換機的常用功能，如公司問候語、分內線外線、員工擁有各自分機號碼、轉接、代接、群響…等<br/>
+  705:           <a class="green-text" href="/tw/evox/cloud-pbx">了解更多</a>
+  706          </p>
+  707        </div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/company-number/content-01-version-b-reverse-2.html:
+   90  			<h2>傳真號碼</h2>
+   91            <p>EVOX 提供電子傳真的加值服務 - 易傳真，服務內附一組傳真專屬的電話號碼。</p>
+   92: 			<a class="green-text" href="/tw/evox/cloud-pbx/fax">了解更多 <i class="fas fa-chevron-right"></i></a>
+   93  		</div>
+   94  		
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/company-number/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/hk_immagration/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/local-presence/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/local-presence/new/features-2-four-icon.html:
+  211            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  212          </div>
+  213:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  214              
+  215            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/multi-location/content-01-version-b-02.html:
+   57  			<h2>群體響鈴讓團隊互相幫助</h2>
+   58  			<p>您是否因為忙碌而時常錯過電話呢？這讓您在不知不覺中流失許多客戶，而群組響鈴就是讓公司同仁能夠協助正在忙碌上的業務或是同仁的來電接聽。不會錯過重要客戶的電話。</p>
+   59: 			<a  href="/tw/evox/cloud-pbx/group-ring-pickup">了解更多 <i class="fas fa-chevron-right green-text"></i></a>
+   60  			</div>
+   61  		</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/multi-location/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/multi-location/new/content-01-version-b-02.html:
+   59  			<h2>群組響鈴，團隊合作</h2>
+   60  			<p>群組響鈴功能可讓來電同時觸發群組內的所有分機，如此一來，即使負責人員不在櫃檯或在忙碌時，其他同仁也可以接起電話，不怕錯失任何一位客戶來電。</p>
+   61: 			<a class="green-text text-btn" href="/tw/evox/cloud-pbx/group-ring-pickup">了解更多 <i class="fas fa-chevron-right green-text"></i></a>
+   62  			</div>
+   63  		</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/multi-location/new/features-2-four-icon.html:
+  211            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  212          </div>
+  213:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  214              
+  215            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/pbx-integration/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/start-up/features-2-four-icon.html:
+  211            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  212          </div>
+  213:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  214              
+  215            <div class="content-box">
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/telework/0420-update/content-07-three-colum-solution.html:
+  120  				<h3>在家以公司代表號外撥</h3>
+  121  				<p>透過 EVOX 撥打電話給客戶時，不會顯示個人手機號碼，而是公司代表號，不僅可以展現公司專業形象，而且客戶完全感受不到員工其實在家上班。</p>
+  122: 				<a href="https://www.evoxglobal.com/tw/evox/cloud-pbx" target="_blank"  class="learnmore green-text">了解詳情 <i class="fas fa-chevron-right "></i></a>
+  123  			</div>
+  124  		</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/telework/content-07-three-colum-solution.html:
+  115  				<h3>在家以公司代表號外撥</h3>
+  116  				<p>透過EVOX撥打電話給客戶時，不會顯示個人手機號碼，而是公司代表號，不僅可以展現公司專業形象，而且客戶完全感受不到員工其實在家上班。</p>
+  117: 				<a href="https://www.evoxglobal.com/tw/evox/cloud-pbx" target="_blank"  class="learnmore green-text">了解詳情 <i class="fas fa-chevron-right "></i></a>
+  118  			</div>
+  119  		</div>
+
+/Users/victorwu/local-web-repo/EVOX_new_web/solution/telework/features-2-four-icon.html:
+  215            <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+  216          </div>
+  217:         <div class="three-block border-add" onclick="location.href='/tw/evox/cloud-pbx';">
+  218              
+  219            <div class="content-box">
+
+65 matches across 50 files
+
+
+ Searching 2158 files for "/tw/evox/cloud-pbx-old" (regex, case sensitive)
+
+0 matches
