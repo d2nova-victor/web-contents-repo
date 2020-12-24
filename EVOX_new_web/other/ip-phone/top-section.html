@@ -1,0 +1,46 @@
+<style>
+    .ip-phone-block-top{
+        text-align:center;
+    }
+    .ip-phone-block-top>h1{
+        font-size:35px;
+    }
+    .ip-phone-block-top>p{
+        font-size:16px;
+        line-height: 1.8em;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<div class="ip-phone-block-top">
+<h1>
+    IP 電話機 
+</h1>
+<p>EVOX 與各大國際品牌的 IP 電話機和會議機相容。若您和我們購買 IP 話機，我們將免費設定完成後寄送給您。
+<br/>若您自行購買 IP 話機（請先參考下方<a href="#ip-phone-list" class="green-text">相容列表</a>），則需寄送給我們並支付設定費用。​
+</p>
+</div>
