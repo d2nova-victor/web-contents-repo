@@ -22,6 +22,9 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
 .side-menu-item:hover .sub-side-menu{
 	margin-left: 0px;
 }
+.login-sub-block{
+	min-width:290px;
+}
 .rich-group{
 	max-width: 170px;
 }
@@ -29,7 +32,10 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
 	font-size: 14px;
 }
 .headerNav-dropdown:hover .drop-down-block{
-	    margin-left: -13%;
+	    margin-left: -9%;
+}
+.rich-block{
+	padding: 15px 30px;
 }
 @media only screen and (max-width: 1254px){
 	.main-menu>div:first-child:hover .drop-down-block{

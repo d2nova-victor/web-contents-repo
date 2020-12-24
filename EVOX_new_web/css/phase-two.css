@@ -522,9 +522,12 @@ footer#footer a {
 }
 
 .resource_box {
-  width: 50%;
-  float: left;
-  margin: 10px auto;
+    width: 45%;
+    height: 50px;
+    float: left;
+    margin: 10px auto;
+    padding: 0 5% 0 0;
+
 }
 
 .resource_box>div {

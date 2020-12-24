@@ -12,7 +12,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		padding: 1px;
 		font-weight: 500;
 	}
@@ -35,7 +35,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		padding: 1px;
 		font-weight: 500;
 	}
@@ -57,7 +57,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		padding: 1px;
 		font-weight: 500;
 	}
@@ -79,7 +79,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		padding: 1px;
 		font-weight: 500;
 	}
@@ -101,7 +101,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		padding: 1px;
 		font-weight: 500;
 	}
@@ -139,7 +139,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		border: 2px solid #66C547;
 		padding: 1px;
 		font-weight: 500;
@@ -162,7 +162,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		border: 2px solid #7986CB;
 		padding: 1px;
 		font-weight: 500;
@@ -185,7 +185,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		border: 2px solid #5856D6;
 		padding: 1px;
 		font-weight: 500;
@@ -209,7 +209,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		border: 2px solid #5F6871;
 		padding: 1px;
 		font-weight: 500;
@@ -232,7 +232,7 @@
 		text-align: center;
 		margin: 15px 0;
 		/*height: 36px;*/
-		line-height: 2.7em;
+		line-height: 2.5em;
 		border: 2px solid #fff;
 		padding: 1px;
 		font-weight: 500;
@@ -261,6 +261,12 @@
 	}
 	.yellow-text{
 		color:#CDAC00;
+	}
+	.black-text{
+		color:#243237;
+	}
+	.light-dark-text{
+		color:#7d8a96;
 	}
 	.skyblue-text{
 		color:#1976D2;

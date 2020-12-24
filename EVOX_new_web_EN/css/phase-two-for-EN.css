@@ -28,6 +28,9 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
 .rich-tittle>a>h2{
 	font-size: 14px;
 }
+.rich-block{
+	padding: 15px 30px;
+}
 @media only screen and (min-width: 641px){
 	#header #logoWrapper, #header #logoImage {
     width: 215px;
