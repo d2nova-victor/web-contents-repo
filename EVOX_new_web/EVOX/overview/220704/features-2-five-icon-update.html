@@ -1,0 +1,249 @@
+        <style type="text/css">
+        .features-2-background{
+          width: 100%;
+          /*background: #E8F5E9;*/
+          /* height: auto; */
+          display: table;
+          margin: 40px 0 0 0;
+          }
+        .features-2-section{
+          max-width: 1440px;
+          margin: 40px auto;
+          display: table;
+        }
+        .features-2-section > .five-block{ 
+          min-height: 243px;
+          margin: 1%;
+          width: 18%;
+          float: left;
+          /* min-height: 350px; */
+          padding: 15px 2% 15px 2%;
+        }
+
+        /*.five-block > svg{
+        width:90px;
+        float:left;
+        }*/
+        .content-tittle{
+        
+        /*font-weight: bold;*/
+        /*color:#90c25c;*/
+        }
+        /*.five-block>p{
+        width:100%;
+        display.five-block;
+        }*/
+        .icon{
+        width:80px;
+        height:80px;
+        margin: 0 auto;
+        margin-bottom: -50px;
+        padding: 0;
+        border-radius: 90%;
+        /* border: 1px solid #afafafee; */
+        /*background-color: #fafafa;*/
+        /*-moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        box-shadow: 4px 4px 12px -2px rgba(80, 80, 80, 0.5);*/
+        }
+        .content-box{
+        /*min-height: 190px;*/
+        /* border: 1px solid #afafafee; */
+        padding: 60px 10px 10px 10px;
+        /*border-radius: 3px;*/
+        /*-moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+        box-shadow: 4px 4px 12px -2px rgba(88, 88, 88, 0.5);*/
+        }
+        .content-box p{
+          font-size: 16px;
+          text-align: center;
+        }
+        .content-tittle{
+          font-size:21px;
+          text-align: center;
+          font-weight: 500;
+        }
+        .five-block:hover .content-box{
+          /*color: #93c45d;*/
+          /*color: white;*/
+          /*cursor: pointer;*/
+        }
+        .five-block:hover .content-tittle{
+          /*color: white;*/
+          /*cursor: pointer;*/
+
+        }
+        .five-block:hover .green-text{
+          color: #00A82D;
+          /*font-weight: bold;*/
+          text-decoration: underline;
+        }
+        .five-block:hover path#circle, .five-block:hover polygon#circle  {
+          cursor: pointer;
+          fill:#93c45d;
+          }
+        .five-block:hover path#hover, .five-block:hover g#hover, .five-block:hover text, .five-block:hover rect#hover{
+          cursor: pointer;
+          fill:#ffffff;
+          stroke:#ffffff;
+         }
+         .features-top{
+          width: 100%;
+          height: 105px;
+          text-align: center;
+         }
+         .features-top>h2{
+          margin: 6px;
+          font-size: 35px;
+         }
+          .features-top>h2>img{
+            height: 30px!important;
+            padding: 0 10px;
+         }
+         .features-top>p{
+          margin: 6px;
+          font-size: 18px;
+         }
+         .benefit-hover-icon{
+          cursor: pointer;
+         }
+         .benefit-hover-icon:hover{
+          background: #fff;
+          border-radius: 4px;
+          box-shadow: 1px 1px 13px #c5c5c5;
+         }
+        @media screen and (max-width: 911px) {
+          .features-2-section >.five-block{
+                /*min-height: 360px;*/
+          }
+          .content-box{
+                min-height: 220px;
+          }
+          .content-tittle{
+            font-size:20px;
+          }
+        }
+         @media screen and (max-width: 735px) {
+          .features-2-section >.five-block{
+                width: 48%;
+                /*min-height: 270px;*/
+                min-height: 90px;
+          }
+          .content-box{
+                min-height: 90px;
+          }
+          .last-icon{
+            width: 98%!important;
+          }
+        }
+        @media screen and (max-width: 607px) {
+          
+          .content-box{
+                min-height: 120px;
+          }
+          .icon{
+            /*width: 80px;*/
+            /*margin: 0px 0px 0px 20px;*/
+          }
+          .content-box p{
+                /*width: 250px;*/
+                margin: 0 auto;
+          }
+        }
+        @media screen and (max-width: 530px) {
+          .features-2-section >.five-block{
+                /*width: 100%;*/
+                /*min-height: 100%;*/
+                min-height: 90px;
+          }
+        }
+
+
+        </style>
+        <div class="features-2-background">
+        <div class="features-2-section">
+        <div class="features-top">
+          <h2><img class="evox-logo" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/evox-logo.png" alt="EVOX"><span style="display: none;">EVOX</span>的<span class="green-text">優勢</span></h2>
+          <p>不斷優化與升級，滿足您對企業電話的需求</p>
+        </div>
+
+          <div class="five-block benefit-hover-icon" id="save-time" onclick="location.href='/tw/evox/cloud-pbx#nohardware';">
+            <div class="icon"> 
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/save-money-icon.png" alt="省時省力">
+            </div>
+          <div class="content-box">
+            <h3 class="content-tittle">
+              省時省力
+            </h3>
+            <p>
+                雲端總機不需安裝硬體更快速，也更省力
+            </p>
+            <!-- <p class="green-text ">了解詳情 &#9658;</p> -->
+          </div>
+        </div>
+
+        <div class="five-block benefit-hover-icon" onclick="location.href='/tw/evox/cloud-pbx#easyexpand';">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/icon/global-pbx-icon.png" alt="易擴充">
+            </div>
+          <div class="content-box">
+            <h3 class="content-tittle">
+              易擴充
+            </h3>
+            <p>
+               雲端服務容易擴充，且不受地點限制
+            </p>
+            <!-- <p class="green-text ">了解詳情 &#9658;</p> -->
+          </div>
+        </div>
+
+        <div class="five-block benefit-hover-icon" id="aws-safe"  onclick="location.href='/tw/evox/cloud-pbx#security';">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/use-aws-icon.png" alt="安全性">
+            </div>
+          <div class="content-box">
+            <h3 class="content-tittle">
+                 安全穩固
+            </h3>
+            <p>
+              架設在 AWS ，安全有保障
+            </p>
+            <!-- <p class="green-text ">了解詳情 &#9658;</p> -->
+          </div>
+        </div>
+
+        <div class="five-block benefit-hover-icon" onclick="location.href='/tw/evox/multiple-devices';">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/multi-devices-icon.png"  alt=" 多裝置">
+            </div>
+          <div class="content-box">
+            <h3 class="content-tittle">
+               多裝置
+            </h3>
+            <p>
+                多元選擇，更便捷的溝通方式
+            </p>
+            <!-- <p class="green-text">了解詳情 &#9658;</p> -->
+          </div>
+        </div>
+        <div class="five-block benefit-hover-icon last-icon" onclick="location.href='/tw/evox/admin-center';" >
+            <div class="icon"> 
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/icon/easy-admin-icon.png" alt="易管理">
+            </div>
+          <div class="content-box">
+            <h3 class="content-tittle">
+              易管理
+            </h3>
+            <p>
+                簡單易上手的管理後台
+            </p>
+            <!-- <p class="green-text ">了解詳情 &#9658;</p> -->
+          </div>
+        </div>
+        
+
+
+
+      </div>
+    </div>

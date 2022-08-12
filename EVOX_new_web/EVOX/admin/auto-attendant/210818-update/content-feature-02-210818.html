@@ -1,0 +1,77 @@
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.flickity-page-dots{
+		display: block!important;
+		bottom: 0;
+	}
+	.content-list{
+		list-style: disc;
+		margin:0;
+		padding:0 0 0 20px;
+		/*max-width: 360px;*/
+	}
+	.content-list>li:before {  margin-left: -20px; margin-right: 10px; }
+	.option-text{
+		color:#666;
+		font-size: 14px;
+	}
+	/*@media screen and (max-width: 840px) {
+		.content-list{
+		max-width: 100%;
+		}
+	}*/
+</style>
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b main-carousel-3">
+		<!-- <img class="lazy" data-original="" src="" alt="公司問候語"> -->
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/CH/auto-attendant-company-greeting.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/CH/auto-attendant-company-greeting-placehold.jpg" alt="公司問候語">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/CH/auto-attendant-offwork-greeting.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/CH/auto-attendant-offwork-greeting-placehold.jpg" alt="下班問候語">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/CH/auto-attendant-noontime-greeting.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/CH/auto-attendant-noontime-greeting-placehold.jpg" alt="午休問候語">
+		</div>
+	</div>
+	<div class="flex-center-helf50 content-center">
+		<div class="content-section-1-content">
+			<h2>自動總機 - 公司問候語 </h2>
+			<p>自動總機接到來電後，會立即撥放公司問候語，來電者輸入數字後，系統立即自動轉接至指定的分機或群組。 </p>
+			<!-- <a class="-outline-btn" href="/tw/evox-connect/call-center">外撥權限</a> -->
+			<ul class="content-list">
+				<li class="option-text">內建文字轉語音的功能，輕鬆製作你的公司問候語。</li>
+				<li class="option-text">公司問候語會在上班時間撥放，建議包含速撥選單的說明。</li>
+				<li class="option-text">可開啟第二問候語以提供進階選項，像是第二外語客服、活動快訊或是春節假期服務時間等。</li>
+				<li class="option-text">可以設定午休問候語，讓來電者清楚知道午休時間沒有提供服務。</li>
+				<li class="option-text">可以設定下班問候語，指引來電者留下語音訊息。</li>
+			</ul>
+
+		</div>
+	</div>
+<!-- </div> -->
+	
+</div>
+<script>
+	$('.main-carousel-3').flickity({
+		autoPlay:2100,
+		prevNextButtons:false,
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		pageDots:true,
+		lazyLoad:true
+});
+
+</script>

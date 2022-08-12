@@ -1,0 +1,144 @@
+/a-hreftwevoxcloud-pbxa -> /tw/evox/cloud-pbx  301
+/tw/cloud-phone-system -> /tw/evox/cloud-pbx 301
+/tw/easy-admin/group-ring -> /tw/evox/cloud-pbx/group-ring-pickup 301
+/tw/fax -> /tw/evox/cloud-pbx/fax 301
+/tw/mobility -> /tw/evox/multiple-devices/mobile-extension 301
+/tw/pc-app  -> /tw/evox/multiple-devices/pc-app 301
+/tw/ip-phones -> /tw/evox/multiple-devices/ip-phone 301
+/tw/adapter -> /tw/evox/adapter 301
+/tw/easy-admin -> /tw/evox/admin-center 301
+
+/tw/easy-admin/outbound -> /tw/evox/admin-center/outbound 301
+/tw/easy-admin/group-ring -> /tw/evox/cloud-pbx/group-ring-pickup 301
+/tw/easy-admin/recording -> /tw/econnect/contact-log 301
+/tw/easy-admin/auto-attendant -> /tw/evox/admin-center/auto-attendant 301
+/tw/easy-admin/user-setup -> /tw/evox/admin-center/user-management 301
+/tw/easy-admin/cdr -> /tw/evox/admin-center/contact-log 301
+/tw/low-cost -> /tw/evox/call-cost-saving 301
+/tw/easy-admin -> /tw/evox/admin-center 301
+/tw/downloads -> /tw/download 301
+/tw/new-numbers -> /tw/evox/new-numbers 301
+/tw/apply-now -> /tw/contact-us 301
+
+/tw/evox -> /tw/evox/cloud-phone-system 301
+/tw/econnect -> /tw/econnect/call-center 301
+/tw/product -> /tw/evox/cloud-phone-system 301
+/tw/econnect/call-center -> /tw/evox-connect/call-center 301
+/tw/econnect/acd-ivr -> /tw/evox-connect/acd-ivr 301
+/tw/econnect/manager -> /tw/evox-connect/manager 301
+/tw/econnect/contact-log -> /tw/evox-connect/agent 301
+/en/econnect/call-center -> /en/evox-connect/call-center 301
+/en/econnect/acd-ivr -> /en/evox-connect/acd-ivr 301
+/en/econnect/manager -> /en/evox-connect/manager 301
+/en/econnect/contact-log -> /en/evox-connect/agent 301
+/tw/evox-connect -> /tw/evox-connect/call-center 301
+/tw/signup -> /tw/contact-us 301
+/en/signup -> /en/contact-us 301
+
+/en/user-manual/add-user -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/Admin/210315_EN_user_maunal_R26_pdf.pdf#page=52 301
+
+/tw/evox/new-numbers -> /tw/solutions/business-phone-numbers 301
+/tw/easy-admin/system-level -> /tw/evox/admin-center 301
+
+/tw/evox/mobile-app/user-manual -> https://drive.google.com/file/d/1bDCvi0SEY5tmrfOPFSwBErbg1H1tedUA/view?usp=sharing 301
+/en/evox/mobile-app/user-manual -> https://drive.google.com/file/d/1i5VVxdS3VebDELmV-CpIDdEF1C8grjGh/view?usp=sharing 301
+
+/tw/evox/pc-app/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/PC-App/210726_CH_PC-app_maunal_pdf.pdf 301
+/en/evox/pc-app/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/PC-App/210726_EN_user_maunal_R26_pdf.pdf 301
+
+/tw/econnect/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EConnect_PDF/Connect_manager/200728_CH_user_maunal_R26_pdf.pdf 301
+/en/econnect/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EConnect_PDF/Connect_manager/200728_EN_user_maunal_R26_pdf.pdf 301
+
+
+/tw/connect-manager/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EConnect_PDF/Connect_manager/211112_CH_user_maunal_R27.1_pdf.pdf 301
+/en/connect-manager/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EConnect_PDF/Connect_manager/211112_EN_user_maunal_R27.1_pdf.pdf 301
+
+
+/tw/connect-manager/contacts-import-guide -> https://f.hubspotusercontent30.net/hubfs/1864133/EConnect_PDF/Connect_manager/import-guide/211115_CH_import_guide_R27.1_pdf-1.pdf 301
+/en/connect-manager/contacts-import-guide -> https://f.hubspotusercontent30.net/hubfs/1864133/EConnect_PDF/Connect_manager/import-guide/211115_EN_import_guide_R27_pdf-1.pdf 301
+
+/tw/evox/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/Admin/210604_CH_user_maunal_R26_pdf.pdf 301
+/en/evox/user-manual -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/Admin/210604_EN_user_maunal_R26_pdf.pdf 301
+
+/tw/user-manual/fax -> https://cdn2.hubspot.net/hubfs/1864133/EVOX_PDF/190626_CH_Fax_maunal_R24_pdf_idn18.pdf 301
+/en/user-manual/fax -> https://cdn2.hubspot.net/hubfs/1864133/EVOX_PDF/190626_EN_Fax_maunal_R24_pdf_idn18.pdf 301
+
+/tw/user-manual/admin -> /tw/evox/user-manual  301
+/en/user-manual/admin -> /en/evox/user-manual  301
+/en/user-manual/mobile -> /en/evox/mobile-app/user-manual  301
+/tw/user-manual/mobile -> /tw/evox/mobile-app/user-manual 301
+/en/user-manual/pc-app -> /en/evox/pc-app/user-manual 301
+/tw/user-manual/pc-app -> /tw/evox/pc-app/user-manual 301
+
+/line -> https://line.me/R/ti/p/%40fpo2702k 302
+/tw/support -> https://evoxsupport.zendesk.com/hc/zh-tw 301
+/en/support -> https://evoxsupport.zendesk.com/hc/en-us 301
+/tw/login -> https://account.evox.com.tw 301
+/en/login -> https://account.evox.com.tw 301
+
+
+
+/tw/sales -> /tw/contact 301
+/tw/pricing-2/ -> /tw/pricing 301
+/en/privacy-policy.html -> /en/privacy-policy 301
+/en/privacy -> /en/privacy-policy 301
+/en/terms-and-conditions -> /en/terms-of-use 301
+/en/terms-and-conditions/ -> /en/terms-of-use 301
+/en/phone-app -> /en/mobility 301
+/tw/phone-app -> /tw/mobility 301
+/en/about -> /en/our-story 301
+/en -> /en/home 301
+/en/ -> /en/home 301
+/tw -> /tw/home 301
+/tw/ -> /tw/home 301
+/en/home-2 -> /en/home 301
+/en/homepage -> /en/home 301
+/pzyyz/ -> /tw/home 301
+/en/landing-page/ -> /en/home 301
+/en/landing-page-3/ -> /en/home 301
+/en/call-history -> /en/home 301
+/tw/settings/ -> /tw/home 301
+/tw/collaboration-form -> /tw/home 301
+/tw/dial -> /tw/home 301
+/tw/call-history/ -> /tw/home 301
+/tw/web-calling-form/ -> /tw/home 301
+/tw/collaboration-form/ -> /tw/home 301
+/tw/dial -> /tw/home 301
+/tw/web-calling-form -> /tw/home 301
+/tw/address-book/ -> /tw/home 301
+/tw/mobility-form/ -> /tw/home 301
+/tw/settings -> /tw/home 301
+/en/dial -> /en/home 301
+/en/call-history/ -> /en/home 301
+/en/web-calling-form -> /en/home 301
+/en/settings -> /en/home 301
+/en/settings/ -> /en/home 301
+/en/web-calling-form/ -> /en/home 301
+/en/collaboration-form/ -> /en/home 301
+/en/collaboration-form -> /en/home 301
+/en/hubspot -> /en/home 301
+/en/landing-page-3 -> /en/home 301
+/webcalling-demo -> /tw/home 301
+/webcalling-demo/ -> /tw/home 301
+/en/landing-page -> /en/home 301
+/en/web-calling -> /en/home 301
+/collaboration -> /tw/home 301
+/web-calling/ -> /tw/home 301
+/en/using-evox/ -> /en/home 301
+/mobility-form/ -> /tw/home 301
+/tw/partners -> /tw/home 301
+/tw/partners/ -> /tw/home 301
+/en/collaboration -> /en/home 301
+/en/tell-a-friend/ -> /en/home 301
+/en/aboutevox/ -> /en/home 301
+/tw/aboutevox/ -> /tw/home 301
+/en/landing-page-2/ -> /en/home 301
+/en/landing-page-2 -> /en/home 301
+
+
+
+/en/oppo/battery -> https://evoxsupport.zendesk.com/hc/en-us/articles/360006650554 301
+/tw/oppo/battery -> https://evoxsupport.zendesk.com/hc/zh-tw/articles/360006650554 301
+/en/oppo/battery -> https://evoxsupport.zendesk.com/hc/en-us/articles/360006650554 301
+/tw/auto-attendant-support -> https://evoxsupport.zendesk.com/hc/zh-tw/articles/360007604234 301
+/en/auto-attendant-support -> https://evoxsupport.zendesk.com/hc/en/articles/360007604234 301

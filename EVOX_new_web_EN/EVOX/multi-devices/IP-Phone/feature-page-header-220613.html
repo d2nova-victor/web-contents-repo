@@ -1,0 +1,81 @@
+<style type="text/css">
+	.content-section{
+		background: #E8F5E9;
+		width: 100%;
+		padding:20px 0;
+	}
+	.text-block{
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 20px;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.tittle-block{
+		order:1;
+		/*background: #fafafa;*/
+	}
+	.feature-top-section{
+		order:0;
+	}
+	.tittle-block{
+		width: 100%;
+		padding:0 10px;
+		text-align: center;
+	}
+	.feature-top-section{
+		width: 30%;
+		padding:0 10px;
+	 }
+	.tittle-block>h1{
+		font-size: 42px;
+		margin:0;
+	}
+	.option-tittle{
+		color:#00A82D;
+		font-size: 14px;
+		margin:0;
+	}
+	.feature-top-section>img{
+		max-height: 200px;
+	}
+</style>
+<div class="content-section">
+	<div class="text-block">
+		<div class="tittle-block">
+		<!-- <span class="option-tittle">IP 電話機</span> -->
+		<h1>IP Phones for EVOX</h1>
+		<p>For users who want to have desk phones or conference room phones, EVOX works with all major brands of IP Phones.  IP phones purchased from EVOX are pre-configured by EVOX.If you wish to purchase IP phone(s) from another vendor, view the<a href="#ip-phone-list" class="green-text">compatibility list</a>. Once you have purchased compatible models, contact EVOX support; a setup fee will be charged to register the IP phone(s) to your account.</p>
+		</div>
+		<!-- <div class="feature-top-section">
+		<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/user-manager-top-img.png" alt="使用者管理">
+		</div> -->
+	</div>
+</div>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>

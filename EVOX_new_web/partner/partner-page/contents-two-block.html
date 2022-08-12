@@ -1,0 +1,142 @@
+<style>
+	.content-section-2{
+		background: #fafafa;
+	}
+	/*專門頁面使用*/
+	.twocolum-tittle{
+		padding:40px 0 0px 0;
+		text-align: center;
+	}
+	.twocolum-tittle>h2{
+		font-size: 35px;
+		margin: 0;
+		padding: 0;
+	}
+	.two-links-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 2%;
+		max-width: 1200px;
+    	margin: 0 auto;
+	}
+
+	.link-option-block{
+		width: 50%;
+		background: #3333;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column;
+	    padding: 32px 7% 35px 7%;
+	    margin: 20px 20px;
+	}
+	.two-link-tittle{
+		margin: 13px 0px;
+		padding: 0;
+		font-size: 32px;
+	}
+
+	.two-link-text{
+		padding: 0;
+		margin: 5px 0px;
+		font-size: 16px;
+		text-align: center;
+	}
+	.ECLIK-links-block{
+		background:#C7E6FE ;
+	}
+	.EC-ADK-links-block{
+		background: #C7D0FE;
+	}
+	.two-link-btn{
+		display: block;
+	    margin: 0 5px;
+	    border-radius: 4px;
+	    max-width: 175px;
+	    max-height: 48px;
+	    /*color: #66C547;*/
+		text-align: center;
+	    margin: 15px 0;
+	    /* height: 36px; */
+	    line-height: 2.5em;
+	    /*border: 2px solid #66C547;*/
+	    padding: 1px;
+	    font-weight: 500;
+	    min-width: 120px;
+	}
+	.ECLIK-outline-btn{
+		color: #fff;
+	    background: #007AFF;  
+	    border: 2px solid #007AFF;
+	    transition: color .3s, background .3s;
+
+	}
+	.EC-ADL-outline-btn{
+		color: #fff;
+	    background: #5856D6;
+	    border: 2px solid #5856D6;
+	    transition: color .3s, background .3s;
+	    
+	}
+	.ECLIK-outline-btn:hover{
+		color: #007AFF;
+	    background: #fff;  
+	    border: 2px solid #007AFF;
+	    
+	}
+	.EC-ADL-outline-btn:hover{
+		color: #5856D6;
+	    background: #fff;
+	    border: 2px solid #5856D6;   
+	}
+	.icon-box{
+		max-width: 96px!important;
+	    margin: 0 auto;
+	    border-radius: 130px;
+	    padding: 15px;
+	}
+	.ECLIK-icon{
+		background: #0091FF;
+	}
+	.EC-ADK-icon{
+		background: #6236FF;
+	}
+	@media screen and (max-width: 1076px){
+		.link-option-block{
+			min-height: 400px;
+			padding: 32px 5% 35px 5%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.two-links-box{
+			flex-flow: column;
+		}
+		.link-option-block{
+			width: 70%;
+			padding: 32px 3% 35px 3%;
+		}
+	}
+</style>
+<div class="content-section-2">
+	<div class="text-block twocolum-tittle">
+		<h2>友善的整合工具包</h2>
+	</div>
+	<div class="two-links-box">
+		<!-- 選項一 -->
+		<div class="link-option-block ECLIK-links-block">
+			<img class="lazy icon-box ECLIK-icon" data-original="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/icon/ECLIK-icon.png" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/icon/ECLIK-icon.png" alt="ECLIK-icon">
+			<h3 class="two-link-tittle">ECLIK 整合</h3>
+			<p class="two-link-text">讓您的產品能夠接收來電資訊，支援接聽與撥打電話等功能。 </p>
+			<a href="/tw/developers/eclik" target="_blank"  class="two-link-btn ECLIK-outline-btn">了解更多 </a>
+		</div>
+
+		<!-- 選項二 -->
+		<div class="link-option-block EC-ADK-links-block">
+			<img class="lazy icon-box EC-ADK-icon" data-original="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/icon/EC-ADK-icon.png" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/icon/EC-ADK-icon.png" alt="EC ADK-icon">
+			<h3 class="two-link-tittle">EC ADK 整合</h3>
+			<p class="two-link-text">讓您的雲端產品能接收 EVOX 雲端總機的事件通知，以便開發出提升客戶工作效率的各種功能。 </p>
+			<a href="/tw/developers/ec-adk" target="_blank"  class="two-link-btn EC-ADL-outline-btn">了解更多 </a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,319 @@
+<style type="text/css">
+	
+
+	/*給專門頁面得*/
+	.evox-image-background{
+	    /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+		/*background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;*/
+	}
+/*	 .acd-text{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	.ECA-fix-width-2{
+		width: 50%;
+		background: #FAFAFA;
+	}
+	.gray-bg{
+		background: #FAFAFA;
+	}
+	.guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	  .guide-box>h2{
+	 	margin: 0;
+	 }
+
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+    .gary-back{
+    	background: #fafafa;
+    }
+	@media screen and (max-width: 840px){
+	
+	}
+</style>
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  /*max-width: 980px;*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.carousel4 {
+  background: #FAFAFA;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell4 {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fafafa;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell4:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav4 {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  /*overflow-y: scroll;*/
+  overflow: auto;
+    min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav4 .carousel-cell4 {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav4 .carousel-cell4:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav4 .carousel-cell4.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+.more-infor{
+	padding: 10px 15px 0 40px;
+    margin: 0 5px;
+	/*font-size: 14px;*/
+	/*color:#A09FE5;*/
+}
+.infor-tittle{
+	color:#A09FE5;
+	font-size: 14px;
+}
+.info-list-block{
+		margin: 0;
+		padding: 0 0 0 25px;
+		list-style: disc;
+		font-size: 16px;
+	}
+	.info-list-block>li{
+		padding: 5px 0;
+	}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+	.carousel-cell4{
+		height: 60vh;
+	}
+	.carousel-nav4{
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width-2{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav4{
+		margin-left: 0px;
+	}
+	.carousel-cell4{
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell4{
+		height: 40vh;
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell4{
+		height: 30vh;
+	}
+}
+
+</style>
+<!-- 標題 -->
+<div class="guide-block gary-back">
+	<div class="guide-box">
+		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/work-floow-icon.png" alt="工作流程"> -->
+		<!-- <img class="section-icon" src="https://img.icons8.com/nolan/96/audio-wave.png" alt="語音轉文字"/> -->
+		<img  class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/icon/voice-record-icon.png" alt="語音轉文字"/>
+		<h2>通話錄音與語音自動轉文字</h2>
+		<p>完整的通話錄音能協助主管深入了解專員與客戶間的互動情況、檢視每位專員的應對進退並提供建議，還能使用這些真實案例來培訓專員。</p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1-version-b collect-content">
+
+	<div class="carousel-container">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse-spec gray-bg">
+		<div class="carousel4 carousel-main4">
+		  	<div class="carousel-cell4">
+		  		<img id="d-myimg" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-record-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-record-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-record-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-record-1500px.jpg 3x" alt="錄音">
+		  	</div>
+			<div class="carousel-cell4">
+				<img id="d-myimg-2" class="tabContent" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-to-text-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-to-text-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-to-text-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/voice-to-text-1500px.jpg 3x" alt="語音轉文字">
+			</div>
+			
+		</div>
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width-2">
+		<div class="content-section-1-content-reverse ">
+			<!-- 選單 -->
+			<div class=" carousel-nav4">
+				<div id="selftask" class="carousel-cell4 is-nav-selected info-button"><i class="fas fa-check purple-text"></i> <div>通話錄音</div></div>
+				<div id="timeschedual" class="carousel-cell4 info-button"><i class="fas fa-check purple-text"></i> <div>檢視與編輯語音文字檔</div></div>
+			</div>
+			<!-- <div class="more-infor">
+				<h3 class="infor-tittle">利用錄音檔和語音文字檔來</h3>
+				<ul class="info-list-block">
+					<li>檢視每位專員的應對進退並提供建議。</li>
+					<li>使用真實案例來培訓專員。</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+	
+</div>
+<script>
+
+// flickity 垂直輪播	
+// external js: flickity.pkgd.js
+
+var $carousel4 = $('.carousel4').flickity(
+{
+  autoPlay: 2000,
+  pageDots: false,
+  prevNextButtons: false,
+  draggable: false,
+}
+);
+
+var $carouselNav4 = $('.carousel-nav4');
+var $carouselNavCells4 = $carouselNav4.find('.carousel-cell4');
+
+$carouselNav4.on( 'click', '.carousel-cell4', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel4.flickity( 'select', index );
+});
+
+var flkty4 = $carousel4.data('flickity');
+var navTop4  = $carouselNav4.position().top;
+var navCellHeight4 = $carouselNavCells4.height();
+var navHeight4 = $carouselNav4.height();
+
+$carousel4.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav4.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected4 = $carouselNavCells4.eq( flkty4.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav
+  var scrollY4 = $selected4.position().top +
+    $carouselNav4.scrollTop() - ( navHeight4 + navCellHeight4 ) / 2;
+  $carouselNav4.animate({
+    scrollTop: scrollY4
+  });
+});
+
+// select main on nav hover
+$carouselNav4.on( 'mouseover', '.carousel-cell4', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel4.flickity( 'pausePlayer');
+});
+$carouselNav4.on( 'mouseout', '.carousel-cell4', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel4.flickity( 'unpausePlayer');
+});
+
+
+</script>
+	
+</div>

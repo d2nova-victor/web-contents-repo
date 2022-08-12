@@ -1,0 +1,128 @@
+<!-- <link href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/lity.css" media="all" rel="stylesheet" type="text/css">
+<link href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/prism.css" media="all" rel="stylesheet" type="text/css"> -->
+<style type="text/css">
+	.content-section-learn{
+		background: #fafafa;
+		width: 100%;
+		display: flex;
+	}
+	.learn-block{
+		background:#fff;
+		max-width: 780px;
+		margin: 72px auto!important;
+	}
+	.e-learning-block{
+		padding: 20px;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+	.e-learning-tittle-section{
+		width: 20%;
+    height: 140px;
+    max-width: 196px;
+    /*background: #D8D8D8;*/
+		background: rgb(0,145,255);
+		background: linear-gradient(90deg, rgba(0,145,255,1) 0%, rgba(98,54,255,1) 100%);
+    border-radius: 130px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+	.e-learning-text-section{
+		margin: 10px;
+		width: 80%;
+	}
+	.e-learning-text-section>p{
+		text-align: justify;
+		margin: 5px 0;
+	}
+	.tittle-set>h2{
+		margin: 0px 0px;
+		font-size: 28px;
+	}
+	.e-learning{
+		/*width: 64px;
+    	float: left;
+    	padding: 5px;
+    	margin: 0 20px 0 0;*/
+	}
+	.e-learning-subtittle{
+		font-size: 14px;
+	}
+	@media screen and (max-width: 840px){
+		/*.content-section-8{
+			margin-top: 40px;
+		}*/
+		.content-section-8{
+			display:table;
+			width: 90%;
+		}
+		.tittle-section-block{
+			width: 100%;
+		}
+		.section-8-text-block{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 516px){
+		.tittle-section-block{
+			padding: 38px 2%;
+		}
+		/*.e-learning{
+			width: 100%;
+		}*/
+		.flex-center{
+			display: block;
+		}
+	}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#openFunction").click(function(){
+    $("#table-box").addClass("collapse-box-open");
+    $("#table-box").removeClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-hide");
+    $("#closeFunction").addClass("btn-show");
+    $("#gradual").addClass("btn-hide");
+    $("#gradual").removeClass("btn-show");
+  });
+  $("#closeFunction").click(function(){
+    $("#table-box").removeClass("collapse-box-open");
+    $("#table-box").addClass("collapse-box-hide");
+    $(this).addClass("btn-hide");
+    $(this).removeClass("btn-show");
+    $("#closeFunction").removeClass("btn-show");
+    $("#openFunction").removeClass("btn-hide");
+    $("#openFunction").addClass("btn-show");
+    $("#gradual").removeClass("btn-hide");
+    $("#gradual").addClass("btn-show");
+  });
+});
+</script>
+<div class="content-section-learn">
+<div class="content-section-8 learn-block">
+		<div class="e-learning-block">
+			<div class="e-learning-tittle-section">
+				<img class="e-learning" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/integration/icon/e-learning-1.png" alt="EVOX小學堂">
+			</div>
+			<div class="e-learning-text-section">
+				<div class="tittle-set">
+					<!-- <span class="e-learning-subtittle green-text">EVOX 小學堂</span> -->
+					<h2>什麼是 EC-ADK ?</h2>
+					
+				</div>
+				<p>EC-ADK 是“EVOX Connect Application Development Kit”的縮寫。它是一種雲服務，能讓第三方 Cloud App/Service 加入雲端總機的功能。EC-ADK 現階段提供 EVOX 雲端總機的事件通知，通過攔截或接收這些事件，CRM/ERP 團隊便能開發出讓客戶工作效率提升的產品功能。 </p>
+				<!-- <a class="btn green-text" href="//vimeo.com/348129248" data-lity><i class="fas fa-play-circle"></i> 觀看影片</a></p> -->
+				<!-- <div id="nohardware"></div> -->
+			</div>
+		</div>
+	<!-- video js -->
+<!-- 	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/jquery.js"></script>
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/lity.js"></script>
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/prism.js"></script> -->
+</div>
+</div>

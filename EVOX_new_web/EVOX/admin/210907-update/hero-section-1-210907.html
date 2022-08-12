@@ -1,0 +1,149 @@
+<style type="text/css">
+	.hero-section-1{
+		max-width: 100%;
+		/*float: left;*/
+		margin: 0px auto;
+		height: 400px;
+		background: #EDE7F6;
+	}
+	.EVOX-green-bg{
+		background: #E8F5E9;
+	}
+	.hero-section-content{
+	}
+	.hero-section-content>span{
+		font-size: 14px;
+		/*color: rgba(0,0,0,0.4);*/
+		color:#00A82D;
+		margin: 5px 0px;
+		padding-left: 12px;
+	}
+	.hero-section-content>h1{
+		font-size: 42px;
+		margin:  5px 0px;
+		padding-left: 12px;
+	}
+	.hero-section-content>p{
+		margin: 5px 0px;
+		font-size: 18px;
+		padding-left: 12px;
+	}
+	
+	.hero-section-image{
+		width: 50%;
+	    height: 100%;
+	    position: relative;
+	    overflow: hidden;
+	    float: right;
+	    
+	}
+	.hero-section-image>img{
+		visibility: hidden;
+	}
+	@media screen and (max-width: 1028px){
+		.hero-section-content{
+			/*width: 50%;
+		    float: left;
+		    height: 256px;
+		    position: relative;
+		    max-width: 1240px;
+		    margin: 0 auto;
+		    left: 0px;
+		    -webkit-transform: translateX(-50%);
+		    transform: translateX(0%);
+		    --widthA: 100%;
+		    margin-top: calc(var( --widthA)*0.12);*/
+		}
+
+	}
+	@media screen and (max-width: 840px){
+		.hero-section-image{
+			width: 100%;
+			min-height: 300px;
+		}
+		.hero-section-content{
+		    width: 100%;
+		    /*position: relative;*/
+		    height: 100%;
+		    background: #E8F5E9;
+		    padding: 5%;
+		    margin: 0 0 20px 0;
+		}
+	}
+	@media screen and (max-width: 640px){
+	.hero-section-content {
+/*    height: 256px;
+    -webkit-transform: translateX(-114%);
+    transform: translateX(-114%);
+    --widthA: 100%;
+    margin-top: calc(var( --widthA)*0.02);*/
+    	margin-top: calc(var( --widthA)*0);
+    	width: 100%;
+	    position: relative;
+	    z-index: 999;
+	    height: 100%;
+	}
+	.hero-section-content>h1{
+		font-size: 32px;
+	}
+	.hero-section-image{
+		/*width: 100%;*/
+		background-image: none;
+	}
+	.hero-section-image>img{
+		visibility: visible;
+	    position: absolute;
+	    /*top: 50%;*/
+	    top: 90px;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);
+	}
+	.hero-section-1{
+		height: 220px;
+	}
+	.hero-section-content{
+		/*width: 40%;*/
+	    /*position: absolute;*/
+	    z-index: 999;
+	}
+}
+@media screen and (max-width: 516px){
+	
+	
+	.hero-section-content>span{
+		padding-left: 0px;
+	}
+	.hero-section-content>h1{
+		padding-left: 0px;
+	}
+	.hero-section-content>p{
+		padding-left: 0px;
+	}
+}
+
+	/*給專門頁面*/
+	.devices-page{
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/admin-top-2.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+</style>
+<div class="hero-section-1 EVOX-green-bg">
+	<div class="hero-section-image devices-page">
+		<!-- <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/ACD-top-image.png"> -->
+	</div>
+	<div style="margin: 0 auto;max-width: 1240px;height: 100%;">
+		<div class="flex-center">
+			<div class="hero-section-content">
+				<span>EVOX 管理中心</span>
+				<h1>易上手的管理中心</h1>
+				<p>輕鬆且全面地管理公司的電話系統，可依照公司需求隨時調整</p>
+				<!-- <a class="green-btn" href="">了解更多</a> -->
+			</div>
+		</div>
+	</div>
+</div>

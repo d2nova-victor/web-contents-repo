@@ -1,0 +1,302 @@
+<style type="text/css">
+	
+
+	/*給專門頁面得*/
+	.evox-image-background{
+	    /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+		/*background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;*/
+	}
+/*	 .acd-text{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	.ECA-fix-width-2{
+		width: 50%;
+		background: #FAFAFA;
+	}
+	.gray-bg{
+		background: #FAFAFA;
+	}
+	.guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	  .guide-box>h2{
+	 	margin: 0;
+	 }
+
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+    .gary-back{
+    	background: #fafafa;
+    }
+	@media screen and (max-width: 840px){
+	
+	}
+</style>
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  /*max-width: 980px;*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.carousel2 {
+  background: #FAFAFA;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell2 {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fafafa;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell2:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav2 {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  /*overflow-y: scroll;*/
+  overflow: auto;
+    min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav2 .carousel-cell2 {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav2 .carousel-cell2:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav2 .carousel-cell2.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+  -moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+  -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+  box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+	.carousel-cell2{
+		height: 60vh;
+	}
+	.carousel-nav2 {
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width-2{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav2{
+		margin-left: 0px;
+	}
+	.carousel-cell2{
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell2{
+		height: 40vh;
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell2{
+		height: 30vh;
+	}
+}
+
+</style>
+<!-- 標題 -->
+<div class="guide-block gary-back">
+	<div class="guide-box">
+		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/work-floow-icon.png" alt="工作流程"> -->
+		<!-- <img class="section-icon" src="https://img.icons8.com/nolan/96/workflow.png" alt="IVR分配"/> -->
+		<img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/icon/acd-floor-icon.png" alt="IVR分配"/>
+		<h2>設定互動式語音應答(IVR)與分配來電</h2>
+		<p>透過簡單的設定即可因應各式各樣的情境與需求（例如：產品或服務上的常見問題、促銷活動宣傳、停機時間佈達等）。
+			<!-- <a href="#"> <span class="purple-text">了解更多</span></a> -->
+		</p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1-version-b collect-content">
+
+	<div class="carousel-container">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse-spec gray-bg">
+		<div class="carousel2 carousel-main2">
+		  	<div class="carousel-cell2">
+		  		<img id="b-myimg" class="tabContent " src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/create-acd-2.jpg" alt="管理ACD">
+		  		<div class="spacer s2"></div>
+		  	</div>
+			<div class="carousel-cell2">
+				<img id="b-myimg-2" class="tabContent" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/ivr.jpg" alt="測試IVR">
+			</div>
+			<div class="carousel-cell2">
+				<img id="b-myimg-3" class="tabContent " src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/call-quening.jpg" alt="管理來電與進線">
+			</div>
+		</div>
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width-2">
+		<div class="content-section-1-content-reverse ">
+			<!-- 選單 -->
+			<div class=" carousel-nav2">
+				<div id="selftask" class="carousel-cell2 is-nav-selected info-button"><i class="fas fa-check purple-text"></i> <div>創建及管理 ACD</div></div>
+				<div id="timeschedual" class="carousel-cell2 info-button"><i class="fas fa-check purple-text"></i> <div>編輯與測試 IVR 流程</div></div>
+				<div id="calltolog" class="carousel-cell2 info-button"><i class="fas fa-check purple-text"></i> <div>設定進線排隊等候及通話錄音</div></div>
+				
+					
+					
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script>
+
+// flickity 垂直輪播	
+// external js: flickity.pkgd.js
+
+var $carousel2 = $('.carousel2').flickity(
+{
+  autoPlay: 2000,
+  pageDots: false,
+  prevNextButtons: false,
+  draggable: false,
+}
+);
+
+var $carouselNav2 = $('.carousel-nav2');
+var $carouselNavCells2 = $carouselNav2.find('.carousel-cell2');
+
+$carouselNav2.on( 'click', '.carousel-cell2', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel2.flickity( 'select', index );
+});
+
+var flkty2 = $carousel2.data('flickity');
+var navTop2  = $carouselNav2.position().top;
+var navCellHeight2 = $carouselNavCells2.height();
+var navHeight2 = $carouselNav2.height();
+
+$carousel2.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav2.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected2 = $carouselNavCells2.eq( flkty2.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav
+  var scrollY2 = $selected2.position().top +
+    $carouselNav2.scrollTop() - ( navHeight2 + navCellHeight2 ) / 2;
+  $carouselNav2.animate({
+    scrollTop: scrollY2
+  });
+});
+
+// select main on nav hover
+$carouselNav2.on( 'mouseover', '.carousel-cell2', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel2.flickity( 'pausePlayer');
+});
+$carouselNav2.on( 'mouseout', '.carousel-cell2', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel2.flickity( 'unpausePlayer');
+});
+
+
+</script>
+	
+</div>

@@ -1,0 +1,193 @@
+	<!-- 自動輪播 -->
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+/*	.client-direct{
+		margin-top: 40px;
+	}*/
+	.ECA-fix-width{
+		width: 50%;
+	}
+	
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	 .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b-reverse>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+  }
+  #imagesequence{
+    	/*position: absolute;*/
+  }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+   .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+   }
+
+</style>
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel3 {
+  background: #fff;
+  /*margin-bottom: 40px;*/
+  flex-grow: 1;
+}
+
+.carousel-cell3 {
+  /*width: 100%;*/
+  /*height: 300px;*/
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell3>img{
+	width: 100%;
+}
+
+/* cell number */
+.carousel-cell3:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav3 {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  overflow-y: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav3 .carousel-cell3 {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav3 .carousel-cell3:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav3 .carousel-cell3.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+/*	.carousel-cell3{
+		height: 60vh;
+	}*/
+	.carousel-nav3 {
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav3{
+		margin-left: 0px;
+	}
+/*	.carousel-cell3{
+		height: 50vh;
+	}*/
+}
+@media screen and (max-width: 460px){
+/*	.carousel-cell3{
+		height: 40vh;
+	}*/
+}
+@media screen and (max-width: 350px){
+/*	.carousel-cell3{
+		height: 30vh;
+	}*/
+}
+
+</style>
+<!-- 內容 -->
+<div class="content-section-1 client-direct feature-content-size">
+	<!-- <div class="carousel-container"> -->
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse ">
+		<!-- <div class="carousel3 carousel-main3"> -->
+		  	<!-- <div class="carousel-cell3"> -->
+		  		<picture>
+		  		<img id="c-myimg" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/connect-knowledge/550px/view-permission-5-550px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/connect-knowledge/550px/view-permission-5-550px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/connect-knowledge/1500px/view-permission-5-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/connect-knowledge/1500px/view-permission-5-1500px.jpg 3x"  alt="資料屬性">
+		  		</picture>
+		  		<!-- <div class="spacer s2"></div> -->
+		  	<!-- </div> -->
+
+		<!-- </div> -->
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width flex-order-change">
+		<div class="content-section-1-content-reverse">
+			<!-- 介紹 -->
+				<div class="guide-box-inbox">
+					<img class="section-icon" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/connect-knowledge/icon/data-view-right.png"alt="資撩閱覽" />
+					<h2>可被限制的瀏覽權限</h2>
+					<p>能限制外部人員（例如委外執行電話行銷）的瀏覽權限，使其無法執行新增、編輯或刪除，而敏感資料也只會部分顯示，讓客戶的關鍵資訊不外洩。
+					</p>
+				</div>
+
+		</div>
+	</div>
+	
+<!-- </div> -->
+	
+</div>
+
+<!-- retina js for image -->
+<script type="text/javascript" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_website_JS_files/retina-js/retina.js"></script>

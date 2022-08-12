@@ -1,0 +1,83 @@
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 	
+	 }*/
+	.flickity-page-dots{
+		display: block!important;
+		bottom: 0;
+	}
+	.carousel-cell{
+		/*background: red;*/
+	}
+	.section-carusel-box>img{
+		width:100%;
+	}
+	.btn-group{
+		/*list-style: none;*/
+		padding: 0;
+		margin: 0;
+		/*display: flex;*/
+	}
+	.block-btn{
+		float: left;
+    	width: 50%;
+    	margin: 15px 10px;
+    	word-break: keep-all;
+	}
+</style>
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b main-carousel-3">
+		<!-- <div class="" > -->
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/EN/system-setting-devides-mobile.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/EN/system-setting-devides-mobile.jpg" alt="Mobile App">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/EN/system-setting-devides-pc.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/EN/system-setting-devides-pc.jpg" alt="PC App">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/EN/system-setting-devides-ipphone.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/EN/system-setting-devides-ipphone.jpg" alt="IP Phones">
+		</div>
+		<!-- </div> -->
+	</div>
+	<div class="flex-center content-center">
+		<div class="content-section-1-content-reverse">
+			<h2>Multiple device support </h2>
+			<p>You can assign multiple devices to a user including PC apps, mobile apps, or IP phones. When there is an incoming call, all assigned devices will ring at the same time. </p>
+			<div class="btn-group">
+				<a class="green-outline-btn block-btn" href="/en/evox/multiple-devices/mobile-extension">Mobile App</a>
+				<a class="green-outline-btn block-btn" href="/en/evox/multiple-devices/pc-app">PC App</a>
+				<!-- <a class="green-outline-btn block-btn" href="/tw/evox/cloud-pbx/fax">轉接盒</a> -->
+				<a class="green-outline-btn block-btn" href="/en/evox/multiple-devices/ip-phone">IP Phone</a>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+	
+</div>
+<script>
+	$('.main-carousel-3').flickity({
+		autoPlay:2100,
+		prevNextButtons:false,
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		pageDots:true,
+		lazyLoad:true
+});
+</script>

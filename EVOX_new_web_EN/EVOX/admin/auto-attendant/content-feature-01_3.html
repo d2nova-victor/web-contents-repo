@@ -1,0 +1,86 @@
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.flickity-page-dots{
+		display: block!important;
+		bottom: 0;
+	}
+	.content-list{
+		list-style: disc;
+		margin:0;
+		padding:0 0 0 20px;
+		/*max-width: 360px;*/
+	}
+	.content-list>li:before {  margin-left: -20px; margin-right: 10px; }
+	.option-text{
+		color:#666;
+		font-size: 14px;
+	}
+	.main-carousel-3{
+		top: 100px;
+	}
+	@media screen and (max-width: 1000px) {
+		/*.content-list{*/
+		/*max-width: 100%;*/
+		/*}*/
+		.main-carousel-3{
+		top: 80px;
+		}
+	}
+	@media screen and (max-width: 840px) {
+		.main-carousel-3{
+		top: 0px;
+		}
+	}
+</style>
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b main-carousel-3">
+		<!-- <img class="lazy" data-original="" src="" alt="公司問候語"> -->
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/EN/auto-attendant-company-greeting-1.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/EN/auto-attendant-company-greeting-placehold-1.jpg" alt="公司問候語">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/EN/auto-attendant-offwork-greeting.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/EN/auto-attendant-offwork-greeting-placehold.jpg" alt="下班問候語">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="lazy" data-flickity-lazyload="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/EN/auto-attendant-noontime-greeting.jpg" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/auto-attendant/EN/auto-attendant-noontime-greeting-placehold.jpg" alt="午休問候語">
+		</div>
+	</div>
+	<div class="flex-center content-center">
+		<div class="content-section-1-content">
+			<h2>Auto-attendant: company greetings </h2>
+			<p>You can select auto-attendant to answer incoming calls with a customized company greeting. The auto-attendant allows callers to enter a digit selection to be directed to an extension or ring group (sales or support, for example).</p>
+			<ul class="content-list">
+				<li class="option-text">Automatic text to voice translation allows you to easily create company greetings. </li>
+				<li class="option-text">Main greeting for regular office hours. </li>
+				<li class="option-text">An optional secondary greeting for a second language, a special announcement, or a seasonal message. </li>
+				<li class="option-text">An optional noon time greeting for when personnel may not be available to answer calls or when the live receptionist is not available. </li>
+				<li class="option-text">An optional after work greeting can be used for outside work hour information even if live receptionist has been selected to answer inbound calls. </li>
+			</ul>
+
+		</div>
+	</div>
+	
+</div>
+<script>
+	$('.main-carousel-3').flickity({
+		autoPlay:2100,
+		prevNextButtons:false,
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		pageDots:true,
+		lazyLoad:true
+});
+
+</script>

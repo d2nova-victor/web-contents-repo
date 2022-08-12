@@ -1,0 +1,296 @@
+	<!-- <script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/highlight.pack.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/examples.js"></script>
+	
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/gsap/gsap.min.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/ScrollMagic.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/plugin/animation.gsap.js"></script>
+	<script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/scrollmagic/plugin/debug.addIndicators.js"></script> -->
+	<!-- 自動輪播 -->
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.ECA-fix-width{
+		width: 50%;
+	}
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	 .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	 .guide-box>h2{
+	 	margin: 0;
+	 }
+
+	.non-img{
+		display: none;
+
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	/*color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);*/
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+    .section-icon{
+    	width: 80px;
+    }
+</style>
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  /*max-width: 980px;*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom:40px;
+  align-items: center;
+}
+
+.carousel {
+  background: #fff;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  /*overflow-y: auto;*/
+  overflow: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav .carousel-cell {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  	background: #fff;
+  	color:#5856D6;
+   	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+	.carousel-cell{
+		height: 60vh;
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav{
+		margin-left: 0px;
+	}
+	.carousel-cell{
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell{
+		height: 40vh;
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell{
+		height: 30vh;
+	}
+}
+
+</style>
+<!-- 標題 -->
+<div class="guide-block">
+	<div class="guide-box">
+		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/customer-icon.png" alt="瞭解客戶"> -->
+		<!-- <img class="section-icon" src="https://img.icons8.com/nolan/96/crowd.png"/ alt="瞭解客戶"> -->
+		<img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/icon/team-icon.png"/ alt="管理專員">
+		<h2>管理專員、團隊和排班</h2>
+		<p>機動調配專員以迅速回應客戶的需求。
+			<!-- <a href="#"> <span class="purple-text">了解更多</span></a> -->
+		</p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1-spec client-direct feature-content-size collect-content">
+
+<div class="carousel-container">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse-spec ">
+		<div class="carousel carousel-main">
+		  	<div class="carousel-cell">
+		  		<img id="myimg" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/agent-management-04-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/agent-management-04-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/agent-management-04-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/agent-management-04-1500px.jpg 3x" alt="專員管理">
+		  	</div>
+			<div class="carousel-cell">
+				<img id="myimg-2" class="tabContent" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/team-management-04-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/team-management-04-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/team-management-04-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/team-management-04-1500px.jpg 3x" alt="組別管理">
+			</div>
+			<div class="carousel-cell">
+				<img id="myimg-3" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/schedual-management-02-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/schedual-management-02-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/schedual-management-02-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/211111-update/schedual-management-02-1500px.jpg 3x" alt="安排時程">
+			</div>
+		</div>
+		
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width flex-order-change">
+		<div class="content-section-1-content-reverse">
+			<!-- 選單 -->
+			<div class=" carousel-nav">
+				<div id="custmoerinfo" class="carousel-cell is-nav-selected info-button"><i class="fas fa-check purple-text"></i> <div>管理客服專員</div></div>
+				<div id="notelog" class="carousel-cell info-button"><i class="fas fa-check purple-text"></i> <div>管理客服團隊</div></div>
+				<div id="smaeplace" class="carousel-cell info-button"><i class="fas fa-check purple-text"></i> <div>規劃排班表</div></div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script>
+
+// flickity 垂直輪播	
+// external js: flickity.pkgd.js
+
+var $carousel = $('.carousel').flickity(
+{
+  autoPlay: 3000,
+  pageDots: false,
+  prevNextButtons: false,
+  draggable: false,
+}
+);
+
+var $carouselNav = $('.carousel-nav');
+var $carouselNavCells = $carouselNav.find('.carousel-cell');
+
+$carouselNav.on( 'click', '.carousel-cell', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel.flickity( 'select', index );
+});
+
+var flkty = $carousel.data('flickity');
+var navTop  = $carouselNav.position().top;
+var navCellHeight = $carouselNavCells.height();
+var navHeight = $carouselNav.height();
+
+$carousel.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected = $carouselNavCells.eq( flkty.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav
+  var scrollY = $selected.position().top +
+    $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
+  $carouselNav.animate({
+    scrollTop: scrollY
+  });
+});
+
+// select main on nav hover
+$carouselNav.on( 'mouseover', '.carousel-cell', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel.flickity( 'pausePlayer');
+});
+$carouselNav.on( 'mouseout', '.carousel-cell', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel.flickity( 'unpausePlayer');
+});
+
+
+</script>
+<!-- </div> -->
+
+</div>

@@ -1,0 +1,219 @@
+<style type="text/css">
+	.benefit-secction{
+		max-width: 980px;
+		margin:0 auto;
+		width: 100%;
+	}
+	.tittle-section-block{
+		padding: 40px 0;
+	}
+	.benefit-content-block{
+		display:flex;
+		align-items: center;
+		margin: 0 auto 20px auto;
+	}
+	.benefit-text-block{
+		width: 50%;
+		display: flex;
+		flex-flow: column;
+		float: left;
+		align-items: flex-start;
+		padding: 0 2%;
+
+	}
+	.benefit-paragraph{
+		max-width:446px;
+		color: #5F6871;
+	}
+	.benefit-paragraph>p{
+		margin: 0;
+		text-align: justify;
+	}
+	.add-space{
+		margin: 10px 0;
+	}
+	.benefit-text-block>img{
+		display: block;
+    	margin: 0 auto;
+	}
+	.benefit-list-block{
+		width: 40%;
+	    float: left;
+	    padding: 0 5%;
+	    display: flex;
+    	flex-flow: wrap;
+	}
+	.one-benefit-box{
+		width:94%;
+		display: flex;
+		align-items: center;
+		padding: 0px 7px;
+	    border: 2px solid #CCCCCC;
+	    margin: 4px auto;
+	    border-radius: 4px;
+	}
+	.one-benefit-box>h3{
+		color:#243237;
+		font-size: 14px;
+	}
+	.one-benefit-box>img{
+		width: 52px;
+    	height: 52px;
+    	padding: 5px;
+	}
+	.two-benefit-box{
+		width:100%;
+		display: flex;
+		align-items: center;
+	}
+	.single-benefit-box{
+		padding: 0px 5px;
+	    border: 2px solid #CCCCCC;
+	    margin: 4px 1%;
+	    border-radius: 4px;
+	    width: 50%;
+	    display: flex;
+	    align-items: center;
+	}
+	.single-benefit-box>h3{
+		color:#243237;
+		font-size: 14px;
+	}
+	.single-benefit-box>img{
+		width: 52px;
+    	height: 52px;
+    	padding: 5px;
+	}
+	/*.helf-width{
+		width: 45%;
+	}
+	.add-margin{
+		margin-right: 15px;
+	}*/
+
+	@media screen and (max-width: 737px){
+		.benefit-content-block{
+			flex-flow: column;
+		}
+		.benefit-text-block{
+			width: 96%;
+			flex-flow: wrap;
+		}
+		.benefit-paragraph{
+			padding:0 20px;
+			width: 46%;
+		}
+		.benefit-paragraph{
+			order:0;
+		}
+		.benefit-text-block>img{
+			order:1;
+		}
+		.video-block{
+			width: 44%;
+			padding:0 2%;
+		}
+		.add-space{
+			/*width:50%;*/
+			margin:10px auto;
+		}
+		.mobile-btn-order-1{
+			order:2;
+		}
+		.mobile-btn-order-2{
+			order:3;
+		}
+		.benefit-list-block{
+			width: 90%;
+		}
+		.one-benefit-box{
+			padding: 0px 2%;
+		}
+	}
+	@media screen and (max-width: 671px){
+		.tittle-section-block{
+			padding: 20px 0 0 0;
+		}
+		.benefit-paragraph{
+			width: 100%;
+			max-width: 100%;
+		}
+		.video-block{
+			width: 100%;
+		}
+		.benefit-text-block>img{
+			/*order:-1;*/
+			display: none;
+		}
+	}
+	@media screen and (max-width: 480px){
+		.two-benefit-box{
+			flex-flow: column;
+		}
+		.single-benefit-box{
+			width: 95%;
+		}
+	}
+</style>
+<div class="benefit-secction">
+	<div class="tittle-section-block">
+		<h2 class="landing-page-sub-tittle">輕鬆管理 免 Call 師傅</h2>
+	</div>
+	<div class="benefit-content-block">
+		<div class="benefit-text-block">
+			<div class="benefit-paragraph">
+				<p>EVOX 提供專業的線上管理後台，讓負責的人員，可以隨時隨地登入後台 ，設定公司的問候語、休息時間和員工分機等 ，操作介面十分簡單好上手 ，即使不是 IT 資訊背景的人 ，也能輕鬆地依公司的需求調整設定，並立即生效。</p>
+			</div>
+			<div class="video-block add-space mobile-btn-order-1">
+				<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/event-section/vide-play-icon.png" alt="言講影片">
+				<a class="green-text event-btn" href="https://www.youtube.com/embed/XiAQ3FjdNOs?rel=0" data-lity> 什麼是 EVOX 易管理？有那些好處？</a>
+			</div>
+			<div class="video-block add-space mobile-btn-order-2">
+				<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/event-section/vide-play-icon.png" alt="言講影片">
+				<a class="green-text event-btn" href="https://www.youtube.com/embed/5CWynmWPWus?rel=0" data-lity> EVOX 易管理有哪些功能？</a>
+			</div>
+			<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/benefit-img.png" alt="benefit-img">
+		</div>
+		<div class="benefit-list-block">
+			<div class="one-benefit-box">
+				<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/user-management-3.jpg" alt="管理員工">
+				<h3>編輯員工分機、裝置與外撥權限</h3>
+			</div>
+
+			<div class="one-benefit-box">
+				<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/ivr-3.jpg" alt="自動語音">
+				<h3>選擇真人總機或自動總機</h3>
+			</div>
+
+			<div class="one-benefit-box">
+				<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/greeting-3.jpg" alt="公司問候語">
+				<h3>編輯公司午休和下班問候語</h3>
+			</div>
+			<div class="two-benefit-box">
+				<div class="single-benefit-box">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/cdr-3.jpg" alt="調閱通話紀錄">
+					<h3>調閱通話記錄</h3>
+				</div>
+				<div class="single-benefit-box">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/group-ring-3.jpg" alt="群組響鈴">
+					<h3>設定群組響鈴</h3>
+				</div>
+			</div>
+			<div class="two-benefit-box">
+				<div class="single-benefit-box">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/multi-location-3.jpg" alt="管理分公司">
+					<h3>管理分公司</h3>
+				</div>
+				<div class="single-benefit-box">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/icon/online-pay-3.jpg" alt="線上付款">
+					<h3>線上帳單與付款</h3>
+				</div>
+			</div>
+			
+		</div>
+		<div class="mobile-show-img">
+			<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX-LP/benefit-img.png" alt="benefit-img">
+		</div>
+	</div>
+
+</div>

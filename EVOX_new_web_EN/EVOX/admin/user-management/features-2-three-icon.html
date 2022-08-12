@@ -1,0 +1,241 @@
+  <style type="text/css">
+        .features-3-background{
+          width: 100%;
+          display: table;
+          margin: 40px 0;
+          }
+        .features-3-section{
+          max-width: 1440px;
+          min-width: 670px;
+          margin: 40px auto;
+          display: table;
+          /*width: 47%;*/
+        }
+        .four-block-section{
+          width: 66%;
+        }
+
+        .features-3-section > .three-block{ 
+              /* width: 30.5%; */
+          width: 23%;
+          float: left;
+          padding: 5px 0% 5px 0%;
+          border-radius: 4px;
+          border: 1px solid #CCCCCC;
+          min-height: 297px;
+          /* margin-top: 20px; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 1%;
+        }
+        .features-3-section > .three-block:hover{ 
+          background: #FAFAFA;
+        }
+        .border-add{
+            margin-right: 2.7%;
+
+          }
+
+        .content-tittle{
+        margin:5px 0;
+        font-size:21px;
+        }
+     
+         .evox-logo-return{
+          padding: 9px 5px 0 5px;
+          height: 28px;
+        }
+        .icon{
+        width:80px;
+        height:80px;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 90%;
+        }
+        .content-box{
+        padding: 20px 0px 10px 0px;
+        }
+        .content-box p{
+          font-size: 14px;
+          text-align: center;
+          padding: 0 20px;
+        }
+         .content-box ul{
+          font-size: 16px;
+          text-align: center;
+          list-style: none;
+          padding: 0px;
+        }
+        .content-tittle{
+          text-align: center;
+        }
+  
+        .three-block:hover .content-box{
+          /*color: #93c45d;*/
+          /*color: white;*/
+          cursor: pointer;
+        }
+        .three-block:hover .content-tittle{
+          /*color: white;*/
+          cursor: pointer;
+
+        }
+        .three-block:hover .green-text{
+          color: #00A82D;
+          /*font-weight: bold;*/
+          text-decoration: underline;
+        }
+        .three-block:hover path#circle, .three-block:hover polygon#circle  {
+          cursor: pointer;
+          fill:#93c45d;
+          }
+        .three-block:hover path#hover, .three-block:hover g#hover, .three-block:hover text, .three-block:hover rect#hover{
+          cursor: pointer;
+          fill:#ffffff;
+          stroke:#ffffff;
+         }
+         .features-top{
+          width: 100%;
+          height: 105px;
+          text-align: center;
+         }
+         .features-top>h2{
+          margin: 6px;
+          font-size: 35px;
+         }
+         .features-top>p{
+          margin: 6px;
+          font-size: 18px;
+         }
+         .return-overview-btn{
+          background: #e4e4e400;
+          transition: background .4s;
+         }
+   
+         .return-overview-btn>.content-box>.icon>img{
+         filter: grayscale(1); 
+
+         }
+         
+         .return-overview-btn>.content-box>.icon>img{
+          filter: grayscale(1);
+         }
+        @media screen and (max-width: 911px) {
+          .features-3-section >.three-block{
+                min-height: 100%;
+          }
+          .return-overview-btn{
+            /*width:14%;*/
+              min-height: 284px!important;
+          }
+          .content-box{
+                /*min-height: 200px;*/
+          }
+          .content-tittle{
+            font-size:20px;
+          }
+           .features-3-section >.three-block{
+              /*width: 58%;
+              min-height: 310px;
+              margin: 21px 22%;*/
+              width: 44%;
+              min-height: 310px;
+              margin: 21px 3%;
+          }
+        }
+         @media screen and (max-width: 735px) {
+          .features-3-section >.three-block{
+          }
+          .content-box{
+                /*min-height: 220px;*/
+          }
+        }
+        @media screen and (max-width: 670px) {
+          .features-3-section{
+            min-width: 100%;
+          }
+         .features-3-section >.three-block{
+              width: 68%;
+              min-height: 310px;
+              margin: 21px 12%;
+          }
+          .return-back{
+          margin-top:60px!important;
+         }
+          .return-overview-btn{
+            width: 58%!important;
+          }
+          .content-box{
+                /*min-height: 120px;*/
+          }
+     
+        }
+
+
+        </style>
+        <div class="features-3-background">
+        <div class="features-3-section four-block-section">
+        <div class="features-top">
+          <h2>Search for EVOX  <span class="green-text">Admin functions</span></h2>
+        </div>      
+        <div class="three-block border-add" onclick="location.href='/en/evox/admin-center';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/overview/managerment-icon.png" alt="Admin Center ">
+            </div>
+            <h3 class="content-tittle">
+                 Admin Center 
+            </h3>
+
+            <p class="gray-text "><i class="fas fa-chevron-left"></i> Return to Admin home  </p>
+          </div>
+        </div>
+
+        <div class="three-block border-add" onclick="location.href='/en/evox/admin-center/auto-attendant';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/icon/auto-attendant-icon.png" alt="Auto-Attendant ">
+            </div>
+            <h3 class="content-tittle">
+              Auto-Attendant 
+            </h3>
+            <p>Inbound call answer settings and personal greeting  </p>
+            <p class="gray-text">Learn more <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+        <div class="three-block border-add" onclick="location.href='/en/evox/admin-center/contact-log';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/icon/call-history-icon.png" alt="Call detail record ">
+            </div>
+            <h3 class="content-tittle">
+              Call Detail Record 
+            </h3>
+         
+            <p>Company call detail record with export function </p>
+            <p class="gray-text">Learn more <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+
+        <div class="three-block" onclick="location.href='/en/evox/admin-center/group-ring';">
+            
+          <div class="content-box">
+            <div class="icon">
+              <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/icon/group-ring-icon.png" alt="Group Ring ">
+            </div>
+            <h3 class="content-tittle">
+              Group Ring 
+            </h3>
+  
+           <p>Set up group ring or ring group </p>
+            <p class="gray-text">Learn more <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+     
+      </div>
+    </div>

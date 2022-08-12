@@ -1,0 +1,95 @@
+<style type="text/css">
+	.customer-case-section{
+		display: flex;
+	    max-width: 1001px;
+	    margin: 0 auto;
+	    align-items: center;
+	    margin: 80px auto;
+	}
+	.case-box {
+		width: 50%;
+	}
+	.case-text{
+		padding:0 40px;
+	}
+	.case-brand{
+		max-width: 170px;
+	    display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	}
+	.case-btn{
+		width: 100%;
+	}
+	.case-descript > h3{
+		font-size: 36px;
+	}
+	.no-show{
+		display: none!important;
+	}
+	@media screen and (max-width: 840px){
+		.customer-case-section{
+			display: table;
+		}
+		.case-box{
+			width: 100%;
+		}
+		.case-img>img{
+			width: 100%;
+		}
+	}
+</style>
+<div class="customer-case-section">
+	<div class="case-box case-img">
+		<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/case/case-01.jpg" alt="case-01">
+	</div>
+<!-- 	<div class="case-box case-text">
+		<div class="case-main case-descript">
+			<h3>智慧長照</h3>
+			<p>長照中心人員可以在接到電話時，優先得知長者的姓名、疾病歷史和地址等，減少因長者口齒不清或外籍看戶的語言溝通問題而造成就醫的延遲。</p>
+		</div>
+		<div class="case-main case-brand">
+			<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/anshin.png" alt="安行國際租賃">
+			<a href="#" class="gray-outline-btn case-btn">客戶故事</a>
+		</div>
+	</div> -->
+		<div class="case-box case-text">
+		<div class="case-main case-descript">
+			<h3>智慧長照</h3>
+			<p>長照中心人員可以在接到電話時，優先得知長者的姓名、疾病歷史和地址等，減少因長者口齒不清或外籍看戶的語言溝通問題而造成就醫的延遲。</p>
+		</div>
+		<div class="logo-carousel-noslider logo-case-carousel" data-flickity='{ "prevNextButtons": false, "pageDots": false}'>
+			<!-- <div class="carousel-cell"> -->
+				<!-- logo -->
+				<div class="carousel-cell case-main ">
+					<div class="logo-set">
+					<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/anshin.png" alt="安行國際租賃">
+					<a href="https://blog.evoxglobal.com/tw/testimonials/an-shin" target="_blank" class="gray-outline-btn case-btn">客戶故事</a> -->
+					<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/an-shin" target="_blank">
+						<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/anshin.png" alt="安行國際租賃">
+						<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+					</a>
+					<!-- <a class="logo-btn" href="#">
+						<img src="" alt="">
+					</a> -->
+					</div>
+				</div>
+				
+		</div>
+	</div>
+
+
+	<script>
+	$('.logo-case-carousel').flickity({
+		wrapAround: true,
+		autoPlay:2100,
+		groupCells: true,
+		groupCells: 2,
+		groupCells: '100%',
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		lazyLoad:true
+});
+</script>
+
+</div>

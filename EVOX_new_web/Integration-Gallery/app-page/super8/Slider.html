@@ -1,0 +1,340 @@
+<!-- Required For jQuery Version Only -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<!-- venobox Plugin files -->
+<link href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/VenBox/CSS/venobox.css" rel="stylesheet" />
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/VenBox/JS/venobox.js"></script>
+
+<!-- flickity -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style type="text/css">
+  /* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  /*background: #FAFAFA;*/
+}
+
+.carousel-cell {
+  width: 100%;
+  /*height: 400px;*/
+  margin-right: 10px;
+  /*background: #8C8;*/
+  border-radius: 5px;
+  min-height: 400px;
+}
+/*owl-style*/
+.ui-image-slider{
+  display: block;
+  max-width: 980px;
+  margin: 0 auto; 
+}
+.flickity-page-dots{
+  display: none!important;
+  position: initial!important;
+}
+.flickity-button{
+  display: none!important;
+}
+.flickity-page-dots{
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background: #F2F2F2;
+  width: 42%;
+  margin: 0 auto 0 auto;
+  border-radius: 30px;
+}
+.flickity-page-dots .dot{
+  width: 12px;
+  height: 12px;
+}
+.flickity-prev-next-button.previous{
+    /*left: 197px;*/
+    left: 30%;
+    top: 93%;
+}
+.flickity-prev-next-button.next{
+    /*right: 197px;*/
+    right: 30%;
+    top: 93%;
+}
+/*light-box*/
+.vbox-item{
+  display: flex;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.vbox-item>img{
+  width: 90%;
+}
+.vbox-next, .vbox-prev{
+  /*display: none;*/
+}
+/*pop up image*/
+.vbox-title{
+  font-size: 20px!important;
+}
+/*整體css*/
+.content-section-2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 980px;
+    width: 100%;
+    flex-flow: row-reverse;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+}
+.integration-function-list-block{
+  margin: 40px 0 0 0;
+}
+.content-right{
+    width: 29%;
+}
+.content-left{
+    width: 71%;
+}
+.plan-detial-box-tittle{
+      margin: 20px 0;
+}
+.plan-detial-box{
+    margin: 20px 0;
+}
+.plan-detial-info{
+    max-width: 370px;
+    width: 100%;
+    background: #ececec;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.plan-detial-box>h2{
+  font-size: 24px;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+.plan-detial-box>h3{
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+    font-weight: 500;
+}
+.plan-detial-box>div{
+    margin-left: 21px;
+}
+.plan-need-text{
+    font-size: 18px;
+}
+.plan-need-text>p{
+  margin: 15px 0;
+}
+.plan-need-text>a{
+  font-weight: 500;
+  color: #5856D6!important;
+}
+.integration-method{
+    color: #5F6871;
+    font-size: 18px;
+}
+.tag-list{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.tag-box{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.tag-box>span{
+    display: flex;
+    background: #A5B6BF;
+    padding: 10px 12px;
+    border-radius: 20px;
+    line-height: 6px;
+    font-size: 12px;
+    color: #fff;
+    margin: 5px;
+}
+.integration-text-block{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.integration-function-list-block>h2{
+  font-size: 24px;
+    margin: 0 0 18px 0;
+}
+.integration-function-list-block>p{
+  font-size: 16px;
+  margin: 0;
+}
+.integration-features-list{
+  padding: 0 0 0 24px;
+}
+.integration-features-list>li{
+  line-height: 21px;
+}
+.list-highlight-text{
+  font-weight: 600;
+}
+@media screen and (max-width: 980px){
+
+  .content-section-2{
+    flex-flow: column wrap;
+    margin: 10px auto 0 auto;
+  }
+  .content-right{
+    width: 100%;
+  }
+  .content-left{
+    width: 100%;
+  }
+  .plan-detial-info{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px auto;
+    max-width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .plan-detial-box-tittle{
+    display: flex;
+    width: 100%;
+  }
+  .plan-detial-box{
+    display: flex;
+    align-items: center;
+    margin: 0 31px 0 0;
+  }
+  .plan-detial-box>h3{
+    margin: 10px 0 10px 0;
+  }
+}
+@media screen and (max-width: 959px){
+    .carousel-cell{
+    /*min-height: 558px;*/
+  }
+ /* .flickity-prev-next-button.next{
+    top:95%;
+  }
+  .flickity-prev-next-button.previous{
+    top:95%;
+  }*/
+}
+@media screen and (max-width: 640px){
+  .carousel-cell{
+    /*min-height: 368px;*/
+  }
+}
+@media screen and (max-width: 480px){
+  .flickity-page-dots{
+        min-width: 210px;
+  }
+  .flickity-prev-next-button.previous{
+    left: 135px;
+  }
+  .flickity-prev-next-button.next{
+    right: 135px;
+  }
+}
+</style>
+<!-- html -->
+<div class="content-section-2">
+    <!-- right -->
+  <div class="content-right">
+    <div class="plan-detial-info">
+        <div class="plan-detial-box-tittle">
+          <!-- <h2>整合簡介</h2> -->
+          <p>此整合方案適用於有訂閱 <a href="https://www.evoxglobal.com/tw/evox-connect/call-center" target="_blank" class="purple-text">EVOX Connect 專業客服中心</a> 的使用者</p>
+        </div>
+        <!-- <div class="plan-detial-box">
+          <h3>適用方案：</h3>
+          <div class="plan-need-text"></div>
+        </div> -->
+        <div class="plan-detial-box">
+          <h3>整合方式：</h3>
+          <div class="integration-method"><p>ECLIK 整合包</p></div>
+        </div>
+        <div class="plan-detial-box">
+          <h3>產品分類：</h3>
+          <div class="tag-list">
+            <div class="tag-box"><span>Chatbot</span></div>
+            <div class="tag-box"><span>Martech</span></div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  <!-- left -->
+  <div class="content-left">
+    <!-- slider -->
+    <div class="ui-image-slider">
+      <div class="carousel"
+        data-flickity='{ "pageDots": true,"freeScroll": false,"wrapAround": false,"initialIndex": ".is-initial-select","autoPlay": 2500,
+"pauseAutoPlayOnHover": false }'>
+        <!-- 單一個 -->
+        <div class="carousel-cell is-initial-select">
+          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/App-Gallery/Super8/original-size/super8-call-in-1000px-1.jpg">
+              <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/App-Gallery/Super8/super8-call-in-1.jpg" alt="撥打電話給客戶時 Super8 系統自動跳出客戶對話紀錄">
+          </a>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- text block -->
+    <div class="integration-text-block">
+      <div class="integration-discription-block">
+        <h2>EVOX x Super 8 整合服務</h2>
+        <p>藉由整合 EVOX 與 Super 8，來電即刻跳出過往 LINE 聊天紀錄，結合語音與文字的資訊，有助於客服、業務更全面地掌握客戶的需求。</p>
+      </div>
+      <div class="integration-function-list-block">
+        <h2>重點功能</h2>
+        <!-- <p>With the Bigblue App for ECLIK Support, you can:</p> -->
+        <ul class="integration-features-list">
+          <li><p><span class="list-highlight-text">透過 Super 8 撥出電話：</span>可直接從 Super 8 後台以公司代表號撥出電話，並可同時註記通話重點在客戶資訊頁。(即將推出)
+          </p></li>
+          <li><p><span class="list-highlight-text">來電帶出客戶資訊頁：</span>電話來的時候，Super 8 的後台畫面會直接切換到該客戶的資訊頁，並顯示客戶之前在 LINE 上的圖文聊天紀錄，讓對話與圖文資訊相輔相成。</p></li>
+          <li><p><span class="list-highlight-text">視窗定位功能：</span>無論是來電或撥出，系統會自動記住通話小視窗最後在螢幕所顯示的位置，下一次進行通話時，小視窗便會出現在你所習慣的位置，不擋住任何重要資訊。​</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+ 
+
+
+
+ <script>
+  // jQuery Version
+$('.venobox').venobox({
+  // settings here
+});
+
+// Vanilla JS Version
+new VenoBox();
+</script>

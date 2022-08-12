@@ -1,0 +1,195 @@
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+
+	.ECA-fix-width{
+		width: 50%;
+	}
+	.spec-layout{
+			display: flex;
+			align-items: center;
+	}
+
+
+	 .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .new-tag{
+		font-size: 14px;
+		/*display: block;*/
+		/*float: left;*/
+		background: #FF9500;
+		color:#fff;
+		padding: 2px 10px;
+		border-radius: 5px;
+		position: relative;
+    	top: -3px;
+    	margin:0 0 0 10px;
+	}
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b-reverse>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+  }
+  #imagesequence{
+    	/*position: absolute;*/
+  }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+   .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+   }
+
+</style>
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel3 {
+  background: #fff;
+  /*margin-bottom: 40px;*/
+  flex-grow: 1;
+}
+
+.carousel-cell3 {
+  width: 100%;
+  /*height: 300px;*/
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell3>img{
+	width: 100%;
+}
+
+/* cell number */
+.carousel-cell3:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav3 {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  overflow-y: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav3 .carousel-cell3 {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav3 .carousel-cell3:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav3 .carousel-cell3.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+/*	.carousel-cell3{
+		height: 60vh;
+	}*/
+	.carousel-nav3 {
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav3{
+		margin-left: 0px;
+	}
+/*	.carousel-cell3{
+		height: 50vh;
+	}*/
+}
+@media screen and (max-width: 460px){
+/*	.carousel-cell3{
+		height: 40vh;
+	}*/
+}
+@media screen and (max-width: 350px){
+/*	.carousel-cell3{
+		height: 30vh;
+	}*/
+}
+
+</style>
+<!-- 內容 -->
+<div class="content-section-1-spec client-direct feature-content-size collect-content">
+	<div class="carousel-container spec-layout">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse ">
+		<div class="carousel3 carousel-main3">
+		  	<div class="carousel-cell3">
+		  		<img id="c-myimg" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/211007-update/call-recording-image-552w.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/211007-update/call-recording-image-552w.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/211007-update/call-recording-image-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/ACD/p3/211007-update/call-recording-image-1500px.jpg 3x" alt="電話錄音">
+		  	</div>
+
+		</div>
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width flex-order-change">
+		<div class="content-section-1-content-reverse">
+			<!-- 介紹 -->
+				<div class="guide-box-inbox tx-01">
+					<h2 style="font-size:32px;">電話錄音<span class="new-tag">加值服務</span></h2>
+					<p>提供合法的錄音功能，開始錄音前系統將自動撥放警語，以保障通話雙方的權益。錄音檔自動儲存於雲端，可隨時於 <a target="_blank" href="/tw/evox-connect/manager" class="purple-text">Connect Manager</a> 或 <a target="_blank" href="/tw/evox-connect/agent" class="purple-text ">Pro PC App</a> 中聽取錄音檔。
+					</p>
+				</div>
+
+		</div>
+	</div>
+	
+</div>
+	
+</div>

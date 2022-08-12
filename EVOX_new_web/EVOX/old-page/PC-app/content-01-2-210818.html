@@ -1,0 +1,143 @@
+<style type="text/css">
+  .content-section-1-version-b{
+    background:#fafafa;
+  }
+  .content-section-1{
+    max-width: 980px;
+    /* float: left; */
+    /* margin: 0px auto 0px auto; */
+    height: 100%;
+    padding: 40px 0px;
+    /* display: table; */
+    width: 100%;
+  }
+  .content-section-1-content{
+      width: 100%;
+      padding: 0% 5%;
+      float: right;
+      /*--widthA: 50%;*/
+      /*margin-top: calc(var( --widthA)*0.1);*/
+  }
+  .content-section-1-content>h2{
+    font-size: 28px;
+    margin:  10px 0px;
+  }
+  .content-section-1-content>p{
+    margin: 15px 0px;
+    font-size: 16px;
+  }
+  
+  .content-section-1-image-version-b{
+      width: 46%;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      padding: 0px;
+      /*box-shadow: 0px 1px 4px 3px rgba(0,0,0,.2);*/
+      margin: 0 9% 0 0;
+      max-height: 405px;
+      /*max-width: 503px;*/
+  }
+  .content-section-1-image-version-b>img{
+    width: 100%;
+    display: block;
+/*      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      min-width: 100%;
+      min-height: 56%;
+      transform: translate(-50%,-50%);*/
+  }
+  /*給專門頁面得*/
+  .evox-image-background{
+      /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+  }
+  .white-back{
+     background:#fff;
+  }
+  .evox-logo{
+    /*width: 220px;*/
+    max-height: 20px;
+  }
+  .top-content{
+    width: 20%!important;
+  }
+  @media screen and (max-width: 950px){
+    .content-section-1-content{
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 840px){
+    .content-section-1-image-version-b{
+      width:100%;
+    }
+    .content-section-1-content{
+      width: 100%;
+    }
+    .menber-icon{
+      right: 38%;
+    }
+    .top-content{
+      width: 80%!important;
+      min-height: 600px;
+      margin: 0 auto!important;
+      float: none!important;
+    }
+  }
+  @media screen and (max-width: 834px){
+    .menber-icon{
+      display: none;
+    }
+  }
+ 
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      var pciconHeight = $('.pc-icon').height(); 
+      $('.top-content').css('min-height', 'auto');
+      
+      if($(window).width() <= 840 ){
+        $('.top-content').css('min-height', pciconHeight+'px');
+      }else{
+        $('.top-content').css('min-height', 'auto');
+      }
+
+      if( $(window).width() <= 480 ){
+      }
+    });
+    
+    $( window ).on("resize", function() {
+       var pciconHeight = $('.pc-icon').height(); 
+      $('.top-content').css('min-height', 'auto');
+    
+    if($(window).width() <= 840 ){
+      $('.top-content').css('min-height', pciconHeight+'px');
+    }else{
+      $('.top-content').css('min-height', 'auto');
+    }
+
+    if( $(window).width() <= 480 ){
+    }
+
+    });
+
+</script>
+<div class="content-section-1-version-b white-back">
+<div class="content-section-1-spec">
+  <div class="content-section-1-image-version-b evox-image-background  top-content">
+    <img class="pc-icon" src="https://images.squarespace-cdn.com/content/v1/58e66a5cc534a587962ecd73/1554182667918-R9IMBSOIWSW0V5LM32BV/ke17ZwdGBToddI8pDm48kLogGodJfu8WZkSDQVFCGXl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmisM1XlNieI3B5YXnD_REHVSjmoG4GlSOVxllaZdrtFV54EAwmJomK-W9-4snH7Cb/icon_pc-app.png" alt="手機App">
+  </div>
+  <div class="flex-center">
+    <div class="content-section-1-content">
+      <h1>PC/Mac 電腦版</h1>
+      <p>EVOX電腦版包含行動版的所有功能，讓您在電腦上除了可以處理一般公務還可以撥接電話，預計在未來的版本也可與其他CRM系統整合運用。</p>
+      <!-- <a class="green-outline-btn" href="/tw/evox/cloud-phone-system">查看詳情</a> -->
+    </div>
+</div>
+</div>
+  
+</div>

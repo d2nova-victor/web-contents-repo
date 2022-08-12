@@ -1,0 +1,299 @@
+<!-- 首頁上半段已有 -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+.customer-story-section{
+	background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/integration/ECLIK/eclik-customer-bg.jpg");
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel {
+  /*background: #FAFAFA;*/
+  margin-bottom: 40px;
+  height: 100%;
+}
+  /*隱藏*/
+/*.carousel-block ,.carousel{
+	  display: none;
+}*/
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  /*border-radius: 5px;*/
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.carousel-main2> .carousel-cell {
+	/*height: 400px;*/
+}
+.customer-feedback-img{
+  width: 40%;
+  float: left;
+      display: table-cell;
+    vertical-align: middle;
+    max-width: 283px!important;
+}
+.customer-feedback-box{
+  width: 90%;
+  margin:0 auto;
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.customer-feedback-box>h3{
+	margin:10px 15px 20px 15px;
+}
+.customer-feedback-box>p{
+	font-size: 18px;
+	margin:0px 15px;
+}
+.goshop>p{
+}
+.customer-feedback-box>span{
+	padding: 0px 28% 0 15px;
+	font-size: 16px;
+}
+.flickity-page-dots{
+   display: none;
+}
+.carousel-main2{
+	max-width: 1240px;
+	margin: 0px auto;
+	min-height: auto;
+	max-height: 420px;
+	width: 890px;
+}
+.carousel-image {
+  min-width: 150px;
+}
+.carousel-nav{
+	margin: 20px 0;
+}
+.carousel-block{
+	/*background: #FAFAFA;*/
+	padding: 20px 0px;
+	margin: 0px 0px;
+}
+.carousel-tittle{
+	text-align: center;
+	font-size: 35px;
+	margin: 20px 0;
+	color: #fff;
+}
+.carousel-article{
+	text-align: center;
+	color: #7F7F7F;
+	margin:0;
+}
+.flickity-button{
+	background: hsla(0, 0%, 100%, 0);
+	color: #ffffff;
+}
+.flickity-prev-next-button.previous{
+	left: -43px;
+}
+.flickity-prev-next-button.next{
+	right: -43px;
+}
+.flickity-button:hover {
+    background: #fff00000;
+    cursor: pointer;
+}
+.flickity-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #19f0;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell {
+  width: 239px;
+  height: 137px;
+}
+.is-nav-selected{
+}
+.carousel-nav .carousel-cell>img{
+	  opacity: 0.3;
+}
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-selected>img {
+  /*background: #ED2;*/
+  opacity:1;
+}
+
+.setH{
+	width: 60%;
+}
+.logo-color{
+	display: none;
+}
+.carousel-cell:hover .logo-color{
+	display: block!important;
+}
+.carousel-cell:hover .logo-wh{
+	display: none!important;
+}
+.is-selected >.logo-wh{
+  display: none!important;
+}
+.is-selected >.logo-color{
+  display: block!important;
+}
+
+.carousel-main2>div.flickity-viewport{
+	min-height: auto;
+}
+
+@media screen and (max-width: 840px){
+	.customer-feedback-img{
+		width: 100%;
+	}
+	.customer-feedback-box{
+		width: 100%;
+	}
+	.setH{
+		width: 100%;
+	}
+	.customer-feedback-box>p{
+	}
+
+	.customer-feedback-box>span{
+		padding:0px 0% 0 15px;
+	}
+	.carousel-main2{
+		margin-bottom: 0px;
+		margin-top: 0px;
+		max-width: 80%;
+	}
+	.flickity-prev-next-button.previous{
+		top:60%;
+	}
+	.flickity-prev-next-button.next{
+		top:60%;
+	}
+	.carousel-main2{
+		max-height: 810px;
+	}
+	.carousel-block{
+		margin:20px auto 0 auto;
+	}
+
+}
+@media screen and (max-width: 638px){
+	.carousel-main2{
+		max-height: 720px;
+	}
+	.carousel-nav .carousel-cell {
+	  width: 192px;
+	  height: 110px;
+	}
+	.flickity-prev-next-button.previous{
+		top:40%;
+	}
+	.flickity-prev-next-button.next{
+		top:40%;
+	}
+	.carousel-cell{
+		flex-flow: column;
+		min-height: 410px;
+	}
+}
+@media screen and (max-width: 480px){
+	.flickity-prev-next-button.previous{
+		top:30%;
+	}
+	.flickity-prev-next-button.next{
+		top:30%;
+	}
+	.carousel-nav .carousel-cell {
+	  height: 50px;
+	  width: 127px;
+	}
+
+}
+@media screen and (min-width: 1352px){
+	.flickity-prev-next-button.previous{
+		left: -43px;
+	}
+	.flickity-prev-next-button.next{
+		right: -43px;
+	}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var divHeight = $('.customer-feedback-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+	});
+	$( window ).on("resize", function() {
+       var divHeight = $('.customer-feedback-img').height(); 
+		$('.setH').css('height', divHeight+'px');
+		if($(window).width() <= 840 ){
+			$('.setH').css('height','100%');
+		}
+
+    });
+
+</script>
+<style type="text/css">
+
+</style>
+<!-- Flickity HTML init -->
+<div class="customer-story-section">
+	<div class="carousel-block">
+		<h2 class="carousel-tittle">他們透過多方整合後讓客戶受益更多</h2>
+	</div>
+
+
+	<div class="carousel carousel-main2" data-flickity='{ "wrapAround": true, "lazyLoad": true }'>
+			<!-- 單個slider -->
+	    <div class="carousel-cell">
+	  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/logo/vital-logo.png" data-flickity-lazyload="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/logo/vital-logo.png" alt="vital CRM">
+
+		  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+			  	<div class="customer-feedback-box">
+			  		<h3>Vital CRM + ECLIK 整合</h3>
+			  		<p>Vital CRM 透過 ECLIK 完美整合了企業所需要的集客服務與後續客戶服務的聯繫，不僅省下了時間，更增加了原有系統的優勢。</p>
+			  		<!-- <span>-OneWay玩味生活 行銷部經理-</span> -->
+			  		<a class="green-text" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/oneway" target="_blank">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			  		</div>
+			  	</div>
+	  </div>
+	  <!-- 單個slider -->
+	  <div class="carousel-cell">
+	  			<img class="customer-feedback-img carousel-image carousel-cell-image" sizes="(min-width: 1024px) 720px, 360px" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/logo/whoscall-logo.png"data-flickity-lazyload="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Partner-page/logo/whoscall-logo.png" alt="Whoscall">
+		  		<div class="setH" id="carousel-item" style="display: flex;align-items: center;float: left;">
+			  	<div class="customer-feedback-box">
+			  		<h3>Super8 + ECLIK 整合</h3>
+			  		<p>“比較了眾多廠商的產品後，EVOX的後台管理系統可以說是相對最齊全也最清楚的”</p>
+			  		<!-- <span>-鋒形科技 MIS主管-</span> -->
+			  		<a class="green-text" style="margin-left: 19px;" href="https://blog.evoxglobal.com/tw/testimonials/femas-hr" target="_blank">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			  		</div>
+			  	</div>
+	  </div>
+
+	</div>
+</div>

@@ -11,7 +11,7 @@
 .rich-group div:nth-child(1) >a>div{
   font-weight: bold;
 }
-/*字體*/
+/*摮烾��*/
 @font-face {
   font-family: 'SF UI Text Regular';
     font-style: normal;
@@ -35,9 +35,19 @@ strong {
   font-weight: bold;
 }
 
+@font-face {
+    font-family: SHFonts;
+    src: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_Fonts/SH/SourceHanSerifTC-Regular.otf") format("opentype");
+}
+
+
 p, a, h4, span,div, h1, h2, h3 {
+  font-family: source-han-sans-traditional,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   /*font-family: sans-serif,source-han-sans-traditional, "Han Sans", "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular,sans-serif !important;*/
-  font-family:'Noto Sans TC',sans-serif,source-han-sans-traditional, "Han Sans", SF UI Text Regular,sans-serif !important;
+  font-family:'Noto Sans TC',sans-serif, source-han-sans-traditional ,"SHFonts", "Han Sans", SF UI Text Regular,sans-serif !important;
+  /*font-family:'Noto Sans TC',sans-serif,ㄏ, "Han Sans", SF UI Text Regular,sans-serif !important;*/
   /*font-family:sans-serif,source-han-sans-traditional, "Han Sans",'Noto Sans TC', Noto Sans TC, sans-serif, SF UI Text Regular,sans-serif !important;*/
   /*font-family: sans-serif, "Noto Sans", "Noto Sans CJK TC",SF UI Text Regular !important;*/
 }
@@ -62,7 +72,7 @@ p {
   /*line-height: 1.5em;*/
   line-height: 1.8em;
 }
-/*覆蓋原來的style*/
+/*閬���见�煺���style*/
 html, body {
   margin: 0px;
   padding: 0px;
@@ -110,7 +120,7 @@ h5 {
 }
 
 .header-inner {
-  padding: 10px 0 10px 0;
+  padding: 10px 20px 10px 20px;
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -182,7 +192,7 @@ header#header.show-on-scroll {
     margin:0 5%;
 }*/
 
-/*影片介紹文背景修改*/
+/*敶梁���讠晶����峕艶靽格㺿*/
 .sqs-gallery-block-slideshow.sqs-gallery-block-meta-position-bottom .meta {
   background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0.79)),color-stop(100%,rgba(30,30,30,0.97)));
   background: -webkit-linear-gradient(top,rgba(0,0,0,0.79) 0%,rgba(30,30,30,0.97) 100%) !important;
@@ -230,7 +240,7 @@ header#header.show-on-scroll {
   margin-left: 0;
   margin-right: 0;
 }
-/*face-one 修改*/
+/*face-one 靽格㺿*/
 #page {
   max-width: 100%;
   padding: 0;
@@ -266,7 +276,7 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper {
   padding: 11px 20px 0 0!important;
 }
 
-/*原本的模板修改*/
+/*���𧋦��璅⊥踎靽格㺿*/
 @media only screen and (min-width: 641px) {
   .logo-wrapper {
     width: 200px!important;
@@ -314,7 +324,7 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper {
 footer#footer a {
   color: #fff!important;
 }
-/*選單*/
+/*�詨鱓*/
 .menu-group {
   display: block;
 }
@@ -380,7 +390,7 @@ footer#footer a {
   box-shadow: 4px 4px 12px 1px rgba(191, 191, 191, 0.5);
 }
 /*richmenu */
- /*產品服務*/
+ /*�𤩎����滚��*/
 .product-richmenu {
                     /*display: flex;*/
   float: left;
@@ -493,7 +503,7 @@ footer#footer a {
 .rich-tittle>a>div:hover {
   color: #00A82D;
 }
-                  /*解決方案*/
+                  /*閫�捱�䲮獢�*/
 .resolution-block {
   /*margin: 20px 40px;*/
       margin: 10px 20px;
@@ -514,7 +524,7 @@ footer#footer a {
   color: #00A82D;
   margin: 10px 0;
 }
-                  /*資源*/
+                  /*鞈���*/
 .resource-block {
   margin: 10px 20px;
   max-width: 430px;
@@ -545,7 +555,7 @@ footer#footer a {
 }
                   
 
-/*側邊選單*/
+/*�湧�𢠃�詨鱓*/
 .sub-side-menu {
   display: none;
 }
@@ -621,9 +631,9 @@ footer#footer a {
   padding: 3% 0px;
 }
 
-/*其他選單高度修改*/
+/*�嗡�㚚�詨鱓擃睃漲靽格㺿*/
 .main-product>.drop-down-block {
-    /*以下兩項rich-menu 時會用到*/
+    /*隞乩�见�拚�rich-menu�䭾����鍂��*/
     /*margin-left: -400px;*/
     /*left: 50%;*/;
 }
@@ -774,16 +784,16 @@ footer#footer a {
     left: 17px;
   }
 }
-/*平版&手機版*/
-/*手機版*/
+/*撟喟��&��𧢲�毺��*/
+/*��𧢲�毺��*/
 @media only screen and (max-width: 1077px) {
   .headerNav-dropdown:hover .drop-down-block{
     margin-left: -21%;
   }
 }
 
-@media only screen and (max-width: 952px) {
-    /*修改原來檔案*/
+@media only screen and (max-width: 1062px) {
+    /*靽格㺿��煺�瑼娍��*/
         
   .logo-wrapper {
     width: 44.3%!important;
@@ -797,7 +807,7 @@ footer#footer a {
     position: relative;
     margin-left: 0px;
   }
-    /*新的*/
+    /*�鰵��*/
   .mobile-menu-icon {
     display: block;
   }
@@ -943,7 +953,40 @@ footer#footer a {
     min-height: 0px !important;
   }
   .rich-tittle {
-        margin: 21px 0px 10px 0px;
+        margin: 14px 0px 10px 0px;
+  }
+  .customize-main-manu{
+        font-size: 22px;
+        margin: 6px 0;
+  }
+  .rich-tittle{
+        min-height: 30px;
+  }
+  .rich-tittle> a > div{
+        font-size: 20px;
+        padding: 5px 0 6px 0px;
+  }
+  .side-menu-item{
+      font-size: 18px;
+      margin: 0px auto 0px auto!important;
+  }
+  .rich-tittle>a>span{
+        font-size: 18px;
+  }
+  .sec-side-menu{
+        width: 100%;
+
+  }
+  .sec-side-menu>.side-menu-item>a{
+        font-size: 18px;
+  }
+  .rich-tittle>a{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+  }
+  .menu-box-top{
+        width: 90%;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -959,7 +1002,7 @@ footer#footer a {
 @media only screen and (min-width: 952px) {
 
 }
-@media only screen and (min-width: 952px) {
+@media only screen and (min-width: 1062px) {
   .menu-group {
     display: block;
   }
@@ -968,6 +1011,5 @@ footer#footer a {
     padding-top: 66px;
   }
 }
-
 
 

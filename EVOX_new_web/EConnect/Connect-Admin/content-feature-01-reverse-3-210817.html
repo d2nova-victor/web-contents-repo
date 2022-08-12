@@ -1,0 +1,313 @@
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.ECA-fix-width{
+		width: 50%;
+	}
+	
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	 .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	  .guide-box>h2{
+	 	margin: 0;
+	 }
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b-reverse-spec>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+</style>
+<!-- flickty的 style -->
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  /*max-width: 980px;*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.carousel3 {
+  background: #fff;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell3 {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell3:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav3 {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  /*overflow-y: scroll;*/
+  overflow: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav3 .carousel-cell3 {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav3 .carousel-cell3:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav3 .carousel-cell3.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+/*外加修改部分*/
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+.more-infor{
+	padding: 10px 15px 0 40px;
+    margin: 0 5px;
+	/*font-size: 14px;*/
+	/*color:#A09FE5;*/
+}
+.infor-tittle{
+	color:#A09FE5;
+	font-size: 14px;
+}
+.info-list-block{
+		margin: 0;
+		padding: 0 0 0 25px;
+		list-style: disc;
+		font-size: 16px;
+	}
+	.info-list-block>li{
+		padding: 5px 0;
+	}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+	.carousel-cell3{
+		height: 60vh;
+	}
+	.carousel-nav3 {
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav3{
+		margin-left: 0px;
+	}
+	.carousel-cell3{
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell3{
+		height: 40vh;
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell3{
+		height: 30vh;
+	}
+}
+
+</style>
+<!-- 標題 -->
+<div class="guide-block">
+	<div class="guide-box">
+		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/call-rate-icon.png" alt="紀錄通話"> -->
+		<!-- <img class="section-icon" src="https://img.icons8.com/nolan/96/overview-pages-1.png"alt="紀錄通話" /> -->
+		<img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/icon/cdr-icon.png" alt="紀錄通話" />
+		<h2>通話紀錄</h2>
+		<p>對每通電話做360度的檢視與分析，藉以監測專員和客服中心的整體表現、主動判斷客戶的問題與需求，並有效利用資源以降低客服中心的成本。
+			<!-- <a href="#"> <span class="purple-text">了解更多</span></a> -->
+		</p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1-spec client-direct feature-content-size collect-content">
+	<div class="carousel-container">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse-spec ">
+		<div class="carousel3 carousel-main3">
+		  	<div class="carousel-cell3">
+		  		
+		  		<img id="c-myimg" class="tabContent" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/call-detial-view-5.png" alt="查閱通聯資料">
+		  		<div class="spacer s2"></div>
+		  	</div>
+			<div class="carousel-cell3">
+				<img id="c-myimg-2" class="tabContent " src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/call-detial-info-2-CH.jpg" alt="完整對話資訊">
+			</div>
+			
+		</div>
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width flex-order-change">
+		<div class="content-section-1-content-reverse">
+			<!-- 選單 -->
+			<div class=" carousel-nav3">
+				<div id="followcall" class="carousel-cell3 is-nav-selected info-button"><i class="fas fa-check purple-text"></i> <div>完整且詳盡的通話紀錄</div></div>
+				<div id="calllogpoint" class="carousel-cell3 info-button"><i class="fas fa-check purple-text"></i> <div>通話結果與客戶滿意度評分</div></div>
+				<!-- <div id="agentlearn" class="carousel-cell3 info-button"><i class="fas fa-check purple-text"></i> <div>透過成效與表現狀況來獲取學習經驗</div></div> -->
+			</div>
+		<!-- 	<div class="more-infor">
+				<h3 class="infor-tittle">使用通話紀錄來</h3>
+				<ul class="info-list-block">
+					<li>監測專員和客服中心的整體表現。</li>
+					<li>主動判斷客戶的問題與需求。</li>
+					<li>有效利用資源以降低客服中心的成本。</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+	<script>
+
+// flickity 垂直輪播	
+// external js: flickity.pkgd.js
+
+var $carousel3 = $('.carousel3').flickity(
+{
+  autoPlay: 2000,
+  pageDots: false,
+  prevNextButtons: false,
+  draggable: false,
+}
+);
+
+var $carouselNav3 = $('.carousel-nav3');
+var $carouselNavCells3 = $carouselNav3.find('.carousel-cell3');
+
+$carouselNav3.on( 'click', '.carousel-cell3', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel3.flickity( 'select', index );
+});
+
+var flkty3 = $carousel3.data('flickity');
+var navTop3  = $carouselNav3.position().top;
+var navCellHeight3 = $carouselNavCells3.height();
+var navHeight3 = $carouselNav3.height();
+
+$carousel3.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav3.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected3 = $carouselNavCells3.eq( flkty3.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav
+  var scrollY3 = $selected3.position().top +
+    $carouselNav3.scrollTop() - ( navHeight3 + navCellHeight3 ) / 2;
+  $carouselNav3.animate({
+    scrollTop: scrollY3
+  });
+});
+
+// select main on nav hover
+$carouselNav3.on( 'mouseover', '.carousel-cell3', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel3.flickity( 'pausePlayer');
+});
+$carouselNav3.on( 'mouseout', '.carousel-cell3', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel3.flickity( 'unpausePlayer');
+});
+
+
+</script>
+	
+</div>
+	
+</div>

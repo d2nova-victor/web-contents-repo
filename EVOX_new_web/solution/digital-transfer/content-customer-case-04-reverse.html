@@ -1,0 +1,144 @@
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+
+
+<style type="text/css">
+	.customer-case-section{
+		display: flex;
+	    max-width: 1001px;
+	    margin: 0 auto;
+	    align-items: center;
+	    margin: 80px auto;
+	}
+	.case-box {
+		width: 50%;
+	}
+	.case-text{
+		padding:0 40px;
+	}
+	.case-brand{
+		max-width: 170px;
+	    display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	}
+	.case-btn{
+		width: 100%;
+	}
+	/*左右反轉*/
+	.case-img-reverse{
+		order:2;
+	}
+	.case-descript > h3{
+		font-size: 36px;
+	}
+	/*slider*/
+	/*.case-main{
+		max-width: 170px;
+	}*/
+	.carousel-cell{
+		width: 100%;
+	}
+	/*.case-main>img{
+		width:100%;
+	}*/
+	/*flickity*/
+	.flickity-prev-next-button.previous{
+		left: -20px!important;
+	}
+	.flickity-prev-next-button.next{
+		right: -20px!important;
+	}
+	.flickity-prev-next-button{
+		width: 24px!important;
+    	height: 24px!important;
+	}
+	.flickity-button{
+		color: #A5B6BF!important;
+	}
+	@media screen and (max-width: 840px){
+		.customer-case-section{
+			display: table;
+		}
+		.case-box{
+			width: 100%;
+		}
+		.case-img>img{
+			width: 100%;
+		}
+		.flickity-prev-next-button.previous{
+			top: 50%!important;
+		}
+		.flickity-prev-next-button.next{
+			top: 50%!important;
+		}
+	}
+</style>
+<div class="customer-case-section">
+	<div class="case-box case-img case-img-reverse">
+		<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/case/case-04.jpg" alt="case-04">
+	</div>
+	<div class="case-box case-text">
+		<div class="case-main case-descript">
+			<h3>連鎖餐飲</h3>
+			<p>連鎖店家可省下門市分店建置實體電話的費用，用一套雲端總機即可搞定全台各據點的電話系統，且不同縣市區碼的分店和總部之間互撥免費，溝通便利同時省很大。</p>
+		</div>
+		<div class="logo-carousel logo-case-carousel-4" data-flickity='{ "prevNextButtons": false, "pageDots": false}'>
+			<!-- <div class="carousel-cell"> -->
+				<!-- logo -->
+				<div class="carousel-cell case-main ">
+					<div class="logo-set">
+							<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/tao-chicken-2.png" alt="桃城雞排"> -->
+							<!-- <a href="https://blog.evoxglobal.com/tw/testimonials/tao-chicken" target="_blank" class="gray-outline-btn case-btn">客戶故事</a> -->
+						<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/tao-chicken" target="_blank">
+							<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/tao-chicken-2.png" alt="桃城雞排">
+							<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+						</a>
+						<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/dotdot" target="_blank">
+							<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/dotdot.png" alt="點點全球">
+							<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+						</a>
+					</div>
+				
+					<div class="logo-set">
+						<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/dotdot.png" alt="點點全球">
+						<a href="https://blog.evoxglobal.com/tw/testimonials/dotdot" target="_blank" class="gray-outline-btn case-btn">客戶故事</a> -->
+						<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/qbebe" target="_blank">
+							<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/qbebe.png" alt="QBEBE">
+							<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+						</a>
+						<a class="logo-btn story-link" href="#">
+							<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/dotdot.png" alt="點點全球"> -->
+						</a>
+					</div>
+				</div>
+			<!-- </div>
+			<div class="carousel-cell"> -->
+				<!-- logo -->
+				<!-- <div class="carousel-cell case-main ">
+					<div class="logo-set">
+					</div>
+					
+				</div> -->
+			<!-- </div> -->
+		</div>
+	</div>
+
+
+<!-- 	<script>
+	$('.logo-case-carousel-4').flickity({
+		wrapAround: true,
+		autoPlay:2100,
+		groupCells: true,
+		groupCells: 2,
+		groupCells: '100%',
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		pageDots:true,
+		lazyLoad:true
+});
+</script> -->
+
+</div>

@@ -1,0 +1,239 @@
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+
+
+<style type="text/css">
+	.customer-case-section{
+		display: flex;
+	    max-width: 1001px;
+	    margin: 0 auto;
+	    align-items: center;
+	    margin: 80px auto;
+	}
+	.case-box {
+		width: 50%;
+	}
+	.case-text{
+		padding:0 40px;
+	}
+	.case-brand{
+		max-width: 170px;
+	    display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	}
+	.case-btn{
+		width: 100%;
+	}
+	/*左右反轉*/
+	.case-img-reverse{
+		order:2;
+	}
+	.case-descript > h3{
+		font-size: 36px;
+	}
+	/*slider*/
+	/*.case-main{
+		max-width: 170px;
+	}*/
+	.logo-set{
+		width: 50%;
+		float: left;
+		display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	}
+	.logo-btn{
+		margin:13px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.story-link:hover{
+		/*box-shadow: 1px 1px 7px #00000052;*/
+    	transform: scale(1.1);
+	}
+	.no-link{
+		cursor: default;
+	}
+	.logo-carousel {
+	  /*background: #FAFAFA;*/
+	  margin: 0 15px; /* space for prev/next buttons */
+	}
+	.logo-carousel-noslider {
+		margin: 0 0px;
+	}
+	.carousel-cell{
+		width: 100%;
+		/*padding:20px;*/
+	}
+	/*.case-main>img{
+		width:100%;
+	}*/
+	/*flickity*/
+	.flickity-prev-next-button.previous{
+		left: -20px!important;
+	}
+	.flickity-prev-next-button.next{
+		right: -20px!important;
+	}
+	.flickity-prev-next-button{
+		width: 24px!important;
+    	height: 24px!important;
+	}
+	.flickity-button{
+		color: #A5B6BF!important;
+	}
+	.flickity-page-dots{
+		display: block!important;
+		bottom: 10px!important;
+	}
+	/*電腦版 客戶故事icon*/
+	.mobile-link-icon{
+		display: flex;
+		opacity:0;
+		background: #292929c7;
+	    color: #fff;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.mobile-link-icon:hover{
+		opacity:1;
+		transition: opacity .4s;
+	}
+	@media screen and (max-width: 1024px){
+		.flickity-page-dots{
+			 bottom: 0px!important;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.customer-case-section{
+			display: table;
+		}
+		.case-box{
+			width: 100%;
+		}
+		.case-img>img{
+			width: 100%;
+		}
+		.flickity-prev-next-button.previous{
+			top: 50%!important;
+		}
+		.flickity-prev-next-button.next{
+			top: 50%!important;
+		}
+
+		/*手機版 icon*/
+		.mobile-link-icon{
+			opacity: 1;
+		    display: block;
+		    position: absolute;
+		    width: 100%;
+		    height: 32px;
+		    right: 0;
+		    bottom: 0;
+		    text-align: center;
+		    background: #fff;
+		    color: #00A82D;
+			}
+		.story-link:hover{
+			box-shadow: 0px 0px 0px #00000052;
+		    transform: scale(0);
+			}
+			/*flickity*/
+			.flickity-page-dots{
+			bottom: 12px!important;
+			}
+	}
+	@media screen and (max-width: 360px){
+		.mobile-link-icon{
+			bottom: -20px;
+		}
+		.flickity-page-dots{
+			 bottom: -38px!important;
+		}
+		.logo-set{
+			width: 100%!important;
+		}
+	}
+</style>
+<div class="customer-case-section">
+	<div class="case-box case-img case-img-reverse">
+		<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/case/case-02.jpg" alt="case-02">
+	</div>
+	<div class="case-box case-text">
+		<div class="case-main case-descript">
+			<h3>網路平台服務</h3>
+			<p>輕鬆設定來電的分配規則和輪班機制，來電即顯示客戶的購買紀錄和過往問題，讓客服人員第一時間提供更貼切的服務，也可在通話的同時註記重點，讓客服團隊資訊同步不掉棒。</p>
+		</div>
+		<div class="logo-carousel logo-case-carousel-2" data-flickity='{ "prevNextButtons": true, "pageDots": true }'>
+			<!-- <div class="carousel-cell"> -->
+				<!-- logo -->
+				<div class="carousel-cell case-main ">
+					<div class="logo-set">
+					<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/qdlii.png" alt="QDM"> -->
+					<!-- <a href="https://blog.evoxglobal.com/tw/testimonials/qdm" target="_blank" class="gray-outline-btn case-btn">客戶故事</a> -->
+					<a class="logo-btn no-link" href="">
+						<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/klook.png" alt="Klook">
+					</a>
+					<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/ob-design" target="_blank">
+						<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/ob.png" alt="OB">
+						<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+					</a>
+					</div>
+				
+					<div class="logo-set">
+					<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/ob.png" alt="OB"> -->
+					<!-- <a href="https://blog.evoxglobal.com/tw/testimonials/ob-design" target="_blank" class="gray-outline-btn case-btn">客戶故事</a> -->
+					<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/qdm" target="_blank">
+						<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/qdlii.png" alt="QDM">
+						<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+					</a>
+					<a class="logo-btn story-link" href="https://blog.evoxglobal.com/tw/testimonials/oneway" target="_blank">
+						<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/one-way.png" alt="One-way">
+						<div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+					</a>
+					</div>
+
+
+
+				</div>
+			<!-- </div>
+			<div class="carousel-cell"> -->
+				<!-- logo -->
+				<div class="carousel-cell case-main ">
+					<div class="logo-set">
+					<!-- <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/one-way.png" alt="one-way"> -->
+					<!-- <a href="https://blog.evoxglobal.com/tw/testimonials/oneway" target="_blank" class="gray-outline-btn case-btn">客戶故事</a> -->
+					<a class="logo-btn no-link" href="">
+						<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/digital-transformation/logo/goshop.png" alt="goshop">
+					</a>
+					
+					</div>
+			
+					
+				</div>
+			<!-- </div> -->
+		</div>
+	</div>
+
+
+	<script>
+	$('.logo-case-carousel-2').flickity({
+		wrapAround: true,
+		autoPlay:2100,
+		groupCells: true,
+		groupCells: 2,
+		groupCells: '50%',
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		lazyLoad:true
+});
+</script>
+
+</div>

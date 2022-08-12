@@ -34,6 +34,9 @@ div#promotedGalleryWrapper.sqs-layout.promoted-gallery-wrapper{
 .headerNav-dropdown:hover .drop-down-block{
 	    margin-left: -9%;
 }
+.main-product:hover .drop-down-block{
+	    margin-left: -19%;
+}
 .rich-block{
 	padding: 15px 30px;
 }

@@ -1,0 +1,129 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+<style>
+  .partner_block{
+    display:grid;
+    padding: 40px 0;
+    /*background: #fafafa;*/
+  }
+  .patner_section_tittle{
+    /*display: table;*/
+    margin:0px auto;
+    text-align:center;
+    margin-bottom: 20px;
+  }
+  .patner_section_tittle>h2, .patner_section_tittle>p{
+    margin:0;
+  }
+  .patner_section_tittle>h2{
+    font-size: 35px;
+  }
+  .patner_section_tittle>p{
+    color: #7F7F7F;
+  }
+  .partner_section_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*max-width:1200px;*/
+    max-width: 1100px;
+    margin:0 auto;
+}
+.partner-logo-box{
+    width: 22%;
+    background: #fff;
+    padding: 15px 0px;
+    margin: 0 1%;
+    /*border-radius: 4px;*/
+    /*box-shadow: 1px 1px 7px #00000052;*/
+    /*cursor: pointer;*/
+    /*transition: box-shadow .3s, opacity .3s,transform .3s;*/
+}
+/*.partner-logo-box:hover{
+  opacity: .8;
+  box-shadow: 0px 0px 1px #00000052;
+  transform: scale(0.99);
+}*/
+
+.active{
+  display:block;
+}
+.digit {
+     opacity: 0;
+    -webkit-transform: translateY(40px);
+       -moz-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+         -o-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: all 0.6s ease-out;
+       -moz-transition: all 0.6s ease-out;
+        -ms-transition: all 0.6s ease-out;
+         -o-transition: all 0.6s ease-out;
+            transition: all 0.6s ease-out;
+
+  }
+  .visible {
+    opacity: 1;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+@media screen and (max-width: 640px){
+  .partner_section_block{
+/*     display:block; */
+  }
+  .partner-logo-box{
+    width:100%;
+    margin:10px 20px;
+  }
+}
+</style>
+<div class="partner_block" id="sec1">
+  <div class="patner_section_tittle">
+    <h2>我們的合作夥伴</h2>
+    <p>與值得信賴的最佳夥伴共同創造優質服務</p>
+  </div>
+<div class="partner_section_block">
+  
+  <div id="part01" class="partner-logo-box digit" >
+    <!-- <img class="no-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/jabra_logo-1.jpg" alt="jabra"> -->
+    <img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/Partner_logo/jabra_logo.jpg" alt="jabra">
+  </div>
+  
+    <div  class="partner-logo-box digit" >
+   <!--  <img class="no-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/FET_logo-1.jpg" alt="FET"> -->
+    <img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/Partner_logo/FET_logo.jpg" alt="FET">
+  </div>
+  
+  <div  class="partner-logo-box digit" >
+    <!-- <img class="no-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/savecome_logo-1.jpg" alt="savecome"> -->
+    <img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/Partner_logo/savecome_logo.jpg" alt="savecome">
+  </div>
+
+  <div  class="partner-logo-box digit" >
+    <!-- <img class="no-active" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/savecome_logo-1.jpg" alt="savecome"> -->
+    <img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/event_media/partner/Partner_logo/GSS_logo.jpg" alt="GSS">
+  </div>
+
+</div>
+</div>
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  var revealElements = document.getElementsByClassName("digit");
+ for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+      new ScrollMagic.Scene({
+                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                offset: 50,                        // start a little later
+                triggerHook: 0.9,
+              })
+              .setClassToggle(revealElements[i], "visible") // add class toggle
+              // .addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+              .addTo(controller);
+    }
+</script>

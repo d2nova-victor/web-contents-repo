@@ -1,0 +1,288 @@
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.ECA-fix-width{
+		width: 50%;
+	}
+	
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	 .guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	  .guide-box>h2{
+	 	margin: 0;
+	 }
+	.non-img{
+		display: none;
+
+	}
+	.content-section-1-image-version-b-reverse>img{
+		display: none;
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+</style>
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom:40px;
+  align-items: center;
+}
+
+.carousel3 {
+  background: #fff;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.carousel-cell3 {
+  width: 100%;
+  min-height: 300px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell3:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav3 {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  overflow-y: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav3 .carousel-cell3 {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav3 .carousel-cell3:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav3 .carousel-cell3.is-nav-selected {
+  background: #fff;
+  color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+		display: block;
+	}
+	.carousel-cell3{
+		/*height: 60vh;*/
+	}
+	.carousel-nav3 {
+  		min-width: 100%;
+  		max-width: 100%;
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav3{
+		margin-left: 0px;
+	}
+	.carousel-cell3{
+		/*height: 50vh;*/
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell3{
+		/*height: 40vh;*/
+		min-height: 229px;
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell3{
+		/*height: 30vh;*/
+	}
+}
+
+</style>
+<!-- 標題 -->
+<div class="guide-block">
+	<div class="guide-box">
+		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/call-rate-icon.png" alt="紀錄通話"> -->
+		<!-- <img class="section-icon" src="https://img.icons8.com/nolan/96/satisfaction.png"alt="紀錄通話" /> -->
+		<img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/icon/call-contact-2.png"alt="紀錄通話" />
+		<h2>記錄並追蹤每一次通話</h2>
+		<p>查看每位客服專員和整體客服中心的表現。
+			<!-- <a href="#"> <span class="purple-text">了解更多</span></a> -->
+		</p>
+	</div>
+</div>
+<!-- 內容 -->
+<div class="content-section-1-spec client-direct feature-content-size collect-content">
+	<div class="carousel-container">
+
+<!-- Flickity HTML init -->
+
+	<!-- 內容 -->
+	<div class="content-section-1-image-version-b-reverse-spec ">
+		<div class="carousel3 carousel-main3">
+		  	<div class="carousel-cell3">
+		  		<img id="c-myimg" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/know-customer-info-2-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/know-customer-info-2-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/know-customer-info-2-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/know-customer-info-2-1500px.jpg 3x" alt="追蹤通聯">
+		  		<div class="spacer s2"></div>
+		  	</div>
+			<div class="carousel-cell3">
+				<img id="c-myimg-2" class="tabContent" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/voice-record-2-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/voice-record-2-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/voice-record-2-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/voice-record-2-1500px.jpg 3x" alt="語音轉文字">
+			</div>
+			<div class="carousel-cell3">
+				<img id="c-myimg-3" class="tabContent " src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/learn-and-resoult-02-563px.jpg" srcset="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/learn-and-resoult-02-563px.jpg 1x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/learn-and-resoult-02-1500px.jpg 2x, https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/211111-update/CH/learn-and-resoult-02-1500px.jpg 3x" alt="評分績效">
+			</div>
+		</div>
+	</div>
+	<!-- 選單 -->
+	<div class="flex-center content-center ECA-fix-width flex-order-change">
+		<div class="content-section-1-content-reverse">
+			<!-- 選單 -->
+			<div class=" carousel-nav3">
+				<div id="followcall" class="carousel-cell3 is-nav-selected info-button"><i class="fas fa-check purple-text"></i> <div>用註記來記錄通話內容</div></div>
+				<div id="calllogpoint" class="carousel-cell3 info-button"><i class="fas fa-check purple-text"></i> <div>透過電話錄音檔以及語音自動轉成的文字檔，把跟客戶的溝通過程及重點精確地記錄下來</div></div>
+				<div id="agentlearn" class="carousel-cell3 info-button"><i class="fas fa-check purple-text"></i> <div>藉由成果和績效的報表來協助客服專員在工作中學習與成長</div></div>
+				
+					
+					
+			</div>
+		</div>
+	</div>
+	<script>
+
+// flickity 垂直輪播	
+// external js: flickity.pkgd.js
+
+var $carousel3 = $('.carousel3').flickity(
+{
+  autoPlay: 5000,
+  pageDots: false,
+  prevNextButtons: false,
+  draggable: false,
+}
+);
+
+var $carouselNav3 = $('.carousel-nav3');
+var $carouselNavCells3 = $carouselNav3.find('.carousel-cell3');
+
+$carouselNav3.on( 'click', '.carousel-cell3', function( event ) {
+  var index = $( event.currentTarget ).index();
+  $carousel3.flickity( 'select', index );
+});
+
+var flkty3 = $carousel3.data('flickity');
+var navTop3  = $carouselNav3.position().top;
+var navCellHeight3 = $carouselNavCells3.height();
+var navHeight3 = $carouselNav3.height();
+
+$carousel3.on( 'select.flickity', function() {
+  // set selected nav cell
+  $carouselNav3.find('.is-nav-selected').removeClass('is-nav-selected');
+  var $selected3 = $carouselNavCells3.eq( flkty3.selectedIndex )
+    .addClass('is-nav-selected');
+  // scroll nav
+  var scrollY3 = $selected3.position().top +
+    $carouselNav3.scrollTop() - ( navHeight3 + navCellHeight3 ) / 2;
+  $carouselNav3.animate({
+    scrollTop: scrollY3
+  });
+});
+
+// select main on nav hover
+$carouselNav3.on( 'mouseover', '.carousel-cell3', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel3.flickity( 'pausePlayer');
+});
+$carouselNav3.on( 'mouseout', '.carousel-cell3', function( event ) {
+  // var index = $( event.currentTarget ).index();
+  // $carouselMain.flickity( 'select', index );
+  $carousel3.flickity( 'unpausePlayer');
+});
+
+
+</script>
+	
+</div>
+	
+</div>
