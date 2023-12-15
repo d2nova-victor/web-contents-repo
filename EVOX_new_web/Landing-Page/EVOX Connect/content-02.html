@@ -16,7 +16,11 @@
 		margin: 0 auto;
 		flex-flow: column-reverse;
 	}
-    .tittle-section>p{
+    .tittle-section-des{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .tittle-section-des>p{
         text-align:center;
         max-width: 980px;
         margin: 0px auto;
@@ -32,12 +36,29 @@
     .center-img-block>img{
         width: 100%;
     }
+    /*手機優化*/
+    .mobile-show{
+        display: none;
+    }
 /*換方向*/
 
 @media screen and (max-width: 840px){
 
 }
+@media screen and (max-width: 796px) {
+    .content-02{
+    padding: 20px 0;
+    }
+    .mobile-show{
+        display:block;
+        text-align: center;
+    }
+    .mobile-hide{
+        display: none;
+    }
+}
 @media screen and (max-width: 550px){
+
 
 }
 @media screen and (max-width: 460px){
@@ -53,12 +74,16 @@
 	<!-- 內容 -->
 	<div class="tittle-section">
 	    <h2>運用 Pro PC App 打造專業客服團隊</h2>
-	    <p>無論在哪裡工作，都能立即判別來電客戶、記錄每一通來電的資訊，並輕易地組織與管控工作流程。</p>
-        <a class="purple-outline-btn btn-center" href="" target="_blank">了解更多</a>
 	</div>
 <!-- 內容 -->
-<div class="center-img-block">
+<div class="center-img-block mobile-show">
+    <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1000px_mobile.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1000px_mobile.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1500px_mobile.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1500px_mobile.jpg 3x" alt="Pro PC App">
+</div>
+<div class="center-img-block mobile-hide">
     <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1000px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1000px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/Pro-pc_benefit_1500px.jpg 3x" alt="Pro PC App">
 </div>
-	
+	<div class="tittle-section-des">
+     <p>無論在哪裡工作，都能立即判別來電客戶、記錄每一通來電的資訊，並輕易地組織與管控工作流程。</p>
+        <a class="purple-outline-btn btn-center" href="/tw/evox-connect/agent" target="_blank">了解更多</a>   
+    </div>
 </div>

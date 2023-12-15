@@ -1,0 +1,187 @@
+<style type="text/css">
+	.zlayout-section{
+		padding: 40px 0;
+	}
+
+	.left-zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.left-zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.left-zlayout-img>img{
+			width: 100%;
+		}
+	.left-zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 452px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.single-text-content{
+		display: flex;
+		flex-flow: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	margin:10px auto;
+    	padding: 0 0 5px;
+    	border-bottom: 1px solid #3333;
+	}
+	.single-text-content:nth-child(2){
+/*		margin: 30px auto;*/
+	}
+	.single-text-content>h3{
+		font-size: 21px;
+		line-height: 31px;
+		margin:0 0 5px 0;
+	}
+	.single-text-content>p{
+		font-size: 16px;
+		line-height: 30px;
+		margin: 5px 0;
+		text-align: justify;
+	}
+
+	/*  中間文字 共用style*/
+	  .obi-of-section{
+	    display: flex;
+	    align-items: center;
+	    flex-flow: column;
+	    padding: 20px 0;
+	  }
+	  .obi-of-section>h2{
+	    font-size: 32px;
+	    text-align: center;
+	    margin: 5px auto;
+	  }
+	  .obi-of-section>p{
+	    font-size: 18px;
+	    text-align: center;
+		/*    set light gray text to css*/
+	    color: #A5B6BF;
+	    margin: 5px auto;
+	  }
+	  .obi-of-section>.tittle-discription{
+	    color: #7F7F7F;
+	  }
+	  /*  中間文字 共用style*/
+	@media screen and (max-width: 1113px){
+		.left-zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.left-zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 100%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.left-zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+		.larg-layout{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: flex-start;
+		    flex-flow: row;
+		}
+		.single-text-content{
+			width: 33.3%;
+	    	align-items: flex-start;
+		}
+		.single-text-content:nth-child(2){
+			margin: 0px auto;
+			padding: 0 3%;
+		}
+		.single-text-content>h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.single-text-content>p{
+			text-align: left;
+		}
+
+		/*  中間文字 共用style*/
+	    .obi-of-section>h2{
+	      font-size: 30px;
+	    }
+	    .obi-of-section>h2, .obi-of-section>h2>span{
+	      font-weight: 500;
+	    }
+	    /*  中間文字 共用style*/
+	}
+	@media screen and (max-width: 680px){
+		.larg-layout{
+			flex-flow: column;
+    		align-items: center;
+		}
+		.single-text-content{
+			width: 90%;
+		}
+
+			/*  中間文字 共用style*/
+	    .obi-of-section{
+	      display: flex;
+	      align-items: center;
+	      flex-flow: column;
+	      padding: 40px 0 30px 0;
+	    }
+	    .obi-of-section>h2{
+	      font-size: 26px;
+	    }
+    	/*  中間文字 共用style*/
+	}
+
+</style>
+
+<div class="zlayout-section">
+	<div class="obi-of-section">
+	  <h2>提升混合辦公行動力</h2>
+	</div>
+
+	<div class="left-zlayout-content digit2">
+		<div class="left-zlayout-img">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/start-up/mobility-img/221228/Group%202@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/start-up/mobility-img/221228/Group%202@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/start-up/mobility-img/221228/Group%202@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/start-up/mobility-img/221228/Group%202.png 3x" alt="混合辦公行動力">
+		</div>
+		<div class="left-zlayout-text larg-layout">
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>在哪都能接聽撥打</h3>
+				<p>無論是在辦公室、外出洽公或在家工作，皆可以透過公司總機系統來接聽或撥打電話，遠距上班、異地辦公也能照常服務客戶，不錯過任何商機。 </p>
+				<a class="green-text-btn" href="/tw/solutions/teleworking">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>支援多種裝置</h3>
+				<p>裝置支援手機、電腦以及 IP 話機，為各種工作需求提供最便捷的溝通方式 </p>
+				<a class="green-text-btn" href="/tw/evox/multiple-devices">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>公私分明形象更專業</h3>
+				<p>行動分機讓員工公私分明，不必將自己的私人電話印在名片上，且撥給客戶時來電顯示公司代表號，增加專業形象</p>
+				<a class="green-text-btn" href="/tw/evox/multiple-devices/mobile-extension">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

@@ -1,0 +1,1083 @@
+<!-- scrollmagic -->
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Scroll-magic-2.0.8/ScrollMagic.js"></script>
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Scroll-magic-2.0.8/debug.addIndicators.js"></script>
+
+
+
+<style type="text/css">
+	.two-product-content-section{
+		margin: 0;
+		padding: 0;
+	}
+	.two-cloum-menu-block{
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.single-large-btn-box{
+		display: block;
+		width: 50%;
+		margin: 0;
+		padding: 0;
+/*		min-height: 500px;*/
+    	overflow: hidden;
+	}
+
+	.whoscall-number-bg{
+		background-image: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/background/whoscall-number/whoscall-number-bg@2x_compress.webp");
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position: center;
+	}
+	.call-blocking-bg{
+		background-image: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/background/call-blocking/call-blocking-bg@2x_compress.webp");
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position: center;
+	}
+	.hover-bg-filter{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background: rgb(241,241,241);
+		background: linear-gradient(0deg, rgba(241,241,241,0.74) 0%, rgba(241,241,241,0.9) 78%);
+	}
+	.hover-bg-filter:hover{
+		background: rgb(232,245,233);
+		background: linear-gradient(0deg, rgba(232,245,233,0.67) 0%, rgba(232,245,233,0.9) 78%);
+	}
+	.btn-single-box{
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		justify-content: center;
+		position: relative;
+	}
+	.btn-single-box>p{
+		margin: 0;
+/*		padding: 0;*/
+		padding: 20px 0 0 0;
+	}
+	.btn-single-box>h2{
+		font-weight: bolder;
+		font-size: 32px;
+		line-height: 1.2em;
+		margin: 0;
+		text-align: center;
+		padding: 10px 0 10px 0;
+		max-width: 560px;
+	}
+	.dynamic-ui-hand{
+		position: relative;
+	    bottom: 0;
+	    height: 100%;
+	    display: flex;
+	}
+
+/*	滑上去時*/
+	.single-large-btn-box:hover .text-btn{
+		color:#58B805;
+		text-decoration: underline;
+	}
+	.single-large-btn-box:hover .tittle-btn{
+		color:#58B805;
+/*		text-decoration: underline;*/
+	}
+	.single-large-btn-box:hover .dynamic-ui-hand{
+/*		transform: scale(1.1);*/
+	}
+	.right-hand{
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	.left-hand{
+		opacity: 0;
+		transform: translateX(200px);
+	}
+/*	動畫*/
+	#animate1 {
+		transition: all .8s ease-in-out;
+	}
+	#animate2 {
+		transition: all .8s ease-in-out;
+	}
+
+	.move-in {
+		opacity: 1;
+	    transform: translateX(0px);
+	}
+
+	@media screen and (max-width: 640px){
+		.btn-single-box>h2{
+			font-size: 32px;
+		}
+		.single-large-btn-box{
+		width: 100%;
+		}
+		.hover-bg-filter:hover{
+			background: rgb(241,241,241);
+			background: linear-gradient(0deg, rgba(241,241,241,0.74) 0%, rgba(241,241,241,0.9) 78%);
+
+		}
+		.text-btn{
+			color:#243237;
+			text-decoration: underline;
+		}
+		.tittle-btn{
+			color:#58B805;
+		}
+	}
+</style>
+
+<!-- 追蹤 -->
+<!-- <div id="trigger1" class="spacer s0 mobile-hide"></div>
+<div id="trigger2" class="spacer s0 mobile-hide"></div> -->
+<div class="two-product-content-section" >
+	<!-- 選單 -->
+	<div class="two-cloum-menu-block mobile-hide" id="twoproductbox">
+		
+		<!-- whoscall-number -->
+		<a href="#whoscallnumberbanner" class="single-large-btn-box whoscall-number-bg">
+			<!-- 漸層背景 -->
+			<div class="hover-bg-filter">
+				<!-- 標題按鈕 -->
+				<div class="btn-single-box">
+					<p class="text-btn">Outbound calls </p>
+					<h2 class=tittle-btn>When you make an outgoing call the other party will see </h2>
+					<!-- 浮動手 -->
+					<div id="animate1" class="dynamic-ui-hand right-hand">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/hand/whoscall-number_EN.png" alt="whoscall-number-hand">
+					</div>
+				</div>
+			</div>
+		</a>
+		
+		<!-- call-blocking -->
+		<a href="#whoscallblockingbanner" class="single-large-btn-box call-blocking-bg">
+			<!-- 漸層背景 -->
+			<div class="hover-bg-filter">
+				<!-- 標題按鈕 -->
+				<div class="btn-single-box">
+					<p class="text-btn">Inbound calls </p>
+					<h2 class=tittle-btn>When there is a call from an unknown number you will see </h2>
+					<!-- 浮動手 -->
+					<div id="animate2" class="dynamic-ui-hand left-hand">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/hand/call-blocking_EN.png" alt="whoscall-blocking-hand">
+					</div>
+				</div>
+			</div>
+		</a>
+
+	</div>
+	<style type="text/css">
+		.whoscallnumbersection{
+/*			background: red;*/
+			min-height: 500px;
+		}
+		.whoscallblockingsection{
+			minheight: 500px;
+		}
+/*		banner*/
+		.banner-top{
+			position: relative;
+/*			top: 0px;*/
+			background: #E8F5E9;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column;
+			padding: 10px 0;
+			transition: all .8s ease-in-out;
+			z-index: 999;
+			width: 100%;
+/*			height: 94px;*/
+		}
+		.overlapfix{
+/*			position: absolute;*/
+/*			height: 94px;*/
+
+		}
+		.banner-tittle{
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			justify-content: center;
+		}
+		.banner-tittle>h2{
+			 margin: 0;
+		    font-size: 30px;
+		    font-weight: bold;
+		}
+		.banner-tittle>img{
+			max-width: 27px;
+			padding: 10px;
+		}
+/*		置頂*/
+		.fixtop{
+			position: fixed;
+		    top: 127px;
+		    width: 100%;
+		    z-index: 99;
+		    animation-timing-function: ease-in;
+		    animation-name: fadein;
+  			 animation-duration: .4s;
+		}
+		@keyframes fadein {
+		  from {opacity: 0;}
+		  to {opacity: 1;}
+		}
+
+/*		排版內容*/
+		.zlayout-section{
+				padding: 20px 0;
+			}
+			.zlayout-content{
+				max-width: 1113px;
+				margin:20px auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			/*	反轉*/
+			.right-reverse{
+				flex-flow: row-reverse;
+			}
+			/*	反轉*/
+			.zlayout-img{
+				width: 50%;
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			}
+			.zlayout-img>img{
+					width: 100%;
+				}
+			.zlayout-text{
+				width: 50%;
+			    display: flex;
+			    align-items: baseline;
+			    justify-content: center;
+			    flex-flow: column;
+			    max-width: 452px;
+			    margin: 0 auto;
+			    padding: 0 20px;
+			}
+			.zlayout-text>h2{
+				font-size: 30px;
+				line-height: 47px;
+				margin:0 0 5px 0;
+			}
+			.benefit-list-content{
+				padding: 0 0 0px 20px;
+				margin: 5px 0;
+			}
+			.benefit-list{
+				
+			}
+			.benefit-list>p{
+				margin:5px 0;
+			}
+			.option-text{
+				color:#A5B6BF;
+				font-size: 14px;
+			}
+			.left-zlayout-img{
+				width:50%;
+			}
+			.left-zlayout-img>img{
+				width:100%;
+			}
+			@media screen and (max-width: 1113px){
+				.zlayout-content{
+					max-width: 95%;
+				}
+				
+			}
+			@media screen and (max-width: 840px){
+
+				.zlayout-content{
+					flex-flow: column-reverse;
+					max-width: 100%;
+					margin: 0 auto;
+					align-items: center;
+				}
+				.zlayout-img{
+					width: 95%;
+				}
+				.left-zlayout-img{
+					width:95%;
+				}
+				/*.left-zlayout-img>img{
+					width: 100%;
+				}*/
+				.zlayout-text{
+					width: 95%;
+					max-width: 100%;
+				    margin: 0 auto;
+				    padding: 0 0 20px 0;
+				    align-items: center;
+				}
+				.zlayout-text>h2{
+					font-size: 26px;
+					text-align: center;
+					font-weight: 500;
+				}
+
+/*				banner*/
+				.banner-top>span{
+					font-size: 16px;
+				}
+				.banner-tittle>h2{
+					font-size: 20px;
+				}
+				.banner-tittle>img{
+					max-width: 20px;
+    				padding: 5px;
+				}
+				
+			}
+/*		範例*/
+		.scenario-section{
+
+		}
+		.scenario-section-block{
+			padding: 20px 0 !important;
+		}
+		.scenario-text>h3{
+			font-size: 18px!important;
+			line-height: 28px!important;
+			border-bottom: 2px solid #EDEFF1;
+			padding: 0 0 5px 0;
+			margin: 0;
+		}
+		.scenario-text>ul{
+			margin: 0;
+		   padding: 0 0 0 17px;
+		   width: 90%;
+		}
+		.scenario-text>ul>li>p{
+			margin: 5px 0;
+		}
+		.case-banner{
+			height: 15px;
+			margin: 0 0 20px 0;
+		    display: flex;
+		    flex-flow: row;
+		    background: #EDEFF1;
+		    padding: 15px;
+		    border-radius: 50px;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.case-banner>img{
+			    height: 20px;
+			    padding: 10px;
+		}
+		.case-banner>span{
+			color:#5F6871;
+			font-size: 18px;
+		}
+		.mobile-hide{
+			display: flex;
+			align-items: center;
+	    	justify-content: center;
+		}
+		.mobile-show{
+			display: none;
+		}
+		 @media screen and (max-width: 580px){
+		 	.case-banner{
+		 		width: 90%;
+		 	}
+		 	.mobile-hide{
+		 		display: none;
+			}
+			.mobile-show{
+				display: flex;
+				align-items: center;
+	    		justify-content: center;
+	    		flex-flow: column;
+			}
+			.scenario-img-text{
+				width: 98%;
+			    margin: 10px auto;
+			    padding: 0 1%;
+			    text-align: center;
+			    background: rgb(255,255,255);
+				background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(232,245,233,1) 12%, rgba(232,245,233,1) 90%, rgba(255,255,255,0) 100%);
+			}
+			.scenario-img-text>p{
+				color: #58B705;
+			}
+		 }
+/*		 benefit*/
+		.whoscall-solutions-section{
+/*				background: rgb(255,255,255);*/
+/*				background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(232,245,233,1) 18%);*/
+				 background: #FAFAFA;
+				 flex-flow: column;
+			    display: flex;
+			    align-items: center;
+			    padding: 20px;
+			}
+			.benefit-section{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				max-width: 980px;
+		    	margin: 0 auto;
+		    	width: 90%;
+		    	flex-flow: row wrap;
+			}
+			.single-benefit{
+				width: 43%;
+			    padding: 0 20px;
+			    margin: 1%;
+			    background: #E8F5E9;
+			    border-radius: 10px;
+			    display: flex;
+			    align-items: center;
+			    min-height: 136px;
+			}
+			.single-benefit>img{
+				width: 30px;
+				padding: 10px;
+			}
+			@media screen and (max-width: 580px){
+				.single-benefit{
+					width: 100%;
+				}
+				.evox-whosecall-tittle{
+					display: block;
+		    		margin: 5px auto;
+				}
+				.whoscall-solutions-section>.obi-of-section{
+					padding: 40px 10px 0px 10px
+				}
+			}
+
+/*		tab按鈕*/
+	.scenario-button-block{
+		width: 90%;
+		max-width: 390px;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row;
+		padding: 40px 0 0 0;
+	}
+	.scenario-button-group{
+		background: #EDEFF1;
+		border-radius: 22px;
+		display: flex;
+    	width: 100%;
+    	align-items: center;
+    	justify-content: center;
+    	overflow: hidden;
+	}
+	.scenario-button{
+		width: 50%;
+		display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   background:#EDEFF1;
+	   cursor: pointer;
+	}
+	.scenario-button>img{
+		width: 25px;
+		padding: 10px;
+	}
+	.scenario-button>p{
+		margin: 0;
+	}
+	.scenario-button-active{
+		background: #66C547;
+	}
+	.icon-white{
+		display: none;
+	}
+	.scenario-button-active > .icon-gray{
+		display: none;
+	}
+	.scenario-button-active > .icon-white{
+		display: block;
+	}
+	.scenario-button-active>p{
+		color: #fff;
+	}
+/*	兩格陌生騷擾*/
+	 .helf-content-block{
+	 	max-width: 1080px;
+	    margin: 0px auto 0px auto;
+	    height: 100%;
+	    padding: 0px 0px 0px;
+	    display: flex;
+	    width: 100%;
+	 }
+	 .helf-width-block{
+	 	width:50%;
+	 	padding:20px;
+	 	margin: 0 auto;
+	 }
+	 .helf-width-block>p{
+	 	width: 100%;
+    	margin: 0 auto;
+	 }
+	 .single-scenario-tittle{
+	 	width: 100%;
+    	max-width: 380px;
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+	 	border-radius: 22px;
+	 	background: #66C547;
+	 	height: 41px;
+	 	margin: 0 auto;
+	 }
+	 .single-scenario-tittle>img{
+	 	width: 25px;
+		padding: 10px;
+	 }
+	 .single-scenario-tittle>p{
+	 	margin: 0;
+	 	color: #fff;
+	 }
+	 @media screen and (max-width: 840px){
+
+	 }
+	 @media screen and (max-width: 580px){
+	 	.helf-content-block{
+/*	 		display:block;*/
+			flex-flow: column;
+			padding: 20px auto 0px;
+	 	}
+	 	.helf-width-block{
+	 		width:90%;
+	 		display: flex;
+    		flex-flow: column;
+    		justify-content: space-around;
+    		align-items: center;
+
+	 	}
+	 	.helf-width-block>p{
+	 		margin: 0px auto 5px auto;
+	 	}
+	 	.helf-width-img{
+	 		order:1;
+	 	}
+	 	.helf-width-block>h2{
+	 		font-size: 26px;
+	 		margin: 0;
+	 		font-weight: 500;
+	 	}
+	 	.mobile-top{
+	 		position: relative;
+	 	}
+
+
+
+	 }
+	</style>
+	<div id="mobile-add-whoscall-number" class="mobile-top mobile-show"></div>
+	<!-- 手機版 -->
+		<!-- whoscall-number -->
+		<div class="single-large-btn-box whoscall-number-bg mobile-show">
+			<!-- 漸層背景 -->
+			<div class="hover-bg-filter">
+				<!-- 標題按鈕 -->
+				<div class="btn-single-box">
+					<p class="text-btn">Outbound calls </p>
+					<h2 class=tittle-btn>When you make an outgoing call the other party will see </h2>
+					<!-- 浮動手 -->
+					<div id="animate1" class="dynamic-ui-hand right-hand">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/mobile/whoscall-number-UI_1000px_EN.png" alt="whoscall-number-hand">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- whoscall number -->
+	<div id="whoscallnumberarea" class="whoscallnumbersection">
+		<!-- why use whoscall number -->
+		<!-- banner -->
+		<div class="overlapfix" id="whoscallnumberbannerFix">
+			<div id="whoscallnumberbanner" class="banner-top">
+				<span class="green-text">Trusted digital phone business card </span>
+				<div class="banner-tittle">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/whoscall-number-icon@2x.png" alt="whoscall-number">
+					<h2>Create a certified phone trademark for your corporate number </h2>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- 內容 -->
+		<!-- 場景一 -->
+		<div class="scenario-section">
+			<!-- 標題 -->
+			<!-- <div class="obi-of-section">
+			  <h2>詐騙已不僅限於個人，企業也成為了犯罪者虎視眈眈的大羊</h2>
+			</div> -->
+
+			<!--單個 詐騙場景 -->
+			<div class="zlayout-section scenario-section-block">
+				<div class="zlayout-content right-reverse digit2">
+					<div class="left-zlayout-img ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/why-whoscall-number/why-whoscallnumber@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/why-whoscall-number/why-whoscallnumber@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/why-whoscall-number/why-whoscallnumber@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/why-whoscall-number/why-whoscallnumber@1x_compress.webp 3x" alt="案例一">
+					</div>
+					
+					<div class="zlayout-text scenario-text">
+						<h3>We want to adopt (or upgrade our current) cloud PBX, but we have some concerns </h3>
+						<!-- <p>經由公司號碼撥進來的電話，再加上跟例行收款流程一樣，新進店員不疑有詐，便將款項交付出去…造成憾事。</p> -->
+						<ul class="">
+							<li><p>What if the customer doesn’t recognize the new company number? </p></li>
+							<li><p>With a new number, will our answer rate and callback rate decrease? </p></li>
+							<li><p>As a newly established company, how do we enhance customer trust? </p></li>
+							<li><p>After our corporate number is ported, our original number will not be displayed when dialing out. How will existing customers know to answer our call?</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 優勢 benefit -->
+			<div class="whoscall-solutions-section">
+				<!-- 標題 -->
+				<div class="obi-of-section ">
+				  <h2>With <span class="green-text evox-whosecall-tittle">EVOX + Whoscall Number</span> authentication</h2>
+				</div>
+
+				<div class="benefit-section">
+					<!-- 單個 -->
+					<div class="single-benefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/icon/gray-fill%20copy%204.png" alt="勾勾">
+						<p>Your company’s certified name, brand logo and core slogan are identified to prevent malicious fraud and impersonation </p>
+					</div>
+
+					<!-- 單個 -->
+					<div class="single-benefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/icon/gray-fill%20copy%204.png" alt="勾勾">
+						<p>Your customer trusts the number and answers the call</p>
+					</div>
+
+				</div>	
+			</div>
+		<!-- ----------- -->
+		<!-- 好處解說左右排版 -->
+			<!-- 單個好處 -->
+			<div class="zlayout-section">
+				<div class="zlayout-content digit2">
+					<div class="left-zlayout-img">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-whoscall-number/EN/call-in%20copy@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-whoscall-number/EN/call-in%20copy@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-whoscall-number/EN/call-in%20copy@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-whoscall-number/EN/call-in%20copy_compress.webp 3x" alt="來電顯示對方資訊">
+					</div>
+					<div class="zlayout-text">
+						<h2>Exclusive digital business phone number card </h2>
+						<p>Every time you use the corporate number to call a customer they see the complete corporate image. Like a digital business card, this tool is great for marketing and improving your brand. </p>
+					</div>
+				</div>	
+			</div>
+			<!-- 單個好處 -->
+			<div class="zlayout-section">
+				<div class="zlayout-content right-reverse digit2">
+					<div class="left-zlayout-img">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/trsut-number/Group%2016@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/trsut-number/Group%2016@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/trsut-number/Group%2016@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/trsut-number/Group%2016_compress.webp 3x" alt="彈性的來電處置方式 ">
+					</div>
+					<div class="zlayout-text">
+						<h2>Outbound calls are no longer ignored or rejected</h2>
+						<p>An authenticated number allows customers to easily identify the calling company and avoid fraudulent calls. With an identifiable number, there are less rejected calls and an increased number of customers  willing to call back.</p>
+					</div>
+				</div>
+			</div>
+		<!-- ------------ -->
+
+		</div>
+
+	</div>
+	<div id="mobile-add-whoscall-blocking" class="mobile-top mobile-show"></div>
+	<!-- 手機版 -->
+		<!-- call-blocking -->
+		<div class="single-large-btn-box call-blocking-bg mobile-show">
+			<!-- 漸層背景 -->
+			<div class="hover-bg-filter">
+				<!-- 標題按鈕 -->
+				<div class="btn-single-box">
+					<p class="text-btn">Inbound Call Solution</p>
+					<h2 class=tittle-btn>When there is a call from an unknown number you will see </h2>
+					<!-- 浮動手 -->
+					<div id="animate2" class="dynamic-ui-hand left-hand">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/mobile/whoscall-blocking-UI_1000px_EN.png" alt="whoscall-blocking-hand">
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- whoscall blocking -->
+	<div id="whoscallblockingarea" class="whoscallblockingsection">
+		<!-- why use whoscall number -->
+		<!-- banner -->
+		<div class=" overlapfix" id="whoscallblockingbannerFix">
+			<div id="whoscallblockingbanner" class="banner-top">
+				<span class="green-text">Identify unfamiliar calls and decide whether to answer them in seconds </span>
+				<div class="banner-tittle">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/call-blocking-icon@2x.png" alt="whoscall-number">
+					<h2>Call identification and handling service to prevent fraudulent and spam calls </h2>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- 內容 -->
+		<div class="scenario-section">
+			<!-- tab按鈕 -->
+			<div class="scenario-button-block">
+				<div class="scenario-button-group">
+				  <div class="scenario-button scenario-button-active" id="scenario-1" onclick="openPlan('Scenario-1')">
+				  		<img class="icon-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/call-blocking-white.png">
+				  		<img class="icon-gray" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/call-blocking-gray.png">
+				  		<p>Fraud case one </p>
+				  </div>
+				  <div class="scenario-button" id="scenario-2" onclick="openPlan('Scenario-2')">
+				  		<img class="icon-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/call-blocking-white.png">
+				  		<img class="icon-gray" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/call-blocking-gray.png">
+				   	<p>Fraud case two </p>
+					</div>
+				</div>
+			</div>
+			<div id="Scenario-1" class="plan">
+				<!--單個 詐騙場景 -->
+				<div class="zlayout-section scenario-section-block">
+					<div class="zlayout-content right-reverse digit2">
+						<div class="left-zlayout-img mobile-hide">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/story-01-EN@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/story-01-EN@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/story-01-EN@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/story-01-EN_compress.webp 3x" alt="案例一">
+						</div>
+						<div class="left-zlayout-img mobile-show">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/mobile/story-01-mobile-EN@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/mobile/story-01-mobile-EN@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/mobile/story-01-mobile-EN@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/01/mobile/story-01-mobile-EN_compress.webp 3x" alt="案例一">
+							<div class="scenario-img-text">
+								<p>The call just now was not made by someone from the company! I was scammed….</p>
+							</div>
+						</div>
+						<div class="zlayout-text scenario-text">
+							<h3>A chain store collects payment as part of its monthly routine, but the money is stolen with one fraudulent call. </h3>
+							<p>The call came through the company number and the routine payment process was the same. The new clerk transferred the money without suspecting fraud. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Scenario-2" class="plan" style="display:none">
+				<!--單個 詐騙場景 -->
+				<div class="zlayout-section scenario-section-block">
+					<div class="zlayout-content  digit2">
+						<div class="left-zlayout-img mobile-hide">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/story-02-EN@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/story-02-EN@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/story-02-EN@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/story-02-EN_compress.webp 3x" alt="案例二 ">
+						</div>
+						<div class="left-zlayout-img mobile-show">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/mobile/story-02-mobile-EN@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/mobile/story-02-mobile-EN@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/mobile/story-02-mobile-EN@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/story-img/EN/02/mobile/story-02-mobile-EN_compress.webp 3x" alt="案例一">
+							<div class="scenario-img-text">
+								<p>After the money was transferred, I called the supplier only to realize there was no such product! </p>
+							</div>
+						</div>
+						<div class="zlayout-text scenario-text">
+							<h3>Scams are becoming more sophisticated and counterfeiting techniques are more difficult to identify. </h3>
+							<p>Scammers forge calls and imitate the voices of senior company executives, using emergencies as an excuse to issue orders, leaving employees no time to respond and verify. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- --------- -->
+		<!-- 騷擾 -->
+		<div class="single-scenario-tittle">
+			<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230731-update/icon/call-blocking-white.png">
+			<p>Eliminate annoying daily distractions </p>
+		</div>
+		<div class="helf-content-block client-direct feature-content-size ">
+			<!-- 標題 -->
+				<div class="helf-width-block digit2">
+					<img class="helf-width-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/01/Group%2015@1x_compress-1.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/01/Group%2015@1x_compress-1.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/01/Group%2015@2x_compress-1.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/01/Group%2015_compress-1.webp 3x" alt="會議打擾">
+					<p>I was in a meeting or busy when I suddenly got a call from an unknown number. I was worried that it was an important client, so I left to answer the phone only to find out that it was just a sales pitch. </p>			
+				</div>
+				<div class="helf-width-block digit2">
+					<img class="helf-width-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/02/Group%2015%20Copy@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/02/Group%2015%20Copy@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/02/Group%2015%20Copy@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/disturb-img/02/Group%2015%20Copy_compress.webp 3x" alt="打擾客服">
+					<!-- <h2>已經有代表號</h2> -->
+					<p>As a customer service specialist, I was already very busy and I kept receiving prank calls that did not disconnect even after I hung up! </p>
+				</div>
+			</div>
+
+			<!-- 優勢 benefit -->
+			<div class="whoscall-solutions-section">
+				<!-- 標題 -->
+				<div class="obi-of-section ">
+				  <h2>With <span class="green-text evox-whosecall-tittle">EVOX + Whoscall</span> </h2>
+				</div>
+
+				<div class="benefit-section">
+					<!-- 單個 -->
+					<div class="single-benefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/icon/gray-fill%20copy%204.png" alt="勾勾">
+						<p>Employees can direct dial from the company extension for seamless internal communication and coordination </p>
+					</div>
+
+					<!-- 單個 -->
+					<div class="single-benefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/icon/gray-fill%20copy%204.png" alt="勾勾">
+						<p>Integrate EVOX with your CRM system to easily access supplier information. </p>
+					</div>
+
+					<!-- 單個 -->
+					<div class="single-benefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/icon/gray-fill%20copy%204.png" alt="勾勾">
+						<p>Distinguish suspicious and high-risk numbers with real-time call identification </p>
+					</div>
+
+					<!-- 單個 -->
+					<div class="single-benefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/230613-update/icon/gray-fill%20copy%204.png" alt="勾勾">
+						<p>Whoscall quick check and report </p>
+					</div>
+
+				</div>	
+			</div>
+			<!-- ------------- -->
+			<!-- benefit 好處介紹 -->
+			<!-- 單個 -->
+			<div class="zlayout-section">
+				<div class="zlayout-content digit2">
+						<div class="left-zlayout-img">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-number/EN/global-connect%20copy@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-number/EN/global-connect%20copy@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-number/EN/global-connect%20copy@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/show-number/EN/global-connect%20copy_compress.webp 3x" alt="來電顯示對方資訊">
+						</div>
+						<div class="zlayout-text">
+							<h2>Caller-ID information </h2>
+							<p>EVOX’s deep integration with Whoscall, the global leader in call identification, protects employees. When there is an incoming call the EVOX Mobile and Pro PC Apps automatically display the caller’s company or organization. </p>
+						</div>
+					</div>	
+				</div>
+				<!-- 單個 -->
+				<div class="zlayout-section">
+					<div class="zlayout-content right-reverse digit2">
+							<div class="left-zlayout-img">
+								<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/flexble-way/EN/Group%2016%20Copy@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/flexble-way/EN/Group%2016%20Copy@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/flexble-way/EN/Group%2016%20Copy@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/flexble-way/EN/Group%2016%20Copy_compress.webp 3x" alt="彈性的來電處置方式 ">
+							</div>
+							<div class="zlayout-text">
+								<h2>Flexible call handling  </h2>
+								<ul class="benefit-list-content">
+									<li class="benefit-list"><p>Immediately hang up or automatically play a message to discourage blacklisted numbers.  </p></li>
+									<li class="benefit-list"><p>Allow callers with greylist numbers to leave a voice message.  </p></li>
+									<li class="benefit-list"><p>Reject anonymous phone numbers. </p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<!-- 單個 -->
+				<div class="zlayout-section">
+					<div class="zlayout-content digit2">
+						<div class="left-zlayout-img">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/report-number/EN/global-connect%20copy@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/report-number/EN/global-connect%20copy@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/report-number/EN/global-connect%20copy@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/report-number/EN/global-connect%20copy_compress.webp 3x" alt="一人回報 全公司受惠">
+						</div>
+						<div class="zlayout-text">
+							<h2>Every employee can help improve the system for the entire company. </h2>
+							<p>Users who receive a harassing, marketing or fraud call can label the number. The EVOX administrator then reviews and configures call block settings to ensure that future calls from the same number will not reach employees. <br/><span class="option-text">＊This feature is coming soon</span></p>
+							
+						</div>
+					</div>
+				</div>
+				<!-- 單個 -->
+				<div class="zlayout-section">
+					<div class="zlayout-content right-reverse digit2">
+						<div class="left-zlayout-img">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/block-list-data/EN/caller-list@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/block-list-data/EN/caller-list@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/block-list-data/EN/caller-list@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/call-blocking/block-list-data/EN/caller-list_compress.webp 3x" alt="獨有的來電號碼管理功能 ">
+						</div>
+						<div class="zlayout-text">
+							<h2>Proprietary caller number management</h2>
+							<p>View all employee marked numbers and classify each as blacklist, whitelist (safe list), or greylist (watch list). <br/><span class="option-text">＊This feature is coming soon</span></p>
+						</div>
+					</div>
+				</div>
+
+	</div>
+
+
+</div>
+<!-- scrollmagic -->
+<script type="text/javascript">
+$(document).ready(function(){
+		// 設置錨點
+		if($(window).width() < 640) {
+		    	$("#mobile-add-whoscall-number").after("<div id='trigger1' class='spacer s0'></div>");
+				$("#mobile-add-whoscall-blocking").after("<div id='trigger2' class='spacer s0'></div>");
+		}else{
+			$("#twoproductbox").before("<div id='trigger1' class='spacer s0'></div><div id='trigger2' class='spacer s0'></div>");
+		}
+
+		// init controller
+		var controller = new ScrollMagic.Controller();
+			// build scene
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
+						// trigger animation by adding a css class
+						.setClassToggle("#animate1", "move-in")
+						// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+						.addTo(controller);
+
+								// build scene
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+						// trigger animation by adding a css class
+						.setClassToggle("#animate2", "move-in")
+						// .addIndicators({name: "2 - add a class"}) // add indicators (requires plugin)
+						.addTo(controller);
+
+	// scroll add class
+	var topsectionheight = $("#topsection").position().top+ $("#topsection").outerHeight( true );
+	var topsectionheightInt = parseInt(topsectionheight);
+	console.log("top-section:"+topsectionheightInt);
+	var headerheight = $("#header").position().top+ $("#header").outerHeight( true );
+	var headerheightInt = parseInt(headerheight);
+	console.log("header-bottom:"+headerheightInt);
+	var whoscallnumberarea = $("#whoscallnumberarea").position().top + topsectionheightInt;
+	var whoscallblockingarea = $("#whoscallblockingarea").position().top + topsectionheightInt;
+
+
+
+	var whoscallnumberareaInt = parseInt(whoscallnumberarea);
+	var whoscallblockingareaInt = parseInt(whoscallblockingarea);
+	var bannerheight = $("#whoscallblockingbanner").outerHeight( true );
+	var betweentwo = whoscallblockingarea - bannerheight;
+	var prewhoscallblockingareaInt = parseInt(betweentwo);
+	console.log("between area:"+ prewhoscallblockingareaInt);
+	var whoscallblockingareaHeight =  $("#whoscallblockingarea").position().top+ $("#whoscallblockingarea").outerHeight( true ) + topsectionheightInt - headerheightInt;
+	var whoscallblockingareaHeightInt = parseInt(whoscallblockingareaHeight);
+	var whoscallnumberareaHeight =  $("#whoscallnumberarea").position().top+ $("#whoscallnumberarea").outerHeight( true ) + topsectionheightInt - headerheightInt;
+	var whoscallnumberareaHeightInt = parseInt(whoscallnumberareaHeight);
+
+	// 設定固定banner 的底部高度
+	$(".overlapfix").css("height",bannerheight);
+	// console.log($(".overlapfix").outerHeight( true ));
+	// banner 高度設定
+   	// $('<style>.fixtop{ top: ' + headerheightInt + 'px};</style>').appendTo('body');
+	
+	$(window).scroll(function(){
+					
+		var scrollH = $(this).scrollTop();
+			// console.log("scrollH:"+scrollH);
+		if (scrollH >  whoscallnumberareaInt && scrollH < whoscallnumberareaHeightInt) {
+			$('#whoscallnumberbanner').addClass('fixtop');
+			// $('.fixtop').css("top",headerheightInt);
+				       
+		} else{
+			$('#whoscallnumberbanner').removeClass('fixtop');
+		}
+				   
+		if (scrollH >  whoscallblockingareaInt && scrollH < whoscallblockingareaHeightInt){
+			$('#whoscallblockingbanner').addClass('fixtop');
+			// $('.fixtop').css("top",headerheightInt);
+				       
+		} else {
+			$('#whoscallblockingbanner').removeClass('fixtop');
+		}
+		if($(window).width() < 640) {
+			var headerheight = $("#header").position().top+ $("#header").outerHeight( true );
+			var headerheightInt = parseInt(headerheight);
+			// console.log("header-bottom:"+headerheightInt);
+			$("#mobile-add-whoscall-number").css("top","-"+ headerheightInt +"px");
+			$("#mobile-add-whoscall-blocking").css("top","-"+ headerheightInt +"px");
+		// 自動高度調整
+		$(".overlapfix").css("height","auto");
+		$('<style>.fixtop{ top: ' + headerheightInt + 'px};</style>').appendTo('body');
+		}
+	});
+	
+	// 改變視窗
+	$(window).resize(function(){
+			var headerheight = $("#header").position().top+ $("#header").outerHeight( true );
+			var headerheightInt = parseInt(headerheight);
+			// console.log("header-bottom:"+headerheightInt);
+              if($(window).width() < 640) {
+              	$(window).scroll(function(){
+              		var scrollH = $(this).scrollTop();
+					// console.log("scrollH:"+scrollH);
+					
+				    if (scrollH >  whoscallnumberareaInt && scrollH < whoscallnumberareaHeightInt) {
+				       $('#whoscallnumberbanner').addClass('fixtop');
+
+				       // $('.fixtop').css("top",headerheightInt);
+				       
+				    } else{
+				       $('#whoscallnumberbanner').removeClass('fixtop');
+				    }
+				   
+				    if (scrollH >  whoscallblockingareaInt && scrollH < whoscallblockingareaHeightInt){
+				       $('#whoscallblockingbanner').addClass('fixtop');
+				       // $('.fixtop').css("top",headerheightInt);
+				       
+				    } else {
+				       $('#whoscallblockingbanner').removeClass('fixtop');
+				    }
+              	});
+                  
+              }else{
+              	// console.log("whoscall area:"+ whoscallnumberareaInt);
+				$(window).scroll(function(){
+					
+					var scrollH = $(this).scrollTop();
+					// console.log("scrollH:"+scrollH);
+				    if (scrollH >  whoscallnumberareaInt && scrollH < whoscallnumberareaHeightInt) {
+				       $('#whoscallnumberbanner').addClass('fixtop');
+				       // $('.fixtop').css("top",headerheightInt);
+				       
+				    } else{
+				       $('#whoscallnumberbanner').removeClass('fixtop');
+				    }
+				   
+				    if (scrollH >  whoscallblockingareaInt && scrollH < whoscallblockingareaHeightInt){
+				       $('#whoscallblockingbanner').addClass('fixtop');
+				       // $('.fixtop').css("top",headerheightInt);
+				       
+				    } else {
+				       $('#whoscallblockingbanner').removeClass('fixtop');
+				    }
+				    // if($(window).width() < 640) {
+				    // 	var headerheight = $("#header").position().top+ $("#header").outerHeight( true );
+					// 	var headerheightInt = parseInt(headerheight);
+					// 	console.log("header-bottom:"+headerheightInt);
+					// 	$("#mobile-add-whoscall-number").css("top","-"+ headerheightInt +"px");
+					// 	$("#mobile-add-whoscall-blocking").css("top","-"+ headerheightInt +"px");
+				    // 	// 自動高度調整
+					// 	$(".overlapfix").css("height","auto");
+					// 	$('<style>.fixtop{ top: ' + headerheightInt + 'px};</style>').appendTo('body');
+				    // }
+				});
+              }
+     });
+	// 滑到定點
+		$("a[href^='#']").click(function(e) {
+					e.preventDefault();
+					
+					var position = $($(this).attr("href")).offset().top-headerheightInt;
+
+					$("body, html").animate({
+						scrollTop: position
+					}, 800 /* speed */ );
+				});
+
+	
+});
+
+// // tab互換
+	function openPlan(pricePlan) {
+	  var i;
+	  var x = document.getElementsByClassName("plan");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none"; 
+	  }
+	  document.getElementById(pricePlan).style.display = "block"; 
+	}
+	$("#scenario-1").click(function(){
+	  $(this).addClass("scenario-button-active");
+	  if ( $("#scenario-2").hasClass("scenario-button-active") ) {   $("#scenario-2").removeClass('scenario-button-active'); }
+
+	});
+	$("#scenario-2").click(function(){
+	  $(this).addClass("scenario-button-active");
+	  if ( $("#scenario-1").hasClass("scenario-button-active") ) {   $("#scenario-1").removeClass('scenario-button-active'); }
+	  $("#scenario-1").removeClass("scenario-button-active");
+
+	});
+</script>

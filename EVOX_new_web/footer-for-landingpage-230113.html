@@ -1,0 +1,138 @@
+<style>
+	/*for zendesk*/
+	.footer a, .footer{
+		background: #243237!important;
+	    display: table;
+	    width: 100%;
+	}
+
+
+	/*修改原來的css*/
+	.back-to-top{
+		display: none!important;
+	}
+	#preFooter{
+		display: none!important;
+	}
+	div.col.sqs-col-12.span-12{
+		padding-top: 0px;
+    	padding-bottom: 0px;
+	}
+
+
+</style>
+<style>
+  .company_inline{
+    display: flex;
+    /*float:right;*/
+    /*text-align: end;*/
+    position: absolute;
+    right: 0;
+  }
+  .company_inline >a{
+    margin:0;
+    padding:0 2px;
+    display:block;
+    margin-left:20px;
+    float: left;
+    font-weight:300;
+    font-size:12px;
+    line-height:3em;
+  }
+  .footer-end{
+  	width: 100%;
+  	float: left;
+  	margin: 10px 0;
+  	display: flex;
+    align-items: center;
+  }
+  .social-icon{
+		/*margin-top:15px;*/
+		width: 50%;
+    	float: left;
+    	text-align: left;
+   }
+  .social-icon>a>img{
+  	height: 35px;
+  }
+  .social-icon>a:hover{
+  	opacity: .8;
+  }
+  footer#footer a{
+  	margin: 0 5px;
+  }
+  @media screen and (max-width: 670px) {
+  	.company_inline{
+  		/*width: 66%;*/
+    	text-align: center;
+  	}
+  	.social-icon{
+			width:35%;
+   	}
+   .company_inline >a{
+   	margin-left: 0px;
+   	margin-right: 20px;
+   }
+  }
+  @media screen and (max-width: 504px) {
+  	footer#footer a{
+  		height: 25px;
+  	}
+  	.footer-end{
+   		flex-flow: column;
+   	}
+  	.social-icon{
+  		display: flex;
+  		align-items: center;
+			width:28%;
+   	}
+  	.social-icon>a>img{
+  		height: 25px;
+  	}
+  	/*.company_inline{
+  		width: 69%;
+  	}*/
+  	.company_inline{
+   		width: 100%;
+   		justify-content: center;
+   		position: relative;
+   		flex-flow: row wrap;
+   	}
+  	.company_inline >a{
+  		    margin-right: 5px;
+  		    line-height: 2em;
+  	}
+  }
+   @media screen and (max-width: 408px) {
+   	
+   
+   	.social-icon{
+   		width: 100%;
+   		justify-content: center;
+   		    padding: 5px 0;
+   	}
+
+   }
+</style>
+<div class="footer-end">
+	<div class="social-icon">
+		<a href="https://www.facebook.com/evoxglobal/" target="_blank">
+		 	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/fb-icon.png" alt="facebook"  style="display:inline-block;">
+		</a>
+		<!-- <a href="https://m.me/evoxglobal">
+			<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/message-icon.png" alt="message"  style="display:inline-block;margin-left:5px;margin-right:5px;">
+		</a> -->
+		<a href="https://www.instagram.com/evoxglobal/?hl=en" target="_blank">
+			<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/instagram-icon.png" alt="instagram"  style="display:inline-block;">
+		</a>
+		<a href="https://www.youtube.com/channel/UCxZHSZ03BKSUsgJuv7_EiNg" target="_blank">
+			<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/youtube-icon.png" alt="youtube"  style="display:inline-block;">
+		</a>
+	</div>
+	<div class="company_inline"> 
+	<a href="/tw/privacy-and-terms" target="_blank" >隱私政策</a>
+	<a href="/tw/contact" target="_blank">聯絡我們</a>
+	<a>©2023 E2 Nova 易得雲端股份有限公司  版權所有</a>
+	</div>
+</div>
+

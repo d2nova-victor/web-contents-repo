@@ -1,0 +1,29 @@
+<!-- 設定首頁的 Canonical 頁面，避免重複頁面 -->
+<script type='text/javascript'>
+  $(document).ready(function(){
+  // 定義網址
+  var surl = window.location.href;
+  var url = location.href; 
+  var paraString3 = surl.substring(surl.indexOf("/tw"),surl.length).split("&"); 
+  var paraString = url.substring(url.indexOf("#"),url.length).split("&"); 
+  console.log(paraString);
+  console.log(paraString3);
+
+
+  var link = !!document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement('link');
+  link.setAttribute('rel', 'canonical');
+  // link.setAttribute('href', location.protocol + '//' + location.host + location.pathname);
+  link.setAttribute('href', 'https://www.evoxglobal.com');
+
+
+  //追加定義         
+    if(paraString3 == "/tw/home"){
+      document.head.appendChild(link);
+
+    }else if(paraString3 != "/tw/home"){
+      $('head').append("<link rel='alternate' href='https://www.evoxglobal.com/tw/home'/>");
+    }
+    
+  });
+ 
+</script>

@@ -1,0 +1,345 @@
+        <style type="text/css">
+          /*flickity*/
+          .carousel-main-2{
+            padding: 0 40px;
+          }
+         /* .carousel-main-2 >div>div>.carousel-cell{
+            width: 100%;
+            padding: 0 20px;
+          }*/
+
+        .features-3-background{
+          width: 100%;
+          /*background: #E8F5E9;*/
+          /* height: auto; */
+          display: table;
+          margin: 40px 0;
+          }
+        .features-4-section{
+          width: 1086px;
+          max-width: 1240px;
+          margin: 40px auto 80px auto;
+          display: table;
+        }
+        .features-4-section >div> .four-block{ 
+          width: 31.3%;
+          float: left;
+          /* min-height: 350px; */
+          /*padding: 5px 2% 5px 2%;*/
+          margin:1%;
+          /*background: antiquewhite;*/
+          border-radius: 4px;
+          border: 1px solid #CCCCCC;
+          min-height: 300px;
+        }
+        .features-4-section >div> .four-block:hover{ 
+          background: #FAFAFA;
+        }
+        /*.four-block > svg{
+        width:90px;
+        float:left;
+        }*/
+        .content-tittle{
+        font-size:21px;
+        /*font-weight: bold;*/
+        /*color:#90c25c;*/
+        }
+        /*.four-block>p{
+        width:100%;
+        display.four-block;
+        }*/
+        .image-panel{
+          /*width:19%;*/
+          /*height: 180px;*/
+          height: calc(50px + 11vw);
+          position:relative;
+          overflow: hidden;
+          /* border: 1px solid #afafafee; */
+          /*background-color: #fafafa;*/
+          /*-moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+          -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+          box-shadow: 4px 4px 12px -2px rgba(80, 80, 80, 0.5);*/
+          border-radius: 4px 4px 0 0;
+        }
+        .image-panel>img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: block;
+          min-width: 110%;
+          min-height: 100%;
+          transform:translate(-50%,-50%);
+          border-radius: 4px 4px 0 0;
+        }
+        .four-block>.content-box{
+          /*min-height: 190px;*/
+          /* border: 1px solid #afafafee; */
+          padding: 30px 10px 30px 10px;
+          /*border-radius: 3px;*/
+          /*-moz-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+          -webkit-box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+          box-shadow: 4px 4px 12px -2px rgba(88, 88, 88, 0.5);*/
+        }
+        .four-block>.content-box h4{
+          font-weight: 500;
+          margin: 0px;
+        }
+        .four-block>.content-box p{
+          font-size: 14px;
+          text-align: center;
+          margin: 10px 0px;
+        }
+         .four-block>.content-box ul{
+          font-size: 16px;
+          text-align: center;
+          list-style: none;
+          padding: 0px;
+        }
+        .content-tittle{
+          text-align: center;
+        }
+        .green-text{
+          color:#66C547;
+/*          font-size: 14px;*/
+          text-align: center;
+        }
+        .four-block:hover .content-box{
+          /*color: #93c45d;*/
+          /*color: white;*/
+          cursor: pointer;
+        }
+        .four-block:hover .content-tittle{
+          /*color: white;*/
+          cursor: pointer;
+
+        }
+        .four-block:hover .green-text{
+          color: #00A82D;
+          /*font-weight: bold;*/
+          text-decoration: underline;
+        }
+        .four-block:hover .purple-text-2{
+          color: #5856d6;
+          text-decoration: underline;
+        }
+        .four-block:hover path#circle, .four-block:hover polygon#circle  {
+          cursor: pointer;
+          fill:#93c45d;
+          }
+        .four-block:hover path#hover, .four-block:hover g#hover, .four-block:hover text, .four-block:hover rect#hover{
+          cursor: pointer;
+          fill:#ffffff;
+          stroke:#ffffff;
+         }
+         .features-top{
+          width: 100%;
+          height: 105px;
+          text-align: center;
+         }
+         .features-top>h3{
+          margin: 6px;
+          font-size: 35px;
+          font-weight: 400;
+         }
+         .features-top>p{
+          margin: 6px;
+          font-size: 18px;
+         }
+
+         /*for last no hover*/
+         .no-hover:hover .content-tittle{
+          cursor: auto;
+        }
+        .no-hover:hover .content-box{
+          cursor: auto;
+        }
+
+         @media screen and (max-width: 1240px) {
+          .features-4-section{
+            width: 100%;
+          }
+
+        }
+        @media screen and (max-width: 911px) {
+          .features-4-section >div>.four-block{
+                /*width: 48%;*/
+                min-height: 360px;
+                margin:5px;
+          }
+          .content-box{
+                min-height: 200px;
+          }
+          .content-tittle{
+            font-size:20px;
+          }
+        }
+        @media screen and (max-width: 879px) {
+          .features-4-section >div>.four-block{
+                width: 47.6%;
+          }
+          .image-panel{
+                height: calc(100px + 12vw);
+          }
+        }
+         @media screen and (max-width: 735px) {
+          .features-4-section{
+                margin: 40px auto 40px auto;
+          }
+          .features-4-section >div>.four-block{
+                /*width: 46%;*/
+                min-height: 380px;
+                margin: 20px 1%;
+          }
+          .content-box{
+                /*min-height: 220px;*/
+          }
+        }
+        @media screen and (max-width: 697px) {
+          .image-panel{
+                height: calc(100px + 20vw);
+          }
+        }
+        @media screen and (max-width: 607px) {
+          .features-4-section >div>.four-block{
+                /*width: 48%;*/
+                min-height: 310px;
+          }
+          .content-box{
+                min-height: 120px;
+          }
+          .icon{
+            /*width: 80px;*/
+            /*margin: 0px 0px 0px 20px;*/
+          }
+          .content-box p{
+                /*width: 250px;*/
+                /*margin: 0 auto;*/
+          }
+          .image-panel>img{
+          min-width: 120%;
+          min-height: 100%;
+          }
+
+        }
+        @media screen and (max-width: 530px) {
+          .features-4-section >div>.four-block{
+            width: 98%;
+            min-height: 310px;
+            margin: 10px 1%;
+          }
+        }
+        @media screen and (max-width: 380px) {
+          
+          .image-panel{
+            height: calc(100px + 33vw);
+          }
+        }
+
+
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              var imgHeight = $('.image-panel').height()*1.65; 
+               $('.image-panel>img').css('min-width', imgHeight+'px');
+            });
+            $( window ).on("resize", function() {
+              var imgHeight = $('.image-panel').height()*1.65; 
+               $('.image-panel>img').css('min-width', imgHeight+'px');
+            });
+        </script>
+        <div class="features-4-section">
+        <div class="features-top">
+          <h3>為不同需求提供解決方案</h3>
+          <!-- <p>擁有專業客服系統，不再是大企業的專利</p> -->
+        </div>
+       
+        <div class="carousel2 carousel-main-2" >
+          <div class="four-block " onclick="location.href='/tw/solutions/startup';">
+              <!--< div class="four-block" > -->
+                <div class="image-panel">
+                  <img class="" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/start-up-image.png" alt="Start up">
+                </div>
+              <div class="content-box">
+            <h4 class="content-tittle">
+              新創公司
+            </h4>
+            <p>節省您的創業成本</p>
+            <p class="green-text ">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+            </div>
+
+            <div class="four-block " onclick="location.href='/tw/solutions/local-presence';">
+              <!-- <div class="four-block"> -->
+                <div class="image-panel">
+                  <img class="" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/presence-image.png" alt="expat businesses">
+                </div>
+               <div class="content-box">
+            <h4 class="content-tittle">
+                 來台外商
+            </h4>
+            <p>迅速拓展您的跨國分公司</p>
+            <p class="green-text ">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+            </div>
+
+            <div class="four-block " onclick="location.href='/tw/solutions/multiple-locations';">
+              <!-- <div class="four-block"> -->
+                <div class="image-panel">
+                  <img class="" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/multi-location-image.png" alt="multi-location">
+                </div>
+              <div class="content-box">
+            <h4 class="content-tittle">
+              多據點服務
+            </h4>
+            <p>加快商務通話效率</p>
+            <p class="green-text">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+            </div>
+
+            <div class="four-block" onclick="location.href='/tw/customer-story/mobility';">
+              <!-- <div class="four-block" > -->
+                <div class="image-panel">
+                  <img class=""   src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/mobility-image-2.png" alt="mobile workforce">
+                </div>
+              <div class="content-box">
+            <h4 class="content-tittle">
+              行動商務
+            </h4>
+            <p>隨時隨地溝通無阻礙</p>
+            <p class="green-text">了解更多 <i class="fas fa-chevron-right"></i></p>
+          </div>
+            </div>
+            <div class="four-block" onclick="location.href='/tw/solutions/teleworking';">
+              <!-- <div class="four-block" > -->
+                <div class="image-panel">
+                  <img class="" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/teleworking-image-2.jpg" alt="telework">
+                </div>
+              <div class="content-box">
+                <h4 class="content-tittle">
+                  遠距工作
+                </h4>
+                <p>更有彈性的選擇工作地點</p>
+                <p class="green-text">了解更多<i class="fas fa-chevron-right"></i></p>
+              </div>
+            </div>
+            <div class="four-block" onclick="location.href='/tw/evox-connect/call-center';">
+                <div class="image-panel">
+                  <img class="" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/call-center-image.png" alt="contact center">
+                </div>
+              <div class="content-box">
+            <h4 class="content-tittle">
+              客服中心
+            </h4>
+            <p>升級您的客服體驗</p>
+            <p class="purple-text-2">
+              了解更多 <i class="fas fa-chevron-right"></i></p>
+              <!-- <i class="fas fa-chevron-right"></i> -->
+          </div>
+
+            </div>
+      
+      </div>
+     
+      </div>
+
+

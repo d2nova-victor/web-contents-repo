@@ -1,0 +1,186 @@
+<style type="text/css">
+	.zlayout-section{
+		padding: 40px 0;
+	}
+
+	.left-zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.left-zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.left-zlayout-img>img{
+			width: 100%;
+		}
+	.left-zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 452px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.single-text-content{
+		display: flex;
+		flex-flow: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	margin:10px auto;
+    	border-bottom: 1px solid #3333;
+	}
+	.single-text-content:nth-child(2){
+/*		margin: 30px auto;*/
+	}
+	.single-text-content>h3{
+		font-size: 21px;
+		line-height: 31px;
+		margin:0 0 5px 0;
+	}
+	.single-text-content>p{
+		font-size: 16px;
+		line-height: 30px;
+		margin: 5px 0;
+		text-align: justify;
+	}
+
+	/*  中間文字 共用style*/
+	  .obi-of-section{
+	    display: flex;
+	    align-items: center;
+	    flex-flow: column;
+	    padding: 20px 0;
+	  }
+	  .obi-of-section>h2{
+	    font-size: 32px;
+	    text-align: center;
+	    margin: 5px auto;
+	  }
+	  .obi-of-section>p{
+	    font-size: 18px;
+	    text-align: center;
+		/*    set light gray text to css*/
+	    color: #A5B6BF;
+	    margin: 5px auto;
+	  }
+	  .obi-of-section>.tittle-discription{
+	    color: #7F7F7F;
+	  }
+	  /*  中間文字 共用style*/
+	@media screen and (max-width: 1113px){
+		.left-zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.left-zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 100%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.left-zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+		.larg-layout{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: flex-start;
+		    flex-flow: row;
+		}
+		.single-text-content{
+			width: 33.3%;
+	    	align-items: flex-start;
+		}
+		.single-text-content:nth-child(2){
+			margin: 0px auto;
+			padding: 0 3%;
+		}
+		.single-text-content>h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.single-text-content>p{
+			text-align: left;
+		}
+
+		/*  中間文字 共用style*/
+	    .obi-of-section>h2{
+	      font-size: 30px;
+	    }
+	    .obi-of-section>h2, .obi-of-section>h2>span{
+	      font-weight: 500;
+	    }
+	    /*  中間文字 共用style*/
+	}
+	@media screen and (max-width: 680px){
+		.larg-layout{
+			flex-flow: column;
+    		align-items: center;
+		}
+		.single-text-content{
+			width: 90%;
+		}
+
+			/*  中間文字 共用style*/
+	    .obi-of-section{
+	      display: flex;
+	      align-items: center;
+	      flex-flow: column;
+	      padding: 40px 0 30px 0;
+	    }
+	    .obi-of-section>h2{
+	      font-size: 26px;
+	    }
+    	/*  中間文字 共用style*/
+	}
+
+</style>
+
+<div class="zlayout-section">
+	<div class="obi-of-section">
+	  <h2>EVOX 如何幫助企業實行遠端工作？</h2>
+	</div>
+
+	<div class="left-zlayout-content digit2">
+		<div class="left-zlayout-img">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/telework/benefit-img/Group%202@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/telework/benefit-img/Group%202@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/telework/benefit-img/Group%202@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/telework/benefit-img/Group%202_compress.webp 3x" alt="混合辦公行動力">
+		</div>
+		<div class="left-zlayout-text larg-layout">
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>在家接聽公司代表號的電話</h3>
+				<p>當有人打到公司代表號時，使用 EVOX 行動分機可讓員工在家中以手機或電腦上的 App 來接聽來電。因此不須強迫客戶改變習慣的聯絡方式，無論是既有客戶想尋求協助，或是潛在客戶對公司產品有興趣，照常打電話到公司代表號即可。 </p>
+				<!-- <a class="green-text-btn" href="/tw/solutions/teleworking">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>遠端管理電話總機</h3>
+				<p>EVOX 架構於雲端，所以公司內不須擺放任何總機硬體設備，而線上管理中心可供管理人員隨時調整公司問候語、分機、外撥權限等設定，也能查詢通話紀錄，顛覆以往傳統總機的模式。</p>
+				<!-- <a class="green-text-btn" href="/tw/evox/multiple-devices">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>客服團隊遠端工作</h3>
+				<p>EVOX Connect 雲端客服電話系統支援遠距工作，只要有電腦和網路，客服專員無論在何處都能服務來電顧客，而客服主管可以隨時隨地管理與查看客服中心和每一位專員的狀況。</p>
+				<!-- <a class="green-text-btn" href="/tw/evox/multiple-devices/mobile-extension">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

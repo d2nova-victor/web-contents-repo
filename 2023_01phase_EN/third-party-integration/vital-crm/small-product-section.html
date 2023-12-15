@@ -1,0 +1,91 @@
+<style type="text/css">
+	.small-product-section{
+		padding: 40px 0;
+	}
+	.small-product-content{
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		flex-flow: row;
+		justify-content: space-around;
+		align-items: stretch;
+	}
+	.product-btn-content{
+		width: 50%;
+		border-radius: 20px;
+		background: #ffff;
+		padding: 40px 20px 20px;
+		transition: box-shadow .3s, opacity .3s,transform .3s;
+    	transition-timing-function: ease-in;
+	}
+	.product-btn-content:nth-child(1){
+		margin-right: 21px;
+	}
+	.product-btn-content:nth-child(2){
+		margin-left: 21px;
+	}
+
+	.small-product-tittle{
+		font-size: 25px;
+		line-height: 45px;
+		margin: 5px 0;
+		transition: color .3s;
+    	transition-timing-function: ease-in;
+	}
+	.product-btn-content>p{
+		font-size: 14px;
+		color: #5F6871;
+		line-height: 30px;
+		margin: 5px 0px;
+	}
+	.product-btn-content:hover{
+		box-shadow: 1px 1px 7px #00000052;
+    	transform: scale(1.03);
+	}
+	.product-btn-content:hover .small-product-tittle{
+		color: #58B805;
+	}
+	@media screen and (max-width: 840px){
+		.small-product-content{
+			flex-flow: column;
+		}
+		.product-btn-content{
+			width: 90%;
+		}
+		.product-btn-content:nth-child(1),.product-btn-content:nth-child(2)
+		{
+			margin: 10px auto;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.product-btn-content{
+			width: 80%;
+			box-shadow: 1px 1px 4px #00000052;
+		}
+
+	}
+</style>
+
+
+<div class="small-product-section gray-bg">
+	<div class="obi-of-section">
+	  <h2>Our products </h2>
+	</div>
+
+	<div class="small-product-content digit2">
+		<!-- 單個按鈕 -->
+		<div class="product-btn-content">
+			<h3 class="small-product-tittle">EVOX Cloud PBX</h3>
+			<p>The perfect combination of cloud PBX and mobile extensions allows corporate employees to enjoy the convenience and flexibility of mobile business with excellent call quality. </p>
+			<a class="green-text-btn" href="/en/evox/cloud-phone-system">Learn more <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+		<!-- 單個按鈕 -->
+		<div class="product-btn-content">
+			<h3 class="small-product-tittle">EVOX Connect Cloud Contact Center </h3>
+			<p>EVOX Connect integrates EVOX Cloud PBX with professional customer service functions. Easily set up a customer contact system and integrate other cloud services to understand customer needs and optimize service experience.</p>
+			<a class="green-text-btn" href="/en/evox-connect/call-center">Learn more <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+</div>

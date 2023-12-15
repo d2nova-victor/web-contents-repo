@@ -1,0 +1,97 @@
+<style type="text/css">
+	.content-section{
+		background: #FAFAFA;
+		width: 100%;
+		padding:20px 0;
+	}
+	.text-block{
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 20px;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.tittle-block{
+		order:1;
+		/*background: #fafafa;*/
+	}
+	.feature-top-section{
+		order:0;
+	}
+	.tittle-block{
+		width: 100%;
+		padding:0 10px;
+		text-align: center;
+	}
+	.feature-top-section{
+		width: 30%;
+		padding:0 10px;
+	 }
+	.tittle-block>h1{
+		font-size: 45px;
+		margin:0;
+	}
+	.option-tittle{
+		color:#243237;
+		font-size: 14px;
+		margin:0;
+	}
+	.feature-top-section>img{
+		max-height: 200px;
+	}
+	@media screen and (max-width: 840px){
+		.tittle-block>h1{
+			font-size: 36px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.tittle-block>h1{
+			font-size: 34px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.tittle-block>h1{
+			font-size: 32px;
+		}
+	}
+</style>
+<div class="content-section">
+	<div class="text-block">
+		<div class="tittle-block">
+		<span class="option-tittle">EVOX 多裝置</span>
+		<h1>IP 電話機</h1>
+		<p>EVOX 與各大國際品牌的 IP 電話機和會議機相容。若您和我們購買 IP 電話機，我們將免費設定完成後寄送給您。<br/>若您自行購買 IP 電話機（請先參考下方<a href="#ip-phone-list" class="green-text">相容列表</a>），則需寄送給我們並支付設定費用。</p>
+		</div>
+		<!-- <div class="feature-top-section">
+		<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/user-management/user-manager-top-img.png" alt="使用者管理">
+		</div> -->
+	</div>
+</div>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+

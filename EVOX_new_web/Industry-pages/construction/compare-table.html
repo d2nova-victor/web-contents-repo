@@ -1,0 +1,443 @@
+<style type="text/css">
+.cost-table-section{
+	background: #FAFAFA;
+    padding: 20px 0 40px 0;
+}
+
+ /*  中間文字 共用style*/
+  .obi-of-section{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0;
+  }
+  .obi-of-section>h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .obi-of-section>p{
+    font-size: 18px;
+    text-align: center;
+	/*    set light gray text to css*/
+    color: #A5B6BF;
+    margin: 5px auto;
+  }
+  .obi-of-section>.tittle-discription{
+    color: #7F7F7F;
+  }
+  .table-benefit-tittle>p{
+  	color: #5F6871;
+  	max-width: 750px;
+  }
+/*  表格*/
+.compare-content-block{
+	max-width: 1060px;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	margin: 0 auto;
+	border: 0.5px solid #ccc;
+	border-radius: 4px;
+    overflow: hidden;
+}
+.table-cloum-single{
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	align-items: stretch;
+	justify-content: center;
+	border-radius: 4px;
+}
+.cloum-body{
+	border: 1px solid #CCCCCC;
+	display: flex;
+    align-items: center;
+    min-height: 72px;
+    justify-content: center;
+    flex-flow: column;
+}
+.cloum-body>h3{
+	font-size: 20px;
+	margin: 0;
+	color: #5F6871;
+/*	font-weight: 600;*/
+	font-family: 'EVOX-San SF-bold'!important;
+}
+.cloum-body>p{
+	margin: 0;
+}
+.cloum-body>div:nth-child(1){
+	border-bottom: 2px solid #ccc;
+}
+.two-cloum-box{
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 83px;
+    text-align: center;
+}
+.two-cloum-box>p{
+	margin: 0;
+	padding: 0 10px;
+}
+.status-cloum{
+	background: #EDEFF1;
+	width: 12%;
+}
+.question-cloum{
+	background: #fff;
+	width: 29.3%;
+}
+.PBX-issue-cloum{
+	background: #FAFAFA;
+	width: 29.3%;
+}
+.evox-cloum{
+	background: #E8F5E9;
+	width: 29.3%;
+}
+.mobile-show{
+	display: none;
+}
+
+/*提醒*/
+.hint{
+   height: 24px;
+ }
+.tooltips{
+   height: 24px;
+   position: relative;
+   display: flex;
+}
+.tooltips .tooltiptext{
+   visibility: hidden;
+   width: 209px;
+   background-color: #5F6871;
+   color: #fff;
+   text-align: justify;
+   border-radius: 4px;
+   padding: 5px 20px;
+   position: absolute;
+   z-index: 1;
+   bottom: 125%;
+   left: 50%;
+   margin-left: -126px;
+   opacity: 0;
+   transition: opacity 0.3s;
+   font-size: 13px;
+   line-height: 26px;
+ }
+ .tooltips .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .question-mark-active{
+    display: none;
+   }
+  .tooltips:hover .question-mark{
+    display: none;
+   }
+   .tooltips:hover .question-mark-active{
+    display: block;
+   }
+  .tooltips:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+  }
+
+ @media screen and (max-width: 840px){
+		/*  中間文字 共用style*/
+	    .obi-of-section>h2{
+	      font-size: 30px;
+	    }
+	    .obi-of-section>h2, .obi-of-section>h2>span{
+	      font-weight: 500;
+	    }
+	    /*  中間文字 共用style*/
+}
+@media screen and (max-width: 640px){
+		/*  中間文字 共用style*/
+	    .obi-of-section{
+	      display: flex;
+	      align-items: center;
+	      flex-flow: column;
+	      padding: 40px 0 30px 0;
+	    }
+	    .obi-of-section>h2{
+	      font-size: 26px;
+	    }
+	    .table-gray-text{
+	    	color: #828282;
+	    	font-size: 13px;
+		    display: block;
+		    width: 90%;
+	    }
+/*	 手機版*/
+		.cloum-body{
+			text-align: center;
+		}
+		.mobile-show{
+			display: flex;
+			align-items: stretch;
+			justify-content: center;
+		}
+		 .PBX-issue-cloum{
+			background: #FAFAFA;
+			width: 50%;
+/*			min-height: 32px;*/
+		}
+		.evox-cloum{
+			background: #E8F5E9;
+			width: 50%;
+/*			min-height: 32px;*/
+		}
+		.status-cloum {
+			width: 100%;
+			min-height: 32px;
+		}
+		.question-cloum{
+			background: #CCC;
+			width: 100%;
+			min-height: 52px;
+		}
+	    .mobile-hide{
+			display: none;
+		}
+}
+</style>
+
+<div class="cost-table-section">
+	<div class="obi-of-section table-benefit-tittle">
+	  <h2>靈活且節省成本</h2>
+	  <p>以往在營造產業中，每當開新專案，或是專案階段性完工，要轉移到另一個專案前，總要處理市話號碼和總機設備等麻煩問題，採用訂閱制的純雲端 EVOX 服務，便能迎刃而解。 </p>
+	</div>
+
+	<!-- 內容 -->
+	<div class="compare-content-block">
+		
+		<!-- 標題-->
+		<div class="table-cloum-single mobile-hide">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum"><h3>專案階段</h3></div>
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum"><h3>面臨問題</h3></div>
+			<!-- 傳傯 -->
+			<div class="cloum-body PBX-issue-cloum"><h3>傳統總機設備</h3></div>
+			<!-- EVOX -->
+			<div class="cloum-body evox-cloum"><h3>EVOX</h3></div>
+		</div>
+		<!-- 開始前 -->
+		<div class="table-cloum-single mobile-hide">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum"><p>開始前</p></div>
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum"><p>初期採購與建置成本</p></div>
+			<!-- 傳傯 -->
+			<div class="cloum-body PBX-issue-cloum"><p>高成本</p></div>
+			<!-- EVOX -->
+			<div class="cloum-body evox-cloum"><p>低成本</p></div>
+		</div>
+
+		
+		<!-- 執行中 -->
+		<div class="table-cloum-single">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum mobile-hide"><p>執行中</p></div>
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum mobile-hide">
+				<div class="two-cloum-box">
+					<p>工地風沙大所衍生的問題</p>
+				</div>
+				<div class="two-cloum-box">
+					<p>二次建置費用</p>
+					<!-- 提示 -->
+					<div class="hint">
+						<div class="tooltips">
+               <img class="question-mark" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Industry/construction/icon/round-info-24px.png" alt="備註">
+               <img class="question-mark-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Industry/construction/icon/round-info-24px_green.png" alt="備註">
+               <span class="tooltiptext">專案階段性完工後，需將臨時性工務所拆除並搬遷至完工建築物辦公室內，因此產生了二次架設電話的系統費用 </span>
+             </div>
+           </div>
+				</div>
+			</div>
+
+			<!-- 傳傯 -->
+			<div class="cloum-body PBX-issue-cloum mobile-hide">
+				<div class="two-cloum-box">
+					<p>需時常檢查設備狀況</p>
+				</div>
+				<div class="two-cloum-box">
+					<p>有</p>
+				</div>
+			</div>
+			<!-- EVOX -->
+			<div class="cloum-body evox-cloum mobile-hide">
+				<div class="two-cloum-box">
+					<p>無</p>
+				</div>
+				<div class="two-cloum-box">
+					<p>無</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 結束後 -->
+		<div class="table-cloum-single">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum mobile-hide"><p>結束後</p></div>
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum mobile-hide">
+				<div class="two-cloum-box">
+					<p>總機設備的撤除與留存問題 </p>
+				</div>
+				<div class="two-cloum-box">
+					<p>電話號碼的後續處理 </p>
+				</div>
+			</div>
+			<!-- 傳傯 -->
+			<div class="cloum-body PBX-issue-cloum mobile-hide">
+				<div class="two-cloum-box">
+					<p>需派人撤除，並評估是否保留或出售 </p>
+				</div>
+				<div class="two-cloum-box">
+					<p>設備撤除後，代表將無法繼續保留原工務所聯絡方式以利外界後續聯繫</p>
+				</div>
+			</div>
+			<!-- EVOX -->
+			<div class="cloum-body evox-cloum mobile-hide">
+				<div class="two-cloum-box">
+					<p>只要取消訂閱即可，無須擔心設備撤除和是否留存的問題 </p>
+				</div>
+				<div class="two-cloum-box">
+					<p>在訂閱期間內，號碼可照常使用，不會有聯絡中斷的問題</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 開始前手機版 -->
+		<div class="table-cloum-single mobile-show">
+			<!-- 傳傯 -->
+			<div class="cloum-body PBX-issue-cloum">
+				<h3>傳統總機</h3>
+			</div>
+			<!-- EVOX -->
+			<div class="cloum-body evox-cloum">
+				<h3>EVOX</h3>
+			</div>
+		</div>
+
+		<div class="table-cloum-single mobile-show">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum "><p>專案開始前</p></div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum">
+				<p><strong>比較點：初期採購與建置成本</strong></p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<!-- 傳傯 -->
+			<div class="cloum-body PBX-issue-cloum">
+				<p>高成本</p>
+			</div>
+			<!-- EVOX -->
+			<div class="cloum-body evox-cloum">
+				<p>低成本</p>
+			</div>
+		</div>
+
+		<!-- 執行中手機版 -->
+		<div class="table-cloum-single mobile-show">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum">
+				<p>專案執行中</p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum">
+				<p><strong>比較點：工地風沙大所衍生的問題</strong></p>
+			</div>
+		</div>
+		<!-- 設備 -->
+		<!-- <div class="table-cloum-single mobile-show">
+			<div class="cloum-body PBX-issue-cloum"><p>傳統總機設備</p></div>
+			<div class="cloum-body evox-cloum"><p>EVOX</p></div>
+		</div> -->
+		<div class="table-cloum-single mobile-show">
+			<div class="cloum-body PBX-issue-cloum">
+				<p>需時常檢查設備狀況</p>
+			</div>
+			<div class="cloum-body evox-cloum">
+				<p>無</p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum">
+				<p><strong>比較點：二次建置費用</strong></p>
+				<p class="table-gray-text">（專案階段性完工後，需將臨時性工務所拆除並搬遷至完工建築物辦公室內，因此產生了二次架設電話的系統費用） </p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<div class="cloum-body PBX-issue-cloum">
+				<p>有</p>
+			</div>
+			<div class="cloum-body evox-cloum">
+				<p>無</p>
+			</div>
+		</div>
+
+		<!-- 結束後手機版 -->
+		<div class="table-cloum-single mobile-show">
+			<!-- 階段 -->
+			<div class="cloum-body status-cloum">
+				<p>專案結束後</p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum">
+				<p><strong>比較點：總機設備的撤除與留存問題</strong></p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<div class="cloum-body PBX-issue-cloum">
+				<p>需派人到場撤除，並評估是否保留或出售總機設備</p>
+			</div>
+			<div class="cloum-body evox-cloum">
+				<p>只要取消訂閱即可，無須擔心設備撤除留存的問題</p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<!-- 問題 -->
+			<div class="cloum-body question-cloum">
+				<p><strong>比較點：電話號碼的後續處理</strong></p>
+			</div>
+		</div>
+		<div class="table-cloum-single mobile-show">
+			<div class="cloum-body PBX-issue-cloum">
+				<p>設備撤除後，代表將無法繼續保留原工務所聯絡方式以利外界後續聯繫</p>
+			</div>
+			<div class="cloum-body evox-cloum">
+				<p>訂閱期間內，號碼可照常使用，不會有聯絡中斷的問題</p>
+			</div>
+		</div>
+
+
+	</div>
+	
+</div>

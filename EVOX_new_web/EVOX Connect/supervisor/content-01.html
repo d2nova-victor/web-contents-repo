@@ -1,0 +1,89 @@
+<!-- JS -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	/*Flickty slider*/
+	.flickity-page-dots{
+		display: block!important;
+		bottom: 0;
+	}
+
+	.carousel-cell {
+	  width: 100%; /* full width */
+	  height: 400px;
+/*	  background: #222;*/
+	  /* center images in cells with flexbox */
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+	.carousel.is-fullscreen .carousel-cell {
+	  height: 100%;
+	}
+
+	.carousel-cell img {
+	  display: block;
+	  max-height: 100%;
+	  width: 100%;
+	}
+	
+	/*.carousel-cell>img{
+		width: 100%;
+	}*/
+	@media screen and (max-width: 840px){
+		.carousel-cell {
+			height: 500px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.carousel-cell {
+			height: 300px;
+		}
+	}
+</style>
+<div class="content-section-1 client-direct feature-content-size">
+<!-- <div class="content-section-1"> -->
+	<div class="content-section-1-image-version-b-reverse main-carousel-3 digit2">
+		<!-- <img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EVOX/admin/company-setting-2.png" alt="系統設置"> -->
+		<div class="carousel-cell section-carusel-box">	
+		<img class="" data-flickity-lazyload="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-01.png" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-01.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-01.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/1000px/supervisor-opration-01_1000px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/1000px/supervisor-opration-01_1000px.jpg 3x" alt="主管操作面板">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="" data-flickity-lazyload="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-02.png" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-02.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-02.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/1000px/supervisor-opration-02_1000px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/1000px/supervisor-opration-02_1000px.jpg 3x" alt="完整過濾">
+		</div>
+		<div class="carousel-cell section-carusel-box">	
+		<img class="" data-flickity-lazyload="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-03-1.png" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-03-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/supervisor-opration-03-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/1000px/supervisor-opration-03_1000px-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/supervisor/1000px/supervisor-opration-03_1000px-1.jpg 3x" alt="即時了將客戶資訊">
+		</div>
+		
+	</div>
+	<div class="flex-center-helf50 content-center">
+		<div class="content-section-1-content-reverse tx-01">
+			<h2>專業的即時監控面板</h2>
+			<p>隨時監督所有進行中通話的基本資訊，包含負責專員、通話對象、通話類型（撥入或撥出）、及通話長度等。除了可依照 ACD、群組、專員等不同條件篩選要觀察的通話，還可調閱通話對象的歷史聯絡資訊，以利客服主管判斷是否需進一步監聽或干預。</p>
+			<!-- <a class="green-outline-btn" href="/tw/evox/admin-center/system-setting">查看功能</a> -->
+		</div>
+	</div>
+<!-- </div> -->
+	
+</div>
+<script>
+	$('.main-carousel-3').flickity({
+		autoPlay:3100,
+		prevNextButtons:false,
+		pauseAutoPlayOnHover:true,
+		draggable:true,
+		pageDots:true,
+		lazyLoad:true,
+		fullscreen: true,
+		lazyLoad: 1
+});
+</script>

@@ -1,0 +1,407 @@
+<style>
+/*	改squarespace底層CSS*/
+	[class*=sqs-col]{
+		 float: initial;
+	}
+	div.col.sqs-col-12.span-12{
+		padding:0;
+	}
+	.back-to-top{
+		display: none!important;
+	}
+	/*for zendesk*/
+/*	.footer a, .footer{
+		background: #243237!important;
+	  width: 100%;
+	}*/
+	.footer-group{
+		display: flex;
+		flex-flow: column;
+	}
+	.footer{
+		background: #243237!important;
+/*	  display: table;*/
+	  width: 100%;
+	}
+	.menu-list-group{
+		display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+	}
+	.single_cloume{
+		display: flex;
+    flex-flow: column;
+	}
+	.one-group{
+		display: flex;
+    flex-flow: column;
+	}
+	.footer-tittle-text{
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 16px;
+		margin-bottom: 10px;
+		cursor: default;
+	}
+	.footer_text_link{
+		opacity: 1;
+		transition: opacity .3s;
+	}
+	.footer_text_link:hover{
+		text-decoration: underline;
+		opacity: .5;
+	}
+	.list-links>a{
+		font-size: 14px;
+		line-height: 2.5em;
+	}
+	.add-space{
+		margin-top: 22px;
+	}
+	.social-set{
+		display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 96%;
+    margin: 20px auto;
+	}
+	.icon-link{
+		max-width: 33px;
+		max-height: 33px;
+    padding: 5px;
+	}
+	.text-link{
+		font-size: 12px;
+		padding: 5px 10px;
+	}
+	.social-set a:nth-child(4){
+		margin-left: 15px;
+	}
+	.company_inline{
+		display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ffff;
+    width: 96%;
+    margin: 0 auto;
+	}
+	.company_inline>p{
+		color: #ffffff;
+		font-size: 12px;
+	}
+
+	/*		下拉選單*/
+/*		body { padding: 2em; } a { text-decoration: none; color: #fff; }*/
+		/**** ****/
+		div#nav {
+		 position: relative; 
+		} 
+		div#nav a {
+		 padding: 5px 15px 5px; 
+		}
+		.dropdown-toggle {
+		 padding: 0; 
+/*		 background: #777; */
+		}
+		/**** ****/
+		ul.dropdown {
+		 display: none; 
+		 position: absolute; 
+		 top: 100%;
+		 margin-top: 5px; 
+		 padding: 5px 5px 0 0; 
+		 background: #777; 
+		}
+		ul.dropdown li {
+		 list-style-type: none; 
+		}
+		ul.dropdown li a { 
+			text-decoration: none; 
+			padding: 0em 1em; 
+			display: block; 
+		}
+	/*		下拉選單*/
+	.list-links{
+		display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+	}
+	.dropdown-arrow{
+		display: none;
+	}
+	.dropdown-close{
+			display: none;
+		}
+		.dropdown-open{
+			display: flex!important;
+		}
+
+	@media screen and (max-width: 900px){
+
+		.menu-list-group{
+			flex-flow: row wrap;
+			justify-content: space-between;
+			width: 90%;
+    	margin: 0 auto;
+		}
+		.one-group{
+    	align-items: flex-start;
+    	min-width: 118px;
+	    margin: 12px 6px;
+
+		}
+	}
+	@media screen and (max-width: 750px){
+		.one-group{
+    	min-width: 158px;
+		}
+		.single_cloume{
+			width: 50%;
+		}
+		.footer-tittle-text{
+			cursor: pointer;
+		}
+		.dropdown{
+			align-items: flex-start;
+		}
+	}
+	@media screen and (max-width: 450px){
+		.one-group{
+    	min-width: 148px;
+    	border-bottom: 1px solid #ffffff;
+		}
+		.single_cloume{
+			width: 100%;
+		}
+		.dropdown-toggle{
+			display: flex;
+	    align-items: center;
+	    position: relative;
+	    width: 100%;
+	    justify-content: flex-start;
+		}
+		
+		.dropdown-arrow{
+			display: flex;
+	    align-items: center;
+	    justify-content: center;
+			left: inherit;
+	    position: absolute;
+	    right: 0;
+	    width: 35px;
+    	height: 35px;
+    	transform: rotate(90deg);
+    	transition: transform, .5s;
+		}
+		.active-arrow >.dropdown-arrow{
+			transform: rotate(270deg);
+		}
+		.social-set{
+			justify-content: center;
+		}
+		.social-set a:nth-child(4){
+			margin-left: 0px;
+		}
+	}
+	@media screen and (max-width: 380px){
+		.menu-list-group{
+			width: 100%;
+		}
+		.one-group{
+    	min-width: 143px;
+		}
+	}
+</style>
+<!-- 語言 -->
+<script type="text/javascript">
+$(function() { 
+    $(".language").click(function(e) { 
+     var selectedLanguage = $(this).attr("data-language"); 
+
+     var currentContent = location.pathname.substring(
+      location.pathname.indexOf("/", 1) + 1, 
+      location.pathname.length 
+     ); 
+
+     console.log(selectedLanguage, " >> ", currentContent); 
+
+     // change URL to /en/content.html or /bn/content.html 
+     window.location.href = "/" + selectedLanguage + "/" + currentContent; 
+    }); 
+}); 
+
+</script>
+<div class="footer-group">
+	<div class="colum-left menu-list-group">
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<!-- <div class="footer-tittle-text"><a class="dropdown-toggle" href="#">雲端電話總機</a></div> -->
+				<a class="footer-tittle-text dropdown-toggle" >雲端電話總機 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+					<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/evox/cloud-phone-system">EVOX 易喂</a>
+					<a class="footer_text_link" href="/tw/evox/cloud-pbx">雲端總機</a>
+					<a class="footer_text_link" href="/tw/evox/multiple-devices">多裝置</a>
+					<a class="footer_text_link" href="/tw/evox/admin-center">管理中心</a>
+					<a class="footer_text_link" href="/tw/evox/custom-solutions">客製化服務</a>
+				</div>
+			</div>
+		</div>
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<a class="footer-tittle-text dropdown-toggle" >雲端客服系統 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/evox-connect/call-center">EVOX Connect 易客服</a>
+					<a class="footer_text_link" href="/tw/evox-connect/acd-ivr">客服中心功能</a>
+					<a class="footer_text_link" href="/tw/evox-connect/connect-knowledge">聯絡人資料庫</a>
+					<a class="footer_text_link" href="/tw/evox-connect/agent">Pro PC App</a>
+					<a class="footer_text_link" href="/tw/evox-connect/manager">易客服管理後台</a>
+					<a class="footer_text_link" href="/tw/evox-connect/reports-analytics">即時監控與報表</a>
+					<a class="footer_text_link" href="/tw/evox-connect/supervisor-dashboard">即時監控與介入</a>
+				</div>
+			</div>
+			<!-- <li><a href="/tw/pricing"><div class="tittle-link" style="padding: 5px 0 0 0;font-weight:600;">方案與價格</div></a></li> -->
+		</div>
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<a class="footer-tittle-text dropdown-toggle" >解決方案 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/solutions/enterprise">大型企業</a>
+					<a class="footer_text_link" href="/tw/solutions/small-medium-business">中小型企業</a>
+					<a class="footer_text_link" href="/tw/solutions/startup">新創公司</a>
+					<a class="footer_text_link" href="/tw/solutions/multiple-locations">多據點分公司</a>
+					<a class="footer_text_link" href="/tw/solutions/local-presence">來台外商</a>
+					<a class="footer_text_link" href="/tw/solutions/teleworking">遠距辦公</a>
+					<a class="footer_text_link" href="/tw/solutions/pbx-integration">PBX 雲端化</a>
+				</div>
+			</div>
+		</div>
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<a class="footer-tittle-text dropdown-toggle" >第三方整合 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/solutions/call-blocking-services">Whoscall 封鎖騷擾</a>
+					<a class="footer_text_link" href="/tw/solutions/vital-crm-cloud-integration">Vital CRM 整合</a>
+					<a class="footer_text_link" href="/tw/solutions/upgrade-tecom-to-cloud">升級東訊總機</a>
+					<a class="footer_text_link" href="/tw/evox-for-microsoft-teams">Microsoft Teams 整合</a>
+				</div>
+			</div>
+			<div class="one-group add-space">
+				<a class="footer-tittle-text dropdown-toggle" >合作夥伴計畫 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/developers/eclik">ECLIK 整合</a>
+					<a class="footer_text_link" href="/tw/developers/ec-adk">EC ADK 整合</a>
+				</div>
+			</div>
+		</div>
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<a class="footer-tittle-text dropdown-toggle" >產品價格與方案 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/pricing">EVOX 方案價格</a>
+					<a class="footer_text_link" href="/tw/pricing/evox-connect">EVOX Connect 方案價格</a>
+				</div>
+			</div>
+			<div class="one-group add-space">
+				<a class="footer-tittle-text dropdown-toggle" >產品導入服務 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/onboarding">EVOX 導入方案</a>
+					<a class="footer_text_link" href="/tw/onboarding/evox-connect">EVOX Connect 導入方案</a>
+				</div>
+			</div>
+		</div>
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<a class="footer-tittle-text dropdown-toggle" >相關資源 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="https://evoxknowledgebase.productfruits.help/zh">客戶支援</a>
+					<a class="footer_text_link" href="https://blog.evoxglobal.com/tw">部落格</a>
+					<a class="footer_text_link" href="/tw/customers">客戶案例</a>
+					<a class="footer_text_link" href="/tw/whitepaper">白皮書下載</a>
+					<a class="footer_text_link" href="/tw/download">客戶下載區</a>
+				</div>
+			</div>
+		</div>
+		<!-- 單個區塊 -->
+		<div class="sesstion_box single_cloume">
+			<div class="one-group">
+				<a class="footer-tittle-text dropdown-toggle" >公司資訊 <span class="dropdown-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a>
+				<div class="dropdown list-links">
+					<a class="footer_text_link" href="/tw/our-story">關於我們</a>
+					<a class="footer_text_link" href="https://blog.evoxglobal.com/tw/media-center">新聞中心</a>
+					<a class="footer_text_link" href="https://blog.evoxglobal.com/tw/event">活動</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 底層 sociial 底層-->
+	<div class="footer-end">
+		<div class="social-set">
+			<a class="icon-link footer_text_link" href="https://www.facebook.com/evoxglobal/">
+			 	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/fb-icon.png" alt="facebook"  style="display:inline-block;margin-right:5px;">
+			</a>
+			<a class="icon-link footer_text_link" href="https://www.instagram.com/evoxglobal/?hl=en">
+				<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/instagram-icon.png" alt="instagram"  style="display:inline-block;margin-left:5px;margin-right:5px;">
+			</a>
+			<a class="icon-link footer_text_link" href="https://www.youtube.com/channel/UCxZHSZ03BKSUsgJuv7_EiNg">
+				<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/youtube-icon.png" alt="youtube"  style="display:inline-block;margin-left:5px;margin-right:5px;">
+			</a>
+			<a class="text-link footer_text_link" href="/tw/privacy-policy" >隱私政策</a>
+			<a class="text-link footer_text_link" href="/tw/terms-of-use" >使用條款</a>
+		</div>
+		<div class="company_inline"> 
+			<p>©2023 E2 Nova 易得雲端股份有限公司 版權所有</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+		// 視窗改變
+	$(window).resize(function(){
+		if($(window).width() > 450) {
+				$('.dropdown-toggle').next().removeClass('dropdown');	
+				$('.dropdown-toggle').next().css("display","flex");
+				// $('.dropdown-toggle').next().addClass('dropdown-open');
+				// $('.dropdown-toggle').next().removeClass('dropdown-close');
+				
+		}
+		if($(window).width() < 449) {		
+				$('.dropdown-toggle').next().addClass('dropdown');
+				// $('.dropdown-toggle').next().removeClass('dropdown-open');
+				// $('.dropdown-toggle').next().addClass('dropdown-close');
+		}
+	});
+
+	if($(window).width() <= 450) {
+		$('.dropdown').slideUp();
+		// drop down menu
+		$(function() { // Dropdown toggle
+			$('.dropdown-toggle').click(function() { 
+				$(this).next('.dropdown').slideToggle();
+				$(this).toggleClass("active-arrow");
+			});
+
+			$(document).click(function(e) 
+			{ 
+			var target = e.target; 
+			if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
+			//{ $('.dropdown').hide(); }
+			  { $('.dropdown').slideUp();}
+			});
+		});
+	}
+
+
+});
+
+
+</script>

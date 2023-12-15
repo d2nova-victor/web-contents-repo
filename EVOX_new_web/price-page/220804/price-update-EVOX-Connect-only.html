@@ -826,7 +826,7 @@
         padding: 20px 30px;
     }
     .add-service-block{
-
+        margin: 20px auto;
     }
     .addon-plan-block{
         max-width: 980px;
@@ -948,6 +948,7 @@
         }
         .content-li{
             text-align: justify;
+            align-items: start;
         }
         .add-on-plan-box{
             flex-flow: column;
@@ -1346,29 +1347,31 @@
                         <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>完整客服中心分析與報表</p></div>
                         <!-- 單一項 -->
                         <div class="cloum-contents compare-contents cloud-integration-cloum">
-                            <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                            
                             <div class="cloum-tow-options">
                                 <div class="single-option">
-                                    <p>可加購 ECLIK</p>
-                                    <div class="hint" >
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>可加購<a class="purple-text" href="/tw/developers/eclik"> ECLIK</a></p>
+                                    <!-- <div class="hint" >
                                         <div class="tooltips">
                                         <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
                                         <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
 
                                         <span class="tooltiptext cloud-ntegration-tips"> EVOX 客戶端整合套件</span>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="single-option">
-                                    <p>可加購 EC ADK</p>
-                                    <div class="hint" >
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>可加購<a class="purple-text" href="/tw/developers/ec-adk"> EC ADK</a></p>
+                                    <!-- <div class="hint" >
                                         <div class="tooltips">
                                         <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
                                         <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
 
                                         <span class="tooltiptext cloud-ntegration-tips">EVOX 雲端整合套件</span>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 
                             </div>
@@ -1488,12 +1491,24 @@
                             </li>
                             <!-- 單項 -->
                             <li class="content-li "><i class="fas fa-check light-dark-text"></i>
-                                <div>雲端整合</div>
-                                <div class="tooltips">
+                                <style type="text/css">
+                                    .mobile-cloud-integration-cloum{
+                                        display: flex;
+                                        flex-flow: column;
+                                    }
+                                </style>
+                                <div class="mobile-cloud-integration-cloum">
+                                    <div>雲端整合</div>
+                                    <ul>
+                                        <li><p>可加購<a class="purple-text" href="/tw/developers/eclik"> ECLIK</a></p></li>
+                                        <li><p>可加購<a class="purple-text" href="/tw/developers/ec-adk"> EC ADK</a></p></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="tooltips">
                                     <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
                                     <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
                                     <span class="tooltiptext ">依需求可加購 ECLIK（EVOX 客戶端整合套件）或 EC ADK（EVOX 雲端整合套件）</span>
-                                </div>
+                                </div> -->
                             </li>
                             
                             <!-- 單項 -->
@@ -1564,7 +1579,7 @@
 
 
             <!-- 註記內容 -->
-            <div class="plan-option-block">
+            <!-- <div class="plan-option-block">
                 <div class="plan-option-content">
                     <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/support-service-2.png" alt="初期導入協助">
                     <div class="option-content-text">
@@ -1579,7 +1594,7 @@
                         <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>訂閱專業客服中心方案，我們將提供您完整的導入諮詢服務與支援。</div></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- 加值服務 -->
             <div class="add-service-block ">
                 <!-- <div class="add-on-tittle-block">

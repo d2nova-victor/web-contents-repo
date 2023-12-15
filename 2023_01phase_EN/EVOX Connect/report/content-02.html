@@ -1,0 +1,261 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Jquery-UI/jquery-ui.theme.css">
+<!-- <script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Jquery-UI/jquery.js"></script> -->
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Jquery-UI/jquery-ui.js"></script>
+<style type="text/css">
+.content-02{
+    background: #FAFAFA;
+    padding: 40px 0;
+}
+.report-content-two-cloum{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.report-block{
+    width: 50%;
+}
+.report-img>img{
+    width: 100%;
+    min-width: 530px;
+}
+.tab-block{
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-flow: row;
+    max-width: 1100px;
+    margin: 10px auto;
+    border-bottom: 1px solid #EDEFF1;
+    list-style: none;
+}
+.report-des{
+    text-align: center;
+    max-width: 980px;
+    margin: 30px auto;
+    width: 90%;
+}
+.report-text{
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.report-text>h3{
+    font-size: 18px;
+}
+/*覆蓋*/
+.ui-widget.ui-widget-content{
+    border: 0px solid #c5c5c5;
+}
+.ui-widget-header{
+    padding: 0 5%;
+    background: #ffffff00;
+    border-top: 0px solid #dddddd;
+    border-right: 0px solid #dddddd;
+    border-left: 0px solid #dddddd;
+}
+.ui-widget-content{
+    border: 0px solid #dddddd;
+    background: #ffffff00;
+}
+/*按鈕*/
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: 1px solid #EDEFF1;
+    background: #ffffff00;
+    font-weight: normal;
+    color: #454545;
+    display: block;
+    width: 33.3%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff00;
+    padding: 5px;
+    margin: 0px 3px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: 2px solid #EDEFF1;
+    background:#EDEFF1;
+    font-weight: normal;
+    color:#5856D6;
+}
+/* a.ui-button:active::after{
+    
+ }*/
+ .ui-state-default a:hover{
+    opacity: 0.5;
+ }
+ .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
+    width: 100%;
+    display: block;
+}
+  .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+    color: #58B805;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+  }
+ .ui-state-active a::after, .ui-state-active a:link::after, .ui-state-active a:visited::after{
+    font-family: "Material Icons";
+    color: #58B805;
+    content:"\E5DE";
+    font-size: 30px;
+ }
+    @media screen and (max-width: 1060px) {
+        .report-img>img{
+                min-width:100%;
+        }
+    }
+    @media screen and (max-width: 960px) {
+
+
+    }
+    @media screen and (max-width: 840px) {
+
+    }
+    @media screen and (max-width: 796px) {
+        .ui-widget-header{
+            padding: 0 2%;
+        }
+        .report-block{
+            width: 100%;
+        }
+        .report-content-two-cloum{
+            flex-flow: column;
+        }
+        .report-img{
+            max-width: 556px;
+            margin: 0 auto;
+            width: 90%;
+        }
+        .report-img>img{
+            width: 100%;
+            min-width: 100%;
+        }
+
+    }
+    @media screen and (max-width: 735px) {
+
+    }
+    @media screen and (max-width: 702px) {
+
+    }
+    @media screen and (max-width: 695px) {
+       
+    }
+    @media screen and (max-width: 607px) {
+        .content-section-7 >.text-block {
+        padding: 10px;
+        }
+    }
+    @media screen and (max-width: 546px) {   
+    }
+
+    @media screen and (max-width: 491px) {
+    
+    }
+    @media screen and (max-width: 426px) {
+  
+    }
+    @media screen and (max-width: 382px) {
+     
+    }
+</style>
+<!-- 區塊 tittle -->
+<div class="content-02">
+<div class="tittle-section">
+    <h2>Call traffic analysis </h2>
+    <p>Better plan and manage the call center operation and resources with reports on call volume, traffic load and call disposition.</p>
+</div>
+<!-- tab -->
+<div id="tabs">
+  <ul class="tab-block">
+    <li><a href="#tabs-1">Call volume  </a></li>
+    <li><a href="#tabs-2">Resource utilization </a></li>
+    <li><a href="#tabs-3">Call disposition </a></li>
+  </ul>
+  <!--單個 tab -->
+  <div id="tabs-1">
+    <div class="report-des">
+        <p>Analyze call volume and daily trends for inbound and outbound calls. </p>
+    </div>
+    <div class="report-content-two-cloum">
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_1_EN.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_1_EN.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_1_1000px_EN.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_1_1000px_EN.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">Overview</h3>
+                <p>View call volume data within a specified time interval with weekly or daily statistics. </p>
+            </div>
+        </div>
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_2_EN.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_2_EN.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_2_1000px_EN.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-1_2_1000px_EN.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">Analyze hourly call traffic per day or per week </h3>
+                <p>Display hourly call volume statistics (average, maximum, or minimum) for each day or over a week to understand traffic distribution per hour</p>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <!--單個 tab -->
+  <div id="tabs-2">
+    <div class="report-des">
+        <p>Examine the utilization rate of dedicated lines and agents. Save costs by reducing underutilized resources.</p>
+    </div>
+    <div class="report-content-two-cloum">
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_1_EN-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_1_EN-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_1_1000px_EN-1.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_1_1000px_EN-1.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">Overview</h3>
+                <p>View call volume data within a specified time interval with weekly or daily statistics. </p>
+            </div>
+        </div>
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_2_EN.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_2_EN.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_2_1000px_EN.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-2_2_1000px_EN.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">Analyze hourly call traffic per day or per week </h3>
+                <p>Display hourly call volume statistics (average, maximum, or minimum) for each day or over a week to understand traffic distribution per hour.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--單個 tab -->
+  <div id="tabs-3">
+    <div class="report-des">
+        <p>View the disposition of incoming calls including answered, missed, hung up and missed messages. Add agents or additional dedicated lines if the number of missed calls or hangups is unacceptable.</p>
+    </div>
+    <div class="report-content-two-cloum">
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_1_EN.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_1_EN.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_1_1000px_EN.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_1_1000px_EN.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">Overview</h3>
+                <p>View call volume data within a specified time interval with weekly or daily statistics. </p>
+            </div>
+        </div>
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_2_EN.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_2_EN.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_2_1000px_EN.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/traffic-report/EN/traffic-load-report-3_2_1000px_EN.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">Analyze hourly call traffic per day or per week</h3>
+                <p>Display hourly call volume statistics (average, maximum, or minimum) for each day or over a week to understand traffic distribution per hour.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+ <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>

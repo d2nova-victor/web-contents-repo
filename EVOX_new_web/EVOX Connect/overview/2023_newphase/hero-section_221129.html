@@ -1,0 +1,251 @@
+<style type="text/css">
+	.hero-section-1{
+		max-width: 100%;
+		/*float: left;*/
+		margin: 0px auto;
+/*		height: 400px;*/
+		background: #FAFAFA;
+/*		padding: 20px 0;*/
+		position: relative;
+    	overflow: hidden;
+	}
+	.top-section{
+		max-width: 1100px;
+		margin: 20px auto;
+		width: 100%;
+		display: flex;
+	    align-items: center;
+	    flex-flow: row-reverse;
+	    justify-content: center;
+	}
+	.top-tittle-section{
+		width: 50%;
+	}
+	.EVOX-gray-bg{
+		background: #FAFAFA;
+	}
+	.hero-section-content{
+/*	    padding-bottom: 40px;*/
+	}
+	.hero-section-content>span{
+		font-size: 14px;
+		/*color: rgba(0,0,0,0.4);*/
+		color:#243237;
+		margin: 5px 0px;
+		padding-left: 0px;
+	}
+	.hero-section-content>h1{
+	    font-size: 45px;
+	    margin: 5px 0px;
+	    padding-left: 0px;
+	    line-height: 55px;
+	}
+	.hero-section-content>p{
+		margin: 15px 0px;
+		font-size: 18px;
+/*		padding-left: 12px;*/
+	}
+	
+	.hero-section-image{
+		width: 50%;
+	    height: 100%;
+/*	    position: relative;*/
+/*	    overflow: hidden;*/
+/*	    float: right;*/
+/*    	min-height: 601px;*/
+	    
+	}
+	.hero-section-image>img{
+		position: relative;
+/*		right: -40px;*/
+/*		visibility: hidden;*/
+		max-width: 720px;
+		min-height: 400px;
+	}
+	/*	專屬頁面風格*/
+	.hero-section-content{
+		max-width: 99%;
+	}
+	@media screen and (max-width: 1300px){
+		.hero-section-image>img{
+			width: 100%;
+		}
+
+	}
+	@media screen and (max-width: 1100px){
+		.top-tittle-section{
+			display: flex;
+   			align-items: center;
+    		justify-content: center;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.hero-section-1{
+			height: 100%;
+			padding: 20px 0;
+		}
+		.top-section{
+			flex-flow: column-reverse;
+		}
+		.top-tittle-section{
+			width: 100%;
+		}
+		/*.hero-section-image{
+			width: 100%;
+		}*/
+		.hero-section-image{
+			width: 100%;
+			min-height: 100%;
+			display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	margin: 20px auto;
+		}
+		.hero-section-image>img{
+			width: 100%;
+			position: relative;
+			right: 0;
+			min-height: auto;
+		}
+		.hero-section-content{
+		    width: 100%;
+		    /*position: relative;*/
+		    height: 100%;/*
+		    background: #E8F5E9;*/
+		   	padding: 2% 5%;
+		    max-width: 90%;
+/*		    margin: 0 0 20px 0;*/
+			display: flex;
+	    	flex-flow: column;
+	    	align-items: center;
+	    	justify-content: center;
+		}
+		.hero-section-content>h1{
+	    	font-size: 36px;
+	    	text-align: center;
+		}
+		.hero-section-content>h1, .hero-section-content>h1>span{
+			font-weight: 500;
+		}
+		.hero-section-content>p{
+			text-align: center;
+			margin: 0;
+		}
+
+	}
+	@media screen and (max-width: 640px){
+	.hero-section-content {
+	/*    height: 256px;
+	    -webkit-transform: translateX(-114%);
+	    transform: translateX(-114%);
+	    --widthA: 100%;
+	    margin-top: calc(var( --widthA)*0.02);*/
+    	margin-top: calc(var( --widthA)*0);
+    	width: 100%;
+	    position: relative;
+	    z-index: 999;
+	    height: 100%;
+
+	}
+	.hero-section-content>h1{
+		font-size: 34px;
+	}
+	
+	.hero-section-image{
+		/*width: 100%;*/
+/*		background-image: none;*/
+	}
+
+	.hero-section-image>img{
+		max-width: 100%;
+		/*visibility: visible;
+	    position: absolute;
+	    top: 90px;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);
+	}
+	.hero-section-1{
+/*		height: 220px;*/
+	}
+	.hero-section-content{
+		/*width: 40%;*/
+	    /*position: absolute;*/
+	    z-index: 999;
+	}
+	.hero-section-content>p{
+		max-width: 277px;
+	}
+}
+@media screen and (max-width: 516px){
+	.hero-section-1{
+		padding: 0px 0;
+	}
+	.top-section{
+		margin: 0px auto;
+	}
+	.hero-section-content>span{
+		padding-left: 0px;
+	}
+	.hero-section-content>h1{
+		font-size: 32px;
+		padding-left: 0px;
+	}
+	.hero-section-content>p{
+		padding-left: 0px;
+	}
+}
+@media screen and (max-width: 277px){
+	.hero-section-content>h1{
+		font-size: 30px;
+	}
+	.hero-section-content>p{
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 1500px){
+	.hero-section-image>img{
+		position: relative;
+    	right: 0;
+    	max-width: 600px;
+	}
+}
+	/*給專門頁面*/
+/*	.devices-page{
+		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/Top_img/Group%208@1x.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}*/
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// $('.hero-section-image').css('min-height', imgHeight+'px');
+		$( window ).on("resize", function() {
+			// 文件準備好時同時取的高度
+			var topimgframHeight = $('.hero-section-image').height(); 
+			var imgHeight = $('.hero-section-image>img').height();
+			console.log("外框高度"+topimgframHeight);
+			console.log("圖片高度"+imgHeight);
+			$('.hero-section-image').innerHeight(imgHeight);
+		});	
+		$(window).trigger('resize');
+	});
+
+</script>
+<div class="hero-section-1 EVOX-gray-bg">
+	<div class="top-section">
+		<div class="hero-section-image devices-page">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/top-img/221227/Group%205@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/top-img/221227/Group%205@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/top-img/221227/Group%205@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/top-img/221227/Group%205_compress.webp 3x" alt="創造完美的顧客來電體驗">
+		</div>
+			<div class="top-tittle-section">
+				<div class="hero-section-content">
+					<span>EVOX Connect 雲端客服系統</span>
+					<h1>創造完美的<span class="green-text">顧客體驗</span></h1>
+					<p>輕鬆擁有企業等級的客服中心系統</p>
+				</div>
+			</div>
+	</div>
+</div>

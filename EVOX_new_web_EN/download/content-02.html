@@ -1,0 +1,141 @@
+<style type="text/css">
+  .content-section-1-version-b{
+    background:#fafafa;
+  }
+  .content-section-1{
+    max-width: 980px;
+    /* float: left; */
+    /* margin: 0px auto 0px auto; */
+    height: 100%;
+    padding: 40px 0px;
+    /* display: table; */
+    width: 100%;
+  }
+  .content-section-1-content{
+      width: 100%;
+      padding: 0% 5%;
+      float: right;
+      /*--widthA: 50%;*/
+      /*margin-top: calc(var( --widthA)*0.1);*/
+  }
+  .content-section-1-content>h2{
+    font-size: 28px;
+    margin:  10px 0px;
+  }
+  .content-section-1-content>p{
+    margin: 15px 0px;
+    font-size: 16px;
+  }
+  
+  .content-section-1-image-version-b{
+      width: 46%;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      padding: 0px;
+      /*box-shadow: 0px 1px 4px 3px rgba(0,0,0,.2);*/
+      margin: 0 9% 0 0;
+      max-height: 405px;
+      /*max-width: 503px;*/
+  }
+  .content-section-1-image-version-b>img{
+    width: 100%;
+    display: block;
+/*      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      min-width: 100%;
+      min-height: 56%;
+      transform: translate(-50%,-50%);*/
+  }
+  /*給專門頁面得*/
+  .evox-image-background{
+      /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+  }
+  .white-back{
+     background:#fff;
+  }
+  .evox-logo{
+    /*width: 220px;*/
+    max-height: 20px;
+  }
+  @media screen and (max-width: 950px){
+    .content-section-1-content{
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 840px){
+    .content-section-1-image-version-b{
+      width:100%;
+    }
+    .content-section-1-content{
+      width: 100%;
+    }
+    .menber-icon{
+      right: 38%;
+    }
+  }
+  @media screen and (max-width: 834px){
+    .menber-icon{
+      display: none;
+    }
+  }
+ 
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      var pcHeight = $('.pc-screen').height(); 
+      
+      
+      if($(window).width() <= 840 ){
+        $('.set-pc-screen').css('min-height', pcHeight+'px');
+      }else{
+        $('.set-pc-screen').css('min-height', 'auto');
+      }
+
+      if( $(window).width() <= 480 ){
+      }
+    });
+    
+    $( window ).on("resize", function() {
+         var pcHeight = $('.pc-screen').height(); 
+      
+      
+      if($(window).width() <= 840 ){
+        $('.set-pc-screen').css('min-height', pcHeight+'px');
+      }else{
+        $('.set-pc-screen').css('min-height', 'auto');
+      }
+
+      if( $(window).width() <= 480 ){
+      }
+
+    });
+
+</script>
+<div class="content-section-1-version-b white-back">
+<div class="content-section-1">
+  <div class="content-section-1-image-version-b evox-image-background set-pc-screen">
+    <img class="pc-screen" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/download/PC-app-download.png" alt="電腦App">
+  </div>
+  <div class="flex-center">
+    <div class="content-section-1-content">
+      <h2>Desktop applications</h2>
+      <p>you’re able to make calls right on your computer if you have a Windows or a Mac. You can easily connect with your customers and keep track of them while you work. It have all the functionalities of the EVOX mobile app. 
+      </p>
+      <center>
+      <a href="https://www.microsoft.com/store/productId/9NR63DZQQ495"><img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/windows-download-icon-en.png"  alt="下載windows"></a>
+      <a href="https://itunes.apple.com/app/id1430062770"><img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/pc-app/appstore-download-icon-en.png" alt="下載ios"></a>
+      </center>  
+     <span name="windows" softwareVersion="windows" style="visibility:hidden">1.23.18</span>
+      <span name="macos" softwareVersion="macos" style="visibility:hidden">1.23.18</span>
+      <!-- <a class="green-outline-btn" href="/tw/evox/cloud-phone-system">查看詳情</a> -->
+    </div>
+</div>
+</div>
+  
+</div>

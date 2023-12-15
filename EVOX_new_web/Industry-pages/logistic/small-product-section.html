@@ -1,0 +1,99 @@
+<style type="text/css">
+	.green-bg{
+		background: #E8F5E9;
+	}
+	.small-product-section{
+		padding: 40px 0;
+	}
+	.small-product-content{
+		max-width: 1100px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		flex-flow: row;
+		justify-content: space-around;
+	}
+	.product-btn-content{
+		width: 50%;
+		border-radius: 20px;
+		background: #ffff;
+		padding: 40px 20px 20px;
+		transition: box-shadow .3s, opacity .3s,transform .3s;
+    	transition-timing-function: ease-in;
+	}
+	.product-btn-content:nth-child(1){
+		margin-right: 21px;
+	}
+	.product-btn-content:nth-child(2){
+		margin-left: 21px;
+	}
+
+	.small-product-tittle{
+		font-size: 30px;
+		line-height: 45px;
+		margin: 5px 0;
+		transition: color .3s;
+    	transition-timing-function: ease-in;
+	}
+	.product-btn-content>p{
+		font-size: 14px;
+		color: #5F6871;
+		line-height: 30px;
+		margin: 5px 0px;
+	}
+	.product-btn-content:hover{
+		box-shadow: 1px 1px 7px #00000052;
+    	transform: scale(1.03);
+	}
+	.product-btn-content:hover .small-product-tittle{
+		color: #58B805;
+	}
+	@media screen and (max-width: 840px){
+		.small-product-content{
+			flex-flow: column;
+		}
+		.product-btn-content{
+			width: 90%;
+		}
+		.product-btn-content:nth-child(1),.product-btn-content:nth-child(2)
+		{
+			margin: 10px auto;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.product-btn-content{
+			width: 80%;
+			box-shadow: 1px 1px 4px #00000052;
+		}
+
+	}
+	@media screen and (max-width: 460px){
+		.small-product-section{
+			padding: 0px 0;
+		}
+	}
+</style>
+
+
+<div class="small-product-section green-bg">
+	<div class="obi-of-section">
+	  <h2>我們的產品</h2>
+	</div>
+
+	<div class="small-product-content digit2">
+		<!-- 單個按鈕 -->
+		<div class="product-btn-content">
+			<h3 class="small-product-tittle">EVOX Connect 雲端客服系統</h3>
+			<p>結合雲端總機的優點與專業的客服功能，讓企業輕鬆建置好客服系統，更能整合其他雲端系統，精準掌握客戶需求，優化服務體驗。</p>
+			<a class="green-text-btn" href="/tw/evox-connect/call-center">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+		<!-- 單個按鈕 -->
+		<div class="product-btn-content">
+			<h3 class="small-product-tittle">EVOX 雲端電話總機</h3>
+			<p>雲端總機和行動分機的完美結合，讓企業員工享受行動商務的方便與彈性，同時擁有優秀的通話品質。</p>
+			<a class="green-text-btn" href="/tw/evox/cloud-phone-system">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+		
+	</div>
+
+</div>

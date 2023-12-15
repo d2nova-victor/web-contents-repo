@@ -1,0 +1,250 @@
+<style type="text/css">
+  .content-section-1-version-b{
+    background:#fafafa;
+  }
+  .content-section-1{
+    max-width: 980px;
+    /* float: left; */
+    /* margin: 0px auto 0px auto; */
+    height: 100%;
+    padding: 40px 0px;
+    /* display: table; */
+    width: 100%;
+  }
+  .content-section-1-content{
+      width: 100%;
+      padding: 0% 5%;
+      float: right;
+      /*--widthA: 50%;*/
+      /*margin-top: calc(var( --widthA)*0.1);*/
+  }
+  .content-section-1-content>h3{
+    font-size: 26px;
+    margin:  10px 0px;
+  }
+  .content-section-1-content>span{
+    font-size: 14px;
+  }
+  .content-section-1-content>p{
+    margin: 10px 0px;
+    font-size: 16px;
+/*    new text-color add to css*/
+  }
+  
+  .content-section-1-image-version-b{
+      width: 50%;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      padding: 0px;
+      /*box-shadow: 0px 1px 4px 3px rgba(0,0,0,.2);*/
+      margin: 0 auto;
+      max-height: 405px;
+      /*max-width: 503px;*/
+  }
+  .content-section-1-image-version-b>img{
+    width: 100%;
+    display: block;
+    max-width: 450px;
+/*      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      min-width: 100%;
+      min-height: 56%;
+      transform: translate(-50%,-50%);*/
+  }
+  .content-text-section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+  }
+  /*給專門頁面得*/
+  .evox-image-background{
+      /*background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/home-page/evox-section-background.jpg");*/
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+  }
+  .white-back{
+     background:#fff;
+  }
+  .evox-logo{
+    /*width: 220px;*/
+    max-height: 20px;
+  }
+/*  .overwise-device{
+    position: absolute;
+    bottom: 0px;
+  }*/
+/*  中間文字 共用style*/
+  .obi-of-section{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0;
+  }
+  .obi-of-section>h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .obi-of-section>p{
+    font-size: 18px;
+    text-align: center;
+/*    set light gray text to css*/
+    color: #A5B6BF;
+    margin: 5px auto;
+  }
+  .obi-of-section>.tittle-discription{
+    color: #7F7F7F;
+  }
+/*  中間文字 共用style*/
+
+/*  之後移動到 share css 上*/
+  .green-text-btn{
+    color:#58B805;
+    position: relative;
+  }
+  .green-text-btn:before{
+    content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background: #58b805;;
+      visibility: hidden;
+      border-radius: 5px;
+      transform: scaleX(0);
+      transition: .25s linear;
+  }
+  .green-text-btn:hover:before{
+    visibility: visible;
+      transform: scaleX(1);
+  }
+  .green-text-btn:hover{
+    color:#52AB06;
+    transition: color 0.5s;
+  }
+  .white-text-btn{
+    color:#ffff;
+    position: relative;
+  }
+  .white-text-btn:before{
+    content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background: #ffff;;
+      visibility: hidden;
+      border-radius: 5px;
+      transform: scaleX(0);
+      transition: .25s linear;
+  }
+  .white-text-btn:hover:before{
+    visibility: visible;
+      transform: scaleX(1);
+  }
+  .white-text-btn:hover{
+    color:#ffff;
+    transition: color 0.5s;
+  }
+/*  之後移動到 share css 上*/
+
+  @media screen and (max-width: 950px){
+    .content-section-1-content{
+      margin: 20px auto 0 auto;
+    }
+  }
+  @media screen and (max-width: 840px){
+
+    .content-section-1-image-version-b{
+      width:100%;
+      max-height: initial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content-section-1-image-version-b>img{
+      max-width: 80%;
+    }
+    .content-text-section{
+      width: 100%;
+    }
+    .content-section-1-content{
+      width: 100%;
+      text-align: center;
+      margin: 10px auto 10px auto;
+    }
+    .content-section-1-content>p{
+      text-align: center;
+    }
+    .menber-icon{
+      right: 38%;
+    }
+    /*  中間文字 共用style*/
+    .obi-of-section>h2{
+      font-size: 30px;
+    }
+    .obi-of-section>h2, .obi-of-section>h2>span{
+      font-weight: 500;
+    }
+    /*  中間文字 共用style*/
+  }
+  @media screen and (max-width: 834px){
+    .menber-icon{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 640px){
+    .content-section-1{
+      padding: 20px 0 30px 0;
+      display: flex;
+      align-items: center;
+      flex-flow: column-reverse;
+    }
+    
+    .content-section-1-image-version-b>img{
+      max-width: 90%;
+    }
+    /*  中間文字 共用style*/
+    .obi-of-section{
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      padding: 40px 0 30px 0;
+    }
+    .obi-of-section>h2{
+      font-size: 26px;
+      max-width: 220px;
+    }
+    /*  中間文字 共用style*/
+  }
+ 
+</style>
+<div class="obi-of-section">
+  <p>打造企業良好溝通環境</p>
+  <h2>EVOX 產品讓通話<span class="green-text">更貼近企業需求</span></h2>
+</div>
+
+<div class="content-section-1-version-b white-back ">
+<div class="content-section-1">
+  <div class="content-section-1-image-version-b digit2">
+    <img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/EVOX_img/221226/Group%2025@1x.png"
+    srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/EVOX_img/221226/Group%2025@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/EVOX_img/221227/Group%2025@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/EVOX_img/221227/Group%2025_compress.webp 3x" alt="提升企業的混合辦公行動力">
+  </div>
+  <div class="content-text-section flex-center">
+    <div class="content-section-1-content">
+      <span>EVOX 雲端電話總機</span>
+      <h3>提升企業的混合辦公行動力</h3>
+      <p>雲端總機和行動分機的完美結合，讓企業員工享受行動商務的方便與彈性，同時擁有優秀的通話品質。</p>
+      <a class="green-text-btn" href="/tw/evox/cloud-phone-system">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+    </div>
+</div>
+</div>
+  
+</div>

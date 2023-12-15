@@ -1,0 +1,205 @@
+<style>
+	.industry-section{
+		max-width: 1072px;
+		margin: 20px auto 60px auto;
+	}
+	.industry-block{
+		display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	}
+	.industry-card{
+		display: flex;
+	    align-items: center;
+	    flex-flow: column;
+	    width: 25%;
+	    background: #F2F4F1;
+	    border-radius: 20px;
+	    margin: 0 14px;
+	    transition: box-shadow .3s, opacity .3s,transform .3s;
+    	transition-timing-function: ease-in;
+	}
+	.industry-card:hover{
+		box-shadow: 1px 1px 7px #00000052;
+    	transform: scale(1.03);
+	}
+	/*.industry-card:nth-child(2),.industry-card:nth-child(3){
+
+	}
+	.industry-card:nth-child(1),.industry-card:nth-child(4){
+		
+	}*/
+	.industry-img{
+		display: flex;
+	    align-items: center;
+	    justify-items: center;
+	    position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	    min-height: 328px;
+	    border-radius: 20px;
+	    background: #5f68718c;
+	   	align-items: end;
+    	justify-content: center;
+	}
+	.industry-signle-img{
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-height: 100%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;
+	    width: 120%;
+	    max-width: max-content!important;
+
+	}
+	.enterprise-bg{
+/*		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/enterprise-img.jpg");*/
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+	.smb-bg{
+/*		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/smb-img.jpg");*/
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+	.multi-location-bg{
+/*		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/multi-location-img.jpg");*/
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+	.start-up-bg{
+/*		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/start-up-img.jpg");*/
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+	.industry-text{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column;
+		width: 100%;
+		padding: 20px;
+	}
+	.industry-tittle{
+		width: 80%;
+	    padding: 0 20px;
+	    border-bottom: 2px solid #fff;
+	    text-align: center;
+	}
+	.industry-tittle>h3{
+		font-size: 21px;
+		margin: 10px auto;
+	}
+	.industry-btn{
+		width: 80%;
+	    padding: 0 20px;
+	    text-align: center;
+	}
+	@media screen and (max-width: 840px){
+		.industry-section{
+			margin: 20px auto 40px auto;
+		}
+		.industry-block{
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+		.industry-card{
+			width: 36%;
+			margin: 10px 2%;
+		}
+		.industry-img{
+			min-height: 308px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.industry-section{
+			margin: 20px auto 40px auto;
+		}
+		.industry-card{
+			width: 41%;
+		}
+		.industry-img{
+			min-height: 288px;
+		}
+	}
+	@media screen and (max-width: 340px){
+		.industry-card{
+			width: 90%;
+		}
+		.industry-img{
+			min-height: 388px;
+		}
+	}
+</style>
+
+
+<div class="industry-section">
+	<div class="obi-of-section">
+	  <h2>EVOX 適合各種規模與產業的公司</h2>
+	</div>
+	<!-- 產業別 -->
+	<div class="industry-block">
+		<!-- 單一個 -->
+		<div class="industry-card enterprise-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/enterprise-img.jpg)">
+			<!-- 圖片 -->
+			<div class="industry-img">
+				<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+				<!-- 文字 -->
+				<div class="industry-text">
+					<div class="industry-tittle"><h3 class="white-text">大型企業</h3></div>
+					<div class="industry-btn"><a class="customer-story-link white-text-btn" href="/tw/solutions/enterprise" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="industry-card smb-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/smb-img.jpg)">
+			<!-- 圖片 -->
+			<div class="industry-img " >
+				<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+				<!-- 文字 -->
+				<div class="industry-text">
+					<div class="industry-tittle"><h3 class="white-text">中小企業</h3></div>
+					<div class="industry-btn"><a class="customer-story-link white-text-btn" href="/tw/solutions/small-medium-business" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="industry-card multi-location-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/multi-location-img.jpg)">
+			<!-- 圖片 -->
+			<div class="industry-img" >
+				<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+				<!-- 文字 -->
+				<div class="industry-text">
+					<div class="industry-tittle"><h3 class="white-text">門市多據點</h3></div>
+					<div class="industry-btn"><a class="customer-story-link white-text-btn" href="/tw/solutions/multiple-locations" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="industry-card start-up-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/start-up-img.jpg)">
+			<!-- 圖片 -->
+			<div class="industry-img" >
+				<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+				<!-- 文字 -->
+				<div class="industry-text">
+					<div class="industry-tittle"><h3 class="white-text">新創公司</h3></div>
+					<div class="industry-btn"><a class="customer-story-link white-text-btn" href="/tw/solutions/startup" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

@@ -1,0 +1,301 @@
+<style type="text/css">
+	.wrapper-box{
+    width: 100%;
+    margin: 0px auto;
+    padding: 50px 0;
+	}
+	.gray-wrapper-box{
+		width: 100%;
+    margin: 0px auto;
+    padding: 20px 0;
+    background: #fafafa;
+	}
+	.green-wrapper-box{
+		width: 100%;
+    margin: 0px auto;
+    padding: 40px 0;
+    background: #E8F5E9;
+	}
+	.our-purpose{
+		max-width: 980px;
+		margin:0 auto;
+	}
+	.two-arrow{
+		display: flex;
+		align-items: center;
+		flex-flow: row;
+	}
+	.two-arrow-text-block{
+		width: 46%;
+		padding: 0 20px;
+	}
+	.two-arrow-tittle{
+		font-size: 32px;
+	}
+	.two-arrow-image-box{
+		width: 53%;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+	.content-center{
+			width: 100%;
+	    /*position: absolu te;*/
+	    /*top: 40px;*/
+	    max-width: 980px;
+	    margin: 0 auto;
+	    z-index: 999;
+	    padding: 20px 0;
+    	position: relative;
+	}
+	.page-tittle{
+		width: 100%;
+    	text-align: center;
+    	padding:40px 0px 0px 0px;
+    	font-size: 42px;
+    	margin:0px;
+	}
+	.page-subtittle{
+		text-align: center;
+		font-size: 18px;
+		margin:0;
+		padding: 0px;
+		padding:10px 0px 0px 0px;
+	}
+	.company-image{
+		width: 100%;
+	}
+	.story-article{
+		max-width: 980px;
+		margin: 40px auto 0 auto;
+		border-bottom: solid 0px #fff;
+		padding: 0 20px;
+	}
+	.story-article>img{
+		width: 100%;
+	}
+	.article-tittle{
+		font-size: 32px;
+/*		color:#58B805;*/
+		text-align: center;
+	}
+  .article-point{
+    color:#00A82D;
+  }
+	.article-tittle>span{
+		color:#00A82D;
+	}
+	.article-sub-tittle{
+		color: #243237;
+		font-size: 28px;
+	}
+	.story-article>p{
+		font-size: 16px;
+		line-height: 32px;
+    margin: 0;
+    color: #243237;
+    text-align: justify;
+	}
+	/*縮放*/
+	.btn-group{
+		width: 100%;
+		margin:20px auto;
+ 	}
+   	.btn-hide{
+    	display: none;
+  	}
+  	.btn-show{
+    	display: block;
+  	}
+  	.expand-btn{
+  		font-size: 14px;
+    	cursor: pointer;
+    	text-align: center;
+  	}
+  	.collapse{
+
+  	}
+  	.collapse-box-hide{
+    	height: 420px;
+    	overflow: hidden;
+    	position: relative;
+  	}
+  	.collapse-box-open{
+    	height: 100%;
+    	overflow: auto;
+    	background:#f0f8ff00;
+  	}
+  	.front-grlatation{
+			position: absolute;
+	    /* top: 1063px; */
+	    z-index: 2;
+	    bottom: 0;
+	    width: 100%;
+	    height: 200px;
+	    float: left;
+	    background: linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+	    background: -moz-linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+	    background: -webkit-linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+	    background: -o-linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+  	}
+    .principles-line{
+      margin:10px auto;
+      font-size:23px;
+      text-align: center;
+      color:#00A82D;
+      list-style: none;
+    }
+
+  	
+  	@media screen and (max-width: 1151px) {
+		.section-box{
+  	 		width: 95%;
+  	 		/*padding: 18px 20px;*/
+  	 	}
+  	}
+
+  	 @media screen and (max-width: 980px) {
+  	 	.content-center{
+  	 		width: 90%;
+  	 	}
+  	 	.section-box{
+  	 		width: 90%;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 840px) {
+  	 	.collapse-box-hide{
+  	 		height: 180px;
+  	 	}
+  	 	.back-green{
+  	 		height: 300px;
+  	 	}
+  	 	.two-arrow{
+  	 		padding: 0% 5%;
+  	 		flex-flow: column;
+  	 	}
+  	 	.two-arrow-text-block{
+  	 		width: 100%;
+  	 		display: flex;
+    		flex-flow: column;
+    		align-items: center;
+  	 	}
+  	 	.two-arrow-image-box{
+  	 		width: 70%;
+  	 		display: flex;
+    		align-items: center;
+    		justify-content: center;
+  	 	}
+  	 	.story-article{
+  	 		padding: 0;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 640px) {
+  	 	.back-green{
+  	 		height: 250px;
+  	 	}
+  	 	.section-box{
+  	 		width: 80%;
+  	 	}
+  	 	.p1-section, .p2-section{
+  	 		width: 90%;
+    		padding: 20px 5% 20px 5%;
+  	 	}
+  	 }
+</style>
+
+<div class="wrapper-box">
+
+	<div class="our-purpose">
+		<div class="two-arrow">
+			<div class="two-arrow-text-block">
+				<h2 class="two-arrow-tittle green-text">我們的使命 </h2>
+				<p>40年來我們經歷過通信業的數度變革，無論是目標市場的轉變，或從硬體發展到雲端服務，每一次轉變都是轉機，得以讓我們重新訓練和佈局研發團隊，並持續與客戶建立共好關係，協助企業運用最新科技提升競爭力、開闢成功的道路。</p>
+			</div>
+			<div class="two-arrow-image-box">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209@1x-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209@1x-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209@2x-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209-1.jpg 3x" alt="our-purpose">
+			</div>
+		</div>	
+	</div>
+</div>
+<div class="gray-wrapper-box">
+	<div class="content-center">
+		<div class="collapse collapse-box-hide" id="table-box">
+		
+		<article class="story-article">
+			<h3 class="article-tittle green-text">品牌與故事 </h3>
+			<p>雲端總機聽起來很新，但 EVOX 背後其實有 D2 逾40年的通訊技術研發經驗。 </p>
+			<p>D2 由兩位在資通訊產業深耕多年，擁有專業背景的合夥人所創辦：David Wong 與 David Lindsay，多年來不斷發展出先驅型技術，引領通訊產業突破與創新。香港出生的 David Wong（王爾仁）擁有加州大學電機系博士學位，並在其任職教授，而 David Lindsay 在獲得密西根大學的機器工程碩士後，便開始在貝爾實驗室擔任技術研究員。</p>
+			<h4 class="article-sub-tittle">電腦通信整合年代（CTI）</h4>
+      <p>兩位 David 在1980年代初期相遇後一拍即合，開始研發數位訊號處理（DSP）軟體以及語音信箱設備中的 UNIX 即時操作系統（real-time UNIX operating system），並在 CTI 興起時，成為德州儀器（Texas Instruments）當時第一代 DSP 晶片的使用者。1987年雙 David 開啟「車庫創業」研發世上首個 DSP 操作系統，成為日後德州儀器 DSP BIOS 的基礎。 </p>
+      <br/>
+      <p>之後，雙 David 將目標轉向 CTI 產業的 DSP 軟體方案，於1993年創立了他們的第二個新創公司：D2 Technologies，公司也在不久後迎來了下一位重要的成員 Matt Randmaa，除了擁有加州大學電機碩士學位，同時也參與多項網路語音技術（VoIP）專利研發。在多位語音和通信專家的共同努力下，D2 逐漸成為業界的領導者，持續研發更多創新的通訊相關技術，包含會議系統、電話交換機（PBX）和語音信箱相關產品、網路傳真以及其他被諸多電信商和大型企業所採用的應用軟體。</p>
+      <br/>
+      <p>由於通信網路在1990年代中期開始成為熱潮，許多發展 IP 多媒體子系統（IMS）的先驅新創突飛猛進，陸續研發了業界的首個電信級交換器、網路電話交換機（IP PBX）、VoIP 伺服器和閘道器。就在全球的電信商都將重心轉移到次世代網路服務（NGNs）的時候，在 VoIP 市場擁有專利技術與獨特地位的 D2 被半導體大廠相中，並於2000年被併購以研發一站式 SOC 解決方案。 </p>
+		</article>
+		<article class="story-article">
+			<!-- <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1@1x.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1@1x.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1.jpg 3x" alt="公司照片-01"> -->
+			<h4 class="article-sub-tittle">IP 遷徙期 </h4>
+      <p>在2000年的互聯網泡沫事件之後，當初的合夥人們決定於2003年再度取回 D2 Technologies 的經營權。此時他們發覺 CTI 已邁入夕陽產業，而次世代網路服務正在加速發展，許多家用與商用的閘道器研發都外包到亞洲，尤其以台灣為最大宗。D2 隨即將重心從 CTI 市場轉移到研發低成本軟 DSP 語音引擎，透過整合語音引擎和SIP通訊協議技術，D2 開始建立了台灣的銷售和客服團隊，並提供一站式的 vPORT 解決方案。 </p>
+      <br/>
+     	<p>19年後 D2 的 vPORT 在次世代網路服務佔有一席之地，不但在 VoIP 軟體代工市場擁有70%市佔率，更為全世界數千萬個家庭和辦公室提供電信服務。隨著行動網路運營商開始將 IMS 帶入 3G 和 VoLTE 的時代，D2 邀請有清華大學資訊工程博士學位的吳炯憲（Jon）加入，帶領研發團隊研發行動裝置用的語音引擎、行動裝置閘道器、富通訊解決方案（RCS）App 等，協助電信營運商趕上 OTT 興起的風潮。 </p>
+     	<br/>
+      <img class="company-image" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4@1x.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4@1x.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4.jpg 3x" alt="公司照片-02">
+		</article>
+		
+		<article class="story-article">
+			<h4 class="article-sub-tittle">雲端時代</h4>
+			<p>邁入雲端時代後，市場變化的速度更勝以往，秉持著為客戶提供最新科技服務的理念，D2 意識到原本的供應連模式（D2 software >> SOC >> ODM >> OEM >> telco >> end user）產期較長已不合時宜，便在其他傳統總機供應商還在推網路硬體設備時，先一步轉向 OTT 商業模式，將研發時程從原本的2~3年縮短成數個月、甚至數個星期。 </p>
+			<br/>
+			<p>有著多年 RCS、CTI 和 NGN 專業技術作為背景，D2 建立新的 SaaS 新創團隊來推廣商務通訊服務，並相繼在2016年推出商務文字通訊服務 team.biz，和2018年的旗艦產品 - EVOX 雲端總機，而後又衍生出 EVOX Connect 雲端客服系統。EVOX 在台灣推出不久後，很快地累積了數千家跨產業、不同規模的用戶。隨著 EVOX 的成功，D2 便決定在2022年成立台灣新公司 <strong>E2 Nova（易得雲端）</strong>，並將所有 SaaS 研發團隊注入 E2 Nova，決心深耕台灣、放眼亞洲市場。無論世界怎麼變，我們的核心理念始終如一，那就是將客戶的成功視為我們的成功，並竭盡所能成為企業數位轉型的最佳夥伴。 </p>
+			<br/>
+      <img class="company-image" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz@1x-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz@1x-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz@2x-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz-1.jpg 3x" alt="product-img">
+    </article>
+    <div class="front-grlatation" id="gradual"></div>
+		</div>
+		<!-- <div class="front-grlatation" id="gradual"></div> -->
+		<div class="btn-group">
+		<div class="expand-btn green-text" id ="openFunction">閱讀完整故事 <i class="fas fa-chevron-down" aria-hidden="true"></i></div>
+		<div class="expand-btn green-text btn-hide" id ="closeFunction">收起故事 <i class="fas fa-chevron-up" aria-hidden="true"></i></div>
+		</div>
+
+	</div>
+  <script type="text/javascript">
+   $(document).ready(function(){
+	  $("#openFunction").click(function(){
+	    $("#table-box").addClass("collapse-box-open");
+	    $("#table-box").removeClass("collapse-box-hide");
+	    $(this).addClass("btn-hide");
+	    $(this).removeClass("btn-show");
+	    $("#closeFunction").removeClass("btn-hide");
+	    $("#closeFunction").addClass("btn-show");
+	    $("#gradual").addClass("btn-hide");
+	    $("#gradual").removeClass("btn-show");
+	  });
+	  $("#closeFunction").click(function(){
+	    $("#table-box").removeClass("collapse-box-open");
+	    $("#table-box").addClass("collapse-box-hide");
+	    $(this).addClass("btn-hide");
+	    $(this).removeClass("btn-show");
+	    $("#closeFunction").removeClass("btn-show");
+	    $("#openFunction").removeClass("btn-hide");
+	    $("#openFunction").addClass("btn-show");
+	    $("#gradual").removeClass("btn-hide");
+	    $("#gradual").addClass("btn-show");
+		  });
+		});
+	</script>	
+</div>
+<div class="green-wrapper-box">
+
+	<div class="our-purpose">
+		<div class="two-arrow">
+			<div class="two-arrow-text-block">
+				<h2 class="two-arrow-tittle green-text">我們的文化與理念   </h2>
+				<p>我們就是自己產品的第一批愛用者！ 為了能在標準極高的通信產業佔有一席之地，我們以敏捷和彈性為宗旨，並鼓勵員工保持熱誠、持續提出創新的想法，除了推出令客戶滿意的產品，同時也累積自己在工作上的成就感。 </p>
+			</div>
+			<div class="two-arrow-image-box">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img@1x-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img@1x-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img@2x-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img-1.jpg 3x" alt="our-culture">
+			</div>
+		</div>	
+	</div>
+</div>

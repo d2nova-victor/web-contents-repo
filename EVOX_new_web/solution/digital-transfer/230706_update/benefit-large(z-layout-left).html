@@ -1,0 +1,192 @@
+<style type="text/css">
+	.zlayout-section{
+		padding: 40px 0;
+	}
+
+	.left-zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.left-zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.left-zlayout-img>img{
+			width: 100%;
+		}
+	.left-zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 452px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.single-text-content{
+		display: flex;
+		flex-flow: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	margin:10px auto;
+    	border-bottom: 1px solid #3333;
+	}
+	.single-text-content:nth-child(2){
+/*		margin: 30px auto;*/
+	}
+	.single-text-content>h3{
+		font-size: 21px;
+		line-height: 31px;
+		margin:0 0 5px 0;
+	}
+	.single-text-content>p{
+		font-size: 16px;
+		line-height: 30px;
+		margin: 5px 0;
+		text-align: justify;
+	}
+
+	/*  中間文字 共用style*/
+	  .obi-of-section{
+	    display: flex;
+	    align-items: center;
+	    flex-flow: column;
+	    padding: 20px 0;
+	  }
+	  .obi-of-section>h2{
+	    font-size: 32px;
+	    text-align: center;
+	    margin: 5px auto;
+	  }
+	  .obi-of-section>p{
+	    font-size: 18px;
+	    text-align: center;
+		/*    set light gray text to css*/
+	    color: #A5B6BF;
+	    margin: 5px auto;
+	  }
+	  .obi-of-section>.tittle-discription{
+	    color: #7F7F7F;
+	  }
+	  /*  中間文字 共用style*/
+	@media screen and (max-width: 1113px){
+		.left-zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.left-zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 100%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.left-zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+		.larg-layout{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: flex-start;
+		    flex-flow: row;
+		}
+		.single-text-content{
+			width: 33.3%;
+	    	align-items: flex-start;
+		}
+		.single-text-content:nth-child(2){
+			margin: 0px auto;
+			padding: 0 3%;
+		}
+		.single-text-content>h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.single-text-content>p{
+			text-align: left;
+		}
+
+		/*  中間文字 共用style*/
+	    .obi-of-section>h2{
+	      font-size: 30px;
+	    }
+	    .obi-of-section>h2, .obi-of-section>h2>span{
+	      font-weight: 500;
+	    }
+	    /*  中間文字 共用style*/
+	}
+	@media screen and (max-width: 680px){
+		.larg-layout{
+			flex-flow: column;
+    		align-items: center;
+		}
+		.single-text-content{
+			width: 90%;
+		}
+
+			/*  中間文字 共用style*/
+	    .obi-of-section{
+	      display: flex;
+	      align-items: center;
+	      flex-flow: column;
+	      padding: 40px 0 30px 0;
+	    }
+	    .obi-of-section>h2{
+	      font-size: 26px;
+	    }
+    	/*  中間文字 共用style*/
+	}
+
+</style>
+
+<div class="zlayout-section">
+	<div class="obi-of-section">
+	  <h2>數位轉型對各產業都是勢在必行的</h2>
+	</div>
+
+	<div class="left-zlayout-content digit2">
+		<div class="left-zlayout-img">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/digital-transformation/benefit-img/Group%202_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/digital-transformation/benefit-img/Group%202@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/digital-transformation/benefit-img/Group%202@1x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/digital-transformation/benefit-img/Group%202_compress.webp 3x" alt="數位轉型對各產業都是勢在必行的">
+		</div>
+		<div class="left-zlayout-text larg-layout">
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>鍛鍊企業的生存力</h3>
+				<p>在疫情與中美貿易戰的衝擊之下，數位化轉型已不是一個選項，而是生存的必經之路。企業都必須打破陳規，建立更敏捷、彈性和創新的商業模式，才能渡過下一次的危機。</p>
+				<!-- <a class="green-text-btn" href="/tw/solutions/teleworking">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>專注客戶體驗</h3>
+				<p>數位轉型的最終目的當然是為了創造價值，深刻了解、掌握客戶的需求與關鍵資訊，並提供客製化的服務與良好的消費行為體驗，藉此與客戶建立更長遠的關係。</p>
+				<!-- <a class="green-text-btn" href="/tw/evox/multiple-devices">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>遠距工作興起</h3>
+				<p>根據調查，許多人希望即使在疫情過後仍舊可以遠距上班，許多矽谷的科技大公司，都準備在疫情過後仍將長期提供員工遠距工作的選項，希望藉此提高自身的全球人才競爭力。</p>
+				<!-- <a class="green-text-btn" href="/tw/evox/multiple-devices/mobile-extension">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>善用雲端科技</h3>
+				<p>針對自身需求挑選合適的雲端工具，從企業內部雲端化開始實踐數位轉型第一步，除了可以提升提升工作效率、節省營運成本之外，甚至能進一步拓展事業的可能性。</p>
+				<!-- <a class="green-text-btn" href="/tw/evox/multiple-devices/mobile-extension">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

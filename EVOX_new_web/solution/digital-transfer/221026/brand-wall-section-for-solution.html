@@ -1,0 +1,250 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<style>
+  .brand-wall-block{
+    display:grid;
+    padding: 53px 0;
+    background: #fafafa;
+  }
+  .brand-wall-tittle{
+    /*display: table;*/
+    margin:0px auto;
+    text-align:center;
+    margin-bottom: 20px;
+  }
+   .brand-wall-tittle>h2, .brand-wall-tittle>p{
+    margin:0;
+  }
+  .brand-wall-tittle>h2{
+    font-size: 35px;
+  }
+  .brand-wall-tittle>p{
+    color: #7F7F7F;
+  }
+
+
+   .brand-wall-logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*max-width:1200px;*/
+    max-width: 1255px;
+    margin:20px auto;
+
+	}
+   .brand-wall-logo{
+    width: 17.3%;
+    /*background: #fff;*/
+    padding: 20px 0px;
+    margin: 1% 1%;
+    min-height: 160px;
+	}
+	.brand-wall-logo{
+		text-align: center;
+	}
+	.brand-wall-logo>span{
+		font-size: 18px;
+	}
+	.link-customer-stories-block{
+		margin:18px auto 10px auto;
+	}
+	.uniq-wid{
+		min-width:220px;
+	}
+	.active{
+  display:block;
+}
+.digit2 {
+     opacity: 0;
+    -webkit-transform: translateY(40px);
+       -moz-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+         -o-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: all 0.6s ease-out;
+       -moz-transition: all 0.6s ease-out;
+        -ms-transition: all 0.6s ease-out;
+         -o-transition: all 0.6s ease-out;
+            transition: all 0.6s ease-out;
+
+  }
+  .visible2 {
+    opacity: 1;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+  @media screen and (max-width: 640px){
+	  .brand-wall-block{
+	  	padding: 40px 0;
+	  }
+  	  .brand-wall-logo{
+	    width: 39%;
+	    margin: 2% 15px;
+	    padding:0;
+	    min-height: 146px;
+	  }
+	  .brand-wall-logo>span{
+	  	font-size: 16px;
+	  }
+	  .uniq-wid{
+		min-width:210px;
+	}
+	.link-customer-stories-block{
+		margin:5px auto 10px auto;
+	}
+  }
+  @media screen and (max-width: 490px){
+	.brand-wall-logo{
+	    width: 40%;
+	    margin: 2% 5%;
+	    padding:0;
+	    min-height: auto;
+	  }
+	  .brand-wall-logo>span{
+	  	font-size: 14px;
+	  }
+
+  }
+
+</style>
+<div class="brand-wall-block">
+	<div class="brand-wall-tittle">
+		<h2>更多企業加入 EVOX 數位轉型的行列</h2>
+		<!-- <p>各行各業都在用 EVOX 提升溝通效率</p> -->
+	</div>	
+	<div class="brand-wall-logo-section">
+		<!-- logo -->
+		<!-- 最多只能放15個logo多餘的要詢問該換掉哪個 -->
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/klook.png" alt="KLOOK 客路">
+			<span>KLOOK 客路</span>
+		</div> -->
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/volkswagen.png" alt="奧迪福斯汽車">
+			<span>台灣福斯</span>
+		</div>
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/parenting.png" alt="親子天下">
+			<span>親子天下</span>
+		</div>
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/kycs.png" alt="開原報關行">
+			<span>開原報關•開元報關</span>
+		</div>
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/dotdot.png" alt="點點全球">
+			<span>點點全球</span>
+		</div>
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/ob.png" alt="OB 嚴選">
+			<span>OB嚴選</span>
+		</div> -->
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/tao-chicken.png" alt="桃城雞排">
+			<span>桃城雞排</span>
+		</div> -->
+		
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/alp.png" alt="ALP永聯物流">
+			<span>永聯物流開發</span>
+		</div> -->
+		
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/awec-1.png" alt="世久營造">
+			<span>世久營造</span>
+		</div> -->
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/surveycake.png" alt="SurveyCake">
+			<span>SurveyCake</span>
+		</div>
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/botbonnie.png" alt="Botbonnie">
+			<span>邦妮科技</span>
+		</div> -->
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/imc.png" alt="精英集團">
+			<span>精英集團</span>
+		</div>
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/EiP-TV-1.png" alt="Botbonnie">
+			<span>東森分眾傳媒</span>
+		</div>
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/femas-hr.png" alt="鋒形科技">
+			<span>鋒形科技</span>
+		</div>
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/my-swiss-life.png" alt="My Swiss Life 平英堂">
+			<span>My Swiss Life 平英堂</span>
+		</div> -->
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/super8.png" alt="Super8">
+			<span>雲發互動科技</span>
+		</div>
+		<div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/urmart-1.png" alt="Botbonnie">
+			<span>UrMart 優馬選品</span>
+		</div>
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/goshop.png" alt="GOSHOP 嚴選研究室">
+			<span>GOSHOP 嚴選研究室</span>
+		</div> -->
+		
+		
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/qbebe.png" alt="QBEBE">
+			<span>QBEBE</span>
+		</div> -->
+		
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/qdlii.png" alt="QDM 開店沒">
+			<span>QDM</span>
+		</div> -->
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/anshin.png" alt="安行國際租賃">
+			<span>安行國際租賃</span>
+		</div> -->
+		
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/gogoout.png" alt="gogoout租車通">
+			<span>gogoout租車通</span>
+		</div> -->
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/one-way.png" alt="One Way 玩味生活">
+			<span>One Way 玩味生活</span>
+		</div> -->
+		
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/tofast.png" alt="即刻送機車快遞">
+			<span>即刻送機車快遞</span>
+		</div> -->
+		<!-- <div class="brand-wall-logo digit">
+			<img class="active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/home-page/brand-wall/logo/EZ-travel.png" alt="易遊網桃園加盟門市">
+			<span>易遊網桃園加盟門市</span>
+		</div> -->
+
+	</div>
+	<div class="link-customer-stories-block">
+		<a class="gray-outline-btn btn-center uniq-wid" href="https://www.evoxglobal.com/tw/customers">了解更多客戶的故事</a>
+	</div>
+</div>
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  var revealElements = document.getElementsByClassName("digit2");
+ for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+      new ScrollMagic.Scene({
+                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                offset: 10,                        // start a little later
+                triggerHook: 0.9,
+              })
+              .setClassToggle(revealElements[i], "visible2") // add class toggle
+              // .addIndicators({name: "digit1 " + (i+1) }) // add indicators (requires plugin)
+              .addTo(controller);
+    }
+</script>

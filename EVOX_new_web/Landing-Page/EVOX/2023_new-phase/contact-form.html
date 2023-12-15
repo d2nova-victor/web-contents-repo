@@ -1,0 +1,287 @@
+<style type="text/css">
+	.contact-us-secction{
+		max-width: 980px;
+		margin:0 auto;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 40px 0;
+	}
+	.contact-us-content-block{
+		display: flex;
+		flex-flow: column;
+		width: 47%;
+		padding:0 2%;
+		float: left;
+	}
+	.contact-us-text{
+
+	}
+	.landing-page-last-tittle{
+		color: #243237;
+	    font-size: 32px;
+	    text-align: left;
+	    margin: 0;
+/*	    font-weight: 600;*/
+	}
+	.contact-us-content-block>p{
+		text-align: left;
+		font-size: 16px;
+		color:#5F6871;
+		margin: 0;
+	}
+	.contact-us-form{
+		width: 46%;
+		float: left;
+		padding:0 2%;
+	}
+	.contact-us-content-block>img{
+		display: block;
+		margin: 0 auto;
+/*		max-width: 360px;*/
+	}
+	.mobile-show-img{
+		display: none;
+	}
+	@media screen and (max-width: 671px){
+		.contact-us-secction{
+			flex-flow: column;
+		}
+		.contact-us-content-block{
+			width: 96%;
+		}
+		.contact-us-content-block>img{
+			display: none;
+		}
+		.mobile-show-img{
+		display: block;
+		}
+	}
+	/*表單*/
+	/*修改hubspot表單*/
+	.form-block{
+		/*width: 100%;*/
+	}
+	.hbspt-form{
+		padding: 0px 0;
+	    width: 80%;
+	    /*float: left!important;*/
+	    margin: 0px auto !important;
+		
+	}
+	.hs-form-required{
+		display: none;
+	}
+	.hs_availabletime>label{
+		display: none;
+	}
+	select{
+		margin: 0px;
+	}
+	.hs-input{
+		width: 100%;
+		height: 45px;
+		/*padding: 5px;*/
+		padding: 9px 10px;
+    	margin: 4.5px 0;
+    	border-radius: 4px;
+    	border: 0px;
+    	background-color: #fff;
+    	font-weight: normal;
+    	line-height: 22px;
+    	box-sizing: border-box;
+    	border: 1px solid #A5B6BF;
+    	color: #243237;
+	}
+	::-webkit-input-placeholder { /* Edge */
+	  color: #A5B6BF;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer */
+	  color: #A5B6BF;
+	}
+	::placeholder {
+  	color: #A5B6BF;
+	}
+	.hs_client_want_to_know_about{
+		color: #243237;
+	    display: table;
+	    margin: 10px 0;
+	    width: 100%;
+	}
+	.inputs-list{
+		color:#243237;
+		list-style: none;
+    	padding: 0px;
+    	margin: 0px;
+	}
+	input[type="checkbox"]{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
+		border: 0px;
+		-webkit-appearance:none;
+	}
+	input[type="checkbox"] + span{
+		display      : inline-block;
+		  /*margin-left  : -28px;*/
+		  padding-left : 28px;
+		  line-height  : 24px;
+		  
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/check-box-null.png') no-repeat 0 3px;
+	}
+	input[type="checkbox"]:checked+ span{
+		/*background: #fff;*/
+		/*color: #00A82D;*/
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/check-box-checked.png') no-repeat 0 3px;
+	}
+	.hs-form-checkbox{
+		width: 100%;
+		float: left;
+		list-style: none;
+	}
+	.hs-error-msg{
+		color: #FF9500;
+	}
+	input[type="submit"]{
+		width: 100%;
+		float: left;
+		margin: 10px 0px;
+		background: #66C547;
+		border-radius: 4px;
+	    border: 0px solid #fff;
+	    color: #fff;
+	    padding: 10px 50px;
+	}
+	select[name="company_size"]{
+		/*color:#A5B6BF; */
+		-webkit-appearance: none;
+		-moz-appearance: window;
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+	}
+
+	select[name="availabletime"]{
+		/*color:#A5B6BF;*/
+		-webkit-appearance: none;
+		-moz-appearance: window;
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+	}
+	/*selecr未選擇時更改顏色*/
+	select:required:invalid{
+  		color: #A5B6BF;
+	}
+	option[value=""][disabled] {
+		color: #A5B6BF;
+	}
+	option {
+  		color:#243237;
+	}
+	@media screen and (max-width: 671px){
+		.contact-tittle{
+			text-align: center;
+		}
+		.contact-us-form{
+			width: 86%;
+		}
+		.hbspt-form{
+			width: 100%;
+		}
+	}
+
+	/*	物件滑入動畫 最後再開*/
+	.active{
+	  display:block;
+	}
+	.digit2 {
+	     opacity: 0;
+	    -webkit-transform: translateY(40px);
+	       -moz-transform: translateY(40px);
+	        -ms-transform: translateY(40px);
+	         -o-transform: translateY(40px);
+	            transform: translateY(40px);
+	    -webkit-transition: all 0.3s ease-out;
+	       -moz-transition: all 0.3s ease-out;
+	        -ms-transition: all 0.3s ease-out;
+	         -o-transition: all 0.3s ease-out;
+	            transition: all 0.3s ease-out;
+
+	  }
+	    .visible2 {
+	    opacity: 1;
+	    -webkit-transform: none;
+	       -moz-transform: none;
+	        -ms-transform: none;
+	         -o-transform: none;
+	            transform: none;
+	  }
+</style>
+<div class="contact-us-secction">
+	<div class="contact-us-content-block">
+		<div class="contact-us-text">
+			<h2 id="go-contact" class="landing-page-last-tittle contact-tittle">企業數位轉型<br/>就從 EVOX 雲端電話系統開始</h2>
+			<!-- <p>面對日新月異的市場與環境，選擇真正懂您需求的夥伴，為企業的每個階段打造適宜的服務。</p> -->
+		</div>
+		<img class="digit2" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Landing-pages/EVOX/form-img/Group%2025@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Landing-pages/EVOX/form-img/Group%2025@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Landing-pages/EVOX/form-img/Group%2025@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Landing-pages/EVOX/form-img/Group%2025_compress.webp 3x" alt="聯絡我們">
+	</div>
+	<div class="contact-us-form digit2">
+		<!--[if lte IE 8]>
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+		<![endif]-->
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+		<script>
+		  hbspt.forms.create({
+			region: "na1",
+			portalId: "1864133",
+			formId: "08496b89-8c72-48a1-9b33-c38919b2bcd8"
+		});
+		</script>
+	</div>
+	
+</div>
+
+<!-- scroll連結 -->
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+
+     // init slider in 動畫
+	  var controller = new ScrollMagic.Controller();
+
+	  var revealElements = document.getElementsByClassName("digit2");
+	 for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+	      new ScrollMagic.Scene({
+	                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+	                offset: 30,                        // start a little later
+	                triggerHook: 0.9,
+	              })
+	              .setClassToggle(revealElements[i], "visible2") // add class toggle
+	              // .addIndicators({name: "digit21 " + (i+1) }) // add indicators (requires plugin)
+	              .addTo(controller);
+	    }
+</script>

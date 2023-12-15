@@ -1,0 +1,392 @@
+<style type="text/css">
+	.benefit-links-section{
+		padding: 20px 0;
+	}
+	.links-group{
+		position: relative;
+	    display: flex;
+	    align-items: center;
+	    flex-flow: column wrap;
+	    max-width: 840px;
+	    margin: 0 auto;
+	    max-height: 470px;
+	}
+	.dropshadow-box{
+		position: relative;
+		padding: 10px 0;
+		filter:drop-shadow(1px 1px 5px rgba(100, 100, 100, 0.8));
+		width: 250px;
+	}
+	.benefit-link{
+		display: block;
+		position: absolute;
+    width: 100%;
+    height: 100%;
+	}
+	.single-benefit-box{
+		position: relative;
+		display: flex;
+		background: #fff;
+		align-items: center;
+		justify-content: center;
+		flex-flow: row;
+		margin: 0 10px;
+		padding:20px;
+		clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+		transition: all 500ms ease;
+	}
+	.benefit-img-box{
+		position: relative;
+		width: 60px;
+    	height: 60px;
+	}
+	.benefit-img{
+		transition: all 500ms ease;
+	}
+	.benefit-img-color{
+		position: absolute;
+		opacity: 1;
+	}
+	.benefit-img-white{
+		position: absolute;
+		top: 0;
+		opacity: 0;
+	}
+	.benefit-btn{
+		color: #243237;
+	}
+	.single-benefit-box:hover{
+		background: #58B805!important;
+	}
+	.single-benefit-box:hover .benefit-btn{
+		color: #fff;
+	}
+	.single-benefit-box:hover .benefit-img-white{
+		opacity: 1;
+	}
+	.single-benefit-box:hover .benefit-img-color{
+		opacity: 0;
+	}
+	.links-group>div:nth-child(1), .links-group>div:nth-child(2), .links-group>div:nth-child(3){
+		left: 55px;
+	}
+	.links-group>div:nth-child(6), .links-group>div:nth-child(7), .links-group>div:nth-child(8){
+		right: 55px;
+	}
+	.links-group>div:nth-child(4){
+		margin-top: 60px;
+	}
+	.links-group>div:nth-child(5){
+		margin-bottom: 60px;
+	}
+
+  /*  中間文字 共用style*/
+  .obi-of-section{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0;
+  }
+  .obi-of-section>h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .obi-of-section>p{
+    font-size: 18px;
+    text-align: center;
+	/*    set light gray text to css*/
+    color: #A5B6BF;
+    margin: 5px auto;
+  }
+  .obi-of-section>.tittle-discription{
+    color: #7F7F7F;
+  }
+  /*  中間文字 共用style*/
+
+  @media screen and (max-width: 840px){
+		/*  中間文字 共用style*/
+	    .obi-of-section>h2{
+	      font-size: 30px;
+	    }
+	    .obi-of-section>h2, .obi-of-section>h2>span{
+	      font-weight: 500;
+	    }
+	    /*  中間文字 共用style*/
+	    .single-icon-set:nth-child(2){
+	    	margin: 0 2%;
+	    }
+/*	    8大優勢*/
+		.links-group{
+			flex-flow: column wrap;
+	    max-width: 90%;
+	    margin: 0 auto;
+	    max-height: 580px;
+	    padding: 0px 0 50px 0;
+		}
+		.dropshadow-box{
+			width: 50%;
+		}
+		.links-group>div:nth-child(1), .links-group>div:nth-child(2), .links-group>div:nth-child(3){
+			left: auto;
+		}
+		.links-group>div:nth-child(4){
+			    margin-top: 0;
+		}
+		.links-group>div:nth-child(5){
+				margin-bottom: 0px;
+		}
+		.links-group>div:nth-child(6), .links-group>div:nth-child(7), .links-group>div:nth-child(8){
+			    right: auto;
+		}
+		.links-group>div:nth-child(5), .links-group>div:nth-child(6), .links-group>div:nth-child(7), .links-group>div:nth-child(8){
+			top: 50px;
+		} 
+	}
+	@media screen and (max-width: 640px){
+		/*  中間文字 共用style*/
+	    .obi-of-section{
+	      display: flex;
+	      align-items: center;
+	      flex-flow: column;
+	      padding: 40px 0 30px 0;
+	    }
+	    .obi-of-section>h2{
+	      font-size: 26px;
+	    }
+    	/*  中間文字 共用style*/
+	}
+	@media screen and (max-width: 460px){
+		.eight-benefit-tittle{
+			 max-width: 350px;
+   		 margin: 0 auto;
+   		 padding: 10px 0 10px 0;
+		}
+		.links-group{
+			flex-flow: column wrap;
+	    padding: 0px 0 0px 0;
+	    max-height: 650px;
+		}
+		.single-benefit-box{
+			flex-flow: column;
+			min-height: 100px;
+			padding: 10px;
+		}
+		.dropshadow-box{
+			width: 50%;
+		}
+		.benefit-btn{
+			text-align: center;
+		}
+		.links-group>div:nth-child(5), .links-group>div:nth-child(6), .links-group>div:nth-child(7), .links-group>div:nth-child(8){
+			top: 0px;
+		} 
+
+	}
+	  @media screen and (min-width: 1250px){
+	  .links-group{
+	  	max-height: 290px;
+	  	max-width: 1250px;
+	  }	
+	  .links-group>div:nth-child(1), .links-group>div:nth-child(2), .links-group>div:nth-child(3){
+	  	left: 0;
+	  }
+	  .links-group>div:nth-child(4){
+	  	    margin-top: 0px;
+	  }
+	  .links-group>div:nth-child(5){
+	  	    margin-bottom: 0px;
+	  }
+	  .links-group>div:nth-child(6), .links-group>div:nth-child(7), .links-group>div:nth-child(8){
+	  	    right: 0;
+	  }
+	  .links-group>div:nth-child(3), .links-group>div:nth-child(6){
+	  	    margin: 60px 0;
+	  }
+	  .links-group>div:nth-child(3){
+	  	left: 26px;
+	  }
+	  .links-group>div:nth-child(6){
+	  	left: -26px;
+	  }
+	  .links-group>div:nth-child(1), .links-group>div:nth-child(2){
+	  	left: 50px;
+	  }
+	  .links-group>div:nth-child(7), .links-group>div:nth-child(8){
+	  	left: -50px;
+	  }
+  }
+</style>
+<div class="benefit-links-section">
+	<div class="obi-of-section eight-benefit-tittle">
+	  <h2>EVOX for Teams 8大優勢，打造絕佳溝通體驗</h2>
+	</div>
+	<div class="links-group digit2">
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#teams-call">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-1.png" alt="商務電話">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-1-white.png" alt="商務電話">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#teams-call">Teams 商務電話</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#multi-devices">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-2.png" alt="多裝置自由選擇">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-2-white.png" alt="多裝置自由選擇">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#multi-devices"> 多裝置自由選擇</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#multi-locations">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-8.png" alt="多據點一次管理">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-8-white.png" alt="多據點一次管理">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#multi-locations">多據點一次管理</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#cloud-system">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-4.png" alt="純雲端架構">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-4-white.png" alt="純雲端架構">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#cloud-system">純雲架構更敏捷</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#no-code-admin">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-7.png" alt="No-code 輕鬆管理">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-7-white.png" alt="No-code 輕鬆管理">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#no-code-admin">No-code 輕鬆管理</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#onboarding-service">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-6.png" alt="專業導入服務">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-6-white.png" alt="專業導入服務">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#onboarding-service">專業導入服務</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			<div class="single-benefit-box" href="#sync-account">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-3.png" alt="無痛整合通訊錄">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-3-white.png" alt="無痛整合通訊錄">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#sync-account">無痛整合通訊錄</a>
+			</div>
+		</div>
+		<!-- 單個 -->
+		<div class="dropshadow-box">
+			
+			<div class="single-benefit-box" href="#cloud-integration">
+				<div class="benefit-img-box">
+					<img class="benefit-img benefit-img-color" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-5.png" alt="多元整合商機">
+
+					<img class="benefit-img benefit-img-white" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/teams-integration/icons/benefit-icons/teams-benefit-icon-5-white.png" alt="多元整合商機">
+				</div>
+				<a class="white-text-btn benefit-btn" href="#cloud-integration">多元整合商機</a>
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+<script>
+	 $(document).ready(function() {
+	 	// // Add smooth scrolling to all links
+		//  $("a").on('click', function(event) {
+		 	
+		//  	// let hash=window.location.hash;
+		//  	// window.location.hash = hash;
+		//  // Make sure this.hash has a value before overriding default behavior
+		// 	    if (this.hash !== "") {
+		// 	        // Prevent default anchor click behavior
+		// 	        event.preventDefault();
+		//              // Store hash
+		// 	        var hash = this.hash;
+		// 	        // var hash = window.location.hash.substr(1);
+		// 	        console.log('Hash:'+hash);
+		// 	        var windowsize = $(window).width();
+		// 				 	var hashHight = Math.floor($(hash).offset().top);
+		// 					var innerHeight = Math.floor($('.header-inner').height());
+		// 					var intinnerHight = parseInt(innerHeight);
+		// 					var inthashHight = parseInt(hashHight);
+		// 					var totalHight = inthashHight - intinnerHight - 200;
+		// 					console.log('hashHight:'+hashHight);
+		// 					console.log('innerHeigh'+ innerHeight);
+		// 					console.log('滑動高度：'+ totalHight);
+			        
+		// 	        // Using jQuery's animate() method to add smooth page scroll
+		// 	       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			        
+		// 	        // $( 'html, body' ).scrollTop( 300 );
+		// 	        // console.log('滑動高度：'+ $(hash).offset().top + innerHeigh - 120);
+		// 	        if (windowsize < 460) {
+		//         		// console.log("手機視窗");
+		//         		$('html, body').stop().animate({
+		// 	            scrollTop: totalHight
+		// 	            }, 800, function() {
+		// 	                    // Add hash (#) to URL when done scrolling (default click behavior)
+		// 			            window.location.hash = hash;
+		// 			    });
+		//         	}else{
+		//         		$('html, body').animate({
+		// 	            // scrollTop: $(hash).offset().top-200
+		// 	            scrollTop:totalHight
+		// 	            }, 800, function() {
+		// 	                    // Add hash (#) to URL when done scrolling (default click behavior)
+		// 			            window.location.hash = hash;
+		// 			    });
+		//         	}
+			        
+		// 		} // End if
+		// 	});
+
+			$("a[href^='#']").click(function(e) {
+				e.preventDefault();
+				
+				var position = $($(this).attr("href")).offset().top-150;
+
+				$("body, html").animate({
+					scrollTop: position
+				} /* speed */ );
+			});
+
+
+			$("div[href^='#']").click(function(e) {
+				e.preventDefault();
+				
+				var position = $($(this).attr("href")).offset().top-150;
+
+				$("body, html").animate({
+					scrollTop: position
+				} /* speed */ );
+			});
+
+			
+    });
+</script>

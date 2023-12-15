@@ -6,7 +6,11 @@
 	.change-bg-color-gray{
 		background: #fafafa;
 	}
-		 .guide-block{
+	.benefit-flex{
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+	.guide-block{
 	 	padding: 22px 15px;
 	 	display: flex;
 	 	justify-content: center;
@@ -71,7 +75,7 @@
 	}
 </style>
 <div class="content-section-1-version-b-reverse change-bg-color-gray">
-<div class="content-section-1">
+<div class="content-section-1 benefit-flex">
 	<div class="guide-block">
 		<div class="guide-box">
 		<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/agent-app/overview/new/call-rate-icon.png" alt="紀錄通話"> -->

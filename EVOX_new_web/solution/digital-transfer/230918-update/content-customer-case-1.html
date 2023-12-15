@@ -1,0 +1,507 @@
+<!-- flickity -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script> 
+<style type="text/css">
+   .customer-case-section{
+   display: flex;
+   max-width: 1100px;
+   margin: 0 auto;
+   align-items: center;
+   margin: 40px auto;
+   justify-content: center;
+   }
+   .case-box {
+   width: 55%;
+   }
+   .case-text{
+   padding:0 70px;
+   width: 45%;
+   text-align: justify;
+   }
+   .case-brand{
+   max-width: 170px;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   }
+   .case-btn{
+   width: 100%;
+   }
+   .case-descript > h3{
+   font-size: 36px;
+   }
+   .no-show{
+   display: none!important;
+   }
+   .case-img-only{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .case-img-only>img{
+      width: 80%;
+   }
+   /*左右反轉*/
+   
+   .case-img-reverse{
+   order:2;
+   }
+   /*單個logo*/
+   .two-logo-section{
+   width: 33.3%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+/*   background: #fbfbfb;*/
+   position: relative;
+   flex-flow: column;
+   float: left;
+   }
+   .two-logo-left-box{
+/*   border-radius: 0 0 0 4px;*/
+/*   border: 1px solid #EDEFF1;*/
+   overflow: hidden;
+   }
+   .two-logo-right-box{
+/*   border-radius: 0 0 4px 0;*/
+/*   border: 1px solid #EDEFF1;*/
+   overflow: hidden;
+   }
+   /*電腦版 客戶故事icon*/
+   .mobile-link-icon{
+   display: flex;
+   opacity:0;
+   background: #292929c7;
+   color: #fff;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+   }
+   .mobile-link-icon:hover{
+   opacity:1;
+   transition: opacity .4s;
+   }
+   /*	slider*/
+   .story-card-sections{
+   max-width: 1238px;
+   /*    	display: flex;*/
+   align-items: center;
+   margin: 10px auto;
+   padding: 20px;
+   }
+   .story-card{
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+   /*	    width: 33.3%;*/
+   background: #F2F4F1;
+   border-radius: 20px;
+   transition: box-shadow .3s, opacity .3s,transform .3s;
+   transition-timing-function: ease-in;
+   /*    	margin: 0 20px;*/
+   width: 100%;
+   margin: 0 8%;
+   }
+   .story-card:hover{
+   box-shadow: 1px 1px 7px #00000052;
+   /*    	transform: scale(1.00);*/
+   transform: scale(0.97);
+   }
+   /*.story-card:nth-child(2){
+   margin: 0 42px;
+   }*/
+   /*	圖片*/
+   .story-img{
+   display: flex;
+   align-items: center;
+   justify-items: center;
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   min-height: 220px;
+   border-radius: 20px 20px 0 0;
+   }
+   .customer-img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   display: block;
+   min-height: 100%;
+   transform: translate(-50%,-50%);
+   transition: .5s;
+   -moz-transition: .5s;
+   -o-transition: .5s;
+   -webkit-transition: .5s;
+   width: 120%;
+   max-width: max-content!important;
+   }
+   .img-filter-box{
+   width: 100%;
+   min-height: 220px;
+   background: #33333354;
+   z-index: 0;
+   }
+   .customer-logo{
+   position: absolute;
+/*   width: 100%;*/
+   width: 70%;
+   right: 15%;
+   }
+   .img-filter-box,.customer-logo{
+   transition: opacity, .8s;
+   transition-timing-function: ease-in;
+   }
+   .story-card:hover .story-img>.img-filter-box{
+   }
+   .story-card:hover .story-img>.customer-logo{
+   }
+   /*	文字*/
+   .styor-text-section{
+   padding: 15px 15px 28px 15px;
+   }
+   .story-tag{
+   font-size: 14px;
+   color: #5F6871;
+   padding: 5px 0;
+   }
+   .story-tittle-box{
+   min-height: 65px;
+   max-height: 75px;
+   overflow: hidden;
+   }
+   .story-tittle-box>h3{
+   font-size: 21px;
+   line-height: 35px;
+   color:#243237;
+   }
+   .story-links-block{
+  /* display: flex;
+   align-items: center;
+   justify-content: center;*/
+   }
+   .customer-story-link{
+/*   margin: 0 2%;*/
+   margin: 0 3% 0 0;
+   }
+   .new-tag_brandwall{
+   font-size: 13px;
+   /* display: block; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   float: left;
+   background: #FF9500;
+   color: #fff;
+   padding: 0px 5px;
+   border-radius: 5px;
+   position: relative;
+   margin: 0 5px;
+   height: 22px;
+   }
+   /*	品牌logo*/
+   .case-logo-list-block{
+   	display: flex;
+   	align-items: center;
+   	justify-content: center;
+   }
+   .customer-section{
+   	position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .through-line{
+   	width: 100%;
+    background: #ccc;
+    height: 2px;
+    position: absolute;
+   }
+   .customer-section>p{
+   	font-size: 17px;
+   	color:#5F6871;
+   	background:#fff;
+    z-index: 1;
+    padding: 0 10px;
+   	
+   }
+   .brand-wall-section{
+   max-width: 1275px;
+   margin: 40px auto;
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+   justify-content: center;
+   }
+   .logo-list{
+   display: flex;
+   align-items: center;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+   width: 100%;
+   }
+   .single-logo{
+   min-width: 141px;
+   max-width: 142px;
+   margin: 0 auto;
+   }
+   /*	flickity slider*/
+   .flickity-slider{
+   width: 90%;
+   margin: 0 2.7% 0 1.3%;
+   padding: 0 1.5%;
+   }
+   .flickity-button{
+   /*			background: hsl(0deg 0% 65.01% / 75%);*/
+   background: #ffffff;
+   box-shadow: 0px 0px 5px #bebebe;
+   }
+   .flickity-button:hover{
+   background: #58b805;
+   color:#fff;
+   }
+   .flickity-button:disabled{
+   opacity: 0;
+   }
+   .flickity-prev-next-button.previous{
+   left: 19px;
+   /*			border-radius:  50% 0 0 50% ;*/
+   }
+   .flickity-prev-next-button.next{
+   right: 10px;
+   /*			border-radius: 0% 50% 50% 0;*/
+   }
+   @media screen and (max-width: 1140px){
+   .story-card-sections{
+   align-items: stretch;
+   padding: 0 10px;
+   }
+   .story-links-block{
+   align-items: flex-start;
+   }
+   .styor-text-section{
+   display: flex;
+   flex-flow: column;
+   justify-content: space-around;
+   }
+   }
+   @media screen and (max-width: 840px){
+   .customer-case-section{
+/*   display: table;*/
+    display: flex;
+    flex-flow: column;
+   }
+   .case-box{
+/*   width: 100%;*/
+	width: 90%;
+	padding: 0 5%;
+   }
+   .case-img>img{
+   width: 100%;
+   }
+   /*		slider*/
+   .story-img{
+   min-height: 140px;
+   }
+   .customer-img{
+   width: auto;
+   max-width: 100%;
+   }
+   .logo-list{
+   justify-content: center;
+   }
+   .single-logo{
+   margin: 0 3%;
+   }
+   /*	flickity slider*/
+   .story-card{
+   width: 30%;
+   margin: 0 5%;
+   }
+   .flickity-slider{
+   width: 90.9%;
+   margin: 0 3.9%;
+   padding: 0 0%;
+   }
+   .flickity-prev-next-button.previous{
+   left: 10px;
+   }
+   .flickity-prev-next-button.next{
+   right: 10px;
+   }
+   }
+   @media screen and (max-width: 640px){
+   /*	slider*/
+   .story-card-sections{
+   flex-flow: column;
+   margin: 0px auto 10px auto;
+   }
+   .story-card{
+   width: 100%;
+   margin: 20px auto;
+   }
+   .img-filter-box{
+   min-height: 320px;
+   }
+   .story-img{
+   min-height: 320px; 
+   height: 320px;
+   }
+   .story-links-block{
+   flex-flow: row;
+   }
+   .single-logo{
+   max-width: 48%;
+   margin: 0 1%;
+   }
+   .case-box{
+   width: 100%;
+   padding: 0;
+   }
+   /*	flickity slider*/
+   .story-card{
+   width: 92%;
+   margin: 0 4%;
+   }
+   .story-card-sections{
+   }
+   .flickity-slider{
+   width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   }
+   .flickity-prev-next-button.next{
+   top: 30%;
+   right: 0px;
+   }
+   .flickity-prev-next-button.previous{
+   top: 30%;
+   left: 0px;
+   }
+   }
+   @media screen and (max-width: 480px){
+   .brand-name{
+   font-size: 12px;
+   }
+   .three-logo-section
+   {
+   justify-content: end;
+   min-height:127px;
+   }
+   .two-logo-section
+   {
+   justify-content: end;
+/*   min-height:150px;*/
+   }
+   .mobile-link-icon{
+   display: none;
+   position: relative;
+   opacity: 1;
+   order: 3;
+   background: #fbfbfb;
+   color: #58B805;
+   }
+   .case-text{
+   	width: 90%;
+      padding: 30px 2%;
+      margin: 0 auto;
+      order:-1;
+   }
+/*   slider*/
+   .story-img{
+    min-height: 200px;
+    height: 130px;
+   }
+   .case-img>img{
+      width: 80%;
+   }
+   }
+</style>
+<div class="customer-case-section">
+   <div class="case-box  case-img">
+      <!-- flickity-slider -->
+      <!-- 客戶故事 -->
+      <div class="story-card-sections carousel" >
+         
+         <!-- 單張卡片 -->
+         <div class="story-card carousel-cell ">
+            <!-- 圖片 -->
+            <div class="story-img">
+               <!-- BG -->
+               <img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/ALP-img.jpg" alt="ALP永聯物流">
+               <div class="img-filter-box"></div>
+               <!-- logo -->
+               <img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/alp.png" alt="ALP永聯物流">
+            </div>
+            <!-- 文字 -->
+            <div class="styor-text-section">
+               <div class="story-tag"><span>智慧倉儲物流 ｜ ALP 永聯物流</span></div>
+               <div class="story-tittle-box">
+                  <h3>物流業的顛覆者，永聯物流開發採用雲端電話系統</h3>
+               </div>
+               <!-- 連結 -->
+               <div class="story-links-block">
+                  <a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/alp" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- 內文 -->
+   <div class=" case-text">
+      <div class="case-main case-descript">
+         <h3>物流運輸</h3>
+         <p>總機人員不必再硬背號碼，直接速撥司機分機就能交辦事項，讓派車調度更有效率。司機在外奔波也可隨時用公司代表號對外聯絡，不用洩漏私人手機號碼，保有隱私又不怕被拒接。 </p>
+         <a class="green-text-btn" href="/tw/industry/logistic">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="logo-case-carousel">
+         <div class="customer-section">
+         	<div class="through-line"></div>
+            <p>代表客戶</p>
+         </div>
+         <!-- <div class="carousel-cell"> -->
+         <!-- logo -->
+         <div class=" case-main  case-logo-list-block">
+            <a class="two-logo-section two-logo-left-box" href="https://blog.evoxglobal.com/tw/testimonials/alp" target="_blank">
+               <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-color/alp.png" alt="ALP">
+               <div class="mobile-link-icon">客戶故事 <i class="fas fa-external-link-alt"></i></div>
+               <!-- <div class="brand-name">永聯國際</div> -->
+            </a>
+            <a class="two-logo-section two-logo-right-box">
+               <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-color/DPEX.png" alt="DBEX">
+               <!-- <div class="brand-name">即刻送</div> -->
+            </a>
+            <a class="two-logo-section two-logo-right-box">
+               <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-color/pickupp.png" alt="Pickupp">
+               <!-- <div class="brand-name">即刻送</div> -->
+            </a>
+         </div>
+      </div>
+   </div>
+   <script>
+      $('.carousel').flickity({
+        // options
+        // autoPlay: 5100,
+        prevNextButtons: true,
+        pauseAutoPlayOnHover: false,
+        draggable: true,
+        wrapAround: true,
+        groupCells: 1,
+        pageDots: false
+      });
+   </script>
+   <!-- 	<script>
+      $('.logo-case-carousel').flickity({
+      	wrapAround: true,
+      	autoPlay:2100,
+      	groupCells: true,
+      	groupCells: 2,
+      	groupCells: '100%',
+      	pauseAutoPlayOnHover:true,
+      	draggable:true,
+      	lazyLoad:true
+      });
+      </script> -->
+</div>

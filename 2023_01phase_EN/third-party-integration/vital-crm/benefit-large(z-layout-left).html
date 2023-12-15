@@ -1,0 +1,143 @@
+<style type="text/css">
+	.zlayout-section{
+		padding: 40px 0;
+	}
+
+	.left-zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.left-zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.left-zlayout-img>img{
+			width: 100%;
+		}
+	.left-zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 452px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.single-text-content{
+		display: flex;
+		flex-flow: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	margin:10px auto;
+    	border-bottom: 1px solid #3333;
+	}
+	.single-text-content:nth-child(2){
+/*		margin: 30px auto;*/
+	}
+	.single-text-content>h3{
+		font-size: 21px;
+		line-height: 31px;
+		margin:0 0 5px 0;
+	}
+	.single-text-content>p{
+		font-size: 16px;
+		line-height: 30px;
+		margin: 5px 0;
+/*		text-align: justify;*/
+	}
+	@media screen and (max-width: 1113px){
+		.left-zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.left-zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 100%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.left-zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+		.larg-layout{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: flex-start;
+		    flex-flow: row;
+		}
+		.single-text-content{
+			width: 33.3%;
+	    	align-items: flex-start;
+		}
+		.single-text-content:nth-child(2){
+			margin: 0px auto;
+			padding: 0 3%;
+		}
+		.single-text-content>h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.single-text-content>p{
+			text-align: left;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.larg-layout{
+			flex-flow: column;
+    		align-items: center;
+		}
+		.single-text-content{
+			width: 90%;
+		}
+	}
+
+</style>
+
+<div class="zlayout-section">
+	<div class="obi-of-section">
+	  <h2>Customer relationship management for the internet era</h2>
+	</div>
+
+	<div class="left-zlayout-content digit2">
+		<div class="left-zlayout-img">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/vital-crm/benefit/Group%202@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/vital-crm/benefit/Group%202@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/vital-crm/benefit/Group%202@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/vital-crm/benefit/Group%202_compress.webp 3x" alt="e 世代客戶關係管理">
+		</div>
+		<div class="left-zlayout-text larg-layout">
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>No need to maintain hardware equipment </h3>
+				<p>No need to install hardware or pull telephone lines. You can quickly build your telephone system  with cloud PBX functions such as multi-device and multilocation support, and online management. </p>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>Ideal for WFH </h3>
+				<p>Make or receive calls through Vital CRM anywhere there’s an internet connection and activate a remote office.</p>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>One computer does everything </h3>
+				<p>No need to purchase additional telephones–your employees can handle documents, make and receive calls and manage customer information from their computer.</p>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>Pre-integrated for fast productivity gain </h3>
+				<p>Vital CRM is pre-integrated with EVOX using ECLIK (the EVOX Client Integration Kit), an easier and faster method than traditional CTI. This integration allows the tools to complement each other for maximum benefits.</p>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

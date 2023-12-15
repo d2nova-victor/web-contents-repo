@@ -1,0 +1,222 @@
+<!-- CSS -->
+<!-- <link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.css"> -->
+
+<!-- JS -->
+<!-- <script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script>
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script> -->
+<!-- smooth slider codepen -->
+<!-- https://codepen.io/leguian/pen/WNeGKzz?css-preprocessor=sass -->
+
+<style type="text/css">
+	.customer-slider-section{
+		padding: 40px 0;
+	}
+
+	/* external css: flickity.css */
+	/*.carousel {
+	}*/
+
+/*	.carousel-cell {
+	  width: 20%;
+	  margin-right: 10px;
+	  border-radius: 5px;
+	  padding: 0 60px;
+	  counter-increment: gallery-cell;
+	}*/
+/*	.carousel-cell:hover{
+		
+	}*/
+	/*.is-selected{
+	}*/
+	
+	/*.carousel-cell>img{
+		width: 100%;
+	}*/
+	.logo-slider-content{
+		margin: 5px 0;
+	}
+	.more-link{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+/*	smooth slider*/
+.showcase{
+	display: block;
+  	display: block;
+ 	width: 100%;
+  	margin: 0 auto;
+  	overflow: hidden;
+}
+
+
+  .slider{
+  	display: block;
+    list-style: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item{
+  	display: flex;
+    float: left;
+    position: relative;
+    width: 200px;
+    max-width: 250px;
+    line-height: 200px;
+    text-align: center;
+    align-items: center;
+  }
+      
+
+  img{
+    vertical-align: middle;
+    max-width: 80%;
+/*   	max-height: 100%;*/
+    -webkit-transition: 0 linear left;
+    -moz-transition: 0 linear left;
+    transition: 0 linear left;
+    opacity:1;
+  }
+  img:hover{
+/*   	opacity: 1.0;*/
+  }
+  .customer-tittle{
+  	max-width: 1100px;
+  	margin: 0 auto;
+  }
+	@media screen and (max-width: 840px){
+		.carousel-cell{
+			width: 25%;
+			padding: 0 30px;
+		}
+		/*	smooth slider*/
+		.item{
+		    width: 180px;
+		    max-width: 190px;
+	  	}
+	  .customer-tittle{
+  		max-width: 100%;
+  	}
+	}
+		@media screen and (max-width: 640px){
+		.carousel-cell{
+			width: 25%;
+			padding: 0 3%;
+		}
+	}
+
+</style>
+
+<div class="customer-slider-section gray-bg">
+	<div class="obi-of-section customer-tittle">
+	  <h2>All types of businesses use EVOX to improve communication.</h2>
+	</div>
+
+        <div class="showcase">
+          <div class="slider clearfix">
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/volkswagen.png" alt="台灣福斯" class="item"/>
+            
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/klook.png" alt="Klook" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/ob.png" alt="OB嚴選" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/tao-chicken-2.png" alt="桃城雞排" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/EiP-TV.png" alt="分眾傳媒" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/alp.png" alt="ALP" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/awec.png" alt="世久營造" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/kycs.png" alt="開源報關" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/parenting.png" alt="親子天下" class="item"/>
+            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/imc.png" alt="精英集團" class="item"/>
+            
+          </div>
+        </div>
+
+
+
+	<!-- <div class="logo-slider-content digit2"> -->
+		<!-- Flickity HTML init -->
+		<!-- <div class="carousel" data-flickity='{ "autoPlay": 2500,"freeScroll": true, "wrapAround": true,"prevNextButtons": false,"pageDots": false,"draggable": false,"pauseAutoPlayOnHover": false}'> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/volkswagen.png" alt="台灣福斯">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/parenting.png" alt="親子天下">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/klook.png" alt="Klook">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/ob.png" alt="OB嚴選">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/tao-chicken-2.png" alt="桃城雞排">
+		  </div> -->
+		  <!-- 單個 -->
+		 <!--  <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/EiP-TV.png" alt="分眾傳媒">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/alp.png" alt="ALP">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/kycs.png" alt="開源報關">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/imc.png" alt="精英集團">
+		  </div> -->
+		  <!-- 單個 -->
+		  <!-- <div class="carousel-cell">
+		  	<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/awec.png" alt=" 世久營造">
+		  </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	<div class="more-link">
+		<a class="customer-story-link green-text-btn" href="/en/customers" >Read customer success stories <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+	</div>
+	
+</div>
+<script type="text/javascript">
+	$(function(){
+  var $slider = $('.slider');
+  var sizeImage = 200;
+  var items = $slider.children().length;
+  var itemswidth = (items * sizeImage); // 140px width for each client item 
+  $slider.css('width',itemswidth);
+  
+  var rotating = true;
+  var sliderspeed = 0;
+  var seeitems = setInterval(rotateSlider, sliderspeed);
+  
+  $(document).on({
+    mouseenter: function(){
+      rotating = false; // turn off rotation when hovering
+    },
+    mouseleave: function(){
+      rotating = true;
+    }
+  }, '.showcase');
+  
+  function rotateSlider() {
+    if(rotating != false) {
+      var $first = $('.slider .item:first');
+      $first.animate({ 'margin-left': '-'+sizeImage+'px' }, 5000, "linear", function() {
+        $first.remove().css({ 'margin-left': '0px' });
+        $('.slider .item:last').after($first);
+      });
+    }else{
+      $first.stop();
+    }
+  }
+});
+
+</script>

@@ -1,0 +1,261 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Jquery-UI/jquery-ui.theme.css">
+<!-- <script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Jquery-UI/jquery.js"></script> -->
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Jquery-UI/jquery-ui.js"></script>
+<style type="text/css">
+.content-02{
+    background: #FAFAFA;
+    padding: 40px 0;
+}
+.report-content-two-cloum{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.report-block{
+    width: 50%;
+}
+.report-img>img{
+    width: 100%;
+    min-width: 530px;
+}
+.tab-block{
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-flow: row;
+    max-width: 1100px;
+    margin: 10px auto;
+    border-bottom: 1px solid #EDEFF1;
+    list-style: none;
+}
+.report-des{
+    text-align: center;
+    max-width: 980px;
+    margin: 30px auto;
+    width: 90%;
+}
+.report-text{
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.report-text>h3{
+    font-size: 18px;
+}
+/*覆蓋*/
+.ui-widget.ui-widget-content{
+    border: 0px solid #c5c5c5;
+}
+.ui-widget-header{
+    padding: 0 5%;
+    background: #ffffff00;
+    border-top: 0px solid #dddddd;
+    border-right: 0px solid #dddddd;
+    border-left: 0px solid #dddddd;
+}
+.ui-widget-content{
+    border: 0px solid #dddddd;
+    background: #ffffff00;
+}
+/*按鈕*/
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: 1px solid #EDEFF1;
+    background: #ffffff00;
+    font-weight: normal;
+    color: #454545;
+    display: block;
+    width: 33.3%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff00;
+    padding: 5px;
+    margin: 0px 3px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: 2px solid #EDEFF1;
+    background:#EDEFF1;
+    font-weight: normal;
+    color:#5856D6;
+}
+/* a.ui-button:active::after{
+    
+ }*/
+ .ui-state-default a:hover{
+    opacity: 0.5;
+ }
+ .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
+    width: 100%;
+    display: block;
+}
+  .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+    color: #58B805;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+  }
+ .ui-state-active a::after, .ui-state-active a:link::after, .ui-state-active a:visited::after{
+    font-family: "Material Icons";
+    color: #58B805;
+    content:"\E5DE";
+    font-size: 30px;
+ }
+    @media screen and (max-width: 1060px) {
+        .report-img>img{
+                min-width:100%;
+        }
+    }
+    @media screen and (max-width: 960px) {
+
+
+    }
+    @media screen and (max-width: 840px) {
+
+    }
+    @media screen and (max-width: 796px) {
+        .ui-widget-header{
+            padding: 0 2%;
+        }
+        .report-block{
+            width: 100%;
+        }
+        .report-content-two-cloum{
+            flex-flow: column;
+        }
+        .report-img{
+            max-width: 556px;
+            margin: 0 auto;
+            width: 90%;
+        }
+        .report-img>img{
+            width: 100%;
+            min-width: 100%;
+        }
+
+    }
+    @media screen and (max-width: 735px) {
+
+    }
+    @media screen and (max-width: 702px) {
+
+    }
+    @media screen and (max-width: 695px) {
+       
+    }
+    @media screen and (max-width: 607px) {
+        .content-section-7 >.text-block {
+        padding: 10px;
+        }
+    }
+    @media screen and (max-width: 546px) {   
+    }
+
+    @media screen and (max-width: 491px) {
+    
+    }
+    @media screen and (max-width: 426px) {
+  
+    }
+    @media screen and (max-width: 382px) {
+     
+    }
+</style>
+<!-- 區塊 tittle -->
+<div class="content-02">
+<div class="tittle-section">
+    <h2>通話流量分析</h2>
+    <p>EVOX Connect 提供通話量、資源使用與接聽狀況等相關報表，讓主管能全面掌握客服中心的運作情形與各項資源的利用率，以做出最妥善的規畫與安排。  </p>
+</div>
+<!-- tab -->
+<div id="tabs">
+  <ul class="tab-block">
+    <li><a href="#tabs-1">通話量</a></li>
+    <li><a href="#tabs-2">資源使用狀況</a></li>
+    <li><a href="#tabs-3">接聽狀況</a></li>
+  </ul>
+  <!--單個 tab -->
+  <div id="tabs-1">
+    <div class="report-des">
+        <p>通話量報表能協助主管了解客服中心平日的通話數量與呼叫時間的趨勢，也可以將撥入與撥出分開來看。 </p>
+    </div>
+    <div class="report-content-two-cloum">
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/total-rate/call-total-rate/call-totall-rate-530px-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/total-rate/call-total-rate/call-totall-rate-530px-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/total-rate/call-total-rate/call-totall-rate-1500px-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/report/total-rate/call-total-rate/call-totall-rate-1500px-1.jpg 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">總覽</h3>
+                <p>綜觀指定時間區間內的通話量數據，能選擇以每周與每日的統計方式來呈現。 </p>
+            </div>
+        </div>
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-1_2.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-1_2.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-1_2_1000px.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-1_2_1000px.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">以周間每日或小時來分析</h3>
+                <p>展示周間各日或各小時的通話量統計數據（平均、最大值、最小值），用以觀察是否有明顯尖峰時刻的現象。  </p>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <!--單個 tab -->
+  <div id="tabs-2">
+    <div class="report-des">
+        <p>資源使用狀況報表能協助主管了解專線和專員的使用率。若發現專線使用率過低，便可以考慮取消部分專線以節省成本。 </p>
+    </div>
+    <div class="report-content-two-cloum">
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-2_1-2.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-2_1-2.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-2_1_1000px.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-2_1_1000px.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">總覽</h3>
+                <p>綜觀指定時間區間內的資源使用狀況數據，能選擇以每周與每日的統計方式來呈現。</p>
+            </div>
+        </div>
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-2_2-2.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-2_2-2.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-2_2_1000px.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-2_2_1000px.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">以周間每日或小時來分析</h3>
+                <p>展示周間各日或各小時的資源使用狀況統計數據（平均、最大值、最小值），用以觀察是否有明顯尖峰時刻的現象。 </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--單個 tab -->
+  <div id="tabs-3">
+    <div class="report-des">
+        <p>接聽狀況報表能協助主管了解各種接聽狀況的分布，包含已接、未接、掛斷、未接留言等。若發現未接或掛斷的情況日益增多，則可能需要進一步評估專員或專線的數量是否足夠等問題。</p>
+    </div>
+    <div class="report-content-two-cloum">
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-3_1-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-3_1-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-3_1_1000px.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-3_1_1000px.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">總覽</h3>
+                <p>綜觀指定時間區間內的接聽狀況數據，能選擇以每周與每日的統計方式來呈現。 </p>
+            </div>
+        </div>
+        <!-- 單邊 -->
+        <div class="report-block">
+            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-3_2-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/traffic-load-report-3_2-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-3_2_1000px-1.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EConnect/report-analytics/R27.4/traffic-load/1000px/traffic-load-report-3_2_1000px-1.png 3x"></div>
+            <div class="report-text">
+                <h3 class="green-text">以周間每日或小時來分析</h3>
+                <p>展示周間各日或各小時的接聽狀況統計數據（平均、最大值、最小值），用以觀察是否有明顯尖峰時刻的現象。 </p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+ <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>

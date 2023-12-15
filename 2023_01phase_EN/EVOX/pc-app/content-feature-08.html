@@ -1,0 +1,338 @@
+<style type="text/css">
+    .feature-content-size{
+        max-width: 1100px;
+    }
+
+    /*給專門頁面得*/
+/*    .client-direct{
+        margin-top: 40px;
+    }*/
+    
+/*   .tx-01{
+        margin-top: calc(var( --widthA)*0.05);
+        max-width: 350px;
+        
+     }*/
+    .change-to-flex{
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+    }
+    /*換方向*/
+    .flex-order-change{
+        order: -1;
+    }
+     .section-tittle{
+        width: 100%;
+        text-align: center;
+        margin: 80px 0 0 0;
+     }
+     .section-btn-collation{
+        width: 100%;
+        max-width: 610px;
+        margin:10px auto;
+        
+     }
+     .section-btn{
+        width: 25%;
+        cursor: pointer;
+        float: left;
+     }
+     .section-btn-active{
+        color:#5856D6;
+     }
+     .IVR_benefit_text{
+        width: 100%;
+        margin: 0 0 0 31px;
+     }
+     /*accrodion*/
+     /* Style the buttons that are used to open and close the accordion4 panel */
+ /*個人設定tab選單*/
+    button.accordion4, button.accordion4{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        color: #243237;
+        cursor: pointer;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+        border: 1px solid #fafafafa;
+        margin: 20px 0 0 0;
+        line-height: 22px;
+        border: 0px solid #cacaca;
+        border-bottom: 0px;
+        border-radius: 4px 4px 0px 0px;
+    }
+    /*button.accordion4.active>div.panel{
+        margin-bottom: 10px;
+    }*/
+    button.accordion4.active,
+    button.accordion4:hover,
+    button.accordion4.active,
+    button.accordion4:hover{
+        /*font-family: FontAwesome;*/
+        content: '\f054';
+        /*background-color: #66C547!important;*/
+        /*color:#fff!important;*/
+        /*border: 1px solid #66C547;*/
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    button.accordion4.active, button.accordion4.active{
+        /*border-bottom: 1px solid #fff;*/
+        box-shadow: 1px 0px 21px #dedede;
+        padding:14px 14px 0 14px;
+    }
+
+    button.accordion4:before,
+    button.accordion4:before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f054';
+        color: #93c45d;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+    }
+
+    button.accordion4.active:before,
+    button.accordion4.active:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00c";
+        color:#93c45d;
+    }
+/*        button.accordion4:after,
+    button.accordion4:after {
+        content: '\002B';
+        color: #93c45d;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    button.accordion4.active:after,
+    button.accordion4.active:after {
+        content: "\2212";
+        color:#fff;
+    }*/
+    button.accordion4:hover:before,
+    button.accordion4:hover:before{
+        /*color:#fff;*/
+    }
+     button.accordion4:hover + div.panel,
+    button.accordion4:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #66C547!important;*/
+    }
+     button.accordion4.active:hover + div.panel,
+    button.accordion4.active:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #fff!important;*/
+    }
+    div.panel {
+        /*color:#5F6871;*/
+        padding: 1px 36px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border: 0px solid #cacaca;
+        border-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+        z-index: 9;
+        box-shadow: 1px 16px 21px #dedede;
+    }
+    div.panel>p{
+        margin: 0 0 20px 0;
+    }
+    .panel h2{
+        margin: 10px 0px;
+    }
+    .content-section-1-image-version-b-reverse>img{
+        display: none;
+    }
+    .benefit-active{
+        display: block!important;
+    }
+    @media screen and (max-width: 840px) {
+        .IVR_benefit_text{
+        width: 100%;
+        margin: 0 0 0 0px;
+            padding: 0 20px;
+     }
+     .change-to-flex{
+        display: block;
+     }
+    }
+</style>
+
+
+
+
+<div id="quickpic" class="benefit-box" >
+<div class="content-section-1  feature-content-size change-to-flex">
+<!-- <div class="content-section-1"> -->
+    <div class="content-section-1-image-version-b-reverse digit2">
+        <img id="d-benefit-01" class="benefit-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-distrub_EN.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-distrub_EN.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-distrub-1500px_EN.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-distrub-1500px_EN.jpg 3x" alt="勿擾模式">
+        <img id="d-benefit-02"  src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/call-history_EN.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/call-history_EN.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/call-history-1500px_EN.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/call-history-1500px_EN.jpg 3x" alt="通話紀錄">
+       <img id="d-benefit-03" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/voice-message_EN.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/voice-message_EN.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/voice-message-1500px_EN.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/voice-message-1500px_EN.jpg 3x" alt="管理語音留言">
+       <img id="d-benefit-04" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-default.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-default.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-default-1500px_EN.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/PC-App/feature-img/EN/set-default-1500px_EN.jpg 3x" alt="預設通話">
+        
+    </div>
+    <div class="flex-center-helf50 content-center content-section-textblock flex-order-change">
+    <div class="IVR_benefit_text" style="">
+    <!-- <h2 style="font-size: 32px;">個人設定</h2> -->
+    <button class="accordion4" id="callsetting"><h3>Do not disturb </h3></button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>Turn on Do not disturb to send incoming calls to voicemail.</p>
+        </div>
+    </div>
+
+    <button class="accordion4" id="callhistory"><h3>Call history </h3></button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>You can view all call activities including inbound, outbound, and missed calls. When you have a missed call, the call history icon will display a green dot. </p>
+        </div>
+    </div>
+    <button class="accordion4" id="voicemail"><h3>Manage voicemail </h3></button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>Customize your personal voicemail greeting from the Settings page and view, manage and listen to your voicemails.</p>
+        </div>
+    </div>
+    
+    <button class="accordion4" id="setdefault"><h3>Default calling app </h3></button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>You can set EVOX as the default dialer application; when you click on a link with a phone number in a web page or email, EVOX will activate and dial the number.<br/><span style="font-size:14px;color: #828282;">※ PC-App Only</span></p>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+<!-- </div> -->
+    
+</div>
+</div>
+
+
+
+
+
+<script>
+    $("#callsetting").click(function(){
+        $("#d-benefit-01").addClass("benefit-active");
+        if ( $("#d-benefit-02").hasClass("benefit-active") ) {   $("#d-benefit-02").removeClass('benefit-active'); }
+        if ( $("#d-benefit-03").hasClass("benefit-active") ) {   $("#d-benefit-03").removeClass('benefit-active'); }
+        if ( $("#d-benefit-04").hasClass("benefit-active") ) {   $("#d-benefit-04").removeClass('benefit-active'); }
+    })
+    $("#callhistory").click(function(){
+        $("#d-benefit-02").addClass("benefit-active");
+        if ( $("#d-benefit-01").hasClass("benefit-active") ) {   $("#d-benefit-01").removeClass('benefit-active'); }
+        if ( $("#d-benefit-03").hasClass("benefit-active") ) {   $("#d-benefit-03").removeClass('benefit-active'); }
+        if ( $("#d-benefit-04").hasClass("benefit-active") ) {   $("#d-benefit-04").removeClass('benefit-active'); }
+    })
+    $("#voicemail").click(function(){
+        $("#d-benefit-03").addClass("benefit-active");
+        if ( $("#d-benefit-01").hasClass("benefit-active") ) {   $("#d-benefit-01").removeClass('benefit-active'); }
+        if ( $("#d-benefit-02").hasClass("benefit-active") ) {   $("#d-benefit-02").removeClass('benefit-active'); }
+        if ( $("#d-benefit-04").hasClass("benefit-active") ) {   $("#d-benefit-04").removeClass('benefit-active'); }
+    })
+     $("#setdefault").click(function(){
+        $("#d-benefit-04").addClass("benefit-active");
+        if ( $("#d-benefit-01").hasClass("benefit-active") ) {   $("#d-benefit-01").removeClass('benefit-active'); }
+        if ( $("#d-benefit-02").hasClass("benefit-active") ) {   $("#d-benefit-02").removeClass('benefit-active'); }
+        if ( $("#d-benefit-03").hasClass("benefit-active") ) {   $("#d-benefit-03").removeClass('benefit-active'); }
+    })
+    
+ // W3C's JS Code
+        var bcc = document.getElementsByClassName("accordion4");
+        var i;
+
+        // Open the first accordion4
+        var firstAccordion = bcc[0];
+        var firstPanel = firstAccordion.nextElementSibling;
+        firstAccordion.classList.add("active");
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + 30 +"px";
+        console.log("firstPanel展開初始高度:"+firstPanel.scrollHeight + "px");
+
+        // Add onclick listener to every accordion4 element
+        for (i = 0; i < bcc.length; i++) {
+            bcc[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive = this.classList.contains("active");
+
+                // Close all accordion4s
+                var allAccordions = document.getElementsByClassName("accordion4");
+                for (j = 0; j < allAccordions.length; j++) {
+                    // Remove active class from section header
+                    allAccordions[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel = allAccordions[j].nextElementSibling;
+                    var maxHeightValue = getStyle(panel, "maxHeight");
+
+                    if (maxHeightValue !== "0px") {
+                        panel.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel = this.nextElementSibling;
+                var maxHeightValue = getStyle(panel, "maxHeight");
+
+                if (maxHeightValue !== "0px") {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    // console.log("高度為："+panel.scrollHeight);
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+
+
+
+</script>

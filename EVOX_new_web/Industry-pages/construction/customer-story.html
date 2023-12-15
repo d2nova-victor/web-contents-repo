@@ -1,0 +1,245 @@
+<style type="text/css">
+	.customer-styoy-section{
+
+	}
+	.customer-story-block{
+		max-width: 1100px;
+		background: #F2F4F1;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: row-reverse;
+		margin: 40px auto;
+	}
+	.customer-story-text{
+		width: 46%;
+    	padding: 2%;
+	}
+	.customer-story-text>span{
+		font-size: 16px;
+		margin: 0;
+	}
+	.customer-story-text>h3{
+		font-size: 32px;
+		margin: 5px 0;
+	}.customer-story-text>p{
+		margin: 5px 0;
+	}
+	.customer-story-img-box{
+		width: 50%;
+		position: relative;
+		overflow: hidden;
+/*		min-height: 434px;*/
+		min-height: 314px;
+		border-radius: 20px 0px 0px 20px;
+	}
+	.customer-story-img-box>img{
+		display: block;
+	    left: 50%;
+	    width: 100%;
+	    min-height: 100%;
+	    min-width: 110%;
+	    position: absolute;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;
+	}
+	.customer-story-block:hover .customer-story-img-box>img{
+		transform: translate(-50%,-50%) scale(1.1);
+	}
+/*	其他品牌*/
+	.brand-wall-section{
+		max-width: 1275px;
+		margin: 40px auto;
+		display: flex;
+	    align-items: center;
+	    flex-flow: column;
+	    justify-content: center;
+	}
+	.logo-list{
+		display: flex;
+		align-items: center;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+    	width: 100%;
+    	max-width: 708px;
+
+	}
+	.single-logo{
+		min-width: 141px;
+	    max-width: 142px;
+	    margin: 0 auto;
+	}
+
+/*	圖片*/
+	.story-img{
+		display: flex;
+	    align-items: center;
+	    justify-items: center;
+	    position: relative;
+	    overflow: hidden;
+
+	}
+	.customer-img{
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-height: 100%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;
+	    width: 120%;
+	    max-width: max-content!important;
+	}
+	.customer-logo{
+		max-width: 348px!important;
+	    /* width: 30%; */
+	    min-width: 348px!important;
+	    min-height: 162px!important;
+	}
+	.img-filter-box{
+		width: 100%;
+	    min-height: 314px;
+	    background: #33333354;
+	    z-index: 0;
+	}
+	.customer-logo{
+		position: absolute;
+		width: 100%;
+/*	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-width: 110%;
+	    min-height: 100%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;*/
+
+	}
+	.img-filter-box,.customer-logo{
+		transition: opacity, .8s;
+		transition-timing-function: ease-in;
+	}
+	.story-card:hover .story-img>.img-filter-box{
+/*		opacity: 0;*/
+
+/*		transform: translate(-50%,-50%) scale(1.2);*/
+	}
+	.story-card:hover .story-img>.customer-logo{
+/*		opacity: 0;*/
+
+	}
+	 @media screen and (max-width: 840px){
+	 	.customer-story-block{
+	 		flex-flow: column;
+	 	}
+	 	.customer-story-block{
+	 		width: 90%;
+	 	}
+	 	.customer-story-text{
+	 		width: 94%;
+    		padding: 4%;
+	 	}
+	 	.customer-story-img-box{
+	 		width: 100%;
+	 		min-height: 350px;
+	 		border-radius: 0 0px 20px 20px;
+	 	}
+	 	.customer-story-text>p{
+	 		text-align: justify;
+	 	}
+	 	/*	其他品牌*/
+	 	.logo-list{
+			justify-content: center;
+		}
+		.single-logo{
+			margin: 0 3%;
+		}
+
+		.story-img{
+			min-height: 140px;
+		}
+	 }
+	 @media screen and (max-width: 640px){
+	 	.single-logo{
+			max-width: 48%;
+    		margin: 0 1%;
+		}
+		.story-img{
+			min-height: 320px; 
+    		height: 320px;
+		}
+		.img-filter-box{
+			min-height: 450px;
+		}
+	 }
+	 @media screen and (max-width: 460px){
+	 	.customer-story-text{
+	 		width: 92%;
+    		padding: 4%;
+	 	}
+	 	.customer-story-text>h3{
+	 		font-size: 28px;
+		    line-height: 1.5em;
+		    margin: 10px 0;
+	 	}
+	 	.customer-story-img-box{
+	 		min-height: 220px;
+	 	}
+	 }
+</style>
+<div class="customer-styoy-section">
+
+	<div class="customer-story-block digit2">
+		<!-- 文字 -->
+		<div class="customer-story-text">
+			<span>客戶成功案例</span>
+			<h3>突破傳產僵固思維，世久營造透過數位轉型提升企業永續競爭力</h3>
+			<p>世久營造不僅植基於台灣，同時也放眼全世界，除與國外知名廠商合作並引進國際先進工法、建立新工法里程碑之外，近年來也陸續建立澳門世久公司、緬甸 AGI 合資公司等若干海外據點，在拓展國際業務機會的同時，也讓台灣營造業與國際接軌。</p>
+			<a class="green-text-btn" target="_blank" href="https://blog.evoxglobal.com/tw/testimonials/awec ">客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+		<!-- 圖片 -->
+		<div class="customer-story-img-box story-img">
+			<!-- <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Industry/construction/customer-story/PXL_20210908_020618260%20Copy@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Industry/construction/customer-story/PXL_20210908_020618260%20Copy@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Industry/construction/customer-story/PXL_20210908_020618260%20Copy@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Industry/construction/customer-story/PXL_20210908_020618260%20Copy_compress.webp 3x" alt="淡江大學"> -->
+			<!-- BG -->
+			<img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/awec-img.jpg" alt="世久營造">
+			<div class="img-filter-box"></div>
+			<!-- logo -->
+			<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/awec.png" alt="世久營造">
+		</div>	
+	</div>
+	
+
+	<!-- 其他logo -->
+	<!-- <div class="brand-wall-section">
+		<div class="logo-list">
+	 -->		<!-- 單一個 -->
+	<!-- 		<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/awec.png" alt="世久營造">
+			</div>
+	 -->		<!-- 單一個 -->
+	<!-- 		<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/fengyu.png" alt="豐譽企業團隊 ">
+			</div>
+	 -->		<!-- 單一個 -->
+	<!-- 		<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/fuchu-logo.png" alt="福住建設">
+			</div>
+	 -->		<!-- 單一個 -->
+	<!-- 		<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/voca.png" alt="Voca">
+			</div>
+
+		</div>
+	 -->	<!-- <a class="customer-story-link green-text-btn" href="https://www.evoxglobal.com/tw/customers" >了解更多客戶案例 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+	<!-- </div> -->
+</div>

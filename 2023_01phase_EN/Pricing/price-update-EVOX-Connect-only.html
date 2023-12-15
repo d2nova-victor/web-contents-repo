@@ -1,0 +1,1806 @@
+  <!-- tooltips -->
+<!--   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
+
+<style type="text/css">
+    p{
+        /*letter-spacing: 1px;*/
+    }
+    .benefit_block {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: table;
+        padding-top: 80px;
+    }
+    
+    .benefit_block>h2 {
+        text-align: center;
+    }
+    .benefit_block> .econnect-text-block{
+      max-width: 900px;
+      margin:0 auto;
+      padding: 0 40px;
+    }
+     .benefit_block>.econnect-text-block > h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+      .benefit_block>.econnect-text-block > p {
+        text-align: center;
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    
+    .benefit-item {
+        width: 29.3%;
+        margin: 5px 2%;
+        float: left;
+        display: block;
+        min-height: 260px;
+    }
+
+    
+    .benefit-item>h3,
+    .benefit-item>p {
+        text-align: center;
+    }
+    
+    .benefit-item>h3 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .benefit-item>p {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    
+    .benefit-item> .icon-image {
+        display: block;
+        width: 30%;
+        margin: 0 auto 10px auto;
+        min-width: 90px;
+    }
+    
+    .go_call_rate {
+        text-align: center;
+        display: block;
+    }
+    
+    .go_call_rate>i {
+        font-size: 42px;
+    }
+    
+    .go_call_rate>p {
+        margin: 0;
+    }
+
+    
+    .price-tittle {
+        text-align: center;
+        background: #fff;
+        padding: 40px 0;
+    }
+    
+    .price-tittle>p {
+        font-size: 18px;
+        color: #5F6871;
+    }
+    
+    .plan-button-group {
+        max-width: 1240px;
+        margin: 0 auto;
+        background: #fff;
+        display: table;
+        width: 50%;
+    }
+    
+     .plan-button {
+        font-size: 16px;
+        /*三個*/
+        /*width: 33.3%;*/
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding: 10px 0 0 0;
+        line-height: 3em;
+        border-bottom: 6px solid #fff;
+        cursor: pointer;
+        transition: color .3s,border-color .3s;
+        transition-timing-function: ease-in;
+    }
+    
+    .plan-button:hover {
+        background: #eaeaea;
+/*        border-bottom: 6px solid #afafaf;*/
+        border-bottom: 6px solid #58B805;
+        opacity: .5;
+        color:#58B805;
+    }
+    
+     .plan-button-active {
+        border-bottom: 6px solid #58B805;
+    }
+    
+    .plan-button-active:hover {
+        background: #eaeaea;
+        border-bottom: 6px solid #58B805;
+    }
+   /* .plan-button-active {
+        border-bottom: 6px solid #66C547;
+    }
+    
+    .plan-button-active:hover {
+        background: #eaeaea;
+        border-bottom: 6px solid #66C547;
+    }*/
+    
+    #ECONNECT-btn.plan-button-active {
+        /*background: #eaeaea;*/
+        border-bottom: 6px solid #58B805;
+    }
+    
+    #ECONNECT-btn.plan-button-active:hover {
+        background: #eaeaea;
+        border-bottom: 6px solid #58B805;
+    }
+    
+    .plan-button-block {
+        -moz-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        -webkit-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        position: relative;
+    }
+    /*價格方案*/
+    
+    .content-section-7 {
+        /*background: #FAFAFA;*/
+        background: #fdfdfd;
+        width: 100%;
+    }
+
+    
+    .content-section-7 >.text-block {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0px 0 40px 0px;
+        display: table;
+        width: 100%;
+    }
+    
+    .content-section-7 >.text-block>h2 {
+        text-align: center;
+    }
+    
+    .content-section-7 >.text-block>span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        /*width: 100%;*/
+        color: #5F6871;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    .content-section-7 > .text-block> .three-cloum-box > h5 {
+        font-weight: 500;
+        max-width: 820px;
+        margin: 5px auto;
+        /*text-align: center;*/
+    }
+    
+    .content-section-7 > .text-block> .three-cloum-box > p {
+        font-size: 14px;
+        margin: 5px auto;
+    }
+    
+    .three-cloum-box {
+        width: 33.3%;
+        padding: 20px 60px 0 0px;
+        float: left;
+        min-height: 190px;
+    }
+    
+    .price-table-block {
+        display: table;
+        /* float: left; */
+        width: 80%;
+        max-width: 980px;
+        margin: 20px auto;
+    }
+    
+    .price-table {
+        width: 31.3%;
+        float: left;
+        text-align: left;
+    }
+    
+    .price-table:hover {
+        -moz-box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        -webkit-box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+    }
+    
+    .price-table:hover>.price-item {
+        border: 1px solid #66C547;
+        transition: border .3s;
+    }
+    
+
+    
+   /* #EConnect .price-table:hover>.price-item {
+        border: 2px solid #5856D6;
+    }*/
+    
+    .border-add {
+        /*border-right: 1em solid #fff;*/
+        margin-right: 2.7%;
+    }
+    
+    .price-header {
+        text-align: center;
+        font-weight: 500;
+        color: #5F6871;
+        font-size: 14px;
+        margin: 10px 0 17px 0;
+    }
+    
+    .price-item {
+        text-align: center;
+        background: #fff;
+        height: 96px;
+        line-height: 1.2em;
+        padding: 24px 0;
+        display: table;
+        width: 100%;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+    }
+    
+    .price-item>h2 {
+        font-size: 22px;
+        line-height: 12px;
+        margin: 10px 0 20px 0;
+    }
+    
+    .price-item > span {
+        font-size: 13px;
+        /* margin: 40px 0; */
+        display: block;
+        /* border-top: 1px solid #ccc; */
+        padding: 10px 0;
+    }
+    
+    .price-item > span>strong {
+        font-size: 30px!important;
+        font-weight: 500;
+    }
+    
+    .price-item>hr {
+        width: 50%;
+        background: #ccc0;
+        border-top: 1px solid #ccc;
+        display: flex;
+    }
+    
+
+
+    .more-feature>a {
+        display: block;
+        text-align: center;
+    }
+    
+    .apply-now-block {
+        float: left;
+        width: 100%;
+        display: block;
+        margin: 20px 0px;
+    }
+    
+    .plan-detial {
+        /*list-style: none;
+        padding: 0px;
+        margin: 0px;*/
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    
+    .plan-detial>li {
+        color: #A5B6BF;
+        /*text-align: center;*/
+        line-height: 33px;
+        font-size: 14px;
+    }
+    
+    .addtional-text {
+        /*width: 90%;*/
+        text-align: center;
+    }
+    
+    .customize-tittle {
+        margin: 10px 0 10px 0;
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    
+    .customize-tittle>h3 {
+        margin: 0;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    
+    .customize-tittle>img {
+        display: inline-block;
+        float: left;
+        width: 27px;
+    }
+    .customize-content{
+        width:68%;
+        margin:10px auto;
+    }
+    .customize-content>p{
+        color:#5F6871;
+        line-height: 32px;
+    }
+    .option_text{
+        /*background: #ffffff;*/
+        padding: 10px;
+        background: #f1f7f2;;
+        text-align: center;
+        border-radius: 4px;
+        max-width: 77%;
+        /*border: 1px solid #CCCCCC;*/
+        margin: 20px auto 30px auto;
+    }
+    .option_text:hover{
+    }
+    .forign-company{
+        color: #ff8a26;
+        padding: 0 0px 0 10px;
+    }
+    .more-devices{
+        color: #ff8a26;
+        padding: 0 10px;
+    }
+    /*加值服務*/
+    .extension-service-block{
+        max-width: 980px;
+        width: 80%;
+        margin: 20px auto 0px auto;
+        display: table;
+    }
+    .extension-block{
+        background:#fff;
+        display: flex;
+        align-items: center;
+        width: 48.8%;
+        float: left;
+        margin: 10px 0px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 1% 0px;
+        min-height:200px;
+    }
+    .extension-block:hover{
+        border: 1px solid #66C547;
+        box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        transition: box-shadow .3s border .3s;
+        /*cursor: pointer;*/
+    }
+    .extension-block:hover .extension-text-block>div>h3{
+        /*color:#66C547;*/
+        /*transition: color .3s;*/
+    }
+    .extension-img{
+        max-width: 25%;
+    }
+    .extension-text-block{
+        width: 70%;
+        padding: 5px 20px;
+        text-align: justify;
+        border-left: 1px solid #ccc;
+    }
+    .extension-text-block>p{
+        font-size: 13px;
+        margin:0px;
+        text-align: justify;
+    }
+    .fase-test{
+        font-size: 15px;
+        line-height: 2.2em;
+        cursor: pointer;
+    }
+    .extension-text-block>div{
+        /*display: flex;*/
+        /*align-items: baseline;*/
+    }
+    .extension-text-block>div>h3{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .extension-text-block>div>span{
+        font-size: 13px;
+        padding: 0px;
+        font-weight: 500;
+        display: block;
+    }
+    .add-right-margin{
+        margin-right: 1.9%;
+    }
+    .extension-text-block>div>span>strong{
+        padding: 0px 0px 0 0px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+@media screen and (max-width: 1008px) {
+
+}
+@media screen and (max-width: 960px) {
+    .extension-block{
+        min-height: 220px;   
+    }
+    .add-right-margin{
+        margin-right: 1.8%;
+    }
+    .extension-text-block>div{
+        display: block;
+    }
+
+}
+@media screen and (max-width: 840px) {
+
+    .table-tittle {
+        /*min-height: 154px;*/
+    }
+    .price-item {
+    }
+    .price-table {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .border-add {
+        margin-right: 0px;
+    }
+    .customize-content{
+        width: 91%;
+    }
+    /*加值服務*/
+    .extension-text-block{
+        border-left: 0px solid #ccc;
+        border-top: 1px solid #ccc;
+
+    }
+    .extension-text-block>div{
+        display: flex;
+
+    }
+     .extension-block{
+         width:98%;
+        min-height: 170px;  
+        flex-flow: column;
+    }
+    .extension-img{
+        /*width: 20%;*/
+        width: 113px;
+        max-width: 113px;
+    }
+    .add-right-margin{
+        margin-right: auto;
+        
+    }
+
+}
+@media screen and (max-width: 796px) {
+    .price-table-block {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 735px) {
+    .three-cloum-box {
+        min-height: 250px;
+    }
+}
+@media screen and (max-width: 702px) {
+    .benefit-item {
+        width: 45%;
+        min-height: 268px;
+    }
+    .apply-now {
+        padding: 7px 9px;
+    }
+}
+@media screen and (max-width: 695px) {
+    .plan-button-group {
+        width: 100%;
+    }
+    .content-section-7 >.text-block {
+        width: 90%;
+    }
+    .price-table-block {
+        width: 100%;
+    }
+    .call-rate-table-block {
+        width: 90%;
+    }
+    .option_text{
+        max-width: 95%;
+        width: 100%;
+    }
+    .customize-content{
+        width:83%;
+    }
+    /*加值服務*/
+    .extension-service-block{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 607px) {
+    .content-section-7 >.text-block {
+        padding: 10px;
+    }
+    .three-cloum-box {
+        padding: 10px 30px;
+        width: 50%;
+        min-height: 200px;
+    }
+}
+@media screen and (max-width: 546px) {
+    .benefit-item {
+        width: 66%;
+        padding: 20px 5%;
+        min-height: auto;
+        margin: 0 auto!important;
+        float: initial;
+    }
+    .price-table {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .border-add {
+        /*margin-right: 0.8%;*/
+    }
+    table td {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 491px) {
+    .customize-tittle>h3 {
+        /*margin: 27px 0 0 0;*/
+    }
+    @media screen and (max-width: 426px) {
+        .price-table {
+            width: 100%;
+        }
+        
+        table td {
+            text-align: center;
+        }
+         .plan-button {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 382px) {
+        .extension-text-block>div{
+            display: block;
+        }
+        .three-cloum-box {
+            padding: 10px 30px;
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+</style>
+<div class="price-tittle">
+    <h1>Subscription pricing</h1>
+    <p>The flexibility to choose a plan now and upgrade as you grow</p>
+</div>
+<div class="plan-button-block">
+    <div class="plan-button-group">
+        <div class="plan-button" id="EVOX-btn" onclick="location.href='/en/pricing';">EVOX</div>
+        <div class="plan-button plan-button-active" id="ECONNECT-btn">EVOX Connect</div>
+    </div>
+</div>
+
+<style type="text/css">
+        div.panel {
+        padding: 0px 36px;
+        background-color: white;
+        max-height: 100%;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border: 0px solid #cacaca;
+        border-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+        z-index: 9;
+    }
+    
+    div.panel>div>p {
+        margin: 0px;
+        color:#5F6871;
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+    .panel h2 {
+        margin: 10px 0px;
+    }
+    
+    .content-section-1-image-version-b-reverse>img {
+        display: none;
+    }
+    
+    .benefit-active {
+        display: block!important;
+    }
+    
+    @media screen and (max-width: 840px) {
+
+    }
+</style>
+<style>
+    .arrow-r:before{
+        font-family: "Font Awesome 5 Free";
+        content: '\f054';
+        color: #5856D6;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+        width: 10px;
+    }
+    .arrow-d:before{
+        font-family: "Font Awesome 5 Free";
+        content: '\f00c';
+        color: #5856D6;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+        width: 10px;
+    }
+
+    /*ec style*/
+    .attention-text{
+        color:#5F6871;
+    }
+    .two-plan-block{
+        display: flex;
+        justify-content: center;
+    }
+    .plan-block{
+         text-align: center;
+        background: #fff;
+        /*height: 96px;*/
+        line-height: 1.2em;
+        /*padding: 20px 0px 24px 0px;*/
+        /*width: 50%;*/
+        max-width: 430px;
+        min-height: 610px;
+    }
+    .ec-price-item {
+        border-radius: 4px;
+        border: 1px solid #CCCCCC;
+        /*display: table;*/
+        margin: 0 5px;
+    }
+    .important-item{
+        padding-top: 0!important;
+        border: 1px solid #58B805;
+        box-shadow: 1px 4px 10px -2px rgb(138 138 138 / 50%);
+        margin-top: -37px;
+    }
+    .important-item>.best-plan-tittle{
+        padding: 10px 0;
+    }
+    .best-plan-tittle>div{
+        font-size: 14px;
+        line-height: 2.1em;
+    }
+    /*.ec-price-item:hover {
+        border: 1px solid #5856D6;
+        transition: border .3s;
+        -moz-box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        -webkit-box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+        box-shadow: 1px 4px 10px -2px rgba(138, 138, 138, 0.5);
+    }*/
+    .content-box>img{
+        max-width: 113px;
+        padding: 5px;
+    }
+    .plan-contnt{
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid #CCCCCC;
+        min-height: 230px;
+    }
+    .plan-contnt>h3{
+        font-size: 21px;
+        margin:10px auto;
+        font-weight: 500;
+    }
+    .plan-contnt>p{
+        font-size: 14px;
+        margin:10px auto;
+        text-align: justify;
+        min-height:100px;
+    }
+    .plan-contnt>.link-page{
+        font-size: 16px;
+        margin:10px auto;
+        display: block;
+    }
+    .link-page:hover{
+        /*opacity: .4;*/
+        text-decoration: revert;
+    }
+    .purple-text:hover{
+        text-decoration: revert;
+    }
+    .green-text:hover{
+        text-decoration: revert;
+    }
+    .plan-price{
+        font-size:14px;
+        margin:10px auto 10px auto; 
+    }
+    .plan-contnt>.plan-price{
+        font-size:14px;
+        margin:30px auto 10px auto;       
+    }
+    .plan-price>strong{
+        font-size: 30px!important;
+        font-weight: 500;
+    }
+    .plan-option-block{
+        /*background: #FAFAFA;*/
+        background: #f5f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: ㄢpx;
+        margin: 15px auto 30px auto;
+        border-radius: 4px;
+    }
+    .plan-description-list{
+        /*margin: 20px auto;*/
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column;
+        max-width: 298px;
+        margin: 30px auto;
+    }
+    .content-ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: 290px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        text-align: left;   
+    }
+    .option-content-ul{
+            list-style: none;
+            /*margin: 0;*/
+            padding: 0;
+            max-width:547px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+            align-items: baseline;
+            text-align: left;   
+    }
+    .content-li{
+        padding: 10px 0;
+        display: flex;
+        align-items:center;
+    }
+    .content-li>i{
+        padding: 5px;
+    }
+    .content-li>div{
+        line-height: 24px;
+        padding: 0 0 0 6px;
+    }
+    .description-attention{
+        color:#A5B6BF;
+        line-height: 24px;
+    }
+    .plan-option-content{
+        width: 50%;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+    }
+    .plan-option-content>img{
+        max-width: 86px;
+        padding: 20px;
+    }
+    .option-content-text>h3{
+        font-size:21px;
+        margin:0;
+        font-weight: 500;
+    }
+    .option-content-text>p{
+        font-size:14px;
+        margin:0;
+    }
+    .plan-option-list{
+        padding: 20px 30px;
+    }
+    .add-service-block{
+
+    }
+    .addon-plan-block{
+        max-width: 980px;
+        margin: 20px auto;
+    }
+    .add-on-tittle-block{
+        margin: 40px auto 0 auto;
+        text-align: center;
+    }
+    .add-on-plan-box{
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .addon-imag{
+        width: 15%;
+    }
+    .addon-imag>img{
+        max-width: 103px;
+    }
+    .addon-content{
+        width: 55%;
+        padding: 20px;
+        border-left: 1px solid #CCCCCC;
+        text-align: justify;
+    }
+    .addon-content>h3{
+        font-size: 21px;
+        font-weight: 500;
+        margin: 0px 0px 10px 0px;
+    }
+    .addon-content>p{
+        font-size: 14px;
+        margin: 0px;
+    }
+    .addon-price{
+        width: 30%;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .add-note{
+        margin: 10px 0;
+        display: block;
+    }
+    .quect-block{
+        border: 1px solid #F2F2F8;
+        background: #F2F2F8;
+        border-radius: 4px;
+        max-width: 980px;
+        margin: 40px auto 40px auto;
+    }
+    .quect-text-block{
+        padding: 20px;
+        text-align: center;
+    }
+    .quect-text-block>h2{
+        font-size: 30px;
+        margin:0 auto 20px auto;
+    }
+    .quect-text-block>p{
+        font-size: 14px;
+        margin:0 auto 20px auto;
+        color:#5F6871;
+    }
+    .quect-bnt{
+        min-width:200px;
+    }
+     @media screen and (max-width: 955px) {
+        
+        .two-plan-block{
+            max-width: 91%;
+            margin: 30px auto 0 auto;
+        }
+        .plan-option-block{
+            max-width: 90%;
+        }
+        .addon-plan-block{
+            max-width: 90%;
+        }
+        .quect-block{
+            max-width: 90%;
+        }
+        .addon-price{
+            width: 50%;
+        }
+        .addon-content{
+            width: 100%;
+        }
+     }
+     @media screen and (max-width: 760px) {
+        .two-plan-block{
+            flex-flow: column;
+        }
+        .plan-block{
+            width: 98%;
+            max-width: 100%;
+            padding: 20px 0px 24px 0px;
+        }
+        .ec-price-item{
+            margin: 10px auto;
+        }
+        .plan-option-block{
+            flex-flow: column;
+            margin: 20px auto;
+        }
+        .plan-option-content{
+            padding: 5%;
+            width: 90%;
+            flex-flow: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .content-ul{
+
+        }
+        .plan-option-list{
+            max-width: 90%;
+            padding: 0px 0px 20px 0px;
+        }
+        .content-li{
+            text-align: justify;
+            align-items: start;
+        }
+        .add-on-plan-box{
+            flex-flow: column;
+        }
+        .addon-imag{
+            width: 113px;
+            margin: 0 auto;
+        }
+        .addon-content{
+            width: 80%;
+            border-left: 0px solid #CCCCCC;
+            border-top: 1px solid #CCCCCC;
+            text-align: center;
+            padding:  10px 20px;
+        }
+        .addon-price{
+            width: 100%;
+            padding: 0px 10px;
+        }
+        .plan-contnt{
+            max-width: 80%;
+            min-height: auto;
+        }
+        .plan-option-content>img{
+            padding: 10px;
+        }
+        .quect-block{
+            margin: 30px auto 40px auto;
+        }
+        .plan-contnt>p{
+            min-height: 50px;
+        }
+     }
+</style>
+
+<div id="EConnect" class="plan">
+    <div class="content-section-7 insert-shadow">
+        <div class="benefit_block">
+          <div class="econnect-text-block">
+            <h2>Customize your contact center</h2>
+            <p>EVOX Connect products include the customer service center (Connect Call Center), contact database (Connect Knowledge), professional customer service center (Connect Pro) and other solutions. After subscribing to your plan of choice, you can use Connect Manager to manage the system. <br><span class="attention-text">＊ You need to apply for EVOX service before you can subscribe to the EVOX Connect service.</span></p>
+          </div>
+          <!-- compare table css -->
+          <style>
+              .compare-table{
+                display: flex;
+                max-width:990px;
+                margin: 70px auto 0px auto;
+              }
+              .compare-cloum{
+                border-radius: 4px;
+                border: 1px solid #CCCCCC;
+                margin: 0 6px;
+              }
+              .important-cloum{
+                border: 1px solid #58B805;
+                margin-top: -57px;
+              }
+
+              .best-plan-tittle{
+                background: #58B805;
+                color: #fff;
+                text-align: center;
+                position: relative;
+              }
+              .compare-tittle{
+                color:#58B805;
+                font-size: 16px;
+                margin: 7px auto;
+/*                width: 87%;*/
+                width:auto;
+                text-align: center;
+
+                transition:opacity .3s;
+                transition-timing-function: ease-in;
+              }
+
+              .cloum-header{
+                display: flex;
+                flex-flow: column;
+                /*justify-content: center;*/
+                align-items: center;
+                padding: 10px 10px;
+                height: 397px;
+                background: #fff;
+                border-radius: 4px;
+              }
+              .important-cloum-header{
+                position: relative;
+                top: -2px;
+              }
+              .cloum-header>.plan-img{
+                width: 80px;
+                height: 80px;
+              }
+              .plan-header-tittle{
+                text-align: center;
+              }
+              .cloum-body{
+              }
+              .compare-body{
+                margin: 0 3px;
+              }
+              .cloum-body>div:nth-child(odd) {
+                background:#FAFAFA;
+              }
+              .cloum-body>div:nth-child(even) {
+                background:#EDEFF1;
+              }
+              .cloum-header>h3{
+                font-size: 21px;
+                margin:0 auto;
+              }
+              .cloum-header>p{
+                font-size: 14px;
+                color:#5F6871;
+                margin:10px auto;
+                min-height:140px;
+                width: 96%;
+              }
+              .compare-header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .cloum-contents{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10px;
+              }
+              .cloum-contents{
+                min-height: 62.19px;
+              }
+              .tittle-cloumm{
+                justify-content: flex-start;
+              }
+              .tittle-cloumm>h4{
+                color:#243237;
+              }
+              .advance-acd-cloum{
+                /*height: 150px;*/
+                height: 50px;
+              }
+              .cloud-integration-cloum{
+                height: 63px;
+              }
+              .compare-contents>p {
+                margin: 7px 0;
+                font-size: 12px;
+                text-align: center;
+              }
+              .compare-contents>.cloum-tow-options>.single-option>p {
+                margin: 7px 0;
+                font-size: 12px;
+              }
+              .single-option{
+                display: flex;
+                align-items: center;
+                height: 29px;
+              }
+              .tittle-cloum{
+                width: 23%;
+                min-width: 197px;
+              }
+              .content-cloum{
+                width: 33.3%;
+              }
+              .addition-cloum{
+                display: flex;
+                align-items: baseline;
+                padding: 20px 0px;
+                margin: 0 auto;
+                width: 80%;
+                color: #A5B6BF;
+                line-height: 24px;
+                background: #fff!important;
+              }
+              .addition-cloum>span{
+                padding: 0 3px;
+                font-size: 14px;
+              }
+              .tooltips{
+                  height: 24px;
+                  position: relative;
+                  display: inline-block;
+                  /*border-bottom: 1px dotted black;*/
+              }
+              .tooltips .tooltiptext{
+                  visibility: hidden;
+                  width: 209px;
+                  background-color: #5F6871;
+                  color: #fff;
+                  text-align: left;
+                  border-radius: 4px;
+                  padding: 5px 20px;
+                  position: absolute;
+                  z-index: 1;
+                  bottom: 125%;
+                  left: 50%;
+                  margin-left: -122px;
+                  opacity: 0;
+                  transition: opacity 0.3s;
+                  font-size: 13px;
+                  line-height: 26px;
+              }
+              .cloud-ntegration-tips{
+                  width: 128px!important;
+                  text-align: center!important;
+                  margin-left: -85px!important;
+              }
+              .tooltips .tooltiptext::after{
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -5px;
+                  border-width: 5px;
+                  border-style: solid;
+                  border-color: #555 transparent transparent transparent;
+              }
+              .tooltips:hover .tooltiptext{
+                visibility: visible;
+                opacity: 1;
+              }
+              .question-mark-active{
+                display: none;
+              }
+              .tooltips:hover .question-mark{
+                display: none;
+              }
+              .tooltips:hover .question-mark-active{
+                display: block;
+              }
+              
+              .hint{
+                height: 24px;
+              }
+              .two-plan-block{
+                display: none;
+              }
+              .right-cloum{
+                margin-right: 0;
+              }
+              .left-cloum{
+                margin-left: 0;
+              }
+              .content-box{
+                padding:0 10px;
+                background: #fff;
+                border-radius: 4px;
+              }
+              .uniqul-box{
+                position: relative;
+                top: -2px;
+              }
+              .link-tittle{
+/*                color: #5856D6;*/
+/*                font-size: 16px;*/
+/*                text-decoration: none;*/
+/*                display: contents;*/
+                width: 100%;
+                display: flex;
+              }
+               .link-tittle>h4{
+
+               } 
+
+              .cloum-contents>a:hover .compare-tittle{
+                opacity: .7;
+/*                text-decoration: underline;*/
+              }
+              /*特別高度*/
+              .supervisor-cloum{
+                max-height: 120px;
+                min-height: 90px;
+              }
+            @media screen and (max-width: 959px) {
+                .compare-table{
+                    display: none;
+                }
+                .two-plan-block{
+                    display: flex;
+                    margin-top: 67px;
+                }
+            }
+            @media screen and (max-width: 720px) {
+                .two-plan-block{
+                    display: flex;
+                    margin-top: 17px;
+                }
+                .agent-tips{
+                    width: 199px!important;
+                    text-align: justify!important;
+                }
+                .Supervisor-tips{
+                    width: 170px!important;
+                    text-align: justify!important;
+                }
+            }
+            @media screen and (max-width: 360px) {
+                .tooltips .tooltiptext{
+                        /*margin-left: -150px;*/
+                        width: 192px;
+                }
+            }
+          </style>
+          <!-- tooltips -->
+            <script>
+              // $( function() {
+              //   $( document ).tooltip();
+              // } );
+              </script>
+            <!-- EVOX Connect 網頁版內容 -->
+            <div class="compare-table">
+                <div class="compare-cloum tittle-cloum left-cloum">
+                    <div class="cloum-header compare-header">
+                        <h3 class="plan-header-tittle">Find your perfect EVOX Connect service plan</h3>
+                        <!-- <p>＊ 需先申辦 EVOX 服務方可訂閱 EVOX Connect 的各方案。</p> -->
+                    </div>
+                    <div class="cloum-body">
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="/en/evox-connect/acd-ivr" class=" link-tittle"><h4 class="compare-tittle green-text-btn">ACD, IVR</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents tittle-cloumm"><h4 class="compare-tittle ">Agent</h4></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents tittle-cloumm"><h4 class="compare-tittle ">Supervisor</h4></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="/en/evox-connect/agent" class=" link-tittle"><h4 class="compare-tittle green-text-btn">Pro PC App</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="https://www.evoxglobal.com/en/evox-connect/acd-ivr#call-record" class=" link-tittle"><h4 class="compare-tittle green-text-btn">Recording</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="/en/evox-connect/manager" class=" link-tittle"><h4 class="compare-tittle green-text-btn">Connect Manager</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="/en/evox-connect/connect-knowledge" class=" link-tittle"><h4 class="compare-tittle green-text-btn">Connect Knowledge</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="/tw/evox-connect/supervisor-dashboard" class=" link-tittle"><h4 class="compare-tittle green-text-btn">Supervisor Dashboard</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="/tw/evox-connect/reports-analytics" class=" link-tittle"><h4 class="compare-tittle green-text-btn">Reports and Analytics</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents"><a href="https://www.evoxglobal.com/en/evox-connect/acd-ivr#call-suvery" class=" link-tittle"><h4 class="compare-tittle green-text-btn">After call survey</h4></a></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents tittle-cloumm cloud-integration-cloum"><h4 class="compare-tittle ">Advanced ACD functions </h4></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents tittle-cloumm cloud-integration-cloum"><h4 class="compare-tittle ">Integration</h4></div>
+                        <!-- 單一項 -->
+                        <!-- <div class="cloum-contents"><h4 class="compare-tittle">EC ADK 套件</h4></div> -->
+                        <!-- 單一項 -->
+                        <div class="cloum-contents addition-cloum"></div>
+                    </div>
+                </div>
+                <!-- compare 內容 -->
+                <div class="compare-cloum content-cloum">
+                    <div class="cloum-header"><img class="plan-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048.png 3x" alt="客服中心方案"><h3>Call Center Starter Package</h3><p>Provides contact center switchboard features including Automatic Call Distribution (ACD), Interactive Voice Response (IVR), call distribution and queuing and more.</p><div class="plan-price"><strong>590NTD</strong><span>up / month(untaxed)</span></div></div>
+                    <div class="cloum-body compare-body">
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>1 Set</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>2 Agents</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>1 Supervisor</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Options purchased</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Connect Manager</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents cloud-integration-cloum"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents cloud-integration-cloum"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <!-- <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div> -->
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents addition-cloum">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Contact EVOX for pricing on additional ACDs, DIDs, Agents, and/or Supervisors</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- compare 內容 -->
+                
+                <div class="compare-cloum content-cloum important-cloum">
+                    <div class="best-plan-tittle">
+                        <div>The Best Solution for Enterprise Customer Service Center</div>
+                    </div>
+
+                    <div class="cloum-header important-cloum-header"><img class="plan-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053.png 3x" alt="專業客服中心方案"><h3>Pro Call Center Starter Package</h3><p>Provides advanced features including additional routing functions, call blocking and third party integrations to enable enterprise level customer service.</p><div class="plan-price"><strong>1990NTD</strong><span> up / month(untaxed)</span></div></div>
+                    <div class="cloum-body compare-body">
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>1 Set</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>2 <strong>Pro</strong> Agents </p><div class="hint"><div class="tooltips">
+                            <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                            <img class="question-mark-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/green-tips-icon-1.png" alt="備註">
+
+                            <span class="tooltiptext">Pro Agent can use all the functions of the Pro PC App, does not limit the device (you can use mobile devices or IP Phones to receive calls), and also enjoys the recording function. </span></div></div></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>1 <strong>Pro</strong> Supervisor </p><div class="hint" ><div class="tooltips">
+                            <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                            <img class="question-mark-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/green-tips-icon-1.png" alt="備註">
+
+                            <span class="tooltiptext">Pro Supervisor includes all Pro Agent functionality plus access to Pro Connect Manager and the supervisor monitoring panel on the Pro PC App.</span></div></div></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Yes, all seats are available</p></div>
+                        
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Yes, all seats are available</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Connect Manager</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>1000 contacts</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Yes, only management seats are available</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Complete customer service center analysis and reports</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Yes</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents cloud-integration-cloum">
+                            <style type="text/css">
+                                .cloum-list-block{
+                                    display: flex;
+                                    flex-flow: column;
+                                    max-width: 80%;
+                                    margin: 0 auto;
+                                    align-items: center;
+                                }
+                                .cloum-list{
+                                    display: flex;
+                                    align-items: center;
+
+                                }
+                                .cloum-list>p{
+                                    margin: 0px 0;
+                                    font-size: 12px;
+                                }
+                            </style>
+                            <div class="cloum-list-block">
+                                <!-- 單個 -->
+                                <!-- <div class="cloum-list">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>話後調查</p>
+                                </div> -->
+                                <!-- 單個 -->
+                                <div class="cloum-list">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>Exclusive Call Distribution</p>
+                                    
+                                </div>
+                                <div class="cloum-list">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>ECLIK can be purchased</p>
+                                </div>
+                                <!-- 單個 -->
+                                <!-- <div class="cloum-list">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>依資料庫查詢結果分配來電</p>
+                                </div> -->
+                                <!-- 單個 -->
+                                <!-- <div class="cloum-list">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p>依資料庫查詢結果語音回覆</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents cloud-integration-cloum">
+                            
+                            <div class="cloum-tow-options">
+                                <div class="single-option">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p><a class="green-text-btn" href="/tw/developers/eclik"> ECLIK</a> can be purchased</p>
+                                    <!-- <div class="hint" >
+                                        <div class="tooltips">
+                                        <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                                        <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
+
+                                        <span class="tooltiptext cloud-ntegration-tips"> EVOX 客戶端整合套件</span>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="single-option">
+                                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援">
+                                    <p><a class="green-text-btn" href="/tw/developers/ec-adk"> EC ADK</a> can be purchased</p>
+                                    <!-- <div class="hint" >
+                                        <div class="tooltips">
+                                        <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                                        <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
+
+                                        <span class="tooltiptext cloud-ntegration-tips">EVOX 雲端整合套件</span>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- 單一項 -->
+                        <!-- <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>可加購 EC ADK 套件</p><div class="hint" title="(EVOX Client integration kit)整合服務"><div class="tooltips">
+                            <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                            <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
+
+                            <span class="tooltiptext">（EVOX Cloud Accesss and Deployment Kit）可透過 EVOX 雲端整合套件來與其他雲端服務整合 </span></div></div>
+                        </div> -->
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents addition-cloum">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Contact EVOX for pricing on additional ACDs, DIDs, contact information, Pro Agents and/or Pro Supervisors.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- compare 內容 -->
+                <div class="compare-cloum content-cloum right-cloum">
+                    <div class="cloum-header"><img class="plan-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053.png 3x" alt="聯絡人資料庫方案"><h3>Connect Knowledge Starter Package</h3><p>Provides a highly customizable contact database and upgraded access to the Pro PC App with advanced features.</p><div class="plan-price"><strong>490NTD</strong><span> up / month(untaxed)</span></div></div>
+                    <div class="cloum-body compare-body">
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Yes, 1 user</p></div>
+                        
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Options purchased </p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>Connect Manager</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill.png" alt="支援"><p>1000 contacts</p></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents cloud-integration-cloum"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents cloud-integration-cloum"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div>
+                        <!-- 單一項 -->
+                        <!-- <div class="cloum-contents compare-contents"><img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/gray-fill-close%20copy.png" alt="不支援"></div> -->
+                        <!-- 單一項 -->
+                        <div class="cloum-contents compare-contents addition-cloum">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Contact EVOX for pricing on additional contact information and/or Pro PC App users.</span>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+
+            <!-- EVOX Connect 手機版內容 -->
+            <div class="two-plan-block">
+                <!-- 方案 -->
+                <div class="ec-price-item important-item plan-block">
+                    <div class="best-plan-tittle">
+                        <div>The Best Solution for Enterprise Customer Service Center </div>
+                    </div>
+                    <div class="content-box uniqul-box">
+                    <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/call-center/Group%2048.png 3x" alt="專業客服中心方案">
+                    <div class="plan-contnt">
+                        <h3>Pro Call Center Starter Package </h3>
+                        <p>Provides advanced features including additional routing functions, call blocking and third party integrations to enable enterprise level customer service. </p>
+                        
+                        <div class="plan-price"><strong>1990NTD</strong><span>up / month(untaxed)</span></div>
+                    </div>
+                    <div class="plan-description-list">
+                        <ul class="content-ul">
+                            <!-- 單項 -->
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>1 Set ACD </div></li>
+                            <!-- 單項 -->
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>2 Pro Agents</div>
+                                <div class="tooltips">
+                                    <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                                    <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
+
+                                    <span class="tooltiptext agent-tips">Pro Pro Agent can use all the functions of the Pro PC App, does not limit the device (you can use mobile devices or IP Phones to receive calls), and also enjoys the recording function. </span>
+                                </div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i>
+                                <div>1 Pro Supervisor</div>
+                                    <div class="tooltips">
+                                    <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                                    <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
+
+                                    <span class="tooltiptext Supervisor-tips">Pro Supervisor includes all Pro Agent functionality plus access to Pro Connect Manager and the supervisor monitoring panel on the Pro PC App. </span>
+                                </div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div>1000 contacts </div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div>
+                                    <a href="https://www.evoxglobal.com/en/evox-connect/acd-ivr#call-record" target="_blank" class="green-text-btn">Contains call recordings</a>
+                                </div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li ">
+                                <i class="fas fa-check light-dark-text"></i>
+                                <div>
+                                    <a href="/en/evox-connect/manager" target="_blank" class="green-text-btn">Connect Manager</a>
+                                </div>
+                            </li>
+                             <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div><a href="/en/evox-connect/supervisor-dashboard" target="_blank" class="green-text-btn">Supervisor dashboard</a></div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div><a href="/en/evox-connect/reports-analytics" target="_blank" class="green-text-btn">Report & Analytics </a></div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div>
+                                    <a href="https://www.evoxglobal.com/en/evox-connect/acd-ivr#call-suvery" target="_blank" class="green-text-btn">Call suvery </a>
+                                </div>
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <style type="text/css">
+                                    .mobile-cloud-integration-cloum{
+                                        display: flex;
+                                        flex-flow: column;
+                                    }
+                                </style>
+                                <div class="mobile-cloud-integration-cloum">
+                                    <div>Advanced</div>
+                                    <ul>
+                                        <li><p>Call Distribution </p></li>
+                                        <li><p>DID Selection </p></li>
+                                    </ul>
+                                </div>
+                               
+                            </li>
+                            <!-- 單項 -->
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <style type="text/css">
+                                    .mobile-cloud-integration-cloum{
+                                        display: flex;
+                                        flex-flow: column;
+                                    }
+                                </style>
+                                <div class="mobile-cloud-integration-cloum">
+                                    <div>Cloud Integration</div>
+                                    <ul>
+                                        <li><p><a class="green-text-btn" > ECLIK</a> Options purchased </p></li>
+                                        <li><p><a class="green-text-btn" > EC ADK</a> Options purchased </p></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="tooltips">
+                                    <img class="question-mark" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip.png" alt="備註">
+                                    <img class="question-mark-active" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/icon/tip-hover.png" alt="備註">
+                                    <span class="tooltiptext ">依需求可加購 ECLIK（EVOX 客戶端整合套件）或 EC ADK（EVOX 雲端整合套件）</span>
+                                </div> -->
+                            </li>
+                            
+                            <!-- 單項 -->
+                            <li class="content-li description-attention"><i class="fas fa-info-circle"></i>
+                                <div>Contact EVOX for pricing on additional ACDs, DIDs, contact information, Pro Agents and/or Pro Supervisors.</div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    </div>
+                </div>
+
+                <!-- 方案 -->
+                <div class="ec-price-item plan-block">
+                    <div class="content-box">
+                    <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/pro-agent/Group%2053.png 3x" alt="客服中心">
+                    <div class="plan-contnt">
+                        <h3>Call Center Starter Package </h3>
+                        <p>Provides contact center switchboard features including Automatic Call Distribution (ACD), Interactive Voice Response (IVR), call distribution and queuing and more.</p>
+                        <a class="link-page green-text-btn" href="/en/evox-connect/acd-ivr" target="_blank">Learn more <i class="fas fa-angle-double-right"></i></a>
+                        <div class="plan-price"><strong>590NTD</strong><span> up / month(untaxed)</span></div>
+                    </div>
+                    <div class="plan-description-list">
+                        <ul class="content-ul">
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>1 set ACD </div></li>
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>2 Agents</div></li>
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>1 Supervisor</div></li>
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div>Additional Call recording</div>
+                            </li>
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div><a href="/en/evox-connect/manager" target="_blank" class="green-text-btn">Connect Manager</a>
+                            </div></li>
+                            <li class="content-li description-attention"><i class="fas fa-info-circle"></i><div>Contact EVOX for pricing on additional ACDs, DIDs, Agents, and/or Supervisors</div></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                </div>
+
+                <!-- 方案 -->
+                <div class="ec-price-item plan-block">
+                    <div class="content-box">
+                    <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/pricing/EVOX-Connect/icon/database/Group%2053.png 3x" alt="聯絡人資料庫">
+                    <div class="plan-contnt">
+                        <h3>Connect Knowledge Starter Package</h3>
+                        <p>Provides a highly customizable contact database and upgraded access to the Pro PC App with advanced features.</p>
+                        <a class="link-page green-text-btn" href="/en/evox-connect/connect-knowledge" target="_blank">Learn more <i class="fas fa-angle-double-right"></i></a>
+                        <div class="plan-price"><strong>490NTD</strong><span> up / month(untaxed)</span></div>
+                    </div>
+                    <div class="plan-description-list">
+                        <ul class="content-ul">
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>1000 contacts </div></li>
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>1 <a href="/tw/evox-connect/agent" target="_blank" class="green-text-btn">Pro PC App</a> user</div></li>
+                            <li class="content-li "><i class="fas fa-check light-dark-text"></i>
+                                <div>Additional Call recording</div>
+                            </li>
+                            <li class="content-li"><i class="fas fa-check light-dark-text"></i><div><a href="/tw/evox-connect/manager" target="_blank" class="green-text-btn">Connect Manager</a></div></li>
+                            <li class="content-li description-attention"><i class="fas fa-info-circle"></i><div>Contact EVOX for pricing on additional contact information and/or Pro PC App users.</div></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- 註記內容 -->
+            <!-- <div class="plan-option-block">
+                <div class="plan-option-content">
+                    <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/support-service-2.png" alt="初期導入協助">
+                    <div class="option-content-text">
+                        <h3>初期導入的諮詢服務</h3>
+                        <p>只要訂閱任一方案，立即附送諮詢服務</p>
+                    </div>
+                    </div>
+                <div class="plan-option-list">
+                    <ul class="option-content-ul">
+                        <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>訂閱客服中心方案，我們將協助您設計與編排 ACD 並根據不同的 ACD 來將人員編組。</div></li>
+                        <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>訂閱聯絡人資料庫方案，將有工程師協助您建立與建置聯絡人資料庫。</div></li>
+                        <li class="content-li"><i class="fas fa-check light-dark-text"></i><div>訂閱專業客服中心方案，我們將提供您完整的導入諮詢服務與支援。</div></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- 加值服務 -->
+            <div class="add-service-block ">
+                <!-- <div class="add-on-tittle-block">
+                    <h2>加值服務</h2>
+                </div> -->
+
+                <!-- <div class="ec-price-item addon-plan-block">
+                    <div class="add-on-plan-box">
+                        <div class="addon-imag">
+                            <img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/pricepage/EVOX-Connect/call-record-icon.png" alt="錄音功能">
+                        </div>
+                        <div class="addon-content">
+                            <h3>電話錄音功能</h3>
+                            <p>提供合法的錄音功能，開始錄音前系統將自動撥放警語，以保障通話雙方的權益。錄音檔存於雲端，可隨時於 Connect Manager 或 Pro PC App 中聽取。</p>
+                            <p class="add-note"><span class="attention-text">＊需先訂閱專員或 Pro PC App 使用者席位，方可加購錄音功能。</span></p>
+                        </div>
+                        <div class="plan-price addon-price">每席 <strong>100NTD</strong> /月(未稅)</div>
+                    </div>
+
+                </div> -->
+                <!-- CTA 報價 -->
+                <div class="quect-block">
+                    <div class="quect-text-block">
+                        <h2>Request a quote</h2>
+                        <p>Price varies depending upon the selected functions and scale. Contact us for professional configuration guidance and a personalized quote.</p>
+                        <a href="/en/contact-us" class="green-btn set-btn-center quect-bnt">Contact Us </a>
+                    </div>
+                </div>
+
+                <!-- 導入服務 -->
+            <style type="text/css">
+                .onbording-service-block{
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    border-radius: 4px;
+                    max-width: 980px;
+                    /*width: 90%;*/
+                    margin: 40px auto 80px auto;
+                }
+                .onbording-service-block:hover{
+                    border: 1px solid #58B805;
+                    box-shadow: 1px 4px 10px -2px rgb(138 138 138 / 50%);
+                    transition: box-shadow .3s border .3s;
+                    /*cursor: pointer;*/
+                }
+                .onbording-text-block{
+                    padding: 20px;
+                    text-align: center;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .onbording-text-block>h2{
+                    font-size: 30px;
+                    margin: 0 auto 20px auto;
+                }
+                .onbording-text-block>p{
+                    font-size: 14px;
+                    margin: 0 auto 20px auto;
+                    color: #5F6871;
+                }
+                @media screen and (max-width: 955px) {
+                    .onbording-service-block{
+                        max-width: 90%;
+                    }
+                }
+            </style>
+            <!-- <h2>導入服務</h2> -->
+            <div class="onbording-service-block">
+                    <div class="onbording-text-block">
+                        <h2>EVOX Connect professional services</h2>
+                        <p>Personalized onboarding service includes training courses and hands-on functional operation training to accelerate adoption. </p>
+                        <!-- <a class="green-text-btn" href="/tw/onboarding/evox-connect">了解更多 <i class="fas fa-angle-double-right" aria-hidden="true"></i></a> -->
+                    </div>
+            </div>
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+</div>

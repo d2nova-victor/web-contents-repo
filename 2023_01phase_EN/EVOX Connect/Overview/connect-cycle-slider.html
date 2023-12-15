@@ -1,0 +1,558 @@
+<!-- CSS -->
+<!-- <link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.css"> -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/owl-carousel/css/owl.carousel.css">
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/owl-carousel/css/owl.theme.default.min.css">
+
+
+
+<style type="text/css">
+	/*slider*/
+	* { box-sizing: border-box; }
+
+	body { font-family: sans-serif; }
+	.benefit-slider-subtittle{
+		text-align: center;
+	    display: block;
+	    margin: 10px auto;
+	    padding: 0;
+	    font-size: 16px;
+	    color: #A5B6BF;
+	}
+	/*owl*/
+
+	/*.owl-carousel {
+	position: relative;
+	height: 100%;
+	
+	div:not(.owl-controls) {
+		height: 100%;
+	}*/
+	.mycycle{
+		width: 90vw;
+		margin:0 auto;
+	}
+	.center-img{
+		max-width: 376px;
+	}
+	.owl-carousel .owl-item img{
+		width:auto;
+	}
+	/*slider*/
+	.carousel {
+	  /*background: #FAFAFA;*/
+	  margin-bottom: 40px;
+	  height: 100%;
+	}
+	  /*隱藏*/
+	/*.carousel-block ,.carousel{
+		  display: none;
+	}*/
+	.carousel-cell {
+	  width: 100%;
+	  /*height: 100%;*/
+	  margin-right: 10px;
+	  /*background: #8C8;*/
+	  border-radius: 5px;
+	  /*counter-increment: carousel-cell;*/
+	}
+	.carousel-main> .carousel-cell {
+		/*height: 400px;*/
+	}
+	.flickity-page-dots{
+   		/*display: none;*/
+   		position: relative;
+   		bottom: 0px;
+    	padding: 20px 0px;
+	}
+	.carousel-main{
+		max-width: 1240px;
+		margin: 0px auto;
+		/*min-height: 400px;*/
+		/*min-height: 100vh;*/
+		/*max-height: 420px;*/
+	}
+	.carousel-image {
+	  min-width: 150px;
+	  /*height: 400px;*/
+	}
+	.carousel-nav{
+		margin: 20px 0;
+	}
+	.carousel-block{
+		/*background: #FAFAFA;*/
+		padding: 40px 0px 100px 0px;
+		margin: 0px 0px;
+	}
+	.carousel-tittle{
+		text-align: center;
+		font-size: 35px;
+		color:#a7a7a7;
+		margin: 20px 0;
+
+	}
+	.flickity-button{
+		background: hsla(0, 0%, 100%, 0);
+		/*color: #EDEFF1;*/
+		color: #c9c9c9;
+
+	}
+	.flickity-prev-next-button.previous{
+		left: 0px;
+	}
+	.flickity-prev-next-button.next{
+		right: 0px;
+	}
+	.flickity-prev-next-button .flickity-button-icon{
+		top:100%;
+	}
+	.flickity-prev-next-button{
+		top: 62%;
+	}
+	.flickity-button:hover {
+	    background: #fff00000;
+	    cursor: pointer;
+	}
+	.flickity-button:focus {
+	    outline: 0;
+	    box-shadow: 0 0 0 5px #19f0;
+	}
+	.flickity-button:disabled{
+		opacity: 0;
+	}
+	/* cell number */
+	.carousel-cell:before {
+	  display: block;
+	  text-align: center;
+	  /*content: counter(carousel-cell);*/
+	  line-height: 200px;
+	  font-size: 80px;
+	  color: white;
+	}
+
+	.carousel-nav .carousel-cell {
+	  /*height: 80px;*/
+	  /*width: 140px;*/
+	  width: 239px;
+	  height: 137px;
+	}
+
+	.carousel-nav .carousel-cell:before {
+	  font-size: 50px;
+	  line-height: 80px;
+	}
+
+	.carousel-nav .carousel-cell.is-nav-selected {
+	  /*background: #ED2;*/
+	  /*opacity: .5;*/
+	}
+	/*other*/
+	.guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+    	align-items: center;
+    	-webkit-align-items: center;
+	 }
+	 .guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	 }
+	 .guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	 }
+	  .guide-box>h2{
+	 	margin: 0;
+	 }
+	 /*content flex */
+	 .benefit-block{
+	 	display: flex;
+    	/*max-height: 310px;*/
+	 }
+	 .benefit-cycle{
+	 	width: 31.3%;
+	 }
+	 .benefit-1, .benefit-2{
+	 	width: 34.3%;
+	 }
+	 .benefit-cycle{
+	 	order:2;
+	 }
+	 .benefit-1{
+	 	order:1;
+	 	display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-flow: column;
+	    padding: 0 0px 0 40px;
+	 }
+	 .benefit-2{
+	 	order: 3;
+	 	display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-flow: column;
+	    padding: 0 40px 0 0px;
+	 }
+	 .benefit-cycle-box{
+	 	min-height: 300px;
+    	display: flex;
+    	justify-content: center;
+    	position: relative;
+    	align-items: center;
+	 }
+	 .benefit-cycle-box>img{
+	 	height: 100%;
+	 }
+	 .step-point-1{
+	 	position: absolute;
+	    transform: rotate(-48deg);
+	    left: 18%;
+	    top: 17%;
+	    color:#fff;
+	 }
+	 .step-point-2{
+	 	position: absolute;
+	    transform: rotate(52deg);
+	    left: 67%;
+	    top: 17%;
+	    color:#fff;
+	 }
+	 .step-point-3{
+	 	position: absolute;
+	    transform: rotate(-48deg);
+	    left: 62%;
+	    top: 74%;
+	    color:#fff;
+	 }
+	 .step-point-4{
+	 	position: absolute;
+    	transform: rotate(45deg);
+    	left: 20%;
+    	top: 75%;
+    	color:#fff;
+	 }
+	 .benefit-box{
+	 	display: flex;
+	    min-height: 60px;
+	    height: 110px;
+	    width: 95%;
+	    margin: 15px auto;
+	    align-items: center;
+	 }
+	 .benefit-box>img{
+	 	height: 100%;
+	 	/*margin:0 20px;*/
+	 }
+	 .benefit01, .benefit04{
+	 	margin-right: 0;
+	 }
+	 .benefit02, .benefit03{
+	 	margin-left: 0;
+	 }
+	 .benefit-box>div{
+	 	width: 100%;
+	 }
+	 .benefit01>div{
+	 	border-bottom: 4px solid #FFB300;
+	 }
+	 .benefit02>div{
+	 	border-bottom: 4px solid #FF7043;
+	 }
+	 .benefit03>div{
+	 	border-bottom: 4px solid #4DB6AC;
+	 }
+	 .benefit04>div{
+	 	border-bottom: 4px solid #42A5F5;
+	 }
+	 .badbenefit>div{
+	 	border-bottom: 4px solid #CFD8DC;
+	 }
+	 .mobile-show{
+	 	display: none;
+	 }
+	 @media screen and (min-width: 1400px){
+	 	.benefit-block{
+	 		align-items: center;
+    		justify-content: center;
+	 	}
+	 	 .benefit-1, .benefit-2{
+	 		max-width: 480px;
+	 	}
+	 	.benefit-cycle{
+	 		width: 21.3%;
+	 	}
+
+	 }
+	@media screen and (max-width: 980px){
+		.mycycle{
+		width: 100vw;
+		}
+		.carousel-block{
+			/*height: 100vh;*/
+			padding: 20px 0px;
+		}
+		.benefit-block{
+			display: block;
+		}
+		.benefit-cycle{
+			width: 100%;
+		    display: table;
+		    float: left;
+		}
+		.benefit-1, .benefit-2{
+			width: 46%;
+		    display: table;
+		    float: left;
+    		margin: 0 2%;
+		}
+		.benefit-box{
+			/*display: block;*/
+			width: 100%;
+		}
+		.benefit-1{
+			padding: 0;
+		}
+		.benefit-2{
+			padding: 0;
+		}
+		.benefit-box>img{
+			height: 120px;
+			margin: 0;
+		}
+		.benefit01, .benefit04{
+			margin-right: auto;
+		}
+		.benefit02, .benefit03{
+			margin-right: auto;
+		}
+		.flickity-page-dots{
+			bottom:auto;
+		}
+	}
+	@media screen and (max-width: 840px){
+	/* 修改頂部高度top section*/
+		/*.hero-section-content{
+			margin: 0 0 20px 0;
+		}*/
+	}
+	@media screen and (max-width: 640px){
+		.carousel-block{
+			/*min-height: 492px;*/
+		}
+		.benefit-1, .benefit-2{
+			width: 96%;
+		}
+		.mobile-show{
+		/*width: 90%;
+		height:auto;*/
+		margin:0 auto;
+	 	display: block;
+	 	}
+	 	.mobile-hide{
+	 	display: none;
+	 	}
+	 	.flickity-prev-next-button{
+		top: 70%;
+		}
+		.mobilecycle>img{
+			height:auto!important;
+			max-height:auto!important;
+			min-height:auto!important;
+		}
+	}
+
+</style>
+<script>
+		
+		$(document).ready(function(){
+			var mobileheight = $('.mobilecycle').height()+100; 
+			var divHeight = $('.flickity-viewport').height()+90;  
+			var divHeight2 = $('.flickity-viewport').height()+190;  
+			var dotHeight = $('.flickity-page-dots').height()+50;
+			var windowsW = $( window ).width();
+		if($(window).width() <= 980 ){
+			$('.carousel-block').css('height', divHeight+ dotHeight +'px');
+			$('.flickity-viewport').css('height', mobileheight + dotHeight + 'px');
+
+		}
+		if($(window).width() <= 640 ){
+			$('.carousel-block').css('height', mobileheight + dotHeight + 70 +'px');
+			$('.flickity-viewport').css('height', mobileheight + dotHeight + 'px');
+		} 
+		if($(window).width() <= 320 ){
+			$('.mycycle').css('width', windowsW + 'px');
+		}  
+		if($(window).width() >= 980 ){
+			$('.carousel-block').css('height','100%');
+		}
+	});
+		$( window ).on("resize", function() {
+			var mobileheight = $('.mobilecycle').height()+100; 
+       		var divHeight = $('.flickity-viewport').height()+90;  
+			var divHeight2 = $('.flickity-viewport').height()+190;  
+			var dotHeight = $('.flickity-page-dots').height()+20;
+		if($(window).width() <= 980 ){
+			$('.carousel-block').css('height', divHeight+ dotHeight +'px');
+			$('.flickity-viewport').css('height', mobileheight + dotHeight + 'px');
+		}
+		if($(window).width() <= 640 ){
+			$('.carousel-block').css('height', mobileheight + dotHeight+ 70 +'px');
+			$('.flickity-viewport').css('height', mobileheight+ dotHeight +'px');
+		}
+		if($(window).width() <= 320 ){
+			$('.mycycle').css('width', windowsW + 'px');
+		} 
+		if($(window).width() >= 980 ){
+			$('.carousel-block').css('height','100%');
+		}
+    });
+</script>
+<div class="carousel-block">
+<!-- <div class="benefit-slider-subtittle purple-text">客服中心的成功關鍵</div> -->
+	<div class="owl-carousel owl-theme">
+		<!-- 正面 -->
+		<div class="item mycycle">
+			<!-- 標題 -->
+			<div class="guide-block gary-back">
+				<div class="guide-box">
+					<span class="benefit-slider-subtittle">Keys to a successful contact center </span>
+					<h2>A virtuous cycle </h2>
+					
+				</div>
+			</div>
+			<!-- 3區塊 -->
+			<div class="benefit-block digit2">
+				<div class="benefit-cycle mobile-hide">
+					<div class="benefit-cycle-box">
+						<img class="center-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/good-cycle/good-slider-center-img_EN.png" alt="good-cycle">
+						<!-- <div class="step-point-1">Manager</div>
+						<div class="step-point-2">Agent</div>
+						<div class="step-point-3">Customer</div>
+						<div class="step-point-4">Business</div> -->
+					</div>
+				</div>
+				<div class="mobile-show mobilecycle" >
+					<img  src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/good-cycle/good-slider-mobile-img_EN.png" alt="good-cycle-mobile">
+				</div>
+				<div class="benefit-1 mobile-hide">
+					<div class="benefit-box benefit01 ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/good-cycle/good-benefit-01.png" alt="manager">
+						<div><p>Manager empowered to learn and improve </p></div>
+					</div>
+					<!-- <div class="benefit-box benefit02 mobile-show">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/P3/benefit-slider/good-agent.jpg" alt="agent">
+						<div><p>專員有效率地解決顧客問題</p></div>
+					</div> -->
+					<div class="benefit-box benefit04 ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/good-cycle/good-benefit-04.png" alt="business">
+						<div><p>Better brand, better business </p></div>
+					</div>
+				</div>
+				<div class="benefit-2 mobile-hide">
+					<div class="benefit-box benefit02 ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/good-cycle/good-benefit-02.png" alt="agent">
+						<div><p>Helpful and efficient agents </p></div>
+					</div>
+					<div class="benefit-box benefit03 ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/good-cycle/good-benefit-03.png" alt="customer">
+						<div><p>Happy customers </p></div>
+					</div>
+					<!-- <div class="benefit-box benefit04 mobile-show">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/P3/benefit-slider/benefit-03.jpg" alt="business">
+						<div><p>良好的品牌形象讓業績蒸蒸日上</p></div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- 負面 -->
+		<div class="item mycycle">
+			<!-- 標題 -->
+			<div class="guide-block gary-back">
+				<div class="guide-box">
+					<span class="benefit-slider-subtittle purple-text">The reasons contact centers fail </span>
+					<h2>A vicious cycle </h2>
+				</div>
+			</div>
+			<!-- 3區塊 -->
+			<div class="benefit-block digit2">
+				<div class="benefit-cycle mobile-hide">
+					<div class="benefit-cycle-box">
+						<img class="center-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/bad-cycle/bad-slider-center-img_EN.png" alt="bad-cycle">
+					</div>
+				</div>
+				<div class="mobile-show mobilecycle">
+					<img  src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/bad-cycle/bad-slider-mobile-img_EN.png" alt="bad-cycle-mobile">	
+				</div>
+				<div class="benefit-1 mobile-hide">
+					<div class="benefit-box benefit01 badbenefit">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/bad-cycle/bad-benefit-01.png" alt="bad-manager">
+						<div><p>Demoralized and poorly equipped managers </p></div>
+					</div>
+					<!-- <div class="benefit-box benefit02 badbenefit mobile-show">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/P3/benefit-slider/bad-brand.jpg" alt="bad-brand">
+						<div><p>負面的品牌形象讓業績每況愈下</p></div>
+					</div> -->
+					<div class="benefit-box benefit04 badbenefit ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/bad-cycle/bad-benefit-04.png" alt="bad-agent">
+						<div><p>Poorly trained and equipped agents </p></div>
+					</div>
+				</div>
+				<div class="benefit-2 mobile-hide">
+					<!-- <div class="benefit-box benefit03 badbenefit mobile-show">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/P3/benefit-slider/bad-customer.jpg" alt="bad-customer">
+						<div><p>極差的顧客來電體驗</p></div>
+					</div> -->
+					<div class="benefit-box benefit02 badbenefit ">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/bad-cycle/bad-benefit-02.png" alt="bad-brand">
+						<div><p>Bad brand and bad business </p></div>
+					</div>
+					<div class="benefit-box benefit03 badbenefit mobile-hide">
+						<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/Slider-img/bad-cycle/bad-benefit-03.png" alt="bad-customer">
+						<div><p>Bad customer experience </p></div>
+					</div>
+					<!-- <div class="benefit-box benefit04 badbenefit mobile-show">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/overview/P3/benefit-slider/bad-agent.jpg" alt="bad-agent">
+						<div><p>專員從未受過訓練，也沒有合適的客服系統可以使用</p></div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+	
+	</div>
+</div>
+
+<!-- JS -->
+<!-- <script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css"> -->
+<!-- <script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script> -->
+<!-- <script src="jquery.min.js"></script> -->
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/owl-carousel/js/jquery.min.js"></script>
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/owl-carousel/js/owl.carousel.js"></script>
+
+
+<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:0,
+    responsiveClass:true,
+    items:1,
+    responsive:{
+        0:{
+            nav:false,
+            dots:true
+        },
+        600:{
+            nav:false,
+            dots:true
+        },
+        1000:{
+            nav:false,
+            dots:true
+        }
+    }
+})
+
+</script>

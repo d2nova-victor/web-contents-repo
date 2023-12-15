@@ -1,0 +1,183 @@
+<style type="text/css">
+	.more-content-sectoin{
+		padding: 40px 0;
+	}
+	.more-content-box{
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		flex-flow: row wrap;
+    	max-width: 980px;
+    	margin: 0 auto;
+    	padding: 0 20px;
+	}
+	.more-content-text-block{
+		width: 50%;
+	}
+	.more-content-text-block>h2{
+		font-size: 32px;
+		max-width: 5px 0;
+	}
+	.more-content-text-block>p{
+		color: #5F6871;
+		font-size: 16px;
+		text-align: justify;
+	}
+	.more-content-out-link-box{
+		width: 46%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: row ;
+		padding: 0 2%;
+	}
+	.more-content-btn{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-flow: column;
+	    width: 33.3%;
+/*	    transition:transform .3s;*/
+/*    	transition-timing-function: ease-in;*/
+	}
+	.more-content-btn:hover{
+/*		transform: scale(1.03);*/
+	}
+	.more-content-btn>img{
+		max-width: 80px;
+	}
+	.set-btn{
+		margin:40px auto;
+		padding: 1px 50px;
+	}
+		/*	物件滑入動畫 最後再開*/
+	.active{
+	  display:block;
+	}
+	.digit2 {
+	     opacity: 0;
+	    -webkit-transform: translateY(40px);
+	       -moz-transform: translateY(40px);
+	        -ms-transform: translateY(40px);
+	         -o-transform: translateY(40px);
+	            transform: translateY(40px);
+	    -webkit-transition: all 0.3s ease-out;
+	       -moz-transition: all 0.3s ease-out;
+	        -ms-transition: all 0.3s ease-out;
+	         -o-transition: all 0.3s ease-out;
+	            transition: all 0.3s ease-out;
+
+	  }
+	    .visible2 {
+	    opacity: 1;
+	    -webkit-transform: none;
+	       -moz-transform: none;
+	        -ms-transform: none;
+	         -o-transform: none;
+	            transform: none;
+	  }
+	  @media screen and (max-width: 840px){
+	  	.more-content-text-block{
+	  		width: 80%;
+	  	}
+	  	.more-content-out-link-box{
+	  		width: 48%;
+	  	}
+	  }
+	  @media screen and (max-width: 690px){
+	  	.more-content-text-block{
+	  		width: 90%;
+	  	}
+	  	.more-content-out-link-box{
+	  		width: 90%;
+	  	}
+	  	.goback-form-link{
+	  		width: 90%;
+	  	}
+	  }
+	  @media screen and (max-width: 360px){
+	  	.more-content-out-link-box{
+	  		    flex-flow: column;
+	  	}
+	  	.more-content-btn{
+	  		width: 100%;
+	  	}
+	  }
+</style>
+
+<div class="more-content-sectoin">
+	<div class="more-content-box ">
+		<div class="more-content-text-block">
+			<h2>EVOX 還提供了什麼內容?</h2>
+			<p>除了白皮書外，EVOX 也提供了其他免費的內容資源，你可以參考 EVOX 的官方部落格，你也可以追蹤 EVOX 的粉絲專頁和 Youtube 頻道，來接收更多我們推出的豐富內容。 </p>
+		</div>
+		<div class="more-content-out-link-box digit2">
+			<!-- 單個 -->
+			<div class="more-content-btn ">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/blog/Group%207@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/blog/Group%207@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/blog/Group%207@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/blog/Group%207.png 3x" alt="官方部落格">
+				<a class="green-text-btn" target="_blank" href="https://blog.evoxglobal.com/tw">官方部落格 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+
+			<!-- 單個 -->
+			<div class="more-content-btn ">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/facebook/Group%208@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/facebook/Group%208@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/facebook/Group%208@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/facebook/Group%208.png 3x" alt="紛絲專頁">
+				<a class="green-text-btn" target="_blank" href="https://www.facebook.com/evoxglobal/">紛絲專頁 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+
+			<!-- 單個 -->
+			<div class="more-content-btn ">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/youtube/Group%209@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/youtube/Group%209@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/youtube/Group%209@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/icon/youtube/Group%209.png 3x" alt="Youtube 頻道">
+				<a class="green-text-btn" target="_blank" href="https://www.youtube.com/channel/UCxZHSZ03BKSUsgJuv7_EiNg">Youtube 頻道 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="goback-form-link digit2">
+			<a href="#fill-form" class="green-btn set-btn">立即下載白皮書</a>
+		</div>
+	</div>
+
+</div>
+
+<!-- 滑到指定位置 -->
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 200
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<!-- 最後打開 -->
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  var revealElements = document.getElementsByClassName("digit2");
+ for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+      new ScrollMagic.Scene({
+                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                offset: 30,                        // start a little later
+                triggerHook: 0.9,
+              })
+              .setClassToggle(revealElements[i], "visible2") // add class toggle
+              // .addIndicators({name: "digit21 " + (i+1) }) // add indicators (requires plugin)
+              .addTo(controller);
+    }
+</script>

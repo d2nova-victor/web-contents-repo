@@ -1,0 +1,859 @@
+<style type="text/css">
+	.cycle-section{
+		position: relative;
+	}
+	.all-content-camp{
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	    /* justify-content: center; */
+	    flex-flow: column;
+	    transition: all 1s ease-in-out;
+	}
+/*	畫布*/
+	.section01-block{
+	    display: flex;
+	    align-content: center;
+	    justify-content: center;
+	    width: 100%;
+	    flex-flow: column;
+	    align-items: center;
+	    padding: 40px 0;
+	}
+	.section-contain{
+		display: flex;
+	    width: 100%;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	.spacer{
+		display: grid;
+/*		height: 680px;*/
+		height: 100vh;
+		overflow: hidden;
+	}
+	/*	圓*/
+	.move{
+/*	     position: absolute; */
+/*	    background: #fff;*/
+	    width: 30%;
+	    right: 50%;
+	    /* margin-right: -15%; */
+/*	    top: 40%;*/
+	    /* max-width: 300px; */
+		/*  top: 13%;*/
+		transition: all 1s ease-in-out;
+	}
+	.cycle-box{
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	position: relative;
+	}
+	@keyframes scrolldownanimate {
+  		from {top: 180px;}
+  		to {top: 190px;}
+	}
+	.scroll-down-flag{
+		width: auto;
+	    display: flex;
+	    position: absolute;
+	    transform: translate(50%, 20%);
+	    z-index: 1;
+	    align-items: center;
+	    justify-content: center;
+	    flex-flow: column;
+	    margin-left: -54px;
+	    top: 180px;
+	    animation-name: scrolldownanimate;
+  		animation-duration: 1s;
+  		animation-timing-function: ease-in-out;
+	    animation-iteration-count: infinite;
+	    opacity:0;
+	}
+	.scroll-down-flag-active{
+		opacity:1;
+	}
+/*	背景色*/
+	.t-screen01{
+		background-color: #8DBBE0;
+	}
+	.t-screen02 {
+		background-color: #6AA6D8;
+	}
+	.t-screen03{
+		background-color: #4E96D1;
+	}
+	.t-screen04{
+		background-color: #307FB5;
+	}
+/*背景色動畫*/
+	.backcolor-change-active-1{
+		background-color: #fcfff5;
+	}
+	.backcolor-change-active-2{
+		background-color: #fff8f5;
+	}
+	.backcolor-change-active-3{
+		background-color: #f5fcff;
+	}
+
+	.box2{
+		height: 100%;
+	}
+	.cycle-img-bg{
+		width: 100%;
+	}
+	#ancher-last{
+		position: relative;
+    	top: -86px;
+	}
+
+/*	形象圖片*/
+	.imag-wrap{
+    	position: absolute;
+    	right: -50%;
+		/* position: relative;
+		width: 70%;
+	  	height: 60vh;
+	 	margin: 20vh auto;*/
+	 	transition: all .5s ease-in-out;
+	}
+	.img-slider-active{
+	    /* position: absolute; */
+	    width: 39%;
+	    /* height: 50vh; */
+	    margin: auto;
+	    /* top: 23%; */
+	    right: 0;
+
+	    top: 59%;
+	    height: 60vh;
+	    transform: translateY(-37%);
+	}
+	.item {
+	  	color: white;
+	  	font-size: 36px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+/*		opacity: 0;*/
+		transition: all .5s ease-in-out;
+		border-radius: 23px 0 0 23px;
+		overflow: hidden;
+	}
+	.item >img{
+		display: block;
+	    left: 50%;
+	    min-height: 100%;
+	    min-width: 186%;
+	    position: absolute;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;
+	}
+	.item:first-child {
+/*	  display: block !important;*/
+	}
+	.item1 {
+	  background: black;
+	}
+
+	.item2 {
+		left: 100%;
+/*		opacity: 0;*/
+		background: blue;
+	}
+
+	.item3 {
+		left: 100%;
+/*		opacity: 0;*/
+	 	background: orange;
+	}
+
+	.item4 {
+		opacity: 0;
+		background: lime;
+	}
+
+	.item5 {
+		opacity: 0;
+		background: yellow;
+	}
+
+	.item6 {
+		opacity: 0;
+		background: pink;
+	}
+
+	.item-active{
+/*		left: 0;*/
+		opacity: 1;
+	}
+
+/*	cycle 左側選單節點*/
+	.link-to-anchor{
+	    position: absolute;
+/*	    background: #e6e6e6;*/
+	    padding: 10px;
+	    left: -200px;
+/*	    left: 20px;*/
+/*	    top: 100px;*/
+		transition: all .5s ease-in-out;
+/*		display: flex;
+	    position: relative;
+	    justify-content: space-between;*/
+	    z-index: 0;
+	}
+
+	.anchor-links{
+		display: flex;
+	    position: relative;
+	    justify-content: space-between;
+
+/*	    margin-bottom: 30px;*/
+	    max-width: 100%;
+	    flex-flow: column;
+/*	    width: 350px;*/
+		height: 180px;
+	}
+	.anchor-links:before{
+		content: '';
+	    background-color: #e6e6e6;
+	    position: absolute;
+	    top: 5px;
+	    left: 15px;
+	    height: 170px;
+	    width: 10px;
+	    z-index: -1;
+	    transition: 0.4s ease-in;
+	    transform: rotate(0deg);
+	}
+	.progress{
+		content: '';
+	    background-color: red;
+	    position: absolute;
+	    top: 5px;
+	    left: 15px;
+	    height: 170px;
+	    z-index: -1;
+	    transition: 0.4s ease-in;
+	    transform: rotate(0deg);
+	}
+	.link-anchor-fit{
+		width: 40px;
+	    height: 40px;
+	    background: #e6e6e6;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    border-radius: 40px;
+	}
+	.link-anchor{
+		width: 30px;
+	    height: 30px;
+	    background: #E8F5E9;
+	    border-radius: 40px;
+	    text-align: center;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.link-active{
+		background-color: #58B805;
+	}
+/* 場景*/
+	.scren01{
+		height: 600px;
+	}
+/* 動畫 code */
+
+	@keyframes animation01 {
+	  from {background-color: red; }
+	  to {background-color: yellow;  }
+	}
+	@keyframes animation02 {
+	  from {background-color: yellow; }
+	  to {background-color: blue; }
+	}
+	@keyframes animation03 {
+	  from {background-color: blue;}
+	  to {background-color: green;}
+	}
+	@keyframes animation04 {
+	  from {background-color: green;}
+	  to {background-color: red;}
+	}
+/*	物件指派動畫	*/
+/*	cycle內容物*/
+	.active {
+		animation-name: animation01;
+  		animation-duration: .4s;
+		background-color: yellow;
+	}
+	.active-2 {
+		animation-name: animation02;
+  		animation-duration: .4s;
+		background-color: blue;
+
+	}
+	.active-3 {
+		animation-name: animation03;
+  		animation-duration: .4s;
+		background-color: green;
+	}
+	.active-4 {
+		animation-name: animation04;
+  		animation-duration: .4s;
+		background-color: red;
+	}
+/*	cycle選單*/
+	.box-active-02{
+		position: absolute;
+	    /* top: 40%; */
+	    margin-right: -200px;
+	    width: auto;
+/*	    height: auto;*/
+	    /* border-radius: 221px; */
+	    max-width: 400px;
+	    /* top: 24%; */
+	 /* display: flex;
+	    align-items: center;
+	    justify-content: center;*/
+
+		top: 50%;
+	    height: 420px;
+	    transform: translateY(-34%);
+	}
+	.cycle-img{
+/*		transition: right .5s;*/
+ 		transition: all .2s ease-in-out;
+	}
+/*	文字*/
+	.text-screen{
+		display: flex;
+    	align-items: center;
+    	background: #ffffff;
+	}
+	.text-contain{
+		position: relative;
+	    display: flex;
+	    align-items: center;
+/*    	justify-content: center;*/
+		width:100%;
+	    max-width: 980px;
+	    margin: 0 auto;
+	}
+	.single-text-element{
+		width: 50%;
+	}
+	.single-text-element>h3{
+		font-size: 30px;
+		margin: 0;
+	}
+	.single-text-element>h4{
+		font-size: 21px;
+		margin: 10px 0;
+	}
+	.single-text-element>ul{
+	    padding-left: 30px;
+	    margin: 5px 0;
+	}
+	.single-text-element>ul>li{
+		font-size: 16px;
+		margin: 5px 0;
+	}
+</style>
+<div id="content-wrapper">
+	<div id="example-wrapper">
+		<div class="scrollContent">
+		<!-- <div class="spacer s_viewport"></div> -->
+		</div>
+	</div>
+</div>
+
+
+
+<div class="cycle-section">
+	<!-- 排版內容物 -->
+	<div class="all-content-camp" id="all-content">
+			<!-- 標題 -->
+			<div class="section01-block">
+				<h2>數位溝通再進化，策略轉型永續企業 </h2>
+				<p>EVOX 致力打造專業靈活的企業通訊平台，整合各種渠道的雲端服務，助企業拓展商機、創造顧客服務新體驗。 </p>
+			</div>
+			<div class="section-contain" id="section-content">
+				
+				<!-- 跳到定點選單 -->
+				<form class="link-to-anchor" id="link-to-anchor">
+							<div class="anchor-links">
+								<div class="progress" id="progress" style=""></div>
+								<!-- <legend>快速連結</legend> -->
+								<!-- <div id="link-01" class=""><a  href="#sec1">S-01</a></div> -->
+								<div  class="link-anchor-fit"><a id="link-02" class="link-anchor" href="#sec2"></a></div>
+								<div  class="link-anchor-fit"><a id="link-03" class="link-anchor" href="#sec3"></a></div>
+								<div  class="link-anchor-fit"><a id="link-04" class="link-anchor" href="#sec4"></a></div>
+							</div>
+				</form>
+				<!-- 形象圖片	 -->
+				<div class="imag-wrap" id="img-slider">
+				 	<div class="item item1" id="slider-img-01"> <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/cycle-img-asset/Key-img/AdobeStock_234601168.jpg" alt="golbal"></div>
+				    <div class="item item2" id="slider-img-02"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/cycle-img-asset/Key-img/AdobeStock_210703246.jpg" alt="customer experience"></div>
+				    <div class="item item3" id="slider-img-03"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/cycle-img-asset/Key-img/AdobeStock_376359064.jpg" alt="security"></div>
+				 </div>
+				 <!-- cycle 圓型 -->
+				<div class="move cycle-img" id="cycle-box">
+					<div class="cycle-box">
+						<div id="scroll-down-flag" class="scroll-down-flag" >往下滑<br/><i class="fas fa-angle-down" aria-hidden="true"></i></div>
+						<img id="cycle-img-bg" class="cycle-img-bg" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/cycle-img-asset/cycle-bg-img-1.png" alt="七大重點" />
+						<!-- <p id="high1">One</p> -->
+					</div>
+				</div>
+			</div>	
+	</div>
+
+		<!-- 畫面場景 -->
+		<div id="all-scren">
+			<div id="scren01" class="">
+				<div class="spacer s1 scren01" id="sec1">
+					<div class="box2 text-screen t-screen01" style="">
+						<div class="">
+							<h1></h1>
+						</div>
+						<!-- <p>場景一</p> -->
+					</div>
+				</div>
+			</div>
+			
+			<!-- 畫面場景2 -->
+			<div id="scren02" class="">
+				<div class="spacer s1" id="sec2">
+					<div class="box2 text-screen t-screen02" style="">
+						<!-- <p>場景二</p> -->
+						<!-- 文字內容物 -->
+						<div class="text-contain">
+							<!-- 單個 -->
+							<div class="single-text-element">
+								<h3>全球化經營</h3>
+								<p>EVOX 運行於公有雲，可輕易滿足行動分機、遠距辦公 WFH、全國或全球多據點等需求。  </p>
+								<ul>
+									<li>辦公地點不再受到居住地、疫情或天災人禍等因素的限制。 </li>
+									<li>員工可以視需求選擇適合的裝置來使用，例如業務人員在外可以使用行動分機與客戶連絡，客服人員使用電腦搭配耳機來撥接電話，減少肩頸職業傷害。  </li>
+									<li>IT 或總務可遠距管理電話系統。  </li>
+									<li>快速建立多據點、分公司、新門市、海外據點。 </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="spacer s1" id="sec3">
+					<div class="box2 text-screen t-screen03" style="">
+						<!-- <p>場景三</p> -->
+						<!-- 文字內容物 -->
+						<div class="text-contain">
+							<!-- 單個 -->
+							<div class="single-text-element">
+								<h3>提高客戶滿意度</h3>
+								<p><a href="/tw/evox-connect/call-center" class="green-text-btn"> EVOX Connect</a> 協助企業打造完美售後服務。 </p>
+								<ul>
+									<li>EVOX 能與 CRM 或會員資料庫整合</li>
+									<li>自動排序分配來電 ACD、快速 IVR 建立</li>
+									<li>通話後售後滿意度調查 </li>
+									<li>客服報表、聯繫歷史、分析  </li>
+									<li>客服主管專用的教練與監聽模式  </li>
+									<li>全通道通訊管道 <span style="color: #bababaee;">* 即將推出</span>   </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="spacer s1" id="sec4">
+					<div class="box2 text-screen t-screen04" style="">
+						<div id="ancher-last"></div>
+						<!-- <p>場景四</p> -->
+						<!-- 文字內容物 -->
+						<div class="text-contain">
+							<!-- 單個 -->
+							<div class="single-text-element">
+								<h3>資訊安全</h3>
+								<!-- 單個 -->
+								<h4>資訊安全與防護</h4>
+								<ul>
+									<li>EVOX 核心網位於 AWS，受 SBC保護。</li>
+									<li>EVOX App 以 OAuth 2.0 和 2-factor authentication 做身分驗證。</li>
+								</ul>
+								<!-- 單個 -->
+								<h4>企業防詐騙</h4>
+								<ul>
+									<li>EVOX 與 Whoscall 深度整合，保護員工不被惡意來電騷擾。</li>
+								</ul>
+								<!-- 單個 -->
+								<h4>個資保護</h4>
+								<ul>
+									<li>遵循歐洲 GDPR 與台灣個資保護法。</li>
+								</ul>
+								<!-- 單個 -->
+								<h4>資安認證</h4>
+								<ul>
+									<li>通過台灣工業局 MAS 行動資安聯盟認證。</li>
+									<li>通過弱點掃描（Vulnerability Assessment）與滲透測試（Penetration Test）。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- <div class="spacer s2"></div> -->
+			<!-- 滑動到定點 -->
+			<script type="text/javascript" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Scroll-magic-2.0.8/ScrollToPlugin.min.js"></script>
+				<script>
+					// init controller
+					var controller = new ScrollMagic.Controller();
+					
+					    
+					// build scenes
+					// new ScrollMagic.Scene({triggerElement: "#sec1", duration: 600})
+					// 					// 左側快速連結
+					// 					.setClassToggle("#link-01", "link-active") // add class toggle 
+					// 					.addIndicators() // add indicators (requires plugin)
+					// 					.addTo(controller);
+					// new ScrollMagic.Scene({triggerElement: "#sec1", duration: 600})
+					// 					.setClassToggle("#cycle-box", "active") // add class toggle
+					// 					.addIndicators() // add indicators (requires plugin)
+					// 					.addTo(controller);
+					new ScrollMagic.Scene({triggerElement: "#sec1", duration: 700, offset: -300})
+										.setClassToggle("#scroll-down-flag", "scroll-down-flag-active") // add class toggle
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+					// ---------------------------------------------------------------------------
+					
+					new ScrollMagic.Scene({triggerElement: "#sec2", duration: 680})
+										// 左側快速連結
+										.setClassToggle("#link-02", "link-active") // add class toggle 
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+					new ScrollMagic.Scene({triggerElement: "#sec2", duration: 680})
+										// .setTween(tween)
+										.setClassToggle("#all-content", "backcolor-change-active-1") // add class toggle
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+					
+					// ---------------------------------------------------------------------------
+					new ScrollMagic.Scene({triggerElement: "#sec3", duration: 680})
+										// 左側快速連結
+										.setClassToggle("#link-03", "link-active") // add class toggle 
+										// .setClassToggle("#cycle-box", "box-active-02") // add class toggle
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);	
+					new ScrollMagic.Scene({triggerElement: "#sec3", duration: 680})
+										.setClassToggle("#all-content", "backcolor-change-active-2") // add class toggle
+										// .setClassToggle("#cycle-box", "box-active-02") // add class toggle
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);					
+					// ---------------------------------------------------------------------------
+					new ScrollMagic.Scene({triggerElement: "#sec4", duration: 680})
+										// 左側快速連結
+										.setClassToggle("#link-04", "link-active") // add class toggle 
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+					new ScrollMagic.Scene({triggerElement: "#sec4", duration: 680})
+										.setClassToggle("#all-content", "backcolor-change-active-3") // add class toggle
+										// .addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+					// ---------------------------------------------------------------------------
+					// 圓盤進出動畫
+					// build scene
+					var $mycontent = $('#all-content').show();
+					var scrollhigh = $mycontent.height()+600;
+
+					var animateElem = document.getElementById("cycle-box");
+					var scene = new ScrollMagic.Scene({triggerElement: "#scren02", duration: scrollhigh, offset:-200})
+						.on("enter", function () {
+						// trigger animation by changing inline style.
+						animateElem.style.right = "0";
+
+						})
+						.on("leave", function () {
+						// reset style
+						animateElem.style.right = "50%";
+						})
+
+
+					.setClassToggle("#cycle-box", "box-active-02")
+					// .addIndicators({name: "圓盤進出"}) // add indicators (requires plugin)
+					.addTo(controller);
+
+					// ---------------------------------------------------------------------------
+					// 圖片進出動畫
+					// build scene
+					var $mysliderimgcontent = $('#all-content').show();
+					var scrollimagsliderhigh = $mysliderimgcontent.height()+600;
+
+					var imganimateElem = document.getElementById("img-slider");
+					var scene = new ScrollMagic.Scene({triggerElement: "#scren02", duration: scrollimagsliderhigh, offset:-100})
+						.on("enter", function () {
+						// trigger animation by changing inline style.
+						imganimateElem.style.right = "0";
+
+						})
+						.on("leave", function () {
+						// reset style
+						imganimateElem.style.right = "-50%";
+						})
+						
+					.setPin("#container")
+					.setClassToggle("#img-slider", "img-slider-active")
+					// .addIndicators({name: "圖片進出",indent:450}) // add indicators (requires plugin)
+					.addTo(controller);
+
+					// ---------------------------------------------------------------------------
+					// Anchor進出動畫
+					// build scene
+					var $myanchorcontent = $('#all-content').show();
+					var scrollanchorhigh = $myanchorcontent.height()+600;
+
+					var anchoranimateElem = document.getElementById("link-to-anchor");
+					var scene = new ScrollMagic.Scene({triggerElement: "#scren02", duration: scrollanchorhigh, offset:-100})
+						.on("enter", function () {
+						// trigger animation by changing inline style.
+						anchoranimateElem.style.left = "20px";
+
+						})
+						.on("leave", function () {
+						// reset style
+						anchoranimateElem.style.left = "-200px";
+						})
+						
+					// .addIndicators({name: "link-anchor",indent:650}) // add indicators (requires plugin)
+					.addTo(controller);
+					// ---------------------------------------------------------------------------
+					// Anchor procress進出動畫
+					// build scene
+					// var $myanchorprocesscontent = $('#all-content').show();
+					// var scrollanchorprocresshigh = $myanchorprocesscontent.height()+600;
+
+					// var anchorprocressanimateElem = document.getElementById("progress");
+					// var scene = new ScrollMagic.Scene({triggerElement: "#scren02", duration: scrollanchorprocresshigh, offset:-100})
+					// 	.on("enter", function () {
+					// 	// trigger animation by changing inline style.
+					// 	anchorprocressanimateElem.style.height = "0px";
+
+					// 	})
+					// 	.on("leave", function () {
+					// 	// reset style
+					// 	anchorprocressanimateElem.style.height = "170px";
+					// 	})
+						
+					// .addIndicators({name: "link-anchor procress",indent:650}) // add indicators (requires plugin)
+					// .addTo(controller);
+
+					// ---------------------------------------------------------------------------
+					// build 全部區塊停留
+					var $mycontentscreen02 = $('#scren02').show();
+					var screen02scrollhigh = $mycontentscreen02.height()-180;
+					var $myEl  = $('#section-content').show();
+					var height = $myEl.height()+220;
+					
+					new ScrollMagic.Scene({
+										triggerElement: "#all-scren",
+										triggerHook: "onEnter", // show, when scrolled 10% into view
+										// triggerHook:0,
+										duration:screen02scrollhigh, // use full viewport
+										offset:height // move trigger to center of element
+									})
+						.setPin("#section-content")
+						// .addIndicators({name: "停留位置",indent:310}) // add indicators (requires plugin)
+						.addTo(controller);
+
+					// ---------------------------------------------------------------------------
+					// build 圖片第一幕
+					
+					// build scene
+					// new ScrollMagic.Scene({
+					// 					triggerElement: "#sec2",
+					// 					triggerHook: "onEnter", // show, when scrolled 10% into view
+					// 					// triggerHook:0,
+					// 					duration: "300", // use full viewport
+					// 					offset:200 // move trigger to center of element
+					// 				})
+					// 	.setClassToggle("#slider-img-01", "item-active")
+					// 	.addIndicators({name: "圖片一",indent:310}) // add indicators (requires plugin)
+					// 	.addTo(controller);
+
+					// ---------------------------------------------------------------------------
+					// build Tween 旋轉01
+					var tween = new TimelineMax()
+						.to("#cycle-img-bg", 1, {rotate: 0, delay: 0})
+						.to("#cycle-img-bg", 1, {rotate: 55, delay: 0})
+						// .to("#cycle-img-bg", 1, {rotate: 115, delay: 0});
+
+
+					// build scene
+					new ScrollMagic.Scene({
+										triggerElement: "#sec3",
+										triggerHook: "onEnter", // show, when scrolled 10% into view
+										// triggerHook:0,
+										duration: "600", // use full viewport
+										offset:0 // move trigger to center of element
+									})
+						.setTween(tween)
+						// .addIndicators({name: "GSAP",indent:200}) // add indicators (requires plugin)
+						.addTo(controller);
+
+					// build scene 圖片變換
+					var tween3 = new TimelineMax()
+						.to("#slider-img-02", 1, {left: "100%", delay: 0})
+						.to("#slider-img-02", 1, {left: "0%", delay: 0})
+						// .to("#cycle-img-bg", 1, {rotate: 115, delay: 0});
+					new ScrollMagic.Scene({
+										triggerElement: "#sec3",
+										triggerHook: "onEnter", // show, when scrolled 10% into view
+										duration: "400", // use full viewport
+										offset:100 // move trigger to center of element
+									})
+						.setTween(tween3)
+						// .setClassToggle("#slider-img-02", "item-active")
+						// .addIndicators({name: "圖片二",indent:320}) // add indicators (requires plugin)
+						.addTo(controller);
+					// ---------------------------------------------------------------------------
+					// build Tween 旋轉02
+					var tween = new TimelineMax()
+						.to("#cycle-img-bg", 1, {rotate: 55, delay: 0})
+						.to("#cycle-img-bg", 1, {rotate: 105, delay: 0})
+						// .to("#cycle-img-bg", 1, {rotate: 115, delay: 0});
+
+
+					// build scene
+					new ScrollMagic.Scene({
+										triggerElement: "#sec4",
+										triggerHook: "onEnter", // show, when scrolled 10% into view
+										// triggerHook:0,
+										duration: "600", // use full viewport
+										offset:0 // move trigger to center of element
+									})
+						.setTween(tween)
+						// .addIndicators({name: "GSAP-2",indent:250}) // add indicators (requires plugin)
+						.addTo(controller);
+
+					// build scene 圖片變換-02
+					var tween2 = new TimelineMax()
+						.to("#slider-img-03", 1, {left: "100%", delay: 0})
+						.to("#slider-img-03", 1, {left: "0%", delay: 0})
+						// .to("#cycle-img-bg", 1, {rotate: 115, delay: 0});
+
+					new ScrollMagic.Scene({
+										triggerElement: "#sec4",
+										triggerHook: "onEnter", // show, when scrolled 10% into view
+										duration: "400", // use full viewport
+										offset:100 // move trigger to center of element
+									})
+						.setTween(tween2)
+						// .setClassToggle("#slider-img-03", "item-active")
+						// .addIndicators({name: "圖片三",indent:420}) // add indicators (requires plugin)
+						.addTo(controller);
+
+					// 左側選單快速滑到定點
+					// ---------------------------------------------------------------------------	
+					  $(document).ready(function() {
+				        // Add smooth scrolling to all links
+				        $("a").on('click', function(event) {
+
+				            // Make sure this.hash has a value before overriding default behavior
+				            if (this.hash !== "") {
+				                // Prevent default anchor click behavior
+				                event.preventDefault();
+
+				                // Store hash
+				                var hash = this.hash;
+
+				                // Using jQuery's animate() method to add smooth page scroll
+				                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				                $('html, body').animate({
+				                    scrollTop: $(hash).offset().top - 120
+				                }, 800, function() {
+
+				                    // Add hash (#) to URL when done scrolling (default click behavior)
+				                    window.location.hash = hash;
+				                });
+				            } // End if
+				        });
+				    });
+
+					// ------------------------------------------------------------------------
+					//   $(function() {
+  
+					//    // Randomise plugin
+					//    // http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
+					//    $.fn.randomise = function(childElem) {
+					//         function shuffle(o) {
+					//             for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+					//             return o;
+					//         };
+					//         return this.each(function() {
+					//             var $this = $(this);
+					//             var elems = $this.children(childElem);
+					//             shuffle(elems);
+					//             $this.detach(childElem);  
+					//             for(var i=0; i < elems.length; i++) {
+					//                 $this.append(elems[i]);      
+					//             }
+					//         });    
+					//     }
+					  
+					//   // randomise the slide items
+					//   $('.wrap').randomise('.item');
+					  
+					//   // init
+					//   var controller = new ScrollMagic.Controller();
+
+					//   // define movement of panels
+					//   var wipeAnimation = new TimelineMax();
+					//   $('.item').each(function (index, item) {
+					//     wipeAnimation.from(item, 1, { display: 'none' });
+					//   });
+					  
+					//   var scene1 = new ScrollMagic.Scene({
+					//     triggerElement: "#all-scren",
+					//     triggerHook: "onEnter",
+					//     duration: "1800",
+					//     offset:800
+					//   })
+					//   .setPin("#container")
+					//   // .setClassToggle("#img-slider", "img-slider-active")
+					//   .setTween(wipeAnimation)
+					//   .addIndicators({name: "imgslider-2",indent:350}) // add indicators (requires plugin)
+					//   .addTo(controller);
+					  
+					// });
+					// ------------------------------------------------------------------------
+					  	// init controller
+					// var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+					// // build scenes
+					// new ScrollMagic.Scene({triggerElement: "#parallax1"})
+					// 				// .setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+					// 				.addIndicators()
+					// 				.addTo(controller);
+
+					// new ScrollMagic.Scene({triggerElement: "#parallax2"})
+					// 				// .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+					// 				.addIndicators()
+					// 				.addTo(controller);
+
+					// new ScrollMagic.Scene({triggerElement: "#parallax3"})
+					// 				// .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+					// 				.addIndicators()
+					// 				.addTo(controller);
+				</script>
+</div>
+
+<script type="text/javascript" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/Scroll-magic-2.0.8/tracking.js"></script>

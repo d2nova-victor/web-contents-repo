@@ -162,7 +162,7 @@ h5 {
 div.folder:last-of-type>div.folder-toggle {
   font-weight: 300;
   letter-spacing: 1px;
-  font-family:'Noto Sans TC',sans-serif,source-han-sans-traditional, "Han Sans", SF UI Text Regular,sans-serif !important;
+/*  font-family:'Noto Sans TC',sans-serif,source-han-sans-traditional, "Han Sans", SF UI Text Regular,sans-serif !important;*/
   font-style: normal;
   text-decoration: none;
   padding: 0px!important;
@@ -524,20 +524,29 @@ footer#footer a {
   color: #00A82D;
   margin: 10px 0;
 }
-                  /*鞈���*/
+/*選單*/
 .resource-block {
   margin: 10px 20px;
   max-width: 430px;
-  display: table;
+  /*display: table;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
 }
 
 .resource_box {
     width: 45%;
+    /*width: 50%;*/
     height: 50px;
     float: left;
-    margin: 10px auto;
-    padding: 0 5% 0 0;
+/*    margin: 10px auto;*/
+    margin: 10px 2%;
+    /*padding: 0 5% 0 0;*/
 
+}
+.last-single-resource_box{
+    width: 94%;
 }
 
 .resource_box>div {
@@ -1005,6 +1014,8 @@ footer#footer a {
 @media only screen and (min-width: 1062px) {
   .menu-group {
     display: block;
+/*    align-items: center;
+    justify-content: space-evenly;*/
   }
 
   div#content.main-content {

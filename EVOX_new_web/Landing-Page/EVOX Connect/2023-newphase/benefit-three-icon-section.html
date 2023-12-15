@@ -1,0 +1,197 @@
+<style type="text/css">
+  /*	共用 style*/
+  .gray-bg{
+		background: #FAFAFA;
+  }
+ .three-icon-layout{
+		background: #ffffff;
+	}
+  /*	共用 style*/
+  .three-icon-section{
+  	padding: 40px 0;
+  }
+  .three-icon-content{
+  	max-width: 1100px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin: 0 auto;
+  }
+  .single-icon-set{
+  	display: flex;
+  	flex-flow: column;
+  	align-items: center;
+  	justify-content: center;
+  	width: 33.3%;
+  }
+  .single-icon-img{
+  	max-width:104px;
+  	min-width: 104px;
+  }
+  .single-icon-img>img{
+  	width: 100%;
+  } 
+  .single-icon-text{
+  	min-height: 57px;
+  	display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    max-width: 180px;
+  }
+  .single-icon-text>h3{
+  	font-size: 18px;
+  }
+  .single-icon-text>p{
+  	font-size: 14px;
+  	margin: 0;
+  }
+ /* .single-icon-set:nth-child(2){
+  	margin: 0 60px;
+  }*/
+
+  /*  中間文字 共用style*/
+  .obi-of-section{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0;
+  }
+  .obi-of-section>h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .obi-of-section>p{
+    font-size: 18px;
+    text-align: center;
+	/*    set light gray text to css*/
+    color: #A5B6BF;
+    margin: 5px auto;
+  }
+  .obi-of-section>.tittle-discription{
+    color: #7F7F7F;
+  }
+  /*  中間文字 共用style*/
+
+
+
+	@media screen and (max-width: 840px){
+		/*  中間文字 共用style*/
+	    .obi-of-section>h2{
+	      font-size: 32px;
+	      font-weight: bold;
+	    }
+	    .obi-of-section>h2, .obi-of-section>h2>span{
+	      font-weight: bold;
+	    }
+	    /*  中間文字 共用style*/
+	    .single-icon-set:nth-child(2){
+	    	margin: 0 2%;
+	    }
+	    
+	}
+	@media screen and (max-width: 640px){
+		.three-icon-section{
+			padding: 10px 0;
+		}
+		/*  中間文字 共用style*/
+	    .obi-of-section{
+	      display: flex;
+	      align-items: center;
+	      flex-flow: column;
+/*	      padding: 40px 10px 30px 10px;*/
+	    }
+	    .obi-of-section>h2{
+/*	      font-size: 26px;*/
+	    }
+    	/*  中間文字 共用style*/
+    	.three-icon-content{
+    		flex-flow: row wrap;
+    		align-items: flex-start;
+    	}
+    	.single-icon-set{
+    		width: 40%;
+    		padding: 10px 20px;
+    	}
+    	.single-icon-set:nth-child(2){
+/*	    	margin: 0 auto;*/
+	    }
+	}
+	@media screen and (max-width: 480px){
+		.three-icon-content{
+    		flex-flow:row wrap;
+    		align-items: center;
+    	}
+    	.single-icon-set{
+    		width: 48%;
+    	}
+	}
+	@media screen and (max-width: 280px){
+		.single-icon-set{
+    		width: 90%;
+    	}
+	}
+</style>
+
+<div class="three-icon-section gray-bg three-icon-layout">
+
+	<div class="obi-of-section">
+	  <h2>客服中心雲端化優勢</h2>
+	</div>
+
+	<div class="three-icon-content digit2">
+		<!-- 單個 icon-->
+		<div class="single-icon-set">
+			<!-- 圖片 -->
+			<div class="single-icon-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-hardware-img/Group%2033@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-hardware-img/Group%2033@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-hardware-img/Group%2033@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-hardware-img/Group%2033.png 3x" alt="免設備">
+			</div>
+			<!-- 文字 -->
+			<div class="single-icon-text">
+				<h3>免設備</h3>
+				<p>省下昂貴的硬體設備成本</p>
+			</div>
+		</div>
+
+		<!-- 單個 icon-->
+		<div class="single-icon-set">
+			<!-- 圖片 -->
+			<div class="single-icon-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-cable-img/Group%2017@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-cable-img/Group%2017@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-cable-img/Group%2017@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-cable-img/Group%2017.png 3x" alt="免拉線">
+			</div>
+			<!-- 文字 -->
+			<div class="single-icon-text">
+				<h3>免拉線</h3>
+				<p>再也看不到凌亂的電話線</p>
+			</div>
+		</div>
+
+		<!-- 單個 icon-->
+		<div class="single-icon-set">
+			<!-- 圖片 -->
+			<div class="single-icon-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-fix-require-img/Group%2027@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-fix-require-img/Group%2027@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-fix-require-img/Group%2027@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/no-fix-require-img/Group%2027.png 3x" alt="免維修">
+			</div>
+			<!-- 文字 -->
+			<div class="single-icon-text">
+				<h3>免維修</h3>
+				<p>雲端自動更新持續優化</p>
+			</div>
+		</div>
+
+		<!-- 單個 icon-->
+		<div class="single-icon-set">
+			<!-- 圖片 -->
+			<div class="single-icon-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/remote-work-img/Group%2031@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/remote-work-img/Group%2031@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/remote-work-img/Group%2031@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/benefit-icon/remote-work-img/Group%2031.png 3x" alt="遠距辦公">
+			</div>
+			<!-- 文字 -->
+			<div class="single-icon-text">
+				<h3>遠距辦公</h3>
+				<p>無論在哪都能服務客戶</p>
+			</div>
+		</div>
+
+	</div>
+</div>

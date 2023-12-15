@@ -1,10 +1,215 @@
 <style>
-	
+	.content-connecy-manager{
+		background:#EDECFA;
+		padding: 40px 0;
+		display: flow-root;
+	}
+	.one-cloum-manager-benefit-section{
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		max-width: 1100px;
+		width: 100%;
+		margin: 40px auto;
+	}
+	.manager-benefit-text-block{
+		width: 40%;
+		position: relative;
+	}
+	.manager-benefit-text-block>.manager-benefit-text-box>h3{
+		margin:10px 0;
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+	.manager-benefit-text-block>.manager-benefit-text-box>p{
+		margin:5px 0;
+		text-align: justify;
+	}
+	.manager-benefit-image{
+		width: 60%;
+	}
+	.manager-benefit-image>img{
+		width: 100%;
+	}
+	.number-background{
+		position:;
+	}
+	.manager-benefit-text-box{
+		position: relative;
+		z-index: 1;
+		padding: 20px;
+	}
+	.back-number-1{
+		z-index: 0;
+		width: 140px;
+	    height: 180px;
+	    position: absolute;
+	    top: -20px;
+    	left: 50%;
+		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/number-background/number_01.png");
+		background-repeat: no-repeat;
+		background-position: 80%;
+		background-size: contain;
+	}
+	.back-number-2{
+		z-index: 0;
+		width: 140px;
+	    height: 180px;
+	    position: absolute;
+	    top: -20px;
+    	left: 50%;
+		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/number-background/number_02.png");
+		background-repeat: no-repeat;
+		background-position: 80%;
+		background-size: contain;
+	}
+	.back-number-3{
+		z-index: 0;
+		width: 140px;
+	    height: 180px;
+	    position: absolute;
+	    top: -20px;
+    	left: 70%;
+		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/number-background/number_03.png");
+		background-repeat: no-repeat;
+		background-position: 80%;
+		background-size: contain;
+	}
+	.revert-content{
+		flex-flow: row-reverse;
+	}
+	/*手機優化*/
+    .mobile-show{
+        display: none;
+    }
+	 @media screen and (max-width: 796px) {
+	 	.one-cloum-manager-benefit-section{
+	 		flex-flow: column-reverse;
+	 		margin: 30px auto;
+	 	}
+	 	.content-connecy-manager{
+	 		padding: 0px 0;
+	 	}
+	 	.manager-benefit-text-block{
+	 		width: 100%;
+	 		margin: 0 auto;
+	 	}
+	 	.manager-benefit-image{
+	 		width: 100%;
+	 	}
+	 	.tittle-section{
+	 		width: 80%;
+	 	}
+	 	 .manager-benefit-text-box{
+            text-align: center;
+        }
+        .manager-benefit-text-box>h3{
+        	font-size: 21px;
+        }
+        .manager-benefit-text-box>a{
+            width: 200px;
+            margin: 12px auto 0 auto!important;
+        }
+        .back-number-1{
+        	top: -30px;
+			left: 1%;
+        }
+        .back-number-2{
+        	top: -30px;
+			left: 1%;
+        }
+        .back-number-3{
+        	top: -30px;
+        	left: 1%;
+        }
+        .manager-benefit-text-block>.manager-benefit-text-box>p{
+        	text-align: center;
+        }
+        /*手機優化*/
+        .add-more-space{
+            margin: 20px auto 60px auto;
+        }
+        .mobile-show{
+        	display:block;
+        	text-align: center;
+	    }
+	    .mobile-hide{
+	        display: none;
+	    }
+	 }
+	 @media screen and (max-width: 540px) {
+	 	.back-number-1{
+        	top: -30px;
+			left: 0%;
+        }
+        .back-number-2{
+        	top: -30px;
+			left: 2%;
+        }
+        .back-number-3{
+        	top: -30px;
+        	left: 2%;
+        }
+
+	 }
 </style>
 <div class="content-connecy-manager">
 	<div class="tittle-section">
-    	<h2>聯絡人資料庫</h2>
+    	<h2 class="">為客服主管量身打造的管理工具</h2>
 	</div>
-	<!-- 內容 -->
-	<div></div>
+	<!-- 內容 1-->
+	<div class="one-cloum-manager-benefit-section add-more-space">
+		<div class="manager-benefit-text-block">
+			<div class="manager-benefit-text-box">
+				<h3 class="purple-text">線上客服管理後台<br/>操作簡單、功能強大</h3>
+				<div class="manager-benefit-image mobile-show">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/PNG/connect-manager_01_1179px.png" alt="管理ACD">
+				</div>
+				<p>專業的客服管理後台 Connect Manager，打開瀏覽器即可登入操作，輕鬆管理團隊排班、設計 ACD與IVR，以及調閱通話紀錄或錄音檔。​​</p>
+				<a class="purple-outline-btn" href="/tw/evox-connect/manager" target="_blank">了解更多</a>
+			</div>
+			<div class="back-number-1"></div>
+
+		</div>
+		<div class="manager-benefit-image mobile-hide">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/connect-manager_01_740px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/connect-manager_01_740px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/connect-manager_01_1179px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/connect-manager_01_1179px.jpg 3x" alt="管理ACD">
+		</div>
+	</div>
+	<!-- 內容 2-->
+	<div class="one-cloum-manager-benefit-section revert-content add-more-space">
+		<div class="manager-benefit-text-block">
+			<div class="manager-benefit-text-box">
+				<h3 class="purple-text">專業分析報表<br/>一目了然客服中心的營運狀況</h3>
+				<div class="manager-benefit-image mobile-show">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/PNG/connect-manager_02_1179px.png" alt="報表">
+				</div>
+				<p>藉由各式即時與分析報表，讓主管全面掌握客服中心的運作情形與各項資源的利用率，做出最妥善的規畫。</p>
+				<a class="purple-outline-btn" href="/tw/evox-connect/reports-analytics" target="_blank">了解更多</a>
+			</div>
+			<div class="back-number-2"></div>
+
+		</div>
+		<div class="manager-benefit-image mobile-hide">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/connect-manager_02_740px-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/connect-manager_02_740px-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/connect-manager_02_1179px-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/connect-manager_02_1179px-1.jpg 3x" alt="報表">
+		</div>
+	</div>
+	<!-- 內容 3-->
+	<div class="one-cloum-manager-benefit-section">
+		<div class="manager-benefit-text-block">
+			<div class="manager-benefit-text-box">
+				<h3 class="purple-text">主管監控面板<br/>把關客服團隊的服務品質</h3>
+				<div class="manager-benefit-image mobile-show">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/PNG/connect-manager_03_1179px.png" alt="客服主管監控面板">
+				</div>
+				<p>隨時監督所有進行中的通話，並提供隱形監聽、插話、接手等模式，讓主管能迅速處理各種突發狀況。</p>
+				<a class="purple-outline-btn" href="/tw/evox-connect/supervisor-dashboard" target="_blank">了解更多</a>
+			</div>
+			<div class="back-number-3"></div>
+
+		</div>
+		<div class="manager-benefit-image mobile-hide">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/connect-manager_03_740px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/connect-manager_03_740px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/connect-manager_03_1179px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/connect-manager_03_1179px.jpg 3x" alt="客服主管監控面板">
+		</div>
+	</div>
 </div>

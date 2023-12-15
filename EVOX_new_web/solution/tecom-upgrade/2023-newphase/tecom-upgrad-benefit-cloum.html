@@ -1,0 +1,195 @@
+<style>
+	.two-benefit{
+		display: flex;
+		justify-content: center;
+		/*align-items: center;*/
+		padding: 40px 0 0 0;
+		position: relative;
+	}
+	.benefit-box{
+		width: 50%;
+		float: left;
+		color:#fff;
+		/*max-width: 810px;*/
+		width: 100%;
+	}
+	.benefit-box > h2{
+		text-align: center;
+		color:#fff;
+		margin: 80px 0 40px 0;
+	}
+	.evox-benefit{
+		background: #4D55A2;
+	}
+	.tecom-benefit{
+		background: #0B396C;
+	}
+	.benefit-block{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		margin:0 auto;
+		/*padding: 20px 9%;*/
+		max-width: 600px;
+		width: 90%;
+		justify-content: space-between;
+	}
+	.evox-benefit>.benefit-block{
+		padding: 20px 5%;
+	}
+	.tecom-benefit>.benefit-block{
+		padding: 20px 5%;
+	}
+	.benefit-item{
+		width: 44%;
+	    padding: 10px 10px;
+	    float: left;
+	    height: 280px;
+	    max-height: 355px;
+	    text-align: justify;
+	}
+	.benefit-item>p{
+		color:#ffff!important;
+	}
+	.benefit-img{
+		width: 60%;
+		max-width: 120px;
+		margin:0 auto;
+	}
+	.benefit-img>img{
+		width: 100%;
+	}
+	.arrow-center{
+		position: absolute;
+		top: 55%;
+	}
+	@media screen and (max-width: 1300px){
+		.benefit-block{
+			padding: 20px 0%;
+		}
+		.evox-benefit>.benefit-block, .tecom-benefit>.benefit-block{
+			padding: 20px 5%;
+		    width: 90%;
+		    justify-content: space-between;
+		}
+	}
+	@media screen and (max-width: 840px){
+
+		.arrow-center{
+			display: none;
+		}
+		.benefit-box{
+			width: 100%;
+			max-width: 100%;
+		}
+		.two-benefit{
+			display: block;
+		}
+		.benefit-item{
+			width: 42%;
+			padding: 10px 23px;
+		}
+		.benefit-box > h2{
+		margin: 40px 0 20px 0;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.evox-benefit>.benefit-block, .tecom-benefit>.benefit-block{
+			width: 90%;
+			padding: 20px 5%;
+		}
+		.benefit-block{
+			padding: 20px 5%;
+		}
+		.benefit-item{
+			width: 40%;
+		}
+	}
+	@media screen and (max-width: 480px){
+		.two-benefit{
+			padding: 0px;
+		}
+		.benefit-box > h2{
+			padding: 0 10px;
+			margin: 40px 0 0 0
+		}
+		.benefit-item{
+			width: 100%;
+			display: flex;
+    		align-items: center;
+    		max-height: 130px;
+			padding: 10px 0px;
+		}
+		.benefit-img{
+			width: 300px;
+			max-width: 90px;
+		 	padding: 0 10px 0 0;
+		 	margin:0;
+		}
+	}
+</style>
+<div class="two-benefit">
+	<div class="benefit-box evox-benefit">
+		<h2>EVOX Connect 雲端客服中心</h2>
+		<!-- 優點 -->
+		<div class="benefit-block">
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/cloud-expand-icon.png" alt="TIP">
+				</div>
+				<p>TIP 實現雲對地的整合，讓東訊交換機可無縫接軌雲端客服系統，讓顧客的來電體驗更優質。</p>
+			</div>
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/note-record-icon.png" alt="電話紀錄與錄音">
+				</div>
+				<p>支援電話錄音與查詢文字記錄、待辦事項等功能，便於追蹤顧客狀況。</p>
+			</div>
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/manager-ui-icon.png" alt="客服管理">
+				</div>
+				<p>提供專為客服主管設計的後台操作管理介面。</p>
+			</div>
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/database-icon.png" alt="共享資料庫">
+				</div>
+				<p>共享雲端資料庫，管理聯絡人資料，資訊即時同步。</p>
+			</div>
+		</div>
+	</div>
+	<div class="benefit-box tecom-benefit">
+		<h2>東訊 SDX500 IP 行動總機系統</h2>
+		<!-- 優點 -->
+		<div class="benefit-block">
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/server-mirgate-icon.png" alt="DSP通訊實現">
+				</div>
+				<p>DSP 模組實現 IP 通訊能力，使其具備網路電話功能，分機互打免費。</p>
+			</div>
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/mobile-call-icon.png" alt="行動分機群響">
+				</div>
+				<p>手機就是行動分機，來電手機與桌機同時響鈴，商機不漏失。</p>
+			</div>
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/cloud-ip-icon.png" alt="數位整合">
+				</div>
+				<p>同時具備數位、類比、IP 的連接功能，能和 EVOX 雲端系統無縫整合。</p>
+			</div>
+			<div class="benefit-item digit2">
+				<div class="benefit-img">
+					<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/icon/server-update-icon.png" alt="自動更新">
+				</div>
+				<p>可整合新舊交換機，建構聯網系統。</p>
+			</div>
+		</div>
+	</div>
+	<div class="arrow-center">
+		<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/solution/tecom-upgrade/double-arrow.png" alt="互相搭配">
+	</div>
+</div>

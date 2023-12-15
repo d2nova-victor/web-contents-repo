@@ -1,0 +1,471 @@
+<!-- CSS -->
+<!-- <link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.css"> -->
+
+<!-- JS -->
+<!-- <script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity-fade.js"></script> -->
+ <link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script> 
+
+
+
+<style>
+	.story-card-sections{
+		max-width: 1238px;
+/*    	display: flex;*/
+    	align-items: center;
+    	margin: 20px auto 60px auto;
+    	padding: 20px;
+	}
+
+	.story-card{
+		display: flex;
+	    align-items: center;
+	    flex-flow: column;
+/*	    width: 33.3%;*/
+	    background: #F2F4F1;
+	    border-radius: 20px;
+	    transition: box-shadow .3s, opacity .3s,transform .3s;
+    	transition-timing-function: ease-in;
+/*    	margin: 0 20px;*/
+		width: 32%;
+		margin: 0 2%;
+
+	}
+	.story-card:hover{
+		box-shadow: 1px 1px 7px #00000052;
+/*    	transform: scale(1.00);*/
+    	transform: scale(0.97);
+	}
+	/*.story-card:nth-child(2){
+		margin: 0 42px;
+	}*/
+/*	圖片*/
+	.story-img{
+		display: flex;
+	    align-items: center;
+	    justify-items: center;
+	    position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	    min-height: 220px;
+	    border-radius: 20px 20px 0 0;
+	}
+	.customer-img{
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-height: 100%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;
+	    width: 120%;
+	    max-width: max-content!important;
+	}
+	.img-filter-box{
+		width: 100%;
+	    min-height: 220px;
+	    background: #33333354;
+	    z-index: 0;
+	}
+	.customer-logo{
+		position: absolute;
+		width: 100%;
+/*	    top: 50%;
+	    left: 50%;
+	    display: block;
+	    min-width: 110%;
+	    min-height: 100%;
+	    transform: translate(-50%,-50%);
+	    transition: .5s;
+	    -moz-transition: .5s;
+	    -o-transition: .5s;
+	    -webkit-transition: .5s;*/
+
+	}
+	.img-filter-box,.customer-logo{
+		transition: opacity, .8s;
+		transition-timing-function: ease-in;
+	}
+	.story-card:hover .story-img>.img-filter-box{
+/*		opacity: 0;*/
+
+/*		transform: translate(-50%,-50%) scale(1.2);*/
+	}
+	.story-card:hover .story-img>.customer-logo{
+/*		opacity: 0;*/
+
+	}
+/*	文字*/
+	.styor-text-section{
+		padding: 28px 15px;
+	}
+	.story-tag{
+		font-size: 14px;
+   		color: #5F6871;
+   		padding: 5px 0;
+	}
+	.story-tittle-box{
+		min-height: 115px;
+		overflow: hidden;
+	}
+	.story-tittle-box>h3{
+		font-size: 21px;
+		line-height: 35px;
+		color:#243237;
+	}
+	.story-links-block{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.customer-story-link{
+		margin: 0 2%;
+	}
+	.new-tag_brandwall{
+		font-size: 13px;
+	    /* display: block; */
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    float: left;
+	    background: #FF9500;
+	    color: #fff;
+	    padding: 0px 5px;
+	    border-radius: 5px;
+	    position: relative;
+	    /* top: 6px; */
+	    margin: 0 5px;
+	    height: 22px;
+	}
+	/*	品牌logo*/
+	.brand-wall-section{
+		max-width: 1275px;
+		margin: 40px auto;
+		display: flex;
+	    align-items: center;
+	    flex-flow: column;
+	    justify-content: center;
+	}
+	.logo-list{
+		display: flex;
+		align-items: center;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+    	width: 100%;
+
+	}
+	.single-logo{
+		min-width: 141px;
+	    max-width: 142px;
+	    margin: 0 auto;
+	}
+	@media screen and (max-width: 1140px){
+		.story-card-sections{
+			align-items: stretch;
+			padding: 0 20px;
+		}
+		.story-links-block{
+/*			flex-flow: column wrap;*/
+			align-items: flex-start;
+		}
+		.styor-text-section{
+			display: flex;
+		    flex-flow: column;
+		    justify-content: space-around;
+		}
+		/*.story-card:nth-child(2){
+			margin: 0 20px;
+		}*/
+	}
+	@media screen and (max-width: 840px){
+		
+		.story-img{
+			min-height: 140px;
+		}
+		.customer-img{
+			width: auto;
+			max-width: 100%;
+		}
+		.logo-list{
+			justify-content: center;
+		}
+		.single-logo{
+			margin: 0 3%;
+		}
+	}
+	@media screen and (max-width: 640px){
+		.story-card-sections{
+			flex-flow: column;
+			margin: 0px auto 60px auto;
+		}
+		.story-card{
+			width: 100%;
+			margin: 20px auto;
+		}
+		.img-filter-box{
+			min-height: 320px;
+		}
+		.story-img{
+			min-height: 320px; 
+    		height: 320px;
+		}
+		.story-links-block{
+			flex-flow: row;
+		}
+		/*.story-card:nth-child(2){
+			margin: 0 auto;
+		}*/
+		.single-logo{
+			max-width: 48%;
+    		margin: 0 1%;
+		}
+	}
+
+</style>
+
+<div class="customer-story-section">
+
+	<div class="obi-of-section">
+	  <h2>瞭解多據點企業如何運用 EVOX 實現簡單管理</h2>
+	</div>
+
+	<!-- 客戶故事 -->
+	<div class="story-card-sections carousel" >
+		
+			<!-- 單張卡片 -->
+			<div class="story-card carousel-cell ">
+				<div class="story-img">
+					<!-- BG -->
+					<img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/ALP-img.jpg" alt="ALP永聯物流">
+					<div class="img-filter-box"></div>
+					<!-- logo -->
+					<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/alp.png" alt="ALP永聯物流">
+				</div>
+				<!-- 文字 -->
+				<div class="styor-text-section">
+					<div class="story-tag"><span>智慧倉儲物流 ｜ ALP 永聯物流</span></div>
+					<div class="story-tittle-box">
+						<h3>物流業的顛覆者，永聯物流開發採用雲端電話系統</h3>
+					</div>
+					<!-- 連結 -->
+					<div class="story-links-block">
+						<a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/alp" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+						
+					</div>
+
+				</div>
+			</div>
+			<!-- 單張卡片 -->
+			<div class="story-card carousel-cell ">
+				<!-- 圖片 -->
+				<div class="story-img">
+					<!-- BG -->
+					<img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/Kai-yuan-img.jpg" alt="開原報關行">
+					<div class="img-filter-box"></div>
+					<!-- logo -->
+					<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/kycs.png" alt="開原報關行">
+				</div>
+				<!-- 文字 -->
+				<div class="styor-text-section">
+					<div class="story-tag"><span>進出口報關服務  |  開原報關•開元報關</span></div>
+					<div class="story-tittle-box">
+						<h3>從 IP PBX 到雲端總機，報關業龍頭從未停下數位轉型的腳步</h3>
+					</div>
+					<!-- 連結 -->
+					<div class="story-links-block">
+						<a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/kai-yuan" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<!-- 單張卡片 -->
+			<div class="story-card carousel-cell ">
+				<!-- 圖片 -->
+				<div class="story-img">
+					<!-- BG -->
+					<img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/Taochicken-img.jpg" alt="桃城雞排">
+					<div class="img-filter-box"></div>
+					<!-- logo -->
+					<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/tao-chicken-2.png" alt="桃城雞排">
+				</div>
+				<!-- 文字 -->
+				<div class="styor-text-section">
+					<div class="story-tag"><span>餐飲業  |  桃城雞排</span></div>
+					<div class="story-tittle-box">
+						<h3>老字號雞排店華麗轉型，從 2 坪攤位到家樂福供應鏈，傳承 20 年好味道</h3>
+					</div>
+					<!-- 連結 -->
+					<div class="story-links-block">
+						<a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/tao-chicken" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<!-- 單張卡片 -->
+			<div class="story-card carousel-cell ">
+				<!-- 圖片 -->
+				<div class="story-img">
+					<!-- BG -->
+					<img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/qbebe-img.jpg" alt="Qbebe">
+					<div class="img-filter-box"></div>
+					<!-- logo -->
+					<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/qbebe.png" alt="Qbebe">
+				</div>
+				<!-- 文字 -->
+				<div class="styor-text-section">
+					<div class="story-tag"><span>食品製造業 ｜ QBEBE 有機市集</span></div>
+					<div class="story-tittle-box">
+						<h3>擴編展店更有效率！QBEBE 如何利用雲端總機迅速佈局各單位聯絡窗口</h3>
+					</div>
+					<!-- 連結 -->
+					<div class="story-links-block">
+						<a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/qbebe" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+						
+					</div>
+
+				</div>
+			</div>
+			<!-- 單張卡片 -->
+			<div class="story-card carousel-cell ">
+				<!-- 圖片 -->
+				<div class="story-img">
+					<!-- BG -->
+					<img class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/PSS%20Group-img.jpg" alt="阜爾運通">
+					<div class="img-filter-box"></div>
+					<!-- logo -->
+					<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/PSS-logo.png" alt="阜爾運通">
+				</div>
+				<!-- 文字 -->
+				<div class="styor-text-section">
+					<div class="story-tag"><span>停車場與自助繳費開發 ｜ 阜爾運通</span></div>
+					<div class="story-tittle-box">
+						<h3>術業有專攻，停車管理龍頭阜爾運通借助EVOX完成通訊數位轉型!</h3>
+					</div>
+					<!-- 連結 -->
+					<div class="story-links-block">
+						<a class="customer-story-link green-text-btn" href="https://technews.tw/2023/09/18/pss-group-uses-e2-nova-evox-to-improve-operational-efficiency/" target="_blank" ><span class="new-tag_brandwall" >NEW</span>媒體專訪 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+						
+					</div>
+
+				</div>
+			</div>
+			
+	</div>
+	<style type="text/css">
+		/*#carousel > .tns-item{
+			width: calc(33.3%);
+		}*/
+		.flickity-slider{
+			width: 90%;
+			margin: 0 2.7% 0 1.3%;
+    		padding: 0 3%;
+		}
+		.flickity-button{
+/*			background: hsl(0deg 0% 65.01% / 75%);*/
+    		background: #ffffff;
+    		box-shadow: 0px 0px 5px #bebebe;
+		}
+		.flickity-button:hover{
+			background: #58b805;
+			color:#fff;
+		}
+		.flickity-prev-next-button.previous{
+			left: 10px;
+/*			border-radius:  50% 0 0 50% ;*/
+		}
+		.flickity-prev-next-button.next{
+			right: 10px;
+/*			border-radius: 0% 50% 50% 0;*/
+		}
+		@media screen and (max-width: 840px){
+			.story-card{
+				width: 30%;
+				margin: 0 5%;
+			}
+			.flickity-slider{
+				width: 90.9%;
+    			margin: 0 3.9%;
+    			padding: 0 0%;
+			}
+			.flickity-prev-next-button.previous{
+				left: 10px;
+			}
+			.flickity-prev-next-button.next{
+				right: 10px;
+			}
+		}
+		@media screen and (max-width: 640px){
+			.story-card{
+				width: 92%;
+				margin: 0 4%;
+			}
+			.story-card-sections{
+/*				width: 100%;*/
+			}
+			.flickity-slider{
+				width: 100%;
+			    margin: 0 auto;
+			    padding: 0;
+			}
+			.flickity-prev-next-button.next{
+				right: 44px;
+			}
+			.flickity-prev-next-button.previous{
+				left: 44px;
+			}
+		}
+	</style>
+	<script>
+		$('.carousel').flickity({
+		  // options
+		  // autoPlay: 5100,
+		  prevNextButtons: true,
+		  pauseAutoPlayOnHover: false,
+		  draggable: true,
+		  wrapAround: true,
+		  groupCells: 1,
+		  pageDots: false
+
+		});
+	</script>
+	<!-- 其他logo -->
+	<div class="brand-wall-section">
+		<div class="logo-list">
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/volkswagen.png" alt="台灣福斯">
+			</div>
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/parenting.png" alt="親子天下">
+			</div>
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/klook.png" alt="Klook">
+			</div>
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/ob.png" alt="OB嚴選">
+			</div>
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/EiP-TV.png" alt="分眾傳媒">
+			</div>
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/imc.png" alt="精英集團">
+			</div>
+			<!-- 單一個 -->
+			<div class="single-logo digit2">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/fengyu.png" alt="豐譽企業團隊">
+			</div>
+
+		</div>
+		<a class="customer-story-link green-text-btn" href="https://www.evoxglobal.com/tw/customers" >了解更多客戶案例 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+	</div>
+
+
+</div>

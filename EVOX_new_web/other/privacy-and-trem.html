@@ -2,20 +2,49 @@
   	.privacy-trem{
   		max-width: 1240px;
   		margin:80px auto;
-  		display: table;
+  		/*display: table;*/
     	width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
   	}
   	.privacy-trem-block{
-  		width: 50%;
-  		float: left;
+  	     width: 100%;
+        float: left;
+        padding: 20px;
   	}
+    .privacy-trem-btn{
+        background-color: #fff;
+        border: solid 2px #f1f4f5;
+        padding: 50px 10px;
+        min-height: 120px;
+        text-align: center;
+    }
+    .privacy-trem-btn:hover{
+        box-shadow: 1px 1px 7px #00000052;
+    }
+    
+    .privacy-trem-tittle{
+        font-size: 20px;
+        font-weight:bold;
+        transition: color .2s
+    }
+    .privacy-trem-btn:hover .privacy-trem-tittle{
+        color: #00A82D;
+    }
   </style>
   <div class="privacy-trem">
-  <a class="privacy-trem-block" href="/faceone/privacy-policy"><div class="evoxcard">
-  <div class="evoxcard-image"><img src="/s/privacy-policy.svg" height="100px" alt="mobile phone system"></div>
-  <span style="font-weight:bold;">隱私政策</span><br></div></a>
+  <a class="privacy-trem-block" href="/tw/privacy-policy">
+    <div class="privacy-trem-btn">
+    <div class="evoxcard-image"><img src="/s/privacy-policy.svg" height="100px" alt="mobile phone system"></div>
+    <h1 class="privacy-trem-tittle">隱私政策</h1>
+    </div>
+  </a>
 
-  <a class="privacy-trem-block" href="/faceone/terms-of-use"><div class="evoxcard">
-  <div class="evoxcard-image"><img src="/s/terms-and-conditions.svg" height="100px" alt="mobile phone system"></div>
-  <span style="font-weight:bold;">使用條款</span><br></div></a>
+  <a class="privacy-trem-block" href="/tw/terms-of-use">
+    <div class="privacy-trem-btn">
+    <div class="evoxcard-image"><img src="/s/terms-and-conditions.svg" height="100px" alt="mobile phone system"></div>
+    <h1 class="privacy-trem-tittle">使用條款</h1>
+    </div>
+  </a>
   <div>

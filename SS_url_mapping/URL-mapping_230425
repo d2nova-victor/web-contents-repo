@@ -1,0 +1,91 @@
+/en/evox-connect/connect-knowledge -> /en/evox-connect/call-center 301
+/en/evox-connect/reports-analytics -> /en/evox-connect/call-center 301
+
+/a-hreftwevoxcloud-pbxa -> /tw/evox/cloud-pbx  301
+/tw/cloud-phone-system -> /tw/evox/cloud-pbx 301
+/tw/easy-admin/group-ring -> /tw/evox/cloud-pbx/group-ring-pickup 301
+/tw/fax -> /tw/evox/cloud-pbx/fax 301
+/tw/mobility -> /tw/evox/multiple-devices/mobile-extension 301
+/tw/pc-app  -> /tw/evox/multiple-devices/pc-app 301
+/tw/ip-phones -> /tw/evox/multiple-devices/ip-phone 301
+/tw/easy-admin -> /tw/evox/admin-center 301
+
+/tw/easy-admin/outbound -> /tw/evox/admin-center/outbound 301
+/tw/easy-admin/group-ring -> /tw/evox/cloud-pbx/group-ring-pickup 301
+/tw/easy-admin/recording -> /tw/econnect/contact-log 301
+/tw/easy-admin/auto-attendant -> /tw/evox/admin-center/auto-attendant 301
+/tw/easy-admin/user-setup -> /tw/evox/admin-center/user-management 301
+/tw/easy-admin/cdr -> /tw/evox/admin-center/contact-log 301
+/tw/low-cost -> /tw/evox/call-cost-saving 301
+/tw/easy-admin -> /tw/evox/admin-center 301
+/tw/downloads -> /tw/download 301
+/tw/new-numbers -> /tw/evox/new-numbers 301
+/tw/apply-now -> /tw/contact-us 301
+
+/tw/submit-ticket -> https://evoxknowledgebase.productfruits.help 301
+
+/tw/cretification/mas -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/%E5%B7%A5%E6%A5%AD%E5%B1%80%E8%A1%8C%E5%8B%95%E8%B3%87%E5%AE%89%E8%81%AF%E7%9B%9FAPP%E8%AA%8D%E8%AD%89.pdf 301
+
+/tw/evox -> /tw/evox/cloud-phone-system 301
+/tw/product -> /tw/evox/cloud-phone-system 301
+
+/tw/evox-connect -> /tw/evox-connect/call-center 301
+/tw/signup -> /tw/contact-us 301
+/en/signup -> /en/contact-us 301
+
+/en/user-manual/add-user -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/Admin/EN/user_manual_R27.1.pdf#page=54 301
+
+/tw/evox/new-numbers -> /tw/solutions/business-phone-numbers 301
+/tw/easy-admin/system-level -> /tw/evox/admin-center 301
+
+/tw/evox/mobile-app/user-manual -> https://drive.google.com/file/d/1S6QJULSqyeUEbtyjBwKp0cTq3MtpIPmh/view?usp=share_link 301
+/en/evox/mobile-app/user-manual -> https://drive.google.com/file/d/1GPLsPII60ckBxYGtBhH8Sj5D6SGcAOLw/view?usp=share_link 301
+
+
+/tw/evox/pc-app/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/PC-App/CH/user_manual_R27.6.pdf 301
+/en/evox/pc-app/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/PC-App/EN/user_manual_R27.6.pdf 301
+
+/tw/evox/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/Admin/CH/user_maunal_R27.6.pdf 301
+/en/evox/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/Admin/EN/user_manual_R27.6.pdf 301
+
+/tw/connect-manager/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX%20Connect_PDF/Connect-Manager/CH/user_manual_R27.6.pdf 301
+/en/connect-manager/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX%20Connect_PDF/Connect-Manager/EN/user_manual_R27.6.pdf 301
+
+
+/tw/connect-manager/contacts-import-guide -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX%20Connect_PDF/Contact-important-guide/CH/import_guide_R27.3.pdf 301
+/en/connect-manager/contacts-import-guide -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX%20Connect_PDF/Contact-important-guide/EN/import_guide_R27.3.pdf 301
+
+/tw/connect-manager/ECLIK/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/ECLIK/CH/user%20manual_1.7.6.pdf 301
+/en/connect-manager/ECLIK/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/ECLIK/EN/user%20manual_1.7.6.pdf 301
+
+/tw/connect-manager/EC-ADK/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX%20Connect_PDF/Connect-Manager/CH/user_manual_R27.2.pdf 301
+/en/connect-manager/EC-ADK/user-manual -> https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX%20Connect_PDF/Connect-Manager/EN/user_manual_R27.2.pdf 301
+
+/tw/user-manual/fax -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/Fax/CH/Fax_manual_R24.pdf 301
+/en/user-manual/fax -> https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_PDF/Fax/EN/Fax_manual_R24.pdf 301
+
+/tw/user-manual/admin -> /tw/evox/user-manual  301
+/en/user-manual/admin -> /en/evox/user-manual  301
+/en/user-manual/mobile -> /en/evox/mobile-app/user-manual  301
+/tw/user-manual/mobile -> /tw/evox/mobile-app/user-manual 301
+/en/user-manual/pc-app -> /en/evox/pc-app/user-manual 301
+/tw/user-manual/pc-app -> /tw/evox/pc-app/user-manual 301
+
+/line -> https://line.me/R/ti/p/%40fpo2702k 302
+/tw/support -> https://evoxsupport.zendesk.com/hc/zh-tw 301
+/en/support -> https://evoxsupport.zendesk.com/hc/en-us 301
+/tw/login -> https://account.evox.com.tw 301
+/en/login -> https://account.evox.com.tw 301
+
+
+/tw/sales -> /tw/contact 301
+/tw/pricing-2/ -> /tw/pricing 301
+/tw/phone-app -> /tw/mobility 301
+
+
+
+/en/oppo/battery -> https://evoxsupport.zendesk.com/hc/en-us/articles/360006650554 301
+/tw/oppo/battery -> https://evoxsupport.zendesk.com/hc/zh-tw/articles/360006650554 301
+/en/oppo/battery -> https://evoxsupport.zendesk.com/hc/en-us/articles/360006650554 301
+/tw/auto-attendant-support -> https://evoxsupport.zendesk.com/hc/zh-tw/articles/360007604234 301
+/en/auto-attendant-support -> https://evoxsupport.zendesk.com/hc/en/articles/360007604234 301

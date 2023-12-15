@@ -1,0 +1,563 @@
+<!-- Required For jQuery Version Only -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<!-- venobox Plugin files -->
+<link href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/VenBox/CSS/venobox.css" rel="stylesheet" />
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/VenBox/JS/venobox.js"></script>
+
+<!-- flickity -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style>
+
+	/*Slider */
+
+	* { box-sizing: border-box; }
+
+	body { font-family: sans-serif; }
+
+	.carousel {
+	  /*background: #FAFAFA;*/
+	}
+
+	.carousel-cell {
+	  width: 100%;
+	  /*height: 400px;*/
+	  margin-right: 10px;
+	  /*background: #8C8;*/
+	  border-radius: 5px;
+	  /*min-height: 400px;*/
+	}
+	/*owl-style*/
+	.product-image-slider{
+	  display: block;
+	  max-width: 980px;
+	  margin: 0 auto; 
+	  width: 90%;
+	}
+	.flickity-page-dots{
+	  position: initial!important;
+	}
+	.flickity-page-dots{
+	  display: flex;
+	  height: 20px;
+	  align-items: center;
+	  justify-content: center;
+	  /*background: #F2F2F2;*/
+	  width: 42%;
+	  margin: 10px auto;
+	  border-radius: 30px;
+
+	}
+	.flickity-page-dots .dot{
+	  width: 10px;
+      height: 10px;
+      margin: 10px auto;
+	}
+	/*.flickity-prev-next-button.previous{
+	    left: 30%;
+	    top: 93%;
+	}
+	.flickity-prev-next-button.next{
+	    right: 30%;
+	    top: 93%;
+	}*/
+	/*light-box*/
+	.vbox-item{
+	  display: flex;
+	  position: relative;
+	  height: 100%;
+	  align-items: center;
+	  justify-content: center;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	.vbox-item>img{
+	  width: 90%;
+	}
+	.vbox-next, .vbox-prev{
+	  /*display: none;*/
+	}
+	/*pop up image*/
+	.vbox-title{
+	  font-size: 20px!important;
+	}
+	/*其他整體*/
+	.content-section-2{
+		max-width: 1260px;
+    	margin: 40px auto 60px auto;
+    	text-align: center;
+	}
+	.product-list-tittle{
+		text-align: center;
+		width: 80%;
+    	margin: 0 auto;
+	}
+	.product-list-sub-tittle{
+		text-align: center;
+		margin: 30px auto 0px auto;
+	}
+	.product-list-block{
+		display: flex;
+    	align-items: stretch;
+    	justify-content: space-between;
+    	margin: 0 40px;
+    	flex-flow: row wrap;
+	}
+	.product-box{
+		width: 48%;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	padding: 1%;
+    	margin: 1%;
+    	box-shadow: 1px 1px 10px #e5e5e5;
+    	display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	    justify-content: flex-start;
+	}
+	.product-img{
+		width: 100%;
+		max-width: 328px;
+	}
+	.product-function-list{
+		padding: 10px;
+		border-top: 1px solid#ccc;
+		width: 80%;
+	}
+	.product-function-list>h4{
+		margin: 10px 0;
+	}
+	.list-box{
+		display: flex;
+    	flex-flow: column;
+    	align-items: flex-start;
+	}
+	.list-box-list{
+		display: flex;
+		flex-flow: row;
+		align-items: baseline;
+	}
+	.list-box-text{
+		padding: 0 7px;
+	}
+	.list-box-text>p{
+		margin: 7px 0;
+		text-align: left;
+	}
+	.contact-us-btn{
+		width: 100%;
+		max-width: 980px;
+		margin: 30px auto;
+	}
+	/*popup img*/
+	.vbox-container img{
+		max-width: 50%;
+	}
+	.green-btn{
+		max-width: 140px;
+    max-height: 48px;
+    height: auto;
+
+	}
+
+	@media screen and (max-width: 1000px){
+		.product-list-block{
+			flex-flow: column;
+		}
+		.product-box{
+			width: 97%;
+			margin: 30px auto;
+		}
+		.list-box{
+			display: flex;
+		    flex-flow: column wrap;
+		    align-items: flex-start;
+		    /*max-height: 240px;*/
+		    max-height: 100%;
+		}
+		.single-cloum-block{
+			justify-content: center;
+			flex-flow: column;
+		}
+		.eve-product-function-list{
+			width: 80%;
+			align-items: stretch;
+			border-top: 1px solid#ccc;
+			padding: 10px;
+		}
+		.eve-list-box{
+			max-height: 190px;
+		}
+
+	}
+
+
+	@media screen and (max-width: 800px){
+		.list-box{
+			max-height: 100%;
+			width: 350px;
+    		margin: 0 auto;
+		}
+		.single-cloum-block{
+			flex-flow: column;
+		}
+		.eve-product-function-list{
+			width: 80%;
+			padding: 10px;
+		}
+		.eve-list-box{
+			max-height: 100%;
+			width: 350px;
+    		margin: 0 auto;
+		}
+	}
+	@media screen and (max-width: 630px){
+		.list-box{
+			width: 100%;
+		}
+		.eve-list-box{
+			width: 100%;
+			max-height: 100%;
+		}
+		.eve-list-box>p{
+			margin: 9px 0;
+		}
+	}
+</style>
+<div class="content-section-2">
+	<div class="product-list-tittle">
+		<!-- <h2 class="list-tittle">產品型號</h2> -->
+		<!-- <p>針對長時間通話的用戶 EVOX 與 Jabra 合作一起打造優良通話品質，為您工作上提供更舒適的商用耳機。<br/>不僅可以減少您因為長時間掛帶耳機的不舒適感，Jabra 的降噪功能可以讓通話更清晰。</p> -->
+	</div>
+
+	<!-- <div class="product-list-sub-tittle">
+		<h3>辦公桌電話</h3>
+	</div> -->
+	<div class="product-list-block">
+		<!-- 單一個 -->
+		<div class="product-box">
+			<div class="product-img">
+				<div class="product-image-slider">
+				    <div class="carousel"
+				        data-flickity='{ "pageDots": true,"freeScroll": false,"wrapAround": false,"initialIndex": ".is-initial-select"}'>
+				        <!-- 單一個 -->
+				        <div class="carousel-cell is-initial-select">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2020/image-01.png" >
+				              <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2020/image-01.png" alt="salesforce 接聽電話">
+				          </a>
+				        </div>
+				        <!-- 單一個 -->
+				        <div class="carousel-cell">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2020/image-02.png" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2020/image-02.png" alt="撥打電話">
+				          </a>
+				        </div>
+				       
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2020/image-03.png" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2020/image-03.png" alt="通聯紀錄" >
+				          </a>
+				        </div>
+
+				    </div>
+				</div>
+			</div>
+			<div class="product-function-list">
+				<h4>Evolve 20</h4>
+				<div class="list-box">
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p> Plug-and-play connectivity to your computer or mobile device *via USB-A or USB-C**</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Noise-cancelling microphone eliminates background noise</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Powerful 28mm speakers deliver richer sound for a more immersive audio experience</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Foam or leatherette ear cushions** and an on-ear wearing style for all-day comfort</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<!-- <div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>立體聲和單聲道型號可供選擇</p></div>
+					</div> -->
+					
+					<a class=green-text-btn text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/Headset/Jabra/Evolve%2020/EN%20Jabra%20Evolve%2020%20Datasheet%20A4%20080321_WEB.pdf" target="_blank" style="font-size:14px;">Datasheet <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="product-box">
+			<div class="product-img">
+				<div class="product-image-slider">
+				    <div class="carousel"
+				        data-flickity='{ "pageDots": true,"freeScroll": false,"wrapAround": false,"initialIndex": ".is-initial-select"}'>
+				       
+				        
+				        <!-- 單一個 -->
+				        <div class="carousel-cell is-initial-select">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065/image-04.png">
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065/image-04.png" alt="陌生來電建單" >
+				          </a>
+				        </div>
+
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065/image-05.png">
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065/image-05.png" alt="陌生來電建單" >
+				          </a>
+				        </div>
+
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065/image-06.png">
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065/image-06.png" alt="陌生來電建單" >
+				          </a>
+				        </div>
+				        
+				    </div>
+				</div>
+			</div>
+			<div class="product-function-list">
+				<h4>Evolve 65</h4>
+				<div class="list-box">
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Jabra Link 380 BluetoothUSB-A adapter. Up to 30m/100ft wireless range to your computer. </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Connect two Bluetooth enabled devices at the same time, including mobile device and computer</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>State-of-the-art noise-cancelling microphone eliminates background noise </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Up to 12 hours battery life </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Integrated busy light acts as a ‘do not disturb’ sign to protect your focus </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Leather feel ear cushions and an on-ear wearing style for all-day comfort total weight .15 ounce </p></div>
+					</div>
+					
+					<a class=green-text-btn text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/Headset/Jabra/Evolve%2065/Evolve%2065%20datasheet%20A4%20240222_WEB.pdf" target="_blank" style="font-size:14px;">Datasheet <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="product-box">
+			<div class="product-img">
+				<div class="product-image-slider">
+				    <div class="carousel"
+				        data-flickity='{ "pageDots": true,"freeScroll": false,"wrapAround": false,"initialIndex": ".is-initial-select"}'>
+				        <!-- 單一個 -->
+				        <div class="carousel-cell is-initial-select">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-01.png" >
+				              <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-01.png" alt="salesforce 接聽電話">
+				          </a>
+				        </div>
+				        <!-- 單一個 -->
+				        <div class="carousel-cell">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-02.png" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-02.png" alt="撥打電話">
+				          </a>
+				        </div>
+				       
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-03.png" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-03.png" alt="通聯紀錄" >
+				          </a>
+				        </div>
+
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-04.png">
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve%2065e/image-04.png" alt="陌生來電建單" >
+				          </a>
+				        </div>
+				        
+				    </div>
+				</div>
+			</div>
+			<div class="product-function-list">
+				<h4>Evolve 65e</h4>
+				<div class="list-box">
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Jabra Link 380 Bluetooth adapter. Up to 30m / 100ft wireless range to your computer </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Connect 2 Bluetooth enabled devices at the same time, including smartphone, tablet and computer</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>4-microphone ambient noise cancellation technology for outstanding call performance </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>HearThrough lets you hear the outside world without removing your earbuds (available in the Jabra Sound+ app)</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Made from premium, durable materials with a 2-year warranty against dust and water</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Magnets in earbuds for easy and comfortable position around the neck. (i.e. when the earbuds are connected, your music will pause or your call will be ended) </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Neckband vibration alert </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<!-- <div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>頸帶震動提示，來電不漏接</p></div>
+					</div> -->
+					
+					
+					<a class=green-text-btn text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/Headset/Jabra/Evolve%2065e/Jabra%20Evolve%2065e%20Datasheet%20A4%20240222_WEB.pdf" target="_blank" style="font-size:14px;">Datasheet <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+	
+			<!-- 單一個 -->
+		<div class="product-box">
+			<div class="product-img">
+				<div class="product-image-slider">
+				    <div class="carousel"
+				        data-flickity='{ "pageDots": true,"freeScroll": false,"wrapAround": false,"initialIndex": ".is-initial-select"}'>
+				        <!-- 單一個 -->
+				        <div class="carousel-cell is-initial-select">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-01.png" >
+				              <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-01.png" alt="salesforce 接聽電話">
+				          </a>
+				        </div>
+				        <!-- 單一個 -->
+				        <div class="carousel-cell">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-02.png" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-02.png" alt="撥打電話">
+				          </a>
+				        </div>
+				       
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-03.png" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-03.png" alt="通聯紀錄" >
+				          </a>
+				        </div>
+
+				        <!-- 單一個 -->
+				        <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-04.png">
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Headset/Jabra/Evolve2%2075/image-04.png" alt="陌生來電建單" >
+				          </a>
+				        </div>
+				        
+				    </div>
+				</div>
+			</div>
+			<div class="product-function-list">
+				<h4>Evolve2 75</h4>
+				<div class="list-box">
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Jabra Link 380 Bluetooth® adapter with USB-A or USB-C variant. Up to 30m/100ft wireless range to your computer, with significantly enhanced coverage and fewer dropouts</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Connect two Bluetooth enabled devices at the same time, including mobile device and computer</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>8-microphone technology for outstanding call experience</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Fully adjustable Jabra Advanced Active Noise Cancellation™ to improve focus in loud environments </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Powerful 40mm speakers and AAC codec deliver richer sound for a more immersive audio experience </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>360° busy light on both earcups is visible from all angles, acting as a do-not-disturb sign to protect your focus</p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>Move boom arm up to mute or down to unmute or answer call </p></div>
+					</div>
+					<!-- 單一個優點 -->
+					<div class="list-box-list">
+						<i class="far fa-check-square"></i>
+						<div class="list-box-text"><p>On-ear detection recognizes when the headset is in use, allowing autoplay and pausing of audio</p></div>
+					</div>
+					
+					<a class=green-text-btn text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/Headset/Jabra/Evolve2%2075/EN%20Evolve2%2075%20datasheet%20UC%20A4%20030222%20WEB.pdf" target="_blank" style="font-size:14px;">Datasheet <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact-us-btn">
+		<a href="/en/contact-us" class="green-btn set-btn-center quect-bnt">Request pricing</a>
+	</div>
+	
+	
+</div>
+ <script>
+  // jQuery Version
+$('.venobox').venobox({
+  // settings here
+});
+
+// Vanilla JS Version
+new VenoBox();
+
+
+</script>

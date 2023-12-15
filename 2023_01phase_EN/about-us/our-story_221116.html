@@ -1,0 +1,308 @@
+<style type="text/css">
+	.wrapper-box{
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 0;
+	}
+	.gray-wrapper-box{
+		width: 100%;
+    margin: 0px auto;
+    padding: 20px 0;
+    background: #fafafa;
+	}
+	.green-wrapper-box{
+		width: 100%;
+    margin: 0px auto;
+    padding: 40px 0;
+    background: #E8F5E9;
+	}
+	.our-purpose{
+		max-width: 980px;
+		margin:0 auto;
+	}
+	.two-arrow{
+		display: flex;
+		align-items: center;
+		flex-flow: row;
+	}
+	.two-arrow-text-block{
+		width: 46%;
+		padding: 0 20px;
+	}
+	.two-arrow-tittle{
+		font-size: 32px;
+	}
+	.two-arrow-image-box{
+		width: 53%;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+	.content-center{
+			width: 100%;
+	    /*position: absolu te;*/
+	    /*top: 40px;*/
+	    max-width: 980px;
+	    margin: 0 auto;
+	    z-index: 999;
+	    padding: 20px 0;
+    	position: relative;
+	}
+	.page-tittle{
+		width: 100%;
+    	text-align: center;
+    	padding:40px 0px 0px 0px;
+    	font-size: 42px;
+    	margin:0px;
+	}
+	.page-subtittle{
+		text-align: center;
+		font-size: 18px;
+		margin:0;
+		padding: 0px;
+		padding:10px 0px 0px 0px;
+	}
+	.company-image{
+		width: 100%;
+	}
+	.story-article{
+		max-width: 980px;
+		margin: 40px auto 0 auto;
+		border-bottom: solid 0px #fff;
+		padding: 0 20px;
+	}
+	.story-article>img{
+		width: 100%;
+	}
+	.article-tittle{
+		font-size: 32px;
+/*		color:#58B805;*/
+		text-align: center;
+	}
+  .article-point{
+    color:#00A82D;
+  }
+	.article-tittle>span{
+		color:#00A82D;
+	}
+	.article-sub-tittle{
+		color: #243237;
+		font-size: 28px;
+	}
+	.story-article>p{
+		font-size: 16px;
+		line-height: 32px;
+    margin: 0;
+    color: #243237;
+	}
+	/*縮放*/
+	.btn-group{
+		width: 100%;
+		margin:20px auto;
+ 	}
+   	.btn-hide{
+    	display: none;
+  	}
+  	.btn-show{
+    	display: block;
+  	}
+  	.expand-btn{
+  		font-size: 14px;
+    	cursor: pointer;
+    	text-align: center;
+  	}
+  	.collapse{
+
+  	}
+  	.collapse-box-hide{
+    	height: 420px;
+    	overflow: hidden;
+    	position: relative;
+  	}
+  	.collapse-box-open{
+    	height: 100%;
+    	overflow: auto;
+    	background:#f0f8ff00;
+  	}
+  	.front-grlatation{
+			position: absolute;
+	    /* top: 1063px; */
+	    z-index: 2;
+	    bottom: 0;
+	    width: 100%;
+	    height: 200px;
+	    float: left;
+	    background: linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+	    background: -moz-linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+	    background: -webkit-linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+	    background: -o-linear-gradient(90deg, #fafafa 17%, #fafafa00 68%);
+  	}
+    .principles-line{
+      margin:10px auto;
+      font-size:23px;
+      text-align: center;
+      color:#00A82D;
+      list-style: none;
+    }
+
+  	
+  	@media screen and (max-width: 1151px) {
+		.section-box{
+  	 		width: 95%;
+  	 		/*padding: 18px 20px;*/
+  	 	}
+  	}
+
+  	 @media screen and (max-width: 980px) {
+  	 	.content-center{
+  	 		width: 90%;
+  	 	}
+  	 	.section-box{
+  	 		width: 90%;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 840px) {
+  	 	.collapse-box-hide{
+  	 		height: 180px;
+  	 	}
+  	 	.back-green{
+  	 		height: 300px;
+  	 	}
+  	 	.two-arrow{
+  	 		padding: 0% 5%;
+  	 		flex-flow: column;
+  	 	}
+  	 	.two-arrow-text-block{
+  	 		width: 100%;
+  	 		display: flex;
+    		flex-flow: column;
+    		align-items: center;
+  	 	}
+  	 	.two-arrow-image-box{
+  	 		width: 70%;
+  	 		display: flex;
+    		align-items: center;
+    		justify-content: center;
+  	 	}
+  	 	.story-article{
+  	 		padding: 0;
+  	 	}
+  	 }
+  	 @media screen and (max-width: 640px) {
+  	 	.back-green{
+  	 		height: 250px;
+  	 	}
+  	 	.section-box{
+  	 		width: 80%;
+  	 	}
+  	 	.p1-section, .p2-section{
+  	 		width: 90%;
+    		padding: 20px 5% 20px 5%;
+  	 	}
+  	 }
+</style>
+
+<div class="wrapper-box">
+
+	<!-- <div class="our-purpose">
+		<div class="two-arrow">
+			<div class="two-arrow-text-block">
+				<h2 class="two-arrow-tittle green-text">Our purpose </h2>
+				<p>D2/E2 has gone through many changes in the telecom industry – from enterprise to telco and then back to the enterprise market and from hardware equipment to software and cloud services. For each change we retrained our engineers and built entirely different development teams and processes. We understand the challenges and it is our purpose to work collaboratively with our customers to help them CHANGE and adopt new technology to stay competitive and SUCCEED. </p>
+			</div>
+			<div class="two-arrow-image-box">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209@1x-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209@1x-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209@2x-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-purpose/Group%209-1.jpg 3x" alt="our-purpose">
+			</div>
+		</div>	
+	</div> -->
+</div>
+<div class="gray-wrapper-box">
+	<div class="content-center">
+		<div class="collapse collapse-box-hide" id="table-box">
+		
+		<article class="story-article">
+			<h3 class="article-tittle green-text">Our Story</h3>
+			
+			<p>The D2 founders are communications experts, deeply engaged in the technology transformations that have shaped today’s telecom industry. Hong Kong born David Wong became a professor at the University of California campus where he received his Ph D in ECE. He holds multiple patents in signal processing and IP communications. David Lindsay, MSEE from the University of Michigan, started his career at Bell Labs and holds several patents in voice processing and VoIP. Matt Randmaa is an established speaker on Voice over Packet software design and has filed several patents related to VoIP. He holds an MSEE from the University of California.</p>
+			<h4 class="article-sub-tittle">Computer telephony integration (CTI)</h4>
+      <p>The two Davids met at a startup in the early 1980s where they developed digital signal processing (DSP) software and a real-time UNIX operating system for voicemail. At the forefront of CTI, they were the very first customer of Texas Instruments’ new DSP chip. In 1987, the duo launched a “garage” startup to develop the industry’s first DSP operating system. Texas Instruments acquired the company, rebranding the operating system <a class="green-text" href="https://www.ti.com/microcontrollers-mcus-processors/processors/digital-signal-processors/overview.html?utm_source=google&utm_medium=cpc&utm_campaign=epd-pro-dsp-141263885903_automotive_digital_cockpit_rsa-cpc-pp-google-wwe&utm_content=automotive_digital_cockpit&ds_k=texas+instruments+dsp&DCM=yes&gclid=Cj0KCQjwqoibBhDUARIsAH2OpWgnMLFfz7YCb2ECQIZW2ae-v3y036nwHA9njPYqt_7QlxbVVjIbXWUaAhx1EALw_wcB&gclsrc=aw.ds" target="_blank">DSP BIOS.</a>  </p>
+      <br/>
+      <p>Turning their attention to DSP software for the CTI industry, they launched their second startup D2 Technologies in 1993. Matt Randmaa joined the two Davids as employee number 4. D2 Tech became a market leader by helping to develop a conferencing system, an automatic call distribution (ACD) system and other products for PBX and voicemail, IP fax, and numerous enterprise and telco voice processing applications. As IP transformation heated up in the mid-90s, they helped the leading <a class="green-text" href="https://en.wikipedia.org/wiki/IP_Multimedia_Subsystem" target="_blank">IP multimedia subsystem (IMS)</a> startup develop the industry’s first IP based telco switch. Telcos globally were migrating to <a class="green-text" href="https://www.itu.int/en/ITU-T/gsi/ngn/Pages/definition.aspx" target="_blank">next generation networks (NGNs)</a> and D2 Tech, uniquely placed in the VoIP market, was acquired by a leading broadband semiconductor company in 2000 to provide turnkey SOC solutions.</p>
+		</article>
+		<article class="story-article">
+			<!-- <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1@1x.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1@1x.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/d2-company-picture-1.jpg 3x" alt="公司照片-01"> -->
+			<h4 class="article-sub-tittle">IP migration</h4>
+      <p>Following the dotcom bust, the founders reacquired D2 Technologies in 2003. The CTI market had sunset, but migration to NGNs was speeding up with manufacturing of home and office gateways being outsourced to Asia, mainly to Taiwan. D2 pivoted from the CTI market and reconfigured its telco grade DSP software into a low-cost soft DSP voice engine. With the integration of the voice engine and its SIP protocol stack, D2 began to offer a turnkey solution (vPORT) for gateways and built a sales/support team in Taiwan.</p>
+      <br/>
+      <p>Nineteen years later D2’s vPORT remains a key NGN component, providing telephony services to tens of millions of homes and offices around the world. The vPORT solution commands over a 70% share of the VoIP software solution market for OEMs and ODMs. As mobile operators moved to the IP multimedia subsystem (IMS) architecture with 3G and <a class="green-text" href="https://www.gsma.com/futurenetworks/ip_services/volte/" target="_blank">VoLTE</a> D2 recruited Dr. Jon Wu (吳炯憲). Dr. Wu, Ph. D. from Taiwan Tsinghua University, took the lead to develop a voice engine for mobile phones and fixed mobile gateways and a <a class="green-text" href="https://en.wikipedia.org/wiki/Rich_Communication_Services" target="_blank">rich communication services (RCS)</a> mobile app to enable telcos to catch up to <a class="green-text" href="https://en.wikipedia.org/wiki/Over-the-top_media_service" target="_blank">over-the-top (OTT)</a> apps.
+      </p>
+      <br/>
+      <img class="company-image" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4@1x.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4@1x.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/member-photo/D2Nova-leader-images-4.jpg 3x" alt="公司照片-02">
+      <style type="text/css">
+      	.img-caption{
+      		text-align: center;
+    			font-size: 13px!important;
+    			color: #949494!important;
+      	}
+      </style>
+      <p class="img-caption">David Wong and Jon Wu in the Santa Barbara, CA office.</p>
+		</article>
+		
+		<article class="story-article">
+			<h4 class="article-sub-tittle">Cloud era </h4>
+			<p>Committed to developing new technology for their customers in the era of cloud acceleration, the founders realized the supply chain (D2 software >> SOC >> ODM >> OEM >> telco >> end user) was no longer sustainable. Applications took two to three years to reach the market. While the legacy supply chain was still valid for building out the (mobile and fixed) internet infrastructure, moving to an OTT business model for applications meant they could shorten the product cycle to months or even weeks.</p>
+			<br/>
+			<p>Leveraging the mobile app they developed for RCS and decades of experience in CTI and NGN, D2 Tech spun off D2 Nova as a new software-as-a-service (SaaS) startup to develop and market business communications apps. Their first messaging app, team.biz, was introduced to the US market in 2016 and its flagship cloud business phone system, EVOX, in 2018. EVOX quickly led to the development of the EVOX Connect cloud contact center with thousands of business customers small and large. With the success of EVOX and Connect in Taiwan, D2 created a Taiwan based company<strong> E2 Nova (易得雲端) </strong>in 2022 and moved the entire SaaS operation to E2. Our purpose continues to be our customers’ success – helping businesses to digitally transform their communications for greater efficiency and adaptability to a fast-changing world.</p>
+			<br/>
+      <img class="company-image" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz@1x-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz@1x-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz@2x-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/product-img/teambiz-1.jpg 3x" alt="product-img">
+      
+    </article>
+    <div class="front-grlatation" id="gradual"></div>
+		</div>
+		<!-- <div class="front-grlatation" id="gradual"></div> -->
+		<div class="btn-group">
+		<div class="expand-btn green-text" id ="openFunction">Read the story <i class="fas fa-chevron-down" aria-hidden="true"></i></div>
+		<div class="expand-btn green-text btn-hide" id ="closeFunction">Collapse story <i class="fas fa-chevron-up" aria-hidden="true"></i></div>
+		</div>
+
+	</div>
+  <script type="text/javascript">
+   $(document).ready(function(){
+	  $("#openFunction").click(function(){
+	    $("#table-box").addClass("collapse-box-open");
+	    $("#table-box").removeClass("collapse-box-hide");
+	    $(this).addClass("btn-hide");
+	    $(this).removeClass("btn-show");
+	    $("#closeFunction").removeClass("btn-hide");
+	    $("#closeFunction").addClass("btn-show");
+	    $("#gradual").addClass("btn-hide");
+	    $("#gradual").removeClass("btn-show");
+	  });
+	  $("#closeFunction").click(function(){
+	    $("#table-box").removeClass("collapse-box-open");
+	    $("#table-box").addClass("collapse-box-hide");
+	    $(this).addClass("btn-hide");
+	    $(this).removeClass("btn-show");
+	    $("#closeFunction").removeClass("btn-show");
+	    $("#openFunction").removeClass("btn-hide");
+	    $("#openFunction").addClass("btn-show");
+	    $("#gradual").removeClass("btn-hide");
+	    $("#gradual").addClass("btn-show");
+		  });
+		});
+	</script>	
+</div>
+<!-- <div class="green-wrapper-box">
+
+	<div class="our-purpose">
+		<div class="two-arrow">
+			<div class="two-arrow-text-block">
+				<h2 class="two-arrow-tittle green-text">Our culture and beliefs  </h2>
+				<p>D2 recognizes the need to remain nimble and responsive while meeting the highest standards in the telecom industry. We accomplish this by empowering our employees to innovate and bring passion to their work so we can build products that delight you and your customers. We use every one of our products every day to better understand and grow with our customers. </p>
+			</div>
+			<div class="two-arrow-image-box">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img@1x-1.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img@1x-1.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img@2x-1.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/our-culture/culture-img-1.jpg 3x" alt="our-culture">
+			</div>
+		</div>	
+	</div>
+</div> -->

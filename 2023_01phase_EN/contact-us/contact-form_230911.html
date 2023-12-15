@@ -1,0 +1,581 @@
+<style type="text/css">
+	.contact-form{
+		max-width: 980px;
+		width: 100%;
+		margin:0 auto;
+		position: relative;
+		top: -56px;
+		display: table;
+		z-index: 999;
+	}
+	.just-center{
+		display: flex;
+	    align-items: center;
+	    -webkit-align-items: center;
+	    float: none;
+	    height: 100%;
+	}
+	.option-block-1{
+		background: #fff;
+	    border: 1px solid #CCC;
+	    width: 48.2%;
+	    height: 250px;
+	    float: left;
+	    display: table;
+	    margin: 20px 0px;
+	    min-height: 136px;
+	    box-shadow: 0px 1px 11px -4px #0000006b;
+	}
+	.add-margin-right{
+		margin-right: 3%;
+	}
+	.content-center{
+		justify-content: center;
+	}
+	.set-full-width{
+		width: 100%;
+	}
+	.contact-flex{
+		width: 50%;
+    	float:left;
+	}
+	.contact-item{
+		width: 100%;    
+		padding: 32px 50px;
+		display: flex;
+		align-items: center;
+		/*min-height: 136px;*/
+	}
+	.contact-img{
+		width: 25%;
+		float: left;
+		max-width: 120px;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    height: 130px;
+	    margin-right: 5%;
+	}
+	.contact-content{
+		width: 70%;
+		/*float: left;*/
+		/*max-width: 120px;*/
+		display: flex;
+	    align-items: center;
+	    /*justify-content: center;*/
+	    /*height: 130px;*/
+	}
+	.contact-img>img{
+		width: 100%;
+	}
+	.contact-text-block{
+		/*width: 75%;*/
+		float: left;
+	}
+	.contact-text-block>h3{
+		/*margin-top: 13px;*/
+		margin:10px 0 0 0 ;
+	}
+	.contact-text-block>#away-mes{
+		color:#757575;
+		font-size: 13px;
+	}
+	.contact-text-block>p{
+		margin: 5px 0 0 0;
+	}
+	.contact-text-block>a>h2{
+		margin: 0;
+	}
+	.open-chatbot-btn{
+		max-width: 200px;
+		margin: 5px 0 0 0;
+	}
+/*	#chatbot{
+		display: none;
+	}*/
+	.option-block-2{
+		background: #fff;
+	    border: 1px solid #CCC;
+	    width: 99.7%;
+	    /*float: left;*/
+	    margin: 20px auto;
+	    display: inline-table;
+	    box-shadow: 0px 1px 11px -4px #0000006b;
+	}
+	.content-block{
+		width: 100%;
+		padding: 32px 50px;
+	}
+	.meetings-iframe-container{
+		width: 150%;
+		padding-top: 30px;
+	}
+	.larg-box{
+		margin-top: 138px;
+	}
+	/*表單*/
+	.form-background{
+		height:20vw;
+		background: #EDEFF1;
+	}
+	.form-01{
+		position: relative;
+	    background: #243237;
+	}
+	.form-block{
+	    width: 100%;
+	    /*background: #00A82D;*/
+	    display: table;
+	    margin:40px 0;
+	}
+	.form-text{
+		width: 40%;
+		float: left;
+		margin: 0 10% 0 0px;
+	}
+	.form-text>h2,.form-text>p{
+		color: #fff;
+		margin: 15px 0px;
+	}
+	/*修改hubspot表單*/
+	.form-block{
+		/*width: 100%;*/
+	}
+	.hbspt-form{
+		padding: 0px 0;
+	    width: 80%;
+	    /*float: left!important;*/
+	    margin: 0px auto !important;
+		
+	}
+	.hs-form-required{
+		display: none;
+	}
+	.hs_availabletime>label{
+		display: none;
+	}
+	select{
+		margin: 0px;
+	}
+	.hs-input{
+		width: 100%;
+		height: 45px;
+		/*padding: 5px;*/
+		padding: 9px 10px;
+    	margin: 4.5px 0;
+    	border-radius: 4px;
+    	border: 0px;
+    	background-color: #fff;
+    	font-weight: normal;
+    	line-height: 22px;
+    	box-sizing: border-box;
+    	border: 1px solid #A5B6BF;
+    	color: #243237;
+	}
+	::-webkit-input-placeholder { /* Edge */
+	  color: #A5B6BF;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer */
+	  color: #A5B6BF;
+	}
+	::placeholder {
+  	color: #A5B6BF;
+	}
+	.hs_client_want_to_know_about{
+		color: #243237;
+	    display: table;
+	    margin: 10px 0;
+	    width: 100%;
+	}
+	.inputs-list{
+		color:#243237;
+		list-style: none;
+    	padding: 0px;
+    	margin: 0px;
+	}
+	input[type="checkbox"]{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
+		border: 0px;
+		-webkit-appearance:none;
+	}
+	input[type="checkbox"] + span{
+		display      : inline-block;
+		  /*margin-left  : -28px;*/
+		  padding-left : 28px;
+		  line-height  : 24px;
+		  
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/check-box-null.png') no-repeat 0 3px;
+	}
+	input[type="checkbox"]:checked+ span{
+		/*background: #fff;*/
+		/*color: #00A82D;*/
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/check-box-checked.png') no-repeat 0 3px;
+	}
+	.hs-form-checkbox{
+		width: 100%;
+		float: left;
+		list-style: none;
+	}
+	.hs-error-msg{
+		color: #FF9500;
+	}
+	input[type="submit"]{
+		/*width: 200px;*/
+		width: auto;
+		float: left;
+		margin: 10px 0px;
+		background: #66C547;
+		border-radius: 4px;
+	    border: 0px solid #fff;
+	    color: #fff;
+	    padding: 10px 50px;
+	    font-size: 14px;
+	}
+	select[name="company_size"]{
+		/*color:#A5B6BF; */
+		-webkit-appearance: none;
+		-moz-appearance: window;
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+	}
+
+	select[name="availabletime"]{
+		/*color:#A5B6BF;*/
+		-webkit-appearance: none;
+		-moz-appearance: window;
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+	}
+	/*selecr未選擇時更改顏色*/
+	select:required:invalid{
+  		color: #A5B6BF;
+	}
+	option[value=""][disabled] {
+		color: #A5B6BF;
+	}
+	option {
+  		color:#243237;
+	}
+
+	/*訂閱email*/
+	.email-only-block{
+		/*width: 100%;*/
+    	padding: 10px 50px;
+	}
+	.email-only-img{
+		width: 10%;
+		float: left;
+		margin-right: 2%;
+	}
+	.email-only-img>img{
+		width: 100%;
+	}
+	.email-only-form{
+		display: block;
+	    /*width: 200px;*/
+	    float: left;    
+	    width: 100%;
+	}
+	.email-only-form>h3{
+		margin:0;
+	}
+	.email-only-form>.hbspt-form{
+		margin: 0px !important;
+	}
+	.email-only-form>.hbspt-form>form>.hs_email{
+		width: 100%;
+	    float: left;
+	    /*min-width: 270px;*/
+		/*min-width: 360px;*/
+	}
+	.email-only-form>.hbspt-form>form>.hs_submit{
+		float: left;
+		margin:0;
+		/*margin:0 20px;*/
+	}
+	.email-only-form>.hbspt-form>form>.hs_email>label{
+		display: none;
+	}
+	/*input[type="email"]{
+
+	}*/
+	.email-only-form>.hbspt-form>form>.hs_email>.input{
+		margin: 5px 0px;
+	}
+	/*.form-section{
+		display: none;
+	}*/
+		.forign-number{
+		font-size:17px;
+		/*opacity: .5;*/
+	}
+	@media screen and (max-width: 980px) {
+		.form-block{
+	    min-width: 100%;
+		}
+	}
+	@media screen and (max-width: 840px) {
+		
+		.form-block{
+	    /*min-width: 100%;*/
+	    margin:20px 0px;
+		}
+		.larg-box{
+			margin-top: 0px;
+		}
+		.contact-form{
+			width: 90%;
+		}
+		.contact-flex{
+		width: 100%;
+    	/*float:left;*/
+		}
+		.add-margin-right{
+			    margin-right: 0;
+		}
+		.option-block-1{
+			width: 100%;
+			margin:10px 0;
+			height: 100%;
+		}
+		.option-block-2{
+			margin:10px 0;
+		}
+		.email-only-block{
+			 padding: 10px 3%;
+		}
+		.email-only-img{
+			width: 20%;
+		    float: left;
+		    height: 100px;
+		    margin-top: 10px;
+		}
+		.email-only-form>.hbspt-form>form>.hs_submit{
+			margin:0;
+		}
+		.email-only-form > .hbspt-form{
+			width: 100%;
+		}
+		.email-only-form>.hbspt-form>form>.hs_email{
+			/*min-width: 300px;*/
+		}
+		.hs-input{
+			width: 100%;
+		}
+		.contact-item{
+			padding: 32px 20px;
+		}
+		.content-block{
+			padding: 32px 20px;
+		}
+	}
+	@media screen and (max-width: 580px) {
+	.hs-input{
+			width: 100%;
+		}
+	.hs-form-checkbox{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 450px) {
+
+		.email-only-form>.hbspt-form>form>.hs_email{
+			min-width: 200px;
+			width:100%;
+		}
+	}
+</style>
+
+<div class="contact-form">
+	<div class="option-block-1 add-margin-right">
+		<div class="just-center content-center set-full-width ">
+			<div class="contact-item">
+				<div class="contact-img">
+					<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/call-icon.png">
+				</div>
+				<div class="contact-content">
+					<div class="contact-text-block">
+						<h3>Call us now</h3>
+						<a href="tel:+886-2-5568-6590"><h2 class="green-text">02-5568-6590</h2></a>
+						<a href="tel:+886-2-5568-6590"><span class="gray-text forign-number">+886-2-5568-6590</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 即時連線 -->
+<!-- 	<div class="option-block-1">
+		<div class="flex-center content-center set-full-width">
+			<div class="contact-item">
+				<div class="contact-img">
+					<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/message-icon.png">
+				</div>
+				<div class="contact-content">
+					<div class="contact-text-block">
+						<h3>即時文字對談</h3>
+						<div class="green-btn open-chatbot-btn" id="chatbot">開啟文字對談</div>
+						<p id="away-mes"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+<!-- 信箱 -->
+		<div class="option-block-1">
+		<div class="just-center content-center set-full-width">
+			<div class="contact-item">
+				<div class="contact-img">
+					<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/email-icon.png">
+				</div>
+				<div class="contact-content">
+					<div class="contact-text-block">
+						<div class="email-only-form">
+							<h3>Subscribe to product news</h3>
+							<!--[if lte IE 8]>
+							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+							<![endif]-->
+							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+							<script>
+							  hbspt.forms.create({
+								portalId: "1864133",
+								formId: "f2ee5e09-aad2-4ff3-b676-597a0f7e71e1"
+							});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+				// function myFunction() {
+					// var iframe = document.getElementsByTagName("iframe");
+				// 	var elmnt = iframe.contentWindow.document.getElementsByClassName("compact-container")[0];
+				// 	elmnt.style.display = "none";
+				// }
+
+					// VanillaJs (ES5)
+				document.getElementById('chatbot').addEventListener('click', function(event) {
+					  	// removef if it is no need to prevent default event such as url redirect in the <a> element
+					  	event.preventDefault(true);
+					  	// check if Hubspot chat is installed
+					  	if (window.hubspot_live_messages_running && window.hubspot && window.hubspot.messages) {
+					    	window.hubspot.messages.EXPERIMENTAL_API.requestWidgetOpen();
+					  	} else {
+					    console.log('Please install HubSpot WordPress plugin');
+					  }
+				});
+			</script>
+<!-- 	<div class="option-block-2 book-section">
+		<div class="">
+	
+			<div class="flex-center contact-flex" style="width: 100%;">
+				
+			
+			    <div class="meetings-iframe-container" data-src="https://app.hubspot.com/meetings/eggie/sales-team?embed=true"></div>
+			    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+			</div>
+			
+		</div>
+	</div> -->
+
+	<div class="option-block-2 form-section">
+		<div class="">
+			<div class="just-center contact-flex">
+				<div class="content-block larg-box">
+					<div class="contact-img">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/calender-icon.png">
+					</div>
+					<div class="contact-content">
+						<div class="contact-text-block">
+						<h3>Booking a Call</h3>
+						<p>Please fill in your basic information to arrange for our sales representative to contact you.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="just-center contact-flex" >
+				<div class="form-block">
+					<!--[if lte IE 8]>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+					<![endif]-->
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+					  hbspt.forms.create({
+						portalId: "1864133",
+						formId: "833aab0b-ab61-4ec8-a6b5-7a91f450fe40"
+					});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	<div class="option-block-2">
+		<div class="">
+			<div class="">
+				<div class="email-only-block">
+					<div class="email-only-img">
+						<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/email-icon.png">
+					</div>
+				</div>
+				<div class="email-only-form">
+					<h3>訂閱產品資訊</h3>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+					  hbspt.forms.create({
+						portalId: "1864133",
+						formId: "d2f711a9-81e8-4dcf-ad44-3bc95a55c08d"
+					});
+					</script>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div> -->
+</div>
+<!-- 確認對話筐在不在 -->
+<script type="text/javascript">
+	// var timesRun = 0;
+	// function checkbot() { 
+	// 	timesRun += 1;
+	// 	console.log(timesRun);
+	//     console.log("hello bot checker!");
+	// 	if ($('#hubspot-messages-iframe-container')[0]) {
+	// 	    $('#chatbot').show();
+	// 	} else {
+	// 	  $('#chatbot').hide();
+	// 	  $('#away-mes').text("無人在線上，請改用電話諮詢");
+	// 	}
+	// } 
+	// setInterval(checkbot, 500); 
+	
+
+	// var timesRun = 0;
+	// var interval = setInterval(function(){
+	// timesRun += 1;
+	// if(timesRun === 300){
+	// clearInterval(interval);
+	// location.reload();
+	// }
+
+	// 	console.log(timesRun);
+	//     console.log("hello bot checker!");
+	// 	if ($('#hubspot-messages-iframe-container')[0]) {
+	// 	    $('#chatbot').show();
+	// 	    $('#away-mes').text("");
+	// 	} else {
+	// 	  $('#chatbot').hide();
+	// 	  $('#away-mes').text("無人在線上，請改用電話諮詢");
+	// 	}
+
+	// }, 500);
+	
+
+
+</script>

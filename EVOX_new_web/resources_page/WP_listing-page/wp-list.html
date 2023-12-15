@@ -1,0 +1,123 @@
+<style type="text/css">
+	.wp-list-section{
+		max-width: 1113px;
+		margin: 0 auto;
+	}
+	.wp-list-block{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		padding: 46px 0;
+	}
+	.wp-single-block{
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		padding: 10px 0;
+	}
+	.wp-img{
+		min-width: 28%;
+		width: 451px;
+		max-width: 600px;
+		margin:0 1%;
+	}
+	.wp-text-block{
+		width: 68%;
+		margin:0 1%;
+	}
+	.wp-text-block>h2{
+		margin:10px 0;
+	}
+	.wp-text-block>p{
+		margin: 10px 0;
+	}
+
+
+		/*	物件滑入動畫 最後再開*/
+/*	.active{
+	  display:block;
+	}
+	.digit2 {
+	     opacity: 0;
+	    -webkit-transform: translateY(40px);
+	       -moz-transform: translateY(40px);
+	        -ms-transform: translateY(40px);
+	         -o-transform: translateY(40px);
+	            transform: translateY(40px);
+	    -webkit-transition: all 0.3s ease-out;
+	       -moz-transition: all 0.3s ease-out;
+	        -ms-transition: all 0.3s ease-out;
+	         -o-transition: all 0.3s ease-out;
+	            transition: all 0.3s ease-out;
+
+	  }
+	    .visible2 {
+	    opacity: 1;
+	    -webkit-transform: none;
+	       -moz-transform: none;
+	        -ms-transform: none;
+	         -o-transform: none;
+	            transform: none;
+	  }*/
+	@media screen and (max-width: 840px){
+		.wp-single-block{
+			flex-flow: column;
+		}
+		.wp-img{
+			width: 90%;
+    		max-width: 90%;
+		}
+		.wp-img>img{
+			width: 100%;
+		}
+		.wp-text-block{
+			width: 90%;
+		}
+	}
+</style>
+
+<div class="wp-list-section">
+	<div class="wp-list-block">
+		<!-- 單個-->
+		<div class="wp-single-block ">
+			<div class="wp-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/CSX-img/Group%202@1x-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/CSX-img/Group%202@1x-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/CSX-img/Group%202_compress-1.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/CSX-img/Group%202@2x_compress-1.webp 3x" alt="顧客體驗關鍵趨勢白皮書">
+			</div>
+			<div class="wp-text-block">
+				<h2>顧客體驗關鍵趨勢白皮書</h2>
+				<p>數位環境下的買賣雙方關係不同以往，從以商品為中心轉為以客戶為中心，除了維持產品的品質外，如何優化客戶在售前售後的體驗、增加對品牌的信賴度，是現今企業必須投資與精進的目標。</p>
+				<a class="green-text-btn" href="/tw/whitepaper/customer-experience-trend">立即下載 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<!-- 單個-->
+		<div class="wp-single-block ">
+			<div class="wp-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/WFH-img/Group%202@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/WFH-img/Group%202@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/WFH-img/Group%202_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/listing-page/WFH-img/Group%202@2x_compress.webp 3x" alt="混合辦公策略白皮書">
+			</div>
+			<div class="wp-text-block">
+				<h2>混合辦公策略白皮書</h2>
+				<p>後疫情時代混合式辦公成為新常態，要如何確保員工無論在那裡辦公，都能維持良好的生產力和參與度？<br/>同時，如何擬訂合理的制度與方法，能夠公平管理分散在各地、採用不同工作模式的團隊，也是企業與管理者在混合辦公趨勢下必須面對的挑戰。</p>
+				<a class="green-text-btn" href="/tw/whitepaper/hybrid-work-strategy">立即下載 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 最後打開 -->
+<!-- <script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  var revealElements = document.getElementsByClassName("digit2");
+ for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+      new ScrollMagic.Scene({
+                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                offset: 30,                        // start a little later
+                triggerHook: 0.9,
+              })
+              .setClassToggle(revealElements[i], "visible2") // add class toggle
+              // .addIndicators({name: "digit21 " + (i+1) }) // add indicators (requires plugin)
+              .addTo(controller);
+    }
+</script> -->

@@ -1,0 +1,3274 @@
+<!-- page-loader css -->
+<!-- <link href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/page-loader/jquery.pageLoading-1.css" rel="stylesheet"> -->
+<!-- page-loader css -->
+<!-- page-loader js -->
+<!-- <script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/page-loader/jquery.pageLoading-1.js"></script> -->
+<!-- <script src="jquery.pageLoading.js"></script> -->
+<!-- page-loader js -->
+
+<!-- fullpage.js css -->
+<link rel="stylesheet" type="text/css" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/fullpage-js/CSS/fullpage.css" />
+<!-- fullpage.js css -->
+
+<!-- lity video js -->
+<link href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/lity.css" media="all" rel="stylesheet" type="text/css">
+<link href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/prism.css" media="all" rel="stylesheet" type="text/css">
+
+
+<!--Slider 外部套件 -->
+<link rel="stylesheet" href="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.css">
+<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script> 
+
+<style type="text/css">
+.fp-watermark{
+	display: none;
+}
+
+/*修改template css*/
+div.col.sqs-col-12.span-12{
+	padding-top: 0!important;
+}
+@media only screen and (min-width: 1062px){
+	div#content.main-content{
+		padding-top: 0!important;
+	}
+}
+
+/*本文開始*/
+.fullpage{
+	transition: all 500ms ease;
+}
+.section{
+  text-align: center;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-family: arial;
+  color: white;
+  min-height: 100vh!important;
+  height: 100vh!important;
+
+}
+.btn-in-box{
+	display: flow-root;
+    width: fit-content;
+}
+/*.red-bg {
+    background-color: red;
+}
+.green-bg {
+    background-color: rgb(48, 205, 0);
+}
+.blue-bg {
+    background-color: rgb(60, 0, 255);
+}*/
+
+.read-article{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  color: #000;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: arial;
+  text-decoration: none;
+  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+}
+.read-article:hover{
+    background: #d5d5d5;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+}
+iframe[sandbox] .read-article{
+  display: none;
+}
+
+/*自定義*/
+/*區塊設定*/
+.section{
+	transition: all 500ms ease;
+	height: 100vh;
+}
+
+/*圖片設定*/
+.background-section0{
+	background: #ffffff;
+/*	background-image: url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/cycle-img-asset/Key-img/AdobeStock_359101960.jpg');*/
+}
+.background-section1{
+	background: #FAFAFA;
+}
+.background-section2{
+	background: #d1ffe4;
+}
+.background-section3{
+    background: #d1dfff;
+}
+/*同時擁有兩個條件*/
+.image-box-0.image-change{
+/*	opacity: 0.2;*/
+}
+.image-box-1.image-change{
+/*	opacity: 0.2;*/
+}
+.image-box-2.image-change{
+/*	opacity: 0.2;*/
+}
+.image-box-3.image-change{
+/*	opacity: 0.2;*/
+}
+.section0{
+/*	margin-top:-85px;*/
+}
+.section1{
+	background: #FAFAFA;
+}
+.section10{
+	background: #E8F5E9;
+}
+.mobile-image-block{
+	display: none;
+}
+
+/*首圖區塊*/
+.top-benefit-section{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    position: relative;
+    /* height: 100vh; */
+    height: 100vh;
+}
+.top-section{
+    /* width: 90%; */
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    /* margin: 0 0 0; */
+    top: 7%;
+    /* left: 14%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    
+    background: #ffffff63;
+    border-radius: 30px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 32px #ffffff;
+}
+.top-benefit-section>.top-section>h2{
+    font-size: 32px;
+    color: #5F6871;
+/*	color: #fff;*/
+    text-align: center;
+    font-weight: bolder;
+    margin: 5px 0;
+
+ /*   text-shadow: #ffffff 0em 0em 5px;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    background: #ffffff63;
+    box-shadow: 0px 0px 32px #ffffff;*/
+/*    text-shadow: #0000008a 0.1em 0.1em 0.2em;*/
+}
+.top-benefit-section>.top-section>h1{
+	font-size: 52px;
+/*	color: #fff;*/
+	color:#58B805;
+    font-weight: bolder;
+    margin: 5px 0;
+    text-align: center;
+    border: 0;
+
+    /*text-shadow: #ffffff 0em 0em 5px;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    background: #ffffff63;
+    box-shadow: 0px 0px 32px #ffffff;*/
+/*    text-shadow: #0000008a 0.1em 0.1em 0.2em;*/
+}
+.top-img-section{
+    display: flex;
+    justify-content: center;
+}
+.top-img-section>.bg-top{
+	right: auto!important;
+}
+
+
+/*七大要點區塊*/
+.seven-benefit-section{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.seven-benefit-text-block{
+	width: 40%;
+	padding: 0 19px;
+    text-align: initial;
+}
+.seven-benefit-text-block>h2{
+	font-size: 48px;
+	font-weight: bolder;
+}
+.seven-image{
+	width: 60%;
+}
+
+/*	文字*/
+.text-screen{
+	display: flex;
+   	align-items: center;
+   	background: #ffffff;
+}
+.text-contain{
+	position: relative;
+    display: flex;
+    align-items: center;
+	width:90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/*客戶故事*/
+.customer-story-contain{
+	position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+/*客戶故事*/
+/*產業類別*/
+.industry-contain{
+	position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+/*產業類別*/
+/*聯絡我們*/
+.footer-contain{
+	position: relative;
+    display: flex;
+    align-items: center;
+    /* width: 90%; */
+    /* max-width: 1250px; */
+    height: 100vh;
+    margin: 0 auto;
+    background: rgb(137,197,64);
+    background: linear-gradient(180deg, rgba(137,197,64,1) 41%, rgba(36,50,55,1) 75%);
+}
+/*聯絡我們*/
+.single-text-element{
+/*	width: 50%;*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+    text-align: initial;
+}
+.section-element>h2{
+	font-size: 48px;
+	font-weight: bolder;
+	margin: 5px 0;
+}
+.single-text-element>.sub-tittle{
+	font-size: 21px;
+}
+.single-text-element>.sub-tittle>a{
+	font-size: 21px;
+}
+.section-element>p{
+	font-size: 16px;
+	margin: 5px 0;
+}
+.single-text-element>h3{
+/*	color: #243237;*/
+	font-weight: bold;
+	font-size: 48px;
+	margin: 5px 0;
+}
+.single-text-element>div>h3{
+	/*	color: #243237;*/
+	font-weight: bold;
+	font-size: 48px;
+	margin: 5px 0;
+}
+.single-text-element>h4{
+/*	color: #243237;*/
+	font-size: 21px;
+    margin: 5px 0;
+}
+.single-text-element>p{
+/*	color: #5F6871;*/
+	margin: 5px 0;
+}
+.single-text-element>ul{
+    padding-left: 23px;
+    margin: 0;
+}
+.single-text-element>ul>li{
+/*    color: #5F6876;*/
+	font-size: 16px;
+	margin: 5px 0;
+	line-height: 1.5em;
+}
+/*節能減碳*/
+.carbon-two-cloume{
+	width: 50%;
+}
+/*全球經營*/
+.global-two-cloume{
+	width: 50%;
+}
+/*資訊安全*/
+.security-two-cloume{
+	width: 70%;
+}
+.security-two-cloume-layout{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+.security-two-cloume-single-element{
+    width: 42%;
+/*    min-height: 126px;*/
+    margin: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.security-two-cloume-single-element>h4{
+	font-size: 21px;
+    margin: 5px 0;
+}
+.security-two-cloume-single-element>p{
+	margin: 5px 0;
+}
+.security-two-cloume-single-element>ul{
+	padding-left: 23px;
+    margin: 0;
+}
+.security-two-cloume-single-element>ul>li{
+	/*    color: #5F6876;*/
+	font-size: 16px;
+	margin: 5px 0;
+	line-height: 1.5em;
+}
+/*提升銷售業績*/
+.sales-two-cloume-layout{
+	display: flex;
+    align-items: stretch;
+    justify-content:;
+    flex-flow: column wrap;
+}
+.sales-two-cloume-single-element{
+    width: 50%;
+/*    min-height: 126px;*/
+    margin: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.sales-two-cloume-single-element>h4{
+	font-size: 21px;
+    margin: 5px 0;
+}
+.sales-two-cloume-single-element>h4>a{
+	font-size: 21px;
+	margin: 5px 0;
+}
+.sales-two-cloume-single-element>p{
+	margin: 5px 0;
+}
+.sales-two-cloume-single-element>ul{
+	padding-left: 23px;
+    margin: 0;
+}
+.sales-two-cloume-single-element>ul>li{
+	/*    color: #5F6876;*/
+	font-size: 16px;
+	margin: 5px 0;
+	line-height: 1.8em;
+}
+/*有效企業管理*/
+.company-management-cloumn{
+	width: 50%;
+}
+
+.white-text-element>h3, .white-text-element>h4, .white-text-element>p, .white-text-element>ul>li{
+	color:#ffffff;
+}
+.white-text-element>div>h3{
+	color:#ffffff;
+}
+.white-text-element>ul>li>.green-text-btn{
+	font-size: 16px;
+}
+.white-text-element>ul{
+/*	list-style-image: url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/list-icon-grey.png');*/
+}
+.white-text-element>ul>li{
+/*	background: url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/list-icon-grey.png') no-repeat left center;*/
+/*	padding: 5px 10px 5px 25px;*/
+/*	list-style: none;*/
+	padding: 5px 10px 5px 5px;
+	list-style: circle;
+	margin: 0;
+	vertical-align: middle;
+	background-position: 3px 8px;
+}
+.dark-text-element>h3, .dark-text-element>h4, .dark-text-element>p, .dark-text-element>ul>li{
+	color:#5F6871;
+}
+.dark-text-element>ul>li{
+/*	background: url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/list-icon-grey.png') no-repeat left center;*/
+/*	padding: 5px 10px 5px 25px;*/
+	padding: 5px 10px 5px 5px;
+/*	list-style: none;*/
+	list-style: circle;
+	margin: 0;
+	vertical-align: middle;
+	background-position: 3px 8px;
+}
+
+
+/*側邊選單*/
+.dot-menu{
+	position: fixed;
+    z-index: 100;
+    top: 50%;
+    opacity: 1;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translate3d(0,-50%,0);
+    transition: all .5s ease-in-out;
+    right: 0px;
+    padding: 10px;
+/*    background: white;*/
+/*    border-radius: 40px;*/
+    opacity: 0.5;
+}
+.dot-menu:hover{
+	opacity: 1;
+}
+.dot-hide{
+	right: -60px;
+}
+.dot-menu-set{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+/*	    margin-bottom: 30px;*/
+	max-width: 100%;
+	flex-flow: column;
+/*	    width: 350px;*/
+	height: 66vh;
+}
+.dot-menu-set:before{
+    content: '';
+   	background-color: #e6e6e6;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 65vh;
+    width: 5px;
+    z-index: -1;
+    transition: 0.4s ease-in;
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 20px #afafaf;
+}
+.dot-link{
+	width: 25px;
+    height: 25px;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+/*    box-shadow: 0px 0px 20px #afafaf;*/
+}
+.dot-link-menu{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #243237;;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+.dot-link-menu:hover{
+	transform: scale(1.2);
+}
+.active>.dot-link-menu{
+	background: #58B805;
+}
+.dot-tag{
+    position: fixed;
+    /* top: -9px; */
+    word-break: keep-all;
+    z-index: 0;
+    right: -400px;
+    transition: all .5s ease-in-out;
+    background: #ffffff;
+    border-radius: 23px;
+    text-align: center;
+    padding: 0 20px;
+    box-shadow: 0px 0px 6px #1f1f1f8f;
+}
+.dot-link-menu:hover .dot-tag{
+    right:30px;
+    font-size: 15px;
+}
+
+
+</style>
+<style type="text/css">
+	#header{
+		padding: 0!important;
+		background-color: #fff0!important;
+	}
+	.moveable-menu{
+		position: absolute;
+		width: 100%;
+		background: #fff;
+		transition: all 500ms ease;
+	}
+	.header-inner{
+		padding: 10px 20px 10px 20px;
+		position: relative;
+		
+	}
+	.header-menu-show{
+	    position: absolute;
+	    width: 100%;
+/*	    height: 130px;*/
+/*	    background: #f4f4f436;*/
+	    top: 0;
+	    z-index:-1; 
+/*	    border-bottom: 1px dashed #cecece;*/
+	    text-align: center;
+	    opacity: 0;
+	}
+	/*header隱藏*/
+	.header-hide{
+		top:-127px;
+	}
+	.header-show{
+		top:0px;
+	}
+	.move-menu-down{
+		opacity: 1;
+	}
+	.show-menu-banner{
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    max-width: 140px;
+	    height: 20px;
+	    margin: 0px auto;
+	    padding: 15px 10px;
+	    background: #fff;
+	    border-radius: 0 0 10px 10px;
+	    box-shadow: 0px 0px 20px #afafaf;
+	}
+	.show-menu-icon{
+		width: 20px;
+   		padding: 10px;
+	}
+</style>
+<!-- 上邊選單 hover -->
+<!-- <div class='header-menu-show' id='header-hover-show'>
+	<div class='show-menu-banner'>
+		<img class='show-menu-icon' src='https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/show-menu-icon/scroll-sown%20Copy%202.png'>
+		<p>展開選單</p>
+	</div>
+</div> -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#header').append("<div class='header-menu-show' id='header-hover-show'><div class='show-menu-banner'><img class='show-menu-icon' src='https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/show-menu-icon/scroll-sown%20Copy%203-1.png'><p>展開選單</p></div></div>");
+		 // $('#header').hover(
+				
+         //       function () {
+
+         //          $( '.moveable-menu').addClass('header-show');
+         //       }
+         //    );
+		$(document).on({
+			    mouseenter: function() {
+			       // console.log('in');
+			    	$( '.moveable-menu').addClass('header-show');
+			    },
+			    mouseleave: function() {
+			       // console.log('out');
+			    	$( '.moveable-menu').removeClass('header-show');
+			    }
+			}, '#header');
+	});
+</script>
+<!-- 上邊選單 hover -->
+
+<!--側邊點 -->
+<div class="dot-menu" id="myMenu">
+	<div class="dot-menu-set">
+		<!-- 單個 -->
+		<div class="dot-link firstPage active" data-menuanchor="firstPage" id="firstPage" >
+			<a class="dot-link-menu" href="#home"><div class="dot-tag">全方位企業通訊平台</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link secondPage" data-menuanchor="secondPage" id="secondPage">
+			<a class="dot-link-menu" href="#benefit"><div class="dot-tag">數位溝通再進化</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link thirdPage" data-menuanchor="thirdPage" id="thirdPage" >
+			<a class="dot-link-menu" href="#save-carbon"><div class="dot-tag">節能減碳</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link fourthPage" data-menuanchor="fourthPage" id="fourthPage" >
+			<a class="dot-link-menu" href="#global-operation"><div class="dot-tag">全球化經營</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link fivePage" data-menuanchor="fivePage" id="fivePage" >
+			<a class="dot-link-menu" href="#information-security"><div class="dot-tag">資訊安全</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link sixPage" data-menuanchor="sixPage" id="sixPage" >
+			<a class="dot-link-menu" href="#customer-satisfaction"><div class="dot-tag">提高客戶滿意度</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link sevenPage" data-menuanchor="sevenPage" id="sevenPage" >
+			<a class="dot-link-menu" href="#increase-sales"><div class="dot-tag">提升銷售業績</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link eighthPage" data-menuanchor="eighthPage" id="eighthPage" >
+			<a class="dot-link-menu" href="#business-management"><div class="dot-tag">有效企業管理</div></a>
+		</div>
+		<!-- 單個 -->
+		<div class="dot-link nicePage" data-menuanchor="nicePage" id="nicePage" >
+			<a class="dot-link-menu" href="#low-costs"><div class="dot-tag">降低成本</div></a>
+		</div>
+
+		<!-- 單個 -partner -->
+		<div class="dot-link partnerPage" data-menuanchor="partnerPage" id="partnerPage">
+			<a class="dot-link-menu" href="#customer-story"><div class="dot-tag">客戶故事</div></a>
+		</div>
+		<!-- 單個 -industry -->
+		<div class="dot-link industryPage" data-menuanchor="industryPage" id="industryPage">
+			<a class="dot-link-menu" href="#industries"><div class="dot-tag">各種產業</div></a>
+		</div>
+		<!-- 單個 -industry -->
+		<div class="dot-link footerPage" data-menuanchor="footerPage" id="footerPage" >
+			<a class="dot-link-menu" href="#contact-us"><div class="dot-tag">立即聯絡</div></a>
+		</div>
+	</div>
+</div>
+<!-- 滑鼠向下滑 -->
+<style type="text/css">
+	
+	.mouse-down{
+		opacity: 0;
+		position: fixed;
+	    bottom: 10px;
+	    z-index: 99999;
+	    -webkit-transform: translate3d(0,0%,0);
+	    transition: all .5s ease-in-out;
+	    /* right: 20px; */
+	    width: 100%;
+	    margin: 0 auto;
+	/*    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-flow: column;*/
+	    display: none;
+	}
+	.mouse-scroll-active{
+		opacity: 1;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-flow: column;
+	}
+	.mouse-icon{
+		height: 40px;
+	}
+	.scroll-down-text{
+		line-height: 1.8em;
+    	color: #5F6871;
+		font-size: 18px;
+    	font-weight: bolder;
+
+	}
+	.scroll-down-text:hover{
+		color: #5F6871;
+	}
+	.scroll-down-text:before{
+		background: #5F6871;
+	}
+</style>
+
+<div class="mouse-down">
+	<img class="mouse-icon" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/mouse-icon/scroll-sown.png" alt="mouse-icon">
+	<p><a class="green-text-btn scroll-down-text" href="#benefit">滑鼠向下滑</a></p>
+</div>
+<!-- 滑鼠向下滑 -->
+
+
+<!-- 圖片 -->
+	<style type="text/css">
+		.rotation{
+			position: fixed;
+			width: 100%;
+    		top: 0px;
+/*    		opacity: 0.2;*/
+		}
+		
+		.bg-image{
+			position: relative;
+		    opacity: 0;
+		    transition-timing-function: ease-in;
+		    transition: opacity 250ms ease-in 50ms;
+		}
+		.bg-image-flex{
+			position: absolute;
+/*		    top: 0px;*/
+			top:0px;
+		    left: -4px;
+		    bottom: 0px;
+		    right: 0px;
+		}
+		.bg-top{
+		    opacity: 1;
+		    position: absolute;
+		    color: transparent;
+		    font-size: 0;
+		    vertical-align: middle;
+		    max-width: inherit!important;
+		    right: 0;
+		    transform: scale(1.03);
+		}
+		.mobile-bg-top{
+			opacity: 1;
+		    position: absolute;
+		    color: transparent;
+		    font-size: 0;
+		    vertical-align: middle;
+		    max-width: inherit!important;
+		    right: 0;
+		    transform: scale(1.03);
+			display: none;
+		}
+		.image-box{
+		}
+		.image-change{
+			opacity:1;
+			transition: opacity 250ms ease-in 50ms;
+		}
+		@media screen and (max-height: 640px){
+			.bg-top{
+				width: 100%;
+			}
+			.bg-image-flex{
+				transform: translateY(-103px);
+			}
+		}
+	</style>
+	<div class="rotation" id="rotation">
+		<!-- 首圖 -->
+		<div class="bg-image image-box-0" id="image-box">
+			<div class="bg-image-flex top-img-section">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/top-section/version-11/221024_home-page-layout-12.webp" alt="全方位企業通訊平台">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/top-section/version-11/221024_home-page-layout-12.webp" alt="全方位企業通訊平台"> -->
+			</div>
+		</div>
+		<!-- 七大內容圖片 -->
+		<div class="bg-image image-box-1">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-01/section-01-img_compress-1.webp" alt="節能減碳">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-01/mobile-size/section-01-img%20copy_compress.webp" alt="節能減碳"> -->
+			</div>
+		</div>
+		<div class="bg-image image-box-2">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/Section-02-white/section-02-img%20copy_compress-1.webp" alt="全球化經營">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/Section-02-white/section-02-img%20copy_compress.webp" alt="全球化經營"> -->
+			</div>
+		</div>
+		<div class="bg-image image-box-3">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-03/section-03-img_compress-1.webp" alt="資訊安全">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-03/section-03-img@1x_compress.webp" alt="資訊安全"> -->
+			</div>
+		</div>
+		<div class="bg-image image-box-4">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-04-white/section-04-img%20copy_compress-1.webp" alt="提高客戶滿意度">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-04-white/section-04-img%20copy_compress.webp" alt="提高客戶滿意度"> -->
+			</div>
+		</div>
+		<div class="bg-image image-box-5">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-06-gray/section-06-img%20copy_compress-1.webp" alt="提升銷售業績">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-06-gray/section-06-img%20copy_compress-1.webp" alt="提升銷售業績"> -->
+			</div>
+		</div>
+		<div class="bg-image image-box-6">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-05-white/section-05-img%20copy_compress-1.webp" alt="有效企業管理">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-05-white/section-05-img%20copy_compress-1.webp" alt="有效企業管理"> -->
+			</div>
+		</div>
+		
+		<div class="bg-image image-box-7">
+			<div class="bg-image-flex">
+				<img class="bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-07/section-07-img_compress-1.webp" alt="降低成本">
+
+				<!-- <img class="mobile-bg-top" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-07/section-07-img_compress.webp" alt="降低成本"> -->
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="fullpage" id="fullpage">
+	
+
+
+	<!-- 單個區塊 -->
+	<div class="section section0 mobile-section-layout" id="home">
+		<!-- 文字內容物 -->
+		<div class="top-benefit-section ">
+			<div class="top-section">
+				<h2>EVOX 全方位企業通訊平台</h2>
+				<h1>雲端通訊<br/>讓你與客戶更緊密</h1>
+			</div>
+			<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/top-section/version-11/mobile-img/top-img%20copy%208_compress.webp" alt="全方位企業通訊平台">
+			</div>
+			<!-- 手機版圖片 -->
+
+		</div>
+	</div>
+	<!-- 單個區塊 -->
+	<div class="section section1 " data-percentage="100"  id="benefit">
+		<!-- 文字內容物 -->
+		<div class="seven-benefit-section ">
+			<div class="seven-benefit-text-block">
+				<h2>數位溝通再進化<br/>策略轉型永續企業 </h2>
+				<p>EVOX 致力打造專業靈活的企業通訊平台，整合各種渠道的雲端服務，助企業拓展商機、創造顧客服務新體驗。 </p>
+			</div>
+			<div class="seven-image">
+				<style type="text/css">
+					/*	多邊形按鈕*/
+					.seven-img{
+						position: absolute;
+					    top: 160px;
+					    right: 140px;
+					}
+					.mobile-seven-img{
+						display: none;
+					}
+					.img-link-menu{
+						max-width: 600px;
+/*						width: 87%;*/
+    					margin: 0 auto;
+					}
+					.img-shape-box{
+						display: flex;
+					    align-items: center;
+					    justify-content: center;
+						flex-flow: row wrap;
+						position: relative;
+					}
+					.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(6){
+						margin-left: 6px;
+					}
+					.img-shape-box>div:nth-child(2), .img-shape-box>div:nth-child(7){
+						margin-right: 6px;
+					}
+					.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(2){
+						top:40px;
+					}
+					.img-shape-box>div:nth-child(6), .img-shape-box>div:nth-child(7){
+						top:-40px;
+					}
+/*					顏色*/
+					.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(7){
+						background:#E8F5E9;
+					}
+					.img-shape-box>div:nth-child(2), .img-shape-box>div:nth-child(4), .img-shape-box>div:nth-child(6){
+						background:#EDEFF1;
+					}
+					.img-shape-box>div:nth-child(3), .img-shape-box>div:nth-child(5){
+						background:#D8D8D8;
+					}
+					
+					.img-shape{
+						position: relative;
+						width:200px;
+						height:200px;
+						display: flex;
+					    align-items: center;
+					    justify-content: center;
+					    flex-flow: column;
+/*						background:#f80;*/
+						-webkit-clip-path:polygon(50% 0, 97% 25%, 97% 75%, 50% 100%, 3% 75%, 3% 25%);
+						clip-path: polygon(50% 0, 97% 25%, 97% 75%, 50% 100%, 3% 75%, 3% 25%);
+						transition: all 500ms ease;
+					}
+					.img-shape:hover{
+						background: #58B805!important;
+						box-shadow: 1px 1px 7px #00000052;
+    					transform: scale(1.03);
+/*    					z-index: 9999;*/
+					}
+					.single-shape-img-box{
+/*						position: relative;*/
+					    display: flex;
+					    align-items: center;
+					    justify-content: flex-start;
+					    flex-flow: column;
+					    overflow: hidden;
+/*					    width: 90px;*/
+					    height: 65px;
+					    position: relative;
+					}
+					.single-shape-img-box>img{
+						height:100%;
+						margin: 0 auto;
+/*						position: absolute;*/
+						transition: all 500ms ease;
+					}
+					.single-shape-img-active{
+						opacity: 0;
+						position: absolute;
+					}
+					.img-shape:hover .single-shape-img-box>.single-shape-img{
+						opacity: 0;
+					}
+					.img-shape:hover .single-shape-img-box>.single-shape-img-active{
+						opacity: 1;
+					}
+					.img-shape:hover .single-shape-img-box>.single-shape-img{
+						opacity: 0;
+					}
+					.shape-text{
+						margin: 5px auto;
+						font-size: 18px;
+						font-weight: bolder;
+						color: #243237;
+					}
+					.img-shape:hover .shape-text{
+						color: #fff;
+					}
+
+					/*RWD 手機優化*/
+					@media screen and (max-width: 1164px){
+						/*	多邊形按鈕*/
+						.img-link-menu{
+							max-width: 460px;
+						}
+						.img-shape{
+							width: 150px;
+							height: 150px;
+						}
+						.single-shape-img-box{
+							height: 45px;
+						}
+						.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(2){
+							top: 30px;
+						}
+						.img-shape-box>div:nth-child(6), .img-shape-box>div:nth-child(7){
+							top: -30px;
+						}
+						/*	多邊形按鈕*/
+					}
+					@media screen and (max-width: 900px){
+						/*	數位溝通再進化*/
+						.seven-benefit-text-block>h2{
+							font-size: 40px;
+						}
+						/*	數位溝通再進化*/
+					}
+					
+					@media screen and (max-width: 863px){
+						/*	數位溝通再進化*/
+						.seven-benefit-text-block>h2{
+							font-size: 34px;
+						}
+						/*	數位溝通再進化*/
+						/*	多邊形按鈕*/
+						.img-link-menu{
+							max-width: 368px;
+						}
+						.img-shape{
+							width: 120px;
+							height: 120px;
+						}
+						.shape-text{
+							font-size: 14px;
+						}
+						.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(2){
+							top: 25px;
+						}
+						.img-shape-box>div:nth-child(6), .img-shape-box>div:nth-child(7){
+							top: -25px;
+						}
+						/*	多邊形按鈕*/
+					}
+					@media screen and (max-width: 710px){
+						/*	數位溝通再進化*/
+						.seven-benefit-section{
+							flex-flow: column;
+						}
+						.seven-benefit-text-block{
+							width: 90%;
+						}
+						.seven-image{
+							width: 90%;
+						}
+						/*	數位溝通再進化*/
+					}
+					@media screen and (max-width: 460px){
+						/*修改 fullpage js css*/
+						.fp-responsive .fp-is-overflow.fp-section{
+							height: 100% !important;
+    						min-height: 100%!important;
+						}
+						.fp-overflow{
+							max-height: 100%;
+						}
+						.fp-table{
+/*							justify-content: flex-start;*/
+/*							margin-top: 60px;*/
+						}
+						
+						.headerNav-dropdown{
+							width: 90%;
+						}
+						.header-hide{
+							top: 0px!important;
+						}
+						.move-menu-down{
+							display: none;
+						}
+						/*	側邊點選單*/
+						.dot-menu{
+							right: -40px;
+						}
+						/*	側邊點選單*/
+						/*滑鼠向下滑*/
+						.mouse-scroll-active{
+							display: none;
+						}
+						/*滑鼠向下滑*/
+						/*手機版圖片*/
+						.rotation{
+							display: none;
+						}
+						.mobile-image-block{
+							display: block;
+						}
+						/*手機版圖片*/
+						/*背景圖片*/
+						.bg-top{
+							display: none;
+						}
+						/*背景圖片*/
+						.mobile-bg-top{
+							display:block;
+						}
+
+						/*首圖區塊*/
+						.top-benefit-section{
+							justify-content: flex-start;
+							height: 100%;
+							margin-top: 140px;
+						}
+						.top-section{
+							margin-top: 0px;
+						}
+						.top-benefit-section>.top-section>h2{
+							font-size: 19px;
+						}
+						.top-benefit-section>.top-section>h1{
+							font-size: 36px;
+						}
+						/*首圖區塊*/
+						/*數位溝通再進化*/
+						.seven-image{
+							width: 100%;
+						}
+						.seven-benefit-text-block{
+							text-align: center;
+						}
+						.single-shape-img-box>img{
+							height: initial;
+							width: 33px;
+						}
+						.seven-benefit-section{
+							margin: 20px auto;
+						}
+						.shape-text{
+							font-size: 13px;
+						}
+						/*數位溝通再進化*/
+						/*七大要點區塊*/
+						.text-contain{
+							width: 90%;
+/*							margin-top: 80px;*/
+						}
+						.single-text-element>h3{
+							font-size:28px;
+							    display: block;
+							    width: 100%;
+/*    							border-bottom: 1px solid;*/
+						}
+						.single-text-element>ul>li{
+							font-size: 14px;
+							line-height: 1.5em;
+						}
+						.single-text-element>p{
+							font-size: 14px;
+							padding: 0 10px;
+							line-height: 1.5em;
+						}
+						.single-text-element>.sub-tittle{
+							font-size: 19px;
+    						font-weight: bolder;
+    						line-height: 1.5em;
+    						margin: 10px auto;
+
+						}
+						.single-text-element>.sub-tittle>a{
+							font-size: 19px;
+						}
+						
+						.single-text-element>ul{
+							padding: 0 10px;
+						}
+						.fp-table.mobile-section-layout{
+							justify-content: flex-start;
+						}
+						.mobile-section-layout>.fp-overflow>.text-contain{
+							margin-top: 70px;
+						}
+
+						/*.mobile-section-layout>.fp-overflow>.top-benefit-section {
+							margin-top: 80px;
+						}*/
+
+						/*文字*/
+						/*.mobile-dark-text-element>h3, .mobile-dark-text-element>h4, .mobile-dark-text-element>p, .mobile-dark-text-element>ul>li{
+							color:#5F6871;
+						}
+						.mobile-dark-text-element>ul>li{
+							background: url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/list-icon-grey.png') no-repeat left center;
+							padding: 5px 10px 5px 25px;
+							list-style: none;
+							margin: 0;
+							vertical-align: middle;
+							background-position: 3px 8px;
+						}*/
+						/*手機版個區塊背景色*/
+						.section2{
+							background: #435A3B;
+						}
+						.section4{
+							background: #00030d;
+						}
+						.section6{
+							background: #4b4b4b;
+						}
+						.section8{
+    						background: #0c0a0a;
+						}
+						/*節能減碳*/
+						.carbon-two-cloume{
+							width: 100%;
+						}
+						/*節能減碳*/
+						/*全球化經營*/
+						.global-two-cloume{
+							width: 100%;
+						}
+						/*全球化經營*/
+						/*資訊安全*/
+						.security-two-cloume{
+							width: 100%;
+						}
+						.security-two-cloume-single-element{
+							width: 100%;
+							padding: 5px;
+						}
+						.security-two-cloume-single-element>ul>li{
+							font-size: 14px;
+							line-height: 1.5em;
+						}
+						/*資訊安全*/
+						/*提升銷售業績*/
+						.single-text-element{
+
+						}
+						.sales-two-cloume-single-element{
+							width: auto;
+						}
+						.sales-two-cloume-single-element>ul>li{
+							font-size: 14px;
+							line-height: 1.5em;
+						}
+						/*提升銷售業績*/
+						/*有效企業管理*/
+						.company-management-cloumn{
+							width: 100%;
+						}
+						/*有效企業管理*/
+
+						/*.img-link-menu{
+							display: none;
+						}
+						.mobile-seven-img{
+							display: block;
+						}*/
+						/*	多邊形按鈕*/
+						.img-link-menu{
+							max-width: 100%;
+						}
+						.img-shape{
+							width: 42%;
+							height: 60px;
+							clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    						border-radius: 6px;
+    						flex-flow: row;
+    						padding: 0 2%;
+    						margin: 5px 2%;
+						}
+						.single-shape-img-box{
+							width: 45px;
+   							height: auto;
+							padding: 5px;
+						}
+						.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(6){
+							margin-left: 1%;
+						}
+						.img-shape-box>div:nth-child(2), .img-shape-box>div:nth-child(7){
+							margin-left: 1%;
+						}
+						.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(2){
+							top: 0;
+						}
+						.img-shape-box>div:nth-child(6), .img-shape-box>div:nth-child(7){
+							top: 0;
+						}
+						.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(2), .img-shape-box>div:nth-child(3), .img-shape-box>div:nth-child(4), .img-shape-box>div:nth-child(5), .img-shape-box>div:nth-child(6), .img-shape-box>div:nth-child(7){
+							background: #E8F5E9;
+						}
+						.shape-text{
+							line-height: 20px;
+						}
+						/*	多邊形按鈕*/
+					}
+					@media screen and (min-width: 850px) and (max-height: 700px){
+						.img-link-menu{
+							max-width: 540px;
+						}
+						.img-shape-box>div:nth-child(1), .img-shape-box>div:nth-child(2){
+							top: 36px;
+						}
+						.img-shape-box>div:nth-child(6), .img-shape-box>div:nth-child(7){
+							top: -36px;
+						}
+						.img-shape{
+							width: 180px;
+    						height: 180px;
+						}
+					}
+				</style>
+				<!-- 手機七大特色版圖片 -->
+				<!-- <img class="mobile-seven-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/seven-benefit-section/Group%202@1x.png" alt="企業數位轉型七大要點"> -->
+				<!-- 菱形選單 -->
+				<div class="img-link-menu" id="myMenu2">
+					<div class="img-shape-box">
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E7%AF%80%E8%83%BD%E6%B8%9B%E7%A2%B3/low-carbon%20Copy.png" alt="節能減碳">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E7%AF%80%E8%83%BD%E6%B8%9B%E7%A2%B3/low-carbon%20Copy-white.png" alt="節能減碳">
+							</div>
+							<a class="white-text-btn shape-text" href="#save-carbon">節能減碳</a>
+						</div>
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E5%85%A8%E7%90%83%E5%8C%96%E7%B6%93%E7%87%9F/low-carbon%20Copy%202.png" alt="全球化經營">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E5%85%A8%E7%90%83%E5%8C%96%E7%B6%93%E7%87%9F/low-carbon%20Copy%202-white.png" alt="全球化經營">
+							</div>
+							<a class="white-text-btn shape-text" href="#global-operation">全球化經營</a>
+						</div>
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/low-carbon%20Copy%205.png" alt="資訊安全">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/low-carbon%20Copy%205-white.png" alt="資訊安全">
+							</div>
+							<a class="white-text-btn shape-text" href="#information-security">資訊安全</a>
+						</div>
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E6%8F%90%E9%AB%98%E5%AE%A2%E6%88%B6%E6%BB%BF%E6%84%8F%E5%BA%A6/low-carbon%20Copy%207.png" alt="提高客戶滿意度">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E6%8F%90%E9%AB%98%E5%AE%A2%E6%88%B6%E6%BB%BF%E6%84%8F%E5%BA%A6/low-carbon%20Copy%207-white.png" alt="提高客戶滿意度">
+							</div>
+							<a class="white-text-btn shape-text" href="#customer-satisfaction">提高客戶滿意度</a>
+						</div>
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E6%8F%90%E5%8D%87%E9%8A%B7%E5%94%AE%E6%A5%AD%E7%B8%BE/low-carbon%20Copy%204.png" alt="提升銷售業績">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E6%8F%90%E5%8D%87%E9%8A%B7%E5%94%AE%E6%A5%AD%E7%B8%BE/low-carbon%20Copy%204-white.png" alt="提升銷售業績">
+							</div>
+							<a class="white-text-btn shape-text" href="#increase-sales">提升銷售業績</a>
+						</div>
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E6%9C%89%E6%95%88%E4%BC%81%E6%A5%AD%E7%AE%A1%E7%90%86/low-carbon%20Copy%203.png" alt="有效企業管理">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E6%9C%89%E6%95%88%E4%BC%81%E6%A5%AD%E7%AE%A1%E7%90%86/low-carbon%20Copy%203-1.png" alt="有效企業管理">
+							</div>
+							<a class="white-text-btn shape-text" href="#business-management">有效企業管理</a>
+						</div>
+						<!-- 單個 -->
+						<div class="img-shape carbon-img-shape" >
+							<div class="single-shape-img-box">
+								<img class="single-shape-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E9%99%8D%E4%BD%8E%E6%88%90%E6%9C%AC/low-carbon%20Copy%206.png" alt="降低成本">
+
+								<img class="single-shape-img-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/icons/menu-icons/%E9%99%8D%E4%BD%8E%E6%88%90%E6%9C%AC/low-carbon%20Copy%206-white.png" alt="降低成本">
+							</div>
+							<a class="white-text-btn shape-text" href="#low-costs">降低成本</a>
+						</div>
+
+					</div>
+				</div>
+				<!-- 菱形選單 -->
+			</div>
+			
+		</div>
+	</div>
+	<!-- 七大特色 -->
+	<!-- 單個區塊 -->
+ 	<div class="section section2 mobile-section-layout" data-percentage="100"  id="save-carbon">
+  	<!-- 文字內容物 -->
+		<div class="text-contain">
+		<!-- 單個 -->
+			<div class="single-text-element white-text-element mobile-dark-text-element carbon-two-cloume">
+				<h3>節能減碳</h3>
+				<p class="sub-tittle">EVOX 運行於 AWS，可有效降低 90% 碳排放 </p>
+				<p>以往公司若使用一台 350W 中小型 IP PBX，所使用的總機設備、100 台 IP 電話機再加上 3 坪冷氣機房，一年大約會產生 26,718 度的電，相當於 13.6 公噸 CO2e，若改用 EVOX 雲端通訊平台，一年則只會排放 1.36 公噸 CO2e。 </p>
+				<!-- 影片 -->
+				<style type="text/css">
+					.video-section{
+						display: flex;
+					    flex-flow: row;
+					    border: 1px solid;
+					    border-radius: 20px;
+					    padding: 10px 20px;
+					    align-items: center;
+					    justify-content: center;
+					    margin: 10px 0;
+					}
+					.video-tittle-section{
+						display: flex;
+						flex-flow: column;
+					}
+					.video-tittle-section>h4{
+						font-size: 20px;
+					    padding: 0;
+   						margin: 0;
+   						font-weight: bolder;
+					}
+					.video-tittle-section>p{
+						color: #fff;
+						margin: 0;
+						padding: 0;
+
+					}
+					.btn-link{
+						max-width: 50px;
+/*						padding: 10px;*/
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					@media screen and (max-width: 460px){
+						.video-section{
+							padding: 10px 2%;
+							width: 96%;
+						}
+						.video-tittle-section>h4{
+							    font-size: 16px;
+						}
+						.video-tittle-section>p{
+							    font-size: 13px;
+						}
+						.btn-link{
+							max-width: 35px;
+						}
+					}
+				</style>
+				<div class="video-section" onclick="">
+					<div class="video-tittle-section">
+						<h4>EVOX 參與《2023 ESG 永續峰會》</h4>
+						<p>分享主題 <span style="font-weight: bolder; font-style: italic;">企業上雲，淨零同時數位轉型</span> </p>
+					</div>
+					<a class="btn-link" href="https://www.youtube-nocookie.com/embed/EkzNnU2b9Kw?rel=0" data-lity>
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/icon/video-play.png" alt="play">
+					</a>
+				</div>
+					 <!-- video js -->
+					<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/jquery.js"></script>
+					<!-- <script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/lity.js"></script> -->
+					<script src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOX_website_JS_files/lity/Lity-V2.2"></script>
+					<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/lity/prism.js"></script>
+
+			</div>
+		</div>
+		<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-01/mobile-img/section-01-img%20copy%202_compress-1.webp" alt="全方位企業通訊平台">
+			</div>
+			<!-- 手機版圖片 -->
+  </div>
+  <!-- 單個區塊 -->
+  <div class="section section3 mobile-section-layout" data-percentage="100"  id="global-operation">
+  	<!-- 文字內容物 -->
+		<div class="text-contain">
+		<!-- 單個 -->
+			<div class="single-text-element dark-text-element global-two-cloume">
+				<h3>全球化經營</h3>
+				<p class="sub-tittle">EVOX 運行於公有雲，可輕易滿足行動分機、遠距辦公 WFH、全國或全球多據點等需求  </p>
+				<ul>
+					<li>辦公地點不再受到居住地、疫情或天災人禍等因素的限制</li>
+					<li>員工可以視需求選擇適合的裝置來使用</li>
+					<li>IT 或總務可遠距管理電話系統</li>
+					<li>快速建立多據點、分公司、新門市、海外據點 </li>
+				</ul>
+			</div>
+		</div>
+		<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/Section-02-white/mobile-img/section-02-img%20copy%202_compress.webp" alt="全球化經營">
+			</div>
+			<!-- 手機版圖片 -->
+  </div>
+  <!-- 單個區塊 -->
+  <div class="section section4 mobile-section-layout" id="information-security">
+  	<!-- 文字內容物 -->
+	<div class="text-contain">
+	<!-- 單個 -->
+		<div class="single-text-element white-text-element mobile-dark-text-element security-two-cloume">
+			<style type="text/css">
+				.inline-block{
+					display: flex;
+					align-items: baseline;
+				}
+				.security-link-space{
+					margin-left: 20px;
+				}
+				.mobile-show{
+					display: none;
+				}
+				.mobile-hide{
+					display: block;
+				}
+				@media screen and (max-width: 460px){
+					.mobile-show{
+					display: block;
+					}
+					.mobile-hide{
+						display: none;
+					}
+				}
+
+			</style>
+			<div class="inline-block"><h3>資訊安全</h3><a class="green-text-btn security-link-space mobile-hide" href="/tw/security" target="_blank">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+			<div class="security-two-cloume-layout">
+				<!-- 單個 -->
+				<div class="security-two-cloume-single-element white-text-element mobile-dark-text-element">
+					<h4>資訊安全與防護</h4>
+					<ul>
+						<li>EVOX 核心網位於 AWS，受 SBC 保護</li>
+						<li>EVOX App 以 OAuth 2.0 和 2-factor authentication 做身分驗證</li>
+					</ul>
+				</div>
+				<!-- 單個 -->
+				<div class="security-two-cloume-single-element white-text-element mobile-dark-text-element">
+					<h4>資安認證</h4>
+					<ul>
+						<li>通過台灣工業局 MAS 行動資安聯盟認證</li>
+						<li>通過弱點掃描與滲透測試</li>
+					</ul>
+				</div>
+				<!-- 單個 -->
+				<div class="security-two-cloume-single-element white-text-element mobile-dark-text-element">
+					<h4>個資保護</h4>
+					<ul>
+						<li>遵循歐洲 GDPR 與台灣個資保護法</li>
+					</ul>
+				</div>
+				<!-- 單個 -->
+				<div class="security-two-cloume-single-element white-text-element mobile-dark-text-element">
+					<h4>企業防詐騙</h4>
+					<ul>
+						<li>EVOX 與 <a class="green-text-btn" target="_blank" href="/tw/number-trust-by-evox-whoscall">Whoscall</a> 深度整合，保護員工不被惡意來電騷擾</li>
+					</ul>
+				</div>
+
+			</div>
+			<a class="green-text-btn mobile-show" href="/tw/security" target="_blank">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+
+		</div>
+	</div>
+	<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-03/mobile-img/section-03-img%20copy_compress-1.webp" alt="資訊安全">
+			</div>
+			<!-- 手機版圖片 -->
+  </div>
+  <!-- 單個區塊 -->
+  <div class="section section5 mobile-section-layout" id="customer-satisfaction">
+  	<!-- 文字內容物 -->
+	<div class="text-contain">
+		<!-- 單個 -->
+		<div class="single-text-element dark-text-element">
+			<h3>提高客戶滿意度</h3>
+			<p class="sub-tittle"><a class="green-text-btn" target="_blank" href="/tw/evox-connect/call-center">EVOX Connect</a> 協助企業打造完美售後服務</p>
+				<ul>
+					<li>EVOX 能與 CRM 或會員資料庫整合 </li>
+					<li>自動排序分配來電 ACD、快速 IVR 建立  </li>
+					<li>錄音與 ASR 語音轉文字 </li>
+					<li>通話後售後滿意度調查 </li>
+					<li>客服報表、聯繫歷史、分析</li>
+					<li>客服主管專用的教練與監聽模式</li>
+					<li>全通道通訊管道 <span class="gray-text" style="color: #d9d9d9;">＊即將推出</span></li>
+				</ul>
+				<!-- <a href="/tw/evox-connect/call-center" class="green-text-btn">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+		</div>
+	</div>
+	<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-04-white/mobile-img/section-04-img%20copy%202_compress.webp" alt="提高客戶滿意度">
+			</div>
+			<!-- 手機版圖片 -->
+</div>
+<!-- 單個區塊 -->
+  <div class="section section6 mobile-section-layout" id="increase-sales">
+  	<!-- 文字內容物 -->
+	<div class="text-contain">
+		<!-- 單個 -->
+		<div class="single-text-element white-text-element mobile-dark-text-element">
+			<h3>提升銷售業績</h3>
+			<div class="sales-two-cloume-layout">
+				<!-- 單個 -->
+				<div class="sales-two-cloume-single-element white-text-element mobile-dark-text-element">
+					<h4>EVOX <a class='green-text-btn' target="_blank" href="/tw/evox-connect/connect-knowledge">聯絡人資料庫</a></h4>
+					<ul>
+						<li>協助業務人員標註客戶屬性、記錄與潛在客戶的通訊歷史、設定提醒事項</li>
+						<li>可標記聯繫人的所屬公司，幫助 B2B 業務拓展</li>
+					</ul>
+					<!-- <a href="/tw/evox-connect/connect-knowledge" class="green-text-btn btn-in-box">聯絡人資料庫 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+				</div>
+				<!-- 單個 -->
+				<div class="sales-two-cloume-single-element white-text-element mobile-dark-text-element">
+					<h4>EVOX 雲端整合 </h4>
+					<ul>
+						<li>透過 <a href="/tw/developers/eclik" class="green-text-btn" target="_blank">ECLIK</a> / <a href="/tw/developers/ec-adk" class="green-text-btn" target="_blank">EC-ADK</a> 與第三方雲端 CRM 或 Sales 工具整合（如 Salesforce、Vital CRM、Super 8 等），除了加強工作效率外，更能優化顧客體驗、有助於業績提升</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-06-gray/mobile-img/section-06-img%20copy%202_compress.webp" alt="提升銷售業績">
+			</div>
+			<!-- 手機版圖片 -->
+  </div>
+
+  <!-- 單個區塊 -->
+  <div class="section section7 mobile-section-layout" id="business-management">
+  	
+	<!-- 文字內容物 -->
+	<div class="text-contain">
+		<!-- 單個 -->
+		<div class="single-text-element dark-text-element company-management-cloumn">
+			<h3>有效企業管理</h3>
+				<ul>
+					<li><a class="green-text-btn" target="_blank" href="/tw/evox/admin-center">線上管理系統</a>：協助管理各種設定與使用者權限，即使沒有專業 IT 背景也能輕鬆操作，根據公司需求隨時調整設定，並立即生效</li>
+					<li><a class="green-text-btn" target="_blank" href="/tw/evox/branch-management">分公司功能</a>：讓企業有效創建並管理各地的據點</li>
+					<li>通訊紀錄：查看所有通話資訊，包含來電號碼、日期時間、通話長度和通話類型等</li>
+				</ul>
+		</div>
+	</div>
+	<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-05-white/mobile-img/section-05-img%20copy%202_compress.webp" alt="有效企業管理">
+			</div>
+			<!-- 手機版圖片 -->
+  </div>
+
+  <!-- 單個區塊 -->
+  <div class="section section8 mobile-section-layout" id="low-costs">
+  	<!-- 文字內容物 -->
+	<div class="text-contain">
+		<!-- 單個 -->
+		<div class="single-text-element white-text-element mobile-dark-text-element">
+			<h3>降低成本</h3>
+				<ul>
+					<li>不需採購硬體總機，也不會有硬體維護費的產生 </li>
+					<li>支援<a href="/tw/evox/multiple-devices" class="green-text-btn" target="_blank">多裝置</a>，話機為選配，客戶可視公司需求採購</li>
+					<li>使用網路通訊，無須另外牽電話線</li>
+					<li>SaaS 服務，收費採訂閱制，客戶可採月繳、年繳，彈性管理財務</li>
+					<li>各分公司互撥分機內線免費，外撥採節費費率</li>
+					<li>透過雲端整合技術能大幅降低傳統 CTI 整合的費用，擁有更高的擴充彈性</li>
+				</ul>
+		</div>
+	</div>
+	<!-- 手機版圖片 -->
+			<div class="mobile-image-block">
+				<img class="" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/section-07/mobile-img/section-07-img%20copy_compress.webp" alt="降低成本">
+			</div>
+			<!-- 手機版圖片 -->
+  </div>
+
+<!-- 七大特色 -->
+  <!-- 單個區塊 - partner -->
+  <div class="section section9 " id="customer-story">
+  	<!-- 文字內容物 -->
+		<div class="customer-story-contain">
+		<!-- 單個 -->
+		<style>
+			.Customer-story-layout{
+				display: flex;
+				align-items: center;
+				flex-flow: column;
+			}
+			.Customer-story-layout>h2{
+				font-size: 48px;
+				font-weight: bolder;
+				margin: 10px 0;
+			}
+			.story-card-sections{
+				width: 100%;
+		    	display: flex;
+		    	align-items: center;
+		    	margin: 10px auto 10px auto;
+			}
+
+			.story-card{
+				display: flex;
+			    align-items: center;
+			    flex-flow: column;
+			    width: 33.3%;
+			    background: #F2F4F1;
+			    border-radius: 20px;
+			    transition: box-shadow .3s, opacity .3s,transform .3s;
+		    	transition-timing-function: ease-in;
+			}
+			.story-card:hover{
+				box-shadow: 1px 1px 7px #00000052;
+		    	transform: scale(1.03);
+			}
+			.story-card:nth-child(2){
+				margin: 0 42px;
+			}
+		/*	圖片*/
+			.story-img{
+				display: flex;
+			    align-items: center;
+			    justify-items: center;
+			    position: relative;
+			    overflow: hidden;
+			    width: 100%;
+			    min-height: 200px;
+			    border-radius: 20px 20px 0 0;
+			}
+			.customer-img{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    display: block;
+			    min-height: 100%;
+			    transform: translate(-50%,-50%);
+			    transition: .5s;
+			    -moz-transition: .5s;
+			    -o-transition: .5s;
+			    -webkit-transition: .5s;
+			    width: 120%;
+			    max-width: max-content!important;
+			}
+			.img-filter-box{
+				width: 100%;
+			    min-height: 200px;
+			    background: #33333354;
+			    z-index: 0;
+			}
+			.customer-logo{
+				position: absolute;
+				width: 100%;
+		/*	    top: 50%;
+			    left: 50%;
+			    display: block;
+			    min-width: 110%;
+			    min-height: 100%;
+			    transform: translate(-50%,-50%);
+			    transition: .5s;
+			    -moz-transition: .5s;
+			    -o-transition: .5s;
+			    -webkit-transition: .5s;*/
+
+			}
+			.img-filter-box,.customer-logo{
+				transition: opacity, .8s;
+				transition-timing-function: ease-in;
+			}
+			.story-card:hover .story-img>.img-filter-box{
+		/*		opacity: 0;*/
+
+		/*		transform: translate(-50%,-50%) scale(1.2);*/
+			}
+			.story-card:hover .story-img>.customer-logo{
+		/*		opacity: 0;*/
+
+			}
+		/*	文字*/
+			.styor-text-section{
+				padding: 5px 15px 10px 15px;
+			}
+			.story-tag{
+				font-size: 14px;
+		   		color: #5F6871;
+		   		padding: 5px 0;
+			}
+			.story-tittle-box{
+				min-height: 95px;
+				overflow: hidden;
+			}
+			.story-tittle-box>h3{
+				font-size: 21px;
+				line-height: 35px;
+				color:#243237;
+			}
+			.story-links-block{
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			}
+			.customer-story-link{
+				margin: 0 2%;
+			}
+			.new-tag_brandwall{
+				font-size: 13px;
+			    /* display: block; */
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    float: left;
+			    background: #FF9500;
+			    color: #fff;
+			    padding: 0px 5px;
+			    border-radius: 5px;
+			    position: relative;
+			    /* top: 6px; */
+			    margin: 0 5px;
+			    height: 22px;
+			}
+			/*	品牌logo*/
+			.brand-wall-section{
+				max-width: 1030px;
+				width: 100%;
+				margin: 10px auto;
+				display: flex;
+			    align-items: center;
+			    flex-flow: column;
+			    justify-content: center;
+			}
+			.logo-list{
+				display: flex;
+				align-items: center;
+				flex-flow: row wrap;
+				justify-content: space-between;
+
+			}
+			.single-logo{
+				min-width: 141px;
+			    max-width: 142px;
+			    margin: 0 30px;
+			}
+			@media screen and (max-width: 1140px){
+				.story-card-sections{
+					align-items: stretch;
+					padding: 0 0px;
+				}
+				.story-links-block{
+					flex-flow: column wrap;
+					align-items: flex-start;
+				}
+				.styor-text-section{
+					display: flex;
+				    flex-flow: column;
+				    justify-content: space-around;
+				}
+				.story-card:nth-child(2){
+					margin: 0 20px;
+				}
+			}
+			@media screen and (max-width: 840px){
+				
+				.story-img{
+					min-height: 140px;
+				}
+				.customer-img{
+					width: auto;
+					max-width: 100%;
+				}
+				.logo-list{
+					display: none;
+/*					justify-content: center;*/
+				}
+			}
+			@media screen and (max-width: 640px){
+				.story-card-sections{
+					flex-flow: column;
+					margin: 0px auto 60px auto;
+				}
+				.story-card{
+					width: 100%;
+					margin: 20px auto;
+				}
+				.img-filter-box{
+					min-height: 320px;
+				}
+				.story-img{
+					min-height: 320px; 
+		    		height: 320px;
+				}
+				.story-links-block{
+					flex-flow: row;
+				}
+				.story-card:nth-child(2){
+					margin: 0 auto;
+				}
+				.single-logo{
+					max-width: 48%;
+		    		margin: 0 1%;
+				}
+			}
+			@media screen and (max-width: 460px){
+				.customer-story-contain{
+					margin: 20px auto;
+				}
+				.story-card-sections{
+					margin: 0px auto 0px auto;
+				}
+				.brand-wall-section{
+					margin: 0px auto;
+				}
+				.logo-list{
+					display: flex;
+				}
+				.Customer-story-layout>h2{
+					font-size: 34px;
+				}
+				.story-tittle-box{
+					min-height: auto;
+				}
+				.styor-text-section{
+					padding: 10px 15px;
+				}
+			}
+			@media screen and (min-width: 850px) and (max-height: 700px){
+				.brand-wall-section{
+					display: none;
+				}
+				.story-img{				
+    				min-height: 170px;
+				}
+				.img-filter-box{
+					min-height: 170px;
+				}
+			}
+		</style>
+		
+		<!-- 客戶故事三個 -->
+			<div class="Customer-story-layout">
+				<h2>大企業和新創公司都選擇 EVOX</h2>
+				<div class="story-card-sections">
+
+					<!-- 單張卡片 -->
+						<div class="story-card digit2">
+							<!-- 圖片 -->
+							<div class="story-img">
+								<!-- BG -->
+								<img loading="lazy" class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/Kai-yuan-img.jpg" alt="開原報關行">
+								<div class="img-filter-box"></div>
+								<!-- logo -->
+								<img class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/kycs.png" alt="開原報關行">
+							</div>
+							<!-- 文字 -->
+							<div class="styor-text-section">
+								<div class="story-tag"><span>進出口報關服務  |  開原報關•開元報關</span></div>
+								<div class="story-tittle-box">
+									<h3>從 IP PBX 到雲端總機，報關業龍頭從未停下數位轉型的腳步</h3>
+								</div>
+								<!-- 連結 -->
+								<div class="story-links-block">
+									<a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/kai-yuan" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+									<a class="customer-story-link green-text-btn" href="https://www.inside.com.tw/article/29434-kycs-evox" target="_blank" >媒體專訪 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- 單張卡片 -->
+						<div class="story-card digit2">
+							<!-- 圖片 -->
+							<div class="story-img">
+								<!-- BG -->
+								<img loading="lazy" class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/ALP-img.jpg" alt="ALP永聯物流">
+								<div class="img-filter-box"></div>
+								<!-- logo -->
+								<img loading="lazy" class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/alp.png" alt="ALP永聯物流">
+							</div>
+							<!-- 文字 -->
+							<div class="styor-text-section">
+								<div class="story-tag"><span>智慧倉儲物流 ｜ ALP 永聯物流</span></div>
+								<div class="story-tittle-box">
+									<h3>物流業的顛覆者，永聯物流開發採用雲端電話系統</h3>
+								</div>
+								<!-- 連結 -->
+								<div class="story-links-block">
+									<a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/alp" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+									
+								</div>
+
+							</div>
+						</div>
+
+						<!-- 單張卡片 -->
+						<div class="story-card digit2">
+							<!-- 圖片 -->
+							<div class="story-img">
+								<!-- BG -->
+								<img loading="lazy" class="customer-img" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/img/TKU-img.jpg" alt="淡江大學">
+								<div class="img-filter-box"></div>
+								<!-- logo -->
+								<img loading="lazy" class="customer-logo" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/Logo/TKU-logo-389px-1.png" alt="淡江大學">
+							</div>
+							<!-- 文字 -->
+							<div class="styor-text-section">
+								<div class="story-tag"><span>大專院校 ｜ 淡江大學</span></div>
+								<div class="story-tittle-box">
+									<h3>數位永續雙軌並進 淡江大學透過EVOX整合Teams樹立智慧校園標竿</h3>
+								</div>
+								<!-- 連結 -->
+								<div class="story-links-block">
+									<!-- <a class="customer-story-link green-text-btn" href="https://blog.evoxglobal.com/tw/testimonials/turbo-tent" target="_blank" >客戶故事 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+									<a class="customer-story-link green-text-btn" href="https://www.businessweekly.com.tw/style/indep/1003345" target="_blank" ><span class="new-tag_brandwall" >NEW</span>媒體專訪 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+								</div>
+
+							</div>
+						</div>
+				</div>
+
+				<!-- 其他logo -->
+				<div class="brand-wall-section">
+					<div class="logo-list">
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/volkswagen.png" alt="台灣福斯">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/parenting.png" alt="親子天下">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/klook.png" alt="Klook">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/ob.png" alt="OB嚴選">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/tao-chicken-2.png" alt="桃城雞排">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/EiP-TV.png" alt="分眾傳媒">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/imc.png" alt="精英集團">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/fengyu.png" alt="豐譽企業團隊">
+						</div>
+						<!-- 單一個 -->
+						<!-- <div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/dotdot.png" alt="點點全球">
+						</div> -->
+						<!-- <div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/TKU-logo-3.png" alt="淡江大學">
+						</div> -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/awec.png" alt="世久營造">
+						</div>
+						<!-- 單一個 -->
+						<div class="single-logo digit2">
+							<img loading="lazy" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Customer-story/logo-gray/surveycake.png" alt="SurveyCake">
+						</div>
+
+					</div>
+					<a class="customer-story-link green-text-btn" href="https://www.evoxglobal.com/tw/customers" >了解更多客戶案例 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<!-- 客戶故事結束 -->
+		</div>
+  </div>
+
+  <!-- 單個區塊 - industry -->
+  <div class="section section10 " id="industries">
+  	<!-- 文字內容物 -->
+		<div class="industry-contain">
+			<style>
+				.industry-layout{
+					width: 100%;
+					display: flex;
+					align-items: center;
+					flex-flow: column;
+				}
+				.industry-layout>h2{
+					font-size: 48px;
+					font-weight: bolder;
+					margin: 10px 0;
+				}
+				.industry-block{
+					width: 100%;
+				    display: flex;
+				    align-items: center;
+				    justify-content: space-around;
+				    flex-flow: row wrap;
+				}
+				.industry-card{
+					display: flex;
+				    align-items: center;
+				    flex-flow: column wrap;
+				    width: 47%;
+				    background: #F2F4F1;
+				    border-radius: 20px;
+				    margin: 10px;
+				    transition: box-shadow .3s, opacity .3s,transform .3s;
+				    transition-timing-function: ease-in;
+				}
+				.industry-card:hover{
+					box-shadow: 1px 1px 7px #00000052;
+			    	transform: scale(1.03);
+				}
+				/*.industry-card:nth-child(2),.industry-card:nth-child(3){
+
+				}
+				.industry-card:nth-child(1),.industry-card:nth-child(4){
+					
+				}*/
+				.industry-img{
+					display: flex;
+				    align-items: center;
+				    justify-items: center;
+				    position: relative;
+				    overflow: hidden;
+				    width: 100%;
+				    min-height: 248px;
+				    border-radius: 20px;
+				    background: #5f68718c;
+				   	align-items: end;
+			    	justify-content: center;
+				}
+				.industry-signle-img{
+					position: absolute;
+				    top: 50%;
+				    left: 50%;
+				    display: block;
+				    min-height: 100%;
+				    transform: translate(-50%,-50%);
+				    transition: .5s;
+				    -moz-transition: .5s;
+				    -o-transition: .5s;
+				    -webkit-transition: .5s;
+				    width: 120%;
+				    max-width: max-content!important;
+
+				}
+				.enterprise-bg{
+					background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/industry/industry-01/industry-01-img_compress.webp");
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    background-position: center;
+				}
+				.smb-bg{
+					background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/industry/industry-03/industry-img-03_compress.webp");
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    background-position: center;
+				}
+				.multi-location-bg{
+					background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/industry/industry-02/industry-img-02_compress.webp");
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    background-position: center;
+				}
+				.start-up-bg{
+					background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/industry/industry-04/industry-img-04_compress.webp");
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    background-position: center;
+				}
+				.industry-text{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-flow: column;
+					width: 100%;
+					padding: 20px;
+				}
+				.industry-tittle{
+					width: 80%;
+				    padding: 0 20px;
+/*				    border-bottom: 2px solid #fff;*/
+				    text-align: center;
+				}
+				.industry-tittle>h3{
+					font-size: 32px;
+					margin: 10px auto;
+				}
+				.industry-btn{
+					width: 80%;
+				    padding: 0 20px;
+				    text-align: center;
+				}
+				@media screen and (max-width: 840px){
+					.industry-section{
+						margin: 20px auto 40px auto;
+					}
+					.industry-block{
+						flex-flow: row wrap;
+						justify-content: center;
+					}
+					.industry-card{
+						width: 36%;
+						margin: 10px 2%;
+					}
+					.industry-img{
+						min-height: 308px;
+					}
+				}
+				@media screen and (max-width: 640px){
+					.industry-section{
+						margin: 20px auto 40px auto;
+					}
+					.industry-card{
+						width: 41%;
+					}
+					.industry-img{
+						min-height: 288px;
+					}
+				}
+				@media screen and (max-width: 460px){
+					.industry-contain{
+						margin: 20px auto;
+					}
+					.industry-layout>h2{
+						font-size: 34px;
+					}
+					.industry-block{
+						flex-flow: column;
+					}
+					.industry-card{
+						width: 90%;
+					}
+					.industry-img{
+						min-height: 154px;
+					}
+					/*產業背景圖*/
+					.start-up-bg{
+						background-size: 150%;
+    					background-position-x: -120px;
+					}
+				}
+				@media screen and (min-width: 850px) and (max-height: 700px){
+					.industry-img{
+						    min-height: 178px;
+					}
+				}
+			</style>
+			<!-- 產業別 -->
+			<div class="industry-layout">
+				<h2>EVOX 適合各種規模與產業的公司 </h2>
+				<div class="industry-block">
+					<!-- 單一個 -->
+					<div class="industry-card enterprise-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/enterprise-img.jpg)">
+						<!-- 圖片 -->
+						<div class="industry-img">
+							<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+							<!-- 文字 -->
+							<div class="industry-text">
+								<div class="industry-tittle"><h3 class="white-text">大型企業</h3></div>
+								<div class="industry-btn"><a class="customer-story-link white-text-btn" target="_blank" href="/tw/solutions/enterprise" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 單一個 -->
+					<div class="industry-card smb-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/smb-img.jpg)">
+						<!-- 圖片 -->
+						<div class="industry-img " >
+							<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+							<!-- 文字 -->
+							<div class="industry-text">
+								<div class="industry-tittle"><h3 class="white-text">中小企業</h3></div>
+								<div class="industry-btn"><a class="customer-story-link white-text-btn" target="_blank" href="/tw/solutions/small-medium-business" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 單一個 -->
+					<div class="industry-card multi-location-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/multi-location-img.jpg)">
+						<!-- 圖片 -->
+						<div class="industry-img" >
+							<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+							<!-- 文字 -->
+							<div class="industry-text">
+								<div class="industry-tittle"><h3 class="white-text">門市多據點</h3></div>
+								<div class="industry-btn"><a class="customer-story-link white-text-btn" target="_blank" href="/tw/solutions/multiple-locations" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 單一個 -->
+					<div class="industry-card start-up-bg digit2 lazy" data-bg="url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/industry-img/221227/start-up-img.jpg)">
+						<!-- 圖片 -->
+						<div class="industry-img" >
+							<!-- <img class="industry-signle-img"  src="" alt="大型企業"> -->
+							<!-- 文字 -->
+							<div class="industry-text">
+								<div class="industry-tittle"><h3 class="white-text">新創公司</h3></div>
+								<div class="industry-btn"><a class="customer-story-link white-text-btn" target="_blank" href="/tw/solutions/startup" >了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+  </div>
+
+    <!-- 單個區塊 - industry -->
+    <style type="text/css">
+				.footer-bg{
+					width: 100%;
+				    display: flex;
+				    background: url(https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/footer/footer-bg-1.png);
+				    background-size: 100%;
+				    background-repeat: repeat-x;
+				    background-position: 0px 0%;
+				    align-items: center;
+				    flex-flow: column;
+				    height: 100vh;
+				}
+				.footer-layout{
+					position: relative;
+					display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    flex-flow: column;
+				    width: 90%;
+				    margin: 0 auto;
+				    max-width: 1100px;
+				    height: 100vh;
+				}
+
+				.footer-tittle{
+/*					height: 30vh;*/
+				}
+				.footer-tittle>h2{
+					color: #fff;
+					font-size: 32px;
+					font-weight: bolder;
+					margin: 0;
+				}
+				.CTA-box{
+					height: 20vh;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    padding: 40px 0 160px 0;
+				}
+				.cta-link{
+					color: #ffffff;
+					font-size: 72px;
+					font-weight: bolder;
+					margin:20px auto;
+					cursor: pointer;
+				}
+				.footer-end{
+					position: absolute;
+				    bottom: 0px;
+				    width: 100%;
+				}
+				.partner-logo-group{
+					display: flex;
+				    flex-flow: row wrap;
+				    align-items: center;
+				    justify-content: center;
+				    width: 100%;
+				    padding-bottom: 10px;
+				}
+				.partner-single-logo{
+					width: 15%;
+					max-width: 163px;
+					margin: 0 1%;
+					height: 70px;
+				    overflow: hidden;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				}
+				.partner-logo-tittle{
+					width: 100%;
+					font-size:16px;
+					color: #ffffff;
+					margin: 0;
+				}
+				.social-set{
+					display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    width: 100%;
+				    border-top: 1px solid #ffffff;
+				    padding: 10px 0;
+				}
+				.social-set>p{
+					color: #ffffff;
+					font-size: 12px;
+				}
+				.company-inline{
+					padding: 0 20px;
+				}
+				.company-inline>p{
+					color: #ffffff;
+					font-size: 12px;
+				}
+				.icon-link{
+					width: 43px;
+				    height: 43px;
+				    display: block;
+				}
+				.icon-link>img{
+					width: 33px;
+					height: 33px;
+				}
+				.text-link{
+					color: #ffffff;
+					font-size: 12px;
+					padding: 0 5px;
+				}
+				
+				.social-links{
+					display: flex;
+    				align-items: center;
+				}
+				@media only screen and (max-width: 460px){
+					.footer-contain{
+						height: 100%;
+					}
+					.footer-layout{
+						justify-content: flex-end;
+						height: 100%;
+					}
+					.footer-bg{
+						height: 100%;
+						padding: 20px 0;
+						background-position: 50% 0%;
+						background-size: 300%;
+					}
+					.footer-end{
+						position: relative;
+					}
+					.footer-tittle>h2{
+						font-size: 22px;
+					}
+					.CTA-box{
+						height: 140px;
+						padding: 20px 0 40px 0;
+					}
+					.cta-link{
+						font-size: 40px;
+					}
+					.partner-logo-tittle{
+						margin: 0;
+					}
+					.partner-single-logo{
+						width: 30%;
+					    height: 50px;
+					    overflow: hidden;
+					    display: flex;
+					    align-items: center;
+					}
+					.social-set{
+						flex-flow: column;
+					}
+					.icon-link{
+						height: 38px;
+					}
+				}
+			</style>
+  <div class="section section11 " id="contact-us">
+  	<!-- 文字內容物 -->
+		<div class="footer-contain">
+			<div class="footer-bg">
+			
+			<div class="footer-layout">
+				<div class="footer-tittle">
+					<h2>實踐數位轉型 提升企業競爭力</h2>
+				</div>
+				<!-- CTA -->
+				<div class="CTA-box">
+					<a class="cta-link white-text-btn" href="/tw/contact-us">聯絡我們 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				<!-- 底層 sociial 底層-->
+				<div class="footer-end">
+					<!-- 合作夥伴 -->
+					<div class="partner-logo-group">
+						<p class="partner-logo-tittle">合作夥伴</p>
+						<!-- 單一個 -->
+						<div class="partner-single-logo">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/footer/logo/FET.png" alt="遠傳電信">
+						</div>
+						<!-- 單一個 -->
+						<div class="partner-single-logo">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/footer/logo/gogolook.png" alt="gogolook">
+						</div>
+						<!-- 單一個 -->
+						<div class="partner-single-logo">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/footer/logo/GSS.png" alt="叡揚科技">
+						</div>
+						<!-- 單一個 -->
+						<div class="partner-single-logo">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/footer/logo/jabra.png" alt="Jabra">
+						</div>
+						<!-- 單一個 -->
+						<div class="partner-single-logo">
+							<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Homepage/phase2023_04_new-version/footer/logo/super8.png" alt="super8">
+						</div>
+					</div>
+					<!-- 最底部 -->
+					<div class="social-set">
+						<div class="company-inline">
+						<p>©2023 E2 Nova 易得雲端股份有限公司 版權所有</p>
+						</div>
+						<div class="social-links">
+							<a class="icon-link footer_text_link" href="https://www.facebook.com/evoxglobal/">
+							 	<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/fb-icon.png" alt="facebook"  >
+							</a>
+							<a class="icon-link footer_text_link" href="https://www.instagram.com/evoxglobal/?hl=en">
+								<img src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/instagram-icon.png" alt="instagram">
+							</a>
+							<a class="icon-link footer_text_link" href="https://www.youtube.com/channel/UCxZHSZ03BKSUsgJuv7_EiNg">
+								<img src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/youtube-icon.png" alt="youtube" >
+							</a>
+							<a class="text-link footer_text_link" href="/tw/privacy-policy" >隱私政策</a>
+							<a class="text-link footer_text_link" href="/tw/terms-of-use" >使用條款</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+
+</div>
+
+<script>
+
+// 	// TO DO 完成前整合進同一個文件
+
+// 	// page-loader start  
+// 	// --------------------------------------------------------------------------
+
+	// pageLoading({
+
+	// 	  // background color of the progress bar
+	// 	  barColor:'#58B805',
+
+	// 	  // top position of the progress bar
+	// 	  barTop:'50%',
+
+	// 	  // top position of the percentage text
+	// 	  textTop:'55%', 
+
+	// 	  // background color of the loading overlay
+	// 	  backColor:'rgba(245, 245, 245, 1)',
+
+	// 	  // background color of the progress bar
+	// 	  backBarColor:'#D9EFBE', 
+
+	// 	  // text inside the progress bar
+	// 	  text:'Loading <b>{process} %</b>',
+
+	// 	  // show of hide the percentage text
+	// 	  textVisible:true, 
+
+	// 	  loadOut:true  
+		  
+	// });
+
+// $(document).ready(function(){		
+	
+// 	// --------------------------------------------------------------------------
+
+	
+
+// 	// // Add smooth scrolling to all links
+// 	//  $("a").on('click', function(event) {
+	 	
+// 	//  	// let hash=window.location.hash;
+// 	//  	// window.location.hash = hash;
+// 	//  // Make sure this.hash has a value before overriding default behavior
+// 	// 	    if (this.hash !== "") {
+// 	// 	        // Prevent default anchor click behavior
+// 	// 	        event.preventDefault();
+// 	//              // Store hash
+// 	// 	        var hash = this.hash;
+// 	// 	        // var hash = window.location.hash.substr(1);
+// 	// 	        console.log('Hash:'+hash);
+// 	// 	        var windowsize = $window.width();
+// 	// 		 	var hashHight = Math.floor($(hash).offset().top);
+// 	// 			var innerHeight = Math.floor($('.header-inner').height());
+// 	// 			var intinnerHight = parseInt(innerHeight);
+// 	// 			var inthashHight = parseInt(hashHight);
+// 	// 			var totalHight = inthashHight - intinnerHight;
+// 	// 			console.log('hashHight:'+hashHight);
+// 	// 			console.log('innerHeigh'+ innerHeight);
+// 	// 			console.log('滑動高度：'+ totalHight);
+		        
+// 	// 	        // Using jQuery's animate() method to add smooth page scroll
+// 	// 	       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		        
+// 	// 	        // $( 'html, body' ).scrollTop( 300 );
+// 	// 	        // console.log('滑動高度：'+ $(hash).offset().top + innerHeigh - 120);
+// 	// 	        if (windowsize < 460) {
+// 	//         		// console.log("手機視窗");
+// 	//         		$('html, body').stop().animate({
+// 	// 	            scrollTop: totalHight
+// 	// 	            }, 800, function() {
+// 	// 	                    // Add hash (#) to URL when done scrolling (default click behavior)
+// 	// 			            window.location.hash = hash;
+// 	// 			    });
+// 	//         	}else{
+// 	//         		$('html, body').animate({
+// 	// 	            scrollTop: $(hash).offset().top
+// 	// 	            }, 800, function() {
+// 	// 	                    // Add hash (#) to URL when done scrolling (default click behavior)
+// 	// 			            window.location.hash = hash;
+// 	// 			    });
+// 	//         	}
+		        
+// 	// 		} // End if
+// 	// 	});
+
+// 	$("a[href^='#']").click(function(e) {
+// 				e.preventDefault();
+				
+// 				var position = $($(this).attr("href")).offset().top;
+
+// 				$("body, html").animate({
+// 					scrollTop: position
+// 				}, 800 /* speed */ );
+// 			});
+// 	// --------------------------------------------------------------------------
+
+// 	// 移除浮水印 (TO DO Lincense)
+	
+// 	// Initialising fullPage.js
+// 	// new fullpage('#fullpage', {
+// 	//   navigation: true,
+	  
+// 	//   // Required for ScrollMagic to work
+// 	//   scrollBar: true
+// 	// });
+// 	// fullpage
+
+// 	new fullpage('#fullpage', {
+// 		navigation: false,
+// 		sectionSelector: '.section',
+//     	scrollOverflow: true,
+// 		// verticalCentered: true,
+// 		paddingTop: '0px',
+// 		// anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage','fivePage','sixPage','sevenPage','eighthPage','nicePage','partnerPage', 'industryPage','footerPage'],
+// 		// menu: '#myMenu',
+// 		// Required for ScrollMagic to work
+// 	  	scrollBar: true,
+// 	  	offsetSections: true,
+// 		offsetSectionsKey: 'Y29kZXBlbi5pb196MDZiMlptYzJWMFUyVmpkR2x2Ym5NPWhPNA==',
+//         responsiveWidth: 460,
+//         licenseKey: 'L60V6-99ML8-TK29I-13J58-KMNQQ'
+// 	});
+
+// 	// --------------------------------------------------------------------------
+
+// 	// ScrollMagic
+// 	var controller = new ScrollMagic.Controller()
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 0 trigger
+// 	var zero = new ScrollMagic.Scene({
+// 	  triggerElement: '#home',
+// 	  duration: "100%",
+// 	})
+// 	// .setClassToggle('.fullpage', 'background-section0')
+// 	.setClassToggle('.image-box-0', 'image-change');
+	
+// 	// .addTo(controller);
+
+
+// 	// section 0 dot-menu hide trigger
+// 	var zerodotmenuhide = new ScrollMagic.Scene({
+// 	  triggerElement: '#home',
+// 	  duration: "100%",
+// 	})
+
+// 	.setClassToggle('.dot-menu', 'dot-hide');
+// 	// .addTo(controller);
+
+
+// 	// section 0 mouse trigger
+// 	var zeromouse = new ScrollMagic.Scene({
+// 	  triggerElement: '#home',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.mouse-down','mouse-scroll-active');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu00 = new ScrollMagic.Scene({
+// 	  triggerElement: '#home',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.firstPage', 'active');
+
+// 	controller.addScene([zero,zerodotmenuhide,zeromouse,rightdotmenu00]);
+
+// 	// --------------------------------------------------------------------------
+	
+// 	// section 1 trigger
+// 	var first = new ScrollMagic.Scene({
+// 	  triggerElement: '#benefit',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.fullpage', 'background-section1');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-01 trigger
+// 	var sevencontent = new ScrollMagic.Scene({
+// 	  triggerElement: '#benefit',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-01 trigger
+// 	var dropmenu01 = new ScrollMagic.Scene({
+// 	  triggerElement: '#benefit',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu01 = new ScrollMagic.Scene({
+// 	  triggerElement: '#benefit',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.secondPage', 'active');
+	
+
+// 	// $(window).location.hash = '#section99';
+
+	
+
+// 	controller.addScene([first,sevencontent,dropmenu01,rightdotmenu01]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 2 trigger
+// 	var second = new ScrollMagic.Scene({
+// 	  triggerElement: '#save-carbon',
+// 	  duration: "100%",
+// 	})
+
+// 	// .setClassToggle('.fullpage', 'background-section2')
+// 	.setClassToggle('.image-box-1', 'image-change');	
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-02 trigger
+// 	var sevencontent2 = new ScrollMagic.Scene({
+// 	  triggerElement: '#save-carbon',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-02 trigger
+// 	var dropmenu02 = new ScrollMagic.Scene({
+// 	  triggerElement: '#save-carbon',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu02 = new ScrollMagic.Scene({
+// 	  triggerElement: '#save-carbon',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.thirdPage', 'active');
+
+// 	controller.addScene([second,sevencontent2,dropmenu02,rightdotmenu02]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 3 trigger
+// 	var third = new ScrollMagic.Scene({
+// 	  triggerElement: '#global-operation',
+// 	  duration: "100%",
+// 	})
+	
+// 	// .setClassToggle('.fullpage', 'background-section3')
+// 	.setClassToggle('.image-box-2', 'image-change');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-03 trigger
+// 	var sevencontent3 = new ScrollMagic.Scene({
+// 	  triggerElement: '#global-operation',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-03 trigger
+// 	var dropmenu03 = new ScrollMagic.Scene({
+// 	  triggerElement: '#global-operation',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu03 = new ScrollMagic.Scene({
+// 	  triggerElement: '#global-operation',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.fourthPage', 'active');
+
+// 	controller.addScene([third,sevencontent3,dropmenu03,rightdotmenu03]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 4 trigger
+// 	var four = new ScrollMagic.Scene({
+// 	  triggerElement: '#information-security',
+// 	  duration: "100%",
+// 	})
+	
+// 	// .setClassToggle('.fullpage', 'background-section4')
+// 	.setClassToggle('.image-box-3', 'image-change');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-04 trigger
+// 	var sevencontent4 = new ScrollMagic.Scene({
+// 	  triggerElement: '#information-security',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-04 trigger
+// 	var dropmenu04 = new ScrollMagic.Scene({
+// 	  triggerElement: '#information-security',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu04 = new ScrollMagic.Scene({
+// 	  triggerElement: '#information-security',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.fivePage', 'active');
+
+// 	controller.addScene([four,sevencontent4,dropmenu04,rightdotmenu04]);
+
+// 	// --------------------------------------------------------------------------
+	
+// 	// section 5 trigger
+// 	var five = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-satisfaction',
+// 	  duration: "100%",
+// 	})
+	
+// 	// .setClassToggle('.fullpage', 'background-section5')
+// 	.setClassToggle('.image-box-4', 'image-change');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-05 trigger
+// 	var sevencontent5 = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-satisfaction',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-05 trigger
+// 	var dropmenu05 = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-satisfaction',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu05 = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-satisfaction',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.sixPage', 'active');
+
+// 	controller.addScene([five,sevencontent5,dropmenu05,rightdotmenu05]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 6 trigger
+// 	var six = new ScrollMagic.Scene({
+// 	  triggerElement: '#increase-sales',
+// 	  duration: "100%",
+// 	})
+	
+// 	// .setClassToggle('.fullpage', 'background-section6')
+// 	.setClassToggle('.image-box-5', 'image-change');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-06 trigger
+// 	var sevencontent6 = new ScrollMagic.Scene({
+// 	  triggerElement: '#increase-sales',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-06 trigger
+// 	var dropmenu06 = new ScrollMagic.Scene({
+// 	  triggerElement: '#increase-sales',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu06 = new ScrollMagic.Scene({
+// 	  triggerElement: '#increase-sales',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.sevenPage', 'active');
+
+// 	controller.addScene([six,sevencontent6,dropmenu06,rightdotmenu06]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 7 trigger
+// 	var seven = new ScrollMagic.Scene({
+// 	  triggerElement: '#business-management',
+// 	  duration: "100%",
+// 	})
+	
+// 	// .setClassToggle('.fullpage', 'background-section7')
+// 	.setClassToggle('.image-box-6', 'image-change');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-07 trigger
+// 	var sevencontent7 = new ScrollMagic.Scene({
+// 	  triggerElement: '#business-management',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-07 trigger
+// 	var dropmenu07 = new ScrollMagic.Scene({
+// 	  triggerElement: '#business-management',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');	
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu07 = new ScrollMagic.Scene({
+// 	  triggerElement: '#business-management',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.eighthPage', 'active');
+
+// 	controller.addScene([seven,sevencontent7,dropmenu07,rightdotmenu07]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 8 trigger
+// 	var eight = new ScrollMagic.Scene({
+// 	  triggerElement: '#low-costs',
+// 	  duration: "100%",
+// 	})
+	
+// 	// .setClassToggle('.fullpage', 'background-section8')
+// 	.setClassToggle('.image-box-7', 'image-change');
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-08 trigger
+// 	var sevencontent8 = new ScrollMagic.Scene({
+// 	  triggerElement: '#low-costs',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-08 trigger
+// 	var dropmenu08 = new ScrollMagic.Scene({
+// 	  triggerElement: '#low-costs',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu08 = new ScrollMagic.Scene({
+// 	  triggerElement: '#low-costs',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.nicePage', 'active');
+
+// 	controller.addScene([eight,sevencontent8,dropmenu08,rightdotmenu08]);
+
+// 	// --------------------------------------------------------------------------
+
+
+// 	// section 9 客戶故事 trigger
+// 	// var nice = new ScrollMagic.Scene({
+// 	//   triggerElement: '#section9',
+// 	//   duration: "100%",
+// 	// })
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-09 trigger
+// 	var sevencontent9 = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-story',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-09 trigger
+// 	var dropmenu09 = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-story',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu09 = new ScrollMagic.Scene({
+// 	  triggerElement: '#customer-story',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.partnerPage', 'active');
+
+// 	controller.addScene([sevencontent9,dropmenu09,rightdotmenu09]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 10 產業類別 trigger
+// 	// var ten = new ScrollMagic.Scene({
+// 	//   triggerElement: '#section10',
+// 	//   duration: "100%",
+// 	// })
+// 	// .addTo(controller);
+
+// 	// section hide-tittle-10 trigger
+// 	var sevencontent10 = new ScrollMagic.Scene({
+// 	  triggerElement: '#industries',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-10 trigger
+// 	var dropmenu10 = new ScrollMagic.Scene({
+// 	  triggerElement: '#industries',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu10 = new ScrollMagic.Scene({
+// 	  triggerElement: '#industries',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.industryPage', 'active');
+
+// 	controller.addScene([sevencontent10,dropmenu10,rightdotmenu10]);
+
+// 	// --------------------------------------------------------------------------
+
+// 	// section 11 Footer trigger
+// 	var eleven = new ScrollMagic.Scene({
+// 	  triggerElement: '#contact-us',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.dot-menu', 'dot-hide')
+// 	.addTo(controller);
+
+// 	// section hide-tittle-11 trigger
+// 	var sevencontent11 = new ScrollMagic.Scene({
+// 	  triggerElement: '#contact-us',
+// 	  duration: "100%",
+// 	})
+// 	// 隱藏header選單
+// 	.setClassToggle('.moveable-menu', 'header-hide');
+// 	// .addTo(controller);
+
+// 	// section show-drop-menu-11 trigger
+// 	var dropmenu11 = new ScrollMagic.Scene({
+// 	  triggerElement: '#contact-us',
+// 	  duration: "100%",
+// 	})
+// 	//顯示條
+// 	.setClassToggle('.header-menu-show', 'move-menu-down');
+// 	// .addTo(controller);
+
+// 	// 左側選單顯示
+// 	var rightdotmenu11 = new ScrollMagic.Scene({
+// 	  triggerElement: '#contact-us',
+// 	  duration: "100%",
+// 	})
+// 	.setClassToggle('.footerPage', 'active');
+
+// 	controller.addScene([eleven,sevencontent11,dropmenu11,rightdotmenu11]);
+
+	
+// 	// --------------------------------------------------------------------------
+
+	
+
+// 	// image-resize
+
+// 		// 定義
+// 		var $window = $(window);
+// 		var $rotationBox = $('#rotation');
+// 		// 視窗變形
+// 		$window.bind('resize', function(){
+    
+// 		    if ($rotationBox.hasClass('hide')){
+// 		      $rotationBox.css({top: -1 * $window.height()});
+// 		    }
+		    
+// 		    $('.bg-top').each(function(){
+// 		      resizeImages($(this));
+// 		    });
+
+// 		    $('.mobile-bg-top').each(function(){
+// 		      mobileresizeImages($(this));
+// 		    });
+	    
+// 	  });
+
+// 	// 確認 browser 尺寸
+
+// 		function checkWidth() {
+// 	        var windowsize = $window.width();
+// 	        if (windowsize < 460) {
+// 	        	console.log("手機視窗");
+// 	        }
+// 	    }
+// 	    // Execute on load
+// 	    checkWidth();
+// 	    // Bind event listener
+// 	    $(window).resize(checkWidth);
+
+// 	// 圖片處理
+// 	  function resizeImages(images){
+    
+// 	    var newWidth = $window.width();
+// 	    var newHeight = $window.height();
+
+// 	    images.each(function(){
+// 	      var $img = $(this);
+// 	      $img.width(newWidth);
+
+// 	      $img.css({
+// 	        'width' : 'auto'
+// 	      });
+
+// 	      $img.height(newHeight);
+
+// 	      if ($img.width() < newWidth){
+// 	        $img.css({
+// 	          'width' : '100%',
+// 	          'height' : 'auto'
+// 	        });
+	        
+// 	        if ($img.height() < newHeight){
+// 	          $img.height(newHeight);
+// 	        }
+// 	      }
+// 	    });
+// 	  }
+
+	  
+// 	  function loadImages(){
+// 	    var $images = $('.bg-top');
+	    
+// 	    $images.each(function(){
+// 	      var $img = $(this);
+// 	      var src = $img.attr('src');
+	      
+// 	      if ($img[0].complete){
+// 	        resizeImages($img);
+// 	      }else{
+// 	        $img.load(function(){
+// 	          resizeImages($img);
+// 	        }).attr('src', src);
+// 	      }
+// 	    });
+// 	  }
+// 	  loadImages();
+
+// 	  function mobileresizeImages(m_images){
+    
+// 	    var m_newWidth = $window.width();
+// 	    var m_newHeight = $window.height();
+
+// 	    m_images.each(function(){
+// 	      var $m_img = $(this);
+// 	      $m_img.width(m_newWidth);
+	      
+// 	      $m_img.css({
+// 	      	'width' : '100%',
+// 	        'height' : 'auto'
+// 	        // 'width' : 'auto',
+// 	        // 'height' : '100vh'
+// 	      });
+	      
+// 	      $m_img.height(m_newHeight);
+
+// 	      if ($m_img.height() < m_newHeight){
+// 	        $m_img.height(m_newHeight);
+	        
+// 	        if ($m_img.width() < m_newWidth){
+	          
+// 	          $m_img.css({
+// 	          'width' : 'auto',
+// 	          'height' : '100%'
+// 	        });
+// 	        }
+// 	      }
+// 	    });
+// 	  }
+
+// 	  function m_loadImages(){
+// 	    var $m_images = $('.mobile-bg-top');
+	    
+// 	    $m_images.each(function(){
+// 	      var $m_img = $(this);
+// 	      var msrc = $m_img.attr('src');
+	      
+// 	      if ($m_img[0].complete){
+// 	        mobileresizeImages($m_img);
+// 	      }else{
+// 	        $m_img.load(function(){
+// 	          mobileresizeImages($m_img);
+// 	        }).attr('src', msrc);
+// 	      }
+// 	    });
+// 	  }
+// 	  m_loadImages();
+// 	  $( ".fp-watermark" ).remove();
+// 	});	
+
+</script>
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/fullpage-js/easings.min.js"></script>
+
+<!-- 原本 -->
+<!-- <script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/homepage_main_js/home_main.js"></script> -->
+<!-- 壓縮加密 -->
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/homepage_main_js/home_main-mini.js"></script>

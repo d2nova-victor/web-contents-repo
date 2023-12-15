@@ -1,0 +1,158 @@
+<style type="text/css">
+	.zlayout-section{
+		padding: 40px 0;
+	}
+
+	.left-zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.larg-layout>h2{
+		font-size: 32px;
+		margin: 0 0 5px 0;
+	}
+	.left-zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.left-zlayout-img>img{
+			width: 100%;
+		}
+	.left-zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 452px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.single-text-content{
+		display: flex;
+		flex-flow: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	margin:10px auto;
+    	padding: 0 0 5px;
+    	border-bottom: 1px solid #3333;
+	}
+	.single-text-content:nth-child(2){
+/*		margin: 10px auto;*/
+	}
+	.single-text-content>h3{
+		font-size: 21px;
+		line-height: 31px;
+		margin:0 0 5px 0;
+	}
+	.single-text-content>p{
+		font-size: 16px;
+		line-height: 30px;
+		margin: 5px 0;
+		text-align: justify;
+	}
+	@media screen and (max-width: 1113px){
+		.left-zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.left-zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 100%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.left-zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+		.larg-layout{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: flex-start;
+		    flex-flow: row;
+		}
+
+		.larg-layout>h2{
+			font-size: 26px;
+			font-weight: 500;
+		}
+
+		.single-text-content{
+			width: 33.3%;
+	    	align-items: flex-start;
+		}
+		.middel-layout{
+			flex-flow: row wrap;
+		}
+		.middel-layout>.single-text-content{
+			margin: 0;
+			width: 47%;
+		}
+		.in-layout-tittle{
+			width: 100%;
+			display: block;
+    		text-align: center;
+		}
+		.single-text-content:nth-child(2),.single-text-content:nth-child(3){
+			margin: 0px auto;
+			padding: 0 1%;
+		}
+		
+		.single-text-content>h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.single-text-content>p{
+			text-align: left;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.larg-layout{
+			flex-flow: column;
+    		align-items: center;
+		}
+		.single-text-content{
+			width: 90%;
+		}
+		.middel-layout>.single-text-content{
+			width: 90%;
+		}
+	}
+
+</style>
+
+<div class="zlayout-section">
+
+	<div class="left-zlayout-content right-reverse digit2">
+		<div class="left-zlayout-img">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/multi-location/mobility-img/221228/Group%202@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/multi-location/mobility-img/221228/Group%202@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/multi-location/mobility-img/221228/Group%202@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Solutions/multi-location/mobility-img/221228/Group%202.png 3x" alt="混合辦公行動力">
+		</div>
+		<div class="left-zlayout-text larg-layout middel-layout">
+			<h2 class="in-layout-tittle">提升混合辦公行動力 </h2>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<p>在外點的員工不一定有專屬辦公室，或者有可能常常在外奔走，員工可依照實際狀況與需求，選擇要用手機、電腦或 IP 話機來接聽和撥打電話。</p>
+				<a class="green-text-btn" href="/tw/solutions/teleworking">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<p>無論是在辦公室、外出洽公，皆可以透過公司總機系統來接聽或撥打電話，遠距上班、異地辦公也能照常服務客戶，不錯過任何商機。</p>
+				<a class="green-text-btn" href="/tw/evox/multiple-devices">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

@@ -8,7 +8,11 @@
         text-align:center;
         max-width: 980px;
         margin: 30px auto;
-        width: 60%;
+        width: 70%;
+    }
+    .tittle-section>h2{
+        font-weight: 600;
+        line-height: 37px;
     }
     .report-content-two-cloum{
     display: flex;
@@ -27,7 +31,9 @@
         text-align: center;
     }
     .report-text>h3{
-        font-size: 18px;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 26px;
     }
 	.feature-content-size{
 		max-width: 1100px;
@@ -50,7 +56,13 @@
     .tabContent{
     	width: 100%;
     }
-
+    .report-img>img{
+        width: 100%;
+    }
+    /*手機優化*/
+    .mobile-show{
+        display: none;
+    }
 /*換方向*/
 
 @media screen and (max-width: 1060px) {
@@ -66,20 +78,46 @@
 
 }
 @media screen and (max-width: 796px) {
-    .report-block{
+        .report-block{
             width: 100%;
+            margin: 30px auto 40px auto;
         }
         .report-content-two-cloum{
             flex-flow: column;
         }
         .report-img{
-            max-width: 556px;
+            max-width:556px;
             margin: 0 auto;
-            width: 90%;
+            width: 100%;
         }
         .report-img>img{
             width: 100%;
             min-width: 100%;
+        }
+        .tittle-section{
+            width: 80%;
+            margin: 40px auto 40px auto;
+        }
+         .content-outline{
+            margin: 20px auto;
+         }
+          /*手機優化*/
+        .report-text{
+            width: 90%;
+            padding:0px;
+        }
+        .report-text>p{
+            margin: 0;
+        }
+        .mobile-show{
+            display:block;
+            text-align: center;
+        }
+        .mobile-hide{
+            display: none;
+        }
+        .add-more-space{
+            margin: 20px auto 60px auto;
         }
 }
 @media screen and (max-width: 550px){
@@ -103,19 +141,27 @@
 	<!-- 上半部 -->
     <div class="report-content-two-cloum">
         <!-- 單邊 -->
-        <div class="report-block">
-            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-01_650px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-01_650px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-01_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-01_1500px.jpg 3x"></div>
+        <div class="report-block add-more-space">
+            <div class="report-img mobile-hide">
+                <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-01_650px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-01_650px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-01_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-01_1500px.jpg 3x"></div>
             <div class="report-text">
                 <h3 class="purple-text">自動話務分配<br/>快速適配客服專員</h3>
+                <div class="report-img mobile-show">
+                    <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-01_650px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-01_650px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-01_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-01_1500px.jpg 3x">
+                </div>
                 <p>透過智慧話務分配功能（ACD、IVR），將每一通來電自動排序並精準分配給適合的專員。</p>
-                <a class="purple-outline-btn btn-center" href="" target="_blank">了解更多</a>
+                <a class="purple-outline-btn btn-center" href="/tw/evox-connect/acd-ivr" target="_blank">了解更多</a>
             </div>
         </div>
         <!-- 單邊 -->
         <div class="report-block">
-            <div class="report-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-02_650px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-02_650px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-02_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-02_1500px.jpg 3x"></div>
+            <div class="report-img mobile-hide"> 
+                <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-02_650px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-02_650px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-02_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-02_1500px.jpg 3x"></div>
             <div class="report-text">
                 <h3 class="purple-text">即時電話錄音</h3>
+                <div class="report-img mobile-show"> 
+                    <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-02_650px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/benefit-02_650px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-02_1500px.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/Landing-page/EVOX%20Connect-LP/1000px/benefit-02_1500px.jpg 3x">
+                </div>
                 <p>提供合法的錄音功能，開始錄音前系統將自動撥放警語，以保障通話雙方的權益。錄音檔自動儲存於雲端，可隨時於 Connect Manager 或 Pro PC App 中聽取錄音檔。</p>
             </div>
         </div>

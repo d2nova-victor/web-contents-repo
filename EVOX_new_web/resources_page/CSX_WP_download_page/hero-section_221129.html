@@ -1,0 +1,436 @@
+<style type="text/css">
+	.hero-section-1{
+		max-width: 100%;
+		/*float: left;*/
+		margin: 0px auto;
+/*		height: 400px;*/
+		background: #FAFAFA;
+/*		padding: 20px 0;*/
+		position: relative;
+    	overflow: hidden;
+	}
+	.top-section{
+		max-width: 1100px;
+		margin: 40px auto;
+		width: 100%;
+		display: flex;
+	    align-items: center;
+	    flex-flow: row-reverse;
+	    justify-content: center;
+	}
+	.top-tittle-section{
+		width: 50%;
+	}
+	.EVOX-gray-bg{
+		background: #FAFAFA;
+	}
+	.hero-section-content{
+/*	    padding-bottom: 40px;*/
+	}
+	.hero-section-content>span{
+		font-size: 18px;
+		/*color: rgba(0,0,0,0.4);*/
+		color:#243237;
+		margin: 5px 0px;
+		padding-left: 0px;
+	}
+	.hero-section-content>h1{
+	    font-size: 35px;
+	    margin: 5px 0px;
+	    padding-left: 0px;
+	    line-height: 55px;
+	}
+	.hero-section-content>p{
+		margin: 15px 0px;
+		font-size: 18px;
+/*		padding-left: 12px;*/
+	}
+	
+	.hero-section-image{
+		width: 50%;
+	    height: 100%;
+/*	    position: relative;*/
+/*	    overflow: hidden;*/
+/*	    float: right;*/
+/*    	min-height: 601px;*/
+	    
+	}
+	.hero-section-image>img{
+		position: relative;
+/*		right: -40px;*/
+/*		visibility: hidden;*/
+		max-width: 720px;
+	}
+	/*	專屬頁面風格*/
+	.hero-section-content{
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	/*表單*/
+	.form-background{
+		height:20vw;
+		background: #EDEFF1;
+	}
+	.form-01{
+		position: relative;
+	    background: #243237;
+	}
+	.form-block{
+	    width: 100%;
+	    /*background: #00A82D;*/
+	    display: table;
+	    margin:40px 0;
+	}
+	.form-text{
+		width: 40%;
+		float: left;
+		margin: 0 10% 0 0px;
+	}
+	.form-text>h2,.form-text>p{
+		color: #fff;
+		margin: 15px 0px;
+	}
+	/*修改hubspot表單*/
+	.form-block{
+		/*width: 100%;*/
+	}
+	.hbspt-form{
+		padding: 0px 0;
+	    width: 90%;
+	    max-width: 560px;
+	    /*float: left!important;*/
+	    margin: 0px auto !important;
+		
+	}
+	.hs-form-required{
+		display: none;
+	}
+	.hs-form-field{
+		position: relative;
+	}
+	.hs-error-msgs{
+		position: absolute;
+		top: 10px;
+    	right: 30px;
+	}
+	.hs_availabletime>label{
+		display: none;
+	}
+	.hs_error_rollup>.no-list{
+		position: initial;
+		color: #FF9500;
+	}
+	select{
+		margin: 0px;
+	}
+	.hs-input{
+		width: 100%;
+		height: 45px;
+		/*padding: 5px;*/
+		padding: 9px 10px;
+    	margin: 4.5px 0;
+    	border-radius: 4px;
+    	border: 0px;
+    	background-color: #fff;
+    	font-weight: normal;
+    	line-height: 22px;
+    	box-sizing: border-box;
+    	border: 1px solid #A5B6BF;
+    	color: #243237;
+	}
+	::-webkit-input-placeholder { /* Edge */
+	  color: #A5B6BF;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer */
+	  color: #A5B6BF;
+	}
+	::placeholder {
+  	color: #A5B6BF;
+	}
+	.hs_client_want_to_know_about{
+		color: #243237;
+	    display: table;
+	    margin: 10px 0;
+	    width: 100%;
+	}
+	.inputs-list{
+		color:#243237;
+		list-style: none;
+    	padding: 0px;
+    	margin: 0px;
+	}
+	input[type="radio"]{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
+		border: 0px;
+		-webkit-appearance:none;
+	}
+	input[type="radio"] + span{
+		display      : inline-block;
+		  /*margin-left  : -28px;*/
+		  padding-left : 28px;
+		  line-height  : 24px;
+		  
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/check-box-null.png') no-repeat 0 3px;
+	}
+	input[type="radio"]:checked+ span{
+		/*background: #fff;*/
+		/*color: #00A82D;*/
+		background   : url('https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/check-box-checked.png') no-repeat 0 3px;
+	}
+	.hs-form-checkbox{
+		width: 100%;
+		float: left;
+		list-style: none;
+	}
+	.hs-error-msg{
+		color: #FF9500;
+		font-size: 14px;
+
+	}
+	input[type="submit"]{
+		width: 100%;
+		float: left;
+		margin: 10px 0px;
+		background: #66C547;
+		border-radius: 4px;
+	    border: 0px solid #fff;
+	    color: #fff;
+	    padding: 10px 50px;
+	}
+	select[name="company_size"]{
+		/*color:#A5B6BF; */
+		-webkit-appearance: none;
+		-moz-appearance: window;
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+	}
+
+	select[name="availabletime"]{
+		/*color:#A5B6BF;*/
+		-webkit-appearance: none;
+		-moz-appearance: window;
+		background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+	}
+	/*selecr未選擇時更改顏色*/
+	select:required:invalid{
+  		color: #A5B6BF;
+	}
+	option[value=""][disabled] {
+		color: #A5B6BF;
+	}
+	option {
+  		color:#243237;
+	}
+	/*表單*/
+
+	@media screen and (max-width: 1300px){
+		.hero-section-image>img{
+			width: 100%;
+		}
+
+	}
+	@media screen and (max-width: 1100px){
+		.top-tittle-section{
+			display: flex;
+   			align-items: center;
+    		justify-content: center;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.hbspt-form{
+			width: 90%;
+			max-width: 100%;
+		}
+		.hero-section-1{
+			height: 100%;
+			padding: 20px 0;
+		}
+		.top-section{
+			margin: 0px auto;
+			flex-flow: column-reverse;
+		}
+		.top-tittle-section{
+			width: 100%;
+		}
+		/*.hero-section-image{
+			width: 100%;
+		}*/
+		.hero-section-image{
+			width: 100%;
+			min-height: 100%;
+			display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	margin: 20px auto;
+		}
+		.hero-section-image>img{
+			width: 100%;
+			position: relative;
+			right: 0;
+		}
+		.hero-section-content{
+		    width: 100%;
+		    /*position: relative;*/
+		    height: 100%;/*
+		    background: #E8F5E9;*/
+		   	padding: 2% 5%;
+		    max-width: 90%;
+/*		    margin: 0 0 20px 0;*/
+			display: flex;
+	    	flex-flow: column;
+	    	align-items: center;
+	    	justify-content: center;
+		}
+		.hero-section-content>img{
+			width: 100%;
+		}
+		.hero-section-content>h1{
+	    	font-size: 36px;
+	    	text-align: center;
+		}
+		.hero-section-content>h1, .hero-section-content>h1>span{
+			font-weight: 500;
+		}
+		.hero-section-content>p{
+			text-align: center;
+			margin: 0;
+		}
+
+	}
+	@media screen and (max-width: 640px){
+	.hero-section-content {
+	/*    height: 256px;
+	    -webkit-transform: translateX(-114%);
+	    transform: translateX(-114%);
+	    --widthA: 100%;
+	    margin-top: calc(var( --widthA)*0.02);*/
+    	margin-top: calc(var( --widthA)*0);
+    	width: 100%;
+	    position: relative;
+	    z-index: 999;
+	    height: 100%;
+
+	}
+	.hero-section-content>h1{
+		font-size: 34px;
+	}
+	
+	.hero-section-image{
+		/*width: 100%;*/
+/*		background-image: none;*/
+	}
+
+	.hero-section-image>img{
+		max-width: 100%;
+		/*visibility: visible;
+	    position: absolute;
+	    top: 90px;
+	    left: 50%;
+	    display: block;
+	    min-width: 100%;
+	    min-height: 56%;
+	    transform: translate(-50%,-50%);
+	}
+	.hero-section-1{
+/*		height: 220px;*/
+	}
+	.hero-section-content{
+		/*width: 40%;*/
+	    /*position: absolute;*/
+	    z-index: 999;
+	}
+	.hero-section-content>p{
+		max-width: 90%;
+	}
+}
+@media screen and (max-width: 516px){
+	.hero-section-1{
+		padding: 0px 0;
+	}
+	.top-section{
+		margin: 0px auto;
+	}
+	.hero-section-content>span{
+		padding-left: 0px;
+	}
+	.hero-section-content>h1{
+		font-size: 32px;
+		padding-left: 0px;
+	}
+	.hero-section-content>p{
+		padding-left: 0px;
+	}
+}
+@media screen and (max-width: 277px){
+	.hero-section-content>h1{
+		font-size: 30px;
+	}
+	.hero-section-content>p{
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 1500px){
+	.hero-section-image>img{
+		position: relative;
+    	right: 0;
+    	max-width: 600px;
+	}
+}
+	/*給專門頁面*/
+/*	.devices-page{
+		background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/About_Us/Top_img/Group%208@1x.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}*/
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// $('.hero-section-image').css('min-height', imgHeight+'px');
+		$( window ).on("resize", function() {
+			// 文件準備好時同時取的高度
+			var topimgframHeight = $('.hero-section-image').height(); 
+			var imgHeight = $('.hero-section-image>img').height();
+			console.log("外框高度"+topimgframHeight);
+			console.log("圖片高度"+imgHeight);
+			$('.hero-section-image').innerHeight(imgHeight);
+		});	
+		$(window).trigger('resize');
+	});
+
+</script>
+<div class="hero-section-1 EVOX-gray-bg">
+	<div class="top-section">
+		<div id="fill-form" class="hero-section-image devices-page">
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> 
+
+			<script> 
+
+			  hbspt.forms.create({ 
+
+			    region: "na1", 
+
+			    portalId: "1864133", 
+
+			    formId: "84c9a60a-ae44-47c9-8427-36f59dabd657" 
+
+			  }); 
+
+			</script> 
+		</div>
+			<div class="top-tittle-section">
+				<div class="hero-section-content">
+					<!-- <span>關於我們</span> -->
+					<h1>顧客體驗關鍵趨勢白皮書</h1>
+					<p>網路與資訊普及翻轉了消費者的購物習慣，現今的消費者會更主動地去搜尋開箱心得和評價，數位環境下的買方與賣方，已從以商品為中心轉為以人為中心，品牌以貼心、真實的作為與消費者形成亦商亦友的雙向溝通新消費關係。<br/>在這樣的趨勢下，品牌企業除了持續維護產品的品質外，該如何優化客戶在消費旅程中的體驗呢？  </p>
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/EVOX%20%E9%A1%A7%E5%AE%A2%E9%AB%94%E9%A9%97%E9%97%9C%E9%8D%B5%E8%B6%A8%E5%8B%A2%E7%99%BD%E7%9A%AE%E6%9B%B8/top-img/Group%2019@1x-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/EVOX%20%E9%A1%A7%E5%AE%A2%E9%AB%94%E9%A9%97%E9%97%9C%E9%8D%B5%E8%B6%A8%E5%8B%A2%E7%99%BD%E7%9A%AE%E6%9B%B8/top-img/Group%2019@1x-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/EVOX%20%E9%A1%A7%E5%AE%A2%E9%AB%94%E9%A9%97%E9%97%9C%E9%8D%B5%E8%B6%A8%E5%8B%A2%E7%99%BD%E7%9A%AE%E6%9B%B8/top-img/Group%2019@2x-1.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/white-paper-download-page/EVOX%20%E9%A1%A7%E5%AE%A2%E9%AB%94%E9%A9%97%E9%97%9C%E9%8D%B5%E8%B6%A8%E5%8B%A2%E7%99%BD%E7%9A%AE%E6%9B%B8/top-img/Group%2019-1.png 3x" alt="EVOX 顧客體驗關鍵趨勢白皮書">
+				</div>
+			</div>
+	</div>
+</div>

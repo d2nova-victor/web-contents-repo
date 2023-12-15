@@ -1,0 +1,1272 @@
+<style type="text/css">
+    .price-tittle {
+        text-align: center;
+        background: #fff;
+        padding: 40px 0;
+    }
+    
+    .price-tittle>p {
+        font-size: 18px;
+        color: #5F6871;
+    }
+    
+    .plan-button-group {
+        max-width: 1240px;
+        margin: 0 auto;
+        background: #fff;
+        display: table;
+        width: 50%;
+    }
+    
+    .plan-button {
+        font-size: 16px;
+        /*三個*/
+        /*width: 33.3%;*/
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding: 10px 0 0 0;
+        line-height: 3em;
+        border-bottom: 6px solid #fff;
+        cursor: pointer;
+    }
+    
+    .plan-button:hover {
+        background: #eaeaea;
+        border-bottom: 6px solid #afafaf;
+    }
+    
+    .plan-button-active {
+        border-bottom: 6px solid #66C547;
+    }
+    
+    .plan-button-active:hover {
+        background: #eaeaea;
+        border-bottom: 6px solid #66C547;
+    }
+    
+    #ECONNECT-btn.plan-button-active {
+        /*background: #eaeaea;*/
+        border-bottom: 6px solid #5856D6;
+    }
+    
+    #ECONNECT-btn.plan-button-active:hover {
+        background: #eaeaea;
+        border-bottom: 6px solid #5856D6;
+    }
+    
+    .plan-button-block {
+        -moz-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        -webkit-box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        box-shadow: 0px 7px 7px rgba(150, 150, 150, 0.1);
+        position: relative;
+    }
+    /*比較表內容*/
+    .cs-table-section{
+        max-width: 1384px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .cs-table-tittle{
+        text-align: center;
+        padding: 40px 0;
+    }
+    .cs-tittle{
+        font-size: 35px;
+    }
+    
+    .cs-ec-compare-table{
+        max-width: 980px;
+        margin: 0px auto 40px auto;
+        border-radius: 4px;
+        /*background: #5856D6;*/
+        background: #fff;
+        border: 2px solid #5856D6;
+        /*padding: 2px;*/
+        position: relative;
+    }
+    .ec-compare-tittle{
+        text-align: center;
+        padding: 10px 0;
+        background: #5856D6;
+    }
+    .ec-compare-tittle>h3{
+        font-size: 24px;
+        color: #fff;
+    }
+    .ec-compare-two-row{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+    .ec-single-plan{
+        width: 50%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-flow: column;
+    }
+    .add-left-border{
+        /*border-left: 2px solid #d9d9d9;*/
+        border-left: 2px solid #5856D6;
+    }
+    .ec-plan-tittle{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .plan-img{
+        width: 80px;
+        height: 80px;
+    }
+    .plan-tittle{
+        margin:0;
+    }
+    .ec-plan-list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        /*border-top: 1px solid #5856D6;*/
+        border-top: 1px solid #ccc;
+    }
+    .ec-list-cloum-td{
+        padding: 5px 0;
+        min-height: 36px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ec-list-tittle{
+        margin: 0;
+        font-size: 16px;
+        color: #5F6871;
+        font-weight: 400;
+    }
+    .tittle-cloum{
+        background: rgba(88,86,214,0.1);
+    }
+    .tittle-cloum>h5{
+        font-size: 18px;
+        color:#5856D6;
+    }
+    .eve-cloum{
+        background: #fff;
+    }
+    .odd-cloum{
+        background:#edeff1a8;
+    }
+    .list-img{
+        width: 24px;
+        height: 24px;
+    }
+    .check-cloum{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .spe-01{
+        width: 160px;
+    }
+    .spe-02{
+        width: 228px;
+    }
+    .spe-03{
+        width: 178px;
+    }
+    .spe-04{
+        width: 184px;
+    }
+
+    /*收合*/
+    .collespe-box{
+        position: absolute;
+        bottom:156px;
+        /* background: #fff; */
+        max-width: 980px;
+        width: 100%;
+        /* border: 1px solid; */
+        padding: 40px 0 10px 0;
+        background: linear-gradient(90deg, #ffffff 47%, #ffffff00 68%);
+        background: -moz-linear-gradient(90deg, #ffffff 47%, #ffffff00 68%);
+        background: -webkit-linear-gradient(90deg, #ffffff 47%, #ffffff00 68%);
+        background: -o-linear-gradient(90deg, #ffffff 47%, #ffffff00 68%);
+    }
+    .coll-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+    .colle-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .colle-text{
+        font-size: 16px;
+        color:#5856D6;
+        cursor: pointer;
+    }
+
+    .collapse-box-open{
+        height: auto;
+        overflow: visible;
+    }
+    .collapse-box-hide{
+        height: 500px;
+        overflow: hidden;
+    }
+    .collapse-box-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .btn-hide{
+        display: none;
+    }
+    .btn-show{
+        display: initial;
+    }
+    .colle-icon{
+        transform: rotate(180deg);
+    }
+    @keyframes rote-right {
+        from {transform: rotate(180deg);}
+        to {transform: rotate(0deg);}
+    }
+    @keyframes rote-left {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(180deg);}
+    }
+    .rote-icon-right{
+        animation-name: rote-right;
+        animation-duration: .3s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+    .rote-icon-left{
+        animation-name: rote-left;
+        animation-duration: .3s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+    .cover-reposition{
+        position: initial;
+        bottom: 0px;
+        padding: 0px 0 0px 0;
+        background: #fff;
+    }
+    /*價格*/
+    .pricing-set-row{
+        background:#F2F2F2;
+        /*border-top:1px solid ;*/
+    }
+    .single-pricing-td{
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .single-pricing-td>h5{
+        font-size: 16px;
+        margin: 20px auto;
+    }
+    .ec-compare-addition-note{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        flex-flow: row;
+        background: #fff;
+    }
+    .ec-compare-note{
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-flow: row;
+        background: #fff;
+    }
+    .ec-compare-note-icon{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        /*width: 10%;*/
+        max-width: 20px;
+    }
+    .ec-note-text{
+        color:#A5B6BF;
+        font-size: 14px;
+        margin: 5px auto;
+    }
+    /*導入服務*/
+  
+    .ec-servoce-plan{
+        max-width: 980px;
+        margin: 0px auto 40px auto;
+        border-radius: 4px;
+        background: #5856D6;
+        padding: 2px;
+        position: relative;
+    }
+    .ec-service-img{
+        background: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/ec-onboarding-service-img_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+        width: 100%;
+        height: 255px;
+
+    }
+    .ec-service-content{
+        background: #fff;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    .ec-service-benefit-text{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        width: 90%;
+        margin: 5px auto;
+        text-align: center;
+        max-width: 583px;
+    }
+    .ec-service-benefit-text>h4{
+        margin: 5px auto;
+        font-size: 21px;
+        color:#5F6871;
+        font-weight: 500;
+    }
+    .ec-service-benefit-text>p{
+        margin: 5px auto;
+        font-size: 16px;
+        color: #5F6871;
+    }
+    .ec-service-icon-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 20px auto;
+        flex-flow: row wrap;
+    }
+    .ec-service-single-icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 200px;
+        flex-flow: column;
+        width: 25%;
+    }
+    .ec-service-single-icon>h5{
+        color: #5F6871;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 10px auto;
+    }
+    .ec-single-icon-img{
+        max-width: 100px;
+        width: 100%;
+        height: 100px;
+    }
+    .ec-service-detial-block{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-flow: column;
+        margin: 5px auto;
+        width: 100%;
+        max-width: 600px;
+    }
+    .ec-service-detial-text{
+        text-align: center;
+        margin: 5px auto;
+    }
+    .ec-service-detial-text>h4{
+        margin: 0;
+        color: #5F6871;
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .ec-service-detial-text>p{
+        margin: 0;
+        color: #5F6871;
+        font-size: 14px;
+    }
+    .ec-service-detial-list-block{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        margin: 5px auto;
+    }
+    .ec-service-detial-list{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin: 6px 0;
+    }
+    .ec-service-detial-icon{
+        width: 10%;
+        max-width: 24px;
+        height: 24px;
+        padding: 5px;
+    }
+    .ec-service-detial-list-text{
+        /*width: 90%;*/
+    }
+    .ec-service-detial-list-text>p{
+        margin: 0px auto;
+        font-size: 18px;
+        color:#5F6871;
+        line-height: 25px;
+    }
+    /*價格*/
+    .ec-service-pricing-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: #F7F7F7;
+    }
+    .ec-service-pricing-text>h5{
+        margin: 20px auto;
+        font-size: 16px;
+    }
+    /*備註資訊*/
+    .addition-section{
+        background: rgba(88,86,214,0.1);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        max-width: 980px;
+        margin: 40px auto;
+        width: 100%;
+    }
+    .addition-section>h3{
+        font-size: 21px;
+        margin: 10px auto;
+    }
+    .addition-section>p{
+        font-size: 16px;
+        margin: 10px auto;
+        color:#5F6871;
+        width: 90%;
+        text-align: center;
+    }
+    .dark-purple-outline-btn{
+        min-width: 200px;
+    }
+    /*手機版調整*/
+    .mobile-show{
+        display: none;
+    }
+@media screen and (max-width: 1008px) {
+}
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 840px) {
+
+}
+/*手機版*/
+@media screen and (max-width: 796px) {
+    .cs-table-tittle{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ec-mobile-single-plan{
+        /*border: 3px solid #5856D6;*/
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-show{
+        width: 90%;
+        margin: 0px auto 40px auto;
+        display: flex;
+        align-items: stretch;
+        flex-flow: column;
+    }
+    .call-center-mobile-collapse-box-open{
+        height: auto;
+        overflow: visible;
+    }
+    .call-center-mobile-collapse-box-hide{
+        height: 297px;
+        overflow: hidden;
+    }
+    .call-center-mobile-collapse-box-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .knowledge-mobile-collapse-box-open{
+        height: auto;
+        overflow: visible;
+    }
+    .knowledge-mobile-collapse-box-hide{
+        height: 298px;
+        overflow: hidden;
+    }
+    .knowledge-mobile-collapse-box-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .ec-compare-two-row{
+        flex-flow: row;
+        align-items: flex-start;
+        position: relative;
+    }
+    .ec-single-plan{
+        width: 100%;
+        position: relative;
+    }
+    .collespe-box{
+        /*position: relative;*/
+        position: absolute;
+        padding: 40px 0 0px 0;
+    }
+    .call-center-colle-btn{
+        bottom: auto;
+        top: 283px;
+        width: 100%;
+    }
+    .option-call-center-colle-btn{
+        /*bottom: 1000px;*/
+    }
+    .knowledge-colle-btn{
+        /*bottom: 0px;*/
+        bottom: auto;
+        top: 657px;
+        width: 100%;
+    }
+    .cover-reposition{
+        position: initial;
+        bottom: 0px;
+        padding: 0px 0 0px 0;
+        background: #fff;
+    }
+    .knowledge-option-cover-reposition{
+        top: 1084px;
+    }
+    .add-left-border{
+        border-left: 0px solid #d9d9d9;
+        border-top: 2px solid #5856D6;
+    }
+    .ec-plan-list{
+        border-top: 0px solid #5856D6;
+    }
+    .coll-btn{
+        flex-flow: row-reverse;
+    }
+    .ec-compare-note-icon{
+        width: 10%;
+    }
+
+    /*服務*/
+    .ec-service-img{
+        height: 145px;
+    }
+    .ec-servoce-plan{
+        width: 90%;
+    }
+    .ec-service-icon-row{
+        width: 86%;
+    }
+    .ec-service-single-icon{
+        width: 50%;
+    }
+    .ec-service-detial-list-block{
+        width: 90%;
+    }
+    /*聯絡資訊*/
+    .addition-section{
+        width: 90%;
+    }
+}
+/*手機版本縮小*/
+@media screen and (max-width: 735px) {
+    .ec-service-icon-row{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 695px) {
+    .plan-button-group {
+        width: 100%;
+    }
+    .ec-service-detial-icon{
+        width: 40%;
+    }
+    .ec-compare-note-icon{
+        width: 30%;
+    }
+    .ec-service-single-icon>h5{
+        font-size: 16px;
+    }
+    .ec-service-detial-list-text>p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .ec-service-single-icon{
+        width: 50%;
+    }
+    .knowledge-colle-btn{
+        top: 692px;
+    }
+    .knowledge-option-cover-reposition{
+        top: 1118px;
+    }
+}
+
+</style>
+<!-- <div class="price-tittle">
+    <h1>產品價格</h1>
+    <p>選擇適合的方案與您同行</p>
+</div> -->
+<div class="plan-button-block">
+    <div class="plan-button-group">
+        <div class="plan-button" id="EVOX-btn" onclick="location.href='/tw/onboarding/';">EVOX</div>
+        <div class="plan-button plan-button-active" id="ECONNECT-btn">EVOX Connect</div>
+    </div>
+</div>
+
+<div id="EC" class="plan">
+    <div class="cs-table-section">
+        <div class="cs-table-tittle">
+            <h2 class="cs-tittle">依照您的需求選擇導入服務</h2>
+        </div>
+        <!-- 上半部內容 -->
+        <div class="cs-ec-compare-table mobile-hide">
+            <div class="ec-compare-tittle"><h3>線上教學課程</h3></div>
+            <!-- 比較表格 -->
+            <div class="ec-compare-two-row collapse-box-hide" id="table-box">
+                <!-- 單一側 -->
+                <div class="ec-single-plan ">
+                    <!-- 標題 -->
+                    <div class="ec-plan-tittle">
+                        <div class="plan-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/call-center.png"></div>
+                        <h4 class="plan-tittle">客服中心課程</h4>
+                    </div>
+                    <!-- 專員內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">專員教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-01">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">裝置操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-01">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">專員功能介面介紹</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 管理者內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">管理者教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">管理後台操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">ACD 、IVR 設定教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">專員與組別設定教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">通話錄音教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">主管監控面板教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">分析報表教學</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 單一側 -->
+                <div class="ec-single-plan add-left-border">
+                    <!-- 標題 -->
+                    <div class="ec-plan-tittle">
+                        <div class="plan-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/knowledge-base.png"></div>
+                        <h4 class="plan-tittle">資料庫課程</h4>
+                    </div>
+                    <!-- 專員內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">資料庫使用者教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-02">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">Pro PC App 裝置操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-02">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">Pro PC App 聯絡人功能介紹</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 管理者內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">管理者教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-04">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">管理後台操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-04">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">聯絡人資料庫功能介紹</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-04">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">通話錄音教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-04">
+                                <!-- <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div> -->
+                                <!-- <h5 class="ec-list-tittle">通話錄音教學</h5> -->
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-04">
+                                <!-- <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div> -->
+                                <!-- <h5 class="ec-list-tittle">通話錄音教學</h5> -->
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-04">
+                                <!-- <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div> -->
+                                <!-- <h5 class="ec-list-tittle">通話錄音教學</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 收合 -->
+                <div class="collespe-box" id="colle-cover">
+                    <div class="coll-btn">
+                        <div class="colle-icon" id="colle-icon">
+                        <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/green%20copy.png">
+                        </div>
+                        <div class="colle-text btn-hide" id="closeFunction">收合</div>
+                        <div class="colle-text btn-show" id="openFunction">展開</div>
+                    </div>
+                </div>
+            <!-- 價格 -->
+            <div class="ec-compare-two-row pricing-set-row">
+                <!-- 單一個價格 -->
+                <div class="single-pricing-td">
+                    <h5>1,600 NTD / 次 (未稅)</h5>
+                </div>
+                <!-- 單一個價格 -->
+                <div class="single-pricing-td add-left-border">
+                    <h5>1,600 NTD / 次 (未稅)</h5>
+                </div>
+            </div>
+            <!-- 備註 -->
+            <div class="ec-compare-addition-note">
+                <div class="ec-compare-note">
+                    <div class="ec-compare-note-icon">
+                        <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/note.png">
+                    </div>
+                    <p class="ec-note-text">1. 新進人員或多次上課需求，請再與我們聯繫另行報價。 2. 課程內容可依照訂閱的內容與需求來調整。 3. 可提供專人至現場教學的服務(交通費另計)。 </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 手機版本 -->
+        <div class="cs-ec-compare-table mobile-show">
+            <div class="ec-compare-tittle"><h3>線上教學課程</h3></div>
+            <!-- 單個方案 -->
+            <div class="ec-mobile-single-plan">
+            <!-- 比較表格 -->
+            <div class="ec-compare-two-row call-center-mobile-collapse-box-hide" id="call-center-mobile-table-box">
+                <!-- 單一側 -->
+                <div class="ec-single-plan ">
+                    <!-- 標題 -->
+                    <div class="ec-plan-tittle">
+                        <div class="plan-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/call-center.png"></div>
+                        <h4 class="plan-tittle">客服中心課程</h4>
+                    </div>
+                    <!-- 專員內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">專員教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-01">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">裝置操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-01">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">專員功能介面介紹</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 管理者內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">管理者教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">管理後台操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">ACD 、IVR 設定教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">專員與組別設定教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">通話錄音教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">主管監控面板教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-03">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">分析報表教學</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 收合 -->
+            <div class="collespe-box call-center-colle-btn" id="call-center-mobile-colle-cover">
+                <div class="coll-btn">
+                    <div class="colle-icon" id="call-center-mobile-colle-icon">
+                        <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/green%20copy.png">
+                    </div>
+                    <div class="colle-text btn-hide" id="call-center-mobile-closeFunction">收合</div>
+                    <div class="colle-text btn-show" id="call-center-mobile-openFunction">展開</div>
+                </div>
+            </div>
+            <!-- 價格 -->
+            <div class="ec-compare-two-row pricing-set-row">
+                <!-- 單一個價格 -->
+                <div class="single-pricing-td">
+                    <h5>1,600 NTD / 次 (未稅)</h5>
+                </div>
+            </div>
+            </div>
+            <!-- 單個方案 -->
+            <div class="ec-mobile-single-plan">
+            <!-- 比較表格 -->
+            <div class="ec-compare-two-row knowledge-mobile-collapse-box-hide" id="knowledge-mobile-table-box">
+                <!-- 單一側 -->
+                <div class="ec-single-plan add-left-border">
+                    <!-- 標題 -->
+                    <div class="ec-plan-tittle">
+                        <div class="plan-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/knowledge-base.png"></div>
+                        <h4 class="plan-tittle">資料庫課程</h4>
+                    </div>
+                    <!-- 專員內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">資料庫使用者教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-02">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">Pro PC App 裝置操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-02">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">Pro PC App 聯絡人功能介紹</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 管理者內容 -->
+                    <div class="ec-plan-list">
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td tittle-cloum">
+                            <h5 class="ec-list-tittle">管理者教學</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <h5 class="ec-list-tittle">課程長度 60 分鐘</h5>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-04">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">管理後台操作教學</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td eve-cloum">
+                            <div class="check-cloum spe-04">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">聯絡人資料庫功能介紹</h5>
+                            </div>
+                        </div>
+                        <!-- 單格 -->
+                        <div class="ec-list-cloum-td odd-cloum">
+                            <div class="check-cloum spe-04">
+                                <div class="list-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/gray-fill%20copy%203.png"></div>
+                                <h5 class="ec-list-tittle">通話錄音教學</h5>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <!-- 收合 -->
+            <div class="collespe-box knowledge-colle-btn" id="knowledge-mobile-colle-cover">
+                <div class="coll-btn">
+                    <div class="colle-icon" id="knowledge-mobile-colle-icon">
+                        <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/green%20copy.png">
+                    </div>
+                    <div class="colle-text btn-hide" id="knowledge-mobile-closeFunction">收合</div>
+                    <div class="colle-text btn-show" id="knowledge-mobile-openFunction">展開</div>
+                </div>
+            </div>
+            <!-- 價格 -->
+            <div class="ec-compare-two-row pricing-set-row">
+                <!-- 單一個價格 -->
+                <div class="single-pricing-td">
+                    <h5>1,600 NTD / 次 (未稅)</h5>
+                </div>
+            </div>
+            </div>
+            
+            
+            <!-- 備註 -->
+            <div class="ec-compare-addition-note">
+                <div class="ec-compare-note">
+                    <div class="ec-compare-note-icon">
+                        <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/note.png">
+                    </div>
+                    <p class="ec-note-text">1. 新進人員或多次上課需求，請再與我們聯繫另行報價。 2. 課程內容可依照訂閱的內容與需求來調整。 3. 可提供專人至現場教學的服務(交通費另計)。 </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- 下半部內容 -->
+        <div class="ec-servoce-plan">
+            <div class="ec-compare-tittle"><h3>技術顧問導入服務</h3></div>
+            <!-- 服務圖片 -->
+            <div class="ec-service-img"></div>
+            <!-- 方案內容 -->
+            <div class="ec-service-content">
+                <!-- 說明 -->
+                <div class="ec-service-benefit-text">
+                    <h4>為什麼會需要技術顧問來協助導入？</h4>
+                    <p>第一次建立客服中心或客服團隊？ 選擇技術顧問導入服務，由專人根據你訂閱的 EVOX Connect 方案提供專業客製化服務，有系統地協助你的團隊更快上手。</p>
+                </div>
+                <!-- icon 優點 -->
+                <div class="ec-service-icon-row">
+                    <!-- 單個 -->
+                    <div class="ec-service-single-icon">
+                        <div class="ec-single-icon-img">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_save-time.png" alt="省時間">
+                        </div>
+                        <h5>省去專研的時間</h5>
+                    </div>
+                    <!-- 單個 -->
+                    <div class="ec-service-single-icon">
+                        <div class="ec-single-icon-img">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_teaching.png" alt="完整教學">
+                        </div>
+                        <h5>完整功能教學</h5>
+                    </div>
+                    <!-- 單個 -->
+                    <div class="ec-service-single-icon">
+                        <div class="ec-single-icon-img">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_step-by-step.png" alt="手把手完成設定">
+                        </div>
+                        <h5>手把手完成設定</h5>
+                    </div>
+                    <!-- 單個 -->
+                    <div class="ec-service-single-icon">
+                        <div class="ec-single-icon-img">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_consultant-2.png" alt="專業顧問全程協助">
+                        </div>
+                        <h5>專業顧問全程協助</h5>
+                    </div>
+                </div>
+                <!-- 服務內容描述 -->
+                <div class="ec-service-detial-list-block">
+                    <div class="ec-service-detial-text">
+                        <h4>技術顧問導入服務包括哪些內容？</h4>
+                        <p>實際服務項目依照所訂閱的 EVOX Connect 服務內容而定，以下列表僅供參考</p>
+                    </div>
+                    <div class="ec-service-detial-block">
+                        <!-- 單個 -->
+                        <div class="ec-service-detial-list">
+                            <div class="ec-service-detial-icon">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_check-icon.png">
+                            </div>
+                            <div class="ec-service-detial-list-text">
+                                <p>協助規劃與設計自動來電分配（ACD）、語音應答（IVR）等流程</p>
+                            </div>
+                        </div>
+                        <!-- 單個 -->
+                        <div class="ec-service-detial-list">
+                            <div class="ec-service-detial-icon">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_check-icon.png">
+                            </div>
+                            <div class="ec-service-detial-list-text">
+                                <p>聯絡人資料庫一對一顧問諮詢並協助建置</p>
+                            </div>
+                        </div>
+                        <!-- 單個 -->
+                        <div class="ec-service-detial-list">
+                            <div class="ec-service-detial-icon">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_check-icon.png">
+                            </div>
+                            <div class="ec-service-detial-list-text">
+                                <p>分析報表使用介紹與教學</p>
+                            </div>
+                        </div>
+                        <!-- 單個 -->
+                        <div class="ec-service-detial-list">
+                            <div class="ec-service-detial-icon">
+                            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/CS_product/icon/EC/EC_check-icon.png">
+                            </div>
+                            <div class="ec-service-detial-list-text">
+                                <p>針對公司需求一起討論並提供各項後台設定的建議</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 價格 -->
+                <div class="ec-service-pricing-block">
+                    <div class="ec-service-pricing-text">
+                        <h5>10,000 NTD / 次 (未稅)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 備註訊息 -->
+        <div class="addition-section">
+            <h3>進一步了解導入服務</h3>
+            <p>EVOX Connect 訓練課程可彈性搭配，歡迎聯絡我們，將有專人提供專業的建議與報價。​</p>
+            <a href="/tw/contact-us" class="dark-purple-outline-btn">立即諮詢</a>
+        </div>
+
+
+
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#openFunction").click(function() {
+            $("#table-box").addClass("collapse-box-open");
+            $("#table-box").removeClass("collapse-box-hide");
+            $(this).addClass("btn-hide");
+            $(this).removeClass("btn-show");
+            $("#closeFunction").removeClass("btn-hide");
+            $("#closeFunction").addClass("btn-show");
+            $("#colle-icon").addClass("rote-icon-right");
+            $("#colle-icon").removeClass("rote-icon-left");
+            $("#colle-cover").addClass("cover-reposition");
+        });
+        $("#closeFunction").click(function() {
+            $("#table-box").removeClass("collapse-box-open");
+            $("#table-box").addClass("collapse-box-hide");
+            $(this).addClass("btn-hide");
+            $(this).removeClass("btn-show");
+            $("#closeFunction").removeClass("btn-show");
+            $("#openFunction").removeClass("btn-hide");
+            $("#openFunction").addClass("btn-show");
+            $("#colle-icon").removeClass("rote-icon-right");
+            $("#colle-icon").addClass("rote-icon-left");
+            $("#colle-cover").removeClass("cover-reposition");
+        });
+         $("#call-center-mobile-openFunction").click(function() {
+            $("#call-center-mobile-table-box").addClass("call-center-mobile-collapse-box-open");
+            $("#call-center-mobile-table-box").removeClass("call-center-mobile-collapse-box-hide");
+            $(this).addClass("btn-hide");
+            $(this).removeClass("btn-show");
+            $("#call-center-mobile-closeFunction").removeClass("btn-hide");
+            $("#call-center-mobile-closeFunction").addClass("btn-show");
+            $("#call-center-mobile-colle-icon").addClass("rote-icon-right");
+            $("#call-center-mobile-colle-icon").removeClass("rote-icon-left");
+            $("#call-center-mobile-colle-cover").addClass("cover-reposition");
+            $("#knowledge-mobile-colle-cover").addClass("knowledge-option-cover-reposition");
+        });
+        $("#call-center-mobile-closeFunction").click(function() {
+            $("#call-center-mobile-table-box").removeClass("call-center-mobile-collapse-box-open");
+            $("#call-center-mobile-table-box").addClass("call-center-mobile-collapse-box-hide");
+            $(this).addClass("btn-hide");
+            $(this).removeClass("btn-show");
+            $("#call-center-mobile-closeFunction").removeClass("btn-show");
+            $("#call-center-mobile-openFunction").removeClass("btn-hide");
+            $("#call-center-mobile-openFunction").addClass("btn-show");
+            $("#call-center-mobile-colle-icon").removeClass("rote-icon-right");
+            $("#call-center-mobile-colle-icon").addClass("rote-icon-left");
+            $("#call-center-mobile-colle-cover").removeClass("cover-reposition");
+            $("#knowledge-mobile-colle-cover").removeClass("knowledge-option-cover-reposition");
+        });
+        $("#knowledge-mobile-openFunction").click(function() {
+            $("#knowledge-mobile-table-box").addClass("knowledge-mobile-collapse-box-open");
+            $("#knowledge-mobile-table-box").removeClass("knowledge-mobile-collapse-box-hide");
+            $(this).addClass("btn-hide");
+            $(this).removeClass("btn-show");
+            $("#knowledge-mobile-closeFunction").removeClass("btn-hide");
+            $("#knowledge-mobile-closeFunction").addClass("btn-show");
+            $("#knowledge-mobile-colle-icon").addClass("rote-icon-right");
+            $("#knowledge-mobile-colle-icon").removeClass("rote-icon-left");
+            // $("#knowledge-mobile-colle-cover").addClass("cover-reposition");
+            
+            $("#knowledge-mobile-colle-cover").addClass("cover-reposition");
+            // $("#call-center-mobile-colle-cover").addClass("option-call-center-colle-btn");
+        });
+        $("#knowledge-mobile-closeFunction").click(function() {
+            $("#knowledge-mobile-table-box").removeClass("knowledge-mobile-collapse-box-open");
+            $("#knowledge-mobile-table-box").addClass("knowledge-mobile-collapse-box-hide");
+            $(this).addClass("btn-hide");
+            $(this).removeClass("btn-show");
+            $("#knowledge-mobile-closeFunction").removeClass("btn-show");
+            $("#knowledge-mobile-openFunction").removeClass("btn-hide");
+            $("#knowledge-mobile-openFunction").addClass("btn-show");
+            $("#knowledge-mobile-colle-icon").removeClass("rote-icon-right");
+            $("#knowledge-mobile-colle-icon").addClass("rote-icon-left");
+            $("#knowledge-mobile-colle-cover").removeClass("cover-reposition");
+            // $("#call-center-mobile-colle-cover").removeClass("option-call-center-colle-btn");
+        });
+    });
+</script>
+

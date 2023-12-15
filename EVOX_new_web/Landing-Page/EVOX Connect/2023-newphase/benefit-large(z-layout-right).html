@@ -1,0 +1,178 @@
+<style type="text/css">
+	.zlayout-section{
+		padding: 40px 0;
+	}
+	/*	反轉*/
+	.right-reverse{
+		flex-flow: row-reverse;
+	}
+	/*	反轉*/
+	.left-zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.larg-layout>h2{
+		font-size: 32px;
+		margin: 0 0 5px 0;
+	}
+	.left-zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.left-zlayout-img>img{
+			width: 100%;
+		}
+	.left-zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 452px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.single-text-content{
+		display: flex;
+		flex-flow: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	padding:10px 0;
+	}
+	.single-text-content:nth-child(2){
+		margin: 10px auto;
+	}
+	.single-text-content>h3{
+		font-size: 21px;
+		line-height: 31px;
+		margin:0 0 5px 0;
+	}
+	.single-text-content>p{
+		font-size: 16px;
+		line-height: 30px;
+		margin: 5px 0;
+		text-align: justify;
+	}
+	.re-fix-width{
+		max-width: 320px;
+	}
+	@media screen and (max-width: 1113px){
+		.left-zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+
+		.zlayout-section{
+			padding: 30px 0;
+		}
+		/*	反轉*/
+		.right-reverse{
+			flex-flow: column-reverse;
+		}
+		.left-zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 100%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.left-zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+
+		.larg-layout{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: flex-start;
+		    flex-flow: row;
+		}
+
+		.larg-layout>h2{
+			font-size: 32px;
+			font-weight: bold;
+			margin: 0 0 20px 0;
+		}
+
+		.single-text-content{
+			width: 33.3%;
+	    	align-items: center;
+		}
+		.middel-layout{
+			flex-flow: row wrap;
+		}
+		.middel-layout>.single-text-content{
+			margin: 0;
+			width: 47%;
+		}
+		.in-layout-tittle{
+			width: 100%;
+			display: block;
+    		text-align: center;
+		}
+		.single-text-content:nth-child(2),.single-text-content:nth-child(3){
+			margin: 10px auto;
+			padding: 0 1%;
+		}
+		
+		.single-text-content>h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.single-text-content>p{
+			text-align: center;
+		}
+		.re-fix-width{
+			max-width: 100%;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.larg-layout{
+			flex-flow: column;
+    		align-items: center;
+		}
+		.single-text-content{
+			width: 90%;
+		}
+		.middel-layout>.single-text-content{
+			width: 90%;
+		}
+	}
+
+</style>
+
+<div class="zlayout-section gray-bg">
+
+	<div class="left-zlayout-content right-reverse ">
+		<div class="left-zlayout-img digit2">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/call-acd-img/230111/Group%2020@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/call-acd-img/230111/Group%2020@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/call-acd-img/230111/Group%2020@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Overview/call-acd-img/230111/Group%2020_compress.webp 3x" alt="混合辦公行動力">
+		</div>
+		<div class="left-zlayout-text larg-layout middel-layout">
+			<h2 class="in-layout-tittle">智慧客服中心 </h2>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3 class="">自動話務分配快速適配客服專員</h3>
+				<p>透過智慧話務分配功能（ACD、IVR），將每一通來電自動排序並精準分配給適合的專員。</p>
+				<a class="green-text-btn" href="/tw/evox-connect/acd-ivr" target="_blank">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			<!-- 單個項目 -->
+			<div class="single-text-content">
+				<h3>即時電話錄音</h3>
+				<p>提供合法的錄音功能，保障通話雙方的權益。錄音檔自動儲存於雲端，可隨時於 Connect Manager 或 Pro PC App 中聽取錄音檔。</p>
+				<!-- <a class="green-text-btn" href="/tw/evox/multiple-devices">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

@@ -41,13 +41,41 @@
     	position: absolute;
     	top:60px;
     }*/
-   .btn-active{
+  .btn-active{
     	color:#5856D6;
     	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
         -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
         box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
-   }
-
+  }
+  .coming-soon-tag{
+		font-size: 12px;
+		/*display: block;*/
+		/*float: left;*/
+		/*background: #ff2e00d6;*/
+		background: rgb(136,93,255);
+		background: linear-gradient(90deg, rgba(136,93,255,1) 0%, rgba(247,146,252,1) 100%);
+		color:#fff;
+		padding:0px 5px;
+		border-radius: 45px;
+		position: absolute;
+    top: 0px;
+    margin:0 0 0 10px;
+    width: 118px;
+    text-align: center;
+	}
+	.guide-box-inbox>h2{
+		position: relative;
+	}
+	.comming-soon-text{
+		  color: #afafaf;
+		  font-size: 14px;
+		 /*text-align: center;*/
+     /*color: #e59a3a;*/
+     margin: 0;
+     /*background: antiquewhite;*/
+     /*background: rgb(250,235,215);*/
+		 /*background: radial-gradient(circle, rgba(250,235,215,1) 69%, rgba(255,255,255,1) 100%);*/
+	}
 </style>
 <style type="text/css">
 /* external css: flickity.css */
@@ -119,6 +147,10 @@ body { font-family: sans-serif; }
 	order: -1;
 }
 @media screen and (max-width: 840px){
+	.content-section-1{
+		display: flow-root;
+		padding: 20px 0;
+	}
 	.carousel-container {
 		display: block;
 	}
@@ -177,9 +209,10 @@ body { font-family: sans-serif; }
 			<!-- 介紹 -->
 				<div class="guide-box-inbox">
 					<img class="section-icon" src="https://f.hubspotusercontent30.net/hubfs/1864133/EVOXImages/new-web/EConnect/connect-knowledge/icon/data-view-right.png"alt="資撩閱覽" />
-					<h2>可被限制的瀏覽權限</h2>
+					<h2>可被限制的瀏覽權限<span class="coming-soon-tag"></span></h2>
 					<p>能限制外部人員（例如委外執行電話行銷）的瀏覽權限，使其無法執行新增、編輯或刪除，而敏感資料也只會部分顯示，讓客戶的關鍵資訊不外洩。
 					</p>
+					<p class="comming-soon-text">＊此功能即將推出</p>
 				</div>
 
 		</div>

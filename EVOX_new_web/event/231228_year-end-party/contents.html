@@ -1,0 +1,753 @@
+<style type="text/css">
+	  html, body{
+    margin:0;
+    padding:0;
+  }
+	.hide-tittle{
+		display: none;
+	}
+  .to-name{
+    font-size:18px;
+  }
+  .sign{
+    font-size:18px;
+    float:right;
+  }
+	.event-background{
+		width: 100%;
+		display:flex;
+		background: rgb(232,243,235);
+		background: linear-gradient(0deg,#e9f6e9,#f6fdef);
+	}
+	.event-content-section{
+		max-width: 980px;
+		margin: 60px auto;
+		box-shadow: 0px 0px 24px rgba(112,112,112,0.5);
+		background: #fff;
+	}
+	.banner-img{
+		width: 100%;
+	}
+	.banner-img>img{
+		width: 100%;
+	}
+	.event-block{
+		max-width: 1056px;
+		padding:0 60px;
+		margin: 40px auto;
+	}
+	.event-tittle{
+		    text-decoration: underline;
+		    text-decoration-thickness: 4px;
+		    color: #58B805;
+		    text-underline-offset: 6px;
+	}
+	.event-tittle>h3{
+		font-size: 20px;
+	}
+	.event-guide-text{
+		padding: 20px 40px;
+    line-height: 54px;
+    text-align: justify;
+    display: inline-table;
+	}
+	.event-cta{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.event-cta-btn{
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	    margin: 0 5px;
+	    border-radius: 4px;
+	    max-width: 120px;
+	    min-width: 250px;
+	    height: 78px;
+/*	    color: #58B805;*/
+		color: #fff;
+	    background: #58B805;
+	    text-align: center;
+	    margin: 15px 0;
+	    /* height: 36px; */
+	    line-height: 2.5em;
+	    border: 2px solid #58B805;
+	    padding: 1px;
+	    font-weight: 500;
+	    font-size: 24px;
+	    transition: all .5s ease-in-out;
+	}
+	.event-cta-btn:hover{
+		background: #58B80500;
+		color: #58B805;
+		transform: scale(0.9);
+	}
+	.event-cta-close-btn{
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	    margin: 0 5px;
+	    border-radius: 4px;
+	    max-width: 120px;
+	    min-width: 250px;
+	    height: 78px;
+/*	    color: #58B805;*/
+		color: #fff;
+	    background: #c9c9c9;
+	    text-align: center;
+	    margin: 15px 0;
+	    /* height: 36px; */
+	    line-height: 2.5em;
+	    border: 2px solid #999;
+	    padding: 1px;
+	    font-weight: 500;
+	    font-size: 24px;
+	    transition: all .5s ease-in-out;
+	}
+	.event-cta-close-btn:hover{
+		transform: scale(1);
+	}
+
+	.event-point-section{
+		width: 100%;
+		background:#FAFAFA;
+	}
+	.event-three-point{
+/*		width: 100%;*/
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #58B805;
+		font-size: 24px;
+		text-align: center;
+		padding: 40px;
+	}
+	.three-point-section{
+		max-width: 980px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.single-point{
+		width: 33.3%;
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		padding: 20px;
+	}
+	.single-point>img{
+		width: 100%;
+	}
+	.single-point>p{
+		font-size: 18px;
+	}
+
+	.single-line-text-group{
+		display: flex;
+		align-items: center;
+		padding: 10px 20px;
+	}
+	.event-date-main{
+		display: flex;
+		align-items: center;
+	}
+	.event-date-tittle{
+		color:#A5B6BF;
+		font-size: 18px;
+		padding: 0 5px;
+	}
+	.event-date-content{
+		font-size: 18px;
+		color: #243237;
+		padding: 0 5px;
+	}
+	.map-link-tittle{
+/*		padding: 0 5px;*/
+		display: flex;
+		align-items: center;
+		flex-flow: row;
+	}
+	.map-link-text{
+		font-size: 18px;
+/*		color: #243237;*/
+	}
+	.google-map-icon{
+		display: flex;
+		align-items: center;
+	}
+	.google-icon{
+		padding: 10px;
+		max-width: 30px;
+		width: 30px;
+	}
+	.green-text-btn{
+		color: #58B805;
+    	position: relative;
+	}
+	.green-text-btn:hover{
+		color: #52AB06;
+    	transition: color 0.5s;
+	}
+	.green-text-btn:before{
+		content: "";
+	    position: absolute;
+	    width: 100%;
+	    height: 3px;
+	    bottom: 0;
+	    left: 0;
+	    background: #58b805;
+	    visibility: hidden;
+	    border-radius: 5px;
+	    transform: scaleX(0);
+	    transition: .25s linear;
+	}
+	.green-text-btn:hover:before {
+    	visibility: visible;
+    	transform: scaleX(1);
+	}
+	.attention-text{
+		color:#243237;
+	}
+			.cta-form{
+				flex-flow: column;
+				background: #E8F5E9;
+			    border-radius: 25px;
+			    padding: 20px 0px 0 0;
+			}
+				/*修改hubspot表單*/
+				.form-block{
+					/*width: 100%;*/
+				}
+				.hbspt-form{
+					padding: 0px 0;
+				    width: 100%;
+				    /*float: left!important;*/
+				    margin: 0px auto !important;
+					
+				}
+				.hs-form-required{
+					display: none;
+				}
+				.hs_availabletime>label{
+					display: none;
+				}
+				.hs-input:not([type=file]){
+					background: #f9f9f9;
+				}
+				select{
+					margin: 0px;
+				}
+				.hs-input{
+					width: 100%;
+					height: 45px;
+					/*padding: 5px;*/
+					padding: 9px 10px;
+			    	margin: 4.5px 0;
+			    	border-radius: 4px;
+			    	border: 0px;
+			    	background-color: #fff;
+			    	font-weight: normal;
+			    	line-height: 22px;
+			    	box-sizing: border-box;
+			    	border: 1px solid #A5B6BF;
+			    	color: #243237;
+				}
+				::-webkit-input-placeholder { /* Edge */
+				  color: #A5B6BF;
+				}
+
+				:-ms-input-placeholder { /* Internet Explorer */
+				  color: #A5B6BF;
+				}
+				::placeholder {
+			  	color: #A5B6BF;
+				}
+				.hs_client_want_to_know_about{
+					color: #243237;
+				    display: table;
+				    margin: 10px 0;
+				    width: 100%;
+				}
+				.inputs-list{
+					color:#243237;
+					list-style: none;
+			    	padding: 0px;
+			    	margin: 0px;
+			    	display: flex;
+			    	flex-flow: row wrap;
+				}
+
+				.hs-error-msg{
+					color: #FF9500;
+				}
+				input[type="checkbox"]{
+          display:none;
+					position: fixed;
+					top: 0px;
+					left: 0px;
+					width: 0px;
+					height: 0px;
+					float: left;
+					margin: 0px;
+					border: 0px;
+					-webkit-appearance:none;
+				}
+				input[type="checkbox"] + span{
+					display      : inline-block;
+					  /*margin-left  : -28px;*/
+					  padding-left : 28px;
+					  line-height  : 24px;
+					  
+					background   : url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/contact-form/check-box/check-box-null.png') no-repeat 0 3px;
+				}
+				input[type="checkbox"]:checked+ span{
+					/*background: #fff;*/
+					/*color: #00A82D;*/
+					background   : url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/contact-form/check-box/check-box-checked-1.png') no-repeat 0 3px;
+				}
+				.hs-form-checkbox{
+/*					width: 50%;*/
+					width: auto;
+					float: left;
+					list-style: none;
+					padding-right: 10px;
+				}
+				.hs-error-msg{
+					color: #FF9500;
+				}
+				input[type="submit"]{
+					width: 100%;
+					float: left;
+					margin: 10px 0px;
+					background: #58B805;
+					border-radius: 4px;
+				    border: 0px solid #fff;
+				    color: #fff;
+				    padding: 10px 50px;
+				}
+
+				
+
+				select[name="company_size"]{
+					/*color:#A5B6BF; */
+					-webkit-appearance: none;
+					-moz-appearance: window;
+					background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+				}
+
+				select[name="availabletime"]{
+					/*color:#A5B6BF;*/
+					-webkit-appearance: none;
+					-moz-appearance: window;
+					background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+				}
+				/*selecr未選擇時更改顏色*/
+				select:required:invalid{
+			  		color: #A5B6BF;
+				}
+				option[value=""][disabled] {
+					color: #A5B6BF;
+				}
+				option {
+			  		color:#243237;
+				}
+				@media screen and (max-width: 671px){
+					.contact-tittle{
+						text-align: center;
+					}
+					.contact-us-form{
+						width: 86%;
+					}
+					.hbspt-form{
+						width: 100%;
+					}
+				}
+				/*	  表單調整*/
+			.hbspt-form{
+				max-width: 840px;
+			}
+			.hs-form-private{
+				display: flex;
+			    align-items: center;
+			    justify-content: space-around;
+			    flex-flow: row wrap;
+			    width: 100%;
+			    margin: 0 auto;
+			    padding: 20px 0;
+			}
+			fieldset{
+				width: 100%;
+				max-width: 100%!important;
+			}
+			.hs-form-field{
+				width: 48%!important;
+			    margin: 0 1%;
+			    position: relative;
+			}
+			.hs-email, .hs_remark_for_event{
+				width: 99%!important;
+			}
+			input[type="email"], input[type="text"]{
+				width: 98%!important;
+			}
+			input[type="radio"]{
+				height: 20px;
+			}
+			.hs-submit{
+				width: 48%;
+			    margin: 0 1%;
+
+			}
+			/*.hs_seminar_information_source{
+				width: 100%!important;
+			}*/
+			/*
+			.hs-seminar_information_source > .input > .inputs-list >.hs-form-checkbox{
+				width: auto%!important;
+			}*/
+			
+			.hs-company{
+				width: 100%;
+			}
+			.no-list{
+				position: absolute;
+			    top: 9px;
+			    left: 102px;
+			}
+			.hs-seminar_information_source , .hs_seminar_clinic_location_region  , .hs_seminar_clinic_specialization{
+/*				width: 100%!important;*/
+			}
+			.hs-seminar_information_source > .no-list{
+				top: 0px;
+    			left: 212px;
+			}
+			.hs_seminar_clinic_location_region > .no-list{
+				top: 0px;
+    			left: 72px;
+			}
+			.hs_seminar_clinic_specialization > .no-list{
+				top: 0px;
+    			left: 72px;
+			}
+			.hs-form-radio-display{
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+			}
+			.hs-form-radio-display>span{
+				padding: 0 10px;
+			}
+			@media screen and (max-width: 980px){
+				.hs-form-private{
+					flex-flow: column;
+					width: 100%;
+				}
+				.hs-form-field{
+					width: 90%!important;
+					margin: 0 auto!important;
+					float: none!important;
+				}
+				.hs-company{
+					width: 100%;
+				}
+				.hs-submit{
+					width: 90%;
+					margin: 20px auto;
+				}
+				.hs-error-msg{
+					font-size: 12px;
+				}
+				.hs-email, .hs_remark_for_event{
+					width: 90%!important;
+				}
+				.hs-input{
+					width: 100%!important;
+				}
+				input[type="email"]{
+					width: 100%!important;
+				}
+				input[type="submit"]{
+/*					width: 90%;*/
+/*					margin: 0 auto!important;*/
+				}
+				.cta-form{
+					border-radius: 10px;
+				}
+			}
+			/*	  表單調整*/
+
+				.event-date-section{
+					max-width: 1100px;
+				}
+
+				.event-time-sheet-section{
+					max-width: 1100px;
+					padding: 10px 20px;
+				}
+				.event-agenda-tittle-box{
+					display: flex;
+					align-items: stretch;
+					border-bottom: 1px solid #979797;
+				}
+				.event-agenda-tittle>p{
+					font-size: 16px;
+					color: #58B805;
+				}
+				.event-agenda-content>p{
+					font-size: 16px;
+					color: #243237;
+				}
+				.agenda-time{
+					width: 30%;
+					margin: 0 20px 0 0;
+					display: flex;
+    				align-items: center;
+				}
+				.agenda-content{
+					width: 35%;
+					margin: 0 20px 0 0;
+				}
+				.agenda-content-main{
+					padding: 5px 0;
+				}
+				.agenda-content-main>div:nth-child(1), .agenda-content-main>div:nth-child(2){
+					border-right:1px solid #979797 ;
+				}
+
+				.event-note-section{
+					max-width: 1100px;
+				}
+				.event-note-list{
+					list-style: num;
+					color: #A5B6BF;
+					font-size: 14px;
+					margin: 40px auto;
+				}
+				.event-note-list>li{
+					line-height: 27px;
+					margin: 5px auto;
+				}
+
+	 @media screen and (max-width: 1400px){
+	 	.event-content-section{
+	 		max-width: 1080px;
+	 	}
+	 }
+	 @media screen and (max-width: 840px){
+	 	.event-content-section{
+	 		width: 90%;
+	 		max-width: 640px;
+	 	}
+	 	.event-block{
+	 		padding: 0 20px;
+	 	}
+	 	.three-point-section{
+	 		width: 90%;
+	 	}
+	 	.single-line-text-group{
+	 		align-items: baseline;
+		    padding: 10px 20px;
+		    flex-flow: column;
+	 	}
+	 	.event-date-content{
+/*	 		padding-left: 20px;*/
+	 	}
+	 	.event-date-main{
+	 		align-items: flex-start;
+    		flex-flow: column;
+    		padding-left: 20px;
+	 	}
+	 	.event-date-main>a{
+/*	 		padding-left: 20px;*/
+	 	}
+	 	.agenda-time{
+	 		width: 20%;
+	 	}
+	 	.agenda-content{
+	 		width: 40%;
+	 	}
+	 }
+	  @media screen and (max-width: 640px){
+	 	.event-content-section{
+	 		min-width: 300px;
+	 		width: 90%;
+	 	}
+	 	.three-point-section{
+	 		flex-flow: row wrap;
+	 	}
+	 	.single-point{
+	 		width: 45%;
+	 		padding: 2%;
+	 	}
+	 }
+	 @media screen and (max-width: 480px){
+	 	.three-point-section{
+	 		flex-flow: column;
+	 	}
+	 	.single-point{
+	 		width: 90%;
+	 		padding: 2%;
+	 	}
+	 }
+
+</style>
+
+<!--     內容 -->
+
+<!-- 隱藏標題 -->
+<div class="hide-tittle">
+	<h1>2023 EVOX VIP 年終餐會</h1>
+	<h2>共話情誼</h2>
+</div>
+
+<div class="event-background">
+	<div class="event-content-section">
+		<!-- 活動首圖 -->
+		<div class="event-top-img">
+			<div class="banner-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_evnet/231228_year-end-party/%E4%B8%BB%E8%A6%96%E8%A6%BA-final_3-1.png" alt="2023年末感恩餐會">
+			</div>
+		</div>
+		<!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<!-- <div class="event-tittle">
+				<h3>活動介紹</h3>
+			</div> -->
+			<!-- 內容 -->
+			<div class="event-contents event-guide-text digit2">
+        <!-- <div class="to-name"><strong>親愛的貴賓您好：</strong> </div> -->
+				<p>感謝您一年來對 EVOX 的大力支持，為表達我們的誠摯謝意，特邀請您參加我們於年底舉辦的VIP年終餐會。我們期待與您共度美好時光，共享成功喜悅。請留下寶貴的時間，與我們一同品味美食、展望未來。期待您的蒞臨！</p>
+				<!-- <div class="sign"><strong>EVOX 董事長 David Wong 敬邀</strong> </div> -->
+			</div>
+			<!-- 報名連結 -->
+			<!-- 報名連結 -->
+	        <!--  <div class="event-cta">
+	            <a href="#" class="event-cta-btn">
+	               活動報名
+	            </a>
+        	 </div> -->
+
+		</div>
+    <!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<div class="event-tittle">
+				<h3>活動資訊</h3>
+			</div>
+
+			<!-- 內容 -->
+			<div class="event-date-section ">
+				<!-- 單個 -->
+				<div class="single-line-text-group">
+					<!-- 灰色字體 -->
+					<div class="event-date-tittle">活動日期</div>
+					<div class="event-date-main">
+						<!-- 黑色字體 -->
+						<div class="event-date-content">2023 年 12 月 28 日 17:00 - 20:30 
+							<!-- <span class="orange-text">活動已結束</span> -->
+						</div>
+						<!-- <a class="green-text-btn">加入 google 行事曆</a> -->
+					</div>
+				</div>
+				<!-- 單個 -->
+				<div class="single-line-text-group">
+					<!-- 灰色字體 -->
+					<div class="event-date-tittle">活動地點</div>
+						<div class="event-date-main">
+						<!-- 黑色字體 -->
+						<div class="event-date-content map-link-tittle">
+							<a class="map-link-text green-text-btn" href="https://maps.app.goo.gl/yjEnZa57kxXMv2wX8" target="_blank">
+							台北香格里拉遠東大飯店3F九如十全廳 </a>
+							<a class="google-map-icon" href="https://maps.app.goo.gl/yjEnZa57kxXMv2wX8" target="_blank"><img class="google-icon" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_evnet/231228_year-end-party/icon/google-map-icon.png" alt="google map">
+							</a>
+							
+						</div>
+					</div>
+					
+				</div>
+       
+				<!-- 單個 -->
+				<!-- <div class="single-line-text-group">
+					<div class="event-date-tittle">洽詢窗口</div>
+					<div class="event-date-main">
+						<div class="event-date-content">(02)5596-4493 分機 272 錢小姐 或  Email : <a class="green-text-btn" href="mailto:marketing@e2nova.com">marketing@e2nova.com</a></div>
+					</div>
+					
+				</div> -->
+				<!-- 單個 -->
+				<!-- <div class="single-line-text-group">
+					<div class="event-date-tittle">主辦單位</div>
+					<div class="event-date-main">
+						<div class="event-date-content">EVOX</div>
+					</div>
+					
+				</div> -->
+			</div>
+
+		</div>
+		<!-- 報名連結 -->
+		<!-- 標題 -->
+		<div class="event-block">
+			<!-- <div class="event-tittle">
+				<h3>活動報名</h3>
+			</div> -->
+			<div class="event-cta cta-form">
+				<div class="event-tittle">
+					<h3>活動報名</h3>
+				</div>
+	            <!-- <a href="#" class="event-cta-btn">
+	               活動報名
+	            </a> -->
+	           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+				<script>
+				  hbspt.forms.create({
+				    region: "na1",
+				    portalId: "1864133",
+				    formId: "b5b8d9e8-7e56-4fae-bfcb-e860a1b3a6f6"
+				  });
+				</script>
+        	 </div>
+        </div>
+		
+
+		
+
+		<!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<div class="event-tittle">
+				<h3>注意事項</h3>
+			</div>
+
+			<!-- 內容 -->
+			<div class="event-note-section">
+				<!-- 注意事項 -->
+				<ul class="event-note-list">
+					<!-- 單個 -->
+					<li>本活動報名截止日為 12 月 6日(三)，主辦單位將視報名狀況提前或延後線上報名時間。</li>
+					<!-- 單個 -->
+					<li>因宴會會場座位有限，<span class="attention-text">一間公司最多 2 名與會</span>，本公司保留篩選報名參加資格，造成不便敬請見諒。</li>
+					<!-- 單個 -->
+					<li>若報名者不克參加，可指派其他人選參加並通知主辦單位。</li>
+					<!-- 單個 -->
+					<li>本活動採預先線上報名並由主辦單位完成資格審核，不開放現場報名。請勿偽造他人身份資料進行報名以免觸犯法律，活動當天報到請提供名片以利核對，主辦單位保留參加資格之最後審核權利。</li>
+					<!-- 單個 -->
+<!-- 					<li>若因不可預測之突發因素，主辦單位得保留研討會課程及講師之變更權利。</li> -->
+				</ul>
+
+			</div>
+
+
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!--     內容 -->

@@ -1,0 +1,301 @@
+	<!-- 自動輪播 -->
+	<script src="https://cdn2.hubspot.net/hubfs/1864133/EVOX_website_JS_files/flickity/flickity.pkgd.min.js" ></script>
+
+<style type="text/css">
+	.feature-content-size{
+		max-width: 1100px;
+	}
+
+	/*給專門頁面得*/
+	.client-direct{
+		margin-top: 40px;
+	}
+	.ECA-fix-width{
+		width: 50%;
+	}
+	.content-section-1-image-version-b-reverse-spec{
+/*		overflow: visible;*/
+		margin: 0 auto;
+	}
+/*	 .tx-01{
+	 	margin-top: calc(var( --widthA)*0.05);
+	 	max-width: 470px;
+	 }*/
+	.guide-block{
+	 	padding: 22px 15px;
+	 	display: flex;
+	 	justify-content: center;
+   	align-items: center;
+    	-webkit-align-items: center;
+	}
+	.guide-box{
+	 	text-align: center;
+	 	max-width: 580px;
+	}
+	.guide-box>h2, .guide-box>p{
+	 	max-width: 
+	 	text-align: center;
+	}
+	.guide-box>h2{
+	 	margin: 0;
+	}
+
+	.non-img{
+		display: none;
+
+	}
+	.benefit-active{
+    	display: block!important;
+    }
+    #imagesequence{
+    	/*position: absolute;*/
+    }
+ /*   #trigger{
+    	position: absolute;
+    	top:60px;
+    }*/
+    .info-button{
+    	padding: 22px 15px;
+    	display: flex;
+    	/*justify-content: center;*/
+    	align-items: center;
+    	-webkit-align-items: center;
+    }
+    .info-button>div{
+    	padding:0 15px;
+    }
+    .btn-active{
+    	/*color:#5856D6;
+    	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+        box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);*/
+    }
+    .collect-content{
+    	margin-top: 0px!important;
+    	padding-top: 0px!important;
+    }
+    .section-icon{
+    	width: 80px;
+    }
+</style>
+<style type="text/css">
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-container {
+  display: flex;
+  /*max-width: 980px;*/
+  max-width: 1100px;
+  margin: 0 auto;
+/*  padding-bottom:40px;*/
+  align-items: center;
+  width: 100%;
+}
+
+.carousel {
+  background: #fff;
+/*  margin-bottom: 40px;*/
+  flex-grow: 1;
+}
+
+.carousel-cell {
+  width: 100%;
+/*  height: 300px;*/
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.tabContent {
+	  min-height: 337px;
+}
+.carousel-cell>img{
+	width: 100%;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav {
+  width: 100%;
+  margin-left: 10px;
+  /*max-height: 300px;*/
+  /*overflow-y: auto;*/
+  overflow: auto;
+  min-width: 320px;
+  /*max-width: 350px;*/
+}
+
+.carousel-nav .carousel-cell {
+  min-height: 80px;
+  height: auto;
+  width: 98%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  	background: #fff;
+  	color:#58B805;
+   	-moz-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    -webkit-box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+    box-shadow: 0px 2px 6px rgba(30%, 30%, 30%, 0.3);
+}
+
+/*換方向*/
+.flex-order-change{
+	order: -1;
+}
+@media screen and (max-width: 840px){
+	.carousel-container {
+/*		display: block;*/
+		flex-flow: column;
+	}
+	.carousel-cell{
+/*		height: 60vh;*/
+	}
+	.ECA-fix-width{
+		width: 100%;
+	}
+	.section-block{
+		padding: 20px 0;
+	}
+}
+@media screen and (max-width: 550px){
+	.carousel-nav{
+		margin-left: 0px;
+	}
+	.carousel-cell{
+/*		height: 50vh;*/
+	}
+}
+@media screen and (max-width: 450px){
+	.carousel-cell{
+/*		height: 40vh;*/
+	}
+}
+@media screen and (max-width: 350px){
+	.carousel-cell{
+/*		height: 30vh;*/
+	}
+	.tabContent  {
+  min-height: 150px;
+	}
+}
+
+</style>
+<div class="section-block">
+	<!-- 標題 -->
+	<div class="guide-block">
+		<div class="guide-box">
+			<!-- <img class="section-icon" src="https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/EConnect/Connect-Admin/icon/team-icon.png"/ alt="管理專員"> -->
+			<h2>Manage agents, teams and schedule</h2>
+			<p>Quickly organize and schedule agents to respond to customer needs.
+				<!-- <a href="#"> <span class="green-text">了解更多</span></a> -->
+			</p>
+		</div>
+	</div>
+	<!-- 內容 -->
+	<div class="content-section-1-spec client-direct feature-content-size collect-content">
+
+		<div class="carousel-container">
+
+			<!-- Flickity HTML init -->
+			<!-- 內容 -->
+			<div class="content-section-1-image-version-b-reverse-spec digit2">
+				<div class="carousel carousel-main">
+				  	<div class="carousel-cell">
+				  		<img id="myimg" class="tabContent " src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/add-agents/EN/add-agent.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/add-agents/EN/add-agent.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/add-agents/EN/add-agent@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/add-agents/EN/add-agent@3x_compress.webp 3x" alt="專員管理">
+				  	</div>
+					<div class="carousel-cell">
+						<img id="myimg-2" class="tabContent" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/create-teams/EN/add-team.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/create-teams/EN/add-team.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/create-teams/EN/add-team@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/create-teams/EN/add-team@3x_compress.webp 3x" alt="組別管理">
+					</div>
+					<div class="carousel-cell">
+						<img id="myimg-3" class="tabContent " src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/schedule-agents-img/EN/schedule-agents.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/schedule-agents-img/EN/schedule-agents.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/schedule-agents-img/EN/schedule-agents@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/manergement/schedule-agents-img/EN/schedule-agents@3x_compress.webp 3x" alt="安排時程">
+					</div>
+				</div>
+				
+			</div>
+			<!-- 選單 -->
+			<div class="flex-center content-center ECA-fix-width flex-order-change">
+				<div class="content-section-1-content-reverse">
+					<!-- 選單 -->
+					<div class=" carousel-nav">
+						<div id="custmoerinfo" class="carousel-cell is-nav-selected info-button"><i class="fas fa-check green-text"></i> <div>Agent management</div></div>
+						<div id="notelog" class="carousel-cell info-button"><i class="fas fa-check green-text"></i> <div>Team management</div></div>
+						<div id="smaeplace" class="carousel-cell info-button"><i class="fas fa-check green-text"></i> <div>Scheduling tool</div></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script>
+
+			// flickity 垂直輪播	
+			// external js: flickity.pkgd.js
+
+			var $carousel = $('.carousel').flickity(
+			{
+			  autoPlay: 3000,
+			  pageDots: false,
+			  prevNextButtons: false,
+			  draggable: false
+			}
+			);
+
+			var $carouselNav = $('.carousel-nav');
+			var $carouselNavCells = $carouselNav.find('.carousel-cell');
+
+			$carouselNav.on( 'click', '.carousel-cell', function( event ) {
+			  var index = $( event.currentTarget ).index();
+			  $carousel.flickity( 'select', index );
+			});
+
+			var flkty = $carousel.data('flickity');
+			var navTop  = $carouselNav.position().top;
+			var navCellHeight = $carouselNavCells.height();
+			var navHeight = $carouselNav.height();
+
+			$carousel.on( 'select.flickity', function() {
+			  // set selected nav cell
+			  $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+			  var $selected = $carouselNavCells.eq( flkty.selectedIndex )
+			    .addClass('is-nav-selected');
+			  // scroll nav
+			  var scrollY = $selected.position().top +
+			    $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
+			  $carouselNav.animate({
+			    scrollTop: scrollY
+			  });
+			});
+
+			// select main on nav hover
+			$carouselNav.on( 'mouseover', '.carousel-cell', function( event ) {
+			  // var index = $( event.currentTarget ).index();
+			  // $carouselMain.flickity( 'select', index );
+			  $carousel.flickity( 'pausePlayer');
+			});
+			$carouselNav.on( 'mouseout', '.carousel-cell', function( event ) {
+			  // var index = $( event.currentTarget ).index();
+			  // $carouselMain.flickity( 'select', index );
+			  $carousel.flickity( 'unpausePlayer');
+			});
+
+
+		</script>
+	</div>
+</div>

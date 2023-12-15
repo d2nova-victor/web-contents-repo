@@ -1,0 +1,790 @@
+<style type="text/css">
+	.hide-tittle{
+		display: none;
+	}
+	.event-background{
+		width: 100%;
+		display:flex;
+		background: rgb(232,243,235);
+		background: linear-gradient(132deg, rgba(232,243,235,1) 0%, rgba(200,234,236,1) 100%);
+	}
+	.event-content-section{
+		max-width: 1180px;
+		margin: 0 auto;
+		box-shadow: 0px 0px 24px rgba(112,112,112,0.5);
+		background: #fff;
+	}
+	.banner-img{
+		width: 100%;
+	}
+	.banner-img>img{
+		width: 100%;
+	}
+	.event-block{
+		max-width: 1056px;
+		padding:0 60px;
+		margin: 40px auto;
+	}
+	.event-tittle{
+		    text-decoration: underline;
+		    text-decoration-thickness: 4px;
+		    color: #58B805;
+		    text-underline-offset: 6px;
+	}
+	.event-tittle>h3{
+		font-size: 20px;
+	}
+	.event-guide-text{
+		padding: 20px;
+	}
+	.event-cta{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.event-cta-btn{
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	    margin: 0 5px;
+	    border-radius: 4px;
+	    max-width: 120px;
+	    min-width: 250px;
+	    height: 78px;
+/*	    color: #58B805;*/
+		color: #fff;
+	    background: #58B805;
+	    text-align: center;
+	    margin: 15px 0;
+	    /* height: 36px; */
+	    line-height: 2.5em;
+	    border: 2px solid #58B805;
+	    padding: 1px;
+	    font-weight: 500;
+	    font-size: 24px;
+	    transition: all .5s ease-in-out;
+	}
+	.event-cta-btn:hover{
+		background: #58B80500;
+		color: #58B805;
+		transform: scale(0.9);
+	}
+	.event-cta-close-btn{
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	    margin: 0 5px;
+	    border-radius: 4px;
+	    max-width: 120px;
+	    min-width: 250px;
+	    height: 78px;
+/*	    color: #58B805;*/
+		color: #fff;
+	    background: #c9c9c9;
+	    text-align: center;
+	    margin: 15px 0;
+	    /* height: 36px; */
+	    line-height: 2.5em;
+	    border: 2px solid #999;
+	    padding: 1px;
+	    font-weight: 500;
+	    font-size: 24px;
+	    transition: all .5s ease-in-out;
+	}
+	.event-cta-close-btn:hover{
+		transform: scale(1);
+	}
+
+	.event-point-section{
+		width: 100%;
+		background:#FAFAFA;
+	}
+	.event-three-point{
+/*		width: 100%;*/
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #58B805;
+		font-size: 24px;
+		text-align: center;
+		padding: 40px;
+	}
+	.three-point-section{
+		max-width: 980px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.single-point{
+		width: 33.3%;
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		padding: 20px;
+	}
+	.single-point>img{
+		width: 100%;
+	}
+	.single-point>p{
+		font-size: 18px;
+	}
+
+	.single-line-text-group{
+		display: flex;
+		align-items: center;
+		padding: 10px 20px;
+	}
+	.event-date-main{
+		display: flex;
+		align-items: center;
+	}
+	.event-date-tittle{
+		color:#A5B6BF;
+		font-size: 18px;
+		padding: 0 5px;
+	}
+	.event-date-content{
+		font-size: 18px;
+		color: #243237;
+		padding: 0 5px;
+	}
+
+
+</style>
+<!-- 隱藏標題 -->
+<div class="hide-tittle">
+	<h1>診所數位轉型（台南場）</h1>
+	<h2>為醫師和病患打造最佳的看診體驗</h2>
+</div>
+
+<div class="event-background">
+	<div class="event-content-section">
+		<!-- 活動首圖 -->
+		<div class="event-top-img">
+			<div class="banner-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/231211_Clinic-Joint-seminiar/2023-Clinic-seminar_vision-3.jpg" alt="診所數位轉型台南場">
+			</div>
+		</div>
+		<!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<div class="event-tittle">
+				<h3>活動介紹</h3>
+			</div>
+			<!-- 內容 -->
+			<div class="event-contents event-guide-text digit2">
+				<p>以人為本的時代下，『服務』已是所有開業經營者最在意的板塊，而台灣健保制度下，醫療相關產業更是蓬勃發展，在專科診所如雨後春筍般到處林立下要如何脫穎而出？善用數位工具打造致臻的服務，為醫生與病患建立良好的溝通橋樑，從第一次接觸就留下深刻的印象。<br/>樂衍;樂晴醫事管理系統提供診所對外的預約、掛號與候診，優化診療及行政流程，打造數位診所不須繁雜系統，面對第一線同時也是業務量最龐大的電話預約則有 EVOX 隱形王牌來把關，在患者來電當下即時跳出看診紀錄與偏好，讓第一線服務人員能夠貼心且快速地完成約診，而 一站式醫病媒合平台 PinMed 匯集各科診所、醫師、醫材與豐富的衛教內容，每月擁有超過35萬人次的流量，為診所帶來有效的行銷曝光外，更能將線上流量轉化為診間業績，亦或者透過 Wayne 專業醫診櫃檯服務中心 提供專業約診與衛教顧問服務，釋放診所日常的繁雜行政事項，讓醫生與護士更專注提升診療服務品質。</p>
+			</div>
+			<!-- 報名連結 -->
+			<!-- 報名連結 -->
+	        <!--  <div class="event-cta">
+	            <a href="#" class="event-cta-btn">
+	               活動報名
+	            </a>
+        	 </div> -->
+
+		</div>
+		<!-- 活動資訊單一塊  三大特點-->
+		<div class="event-point-section">
+			<!-- 特點標題 -->
+			<div class="event-three-point">
+				本次研討會將聚焦智能診所三大要點
+			</div>
+			<!-- 三大特點圖片 -->
+			<div class="three-point-section ">
+				<!-- 單個 -->
+				<div class="single-point">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/01/benefit-01@1x-1.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/01/benefit-01@1x-1.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/01/benefit-01@2x-1.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/01/benefit-01-1.png 3x" alt="打造數位診所不須多樣系統">
+					<p>打造數位診所不須多樣系統</p>
+				</div>
+				<!-- 單個 -->
+				<div class="single-point">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/02/benefit-02@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/02/benefit-02@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/02/benefit-02@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/02/benefit-02.png 3x" alt="用有溫度的服務提升競爭力">
+					<p>用有溫度的服務提升競爭力</p>
+				</div>
+				<!-- 單個 -->
+				<div class="single-point">
+					<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/03/benefit-03@1x.png" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/03/benefit-03@1x.png 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/03/benefit-03@2x.png 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/Event%20pages/230524_join-seminar/benefit-img/03/benefit-03.png 3x" alt="雲端客服提升診所效益">
+					<p>雲端客服提升診所效益</p>
+				</div>
+			</div>
+		</div>
+		<!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<div class="event-tittle">
+				<h3>活動資訊</h3>
+			</div>
+			<style type="text/css">
+				.event-date-section{
+					max-width: 1100px;
+				}
+			</style>
+			<!-- 內容 -->
+			<div class="event-date-section ">
+				<!-- 單個 -->
+				<div class="single-line-text-group">
+					<!-- 灰色字體 -->
+					<div class="event-date-tittle">活動日期</div>
+					<div class="event-date-main">
+						<!-- 黑色字體 -->
+						<div class="event-date-content">2023 年 12 月 10 日 9:00 - 12:00 
+							<span class="orange-text">活動已結束</span>
+						</div>
+						<!-- <a class="green-text-btn">加入 google 行事曆</a> -->
+					</div>
+				</div>
+				<!-- 單個 -->
+				<div class="single-line-text-group">
+					<!-- 灰色字體 -->
+					<div class="event-date-tittle">活動地點</div>
+						<div class="event-date-main">
+						<!-- 黑色字體 -->
+						<div class="event-date-content">台南老爺酒店 (臺南市東區中華東路一段368號)</div>
+					</div>
+					
+				</div>
+				<!-- 單個 -->
+				<div class="single-line-text-group">
+					<!-- 灰色字體 -->
+					<div class="event-date-tittle">洽詢窗口</div>
+					<div class="event-date-main">
+						<!-- 黑色字體 -->
+						<div class="event-date-content">(02)5596-4493 分機 272 錢小姐 或  Email : <a class="green-text-btn" href="mailto:marketing@e2nova.com">marketing@e2nova.com</a></div>
+					</div>
+					
+				</div>
+				<!-- 單個 -->
+				<div class="single-line-text-group">
+					<!-- 灰色字體 -->
+					<div class="event-date-tittle">主辦單位</div>
+					<div class="event-date-main">
+						<!-- 黑色字體 -->
+						<div class="event-date-content">Leyan 樂衍、EVOX、Wayne、AlleyPin 翔評互動</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<div class="event-tittle">
+				<h3>活動議程</h3>
+			</div>
+			<!-- 內容 -->
+			<style type="text/css">
+				.event-time-sheet-section{
+					max-width: 1100px;
+					padding: 10px 20px;
+				}
+				.event-agenda-tittle-box{
+					display: flex;
+					align-items: stretch;
+					border-bottom: 1px solid #979797;
+				}
+				.event-agenda-tittle>p{
+					font-size: 16px;
+					color: #58B805;
+				}
+				.event-agenda-content>p{
+					font-size: 16px;
+					color: #243237;
+				}
+				.agenda-time{
+					width: 30%;
+					margin: 0 20px 0 0;
+					display: flex;
+    				align-items: center;
+				}
+				.agenda-content{
+					width: 35%;
+					margin: 0 20px 0 0;
+				}
+				.agenda-content-main{
+					padding: 5px 0;
+				}
+				.agenda-content-main>div:nth-child(1), .agenda-content-main>div:nth-child(2){
+					border-right:1px solid #979797 ;
+				}
+			</style>
+			<div class="event-time-sheet-section ">
+				<!-- 單一個欄位 -->
+				<div class="event-agenda-tittle-box">
+					<!-- 時間 -->
+					<div class="event-agenda-tittle agenda-time"><p>時間</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-tittle agenda-content"><p>活動內容</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-tittle agenda-content"><p>活動內容</p></div>
+				</div>
+
+				<!-- 單一個欄位 01-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>09:00 - 09:30</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>開放入場報到</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p>準時開始，建議提早入場以獲取完整體驗。</p></div>
+				</div>
+
+				<!-- 單一個欄位 02-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>09:30 - 10:00</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>診所數位新風貌：平板在手，數位我有</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p>主講人：Leyan 營運總監 Jesse 陳信宏</p></div>
+				</div>
+
+				<!-- 單一個欄位 03-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>10:00 - 10:30</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>從來電了解您的病患，讓高效率、即時服務提升就診體驗</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p>主講人：EVOX 業務經理 Peter 周盟浩</p></div>
+				</div>
+
+				<!-- 單一個欄位 04-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>10:30 - 10:50</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>Tea Break</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p></p></div>
+				</div>
+
+				<!-- 單一個欄位 04-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>10:50 - 11:20</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>醫病媒合新時代：將線上流量轉化為診間顧客</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p>主講人：AlleyPin 營運長 Kenneth 羅偉誠</p></div>
+				</div>
+
+				<!-- 單一個欄位 04-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>11:20 - 11:50</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>智慧客服降低診所成本，提升診所效益</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p>主講人：Wayne 業務經理 Demi 林庭華</p></div>
+				</div>
+
+				<!-- 單一個欄位 05-->
+				<div class="event-agenda-tittle-box agenda-content-main">
+					<!-- 時間 -->
+					<div class="event-agenda-content agenda-time"><p>11:50 - 12:00</p></div>
+					<!-- 活動內容 -->
+					<div class="event-agenda-content agenda-content"><p>Panel Discussion 時間</p></div>
+					<!-- 備註 -->
+					<div class="event-agenda-content agenda-content"><p></p></div>
+				</div>
+				
+			</div>
+
+		</div>
+		<style type="text/css">
+			.cta-form{
+				flex-flow: column;
+				background: #E8F5E9;
+			    border-radius: 40px;
+			    padding: 40px 0px 0 0;
+			}
+				/*修改hubspot表單*/
+				.form-block{
+					/*width: 100%;*/
+				}
+				.hbspt-form{
+					padding: 0px 0;
+				    width: 100%;
+				    /*float: left!important;*/
+				    margin: 0px auto !important;
+					
+				}
+				.hs-form-required{
+					display: none;
+				}
+				.hs_availabletime>label{
+					display: none;
+				}
+				.hs-input:not([type=file]){
+					background: #f9f9f9;
+				}
+				select{
+					margin: 0px;
+				}
+				.hs-input{
+					width: 100%;
+					height: 45px;
+					/*padding: 5px;*/
+					padding: 9px 10px;
+			    	margin: 4.5px 0;
+			    	border-radius: 4px;
+			    	border: 0px;
+			    	background-color: #fff;
+			    	font-weight: normal;
+			    	line-height: 22px;
+			    	box-sizing: border-box;
+			    	border: 1px solid #A5B6BF;
+			    	color: #243237;
+				}
+				::-webkit-input-placeholder { /* Edge */
+				  color: #A5B6BF;
+				}
+
+				:-ms-input-placeholder { /* Internet Explorer */
+				  color: #A5B6BF;
+				}
+				::placeholder {
+			  	color: #A5B6BF;
+				}
+				.hs_client_want_to_know_about{
+					color: #243237;
+				    display: table;
+				    margin: 10px 0;
+				    width: 100%;
+				}
+				.inputs-list{
+					color:#243237;
+					list-style: none;
+			    	padding: 0px;
+			    	margin: 0px;
+			    	display: flex;
+			    	flex-flow: row wrap;
+				}
+
+				.hs-error-msg{
+					color: #FF9500;
+				}
+				input[type="checkbox"]{
+					position: relative;
+					top: 0px;
+					left: 0px;
+					width: 0px;
+					height: 0px;
+					float: left;
+					margin: 0px;
+					border: 0px;
+					-webkit-appearance:none;
+				}
+				input[type="checkbox"] + span{
+					display      : inline-block;
+					  /*margin-left  : -28px;*/
+					  padding-left : 28px;
+					  line-height  : 24px;
+					  
+					background   : url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/contact-form/check-box/check-box-null.png') no-repeat 0 3px;
+				}
+				input[type="checkbox"]:checked+ span{
+					/*background: #fff;*/
+					/*color: #00A82D;*/
+					background   : url('https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/contact-form/check-box/check-box-checked-1.png') no-repeat 0 3px;
+				}
+				.hs-form-checkbox{
+/*					width: 50%;*/
+					width: auto;
+					float: left;
+					list-style: none;
+					padding-right: 10px;
+				}
+				.hs-error-msg{
+					color: #FF9500;
+				}
+				input[type="submit"]{
+					width: 100%;
+					float: left;
+					margin: 10px 0px;
+					background: #58B805;
+					border-radius: 4px;
+				    border: 0px solid #fff;
+				    color: #fff;
+				    padding: 10px 50px;
+				}
+
+				
+
+				select[name="company_size"]{
+					/*color:#A5B6BF; */
+					-webkit-appearance: none;
+					-moz-appearance: window;
+					background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+				}
+
+				select[name="availabletime"]{
+					/*color:#A5B6BF;*/
+					-webkit-appearance: none;
+					-moz-appearance: window;
+					background: url("https://cdn2.hubspot.net/hubfs/1864133/EVOXImages/new-web/Contact-form/drapdown-arrow.png") no-repeat 98% 7px;
+				}
+				/*selecr未選擇時更改顏色*/
+				select:required:invalid{
+			  		color: #A5B6BF;
+				}
+				option[value=""][disabled] {
+					color: #A5B6BF;
+				}
+				option {
+			  		color:#243237;
+				}
+				@media screen and (max-width: 671px){
+					.contact-tittle{
+						text-align: center;
+					}
+					.contact-us-form{
+						width: 86%;
+					}
+					.hbspt-form{
+						width: 100%;
+					}
+				}
+				/*	  表單調整*/
+			.hbspt-form{
+				max-width: 980px;
+			}
+			.hs-form-private{
+				display: flex;
+			    align-items: center;
+			    justify-content: space-around;
+			    flex-flow: row wrap;
+			    width: 100%;
+			    margin: 0 auto;
+			    padding: 20px 0;
+			}
+			fieldset{
+				width: 100%;
+				max-width: 100%!important;
+			}
+			.hs-form-field{
+				width: 48%!important;
+			    margin: 0 1%;
+			    position: relative;
+			}
+			.hs-email{
+				width: 100%!important;
+			}
+			input[type="email"]{
+				width: 98%!important;
+			}
+			.hs-submit{
+				width: 48%;
+			    margin: 0 1%;
+
+			}
+			/*.hs_seminar_information_source{
+				width: 100%!important;
+			}*/
+			/*
+			.hs-seminar_information_source > .input > .inputs-list >.hs-form-checkbox{
+				width: auto%!important;
+			}*/
+			
+			.hs-company{
+				width: 100%;
+			}
+			.no-list{
+				position: absolute;
+			    top: 9px;
+			    left: 102px;
+			}
+			.hs-seminar_information_source , .hs_seminar_clinic_location_region  , .hs_seminar_clinic_specialization{
+/*				width: 100%!important;*/
+			}
+			.hs-seminar_information_source > .no-list{
+				top: 0px;
+    			left: 212px;
+			}
+			.hs_seminar_clinic_location_region > .no-list{
+				top: 0px;
+    			left: 72px;
+			}
+			.hs_seminar_clinic_specialization > .no-list{
+				top: 0px;
+    			left: 72px;
+			}
+			@media screen and (max-width: 980px){
+				.hs-form-private{
+					flex-flow: column;
+					width: 100%;
+				}
+				.hs-form-field{
+					width: 90%!important;
+					margin: 0 auto!important;
+					float: none!important;
+				}
+				.hs-company{
+					width: 100%;
+				}
+				.hs-submit{
+					width: 90%;
+					margin: 20px auto;
+				}
+				.hs-error-msg{
+					font-size: 12px;
+				}
+				.hs-email{
+					width: 90%!important;
+				}
+				.hs-input{
+					width: 100%!important;
+				}
+				input[type="email"]{
+					width: 100%!important;
+				}
+				input[type="submit"]{
+/*					width: 90%;*/
+/*					margin: 0 auto!important;*/
+				}
+				.cta-form{
+					border-radius: 10px;
+				}
+			}
+			/*	  表單調整*/
+		</style>
+		<!-- 報名連結 -->
+		<!-- 標題 -->
+		<!-- <div class="event-block">
+			
+			<div class="event-cta cta-form">
+				<div class="event-tittle">
+					<h3>活動報名</h3>
+				</div>
+	            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+				<script>
+				  hbspt.forms.create({
+				    region: "na1",
+				    portalId: "1864133",
+				    formId: "912846f8-7a4c-4f4b-938b-8a2522f3d26f"
+				  });
+				</script>
+        	 </div>
+        </div> -->
+        <!-- 報名連結 -->
+			<div class="event-cta">
+				<a class="event-cta-close-btn">
+					活動已結束
+				</a>
+			</div>
+		<!-- 活動資訊單一塊 -->
+		<div class="event-block">
+			<!-- 標題 -->
+			<div class="event-tittle">
+				<h3>注意事項</h3>
+			</div>
+			<style type="text/css">
+				.event-note-section{
+					max-width: 1100px;
+				}
+				.event-note-list{
+					list-style: num;
+					color: #A5B6BF;
+					font-size: 14px;
+					margin: 40px auto;
+				}
+				.event-note-list>li{
+					line-height: 27px;
+					margin: 5px auto;
+				}
+				.attention-text{
+					color:#243237;
+				}
+			</style>
+			<!-- 內容 -->
+			<div class="event-note-section">
+				<!-- 注意事項 -->
+				<ul class="event-note-list">
+					<!-- 單個 -->
+					<li>本活動報名截止日 12 月 6日(三)。主辦單位將視報名狀況提前或延後線上報名時間。若報名者不克參加，可指派其他人選參加並通知主辦單位。<span class="attention-text">因實體會場座位有限一個單位至多報名 2 位</span>，本公司保留篩選報名參加資格，造成不便敬請見諒。</li>
+					<!-- 單個 -->
+					<li>本活動採預先線上報名並由主辦單位完成資格審核，不開放現場報名，請勿偽造他人身份資料進行報名以免觸犯法律，活動當天報到請提供名片以利核對，主辦單位保留參加資格之最後審核權利。</li>
+					<!-- 單個 -->
+					<li>本活動將由主辦單位進行出席資格審核，與主題及屬性符合者為優先考量。</li>
+					<!-- 單個 -->
+					<li>通過審核者，系統將於報名三天內寄送「報到通知」至您的電子信箱，以示您的出席資格；未通過審核者，亦會收到一封婉拒通知信。若您未收到任何通知信件，請與洽詢窗口聯繫查詢。</li>
+					<!-- 單個 -->
+					<li>若因不可預測之突發因素，主辦單位得保留研討會課程及講師之變更權利。</li>
+				</ul>
+
+			</div>
+
+
+		</div>
+		
+	</div>
+</div>
+<style type="text/css">
+	 @media screen and (max-width: 1400px){
+	 	.event-content-section{
+	 		max-width: 1080px;
+	 	}
+	 }
+	 @media screen and (max-width: 840px){
+	 	.event-content-section{
+	 		width: 90%;
+	 	}
+	 	.event-block{
+	 		padding: 0 20px;
+	 	}
+	 	.three-point-section{
+	 		width: 90%;
+	 	}
+	 	.single-line-text-group{
+	 		align-items: baseline;
+		    padding: 10px 20px;
+		    flex-flow: column;
+	 	}
+	 	.event-date-content{
+/*	 		padding-left: 20px;*/
+	 	}
+	 	.event-date-main{
+	 		align-items: flex-start;
+    		flex-flow: column;
+    		padding-left: 20px;
+	 	}
+	 	.event-date-main>a{
+/*	 		padding-left: 20px;*/
+	 	}
+	 	.agenda-time{
+	 		width: 20%;
+	 	}
+	 	.agenda-content{
+	 		width: 40%;
+	 	}
+	 }
+	  @media screen and (max-width: 640px){
+	 	.event-content-section{
+	 		min-width: 300px;
+	 		width: 90%;
+	 	}
+	 	.three-point-section{
+	 		flex-flow: row wrap;
+	 	}
+	 	.single-point{
+	 		width: 45%;
+	 		padding: 2%;
+	 	}
+	 }
+	 @media screen and (max-width: 480px){
+	 	.three-point-section{
+	 		flex-flow: column;
+	 	}
+	 	.single-point{
+	 		width: 90%;
+	 		padding: 2%;
+	 	}
+	 }
+</style>
+

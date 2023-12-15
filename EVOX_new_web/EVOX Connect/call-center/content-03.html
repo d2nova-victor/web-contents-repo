@@ -1,0 +1,313 @@
+<style type="text/css">
+    .feature-content-size{
+        max-width: 1100px;
+    }
+
+    /*給專門頁面得*/
+    .client-direct{
+        margin-top: 40px;
+    }
+
+    
+/*   .tx-01{
+        margin-top: calc(var( --widthA)*0.05);
+        max-width: 350px;
+        
+     }*/
+
+    /*換方向*/
+    .flex-order-change{
+/*        order: -1;*/
+    }
+     .section-tittle{
+        width: 100%;
+        text-align: center;
+        margin: 80px 0 0 0;
+     }
+     .section-btn-collation{
+        width: 100%;
+        max-width: 610px;
+        margin:10px auto;
+        
+     }
+     .section-btn{
+        width: 25%;
+        cursor: pointer;
+        float: left;
+     }
+     .section-btn-active{
+        color:#5856D6;
+     }
+     .IVR_benefit_text{
+        width: 100%;
+        margin: 0 0 0 31px;
+     }
+     /*accrodion*/
+     /* Style the buttons that are used to open and close the accordion panel */
+ /*個人設定tab選單*/
+    button.accordion, button.accordion2{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        color: #243237;
+        cursor: pointer;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+        border: 1px solid #fafafafa;
+        margin: 20px 0 0 0;
+        line-height: 22px;
+        border: 0px solid #cacaca;
+        border-bottom: 0px;
+        border-radius: 4px 4px 0px 0px;
+    }
+    /*button.accordion-1.active>div.panel{
+        margin-bottom: 10px;
+    }*/
+    button.accordion.active,
+    button.accordion:hover,
+    button.accordion2.active,
+    button.accordion2:hover{
+        /*font-family: FontAwesome;*/
+        content: '\f054';
+        /*background-color: #66C547!important;*/
+        /*color:#fff!important;*/
+        /*border: 1px solid #66C547;*/
+        border-radius: 4px 4px 0px 0px;
+
+    }
+
+    button.accordion.active, button.accordion2.active{
+        /*border-bottom: 1px solid #fff;*/
+        box-shadow: 1px 0px 21px #dedede;
+        padding:14px 14px 0 14px;
+    }
+
+    button.accordion:before,
+    button.accordion2:before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f054';
+        color: #58B805;
+        font-weight: bold;
+        float: left;
+        margin-right: 10px;
+    }
+
+    button.accordion.active:before,
+    button.accordion2.active:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00c";
+        color:#58B805;
+    }
+    button.accordion2:hover:before,
+    button.accordion:hover:before{
+        /*color:#fff;*/
+    }
+     button.accordion:hover + div.panel,
+    button.accordion2:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #66C547!important;*/
+    }
+     button.accordion.active:hover + div.panel,
+    button.accordion2.active:hover + div.panel{
+        /*transition: 0.4s;
+        background-color: #fff!important;*/
+    }
+    div.panel {
+        /*color:#5F6871;*/
+        padding: 1px 36px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border: 0px solid #cacaca;
+        border-top: 0px;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+        z-index: 9;
+        box-shadow: 1px 16px 21px #dedede;
+    }
+    div.panel>p{
+        margin: 0 0 20px 0;
+    }
+    .panel h2{
+        margin: 10px 0px;
+    }
+    .content-section-1-image-version-b-reverse-spec>img{
+        display: none;
+    }
+    .benefit-active{
+        display: block!important;
+    }
+    @media screen and (max-width: 840px) {
+        .IVR_benefit_text{
+            width: 100%;
+            margin: 0 0 0 0px;
+            padding: 0 20px;
+        }
+        .change-to-flex{
+        
+        }
+        .special-content{
+            max-height: 280px;
+        }
+    }
+</style>
+<!-- <div class="section-tittle"> -->
+    
+<!--    <div class="section-btn-collation">
+      <div class="section-btn section-btn-active" id="quickpic-btn" onclick="openPlan('quickpic')">優點一</div>
+      <div class="section-btn" id="quickans-btn" onclick="openPlan('quickans')">優點二</div>
+      <div class="section-btn" id="desination-btn" onclick="openPlan('designation')">優點三</div>
+      <div class="section-btn" id="collect-btn" onclick="openPlan('collect')">優點三</div>
+    </div> -->
+<!-- </div> -->
+
+
+
+<div id="quickpic" class="benefit-box" >
+<div class="content-section-1-spec feature-content-size change-to-flex">
+<!-- <div class="content-section-1"> -->
+    <div class="content-section-1-image-version-b-reverse-spec digit2">
+        <img id="b-benefit-01" class="benefit-active" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/call-queing/help-agent-work-image-627px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/call-queing/help-agent-work-image-627px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/call-queing/help-agent-work-image%20copy%2011@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/call-queing/help-agent-work-image%20copy%2011.jpg 3x" alt="確保每一通來電都能得到回應">
+        <img id="b-benefit-02" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/choose-agnets/help-agent-work-image-627px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/choose-agnets/help-agent-work-image-627px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/choose-agnets/help-agent-work-image%20copy%2012@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/choose-agnets/help-agent-work-image%20copy%2012.jpg 3x" alt="智能分配來電">
+        <img id="b-benefit-03" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/busy-answer/help-agent-work-image-627px.jpg" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/busy-answer/help-agent-work-image-627px.jpg 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/busy-answer/help-agent-work-image%20copy%2013@2x.jpg 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/Call-center/busy-answer/help-agent-work-image%20copy%2013.jpg 3x" alt="當全線忙碌時，讓來電者有所選擇">
+    </div>
+    <div class="flex-center content-center content-section-textblock flex-order-change">
+    <div class="IVR_benefit_text" style="">
+    <h2 style="font-size: 32px;">自動排序分配來電</h2>
+    <button class="accordion2" id="getanswer">確保每一通來電都能得到回應</button>
+    <div class="panel special-content">
+    <div class="content-section-1-content-reverse tx-01">
+                <p>通常顧客來電都是一波一波地來，在尖峰時刻不可能總是有足夠的專員能立即接聽所有的來電，此時就需要自動排序分配來電的功能，將線上等候的來電依照選定的規則去做公平分配與排序，如此一來，當有客服專員可以接聽下一通電話時，便能立即接上線。</p>
+                <!-- <a class="purple-outline-btn" href="">如何使用</a> -->
+    </div>
+    </div>
+    <button class="accordion2" id="disagent">智能分配來電</button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>當同時有兩位以上的專員可以接聽電話時，分配來電機制會依選定的演算法來指派給對應的專員，以確保團隊的工作量能被平均地分攤，避免有少數專員過分勞累的情況發生。</p>
+            <!-- <a class="purple-outline-btn" href="">如何使用</a> -->
+        </div>
+    </div>
+    
+    <button class="accordion2" id="busy">當全線忙碌時，讓來電者有所選擇</button>
+    <div class="panel">
+    <div class="content-section-1-content-reverse tx-01">
+            <p>當來電數量已經超過系統或人員的負荷時，系統能自動建議客戶稍後再撥，或讓客戶留言、要求回電，以避免讓客戶永無止盡地等候。</p>
+        </div>
+    </div>
+    </div>
+    <div id="call-record" class="jump-links"></div>
+    </div>
+<!-- </div> -->
+    
+</div>
+
+</div>
+
+
+
+
+
+<script>
+    $("#getanswer").click(function(){
+        $("#b-benefit-01").addClass("benefit-active");
+        if ( $("#b-benefit-02").hasClass("benefit-active") ) {   $("#b-benefit-02").removeClass('benefit-active'); }
+        if ( $("#b-benefit-03").hasClass("benefit-active") ) {   $("#b-benefit-03").removeClass('benefit-active'); }
+    })
+    $("#disagent").click(function(){
+        $("#b-benefit-02").addClass("benefit-active");
+        if ( $("#b-benefit-01").hasClass("benefit-active") ) {   $("#b-benefit-01").removeClass('benefit-active'); }
+        if ( $("#b-benefit-03").hasClass("benefit-active") ) {   $("#b-benefit-03").removeClass('benefit-active'); }
+    })
+    $("#busy").click(function(){
+        $("#b-benefit-03").addClass("benefit-active");
+        if ( $("#b-benefit-01").hasClass("benefit-active") ) {   $("#b-benefit-01").removeClass('benefit-active'); }
+        if ( $("#b-benefit-02").hasClass("benefit-active") ) {   $("#b-benefit-02").removeClass('benefit-active'); }
+    })
+ // W3C's JS Code
+        var bcc2 = document.getElementsByClassName("accordion2");
+        var i;
+
+        // Open the first accordion
+        var firstAccordion2 = bcc2[0];
+        var firstPanel2 = firstAccordion2.nextElementSibling;
+        firstAccordion2.classList.add("active");
+        firstPanel2.style.maxHeight = firstPanel2.scrollHeight +firstAccordion2.scrollHeight + "px";
+
+        // Add onclick listener to every accordion element
+        for (i = 0; i < bcc2.length; i++) {
+            bcc2[i].onclick = function() {
+                // For toggling purposes detect if the clicked section is already "active"
+                var isActive2 = this.classList.contains("active");
+
+                // Close all accordions
+                var allAccordions2 = document.getElementsByClassName("accordion2");
+                for (j = 0; j < allAccordions2.length; j++) {
+                    // Remove active class from section header
+                    allAccordions2[j].classList.remove("active");
+
+                    // Remove the max-height class from the panel to close it
+                    var panel2 = allAccordions2[j].nextElementSibling;
+                    var maxHeightValue2 = getStyle(panel2, "maxHeight");
+
+                    if (maxHeightValue2 !== "0px") {
+                        panel2.style.maxHeight = null;
+                    }
+                }
+
+                // Toggle the clicked section using a ternary operator
+                isActive2 ? this.classList.remove("active") : this.classList.add("active");
+
+                // Toggle the panel element
+                var panel2 = this.nextElementSibling;
+                var maxHeightValue2 = getStyle(panel2, "maxHeight");
+
+                if (maxHeightValue2 !== "0px") {
+                    panel2.style.maxHeight = null;
+                } else {
+                    panel2.style.maxHeight = panel2.scrollHeight + "px";
+                }
+            };
+        }
+
+        // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+        function getStyle(el, styleProp) {
+            var value, defaultView = (el.ownerDocument || document).defaultView;
+            // W3C standard way:
+            if (defaultView && defaultView.getComputedStyle) {
+                // sanitize property name to css notation
+                // (hypen separated words eg. font-Size)
+                styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+                return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+            } else if (el.currentStyle) { // IE
+                // sanitize property name to camelCase
+                styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+                    return letter.toUpperCase();
+                });
+                value = el.currentStyle[styleProp];
+                // convert other units to pixels on IE
+                if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
+                    return (function(value) {
+                        var oldLeft = el.style.left,
+                            oldRsLeft = el.runtimeStyle.left;
+                        el.runtimeStyle.left = el.currentStyle.left;
+                        el.style.left = value || 0;
+                        value = el.style.pixelLeft + "px";
+                        el.style.left = oldLeft;
+                        el.runtimeStyle.left = oldRsLeft;
+                        return value;
+                    })(value);
+                }
+                return value;
+            }
+        }
+
+
+
+</script>
