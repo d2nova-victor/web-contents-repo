@@ -1,0 +1,460 @@
+<style type="text/css">
+/*recruit*/
+.recruit-section{
+	position: relative;
+}
+.manager-top {
+	background-image: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/web-call/for-business/bg/%E4%BC%81%E6%A5%AD_%E8%83%8C%E6%99%AF_compress.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 20% top;
+   	min-height: 380px;
+
+}
+
+
+.b-gradient-bg{
+	min-height: 380px;
+	display: flex;
+    align-items: center;
+    padding: 0 6%;
+    background: rgb(246 246 246);
+    background: linear-gradient(0deg, rgb(246 246 246) 0%, rgb(246 246 246 / 76%) 35%, rgb(246 246 246 / 0%) 100%);
+}
+
+.text-wide{
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.main-V-text{
+    text-align: center;
+}
+.main-V-text>h2{
+	font-size: 36px;
+	margin-bottom: 60px;
+}
+/*比較表格*/
+.cost-table-section{
+	position: relative;
+	background: #F5F5F5;
+    padding: 0px 0 0px 0;
+/*    top: -60px;*/
+	max-height: 460px;
+/*	overflow: hidden;*/
+}
+.cost-table-section>h3{
+	position: relative;
+	font-size: 24px;
+	text-align: center;
+	top: -160px;
+}
+/*  表格*/
+.compare-content-block{
+	max-width: 1060px;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	margin: 0 auto;
+	border: 0.5px solid #ccc;
+	border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    top: -160px;
+}
+.table-cloum-single{
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	align-items: stretch;
+	justify-content: center;
+	border-radius: 4px;
+}
+.cloum-body{
+	border: 1px solid #CCCCCC;
+	display: flex;
+    align-items: center;
+    min-height: 72px;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.cloum-body>h3{
+	font-size: 20px;
+	margin: 0;
+	color: #5F6871;
+/*	font-weight: 600;*/
+	font-family: 'EVOX-San SF-bold'!important;
+}
+.cloum-body>p{
+	margin: 0;
+}
+.cloum-body>div:nth-child(1), .cloum-body>div:nth-child(2){
+	border-bottom: 2px solid #ccc;
+}
+.two-cloum-box{
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 83px;
+    text-align: center;
+}
+.two-cloum-box>p{
+	margin: 0;
+	padding: 0 10px;
+}
+.status-cloum{
+	background: #EDEFF1;
+	width: 10%;
+}
+.question-cloum{
+	background: #fff;
+	width: 22.5%;
+}
+.two-row-comb{
+	width: 45.2%;
+}
+
+.evox-cloum{
+	background: #E8F5E9;
+	width: 45%;
+}
+.mobile-show{
+	display: none;
+}
+.option-text{
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	top: -160px;
+}
+.option-text>p{
+	color: #A5B6BF;
+	font-size: 14px;
+	margin: 0;
+}
+
+@media screen and (max-width: 840px){
+	/*manager*/
+	.manager-top  {
+		background-image: url("https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/web-call/for-business/bg/%E4%BC%81%E6%A5%AD_%E8%83%8C%E6%99%AF_mobile_compress.webp");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+	   	min-height: 600px;
+	}
+
+	.b-gradient-bg{
+		min-height: 460px;
+		display: flex;
+	    align-items: center;
+	    padding: 0 6%;
+	    background: rgb(246 246 246);
+    	background: linear-gradient(0deg, rgb(246 246 246) 0%, rgb(246 246 246 / 76%) 35%, rgb(246 246 246 / 0%) 100%);
+	}
+
+	.main-V-text{
+/*		margin-top: 40%;*/
+		max-width: 100%;
+	    margin: 40% auto 0 auto;
+	    text-align: center;
+	    border-bottom: 1px solid #3333;
+	    padding-bottom: 20px;
+	}
+	.main-V-text>h2{
+		font-size: 32px;
+    	font-weight: bold;
+	}
+}
+@media screen and (max-width: 640px){
+	.manager-top, .b-gradient-bg{
+		min-height: 400px;
+	}
+/*	比較表*/
+/*	 手機版*/
+		.cost-table-section{
+			max-height: 100%;
+		}
+		.compare-content-block{
+			top:0;
+		}
+		.option-text{
+			top: 0;
+		}
+		.cost-table-section>h3{
+			top: 0;
+		}
+		.cloum-body{
+			min-height: 52px;
+			text-align: center;
+		}
+		.cloum-body>p{
+			padding: 0 10px;
+		}
+		.mobile-show{
+			display: flex;
+			align-items: stretch;
+			justify-content: center;
+		}
+
+		.evox-cloum{
+			background: #E8F5E9;
+			width: 50%;
+/*			min-height: 32px;*/
+		}
+		.no-board-bottom{
+			border-bottom: 0px;
+		}
+		.no-board{
+			border-bottom: 0px;
+			border-top: 0px;
+		}
+		.no-board-top{
+			border-top: 0px;
+		}
+		.status-cloum {
+			width: 100%;
+			min-height: 32px;
+		}
+		.question-cloum{
+			background: #fff;
+			width: 50%;
+			min-height: 52px;
+		}
+		.pbx-mobile-cloum{
+			width: 100%;
+		}
+	    .mobile-hide{
+			display: none;
+		}
+
+
+}
+
+
+</style>
+
+<div class="recruit-section">
+	<!-- 主視覺 -->
+	<div class="main-vision manager-top recuit-mobile">
+		<div class="b-gradient-bg">
+			<div class="text-wide">
+				<!-- 文字 -->
+				<div class="main-V-text">
+					<h2>EVOX Web Call 對企業本身有何好處？</h2>
+				</div>
+				<!-- 文字 -->
+			</div>
+		</div>
+	</div>
+	<!-- 主視覺 -->
+
+	<!-- 內容 -->
+	<!-- 比較表 -->
+	<div class="cost-table-section">
+		<h3>比 0800 更省通話費用</h3>
+		<!-- 內容 -->
+		<div class="compare-content-block">
+			
+			<!-- 標題-->
+			<div class="table-cloum-single mobile-hide">
+				<!-- 階段 -->
+				<div class="cloum-body status-cloum"><h3>比價</h3></div>
+				<!-- 問題 -->
+				<div class="cloum-body question-cloum two-row-comb"><h3>一班電信業者</h3></div>
+				<!-- 傳傯 -->
+				<!-- <div class="cloum-body PBX-issue-cloum"><h3>傳統總機設備</h3></div> -->
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum"><h3>EVOX</h3></div>
+			</div>
+			<!-- 時段 -->
+			<div class="table-cloum-single mobile-hide">
+				<!-- 階段 -->
+				<div class="cloum-body status-cloum"><p>時段</p></div>
+				<!-- 問題 -->
+				<div class="cloum-body question-cloum"><p>尖峰</p></div>
+				<!-- 傳傯 -->
+				<div class="cloum-body question-cloum"><p>離峰</p></div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum"><p>無分時段</p></div>
+			</div>
+
+			<!-- 費率表 -->
+			<div class="table-cloum-single">
+				<!-- 階段 -->
+				<div class="cloum-body status-cloum mobile-hide">
+					<div class="two-cloum-box">
+						<p>市話打<br/>0800 </p>
+					</div>
+					<div class="two-cloum-box">
+						<p>長途打<br/>0800</p>
+					</div>
+					<div class="two-cloum-box">
+						<p>行動打<br/>0800</p>
+					</div>
+				</div>
+				<!-- 問題 -->
+				<div class="cloum-body question-cloum mobile-hide">
+					<div class="two-cloum-box">
+						<p>1.6元 / 5分</p>
+					</div>
+					<div class="two-cloum-box">
+						<p>2.1元 / 分<br/>（以秒計費）</p>
+					</div>
+					<div class="two-cloum-box">
+						<p>6元 / 分<br/>（以秒計費）</p>
+					</div>
+				</div>
+				<!-- 傳傯 -->
+				<div class="cloum-body question-cloum mobile-hide">
+					<div class="two-cloum-box">
+						<p>1元 / 10 分</p>
+					</div>
+					<div class="two-cloum-box">
+						<p>1.5元 / 分<br/>（以秒計費）</p>
+					</div>
+					<div class="two-cloum-box">
+						<p>3元 / 分<br/>（以秒計費）</p>
+					</div>
+				</div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum mobile-hide">
+					<p>0.5 元 / 分<br/>（每 6 秒 0.05 元為單位計費）</p>
+				</div>
+			</div>
+			<!-- 備註-->
+			<div class="table-cloum-single mobile-hide">
+				<!-- 階段 -->
+				<div class="cloum-body status-cloum"><p>備註</p></div>
+				<!-- 問題 -->
+				<div class="cloum-body question-cloum two-row-comb"><p>收 5000 元保證金</p></div>
+				<!-- 傳傯 -->
+				<!-- <div class="cloum-body PBX-issue-cloum"><h3>傳統總機設備</h3></div> -->
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum"><p>無</p></div>
+			</div>
+			
+
+
+			<!-- --------------------------------------- -->
+			<!-- 開始前手機版 -->
+			<div class="table-cloum-single mobile-show">
+				<!-- 傳傯 -->
+				<div class="cloum-body question-cloum">
+					<h3>一般電信業者</h3>
+				</div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum">
+					<h3>EVOX</h3>
+				</div>
+			</div>
+			<!-- 單一個時段手機版 -->
+			<div class="table-cloum-single mobile-show">
+				<!-- 階段 -->
+				<!-- <div class="cloum-body status-cloum ">
+					<p>市話打 0800</p>
+				</div> -->
+			</div>
+			<div class="table-cloum-single mobile-show">
+				<!-- 傳傯 -->
+				<div class="question-cloum">
+					<!-- 階段 -->
+					<div class="cloum-body status-cloum ">
+						<p>市話打 0800</p>
+					</div>
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>尖峰：1.6元 / 5分</p>
+					</div>
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>離峰：1元 / 10分</p>
+					</div>
+				</div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum no-board-bottom">
+					<!-- <p>0.5 元 / 分 <br/>（每 6 秒 0.05 元為單位計費）</p> -->
+				</div>
+			</div>
+
+			<!-- 單一個時段手機版 -->
+			<div class="table-cloum-single mobile-show">
+				<!-- 階段 -->
+				<!-- <div class="cloum-body status-cloum ">
+					<p>長途打 0800</p>
+				</div> -->
+			</div>
+			<div class="table-cloum-single mobile-show">
+				<!-- 傳傯 -->
+				<div class="question-cloum">
+					<!-- 階段 -->
+					<div class="cloum-body status-cloum ">
+						<p>長途打 0800</p>
+					</div>
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>尖峰：2.1元 / 分<br/>（以秒計費）</p>
+					</div>
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>離峰：1.5元 / 分<br/>（以秒計費）</p>
+					</div>
+				</div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum no-board">
+					<p>0.5 元 / 分 <br/>（不分時段每 6 秒 0.05 元為單位計費）</p>
+				</div>
+			</div>
+
+			<!-- 單一個時段手機版 -->
+			<div class="table-cloum-single mobile-show">
+				<!-- 階段 -->
+				<!-- <div class="cloum-body status-cloum ">
+					<p>行動打 0800</p>
+				</div> -->
+			</div>
+			<div class="table-cloum-single mobile-show">
+				<!-- 傳傯 -->
+				<div class="question-cloum">
+					<!-- 階段 -->
+					<div class="cloum-body status-cloum ">
+						<p>行動打 0800</p>
+					</div>
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>尖峰：6元 / 分<br/>（以秒計費）</p>
+					</div>
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>離峰：3元 / 分<br/>（以秒計費）</p>
+					</div>
+				</div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum no-board-top">
+					<!-- <p>0.5 元 / 分 <br/>（每 6 秒 0.05 元為單位計費）</p> -->
+				</div>
+			</div>
+			<!-- 備註 -->
+			<div class="table-cloum-single mobile-show">
+				<!-- 階段 -->
+				<div class="cloum-body status-cloum ">
+					<p>備註</p>
+				</div>
+			</div>
+			<div class="table-cloum-single mobile-show">
+				<!-- 傳傯 -->
+				<div class="question-cloum">
+					<div class="cloum-body pbx-mobile-cloum">
+						<p>收保證經 5000元</p>
+					</div>
+				</div>
+				<!-- EVOX -->
+				<div class="cloum-body evox-cloum no-board-top">
+					<p>無</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="option-text"><p>＊尖峰：週一 ～ 週五 08:00 ~ 23:00 、 週六 08:00 ~ 12:00  /  離峰：週一 ～ 週五 23:00 ~ 08:00 、 週六：12:00 ~ 週一 08:00 、國定假日 全天</p></div>
+	</div>
+
+	
+</div>

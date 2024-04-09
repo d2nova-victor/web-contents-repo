@@ -1,0 +1,112 @@
+<style type="text/css">
+	.zlayout-section{
+		background: #F5F5F5;
+		padding: 20px 0;
+	}
+	.zlayout-content{
+		max-width: 1113px;
+		margin:20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	/*	反轉*/
+	.right-reverse{
+		flex-flow: row-reverse;
+	}
+	/*	反轉*/
+	.zlayout-img{
+		width: 50%;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.zlayout-img>img{
+			width: 100%;
+		}
+	.zlayout-text>p{
+		margin: 5px 0;
+		text-align: justify;
+	}
+	.zlayout-text{
+		width: 50%;
+	    display: flex;
+	    align-items: baseline;
+	    justify-content: center;
+	    flex-flow: column;
+	    max-width: 447px;
+	    margin: 0 auto;
+	    padding: 0 20px;
+	}
+	.zlayout-text>h3{
+		font-size: 25px;
+		line-height: 47px;
+		margin:0 0 5px 0;
+	}
+	.benefit-list-content{
+		padding: 0 0 0px 20px;
+		margin: 5px 0;
+	}
+	.benefit-list>p{
+		margin:5px 0;
+	}
+	.coming-soon{
+		color: #CCCCCC;
+		font-size: 16px;
+		margin: 0;
+	}
+	@media screen and (max-width: 1113px){
+		.zlayout-content{
+			max-width: 95%;
+		}
+	}
+	@media screen and (max-width: 840px){
+		.zlayout-content{
+			flex-flow: column-reverse;
+			max-width: 90%;
+			margin: 0 auto;
+			align-items: center;
+		}
+		.zlayout-img{
+			width: 95%;
+		}
+		/*.left-zlayout-img>img{
+			width: 100%;
+		}*/
+		.zlayout-text{
+			width: 95%;
+			max-width: 100%;
+		    margin: 0 auto;
+		    padding: 0 0 20px 0;
+		    align-items: center;
+		    text-align: center;
+		}
+		.zlayout-text>h3{
+			font-size: 23px;
+			text-align: center;
+			font-weight: 500;
+		}
+		
+	}
+	@media screen and (max-width: 640px){
+		.right-reverse{
+			 flex-flow: column-reverse;
+		}
+	}
+
+</style>
+
+<div class="zlayout-section" id="teams-call">
+
+	<div class="zlayout-content right-reverse">
+		<div class="left-zlayout-img digit2">
+			<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/web-call/for-business/customer-info/Group%204@1x_compress.webp" srcset="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/web-call/for-business/customer-info/Group%204@1x_compress.webp 1x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/web-call/for-business/customer-info/Group%204@2x_compress.webp 2x, https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX%20Connect/web-call/for-business/customer-info/Group%204_compress.webp 3x" alt="收集客戶資訊">
+		</div>
+		<div class="zlayout-text">
+			<h3>事前收集資訊 加快服務效率</h3>
+			<p>Ｗeb Call 可設定必填欄位，讓使用者撥打前先行填入，例如客戶編號或公司名稱，結合上 EVOX 的<a class="green-text-btn" target="_blank" href="/tw/evox-connect/agent"> Pro PC App </a> 與聯絡人資料庫，讓專員有機會在接聽前就先了解進線客戶基本資訊和溝通歷史紀錄。</p>
+			<!-- <a class="green-text-btn" target="_blank" href="/tw/evox/admin-center">了解更多 <i class="fas fa-chevron-right" aria-hidden="true"></i></a> -->
+		</div>
+	</div>
+	
+</div>

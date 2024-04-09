@@ -1,0 +1,429 @@
+<!-- Required For jQuery Version Only -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<!-- venobox Plugin files -->
+<link href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/VenBox/CSS/venobox.css" rel="stylesheet" />
+<script src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_website_JS_files/VenBox/JS/venobox.js"></script>
+
+<!-- flickity -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<style>
+	/*Slider */
+
+	* { box-sizing: border-box; }
+
+	body { font-family: sans-serif; }
+
+	.carousel {
+	  /*background: #FAFAFA;*/
+	}
+
+	.carousel-cell {
+	  width: 100%;
+	  /*height: 400px;*/
+	  margin-right: 10px;
+	  /*background: #8C8;*/
+	  border-radius: 5px;
+	  /*min-height: 400px;*/
+	}
+	/*owl-style*/
+	.product-image-slider{
+	  display: block;
+	  max-width: 980px;
+	  margin: 0 auto;
+	  width: 100%;
+	  min-width: 328px;
+	}
+	.flickity-page-dots{
+	  position: initial!important;
+	}
+	.flickity-page-dots{
+	  display: flex;
+	  height: 20px;
+	  align-items: center;
+	  justify-content: center;
+	  /*background: #F2F2F2;*/
+	  width: 22%;
+	  margin: 10px auto;
+	  border-radius: 30px;
+
+	}
+	.flickity-page-dots .dot{
+	  width: 10px;
+      height: 10px;
+      margin: 10px auto;
+	}
+	/*.flickity-prev-next-button.previous{
+	    left: 30%;
+	    top: 93%;
+	}
+	.flickity-prev-next-button.next{
+	    right: 30%;
+	    top: 93%;
+	}*/
+	.flickity-prev-next-button.next{
+		right: 0px;
+	}
+	.flickity-prev-next-button.previous{
+		left: 0px;
+	}
+
+	/*light-box*/
+	.vbox-item{
+	  display: flex;
+	  position: relative;
+	  height: 100%;
+	  align-items: center;
+	  justify-content: center;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	.vbox-item>img{
+	  width: 90%;
+	}
+	.vbox-next, .vbox-prev{
+	  /*display: none;*/
+	}
+	/*pop up image*/
+	.vbox-title{
+	  font-size: 20px!important;
+	}
+	/*popup img*/
+	.vbox-container img{
+		max-width: 50%;
+	}
+	/*其他整體*/
+	.content-section-2{
+		max-width: 1260px;
+    	margin: 40px auto 60px auto;
+    	text-align: center;
+	}
+	.product-list-tittle{
+		text-align: center;
+		width: 80%;
+    	margin: 0 auto;
+	}
+	.product-list-sub-tittle{
+		text-align: center;
+		margin: 30px auto 0px auto;
+	}
+	.product-list-block{
+		display: flex;
+    	align-items: flex-end;
+    	justify-content: space-between;
+    	margin: 0 40px;
+	}
+	.product-box{
+		width: 30.3%;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+/*    	padding: 1%;*/
+    	margin: 30px 4px;
+    	box-shadow: 1px 1px 10px #e5e5e5;
+    	display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	    justify-content: flex-start;
+	    min-height: 950px;
+	}
+	.product-box-prefer {
+		position: relative;
+		width: 35.3%;
+		border: 2px solid #58B805;
+		box-shadow: 1px 1px 12px #58B805;
+		min-height: 988px;
+	}
+	.product-banner{
+		width: 100%;
+	    padding: 5px;
+	    color: #fff;
+		background: #58B805;
+
+	}
+	.best-stick{
+		width: 70px;
+    	position: absolute;
+    	left: -12px;
+    	top: -8px;
+/*     transform: rotateZ(-20deg);*/
+	}
+	.product-img{
+		max-width: 328px;
+	}
+	.product-function-list{
+		padding: 10px;
+		border-top: 1px solid#ccc;
+		width: 80%;
+	}
+
+	.product-function-list>h4{
+		margin: 10px 0;
+	}
+	.list-box{
+		display: flex;
+    	flex-flow: column;
+    	align-items: flex-start;
+	}
+	.list-box>p{
+		margin: 9px 0;
+		text-align: left;
+		display: flex;
+    align-items: baseline;
+	}
+	.list-box>p>i{
+		padding-right: 5px;
+	}
+	.evox-only-tag{
+		max-height: 30px;
+		position: relative;
+    top: 9px;
+	}
+/*	/*單排會議室話機*/
+	.single-product-list-block{
+		display: flex;
+	    align-items: stretch;
+	    justify-content: space-between;
+	    margin: 0 40px;
+	}
+	.eve-product-function-list>h4{
+		margin: 10px 0;
+	}
+	.eve-list-box>p{
+		margin: 9px 0;
+		text-align: left;
+	}
+	.single-cloum-block{
+		width: 100%;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	padding:1%;
+    	margin: 30px 4px;
+    	box-shadow: 1px 1px 10px #e5e5e5;
+    	display: flex;
+	    flex-flow: row;
+	    align-items: center;
+	    justify-content: flex-start;
+	}
+	.eve-product-function-list{
+		display: flex;
+    	flex-flow: column;
+   	 	align-items: flex-start;
+	}
+	.eve-list-box{
+		display: flex;
+	    max-height: 270px;
+	    flex-flow: column wrap;
+	    align-items: flex-start;
+	}
+	.eve-list-box>p{
+		margin: 9px 100px 9px 0;
+	}
+	@media screen and (max-width: 1000px){
+		.product-list-block{
+			flex-flow: column;
+		}
+		.product-box{
+			width: 97%;
+			margin: 30px auto;
+		}
+		.list-box{
+			display: flex;
+		    flex-flow: column wrap;
+		    align-items: flex-start;
+		    max-height: 240px;
+		}
+		.single-cloum-block{
+			justify-content: center;
+			flex-flow: column;
+		}
+		.eve-product-function-list{
+			width: 80%;
+			align-items: stretch;
+			border-top: 1px solid#ccc;
+			padding: 10px;
+		}
+		.eve-list-box{
+			max-height: 190px;
+		}
+
+	}
+	@media screen and (max-width: 800px){
+		.list-box{
+			max-height: 100%;
+			width: 350px;
+    		margin: 0 auto;
+		}
+		.single-cloum-block{
+			flex-flow: column;
+		}
+		.eve-product-function-list{
+			width: 80%;
+			padding: 10px;
+		}
+		.eve-list-box{
+			max-height: 100%;
+			width: 350px;
+    		margin: 0 auto;
+		}
+		.vbox-container img{
+			max-width: 100%;
+		}
+	}
+	@media screen and (max-width: 630px){
+		.list-box{
+			width: 100%;
+		}
+		.eve-list-box{
+			width: 100%;
+			max-height: 100%;
+		}
+		.eve-list-box>p{
+			margin: 9px 0;
+		}
+	}
+</style>
+<div class="content-section-2">
+	<!-- <div class="product-list-tittle">
+		<h2 class="list-tittle">加購 IP 電話機</h2>
+		<p>您可以在申請 EVOX 的同時加購以下IP電話機，我們會幫您完成設定並寄給您。</p>
+	</div> -->
+
+	<div class="product-list-sub-tittle">
+		<h3>辦公桌電話</h3>
+	</div>
+	<div class="product-list-block">
+
+		<!-- 單一個 -->
+		<div class="product-box digit2">
+			<div class="product-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EVOX/ip-phone/EVP1-EVP1G.jpg" alt="evp-1g"></div>
+			<div class="product-function-list">
+				<h4>EVP-1G</h4>
+				<div class="list-box">
+					<p><i class="far fa-check-square"></i> 128x48解析度繁體中文液晶螢幕</p>
+					<p><i class="far fa-check-square"></i> 可註冊2個 SIP 帳號</p>
+					
+					<p><i class="far fa-check-square"></i> 雙網口</p>
+					<p><i class="far fa-check-square"></i> 免持聽筒支援耳麥</p>
+					<p><i class="far fa-check-square"></i> 支持三方通話</p>
+					<p><i class="far fa-check-square"></i> 可壁掛</p>
+					
+					<p><i class="far fa-check-square"></i> 10/100/1000 Mbps 網路</p>
+					<!-- <p><i class="far fa-check-square"></i> 支持PoE功能</p> -->
+					<a class="green-text text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/IP-Phones/EVOX/EVOX_EVP-1G_datasheet_zh-tw.pdf" target="_blank" style="font-size:14px;">查看技術規格 <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="product-box product-box-prefer digit2">
+			<div class="product-banner"><span>最佳銷售推薦</span></div>
+			<div class="best-stick"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/best-sales-icon_2.png" alt="最銷售幾款貼紙" /></div>
+			<div class="product-img">
+				<img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_front_240217_7.webp" alt="evp-10">
+				<!-- slider img -->
+				<!-- <div class="product-image-slider">
+				    <div class="carousel"
+				        data-flickity='{ "pageDots": true,"freeScroll": false,"wrapAround": false,"initialIndex": ".is-initial-select"}'> -->
+				        <!-- 單一個 -->
+				        <!-- <div class="carousel-cell is-initial-select">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_front_240217_2.webp" >
+				              <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_front_240217_2.webp" alt="salesforce 話機正面">
+				          </a>
+				        </div> -->
+				        <!-- 單一個 -->
+				        <!-- <div class="carousel-cell">
+				          <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_side_compress.webp" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_side_compress-1.webp" alt="話機側面">
+				          </a>
+				        </div> -->
+				       
+				        <!-- 單一個 -->
+				        <!-- <div class="carousel-cell ">
+				           <a class="venobox vbox-item" data-gall="gall1" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_whoscall-notification_compress-2.webp" >
+				            <img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/EVP-10_whoscall-notification_compress-2.webp" alt="Whoscall 來電畫面" >
+				          </a>
+				        </div> -->
+
+				    <!-- </div> -->
+				<!-- </div> -->
+
+			</div>
+			<div class="product-function-list">
+				<h4>EVP-10</h4>
+				<div class="list-box">
+					<p><i class="far fa-check-square"></i>  2.4吋 320x240 解析度彩色顯示螢幕</p>
+					<p><i class="far fa-check-square"></i> 可註冊2個 SIP 帳號</p>
+					<p><i class="far fa-check-square"></i> 雙網口 </p>
+					<p><i class="far fa-check-square"></i> 免持聽筒支援耳麥</p>
+					<p><i class="far fa-check-square"></i> 支持三方通話</p>
+					<p><i class="far fa-check-square"></i> 可壁掛</p>
+					<p><i class="far fa-check-square"></i> 支援 10/100 Mbps 網路</p>
+					<p><i class="far fa-check-square"></i> 透過 EVOX 後台設定 <img class="evox-only-tag" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/special-fumction-label_4.png" alt="evox only feature"> </p>
+					<p><i class="far fa-check-square"></i> Whoscall 來電顯示 <img class="evox-only-tag" src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/Official_WEB/EVOX/multi-devices/ip-phone/EVP-10_240125/special-fumction-label_4.png" alt="evox only feature"></p>
+					<a class="green-text text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/IP-Phones/EVOX/EVP-10/EVOX_EVP-10_datasheet_zh-tw.pdf" target="_blank" style="font-size:14px;">查看技術規格 <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 單一個 -->
+		<div class="product-box digit2">
+			<div class="product-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EVOX/ip-phone/X4U.jpg" alt="x4u"></div>
+			<div class="product-function-list">
+				<h4>X4U</h4>
+				<div class="list-box">
+					<p><i class="far fa-check-square"></i> 320x240雙彩色顯示螢幕，主2.8吋/副2.4吋</p>
+					<p><i class="far fa-check-square"></i> 可註冊12個 SIP 帳號</p>
+					<p><i class="far fa-check-square"></i> 千兆雙網口</p>
+					<p><i class="far fa-check-square"></i> 免持聽筒支援耳麥</p>
+					<p><i class="far fa-check-square"></i> 3個帶 LED 指示燈線路按鍵</p>
+					<p><i class="far fa-check-square"></i> 副螢幕支持 30 個智慧 DSS 可定義按鍵</p>
+					<p><i class="far fa-check-square"></i> 支持連結藍芽或 WiFi 上網卡</p>
+					<p><i class="far fa-check-square"></i> 支援 10/100/1000 Mbps 網路</p>
+					<!-- <p><i class="far fa-check-square"></i> 支持 PoE 功能</p> -->
+					<p><i class="far fa-check-square"></i> 哈曼喇叭支持擴音功能</p>
+					<a class="green-text text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/IP-phones/Fanvil/Fanvil-x4u.pdf" target="_blank" style="font-size:14px;">查看技術規格 <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="product-list-sub-tittle">
+		<h3>會議室電話</h3>
+	</div>
+	<!-- 單一個會議室電話 -->
+	<div class="single-product-list-block digit2">
+		<div class="single-cloum-block">
+			<div class="product-img"><img src="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOXImages/new-web/EVOX/ip-phone/CP925.jpg" alt="cp925"></div>
+			<div class="eve-product-function-list">
+				<h4>CP925 Conference Phone</h4>
+				<div class="eve-list-box">
+					<p><i class="far fa-check-square"></i> 480x800 像素多點觸控屏幕</p>
+					<p><i class="far fa-check-square"></i>  超高音質，噪音消除技術</p>
+					<p><i class="far fa-check-square"></i> 6米麥克風收音半徑</p>
+					<p><i class="far fa-check-square"></i> 360°全向收音範圍</p>
+					<p><i class="far fa-check-square"></i> 內建 Wi-Fi、藍牙4.2</p>
+					<p><i class="far fa-check-square"></i> 支援兩個 CPN10 串聯</p>
+					<p><i class="far fa-check-square"></i> 建立三方 PSTN 會議</p>
+
+
+					<a class="green-text text-btn" href="https://1864133.fs1.hubspotusercontent-na1.net/hubfs/1864133/EVOX_PDF/IP-Phones/Yealink/Yealink_CP925_en-us.pdf" target="_blank" style="font-size:14px;">查看技術規格 <i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+ <script>
+  // jQuery Version
+$('.venobox').venobox({
+  // settings here
+});
+
+// Vanilla JS Version
+new VenoBox();
+
+
+</script>
